@@ -1,0 +1,38 @@
+2020-12-17 09:06:27.5648|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:06:41.5553|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-12-17 09:06:41.5682|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-12-17 09:06:42.3331|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-12-17 09:06:42.3331|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-12-17 09:06:44.9572|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:09:03.2807|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:09:11.8610|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-12-17 09:09:11.8678|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-12-17 09:09:12.5111|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-12-17 09:09:12.5111|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-12-17 09:09:14.7140|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:13:10.7227|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:13:18.0726|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-12-17 09:13:18.0846|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-12-17 09:13:18.9148|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-12-17 09:13:18.9148|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-12-17 09:13:21.5046|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:14:45.9184|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:14:53.7850|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-12-17 09:14:53.7850|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-12-17 09:14:54.6638|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-12-17 09:14:54.6638|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-12-17 09:14:57.6111|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:20:29.3679|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:20:36.0452|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-12-17 09:20:36.0452|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-12-17 09:20:36.6382|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-12-17 09:20:36.6452|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-12-17 09:20:38.9118|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:33:08.2352|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:33:15.7497|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-12-17 09:33:15.7600|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-12-17 09:33:16.6336|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-12-17 09:33:16.6461|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-12-17 09:33:19.7851|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:37:07.8489|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-12-17 09:37:08.5675|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 

@@ -1,0 +1,56 @@
+openapi: 3.0.0
+servers:
+  - description: EVO - API de Auditoria
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Auditoria
+  version: "1.0.0"
+  title: API de Auditoria
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com
+tags:
+  - name: Auditoria
+    description: Gestión de Auditoria
+paths:
+  /auditoria:
+    post:
+      tags:
+        - Auditoria
+      summary: Crea un registro de Auditoria
+      operationId: crearRegistro
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:          
+          $ref: '#/components/requestBodies/RegistroAuditoriaRequest'
+    
+components:
+
+  schemas:
+
+    RegistroAuditoriaRequest:
+       type: object
+       required:
+        - accion
+       description: Objeto que contiene un registro de Auditoria
+       properties:
+        accion:
+          type: string
+          example: "Creó un nuevo producto"
+          description: Acción que está siendo auditada
+        parametros:
+          type: string
+          example: "{ Codigo: 10, Nombre: 'Nuevo Producto' }"
+          description: Objeto serializado en formato JSON que contiene los parámetros de la acción
+    
+  requestBodies:
+    RegistroAuditoriaRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RegistroAuditoriaRequest'
+      description: Solicitud de creación de un registro de Auditoria
+      required: true
+      

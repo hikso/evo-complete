@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SAP_Articulos", "SAP_Articulos\SAP_Articulos.dtproj", "{AD6BD12A-50B2-462A-BF37-6358B3772490}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD6BD12A-50B2-462A-BF37-6358B3772490}.Development|Default.ActiveCfg = Development
+		{AD6BD12A-50B2-462A-BF37-6358B3772490}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C97B5BF-6F00-464D-B100-E68ED2D86FCE}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://porcicarnesfuentes.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SAP_Articulos\\SAP_Articulos.dtproj
+		SccProjectName1 = SAP_Articulos
+		SccLocalPath1 = SAP_Articulos
+	EndGlobalSection
+EndGlobal

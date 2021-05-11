@@ -1,0 +1,217 @@
+2020-10-23 09:45:12.8424|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-10-23 09:45:12.9461|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-10-23 09:45:13.5731|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 09:45:13.5731|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAceptados en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-10-23 09:45:13.6396|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 09:45:15.2074|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 09:45:15.2226|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 09:45:15.2679|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-10-23 09:45:15.3521|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 09:45:15.3675|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-23 09:45:15.3675|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAceptados con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-23 09:45:15.3746|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 09:45:15.4522|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAceptados |url: |action: 
+2020-10-23 09:45:15.5035|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAceptados en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-10-23 09:45:15.5035|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 09:45:15.5035|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 09:45:15.5172|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 09:45:15.5172|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 09:45:15.5172|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-23 09:45:15.5172|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAceptados con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-23 09:45:15.5306|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 09:45:15.5306|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAceptados |url: |action: 
+2020-10-23 09:45:23.7273|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 09:45:23.7273|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-10-23 09:45:23.7273|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregasPedidoxId en Api Pedidos con el parámetro id = 5 |url: |action: 
+2020-10-23 09:45:23.7273|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 09:45:23.7393|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 09:45:23.7393|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 09:45:23.7393|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 09:45:23.7494|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 5 |url: |action: 
+2020-10-23 09:45:24.3005|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 09:45:29.5884|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAceptados en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-10-23 09:45:29.5884|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 09:45:29.5884|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 09:45:29.5931|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 09:45:29.5931|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 09:45:29.5931|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 09:45:29.5931|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-23 09:45:29.5931|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAceptados con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-23 09:45:29.5931|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 09:45:29.6126|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAceptados |url: |action: 
+2020-10-23 09:45:29.6241|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAceptados en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-10-23 09:45:29.6241|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 09:45:29.6241|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 09:45:29.6241|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 09:45:29.6241|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 09:45:29.6241|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-23 09:45:29.6420|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAceptados con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-23 09:45:29.6420|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 09:45:29.6420|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAceptados |url: |action: 
+2020-10-23 09:45:32.0675|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregasPedidoxId en Api Pedidos con el parámetro id = 2 |url: |action: 
+2020-10-23 09:45:32.0675|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-10-23 09:45:32.0675|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 09:45:32.0675|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 09:45:32.0675|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 09:45:32.0787|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 09:45:32.0787|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 2 |url: |action: 
+2020-10-23 09:45:32.0787|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 09:47:58.3337|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAceptados en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-10-23 09:47:58.3337|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 09:47:58.3337|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 09:47:58.3337|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 09:47:58.3447|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 09:47:58.3447|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 09:47:58.3447|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-23 09:47:58.3447|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAceptados con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-23 09:47:58.3447|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 09:47:58.3701|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAceptados |url: |action: 
+2020-10-23 09:47:58.3866|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAceptados en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-10-23 09:47:58.3866|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 09:47:58.3907|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 09:47:58.3907|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 09:47:58.3907|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 09:47:58.3907|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-23 09:47:58.3907|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAceptados con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-23 09:47:58.3907|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 09:47:58.4082|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAceptados |url: |action: 
+2020-10-23 09:49:15.4921|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregasPedidoxId en Api Pedidos con el parámetro id = 1 |url: |action: 
+2020-10-23 09:49:15.5265|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 09:49:15.5504|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 09:49:15.5637|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 09:49:15.5637|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-10-23 09:49:15.5637|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 09:49:15.5781|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 09:49:15.5781|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 1 |url: |action: 
+2020-10-23 09:49:15.5954|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 11:52:44.8438|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerTiposVehiculosFiltrados en Api Vehiculos con el parámetro cantidadEntrega = 55 |url: |action: 
+2020-10-23 11:52:44.8917|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerTiposVehiculosFiltrados en BO Vehiculos con el parámetro cantidad = 55 |url: |action: 
+2020-10-23 11:53:08.8506|EVO_WebApi.Controllers.PedidosApiController|Entró al método AgregarEntregas en Api Pedidos con los parámetros [{"PedidoId":1,"FechaEntrega":"23/10/2020","HoraEntrega":"11:52","TipoVehiculoId":1,"Detalles":[{"DetallePedidoId":1,"Cantidad":55.0}]}] |url: |action: 
+2020-10-23 11:53:08.8617|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 11:53:08.9066|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 11:53:08.9066|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 11:53:08.9066|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 11:53:08.9510|EVO_BusinessLogic.BLPedido|Entró al método AgregarEntregas con los parámetros: entregas: [{"TipoVehiculoId":1,"PedidoId":1,"NumeroEntrega":0,"UsuarioId":0,"FechaEntrega":"23/10/2020","FechaRegistro":"0001-01-01T00:00:00","HoraEntrega":"11:52","FechaHoraEntrega":"0001-01-01T00:00:00","MotivoEdicionId":null,"EstadoEntregaId":null,"EstadoEntrega":null,"Detalles":[{"DetalleEntregaId":0,"DetallePedidoId":1,"Cantidad":55.0}]}] y usuario ANTIOQUENA\hsanchez |url: |action: 
+2020-10-23 11:53:08.9529|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuarioPorUsuario con el parámetro: nombreUsuario = hsanchez |url: |action: 
+2020-10-23 11:53:09.0070|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidoxId con el parámetro: pedidoId: 1 |url: |action: 
+2020-10-23 11:53:09.2225|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : EXPRESION_REGULAR_FECHA_DDMMAA |url: |action: 
+2020-10-23 11:53:09.2225|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : EXPRESION_REGULAR_HORA_HHMM |url: |action: 
+2020-10-23 11:53:09.3907|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregasPedidoxId en Api Pedidos con el parámetro id = 1 |url: |action: 
+2020-10-23 11:53:09.3907|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 11:53:09.3907|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 11:53:09.3907|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 11:53:09.3907|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 11:53:09.3907|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 1 |url: |action: 
+2020-10-23 11:53:09.6296|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 14:55:31.1744|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregaxId en Api Pedidos con el parámetro id = 4 |url: |action: 
+2020-10-23 14:55:31.1744|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerArticulosPendientes en Api Pedidos con el parámetro entregaId = 4 |url: |action: 
+2020-10-23 14:55:31.1744|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-10-23 14:55:31.2173|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerArticulosPendientes en BLEntregas con el parámetro entregaId = 4 |url: |action: 
+2020-10-23 14:55:31.2173|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 14:55:31.4372|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerEntregaxId con el parámetro: id: 4 |url: |action: 
+2020-10-23 14:55:32.5443|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 14:55:32.5572|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 14:55:32.5644|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 14:55:32.5644|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregaxId con el parámetro: id: 4 |url: |action: 
+2020-10-23 14:55:32.8128|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 1 |url: |action: 
+2020-10-23 14:55:32.8128|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 14:55:33.1884|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregasPedidoxId en Api Pedidos con el parámetro id = 1 |url: |action: 
+2020-10-23 14:55:33.1884|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 14:55:33.1884|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 14:55:33.2018|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 14:55:33.2018|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 14:55:33.2018|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 14:55:33.2018|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 1 |url: |action: 
+2020-10-23 14:55:33.2201|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 14:55:34.4229|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregaxId en Api Pedidos con el parámetro id = 4 |url: |action: 
+2020-10-23 14:55:34.4229|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerArticulosPendientes en Api Pedidos con el parámetro entregaId = 4 |url: |action: 
+2020-10-23 14:55:34.4229|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 14:55:34.4229|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerArticulosPendientes en BLEntregas con el parámetro entregaId = 4 |url: |action: 
+2020-10-23 14:55:34.4229|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerEntregaxId con el parámetro: id: 4 |url: |action: 
+2020-10-23 14:55:34.4229|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 14:55:34.4229|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 14:55:34.4229|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 1 |url: |action: 
+2020-10-23 14:55:34.4229|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 14:55:34.4385|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregaxId con el parámetro: id: 4 |url: |action: 
+2020-10-23 14:55:34.4385|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 14:55:37.7328|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregasPedidoxId en Api Pedidos con el parámetro id = 1 |url: |action: 
+2020-10-23 14:55:37.7328|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 14:55:37.7328|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 14:55:37.7328|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-10-23 14:55:37.7328|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 14:55:37.7328|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 14:55:37.7328|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 14:55:37.7504|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 1 |url: |action: 
+2020-10-23 14:55:37.7504|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 14:55:41.1933|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-10-23 14:55:41.2103|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-10-23 14:55:41.2437|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-10-23 14:55:42.1838|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregasPedidoxId en Api Pedidos con el parámetro id = 1 |url: |action: 
+2020-10-23 14:55:42.1838|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 14:55:42.1904|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 14:55:42.1904|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-10-23 14:55:42.1904|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 14:55:42.1904|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 14:55:42.1904|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 14:55:42.1904|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 1 |url: |action: 
+2020-10-23 14:55:42.2097|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 14:58:55.5649|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregaxId en Api Pedidos con el parámetro id = 4 |url: |action: 
+2020-10-23 14:58:55.5649|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 14:58:55.5649|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerArticulosPendientes en Api Pedidos con el parámetro entregaId = 4 |url: |action: 
+2020-10-23 14:58:55.5649|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerArticulosPendientes en BLEntregas con el parámetro entregaId = 4 |url: |action: 
+2020-10-23 14:58:55.5649|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerEntregaxId con el parámetro: id: 4 |url: |action: 
+2020-10-23 14:58:55.5649|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-10-23 14:58:55.5649|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 14:58:55.5816|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 14:58:55.5816|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 14:58:55.5816|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregaxId con el parámetro: id: 4 |url: |action: 
+2020-10-23 14:58:55.6129|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 1 |url: |action: 
+2020-10-23 14:58:55.6129|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 15:00:19.3868|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregasPedidoxId en Api Pedidos con el parámetro id = 1 |url: |action: 
+2020-10-23 15:00:19.3868|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 15:00:19.3892|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-10-23 15:00:19.3892|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 15:00:19.3892|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 15:00:19.3892|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 15:00:19.4060|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 15:00:19.4060|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 1 |url: |action: 
+2020-10-23 15:00:19.4372|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 15:01:49.6561|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregaxId en Api Pedidos con el parámetro id = 4 |url: |action: 
+2020-10-23 15:01:49.6561|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerArticulosPendientes en Api Pedidos con el parámetro entregaId = 4 |url: |action: 
+2020-10-23 15:01:49.6561|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-10-23 15:01:49.6561|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 15:01:49.6561|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerArticulosPendientes en BLEntregas con el parámetro entregaId = 4 |url: |action: 
+2020-10-23 15:01:49.6561|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerEntregaxId con el parámetro: id: 4 |url: |action: 
+2020-10-23 15:01:49.6561|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 15:01:49.6728|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 15:01:49.6728|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 15:01:49.6728|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregaxId con el parámetro: id: 4 |url: |action: 
+2020-10-23 15:01:49.7065|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 1 |url: |action: 
+2020-10-23 15:01:49.7065|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 15:02:24.4689|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregasPedidoxId en Api Pedidos con el parámetro id = 1 |url: |action: 
+2020-10-23 15:02:24.4689|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 15:02:24.4689|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 15:02:24.4689|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-10-23 15:02:24.4689|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 15:02:24.4834|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 15:02:24.4834|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 15:02:24.4834|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 1 |url: |action: 
+2020-10-23 15:02:24.5163|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-10-23 15:02:25.9838|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAceptados en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-10-23 15:02:25.9838|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 15:02:25.9838|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 15:02:25.9838|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 15:02:25.9838|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 15:02:25.9838|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-23 15:02:26.0004|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAceptados con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-23 15:02:26.0004|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 15:02:26.0405|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAceptados |url: |action: 
+2020-10-23 15:02:26.0646|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAceptados en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-10-23 15:02:26.0646|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-23 15:02:26.0646|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-23 15:02:26.0646|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-23 15:02:26.0646|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-23 15:02:26.0646|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-23 15:02:26.0787|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAceptados con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-23 15:02:26.0787|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-23 15:02:26.0787|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAceptados |url: |action: 

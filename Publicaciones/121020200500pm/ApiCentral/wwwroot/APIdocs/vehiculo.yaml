@@ -1,0 +1,295 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Vehiculos
+    url: https://evo/api
+info:
+  description:
+   API de administración de Vehiculos
+  version: "1.0.0"
+  title: API de Vehiculos
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Vehiculos
+    description: Gestión de Vehiculos
+paths:
+  /vehiculos/tiposvehiculo/filtrados/:
+    get:
+      tags:
+        - Vehiculos
+      summary: Obtiene los tipos de vehiculos capaces de llevar la entrega
+      parameters:
+        - name : cantidadEntrega
+          in: query
+          description: Indica el peso en kilogramos de la entrega
+          required: true
+          schema:
+           type: number
+      operationId: obtenerTiposVehiculosFiltrados
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/TipoVehiculoResponse' 
+  /vehiculos/actualizar/vehiculo/enrutamiento:
+    put:
+      tags:
+        - Vehiculos
+      summary: Actualizar el encabezado del viaja asociados en enrutamiento
+      operationId: actualizarVehiculoEnrutamiento
+      requestBody:
+          $ref: '#/components/requestBodies/ActualizaVehiculoEnrutamientoRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+  /vehiculos/obtener/vehiculo/enrutamiento:
+    get:
+      tags:
+        - Vehiculos
+      summary: Obtiene el estado actual del vehiculo,conductor,auxiliar y muelle en enrutamiento
+      parameters:
+        - name : vehiculoEntregaId
+          in: query
+          description: Indica el id del viaje
+          required: true
+          schema:
+           type: integer
+      operationId: obtenerVehiculoEnrutamiento
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  items:
+                   $ref: '#/components/schemas/VehiculoEnrutamientoResponse' 
+  /vehiculos/muelles:
+   get:
+      tags:
+        - Vehiculos
+      summary: Obtiene los muelles para asignar cargue de vehículo
+      operationId: ObtenerMuelles      
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/MuelleResponse'   
+  /vehiculos/conductoresyauxiliares:
+   get:
+      tags:
+        - Vehiculos
+      summary: Obtiene todos los empleados tipo conductor o auxiliar
+      operationId: ObtenerConductoresAuxiliares      
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/EmpleadoResponse'            
+  /vehiculos/tipovehiculo:
+    get:
+      tags:
+        - Vehiculos
+      summary: Obtiene los tipos de vehiculos
+      operationId: obtenerTipoVehiculo
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/TipoVehiculoResponse'        
+  /vehiculos:
+    get:
+      tags:
+        - Vehiculos
+      summary: Obtiene los vehiculos por un tipo
+      operationId: obtenerVehiculoxTipo
+      parameters:
+        - name: id
+          in: query
+          description: Indica el id del tipo de vehiculo
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/VehiculoResponse'                       
+components:
+  schemas:
+    ActualizaVehiculoEnrutamientoRequest: 
+      type: object
+      description: Solicitud de parámetros del vehiculo para actualizar en enrutamiento
+      properties:
+        vehiculoEntregaId:
+          type: integer
+          example: 1
+          description: Id del viaje
+        vehiculoId:
+          type: integer
+          example: 1
+          description: Id del vehiculo
+        muelleId:
+          type: integer
+          example: 1
+          description: Id del muelle
+        conductorId:
+          type: integer
+          example: 1
+          description: Id del conductor
+        auxiliarId:
+          type: integer
+          example: 1
+          description: Id del auxiliar 
+    VehiculoEnrutamientoResponse:
+      type: object
+      description: Respuesta de vehiculo en enrutamiento
+      properties:
+        vehiculoEntregaId:
+          type: integer
+          example: 1
+          description: Id del viaje
+        tipoVehiculoId:
+          type: integer
+          example: 1
+          description: Id del tipo del vehiculo 
+        vehiculoId:
+          type: integer
+          example: 1
+          description: Id del vehiculo
+        muelleId:
+          type: integer
+          example: 1
+          description: Id del muelle
+        conductorId:
+          type: integer
+          example: 1
+          description: Id del conductor
+        auxiliarId:
+          type: integer
+          example: 1
+          description: Id del auxiliar  
+    EmpleadoResponse:
+       type: object
+       required:
+        - empleadoId
+        - nombres
+        - apellidos
+        - cedula
+        - cargo
+       description: Respuesta de un empleado
+       properties:
+        empleadoId:
+          type: integer
+          example: 1
+          description: Id del empleado
+        nombres:
+          type: string
+          example: "Juan Camilo"
+          description: Nombres
+        apellidos:
+             type: string
+             example: "Usuga Sepúlveda"
+             description: Apellidos
+        cedula:
+             type: string
+             example: "9734539"
+             description: Cédula
+        cargo:
+             type: string
+             example: "Auxiliar"
+             description: Tipo de cargo  
+    VehiculoResponse:
+       type: object
+       required:
+        - vehiculoId
+        - placa
+        - capacidad
+       description: Indica un vehiculo
+       properties:
+        vehiculoId:
+          type: integer
+          example: 1
+          description: Id del vehiculo
+        placa:
+          type: string
+          example: "LRY-24E"
+          description: Número de la placa  
+        capacidad:
+             type: number
+             format: decimal
+             example: 234.13
+             description: Capacidad de peso 
+    TipoVehiculoResponse:
+       type: object
+       required:
+        - TipoVehiculoId
+        - TipoVehiculo
+       description: Indica un tipo de vehiculo
+       properties:
+        TipoVehiculoId:
+          type: integer
+          example: 1
+          description: Id del tipo de vehiculo
+        TipoVehiculo:
+          type: string
+          example: "Doble troque"
+          description: Tipo de vehiculo
+        capacidad:
+             type: number
+             format: decimal
+             example: 234
+             description: Capacidad
+        canastas:
+             type: number
+             format: decimal
+             example: 24.13
+             description: Canasta 
+        peso:
+             type: number
+             format: decimal
+             example: 8.13
+             description: Peso    
+    MuelleResponse:
+         type: object
+         required:
+          - MuelleId
+          - Muelle
+         description: Indica un muelle
+         properties:
+          MuelleId:
+            type: integer
+            example: 1
+            description: Id del muelle
+          Muelle:
+            type: string
+            example: "Muelle 1"
+            description: Valor del muelle
+  requestBodies:
+    ActualizaVehiculoEnrutamientoRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ActualizaVehiculoEnrutamientoRequest'
+      description: Solicitud de actualización de vehículo en enrutamiento
+      required: true

@@ -1,0 +1,233 @@
+﻿<Window
+    x:Class="EVO_PV.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:Notifications.Wpf.Controls;assembly=Notifications.Wpf"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:system="clr-namespace:System;assembly=System.Runtime"
+    Title="Evo Punto de Venta"
+    Width="800"
+    Height="450"
+    xml:lang="ES-mx"
+    WindowStartupLocation="CenterScreen"
+    WindowState="Maximized"
+    mc:Ignorable="d">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Style/style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu">
+            <BeginStoryboard Storyboard="{StaticResource MenuOpen}" />
+        </EventTrigger>
+
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu">
+            <BeginStoryboard Storyboard="{StaticResource MenuClose}" />
+        </EventTrigger>
+    </Window.Triggers>
+
+
+    <Grid x:Name="principalGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="ColumnGridMenu" Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+
+
+        <controls:NotificationArea
+            x:Name="WindowArea"
+            Grid.ColumnSpan="2"
+            Margin="0,0,30,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Stretch"
+            VerticalContentAlignment="Stretch"
+            Panel.ZIndex="99999999"
+            Grid.IsSharedSizeScope="True"
+            MaxItems="10"
+            Position="TopRight" />
+        <Grid
+            x:Name="GridMenu"
+            Grid.Row="1"
+            Grid.Column="0"
+            Style="{StaticResource GridMenu}">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Resources/Images/Sidebar.jpg" Opacity="0.1" />
+            </Grid.Background>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="2" />
+                    <RowDefinition Height="326*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Row="0" Style="{StaticResource ContentLogo}">
+                    <Grid x:Name="contentImg" Height="100">
+
+                        <Button
+                            x:Name="ImageOpen"
+                            BorderBrush="{x:Null}"
+                            Style="{StaticResource LogoEvoOpen}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/Resources/Images/LogoEvo.png" Stretch="Uniform" />
+                            </Button.Background>
+                        </Button>
+
+                        <Button
+                            x:Name="ImageClose"
+                            BorderBrush="{x:Null}"
+                            Style="{StaticResource LogoEvoClose}">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/Resources/Images/LogoEvo.png" Stretch="Uniform" />
+                            </Button.Background>
+                        </Button>
+
+                    </Grid>
+                </StackPanel>
+
+                <Rectangle Grid.Row="1" Style="{StaticResource Line}" />
+
+                <ScrollViewer
+                    x:Name="ScrollMenu"
+                    Grid.Row="2"
+                    Style="{DynamicResource ScrollMenu}">
+                    <StackPanel x:Name="Menu" Margin="10,10,10,0" />
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+
+        <Grid
+            x:Name="GridContent"
+            Grid.Column="1"
+            Style="{StaticResource ContentPage}">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Button
+                x:Name="ButtonOpenMenu"
+                Grid.Row="0"
+                Width="40"
+                Height="40"
+                Margin="20,15"
+                Padding="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="#ffffff"
+                BorderBrush="#ffffff"
+                Click="ButtonMenu_Open"
+                Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"
+                Visibility="Collapsed">
+                <materialDesign:PackIcon Foreground="#999999" Kind="ViewQuilt" />
+            </Button>
+
+            <Button
+                x:Name="ButtonCloseMenu"
+                Grid.Row="0"
+                Width="40"
+                Height="40"
+                Margin="20,15"
+                Padding="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="#ffffff"
+                BorderBrush="#ffffff"
+                Click="ButtonMenu_Close"
+                Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}">
+                <materialDesign:PackIcon Foreground="#999999" Kind="MoreVert" />
+            </Button>
+
+
+            <ContentControl
+                Grid.Row="0"
+                Margin="100,0,0,0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch">
+                <Frame x:Name="StickyContent" Style="{StaticResource PrincipalFrame}" />
+            </ContentControl>
+            <ScrollViewer
+                x:Name="GeneralScroll"
+                Grid.Row="1"
+                Style="{StaticResource GeneralScroll}">
+                <materialDesign:TransitioningContent
+                    x:Name="TransitioningContentSlides"
+                    Grid.Row="1"
+                    Margin="0,0,0,0"
+                    OpeningEffect="{materialDesign:TransitionEffect SlideInFromRight,
+                                                                    Duration=0:0:0.5}">
+                    <Frame x:Name="ContentPage" Style="{StaticResource PrincipalFrame}" />
+                </materialDesign:TransitioningContent>
+            </ScrollViewer>
+        </Grid>
+
+        <materialDesign:DialogHost
+            x:Name="ModalPrincipal"
+            Grid.ColumnSpan="2"
+            CloseOnClickAway="True"
+            IsOpen="{Binding IsOpenModal}">
+            <materialDesign:DialogHost.DialogContent>
+                <Frame x:Name="ModalContainer" Style="{StaticResource PrincipalFrame}" />
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+
+        <materialDesign:DialogHost
+            x:Name="ModalPrincipalConfirmation"
+            Grid.ColumnSpan="2"
+            CloseOnClickAway="True"
+            IsOpen="{Binding IsOpenModal}">
+            <materialDesign:DialogHost.DialogContent>
+                <Frame x:Name="ModalContainerConfirmation" Style="{StaticResource PrincipalFrame}" />
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+
+
+        <materialDesign:DialogHost
+            x:Name="ModalLoading"
+            Grid.ColumnSpan="2"
+            Background="Transparent"
+            CloseOnClickAway="True"
+            IsOpen="True">
+            <materialDesign:DialogHost.DialogContent>
+                <Frame
+                    x:Name="LoadingElement"
+                    Width="400"
+                    Height="200"
+                    Background="Transparent"
+                    Style="{StaticResource PrincipalFrame}" />
+            </materialDesign:DialogHost.DialogContent>
+        </materialDesign:DialogHost>
+
+        <Canvas
+            x:Name="InformationLayer"
+            Grid.Column="1"
+            Width="800"
+            Height="30"
+            Margin="30,0,0,60"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Bottom">
+
+            <Frame x:Name="FrameUCPopPages" />
+
+        </Canvas>
+    </Grid>
+
+</Window>

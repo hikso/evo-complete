@@ -1,0 +1,124 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Recepción
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Recepción
+  version: "1.0.0"
+  title: API de Recepción
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Recepcion
+    description: Gestión de Recepción
+paths:
+  /recepcion/confirmar:
+    post:
+        tags:
+          - Recepcion
+        summary: Confirma que se recibió la mercancia 
+        operationId: asignarConfirmacion
+        parameters:
+          - name: entregaId
+            in: query
+            description: Indica el id de la entrega
+            required: true
+            schema:
+              type: integer
+        responses:
+            '200':
+              description: Operación realizada con éxito
+              content:
+                  application/json:
+                    schema:
+                      type: array
+                      items:
+                       $ref: '#/components/schemas/recepcionResponse'     
+  /recepcion/encabezado:
+    get:
+      tags: 
+        - Recepcion
+      summary: Obtiene el consolidado
+      operationId: obtenerEncabezadoRecepcion
+      parameters:
+        - name: entregaId
+          in: query
+          description: Indica el id de la entrega
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:              
+              application/json:
+                schema:                  
+                    $ref: '#/components/schemas/recepcionEncabezadoResponse'                     
+components:
+  schemas:
+    recepcionEncabezadoResponse:
+      type: object
+      description: Representa el encabezado de recepción
+      properties:
+        pesajeEntregaId:
+          type: integer
+          example: 1
+          description: Id del pesaje de la entrega
+        nombreCliente:
+          type: string
+          example: 'San Antonio de Prado'
+          description: Nombre del cliente   
+        consecutivo:
+          type: integer
+          example: 1
+          description: Consecutivo del pesaje por entrega
+        fechaEntrega:
+          type: string
+          example: '11/12/2020'
+          description: Fecha entrega
+        fechaActual:
+          type: string
+          example: '12/12/2020'
+          description: Fecha actual        
+        finalizado:
+          type: boolean
+          example: true
+          description: Indica si se finalizó el pesaje
+         realiarPesajePorCodigoDeBarras:
+          type: boolean
+          example: true
+          description: Indica si se realiza pesaje por dódigo de barras en ese PV
+        inconsistenciaCodigoBarras:
+          type: boolean
+          example: true
+          description: Indica si existe alguna inconsistencia entre pesaje de código de barras y báscula
+        documentos:
+          type: array
+          items:             
+            $ref: '#/components/schemas/articuloDocumentoResponse'
+    recepcionResponse:
+      type: object
+      description: Representa la respuesta de una recepción de mercancia
+      properties:        
+        inconsistenciaCodigoBarras:
+          type: boolean
+          example: true
+          description: Indica si existe alguna inconsistencia entre pesaje de código de barras y báscula   
+        documentos:
+          type: array
+          items:             
+            $ref: '#/components/schemas/articuloDocumentoResponse'
+    articuloDocumentoResponse:
+      type: object
+      description: Representa representa que documento se generó por un artículo en recepción
+      properties:        
+        documentoId:
+          type: integer
+          example: 1
+          description: Id del documento
+        nombreDocumento:
+          type: string
+          example: 2
+          description: Nombre del documento   

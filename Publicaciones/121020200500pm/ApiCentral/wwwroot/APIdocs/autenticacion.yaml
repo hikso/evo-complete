@@ -1,0 +1,211 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Autenticación de Usuario
+    url: https://evo/api
+info:
+  description: 
+   API de administración de autenticación de usuario
+  version: "1.0.0"
+  title: API de Autenticación de Usuario
+  termsOfService: "https://www.porcicarnes.com/"
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Autenticacion
+    description: WebAPI encargada de gestionar la autenticación de usuario
+paths:
+  /autenticar:
+    post:
+      tags:
+        - Autenticacion
+      summary: Autentifica al usuario en el sistema
+      operationId: autenticar
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/AutenticarResponse'
+      requestBody:
+          $ref: '#/components/requestBodies/AutenticarRequest'
+  /sesion:  
+    get:
+      tags:
+        - Autenticacion
+      summary: Obtiene los registros de las sesiones
+      operationId: obtenerTodosSesiones
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosSesionesResponse'      
+  /sesion/filtrar:
+    post:
+      tags:
+        - Autenticacion
+      summary: Obtiene todos los registros de Sesiones aplicando filtros de búsqueda
+      operationId: obtenerTodosRegistrosxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarSesionRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosSesionesResponse'                
+        
+components:
+  schemas:
+    FiltrarSesionRequest:
+       type: object
+       description: Objeto que contiene los filtros de las Sesiones
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+            sesionId:
+              type: string
+              example: "1"
+              description: Filtro por sesion Id
+            ip:
+              type: string
+              example: "192.168"
+              description: Filtro por IP
+            token:
+              type: string
+              example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+              description: Filtro por token
+            usuario:
+              type: string
+              example: "JUsuga"
+              description: Filtro por usuario
+            fecheInicio:
+              type: string
+              example: "2019"
+              description: Filtro por fecha de inicio  
+            fecheExpiracion:
+              type: string
+              example: "2019"
+              description: Filtro por fecha de expiración 
+              
+    ObtenerTodosSesionesResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de registros de Auditoria
+          items:
+            type: object
+            properties:
+              sesionId:
+                type: string
+                example: "1"
+                description: Id de la sesión
+              ip:
+                type: string
+                example: "192.168.1.2"
+                description: Indica la IP de donde se solicitó iniciar sesión
+              token:
+                type: string
+                example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                description: Indica el token generado en el servidor
+              usuario:
+                type: string
+                example: "JUsuga"
+                description: Inidica el usuario al cual se le asignó la sesión
+              fechaInicio:
+                type: string
+                example: "30/08/2019 12:01:02"
+                description: Indica la fecha de inicio de la sesión del usuario
+              fechaExpiracion:
+                type: string
+                example: "30/08/2019 12:11:02"
+                description: Indica la fecha de expiración de la sesión del usuario
+              activa:
+                type: boolean
+                example: true
+                description: Indica si la sesion está o no está activa
+  
+    AutenticarResponse:
+       type: object
+       required:
+        - estaAutenticado
+       description: Objeto de respuesta que contiene el token y fecha de expiración si la respuesta de autenticación es correcta
+       properties:
+        estaAutenticado:
+           type: boolean
+           example: true
+           description: Indica si fué o no fué autenticado el usuario
+        token:
+           type: string
+           example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+           description: Indica el token generado en el servidor
+        fechaExpiracion:
+           type: string
+           format: date-time
+           example: 2018-03-20T09:12:28Z
+           description: Indica la fecha de expiración del usuario
+           
+    AutenticarRequest:
+       type: object
+       required:
+        - usuario
+       description: Objeto de solicitud que contiene el usuario del Usuario
+       properties:
+        usuario:
+          type: string
+          example: DOMINIO\USUARIO
+          description: Usuario del Usuario con formato Dominio\Usuario 
+    
+  requestBodies:
+    AutenticarRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AutenticarRequest'
+      description: Solicititud de autenticación del usuario
+      required: true
+    
+    FiltrarSesionRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarSesionRequest'
+      description: Solicitud de filtro de Sesiones. Se debe ingresar al menos uno de los criterios del filtro
+      required: true  
+   

@@ -1,0 +1,69 @@
+ -------------- Error (2020-09-24 15:59:40.8042) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-09-24 16:10:12.0443) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: System.NullReferenceException
+ Exception Message: Object reference not set to an instance of an object.
+ Stack Trace:    at EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(List`1 compras, Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-test\EVO-DataAccess\DataAccess\DAArticulo.cs:line 328
+   at EVO_BusinessLogic.BLArticulo.ActualizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-test\EVO-BusinessLogic\BLArticulo.cs:line 943
+ Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+   at EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(List`1 compras, Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-test\EVO-DataAccess\DataAccess\DAArticulo.cs:line 328
+   at EVO_BusinessLogic.BLArticulo.ActualizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-test\EVO-BusinessLogic\BLArticulo.cs:line 943
+
+ -------------- Error (2020-09-24 16:11:38.1163) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: System.NullReferenceException
+ Exception Message: Object reference not set to an instance of an object.
+ Stack Trace:    at EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(List`1 compras, Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-test\EVO-DataAccess\DataAccess\DAArticulo.cs:line 328
+   at EVO_BusinessLogic.BLArticulo.ActualizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-test\EVO-BusinessLogic\BLArticulo.cs:line 943
+ Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+   at EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(List`1 compras, Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-test\EVO-DataAccess\DataAccess\DAArticulo.cs:line 328
+   at EVO_BusinessLogic.BLArticulo.ActualizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-test\EVO-BusinessLogic\BLArticulo.cs:line 943
+
+ -------------- Error (2020-09-24 16:12:50.3911) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: System.NullReferenceException
+ Exception Message: Object reference not set to an instance of an object.
+ Stack Trace:    at EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(List`1 compras, Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-test\EVO-DataAccess\DataAccess\DAArticulo.cs:line 328
+   at EVO_BusinessLogic.BLArticulo.ActualizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-test\EVO-BusinessLogic\BLArticulo.cs:line 943
+ Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+   at EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(List`1 compras, Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-test\EVO-DataAccess\DataAccess\DAArticulo.cs:line 328
+   at EVO_BusinessLogic.BLArticulo.ActualizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-test\EVO-BusinessLogic\BLArticulo.cs:line 943
+
+ -------------- Error (2020-09-24 16:15:13.9768) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: System.NullReferenceException
+ Exception Message: Object reference not set to an instance of an object.
+ Stack Trace:    at EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(List`1 compras, Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-test\EVO-DataAccess\DataAccess\DAArticulo.cs:line 328
+   at EVO_BusinessLogic.BLArticulo.ActualizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-test\EVO-BusinessLogic\BLArticulo.cs:line 943
+ Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+   at EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(List`1 compras, Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-test\EVO-DataAccess\DataAccess\DAArticulo.cs:line 328
+   at EVO_BusinessLogic.BLArticulo.ActualizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-test\EVO-BusinessLogic\BLArticulo.cs:line 943
+
+ -------------- Error (2020-09-24 16:20:00.6406) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.FinalizarCompra
+ Exception Type: System.NullReferenceException
+ Exception Message: Object reference not set to an instance of an object.
+ Stack Trace:    at EVO_DataAccess.DataAccess.DAArticulo.FinalizarCompra(List`1 compras, Int32 pedidoId, Int32 estadoPedidoId) in C:\EVO\CodigoFuente\EVO-test\EVO-DataAccess\DataAccess\DAArticulo.cs:line 393
+   at EVO_BusinessLogic.BLArticulo.FinalizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-test\EVO-BusinessLogic\BLArticulo.cs:line 288
+ Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+   at EVO_DataAccess.DataAccess.DAArticulo.FinalizarCompra(List`1 compras, Int32 pedidoId, Int32 estadoPedidoId) in C:\EVO\CodigoFuente\EVO-test\EVO-DataAccess\DataAccess\DAArticulo.cs:line 393
+   at EVO_BusinessLogic.BLArticulo.FinalizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-test\EVO-BusinessLogic\BLArticulo.cs:line 288
+

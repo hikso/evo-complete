@@ -1,0 +1,311 @@
+ -------------- Error (2020-10-28 09:15:42.7794) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:d80d3559-d008-4585-8a75-be6de56e3b28
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-28 09:15:42.8769) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-28 09:15:42.9513) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:d80d3559-d008-4585-8a75-be6de56e3b28
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-28 09:15:42.9513) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-28 10:49:51.4758) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 12:39:25.6121) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 14:40:00.0871) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 14:49:56.2996) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:12:02.9936) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:18:38.9447) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:22:56.0351) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:34:35.4717) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:36:18.1130) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:37:55.0034) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:39:32.7841) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:42:40.7532) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:44:55.7532) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:47:03.0970) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:48:08.8788) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:51:26.6429) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:52:56.2237) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:54:05.5970) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 15:55:41.2070) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 16:01:16.3466) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 16:02:47.3468) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 16:04:03.2086) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 16:36:59.4404) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 17:09:35.2389) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-28 23:23:26.5887) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+

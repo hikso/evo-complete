@@ -1,0 +1,18 @@
+2020-10-06 11:37:42.3250|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-06 11:37:58.7573|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-06 11:39:18.8823|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-06 11:39:37.3336|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-10-06 11:57:33.5699|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-06 11:57:39.8118|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-10-06 14:31:52.7065|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-06 14:32:09.3760|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-06 14:32:57.3505|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-06 14:33:05.3106|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-10-06 14:33:30.5887|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-06 14:33:35.4125|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-10-06 14:48:21.1579|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-06 14:48:26.1811|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-10-06 15:09:30.4566|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-06 15:09:40.0477|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-06 15:32:19.4346|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-06 15:32:33.8959|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 

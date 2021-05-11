@@ -1,0 +1,66 @@
+ -------------- Error (2020-12-17 09:06:56.3012) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-12-17 09:09:22.2865) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-12-17 09:13:31.9578) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-12-17 09:15:10.7100) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-12-17 09:20:47.0980) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-12-17 09:33:32.2553) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-12-17 09:33:46.4826) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerPedidoxId
+ Exception Type: System.NullReferenceException
+ Exception Message: Object reference not set to an instance of an object.
+ Stack Trace:    at EVO_DataAccess.DataAccess.DAPedido.ObtenerPedidoxId(Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAPedido.cs:line 3169
+   at EVO_BusinessLogic.BLPedido.ObtenerPedidoxId(Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLPedido.cs:line 6169
+ Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+   at EVO_DataAccess.DataAccess.DAPedido.ObtenerPedidoxId(Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAPedido.cs:line 3169
+   at EVO_BusinessLogic.BLPedido.ObtenerPedidoxId(Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLPedido.cs:line 6169
+

@@ -1,0 +1,9 @@
+ -------------- Error (2020-10-03 23:56:38.4902) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no está en EVO
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no está en EVO
+

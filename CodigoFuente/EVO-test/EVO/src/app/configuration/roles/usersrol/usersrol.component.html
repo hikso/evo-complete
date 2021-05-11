@@ -1,0 +1,185 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-right mb-4"> 
+                <a class="btn btn-success pull-right ml-3 btn-round btn-fab mat-raised-button" (click)="open(mymodal)">
+                    <span class="mat-button-wrapper">
+                        <i class="material-icons">how_to_reg</i>
+                    </span>
+                    <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </a>
+                <a  class="btn btn-info pull-right mat-raised-button" routerLink="/configuracion/adminrol">
+                    <span class="mat-button-wrapper">
+                        <i class="fa fa-chevron-left"></i> 
+                        <span class="ml-1">Regresar</span>
+                    </span>
+                    <div class="mat-button-ripple mat-ripple"></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </a>  
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">how_to_reg</i>
+                        </div>
+                        <h4 class="card-title">Usuarios Asociados</h4>
+                    </div>
+                    <div class="card-body">
+                        <p-table #dt class="table table-striped" [value]="rolUsers" selectionMode="multiple" [responsive]="true" 
+                            [resizableColumns]="true" columnResizeMode=expand [lazy]="true" (onLazyLoad)="loadCarsLazy($event)"
+                                [paginator]="false" [rows]="maxR" [totalRecords]="totalRow" [(selection)]="removeUsers">
+                                
+                            <!-- Dropdown para la selección del numero de filas, 
+                            por defecto tiene el valor parametrizado en base de datos  -->
+                            <ng-template pTemplate="caption">
+                                <div class="ui-grid ui-grid-responsive ui-fluid">
+                                <span class="pagewidth">
+                                    <p-dropdown (onChange)="onChange($event)" [options]="maxregister" optionLabel="name"
+                                    [showClear]="true"></p-dropdown>
+                                </span>
+                                <span class="bold pagewidth text-corp">
+                                    Mostrar
+                                </span>
+                                </div>
+                            </ng-template>
+                
+                            <!-- Encabezado de tabla -->
+                            <ng-template pTemplate="header">
+                                <tr class="text-corp" > 
+                                    <th class="columnCheck" id="init">
+                                        <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                                    </th>
+                                    <th *ngFor="let item of columns" class="{{ item.class }}  align-items-center"> {{ item.header }}</th>
+                                </tr>
+                                                        
+                                <!-- Fltros Buscar por columnas -->
+                                <tr>
+                                    <th></th>
+                                    <th *ngFor="let col of columns" [ngSwitch]="col.field">
+                                        <div class="ui-inputgroup" *ngSwitchCase="'usuario'">
+                                            <input class="form-control" pInputText type="text"
+                                            (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                        </div>
+                                        <div class="ui-inputgroup" *ngSwitchCase="'nombre'">
+                                            <input class="form-control" pInputText type="text"
+                                            (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </ng-template>
+                
+                            <!-- Contenido de la tabla -->
+                            <ng-template pTemplate="body" let-rolUsers >
+                                <tr class="ng-star-inserted" [pSelectableRow]="rolUsers" class="select">
+                                    <td>
+                                        <p-tableCheckbox [value]="rolUsers"></p-tableCheckbox>
+                                    </td>
+                                    <td>{{ rolUsers.usuario }}</td>
+                                    <td>{{ rolUsers.nombre }}</td>
+                                </tr>
+                            </ng-template>
+                
+                            <!-- Contenido de la tabla con 0 registros -->
+                            <ng-template pTemplate="emptymessage" let-columns>
+                                <tr class="text-center">
+                                <td [attr.colspan]="3">
+                                    <p>No hay registros disponibles para mostrar</p>
+                                </td>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+                
+                        <div>                            
+                            <a  class="btn btn-danger mat-raised-button mt-2" (click)=DeletedUsers()>
+                                <span class="mat-button-wrapper">
+                                    <i class="material-icons">delete_forever</i>
+                                    <span class="ml-1">Eliminar</span>
+                                </span>
+                                <div class="mat-button-ripple mat-ripple"></div>
+                                <div class="mat-button-focus-overlay"></div>
+                            </a>
+                        </div>
+                        <!-- Paginación -->
+                        <div class="footpaginator">
+                            <p-paginator #pg (onLazyLoad)="loadCarsLazy($event)" (onPageChange)="loadCarsLazy($event)"
+                            [rows]="maxR" [totalRecords]="totalRow" >
+                            </p-paginator>
+                            <span class="totalRow">{{ numFilas }} de {{ totalRow }} Registros</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal detalle de Auditoria -->
+<ng-template #mymodal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Asociar Usuario</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <p-table #getFilterM class="table table-striped" [value]="AllUsers" selectionMode="multiple" [responsive]="true" 
+            [paginator]="true" [rows]="10" [totalRecords]="totalRowM" [(selection)]="addUsers">
+                
+            <!-- Encabezado de tabla -->
+            <ng-template pTemplate="header">
+                <tr class="text-corp"> 
+                    <th class="columnCheck" id="initM">
+                        <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                    </th>
+                    <th *ngFor="let item of columns" class="{{ item.class }}  align-items-center"> {{ item.header }}</th>
+                </tr>
+                                        
+                <!-- Fltros Buscar por columnas -->
+                <tr>
+                    <th></th>
+                    <th *ngFor="let col of columns" [ngSwitch]="col.field">
+                        <div class="ui-inputgroup" *ngSwitchCase="'usuario'">
+                            <input class="form-control" pInputText type="text"
+                            (input)="getFilterM.filter($event.target.value, col.field, col.filterMatchMode)">
+                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                        </div>
+                        <div class="ui-inputgroup" *ngSwitchCase="'nombre'">
+                            <input class="form-control" pInputText type="text"
+                            (input)="getFilterM.filter($event.target.value, col.field, col.filterMatchMode)">
+                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                        </div>
+                    </th>
+                </tr>
+            </ng-template>
+
+            <!-- Contenido de la tabla -->
+            <ng-template pTemplate="body" let-AllUsers >
+                <tr class="ng-star-inserted" [pSelectableRow]="AllUsers" class="select">
+                    <td>
+                        <p-tableCheckbox [value]="AllUsers"></p-tableCheckbox>
+                    </td>
+                    <td>{{ AllUsers.usuario }}</td>
+                    <td>{{ AllUsers.nombre }}</td>
+            </ng-template>
+
+            <!-- Contenido de la tabla con 0 registros -->
+            <ng-template pTemplate="emptymessage" let-columns>
+                <tr class="text-center">
+                <td [attr.colspan]="3">
+                    <p>No hay registros disponibles para mostrar</p>
+                </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-danger mr-1" (click)="modal.dismiss('Cross click')">Cancelar</button>
+        <button type="button" class="btn btn-success" (click)="AddUsersRol()">Asociar</button>
+    </div>
+</ng-template>

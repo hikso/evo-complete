@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="addData" xml:space="preserve">
+    <value>Add Data</value>
+  </data>
+  <data name="addScales" xml:space="preserve">
+    <value>Add Scales</value>
+  </data>
+  <data name="article_order" xml:space="preserve">
+    <value>ARTICLE/ORDER</value>
+  </data>
+  <data name="article_plu" xml:space="preserve">
+    <value>ARTICLE/PLU</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="cancelled" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="cancelling" xml:space="preserve">
+    <value>Canceling . . .</value>
+  </data>
+  <data name="cancellingErr" xml:space="preserve">
+    <value>Canceling error</value>
+  </data>
+  <data name="closeServerErr" xml:space="preserve">
+    <value>Close Server error</value>
+  </data>
+  <data name="closeSockErr" xml:space="preserve">
+    <value>Closing socket error</value>
+  </data>
+  <data name="closeTime" xml:space="preserve">
+    <value>Close Time</value>
+  </data>
+  <data name="code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="concatenateFile" xml:space="preserve">
+    <value>Concatenate File</value>
+  </data>
+  <data name="conError" xml:space="preserve">
+    <value>Connection error</value>
+  </data>
+  <data name="createImageFile" xml:space="preserve">
+    <value>Create Image Register FILE</value>
+  </data>
+  <data name="deleteItems" xml:space="preserve">
+    <value>Delete items</value>
+  </data>
+  <data name="deleteScales" xml:space="preserve">
+    <value>Delete scales </value>
+  </data>
+  <data name="directKey" xml:space="preserve">
+    <value>Direct Key</value>
+  </data>
+  <data name="displaySize" xml:space="preserve">
+    <value>Display Size</value>
+  </data>
+  <data name="editData" xml:space="preserve">
+    <value>EDIT DATA</value>
+  </data>
+  <data name="export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="exporting" xml:space="preserve">
+    <value>Exporting . . .</value>
+  </data>
+  <data name="finished" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="FINSendErr" xml:space="preserve">
+    <value>FIN sending error</value>
+  </data>
+  <data name="generateItems" xml:space="preserve">
+    <value>Generate items</value>
+  </data>
+  <data name="generateItemsAutomatically" xml:space="preserve">
+    <value>Generate items automatically</value>
+  </data>
+  <data name="generateItemslabel" xml:space="preserve">
+    <value>Generate items</value>
+  </data>
+  <data name="generateScales" xml:space="preserve">
+    <value>Generate scales</value>
+  </data>
+  <data name="generateScalesAutomatically" xml:space="preserve">
+    <value>Generate scales automatically</value>
+  </data>
+  <data name="generateScalesButton" xml:space="preserve">
+    <value>Generate scales</value>
+  </data>
+  <data name="generating" xml:space="preserve">
+    <value>Generating . . .</value>
+  </data>
+  <data name="group" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="image" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="imageFile" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="imageFolder" xml:space="preserve">
+    <value>Image Folder</value>
+  </data>
+  <data name="imageID" xml:space="preserve">
+    <value>Image ID</value>
+  </data>
+  <data name="import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="importDataRegisters" xml:space="preserve">
+    <value>Import Data  using REGISTERS</value>
+  </data>
+  <data name="importImages" xml:space="preserve">
+    <value>Import IMAGES</value>
+  </data>
+  <data name="importing" xml:space="preserve">
+    <value>Importing . . .</value>
+  </data>
+  <data name="importItemsFile" xml:space="preserve">
+    <value>Import Items using FILES</value>
+  </data>
+  <data name="importItemsParameters" xml:space="preserve">
+    <value>Import Items using PARAMETERS</value>
+  </data>
+  <data name="inac_socket" xml:space="preserve">
+    <value>Inaccessible socket</value>
+  </data>
+  <data name="inches" xml:space="preserve">
+    <value>Inches</value>
+  </data>
+  <data name="IPAddress" xml:space="preserve">
+    <value>Ip Address</value>
+  </data>
+  <data name="item" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="items" xml:space="preserve">
+    <value>Items</value>
+  </data>
+  <data name="lenError" xml:space="preserve">
+    <value>Length of register &lt; 2</value>
+  </data>
+  <data name="logsError" xml:space="preserve">
+    <value>Logs file error</value>
+  </data>
+  <data name="logsFile" xml:space="preserve">
+    <value>Logs file</value>
+  </data>
+  <data name="manual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="masterAdd" xml:space="preserve">
+    <value>Master Address</value>
+  </data>
+  <data name="model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="netError" xml:space="preserve">
+    <value>Net error</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="noScaleSet" xml:space="preserve">
+    <value>At least one scale is needed to carry out the process</value>
+  </data>
+  <data name="nothing2read" xml:space="preserve">
+    <value>Waiting...Nothing to read</value>
+  </data>
+  <data name="numRegister" xml:space="preserve">
+    <value>Register No.</value>
+  </data>
+  <data name="opServerError" xml:space="preserve">
+    <value>Open Server error</value>
+  </data>
+  <data name="path" xml:space="preserve">
+    <value>Path</value>
+  </data>
+  <data name="PcIPAddress" xml:space="preserve">
+    <value>PC IP Address</value>
+  </data>
+  <data name="pcIPFormatError" xml:space="preserve">
+    <value>PC Ip format error</value>
+  </data>
+  <data name="pendRegErr" xml:space="preserve">
+    <value>Pending registers error</value>
+  </data>
+  <data name="price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="publicity" xml:space="preserve">
+    <value>PUBLICITY</value>
+  </data>
+  <data name="readingRegister" xml:space="preserve">
+    <value>Reading register</value>
+  </data>
+  <data name="readRegError" xml:space="preserve">
+    <value>ReadRegister Error</value>
+  </data>
+  <data name="receivedRegisters" xml:space="preserve">
+    <value>Received Registers</value>
+  </data>
+  <data name="receptionPortRX" xml:space="preserve">
+    <value>Reception Port RX</value>
+  </data>
+  <data name="register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="registers" xml:space="preserve">
+    <value>Registers</value>
+  </data>
+  <data name="registersFilePath" xml:space="preserve">
+    <value>Registers file path</value>
+  </data>
+  <data name="replaceFile" xml:space="preserve">
+    <value>Replace File</value>
+  </data>
+  <data name="resourceErr" xml:space="preserve">
+    <value>Releasing resources error</value>
+  </data>
+  <data name="result" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="scaleEndCom" xml:space="preserve">
+    <value>Scale ends communication</value>
+  </data>
+  <data name="scaleIPFormatError" xml:space="preserve">
+    <value>Scale Ip format error</value>
+  </data>
+  <data name="scales" xml:space="preserve">
+    <value>Scales</value>
+  </data>
+  <data name="Scales1" xml:space="preserve">
+    <value>Scales</value>
+  </data>
+  <data name="seconds" xml:space="preserve">
+    <value>Seconds</value>
+  </data>
+  <data name="sendImage" xml:space="preserve">
+    <value>Send Images</value>
+  </data>
+  <data name="sendPortTx" xml:space="preserve">
+    <value>Send Port Tx</value>
+  </data>
+  <data name="showWindow" xml:space="preserve">
+    <value>Show Window</value>
+  </data>
+  <data name="socketNoCon" xml:space="preserve">
+    <value>Socket is not connected</value>
+  </data>
+  <data name="startContinuous" xml:space="preserve">
+    <value>Start Continuous</value>
+  </data>
+  <data name="startEnd" xml:space="preserve">
+    <value>Start and End</value>
+  </data>
+  <data name="stopped" xml:space="preserve">
+    <value>Stopped</value>
+  </data>
+  <data name="timeoutCon" xml:space="preserve">
+    <value>Timeout without connection</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="unit" xml:space="preserve">
+    <value>UNIT</value>
+  </data>
+  <data name="unScaleCon" xml:space="preserve">
+    <value>Unexpected scale connection</value>
+  </data>
+  <data name="useFIles" xml:space="preserve">
+    <value>Use: dibalscopItems2.txt and dibalscopScales.ini files</value>
+  </data>
+  <data name="useGrid" xml:space="preserve">
+    <value>Use: Scales and Items grid</value>
+  </data>
+  <data name="useImages" xml:space="preserve">
+    <value>Use: Scales and Images grid</value>
+  </data>
+  <data name="useRegister" xml:space="preserve">
+    <value>Use: Scales and Registers grid</value>
+  </data>
+  <data name="waiting" xml:space="preserve">
+    <value>Waiting . . .</value>
+  </data>
+  <data name="weight" xml:space="preserve">
+    <value>WEIGHT</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+</root>

@@ -1,0 +1,9 @@
+﻿1. Separar en métodos las funcionalidades de la báscula. (Posibles y los que vamos a Necesitar).
+2. Necesitamos los siguientes métodos:
+	- Configurar Vendedores (Agregar, Eliminar, Modificar, Consultar - Falta consultar) OK
+	- Configurar Artículos (Agregar, Eliminar, Modificar, Consultar) OK
+	- Configurar Tecla Directa OK
+	- Configurar Balanza (IP y Puerto) OK
+
+	- Leer Peso: Sólo es posible, sí la balanza no está en red conectada con las otras balanzas.(Obtiene el peso vivo)
+	- Obtener Peso Epelsa: Debo de Generar Tiquete en un Archivo plano y leer este archivo en dónde se encuentra el peso.

@@ -1,0 +1,1069 @@
+2020-09-29 08:50:00.2556|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 08:50:00.2737|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"desde":1,"hasta":100,"filtro":null} |url: |action: 
+2020-09-29 08:50:00.2737|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"desde":1,"hasta":100,"filtro":null} |url: |action: 
+2020-09-29 08:50:00.2556|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-29 08:50:00.2865|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 08:50:00.3817|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 08:50:00.3817|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 08:50:00.3817|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 08:50:00.3817|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 08:50:05.1465|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 08:50:05.1465|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 08:50:05.1465|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 08:50:05.1740|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 08:50:05.1740|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 08:50:05.1740|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 08:50:05.1833|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 08:50:05.1833|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 08:50:05.1833|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 08:50:05.1938|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 08:50:05.1938|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 08:50:05.1938|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 08:50:05.1938|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-09-29 08:50:05.1938|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 08:50:05.2084|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 08:50:05.2332|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-29 08:50:05.2332|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-29 08:50:05.2332|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 08:50:05.2406|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 08:50:05.2696|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 08:50:05.3667|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 
+2020-09-29 08:50:05.3817|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-29 08:50:05.3817|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-29 08:50:05.3817|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 08:50:05.3817|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 08:50:12.1107|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 08:50:12.1168|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MINIMO_DECIMALES |url: |action: 
+2020-09-29 08:50:12.1168|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-09-29 08:50:12.1704|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedido en Api Pedidos con el parámetro 1 |url: |action: 
+2020-09-29 08:50:12.1704|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 08:50:12.1704|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 08:50:12.1822|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 08:50:12.1822|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 08:50:12.2044|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerEmpaques en EVO_WebApi - Api Artículos sin parámetros |url: |action: 
+2020-09-29 08:50:12.2044|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEmpaques en EVO_WebApi - BLArticulo sin parámetros |url: |action: 
+2020-09-29 08:50:12.2212|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosEstados en Api Artículos sin parámetros |url: |action: 
+2020-09-29 08:50:12.2247|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosEstados en BLArticulo sin parámetros |url: |action: 
+2020-09-29 08:50:12.2611|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-09-29 08:50:12.2878|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedido con el parámetro: pedidoId: 1 |url: |action: 
+2020-09-29 08:50:37.3001|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 08:50:37.3202|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 08:50:37.3418|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-09-29 08:50:40.0833|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosEstados en Api Artículos sin parámetros |url: |action: 
+2020-09-29 08:50:40.0833|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosEstados en BLArticulo sin parámetros |url: |action: 
+2020-09-29 08:50:40.0833|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerEmpaques en EVO_WebApi - Api Artículos sin parámetros |url: |action: 
+2020-09-29 08:50:40.1023|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEmpaques en EVO_WebApi - BLArticulo sin parámetros |url: |action: 
+2020-09-29 08:50:40.1225|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 08:50:40.1225|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedido en Api Pedidos con el parámetro 1 |url: |action: 
+2020-09-29 08:50:40.1225|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 08:50:40.1422|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 08:50:40.1422|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MINIMO_DECIMALES |url: |action: 
+2020-09-29 08:50:40.1422|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-09-29 08:50:40.1422|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-09-29 08:50:40.1515|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 08:50:40.1642|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 08:50:40.1642|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedido con el parámetro: pedidoId: 1 |url: |action: 
+2020-09-29 12:24:11.4970|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-29 12:24:11.4970|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:24:11.5347|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:24:12.6820|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:24:12.6946|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:24:12.6946|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:24:12.7104|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:24:12.7104|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:24:12.7104|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:24:12.7751|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 
+2020-09-29 12:24:13.9863|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosEstados en Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:24:13.9863|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerEmpaques en EVO_WebApi - Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:24:13.9992|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosEstados en BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:24:14.0080|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEmpaques en EVO_WebApi - BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:24:14.0080|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedido en Api Pedidos con el parámetro 1 |url: |action: 
+2020-09-29 12:24:14.0080|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:24:14.0232|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-09-29 12:24:14.0232|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MINIMO_DECIMALES |url: |action: 
+2020-09-29 12:24:14.0232|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:24:14.0232|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-09-29 12:24:14.0232|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:24:14.0396|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:24:14.0396|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedido con el parámetro: pedidoId: 1 |url: |action: 
+2020-09-29 12:24:20.4191|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:24:20.4191|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-29 12:24:20.4292|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:24:20.4292|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:24:20.4292|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:24:20.4442|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:24:20.4442|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:24:20.4442|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:24:20.4442|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:24:20.4442|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 
+2020-09-29 12:27:05.9452|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 12:27:05.9662|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 12:27:06.0058|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-09-29 12:27:08.2813|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-29 12:27:08.2936|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:27:08.2936|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:27:08.3334|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:27:08.3334|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:27:08.3334|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:27:08.3502|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:27:08.3502|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:27:08.3502|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:27:08.4632|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 
+2020-09-29 12:27:42.4513|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 12:27:42.4513|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 12:27:42.4612|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-09-29 12:27:43.5933|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegaxCodigo en Api con el parametro codigo = PV-PRA |url: |action: 
+2020-09-29 12:27:43.6031|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2020-09-29 12:27:43.6292|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:27:43.7919|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:27:43.8519|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : VALOR_BOLSA |url: |action: 
+2020-09-29 12:27:43.8519|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : FORMATO_DECIMAL |url: |action: 
+2020-09-29 12:27:43.8639|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-29 12:27:44.0230|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : PORCENTAJE_BOLSA |url: |action: 
+2020-09-29 12:27:49.2397|EVO_WebApi.Controllers.CajasApiController|Entró al método ObtenerEstadoCaja en CajasApi con el parámetro = PV-PRA |url: |action: 
+2020-09-29 12:27:49.2397|EVO_BusinessLogic.BLCajas|Entró al método ObtenerEstadoCaja en BLCajas con los parámetros codigoPuntoVenta = PV-PRA,IP = 127.0.0.1 |url: |action: 
+2020-09-29 12:27:49.2397|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2020-09-29 12:27:49.2397|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:27:49.2397|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : EXPRESION_REGULAR_IP |url: |action: 
+2020-09-29 12:27:49.2748|EVO_WebApi.Controllers.SociosNegocioApiController|Entró al método ObtenerSociosNegocio en SociosNegocioApi sin parámetros |url: |action: 
+2020-09-29 12:27:49.2748|EVO_BusinessLogic.BLSocioNegocio|Entró al método ObtenerSociosNegocio en BLSocioNegocio sin parámetros |url: |action: 
+2020-09-29 12:27:49.2748|EVO_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_WebApi con parámetro codigo = PV-PRA |url: |action: 
+2020-09-29 12:27:49.2748|EVO_BusinessLogic.BLVendedores|Entró al método ObtenerVendedoresxPuntoVenta en BLVendedores - EVO_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-09-29 12:27:49.2748|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2020-09-29 12:27:49.2876|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:27:49.3440|EVO_BusinessLogic.BLCajas|Entró al método ObtenerEstadoCuadreCaja en BLCajas con los parámetros estadosCuadreCajaEnum = Apertura |url: |action: 
+2020-09-29 12:27:49.3764|EVO_BusinessLogic.BLCajas|Entró al método ObtenerEstadoCuadreCaja en BLCajas con los parámetros estadosCuadreCajaEnum = Apertura |url: |action: 
+2020-09-29 12:27:49.4619|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegasTipoPuntoVenta en Api Bodegas sin parámetros |url: |action: 
+2020-09-29 12:27:49.4619|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPuntoVenta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:27:49.4619|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:27:49.4619|EVO_WebApi.Controllers.EvidenciaApiController|Entró al método ObtenerEvidencias en EvidenciaApi sin parámetros |url: |action: 
+2020-09-29 12:27:49.4619|EVO_BusinessLogic.BLEvidencia|Entró al método ObtenerEvidencias en BLEvidencia sin parámetros |url: |action: 
+2020-09-29 12:27:49.5068|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedidoBorrador en EVO-WebApi - PedidosApi con el parámetro solicitudPara = PV-PRA  |url: |action: 
+2020-09-29 12:27:49.5068|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:27:49.5068|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTiposSolicitudPedido en EVO-WebApi - PedidosApi sin parámetros |url: |action: 
+2020-09-29 12:27:49.5068|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:27:49.5068|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:27:49.5068|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:27:49.5068|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:27:49.5068|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:27:49.5217|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:27:49.5217|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:27:49.5217|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedidoBorrador en EVO-WebApi - BLPedidos con el parámetro solocitudDe = PV-PRA |url: |action: 
+2020-09-29 12:27:49.5217|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTiposSolicitudPedido en EVO_WebApi - BLPedido sin parámetros |url: |action: 
+2020-09-29 12:27:49.9117|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosRecepcion en Api Pedidos |url: |action: 
+2020-09-29 12:27:49.9117|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:27:49.9117|EVO_WebApi.Controllers.ContenedoresApiController|Entró al método ObtenerTipoContenedores en Api Contenedores |url: |action: 
+2020-09-29 12:27:49.9117|EVO_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_WebApi con parámetro codigo = PV-PRA |url: |action: 
+2020-09-29 12:27:49.9117|EVO_BusinessLogic.BLVendedores|Entró al método ObtenerVendedoresxPuntoVenta en BLVendedores - EVO_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-09-29 12:27:49.9117|EVO_BusinessLogic.BLContenedor|Entró al método ObtenerTipoBasculas en blBasculas. |url: |action: 
+2020-09-29 12:27:49.9117|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:27:49.9117|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2020-09-29 12:27:49.9284|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:27:49.9284|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:27:49.9284|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:27:49.9284|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosRecepcion en BLPedidos |url: |action: 
+2020-09-29 12:27:50.0488|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:27:50.0488|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:27:50.0577|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:27:50.0577|EVO_WebApi.Controllers.PedidosApiController|Entró al método CrearPedido en Api Pedidos con los parámetros desde : 1  hasta : 100 |url: |action: 
+2020-09-29 12:27:50.0577|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:27:50.0577|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:27:50.0577|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:27:50.0577|EVO_BusinessLogic.BLBodega|Entró al método ObtenerTiposBodega en EVO-WebApi sin parámetros |url: |action: 
+2020-09-29 12:27:50.0577|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPlanta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:27:50.0577|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:27:50.0577|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGOS_BODEGAS_TIPO_PLANTA |url: |action: 
+2020-09-29 12:27:50.0577|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:27:50.0694|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:27:50.0694|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:27:50.0694|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:27:50.0694|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:27:50.0694|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:27:50.0694|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosRegistros con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:27:50.0694|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:27:50.0694|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:27:50.0874|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPuntoVenta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:27:50.0874|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:27:50.0997|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_BODEGA_COMPRAS |url: |action: 
+2020-09-29 12:27:50.0997|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : AR-COM |url: |action: 
+2020-09-29 12:27:50.0997|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = AR-COM |url: |action: 
+2020-09-29 12:27:50.0997|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:27:50.1214|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidos con el parametro whsCode PV-PRA |url: |action: 
+2020-09-29 12:27:51.5857|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : NIT_DEFECTO_FACTURACION |url: |action: 
+2020-09-29 12:27:51.6912|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosFacturacion en ArticulosApi - EVO-WebApi con el parámetro codigoCliente =  PV-PRA , identificacionSocio = C-811019880 |url: |action: 
+2020-09-29 12:27:51.7034|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosFacturacion en BLArticulo - EVO-WebApi con los parámetros codigoPuntoVenta = PV-PRA , identificacionSocio = C-811019880 |url: |action: 
+2020-09-29 12:27:51.7089|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2020-09-29 12:27:51.7089|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:27:51.7089|EVO_BusinessLogic.BLSocioNegocio|Entró al método ObtenerSocioNegocio en BLSocioNegocio - EVO-WebApi con el parámetro identificacion = C-811019880 |url: |action: 
+2020-09-29 12:27:51.7612|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosArticulosxPuntoVenta en BLArticulo con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-09-29 12:27:51.7612|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2020-09-29 12:27:51.7612|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:27:52.1869|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 12:27:52.1869|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 12:27:52.1930|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-09-29 12:27:52.2403|EVO_WebApi.Controllers.CajasApiController|Entró al método ObtenerAperturaCaja en CajasApi con el parámetro = PV-PRA |url: |action: 
+2020-09-29 12:27:52.2403|EVO_BusinessLogic.BLCajas|Entró al método ObtenerAperturaCaja en BLCajas con los parámetros codigoPuntoVenta = PV-PRA,IP = 127.0.0.1 |url: |action: 
+2020-09-29 12:27:52.2403|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2020-09-29 12:27:52.2403|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:27:52.2403|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : EXPRESION_REGULAR_IP |url: |action: 
+2020-09-29 12:27:54.7916|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTiposSolicitudPedido en EVO-WebApi - PedidosApi sin parámetros |url: |action: 
+2020-09-29 12:27:54.7916|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedidoBorrador en EVO-WebApi - PedidosApi con el parámetro solicitudPara = PV-PRA  |url: |action: 
+2020-09-29 12:27:54.7916|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:27:54.7916|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:27:54.7916|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:27:54.7916|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:27:54.8018|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:27:54.8018|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:27:54.8018|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:27:54.8018|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:27:54.8018|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTiposSolicitudPedido en EVO_WebApi - BLPedido sin parámetros |url: |action: 
+2020-09-29 12:27:54.8018|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedidoBorrador en EVO-WebApi - BLPedidos con el parámetro solocitudDe = PV-PRA |url: |action: 
+2020-09-29 12:28:00.0511|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-00005 |url: |action: 
+2020-09-29 12:28:00.0697|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-100 |url: |action: 
+2020-09-29 12:28:00.0697|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-102 |url: |action: 
+2020-09-29 12:28:00.0697|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-103 |url: |action: 
+2020-09-29 12:28:00.0697|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-104 |url: |action: 
+2020-09-29 12:28:00.0697|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-105 |url: |action: 
+2020-09-29 12:28:00.0843|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-106 |url: |action: 
+2020-09-29 12:28:00.0843|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-107 |url: |action: 
+2020-09-29 12:28:00.0843|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-109 |url: |action: 
+2020-09-29 12:28:00.0843|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-110 |url: |action: 
+2020-09-29 12:28:00.0843|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1102 |url: |action: 
+2020-09-29 12:28:00.0843|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1112 |url: |action: 
+2020-09-29 12:28:00.0992|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1113 |url: |action: 
+2020-09-29 12:28:00.0992|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1114 |url: |action: 
+2020-09-29 12:28:00.0992|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1120 |url: |action: 
+2020-09-29 12:28:00.0992|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1123 |url: |action: 
+2020-09-29 12:28:00.0992|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1124 |url: |action: 
+2020-09-29 12:28:00.0992|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1126 |url: |action: 
+2020-09-29 12:28:00.0992|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1132 |url: |action: 
+2020-09-29 12:28:00.1170|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1140 |url: |action: 
+2020-09-29 12:28:00.1170|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1142 |url: |action: 
+2020-09-29 12:28:00.1170|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1150 |url: |action: 
+2020-09-29 12:28:00.1170|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1152 |url: |action: 
+2020-09-29 12:28:00.1170|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1154 |url: |action: 
+2020-09-29 12:28:00.1170|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1162 |url: |action: 
+2020-09-29 12:28:00.1296|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1163 |url: |action: 
+2020-09-29 12:28:00.1296|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1164 |url: |action: 
+2020-09-29 12:28:00.1296|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1166 |url: |action: 
+2020-09-29 12:28:00.1296|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1205 |url: |action: 
+2020-09-29 12:28:00.1296|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1206 |url: |action: 
+2020-09-29 12:28:00.1296|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1210 |url: |action: 
+2020-09-29 12:28:00.1296|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1211 |url: |action: 
+2020-09-29 12:28:00.1459|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1212 |url: |action: 
+2020-09-29 12:28:00.1459|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1213 |url: |action: 
+2020-09-29 12:28:00.1459|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1214 |url: |action: 
+2020-09-29 12:28:00.1459|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1215 |url: |action: 
+2020-09-29 12:28:00.1459|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1216 |url: |action: 
+2020-09-29 12:28:00.1459|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1217 |url: |action: 
+2020-09-29 12:28:00.1459|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1218 |url: |action: 
+2020-09-29 12:28:00.1620|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1260 |url: |action: 
+2020-09-29 12:28:00.1620|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1262 |url: |action: 
+2020-09-29 12:28:00.1620|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1263 |url: |action: 
+2020-09-29 12:28:00.1620|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1303 |url: |action: 
+2020-09-29 12:28:00.1620|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1310 |url: |action: 
+2020-09-29 12:28:00.1620|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1311 |url: |action: 
+2020-09-29 12:28:00.1620|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1319 |url: |action: 
+2020-09-29 12:28:00.1785|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1321 |url: |action: 
+2020-09-29 12:28:00.1785|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1322 |url: |action: 
+2020-09-29 12:28:00.1785|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1323 |url: |action: 
+2020-09-29 12:28:00.1785|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1324 |url: |action: 
+2020-09-29 12:28:00.1785|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1325 |url: |action: 
+2020-09-29 12:28:00.1785|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1328 |url: |action: 
+2020-09-29 12:28:00.1785|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1329 |url: |action: 
+2020-09-29 12:28:00.1941|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1330 |url: |action: 
+2020-09-29 12:28:00.1941|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1331 |url: |action: 
+2020-09-29 12:28:00.1941|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1332 |url: |action: 
+2020-09-29 12:28:00.1941|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1333 |url: |action: 
+2020-09-29 12:28:00.1941|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1334 |url: |action: 
+2020-09-29 12:28:00.1941|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1335 |url: |action: 
+2020-09-29 12:28:00.1941|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1336 |url: |action: 
+2020-09-29 12:28:00.2097|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1337 |url: |action: 
+2020-09-29 12:28:00.2097|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1338 |url: |action: 
+2020-09-29 12:28:00.2097|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1340 |url: |action: 
+2020-09-29 12:28:00.2097|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1341 |url: |action: 
+2020-09-29 12:28:00.2097|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1342 |url: |action: 
+2020-09-29 12:28:00.2097|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1343 |url: |action: 
+2020-09-29 12:28:00.2243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1344 |url: |action: 
+2020-09-29 12:28:00.2243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1345 |url: |action: 
+2020-09-29 12:28:00.2243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1346 |url: |action: 
+2020-09-29 12:28:00.2243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1347 |url: |action: 
+2020-09-29 12:28:00.2243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1348 |url: |action: 
+2020-09-29 12:28:00.2243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1349 |url: |action: 
+2020-09-29 12:28:00.2243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1350 |url: |action: 
+2020-09-29 12:28:00.2391|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1351 |url: |action: 
+2020-09-29 12:28:00.2391|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1352 |url: |action: 
+2020-09-29 12:28:00.2391|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1353 |url: |action: 
+2020-09-29 12:28:00.2391|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1354 |url: |action: 
+2020-09-29 12:28:00.2391|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1355 |url: |action: 
+2020-09-29 12:28:00.2391|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1356 |url: |action: 
+2020-09-29 12:28:00.2391|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1357 |url: |action: 
+2020-09-29 12:28:00.2557|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1358 |url: |action: 
+2020-09-29 12:28:00.2557|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1359 |url: |action: 
+2020-09-29 12:28:00.2557|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1360 |url: |action: 
+2020-09-29 12:28:00.2557|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1361 |url: |action: 
+2020-09-29 12:28:00.2557|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1362 |url: |action: 
+2020-09-29 12:28:00.2557|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1364 |url: |action: 
+2020-09-29 12:28:00.2557|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1384 |url: |action: 
+2020-09-29 12:28:00.2723|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1385 |url: |action: 
+2020-09-29 12:28:00.2723|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1386 |url: |action: 
+2020-09-29 12:28:00.2723|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1405 |url: |action: 
+2020-09-29 12:28:00.2723|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1406 |url: |action: 
+2020-09-29 12:28:00.2723|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1421 |url: |action: 
+2020-09-29 12:28:00.2865|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1422 |url: |action: 
+2020-09-29 12:28:00.2865|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1432 |url: |action: 
+2020-09-29 12:28:00.2865|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1433 |url: |action: 
+2020-09-29 12:28:00.2865|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1441 |url: |action: 
+2020-09-29 12:28:00.2865|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1442 |url: |action: 
+2020-09-29 12:28:00.2865|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1443 |url: |action: 
+2020-09-29 12:28:00.2865|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1461 |url: |action: 
+2020-09-29 12:28:00.3034|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1463 |url: |action: 
+2020-09-29 12:28:00.3034|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1464 |url: |action: 
+2020-09-29 12:28:00.3034|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1470 |url: |action: 
+2020-09-29 12:28:00.3034|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1471 |url: |action: 
+2020-09-29 12:28:00.3034|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1474 |url: |action: 
+2020-09-29 12:28:00.3034|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1478 |url: |action: 
+2020-09-29 12:28:00.3193|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1479 |url: |action: 
+2020-09-29 12:28:00.3193|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1480 |url: |action: 
+2020-09-29 12:28:00.3193|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1481 |url: |action: 
+2020-09-29 12:28:00.3193|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1482 |url: |action: 
+2020-09-29 12:28:00.3193|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1483 |url: |action: 
+2020-09-29 12:28:00.3193|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1485 |url: |action: 
+2020-09-29 12:28:00.3193|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-14851 |url: |action: 
+2020-09-29 12:28:00.3347|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1488 |url: |action: 
+2020-09-29 12:28:00.3347|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1489 |url: |action: 
+2020-09-29 12:28:00.3347|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1490 |url: |action: 
+2020-09-29 12:28:00.3347|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1491 |url: |action: 
+2020-09-29 12:28:00.3347|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1492 |url: |action: 
+2020-09-29 12:28:00.3347|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1493 |url: |action: 
+2020-09-29 12:28:00.3510|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1494 |url: |action: 
+2020-09-29 12:28:00.3510|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1495 |url: |action: 
+2020-09-29 12:28:00.3510|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1496 |url: |action: 
+2020-09-29 12:28:00.3510|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1497 |url: |action: 
+2020-09-29 12:28:00.3510|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1499 |url: |action: 
+2020-09-29 12:28:00.3510|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1500 |url: |action: 
+2020-09-29 12:28:00.3651|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1501 |url: |action: 
+2020-09-29 12:28:00.3651|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1502 |url: |action: 
+2020-09-29 12:28:00.3651|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1503 |url: |action: 
+2020-09-29 12:28:00.3651|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1504 |url: |action: 
+2020-09-29 12:28:00.3651|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1505 |url: |action: 
+2020-09-29 12:28:00.3651|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1506 |url: |action: 
+2020-09-29 12:28:00.3822|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1507 |url: |action: 
+2020-09-29 12:28:00.3822|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1508 |url: |action: 
+2020-09-29 12:28:00.3822|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1509 |url: |action: 
+2020-09-29 12:28:00.3822|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1510 |url: |action: 
+2020-09-29 12:28:00.3822|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1511 |url: |action: 
+2020-09-29 12:28:00.3822|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1512 |url: |action: 
+2020-09-29 12:28:00.3966|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1513 |url: |action: 
+2020-09-29 12:28:00.3966|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1514 |url: |action: 
+2020-09-29 12:28:00.3966|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1515 |url: |action: 
+2020-09-29 12:28:00.3966|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-152 |url: |action: 
+2020-09-29 12:28:00.3966|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-154 |url: |action: 
+2020-09-29 12:28:00.3966|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1612 |url: |action: 
+2020-09-29 12:28:00.4127|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1613 |url: |action: 
+2020-09-29 12:28:00.4127|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1631 |url: |action: 
+2020-09-29 12:28:00.4127|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1649 |url: |action: 
+2020-09-29 12:28:00.4127|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1650 |url: |action: 
+2020-09-29 12:28:00.4127|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1651 |url: |action: 
+2020-09-29 12:28:00.4127|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1652 |url: |action: 
+2020-09-29 12:28:00.4289|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1653 |url: |action: 
+2020-09-29 12:28:00.4289|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1654 |url: |action: 
+2020-09-29 12:28:00.4289|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1655 |url: |action: 
+2020-09-29 12:28:00.4289|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1656 |url: |action: 
+2020-09-29 12:28:00.4289|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1659 |url: |action: 
+2020-09-29 12:28:00.4289|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1660 |url: |action: 
+2020-09-29 12:28:00.4434|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1664 |url: |action: 
+2020-09-29 12:28:00.4434|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1811 |url: |action: 
+2020-09-29 12:28:00.4434|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2001 |url: |action: 
+2020-09-29 12:28:00.4434|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2002 |url: |action: 
+2020-09-29 12:28:00.4434|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2004 |url: |action: 
+2020-09-29 12:28:00.4434|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2103 |url: |action: 
+2020-09-29 12:28:00.4593|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2104 |url: |action: 
+2020-09-29 12:28:00.4593|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2105 |url: |action: 
+2020-09-29 12:28:00.4593|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2106 |url: |action: 
+2020-09-29 12:28:00.4593|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2107 |url: |action: 
+2020-09-29 12:28:00.4593|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2108 |url: |action: 
+2020-09-29 12:28:00.4593|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2109 |url: |action: 
+2020-09-29 12:28:00.4736|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3002 |url: |action: 
+2020-09-29 12:28:00.4736|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3101 |url: |action: 
+2020-09-29 12:28:00.4736|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3102 |url: |action: 
+2020-09-29 12:28:00.4736|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3103 |url: |action: 
+2020-09-29 12:28:00.4736|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3105 |url: |action: 
+2020-09-29 12:28:00.4736|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3107 |url: |action: 
+2020-09-29 12:28:00.4913|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3108 |url: |action: 
+2020-09-29 12:28:00.4913|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3201 |url: |action: 
+2020-09-29 12:28:00.4913|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3202 |url: |action: 
+2020-09-29 12:28:00.4913|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3204 |url: |action: 
+2020-09-29 12:28:00.4913|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3205 |url: |action: 
+2020-09-29 12:28:00.5050|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3206 |url: |action: 
+2020-09-29 12:28:00.5050|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3207 |url: |action: 
+2020-09-29 12:28:00.5050|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3208 |url: |action: 
+2020-09-29 12:28:00.5050|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3209 |url: |action: 
+2020-09-29 12:28:00.5050|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3300 |url: |action: 
+2020-09-29 12:28:00.5050|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3301 |url: |action: 
+2020-09-29 12:28:00.5221|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3302 |url: |action: 
+2020-09-29 12:28:00.5221|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3303 |url: |action: 
+2020-09-29 12:28:00.5221|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3304 |url: |action: 
+2020-09-29 12:28:00.5221|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3305 |url: |action: 
+2020-09-29 12:28:00.5221|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3401 |url: |action: 
+2020-09-29 12:28:00.5221|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-4101 |url: |action: 
+2020-09-29 12:28:00.5221|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5001 |url: |action: 
+2020-09-29 12:28:00.5372|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5002 |url: |action: 
+2020-09-29 12:28:00.5372|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5003 |url: |action: 
+2020-09-29 12:28:00.5372|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5004 |url: |action: 
+2020-09-29 12:28:00.5372|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5006 |url: |action: 
+2020-09-29 12:28:00.5372|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5008 |url: |action: 
+2020-09-29 12:28:00.5372|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5009 |url: |action: 
+2020-09-29 12:28:00.5532|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5011 |url: |action: 
+2020-09-29 12:28:00.5532|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5020 |url: |action: 
+2020-09-29 12:28:00.5532|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5233 |url: |action: 
+2020-09-29 12:28:00.5532|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5238 |url: |action: 
+2020-09-29 12:28:00.5532|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5239 |url: |action: 
+2020-09-29 12:28:00.5532|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5241 |url: |action: 
+2020-09-29 12:28:00.5532|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5242 |url: |action: 
+2020-09-29 12:28:00.5688|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5243 |url: |action: 
+2020-09-29 12:28:00.5688|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5244 |url: |action: 
+2020-09-29 12:28:00.5688|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5245 |url: |action: 
+2020-09-29 12:28:00.5688|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5246 |url: |action: 
+2020-09-29 12:28:00.5688|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5247 |url: |action: 
+2020-09-29 12:28:00.5688|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5248 |url: |action: 
+2020-09-29 12:28:00.5834|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5256 |url: |action: 
+2020-09-29 12:28:00.5834|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5257 |url: |action: 
+2020-09-29 12:28:00.5834|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-9001 |url: |action: 
+2020-09-29 12:28:00.5834|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-9004 |url: |action: 
+2020-09-29 12:28:00.5834|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-994 |url: |action: 
+2020-09-29 12:28:00.5834|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-995 |url: |action: 
+2020-09-29 12:28:00.5834|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-998 |url: |action: 
+2020-09-29 12:28:00.5984|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-999 |url: |action: 
+2020-09-29 12:28:00.5984|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-1666 |url: |action: 
+2020-09-29 12:28:00.5984|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-1866 |url: |action: 
+2020-09-29 12:28:00.5984|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7001 |url: |action: 
+2020-09-29 12:28:00.5984|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7002 |url: |action: 
+2020-09-29 12:28:00.5984|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7003 |url: |action: 
+2020-09-29 12:28:00.5984|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7004 |url: |action: 
+2020-09-29 12:28:00.5984|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7005 |url: |action: 
+2020-09-29 12:28:00.6162|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7006 |url: |action: 
+2020-09-29 12:28:00.6162|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7007 |url: |action: 
+2020-09-29 12:28:00.6162|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7008 |url: |action: 
+2020-09-29 12:28:00.6162|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7009 |url: |action: 
+2020-09-29 12:28:00.6162|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7010 |url: |action: 
+2020-09-29 12:28:00.6162|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7011 |url: |action: 
+2020-09-29 12:28:00.6162|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7012 |url: |action: 
+2020-09-29 12:28:00.6304|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7013 |url: |action: 
+2020-09-29 12:28:00.6304|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7014 |url: |action: 
+2020-09-29 12:28:00.6304|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7015 |url: |action: 
+2020-09-29 12:28:00.6304|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7016 |url: |action: 
+2020-09-29 12:28:00.6304|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7017 |url: |action: 
+2020-09-29 12:28:00.6304|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7018 |url: |action: 
+2020-09-29 12:28:00.6304|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7019 |url: |action: 
+2020-09-29 12:28:00.6465|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7020 |url: |action: 
+2020-09-29 12:28:00.6465|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7021 |url: |action: 
+2020-09-29 12:28:00.6465|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7022 |url: |action: 
+2020-09-29 12:28:00.6465|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7023 |url: |action: 
+2020-09-29 12:28:00.6465|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7024 |url: |action: 
+2020-09-29 12:28:00.6465|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7025 |url: |action: 
+2020-09-29 12:28:00.6465|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7026 |url: |action: 
+2020-09-29 12:28:00.6612|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7028 |url: |action: 
+2020-09-29 12:28:00.6612|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7031 |url: |action: 
+2020-09-29 12:28:00.6612|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7032 |url: |action: 
+2020-09-29 12:28:00.6612|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7033 |url: |action: 
+2020-09-29 12:28:00.6612|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7034 |url: |action: 
+2020-09-29 12:28:00.6612|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7036 |url: |action: 
+2020-09-29 12:28:00.6612|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7037 |url: |action: 
+2020-09-29 12:28:00.6774|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7038 |url: |action: 
+2020-09-29 12:28:00.6774|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7039 |url: |action: 
+2020-09-29 12:28:00.6774|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7040 |url: |action: 
+2020-09-29 12:28:00.6774|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7041 |url: |action: 
+2020-09-29 12:28:00.6774|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7042 |url: |action: 
+2020-09-29 12:28:00.6774|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7043 |url: |action: 
+2020-09-29 12:28:00.6774|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7044 |url: |action: 
+2020-09-29 12:28:00.6935|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7045 |url: |action: 
+2020-09-29 12:28:00.6935|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7046 |url: |action: 
+2020-09-29 12:28:00.6935|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7049 |url: |action: 
+2020-09-29 12:28:00.6935|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7050 |url: |action: 
+2020-09-29 12:28:00.6935|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7051 |url: |action: 
+2020-09-29 12:28:00.6935|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7052 |url: |action: 
+2020-09-29 12:28:00.6935|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7053 |url: |action: 
+2020-09-29 12:28:00.7086|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7054 |url: |action: 
+2020-09-29 12:28:00.7086|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7055 |url: |action: 
+2020-09-29 12:28:00.7086|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7056 |url: |action: 
+2020-09-29 12:28:00.7086|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7057 |url: |action: 
+2020-09-29 12:28:00.7086|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7058 |url: |action: 
+2020-09-29 12:28:00.7086|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7059 |url: |action: 
+2020-09-29 12:28:00.7086|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7060 |url: |action: 
+2020-09-29 12:28:00.7243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7061 |url: |action: 
+2020-09-29 12:28:00.7243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7062 |url: |action: 
+2020-09-29 12:28:00.7243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7063 |url: |action: 
+2020-09-29 12:28:00.7243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7064 |url: |action: 
+2020-09-29 12:28:00.7243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7065 |url: |action: 
+2020-09-29 12:28:00.7243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7066 |url: |action: 
+2020-09-29 12:28:00.7243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7067 |url: |action: 
+2020-09-29 12:28:00.7243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7068 |url: |action: 
+2020-09-29 12:28:00.7409|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7069 |url: |action: 
+2020-09-29 12:28:00.7409|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7070 |url: |action: 
+2020-09-29 12:28:00.7409|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7071 |url: |action: 
+2020-09-29 12:28:00.7409|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7072 |url: |action: 
+2020-09-29 12:28:00.7409|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7073 |url: |action: 
+2020-09-29 12:28:00.7409|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7074 |url: |action: 
+2020-09-29 12:28:00.7548|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7089 |url: |action: 
+2020-09-29 12:28:00.7548|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7090 |url: |action: 
+2020-09-29 12:28:00.7548|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7091 |url: |action: 
+2020-09-29 12:28:00.7548|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7093 |url: |action: 
+2020-09-29 12:28:00.7548|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7094 |url: |action: 
+2020-09-29 12:28:00.7548|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7095 |url: |action: 
+2020-09-29 12:28:00.7548|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7096 |url: |action: 
+2020-09-29 12:28:00.7548|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7097 |url: |action: 
+2020-09-29 12:28:00.7548|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7098 |url: |action: 
+2020-09-29 12:28:00.7721|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7099 |url: |action: 
+2020-09-29 12:28:00.7721|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7100 |url: |action: 
+2020-09-29 12:28:00.7721|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7101 |url: |action: 
+2020-09-29 12:28:00.7721|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7102 |url: |action: 
+2020-09-29 12:28:00.7721|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7104 |url: |action: 
+2020-09-29 12:28:00.7721|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7105 |url: |action: 
+2020-09-29 12:28:00.7721|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7106 |url: |action: 
+2020-09-29 12:28:00.7872|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7107 |url: |action: 
+2020-09-29 12:28:00.7872|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7108 |url: |action: 
+2020-09-29 12:28:00.7872|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7109 |url: |action: 
+2020-09-29 12:28:00.7872|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7110 |url: |action: 
+2020-09-29 12:28:00.7872|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7111 |url: |action: 
+2020-09-29 12:28:00.7872|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7118 |url: |action: 
+2020-09-29 12:28:00.7872|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7119 |url: |action: 
+2020-09-29 12:28:00.7872|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7120 |url: |action: 
+2020-09-29 12:28:00.8030|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7121 |url: |action: 
+2020-09-29 12:28:00.8030|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7122 |url: |action: 
+2020-09-29 12:28:00.8030|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7123 |url: |action: 
+2020-09-29 12:28:00.8030|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7126 |url: |action: 
+2020-09-29 12:28:00.8030|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7127 |url: |action: 
+2020-09-29 12:28:00.8030|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7128 |url: |action: 
+2020-09-29 12:28:00.8030|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7129 |url: |action: 
+2020-09-29 12:28:00.8183|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7130 |url: |action: 
+2020-09-29 12:28:00.8183|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7131 |url: |action: 
+2020-09-29 12:28:00.8183|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7136 |url: |action: 
+2020-09-29 12:28:00.8183|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7137 |url: |action: 
+2020-09-29 12:28:00.8183|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7138 |url: |action: 
+2020-09-29 12:28:00.8183|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7139 |url: |action: 
+2020-09-29 12:28:00.8183|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7143 |url: |action: 
+2020-09-29 12:28:00.8183|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7144 |url: |action: 
+2020-09-29 12:28:00.8340|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7145 |url: |action: 
+2020-09-29 12:28:00.8340|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7146 |url: |action: 
+2020-09-29 12:28:00.8340|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7147 |url: |action: 
+2020-09-29 12:28:00.8340|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7148 |url: |action: 
+2020-09-29 12:28:00.8340|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7149 |url: |action: 
+2020-09-29 12:28:00.8340|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7150 |url: |action: 
+2020-09-29 12:28:00.8340|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7151 |url: |action: 
+2020-09-29 12:28:00.8501|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7152 |url: |action: 
+2020-09-29 12:28:00.8501|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7153 |url: |action: 
+2020-09-29 12:28:00.8501|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7154 |url: |action: 
+2020-09-29 12:28:00.8501|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7159 |url: |action: 
+2020-09-29 12:28:00.8501|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7160 |url: |action: 
+2020-09-29 12:28:00.8501|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7164 |url: |action: 
+2020-09-29 12:28:00.8501|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7165 |url: |action: 
+2020-09-29 12:28:00.8650|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7166 |url: |action: 
+2020-09-29 12:28:00.8650|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodasTransformaciones en BLArticulo - EVO-WebApi |url: |action: 
+2020-09-29 12:28:00.9658|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-100 |url: |action: 
+2020-09-29 12:28:00.9658|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-102 |url: |action: 
+2020-09-29 12:28:00.9658|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-103 |url: |action: 
+2020-09-29 12:28:00.9741|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-1866 |url: |action: 
+2020-09-29 12:28:00.9741|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7001 |url: |action: 
+2020-09-29 12:28:00.9741|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7002 |url: |action: 
+2020-09-29 12:28:00.9741|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7131 |url: |action: 
+2020-09-29 12:28:00.9741|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7132 |url: |action: 
+2020-09-29 12:28:01.0098|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-998 |url: |action: 
+2020-09-29 12:28:05.6692|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoxId con el parámetro 3 |url: |action: 
+2020-09-29 12:28:05.6692|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:28:05.6692|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerEmpaques en EVO_WebApi - Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:28:05.6692|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEmpaques en EVO_WebApi - BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:28:05.6692|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:28:05.6779|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:28:05.6779|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:28:05.6779|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidoxId con el parámetro: pedidoId: 3 |url: |action: 
+2020-09-29 12:28:05.8046|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosEstados en Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:28:05.8046|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosEstados en BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:28:05.9960|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTiposSolicitudPedido en EVO-WebApi - PedidosApi sin parámetros |url: |action: 
+2020-09-29 12:28:05.9960|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:28:05.9960|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:28:05.9960|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:28:06.0084|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:28:06.0084|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTiposSolicitudPedido en EVO_WebApi - BLPedido sin parámetros |url: |action: 
+2020-09-29 12:28:06.0379|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerTiposBodega en EVO-WebApi sin parámetros |url: |action: 
+2020-09-29 12:28:06.0379|EVO_BusinessLogic.BLBodega|Entró al método ObtenerTiposBodega en EVO-WebApi sin parámetros |url: |action: 
+2020-09-29 12:28:06.0379|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPlanta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:28:06.0379|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGOS_BODEGAS_TIPO_PLANTA |url: |action: 
+2020-09-29 12:28:06.0379|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:28:06.0379|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPuntoVenta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:28:06.0520|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:28:10.1512|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosArticulosxBodega en Api Artículos con los parámetros desde=1, hasta=100 ,whsCodePuntoVenta=PV-PRA, whsCodePlanta=PB-PT,tipoSolicitud =1  |url: |action: 
+2020-09-29 12:28:10.1512|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosArticulosxBodega en Api Artículos con los parámetros desde=1, hasta=100 ,whsCodePuntoVenta=PV-PRA, whsCodePlanta=PB-PT,tipoSolicitud =1  |url: |action: 
+2020-09-29 12:28:10.1512|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:28:10.1512|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:28:10.1512|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosArticulosxBodega de BLArticulos con los parámetros: desde: 1, hasta: 100 ,whsCodePuntoVenta: PV-PRA,whsCodePuntoVenta: PB-PT,tipoSolicitud: 1 |url: |action: 
+2020-09-29 12:28:10.1512|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosArticulosxBodega de BLArticulos con los parámetros: desde: 1, hasta: 100 ,whsCodePuntoVenta: PV-PRA,whsCodePuntoVenta: PB-PT,tipoSolicitud: 1 |url: |action: 
+2020-09-29 12:28:10.1512|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:28:10.1512|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:28:10.1631|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:28:10.1631|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:28:10.1631|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_ARTICULO_PUNTOVENTA |url: |action: 
+2020-09-29 12:28:10.1631|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_ARTICULO_PUNTOVENTA |url: |action: 
+2020-09-29 12:28:10.1631|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-29 12:28:10.1631|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-29 12:28:10.2186|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerConteoTodosRegistros de BLArticulos con el parámetro whsCode = PV-PRA |url: |action: 
+2020-09-29 12:28:10.2186|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerConteoTodosRegistros de BLArticulos con el parámetro whsCode = PV-PRA |url: |action: 
+2020-09-29 12:28:10.2186|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:28:10.2186|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:28:26.2808|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 12:28:26.2808|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 12:28:26.2893|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-09-29 12:28:26.3605|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegaxCodigo en Api con el parametro codigo = PV-PRA |url: |action: 
+2020-09-29 12:28:26.3605|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2020-09-29 12:28:26.3649|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:28:26.6659|EVO_WebApi.Controllers.PedidosApiController|Entró al método ActualizarPedido con los parámetros {"PedidoId":3,"WhsCode":"PV-PRA","SolicitudPara":"PB-PT","Usuario":"hsanchez","FechaEntrega":"2020-09-30T00:00:00","EstadoPedido":"Abierto","TipoSolicitudId":1,"detalles":[{"DetallePedidoId":"3","ItemCode":"PT-1364","EstadoArticuloId":2,"Cantidad":66.000000,"Observacion":null,"EmpaqueId":1},{"DetallePedidoId":"0","ItemCode":"PT-1660","EstadoArticuloId":2,"Cantidad":423.000,"Observacion":null,"EmpaqueId":2},{"DetallePedidoId":"0","ItemCode":"PT-2004","EstadoArticuloId":1,"Cantidad":284.000,"Observacion":null,"EmpaqueId":2}]} |url: |action: 
+2020-09-29 12:28:26.6659|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:28:26.6797|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:28:26.6797|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:28:26.6797|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:28:26.6994|EVO_BusinessLogic.BLPedido|Entró al método ActualizarPedido con los parámetros: {"PedidoId":3,"WhsCode":"PV-PRA","SolicitudPara":"PB-PT","Usuario":"ANTIOQUENA\\hsanchez","UsuarioId":0,"FechaPedido":"0001-01-01T00:00:00","FechaEntrega":"2020-09-30T00:00:00","NumeroPedido":0,"EstadoPedidoId":0,"EstadoPedido":"Abierto","Detalles":[{"DetallePedidoId":3,"PedidoId":0,"ItemCode":"PT-1364","ItemName":null,"EstadoArticuloId":2,"UnidadMedidaId":0,"UnidadMedida":null,"Cantidad":66.000000,"Observacion":null,"Pedido":null,"EmpaqueId":1},{"DetallePedidoId":0,"PedidoId":0,"ItemCode":"PT-1660","ItemName":null,"EstadoArticuloId":2,"UnidadMedidaId":0,"UnidadMedida":null,"Cantidad":423.000,"Observacion":null,"Pedido":null,"EmpaqueId":2},{"DetallePedidoId":0,"PedidoId":0,"ItemCode":"PT-2004","ItemName":null,"EstadoArticuloId":1,"UnidadMedidaId":0,"UnidadMedida":null,"Cantidad":284.000,"Observacion":null,"Pedido":null,"EmpaqueId":2}],"DetallesSerializados":null,"TipoSolicitudId":1,"Series":null,"NombreUsuario":null,"EmailBodega":null,"NumeroDocumento":null} |url: |action: 
+2020-09-29 12:28:26.6994|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuarioPorUsuario con el parámetro: nombreUsuario = hsanchez |url: |action: 
+2020-09-29 12:28:26.6994|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEstadoPedidoxNombre con el parámetro nombre = Abierto |url: |action: 
+2020-09-29 12:28:26.7334|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1364 |url: |action: 
+2020-09-29 12:28:26.7334|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTiposSolicitudPedido en EVO_WebApi - BLPedido sin parámetros |url: |action: 
+2020-09-29 12:28:26.7396|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEstadoArticuloxId con el parámetro estadoArticuloId = 2 |url: |action: 
+2020-09-29 12:28:26.7396|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTiposSolicitudPedido en EVO_WebApi - BLPedido sin parámetros |url: |action: 
+2020-09-29 12:28:26.7396|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1660 |url: |action: 
+2020-09-29 12:28:26.7396|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTiposSolicitudPedido en EVO_WebApi - BLPedido sin parámetros |url: |action: 
+2020-09-29 12:28:26.7579|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEstadoArticuloxId con el parámetro estadoArticuloId = 2 |url: |action: 
+2020-09-29 12:28:26.7579|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTiposSolicitudPedido en EVO_WebApi - BLPedido sin parámetros |url: |action: 
+2020-09-29 12:28:26.7579|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2004 |url: |action: 
+2020-09-29 12:28:26.7579|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTiposSolicitudPedido en EVO_WebApi - BLPedido sin parámetros |url: |action: 
+2020-09-29 12:28:26.7579|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEstadoArticuloxId con el parámetro estadoArticuloId = 1 |url: |action: 
+2020-09-29 12:28:26.7579|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTiposSolicitudPedido en EVO_WebApi - BLPedido sin parámetros |url: |action: 
+2020-09-29 12:28:26.7724|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2020-09-29 12:28:26.7724|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:28:26.7724|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PB-PT |url: |action: 
+2020-09-29 12:28:26.7724|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PB-PT |url: |action: 
+2020-09-29 12:28:26.7724|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuarioPorUsuario con el parámetro: nombreUsuario = hsanchez |url: |action: 
+2020-09-29 12:28:26.8888|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-29 12:28:26.9138|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:28:26.9138|EVO_WebApi.Controllers.PedidosApiController|Entró al método CrearPedido en Api Pedidos con los parámetros desde : 1  hasta : 100 |url: |action: 
+2020-09-29 12:28:26.9138|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:28:26.9138|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:28:26.9138|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:28:26.9138|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:28:26.9138|EVO_BusinessLogic.BLBodega|Entró al método ObtenerTiposBodega en EVO-WebApi sin parámetros |url: |action: 
+2020-09-29 12:28:26.9138|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:28:26.9138|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:28:26.9138|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPlanta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:28:26.9138|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGOS_BODEGAS_TIPO_PLANTA |url: |action: 
+2020-09-29 12:28:26.9138|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:28:26.9138|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:28:26.9280|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:28:26.9280|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:28:26.9280|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:28:26.9280|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:28:26.9280|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:28:26.9280|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPuntoVenta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:28:26.9280|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosRegistros con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:28:26.9280|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:28:26.9280|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:28:26.9280|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_BODEGA_COMPRAS |url: |action: 
+2020-09-29 12:28:26.9447|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : AR-COM |url: |action: 
+2020-09-29 12:28:26.9447|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = AR-COM |url: |action: 
+2020-09-29 12:28:26.9447|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:28:26.9447|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidos con el parametro whsCode PV-PRA |url: |action: 
+2020-09-29 12:28:35.9104|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 12:28:35.9129|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 12:28:35.9129|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-09-29 12:28:37.7020|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:28:37.7084|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-29 12:28:37.7084|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:28:37.7275|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:28:37.7275|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:28:37.7424|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:28:37.7424|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:28:37.7424|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:28:37.7424|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:28:37.7912|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 
+2020-09-29 12:28:41.5576|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosEstados en Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:28:41.5576|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosEstados en BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:28:41.5576|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerEmpaques en EVO_WebApi - Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:28:41.5576|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEmpaques en EVO_WebApi - BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:28:41.5806|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedido en Api Pedidos con el parámetro 3 |url: |action: 
+2020-09-29 12:28:41.5835|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:28:41.5835|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:28:41.5835|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:28:41.5835|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MINIMO_DECIMALES |url: |action: 
+2020-09-29 12:28:41.5835|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:28:41.5835|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-09-29 12:28:41.5835|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-09-29 12:28:41.6005|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:28:41.6005|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedido con el parámetro: pedidoId: 3 |url: |action: 
+2020-09-29 12:29:32.0732|EVO_WebApi.Controllers.PedidosApiController|Entró al método ActualizarPedidoPlantaBeneficio con los parámetros {"PedidoId":3,"Estado":"Aceptado","Detalles":[{"DetallePedidoId":3,"CantidadAprobada":66.0},{"DetallePedidoId":17,"CantidadAprobada":423.0},{"DetallePedidoId":18,"CantidadAprobada":284.0}]} |url: |action: 
+2020-09-29 12:29:32.0732|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:29:32.0877|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:29:32.0877|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:29:32.0877|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:29:32.1058|EVO_BusinessLogic.BLPedido|Entró al método ActualizarPedidoPlantaBeneficio con los parámetros: {"PedidoId":3,"Usuario":"ANTIOQUENA\\hsanchez","EstadoPedidoId":0,"Estado":"Aceptado","FechaAprobacionPlanta":null,"Detalles":[{"DetallePedidoId":3,"CantidadAprobada":66.0},{"DetallePedidoId":17,"CantidadAprobada":423.0},{"DetallePedidoId":18,"CantidadAprobada":284.0}]} |url: |action: 
+2020-09-29 12:29:32.1058|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEstadoPedidoxNombre con el parámetro nombre = Borrador |url: |action: 
+2020-09-29 12:29:32.1058|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidoxId con el parámetro: pedidoId: 3 |url: |action: 
+2020-09-29 12:29:32.1275|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PLANTA_BENEFICIO |url: |action: 
+2020-09-29 12:29:32.2863|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2020-09-29 12:29:32.2863|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:29:32.2863|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PB-PT |url: |action: 
+2020-09-29 12:29:32.2863|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PB-PT |url: |action: 
+2020-09-29 12:29:32.2863|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuarioPorUsuario con el parámetro: nombreUsuario = hsanchez |url: |action: 
+2020-09-29 12:29:35.9084|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CORREO_APROBACION_PEDIDOS |url: |action: 
+2020-09-29 12:29:35.9084|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CORREO_PRODUCCION |url: |action: 
+2020-09-29 12:29:35.9185|EVO_BusinessLogic.BLCorreoElectronico|Entró al método contructor de BLCorreoElectronico con parámetro correosDestinatarios=System.Collections.Generic.List`1[System.String] |url: |action: 
+2020-09-29 12:29:35.9185|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:29:35.9185|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:29:35.9282|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : ENABLE_SSL |url: |action: 
+2020-09-29 12:29:35.9282|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : USE_DEFAULT_CREDENTIALS |url: |action: 
+2020-09-29 12:29:35.9282|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CORREO_TECNOLOGIA |url: |action: 
+2020-09-29 12:29:35.9282|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CORREO_TECNOLOGIA_CONTRASENIA |url: |action: 
+2020-09-29 12:29:35.9458|EVO_BusinessLogic.BLCorreoElectronico|Entró al método EnviarProduccion de BLCorreoElectronico con los parámetros puntoVenta = PLANTA BENEFICIO , codigoPedido = PRA-9 , articulosProducir = ["PT-2004 Tocino premium cantidad 228.632 KG"] |url: |action: 
+2020-09-29 12:29:35.9458|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SUBJECT_PRODUCCION |url: |action: 
+2020-09-29 12:29:35.9458|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BODY_PRODUCCION |url: |action: 
+2020-09-29 12:29:37.3551|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:29:37.3551|EVO_WebApi.Controllers.PedidosApiController|Entró el método ObtenerConsultaPedido en EVO-WebApi con el parametro pedidoId = 10 |url: |action: 
+2020-09-29 12:29:37.3551|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:29:37.3551|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:29:37.3551|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:29:37.3551|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:29:37.3656|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:29:37.3656|EVO_BusinessLogic.BLPedido|Entró el método ObtenerConsultaPedido en EVO-WebApi - BLPedido con el parametro pedidoId = 10 |url: |action: 
+2020-09-29 12:29:37.4844|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 10 |url: |action: 
+2020-09-29 12:29:37.4844|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:29:37.6768|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-29 12:29:37.6768|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19246, codigoBodega = PB-ALM |url: |action: 
+2020-09-29 12:29:37.7388|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":0.000000} |url: |action: 
+2020-09-29 12:29:37.7425|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19237, codigoBodega = PB-ALM |url: |action: 
+2020-09-29 12:29:37.8085|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":21.000000} |url: |action: 
+2020-09-29 12:29:38.5600|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedido en Api Pedidos con el parámetro 3 |url: |action: 
+2020-09-29 12:29:38.5600|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:29:38.5600|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:29:38.5600|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:29:38.5690|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:29:38.5690|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedido con el parámetro: pedidoId: 3 |url: |action: 
+2020-09-29 12:29:39.7496|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:29:39.7496|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:29:39.7496|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:29:39.7496|EVO_WebApi.Controllers.PedidosApiController|Entró al método CrearPedido en Api Pedidos con los parámetros desde : 1  hasta : 100 |url: |action: 
+2020-09-29 12:29:39.7496|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:29:39.7496|EVO_BusinessLogic.BLBodega|Entró al método ObtenerTiposBodega en EVO-WebApi sin parámetros |url: |action: 
+2020-09-29 12:29:39.7496|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPlanta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:29:39.7496|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:29:39.7559|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGOS_BODEGAS_TIPO_PLANTA |url: |action: 
+2020-09-29 12:29:39.7559|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:29:39.7559|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:29:39.7559|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:29:39.7559|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:29:39.7559|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:29:39.7559|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:29:39.7559|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:29:39.7559|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPuntoVenta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:29:39.7559|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:29:39.7559|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:29:39.7559|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:29:39.7731|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosRegistros con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:29:39.7731|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:29:39.7731|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_BODEGA_COMPRAS |url: |action: 
+2020-09-29 12:29:39.7731|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : AR-COM |url: |action: 
+2020-09-29 12:29:39.7904|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = AR-COM |url: |action: 
+2020-09-29 12:29:39.8019|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:29:39.8019|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidos con el parametro whsCode PV-PRA |url: |action: 
+2020-09-29 12:29:55.6502|EVO_WebApi.Controllers.PedidosApiController|Entró al método CrearPedido en Api Pedidos con los parámetros desde : 1  hasta : 100 |url: |action: 
+2020-09-29 12:29:55.6502|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:29:55.6502|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:29:55.6502|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:29:55.6502|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:29:55.6502|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLBodega|Entró al método ObtenerTiposBodega en EVO-WebApi sin parámetros |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPlanta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGOS_BODEGAS_TIPO_PLANTA |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosRegistros con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPuntoVenta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:29:55.6616|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:29:55.6796|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidos con el parametro whsCode PV-PRA |url: |action: 
+2020-09-29 12:29:55.6796|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_BODEGA_COMPRAS |url: |action: 
+2020-09-29 12:29:55.6796|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : AR-COM |url: |action: 
+2020-09-29 12:29:55.6796|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = AR-COM |url: |action: 
+2020-09-29 12:30:20.7770|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:30:20.7770|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAceptados en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-29 12:30:20.7770|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:30:20.7875|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:30:20.7875|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:30:20.7875|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:30:20.7875|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:30:20.8019|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAceptados con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:30:20.8019|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:30:20.8195|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAceptados |url: |action: 
+2020-09-29 12:30:20.8195|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAceptados en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-29 12:30:20.8339|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:30:20.8339|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:30:20.8339|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:30:20.8339|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:30:20.8339|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:30:20.8339|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAceptados con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:30:20.8484|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:30:20.8484|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAceptados |url: |action: 
+2020-09-29 12:30:24.0866|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:30:24.0866|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerEntregasPedidoxId en Api Pedidos con el parámetro id = 5 |url: |action: 
+2020-09-29 12:30:24.0866|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:30:24.0866|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-09-29 12:30:24.0866|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:30:24.0866|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:30:24.0996|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:30:24.0996|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEntregasPedidoxId con el parámetro: id: 5 |url: |action: 
+2020-09-29 12:30:24.3030|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-09-29 12:30:33.1539|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:30:33.1539|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-29 12:30:33.1659|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:30:33.1659|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:30:33.1850|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:30:33.1850|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:30:33.1850|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:30:33.1932|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:30:33.1932|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:30:33.2204|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 
+2020-09-29 12:30:39.8680|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 12:30:39.8680|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 12:30:39.8680|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-09-29 12:30:41.5857|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:30:41.5857|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-29 12:30:41.6055|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:30:41.6151|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:30:41.6151|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:30:41.6151|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:30:41.6151|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:30:41.6304|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:30:41.6304|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:30:41.6304|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 
+2020-09-29 12:30:53.2730|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosEstados en Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:30:53.2730|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerEmpaques en EVO_WebApi - Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:30:53.2730|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosEstados en BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:30:53.2730|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEmpaques en EVO_WebApi - BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:30:53.2730|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedido en Api Pedidos con el parámetro 1 |url: |action: 
+2020-09-29 12:30:53.2730|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:30:53.2897|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:30:53.2897|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:30:53.2897|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:30:53.3028|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:30:53.3028|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedido con el parámetro: pedidoId: 1 |url: |action: 
+2020-09-29 12:30:53.3028|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-09-29 12:30:53.3028|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MINIMO_DECIMALES |url: |action: 
+2020-09-29 12:30:53.3028|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-09-29 12:31:21.3656|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 12:31:21.3656|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 12:31:21.3824|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-09-29 12:31:23.3870|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosEstados en Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:31:23.3870|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerEmpaques en EVO_WebApi - Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:31:23.3977|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedido en Api Pedidos con el parámetro 1 |url: |action: 
+2020-09-29 12:31:23.3977|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:31:23.3977|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosEstados en BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:31:23.3977|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-09-29 12:31:23.3977|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MINIMO_DECIMALES |url: |action: 
+2020-09-29 12:31:23.4186|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEmpaques en EVO_WebApi - BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:31:23.4186|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:31:23.4395|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:31:23.4459|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:31:23.4459|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-09-29 12:31:23.4459|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:31:23.4459|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedido con el parámetro: pedidoId: 1 |url: |action: 
+2020-09-29 12:31:58.2648|EVO_WebApi.Controllers.PedidosApiController|Entró al método ActualizarPedidoPlantaBeneficio con los parámetros {"PedidoId":1,"Estado":"Aceptado","Detalles":[{"DetallePedidoId":1,"CantidadAprobada":55.0}]} |url: |action: 
+2020-09-29 12:31:58.2648|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:31:58.2728|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:31:58.2728|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:31:58.2728|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:31:58.2728|EVO_BusinessLogic.BLPedido|Entró al método ActualizarPedidoPlantaBeneficio con los parámetros: {"PedidoId":1,"Usuario":"ANTIOQUENA\\hsanchez","EstadoPedidoId":0,"Estado":"Aceptado","FechaAprobacionPlanta":null,"Detalles":[{"DetallePedidoId":1,"CantidadAprobada":55.0}]} |url: |action: 
+2020-09-29 12:31:58.2728|EVO_BusinessLogic.BLPedido|Entró al método ObtenerEstadoPedidoxNombre con el parámetro nombre = Borrador |url: |action: 
+2020-09-29 12:31:58.2883|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidoxId con el parámetro: pedidoId: 1 |url: |action: 
+2020-09-29 12:31:58.3030|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PLANTA_BENEFICIO |url: |action: 
+2020-09-29 12:31:58.3248|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2020-09-29 12:31:58.3248|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:31:58.3248|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PB-PT |url: |action: 
+2020-09-29 12:31:58.3337|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PB-PT |url: |action: 
+2020-09-29 12:31:58.3337|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuarioPorUsuario con el parámetro: nombreUsuario = hsanchez |url: |action: 
+2020-09-29 12:32:01.0629|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedido en Api Pedidos con el parámetro 1 |url: |action: 
+2020-09-29 12:32:01.0629|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:32:01.0695|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:32:01.0695|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:32:01.0695|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:32:01.0695|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedido con el parámetro: pedidoId: 1 |url: |action: 
+2020-09-29 12:32:17.0797|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:32:17.0797|EVO_WebApi.Controllers.PedidosApiController|Entró el método ObtenerConsultaPedido en EVO-WebApi con el parametro pedidoId = 1 |url: |action: 
+2020-09-29 12:32:17.0797|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:32:17.0797|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:32:17.0871|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:32:17.0871|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:32:17.0871|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:32:17.0871|EVO_BusinessLogic.BLPedido|Entró el método ObtenerConsultaPedido en EVO-WebApi - BLPedido con el parametro pedidoId = 1 |url: |action: 
+2020-09-29 12:32:31.4054|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedidoBorrador en EVO-WebApi - PedidosApi con el parámetro solicitudPara = PV-PRA  |url: |action: 
+2020-09-29 12:32:31.4054|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:32:31.4054|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTiposSolicitudPedido en EVO-WebApi - PedidosApi sin parámetros |url: |action: 
+2020-09-29 12:32:31.4126|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:32:31.4126|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:32:31.4126|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:32:31.4126|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:32:31.4126|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:32:31.4126|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:32:31.4126|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:32:31.4282|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedidoBorrador en EVO-WebApi - BLPedidos con el parámetro solocitudDe = PV-PRA |url: |action: 
+2020-09-29 12:32:31.4282|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTiposSolicitudPedido en EVO_WebApi - BLPedido sin parámetros |url: |action: 
+2020-09-29 12:32:35.1534|EVO_WebApi.Controllers.PedidosApiController|Entró al método CrearPedido en Api Pedidos con los parámetros desde : 1  hasta : 100 |url: |action: 
+2020-09-29 12:32:35.1534|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:32:35.1534|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:32:35.1534|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:32:35.1534|EVO_BusinessLogic.BLBodega|Entró al método ObtenerTiposBodega en EVO-WebApi sin parámetros |url: |action: 
+2020-09-29 12:32:35.1534|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPlanta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:32:35.1534|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:32:35.1534|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGOS_BODEGAS_TIPO_PLANTA |url: |action: 
+2020-09-29 12:32:35.1620|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:32:35.1620|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:32:35.1620|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:32:35.1620|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:32:35.1620|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:32:35.1620|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:32:35.1620|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:32:35.1620|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:32:35.1620|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPuntoVenta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:32:35.1620|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:32:35.1620|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosRegistros con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:32:35.1620|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:32:35.1763|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:32:35.1763|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:32:35.1763|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_BODEGA_COMPRAS |url: |action: 
+2020-09-29 12:32:35.1763|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : AR-COM |url: |action: 
+2020-09-29 12:32:35.1763|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = AR-COM |url: |action: 
+2020-09-29 12:32:35.1935|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:32:35.1935|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidos con el parametro whsCode PV-PRA |url: |action: 
+2020-09-29 12:32:44.2077|EVO_WebApi.Controllers.PedidosApiController|Entró el método ObtenerConsultaPedido en EVO-WebApi con el parametro pedidoId = 5 |url: |action: 
+2020-09-29 12:32:44.2090|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:32:44.2090|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:32:44.2090|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:32:44.2090|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:32:44.2090|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:32:44.2240|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:32:44.2240|EVO_BusinessLogic.BLPedido|Entró el método ObtenerConsultaPedido en EVO-WebApi - BLPedido con el parametro pedidoId = 5 |url: |action: 
+2020-09-29 12:33:10.9780|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:33:10.9780|EVO_WebApi.Controllers.PedidosApiController|Entró al método CrearPedido en Api Pedidos con los parámetros desde : 1  hasta : 100 |url: |action: 
+2020-09-29 12:33:10.9780|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:33:10.9780|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:33:10.9780|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:33:10.9780|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:33:10.9944|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:33:10.9944|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:33:10.9944|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:33:10.9944|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:33:10.9944|EVO_BusinessLogic.BLBodega|Entró al método ObtenerTiposBodega en EVO-WebApi sin parámetros |url: |action: 
+2020-09-29 12:33:10.9944|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:33:10.9944|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:33:10.9944|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPlanta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:33:10.9944|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGOS_BODEGAS_TIPO_PLANTA |url: |action: 
+2020-09-29 12:33:10.9944|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:33:10.9944|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:33:11.0067|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosRegistros con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:33:11.0067|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:33:11.0067|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:33:11.0067|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPuntoVenta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:33:11.0067|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:33:11.0209|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_BODEGA_COMPRAS |url: |action: 
+2020-09-29 12:33:11.0209|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : AR-COM |url: |action: 
+2020-09-29 12:33:11.0209|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = AR-COM |url: |action: 
+2020-09-29 12:33:11.0209|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:33:11.0209|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidos con el parametro whsCode PV-PRA |url: |action: 
+2020-09-29 12:33:24.5593|EVO_WebApi.Controllers.PedidosApiController|Entró al método CrearPedido en Api Pedidos con los parámetros desde : 1  hasta : 100 |url: |action: 
+2020-09-29 12:33:24.5593|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:33:24.5593|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:33:24.5593|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:33:24.5593|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:33:24.5593|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2020-09-29 12:33:24.5593|EVO_BusinessLogic.BLBodega|Entró al método ObtenerTiposBodega en EVO-WebApi sin parámetros |url: |action: 
+2020-09-29 12:33:24.5593|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPlanta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:33:24.5593|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:33:24.5679|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGOS_BODEGAS_TIPO_PLANTA |url: |action: 
+2020-09-29 12:33:24.5679|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:33:24.5679|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:33:24.5679|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:33:24.5679|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:33:24.5679|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:33:24.5679|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:33:24.5679|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 12:33:24.5679|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-29 12:33:24.5679|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPuntoVenta en BLBodegas sin parámetros |url: |action: 
+2020-09-29 12:33:24.5679|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosRegistros con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 12:33:24.5679|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2020-09-29 12:33:24.5832|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:33:24.5832|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_BODEGA_COMPRAS |url: |action: 
+2020-09-29 12:33:24.5832|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : AR-COM |url: |action: 
+2020-09-29 12:33:24.5832|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = AR-COM |url: |action: 
+2020-09-29 12:33:24.5832|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2020-09-29 12:33:24.6003|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidos con el parametro whsCode PV-PRA |url: |action: 
+2020-09-29 12:38:21.9975|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 12:38:21.9975|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 12:38:22.0092|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-09-29 12:38:23.5448|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosEstados en Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:38:23.5448|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosEstados en BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:38:23.5448|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerEmpaques en EVO_WebApi - Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:38:23.5652|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEmpaques en EVO_WebApi - BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:38:23.5652|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedido en Api Pedidos con el parámetro 1 |url: |action: 
+2020-09-29 12:38:23.5743|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:38:23.5743|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:38:23.5743|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-09-29 12:38:23.5743|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MINIMO_DECIMALES |url: |action: 
+2020-09-29 12:38:23.5862|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:38:23.5862|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:38:23.5862|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:38:23.6005|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedido con el parámetro: pedidoId: 1 |url: |action: 
+2020-09-29 12:38:23.6005|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-09-29 12:59:04.1877|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 12:59:04.1928|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 12:59:04.1928|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-09-29 12:59:07.2449|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosEstados en Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:59:07.2449|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerEmpaques en EVO_WebApi - Api Artículos sin parámetros |url: |action: 
+2020-09-29 12:59:07.2449|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosEstados en BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:59:07.2643|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEmpaques en EVO_WebApi - BLArticulo sin parámetros |url: |action: 
+2020-09-29 12:59:07.2810|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedido en Api Pedidos con el parámetro 1 |url: |action: 
+2020-09-29 12:59:07.2810|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 12:59:07.2926|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 12:59:07.2926|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 12:59:07.2926|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 12:59:07.3073|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-09-29 12:59:07.3073|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 12:59:07.3073|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedido con el parámetro: pedidoId: 1 |url: |action: 
+2020-09-29 12:59:07.3307|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MINIMO_DECIMALES |url: |action: 
+2020-09-29 12:59:07.3406|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MAXIMO_DECIMALES |url: |action: 
+2020-09-29 13:03:02.2278|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 13:03:02.2278|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 13:03:02.2392|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-09-29 13:05:55.2814|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 13:05:55.2814|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-29 13:05:55.3245|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 13:05:56.6807|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 13:05:56.6949|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 13:05:56.6949|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 13:05:56.7089|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 13:05:56.7089|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 13:05:56.7089|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 13:05:56.7619|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 
+2020-09-29 13:53:14.7831|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-09-29 13:53:15.0199|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-09-29 13:53:18.2979|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 13:53:18.2979|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-29 13:53:18.3030|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-29 13:53:18.4565|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-29 13:53:18.4668|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-29 13:53:18.4668|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-29 13:53:18.4806|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-29 13:53:18.4937|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-29 13:53:18.4937|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-29 13:53:18.6402|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 

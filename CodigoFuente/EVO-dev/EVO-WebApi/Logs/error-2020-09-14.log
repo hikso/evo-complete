@@ -1,0 +1,90 @@
+ -------------- Error (2020-09-14 15:56:34.9371) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: DetallePedidoId no informado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: DetallePedidoId no informado
+
+ -------------- Error (2020-09-14 15:58:12.3696) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerGestionCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: GestionCompra no registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: GestionCompra no registrado
+
+ -------------- Error (2020-09-14 16:22:14.3447) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerGestionCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: GestionCompra no registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: GestionCompra no registrado
+
+ -------------- Error (2020-09-14 16:34:45.3818) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerGestionCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: GestionCompra no registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: GestionCompra no registrado
+
+ -------------- Error (2020-09-14 16:34:54.5160) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo ya está asociado a esa acción de compra
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo ya está asociado a esa acción de compra
+
+ -------------- Error (2020-09-14 16:35:02.6097) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo ya está asociado a esa acción de compra
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo ya está asociado a esa acción de compra
+
+ -------------- Error (2020-09-14 16:35:24.8410) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo ya está asociado a esa acción de compra
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo ya está asociado a esa acción de compra
+
+ -------------- Error (2020-09-14 16:57:24.2691) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo ya está asociado a esa acción de compra
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo ya está asociado a esa acción de compra
+
+ -------------- Error (2020-09-14 16:57:32.0146) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo ya está asociado a esa acción de compra
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo ya está asociado a esa acción de compra
+
+ -------------- Error (2020-09-14 16:58:19.8500) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo ya está asociado a esa acción de compra
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo ya está asociado a esa acción de compra
+

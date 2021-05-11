@@ -1,0 +1,11 @@
+C:\EVO\CodigoFuente\EVO-test\EVO-Proxy\bin\Release\netcoreapp2.1\EVO_Proxy.deps.json
+C:\EVO\CodigoFuente\EVO-test\EVO-Proxy\bin\Release\netcoreapp2.1\EVO_Proxy.dll
+C:\EVO\CodigoFuente\EVO-test\EVO-Proxy\bin\Release\netcoreapp2.1\EVO_Proxy.pdb
+C:\EVO\CodigoFuente\EVO-test\EVO-Proxy\bin\Release\netcoreapp2.1\EVO_BusinessObjects.dll
+C:\EVO\CodigoFuente\EVO-test\EVO-Proxy\bin\Release\netcoreapp2.1\EVO_BusinessObjects.pdb
+C:\EVO\CodigoFuente\EVO-test\EVO-Proxy\obj\Release\netcoreapp2.1\EVO-Proxy.csprojAssemblyReference.cache
+C:\EVO\CodigoFuente\EVO-test\EVO-Proxy\obj\Release\netcoreapp2.1\EVO-Proxy.AssemblyInfoInputs.cache
+C:\EVO\CodigoFuente\EVO-test\EVO-Proxy\obj\Release\netcoreapp2.1\EVO-Proxy.AssemblyInfo.cs
+C:\EVO\CodigoFuente\EVO-test\EVO-Proxy\obj\Release\netcoreapp2.1\EVO-Proxy.csproj.CopyComplete
+C:\EVO\CodigoFuente\EVO-test\EVO-Proxy\obj\Release\netcoreapp2.1\EVO_Proxy.dll
+C:\EVO\CodigoFuente\EVO-test\EVO-Proxy\obj\Release\netcoreapp2.1\EVO_Proxy.pdb

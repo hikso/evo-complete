@@ -1,0 +1,153 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Bodegas
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Bodegas
+  version: "1.0.0"
+  title: API de Bodegas
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com
+tags:
+  - name: Bodegas
+    description: Gestión de Bodegas
+paths:
+  /bodegas/tipos:
+   get:
+      tags:
+        - Bodegas
+      summary: Obtiene los tipos de bodegas con las bodegas a las cuales se les pueden hacer solicitudes de pedido
+      operationId: obtenerTiposBodega
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/ObtenerTipoBodegaAResponse'
+  /bodegas:
+    get:
+      tags: 
+        - Bodegas
+      summary: Obtiene la bodega por código
+      operationId: obtenerBodegaxCodigo
+      parameters:
+        - name: codigo
+          in: path
+          description: Indica el código de la bodega
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                 type: array
+                 items:
+                   $ref: '#/components/schemas/BodegaResponse'      
+  /bodegas/planta:
+    get:
+      tags: 
+        - Bodegas
+      summary: Obtiene las bodegas de tipo planta
+      operationId: obtenerBodegasTipoPlanta
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                 type: array
+                 items:
+                   $ref: '#/components/schemas/BodegaResponse'                 
+  /bodegas/puntoventa:
+    get:
+      tags: 
+        - Bodegas
+      summary: Obtiene las bodegas de tipo punto de venta
+      operationId: obtenerBodegasTipoPuntoVenta
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                 type: array
+                 items:
+                   $ref: '#/components/schemas/BodegaResponse'    
+  /bodegas/filtrar:
+    get:
+      tags: 
+        - Bodegas
+      summary: Obtiene las bodegas filtradas por código artículo y id de entrega
+      parameters:
+        - name: codigo
+          in: query
+          description: Indica el código del artículo
+          required: true
+          schema:
+            type: string
+        - name: entregaId
+          in: query
+          description: Indica el id de la entrega
+          required: true
+          schema:
+            type: integer
+      operationId: obtenerBodegasFiltrar
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                 type: array
+                 items:
+                   $ref: '#/components/schemas/BodegaResponse'  
+components:
+  schemas:
+    ObtenerTipoBodegaAResponse:
+      type: object
+      description: Indica el tipo de bodega al cual se pueden hacer solicitudes de pedido
+      properties:
+        tipoBodega:
+          type: string
+          example: "Punto de Venta"
+          description: Indica el nombre del tipo de bodega
+        bodegas:     
+          type: array
+          description: Indica la lista de bodegas del tipo de bodega
+          items:
+             type: object
+             properties:
+              codigo:
+               type: string
+               example: 'PV-PRA'
+               description: Código de la bodega
+              nombre:
+               type: string
+               example: 'Prado'
+               description: Nombre de la bodega 
+    BodegaResponse:
+          type: object
+          required: 
+           - WhsCode
+           - WhsName 
+          properties:
+             WhsCode:
+              type: string
+              example: 'COD-BODEGA-1'
+              description: Código bodega
+             WhsName:
+              type: string
+              example: "Bodega 1"
+              description: Nombre bodega
+             FacturacionPorcentajeDescuento:
+              type: number
+              example: 50
+              description: Define el porcentaje de descuento para facturación

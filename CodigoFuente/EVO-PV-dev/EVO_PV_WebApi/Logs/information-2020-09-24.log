@@ -1,0 +1,53 @@
+2020-09-24 10:11:19.9849|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 10:12:46.0432|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 10:13:00.6886|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 10:15:47.0936|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 10:16:08.7982|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 10:16:14.0000|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 10:18:24.7326|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 10:30:43.2547|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 10:50:07.8062|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 10:51:16.9600|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 10:53:32.9731|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 10:54:12.3578|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 10:56:21.8765|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 11:04:26.9450|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 11:07:51.3199|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:22:37.2738|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:23:55.1983|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:24:01.0641|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 12:26:08.8631|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:26:29.4039|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:26:33.3647|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 12:32:36.3445|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:33:01.1196|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:33:04.3436|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 12:35:14.4086|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:36:06.1497|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:36:17.1657|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 12:40:42.6566|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:41:16.7787|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:41:35.8517|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 12:43:38.8123|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:44:20.0993|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:46:18.6145|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:46:39.1717|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 12:46:45.0274|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 13:05:34.4059|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 13:19:19.4453|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 13:19:31.8111|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 13:21:39.9188|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 13:22:52.2079|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 13:22:59.4271|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 14:40:54.5263|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 14:41:31.0745|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 14:42:30.7823|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 14:45:48.5093|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 14:46:12.5961|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 14:46:25.0441|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2020-09-24 14:48:35.8168|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 14:49:11.3790|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 14:50:09.7759|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 14:50:23.8648|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 14:50:38.9973|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-09-24 14:50:45.7178|EVO_PV_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 

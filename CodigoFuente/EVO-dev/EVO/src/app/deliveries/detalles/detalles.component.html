@@ -1,0 +1,189 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-right"> 
+                <a  class="btn btn-info pull-right mat-raised-button" routerLink="/pedidos/aprobar">
+                    <span class="mat-button-wrapper">
+                        <i class="fa fa-chevron-left"></i> 
+                        <span class="ml-1">Regresar</span>
+                    </span>
+                    <div class="mat-button-ripple mat-ripple"></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </a>  
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">playlist_add_check</i>
+                        </div>
+                        <h4 class="card-title">Aprobación de Pedido - Número Pedido: {{ getPedido.Codigo }}</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Cliente: </strong>
+                                {{ getPedido.Cliente }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Zona: </strong>
+                                {{ getPedido.Zona }}
+                            </div>                            
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Orden de compra: </strong>
+                                
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Número Pedido: </strong>
+                                {{ getPedido.Codigo }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Estado: </strong>
+                                {{ getPedido.Estado }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Usuario: </strong>
+                                {{ getPedido.Usuario }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Fecha Solicitud: </strong>
+                                {{ getPedido.FechaSolicitud }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Fecha Límite Sugerida: </strong>
+                                    <p-calendar
+                                        [(ngModel)]="getPedido.FechaEntrega" 
+                                        [locale]="calendarFormat" 
+                                        dateFormat="dd/mm/yy"
+                                        inputStyleClass="form-control" 
+                                        [minDate]="today"  
+                                        placeholder="__/__/____" 
+                                        value="fecha">
+                                    </p-calendar>
+                            </div>                            
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Fecha Aprobación: </strong>
+                                {{ getPedido.FechaAprobacion }}
+                            </div>
+                        </div>
+
+                        <div class="row mt-1">
+                            <p-table #dt class="table table-striped" [value]="getArticulos" selectionMode="single" [responsive]="true" 
+                                [resizableColumns]="true" columnResizeMode=expand [paginator]="true" [rows]="maxR">
+                                
+                                <!-- Dropdown para la selección del numero de filas, 
+                                    por defecto tiene el valor parametrizado en base de datos  -->
+                                <ng-template pTemplate="caption">
+                                    <div class="ui-grid ui-grid-responsive ui-fluid">
+                                        <span class="pagewidth">
+                                        <p-dropdown (onChange)="onChange($event)" [options]="maxregister" optionLabel="name"
+                                            [showClear]="true"></p-dropdown>
+                                        </span>
+                                        <span class="bold pagewidth text-corp">
+                                        Mostrar
+                                        </span>
+                                    </div>
+                                </ng-template>
+    
+                                <!-- Encabezado de tabla -->
+                                <ng-template pTemplate="header">
+                                    <tr class="text-corp"> 
+                                        <th *ngFor="let item of columns" [hidden]="whscode == 'PDC-PTD' && item.showOnWhsCode" class="{{ item.class }}  align-items-center" [style.width]="item.width"> {{ item.header }}</th>
+                                    </tr>
+                                </ng-template>
+    
+                                <!-- Contenido de la tabla -->
+                                <ng-template pTemplate="body" let-getArticulos let-i="rowIndex">
+                                    <tr class="ng-star-inserted" [pSelectableRow]="getArticulos" class="select button-edit"
+                                        [ngClass]="{'article-edited' : getArticulos.edited}">
+                                        <td>{{ getArticulos.Codigo }}</td>
+                                        <td  class="text-nombre" ><span matTooltip="{{ getArticulos.Nombre }}">{{ getArticulos.Nombre }}</span></td>
+                                        <td [ngClass]="{'overflow-unset': true}">
+                                            <p-dropdown 
+                                                class="dropdown"
+                                                [options]="estados" 
+                                                optionLabel="Nombre"
+                                                [(ngModel)]="getArticulos.estado">
+                                            </p-dropdown>
+                                        </td>
+                                        <td [ngClass]="{'overflow-unset': true}">
+                                            <p-dropdown 
+                                                class="dropdown"
+                                                [options]="empaques" 
+                                                optionLabel="empaqueNombre"
+                                                [(ngModel)]="getArticulos.empaque">
+                                            </p-dropdown>
+                                        </td>
+                                        <td class="text-right">{{ getArticulos.CantidadSolicitada | decimalnumber }}</td>
+                                        <td class="text-center">{{ getArticulos.UnidadMedida }}</td>
+                                        <td  pEditableColumn class="text-right">
+                                            <p-cellEditor>
+                                                <ng-template pTemplate="input">
+                                                    <input type="number" min="0" [max]="getArticulos.CantidadSolicitada" step="1"  
+                                                    pInputText [(ngModel)]="getArticulos.CantidadAprobada"
+                                                    (keyup)="dataEdit($event, getArticulos, getArticulos.CantidadAprobada)"
+                                                    (keydown.arrowup)="dataEditKeyUp(getArticulos)"
+                                                    (keydown.arrowdown)="dataEditKeyDown(getArticulos, getArticulos.CantidadAprobada)"
+                                                    (keydown.tab)="focusNextField(i)"
+                                                    (keydown.enter)="focusNextField(i)"
+                                                    (change)="handlerChangeCantidad(getArticulos)">
+                                                </ng-template>
+                                                                    
+                                                <ng-template pTemplate="output" >
+                                                    {{ getArticulos.CantidadAprobada | decimalnumber }}
+                                                    <i class="fa fa-pencil margin-left"></i>
+                                                    <button [hidden]="!getArticulos.edited" class="btn btn-warning btn-round btn-fab mat-raised-button edited-button" matTooltip="Artículo Editado">
+                                                        <span class="mat-button-wrapper">
+                                                            <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                                        </span>
+                                                        <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                                        <div class="mat-button-focus-overlay"></div>
+                                                    </button>
+                                                    <!-- <p-message *ngIf="pedidoDetalleRespuesta.ColorFondo==='#F8B7BD'" severity="error"></p-message> -->
+                                                </ng-template>
+                                            </p-cellEditor>  
+                                        </td>
+                                        <td class="text-right">{{ getArticulos.StockDisponible | decimalnumber }}</td>
+                                        <td class="text-right" [hidden]="whscode == 'PDC-PTD'">{{ getArticulos.StockDisponible | decimalnumber }}</td>
+                                    </tr>
+                                </ng-template>
+    
+                                <!-- Contenido de la tabla con 0 registros -->
+                                <ng-template pTemplate="emptymessage" let-columns>
+                                    <tr class="text-center">
+                                        <td [attr.colspan]="8">
+                                        <p>No hay registros disponibles para mostrar</p>
+                                        </td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button  class="btn btn-success pull-right mat-raised-button col-12 col-sm-6 col-md-4 col-lg-4" type="button"  
+                                    (click)="EnviarDistribucion();"  [disabled]="disableSaveButton">
+                                    <span class="mat-button-wrapper">
+                                        <i class="material-icons">backup</i>
+                                        <span class="ml-1">Enviar a Programación Entregas</span>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button> 
+                                <button  class="btn btn-warning pull-right mat-raised-button col-12 col-sm-6 col-md-4 col-lg-4" type="button" 
+                                    (click)="borrador();"  [disabled]="disableSaveEraserButton">
+                                    <span class="mat-button-wrapper">
+                                        <i class="material-icons">playlist_add_check</i>
+                                        <span class="ml-1">Guardar Borrador</span>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    

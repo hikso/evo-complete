@@ -1,0 +1,144 @@
+ -------------- Error (2020-10-15 10:13:32.3114) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 10:19:28.7337) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 10:33:34.1562) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 10:50:24.9384) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 11:33:49.5933) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 11:56:39.8288) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 12:05:27.6715) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 13:25:22.8113) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 13:31:31.7644) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 13:33:32.2647) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 13:35:41.3912) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 13:36:23.5621) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 13:37:49.1861) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 13:46:03.7802) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 13:47:30.0139) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-10-15 13:53:36.7962) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+

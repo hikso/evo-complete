@@ -1,0 +1,9 @@
+ -------------- Error (2020-10-29 09:16:23.7079) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.AsignarComercialTrasladoBorrado
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Fecha limite sugerida no puede ser menor a hoy
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Fecha limite sugerida no puede ser menor a hoy
+

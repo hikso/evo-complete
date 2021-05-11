@@ -1,0 +1,231 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Auditoria
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Auditoria
+  version: "1.0.0"
+  title: API de Auditoria
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com
+tags:
+  - name: Auditoria
+    description: Gestión de Auditoria
+paths:
+  /auditoria:
+    post:
+      tags:
+        - Auditoria
+      summary: Crea un registro de Auditoria
+      operationId: crearRegistro
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:          
+          $ref: '#/components/requestBodies/RegistroAuditoriaRequest'
+    get:
+      tags:
+        - Auditoria
+      summary: Obtiene los registros de Auditoria
+      operationId: obtenerTodosRegistros
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosRegistrosResponse'
+  /auditoria/filtrar:
+    post:
+      tags:
+        - Auditoria
+      summary: Obtiene todos los registros de Auditoria aplicando filtros de búsqueda
+      operationId: obtenerTodosRegistrosxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarAuditoriaRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosRegistrosResponse'
+                  
+  /auditoria/log:
+    post:
+      tags:
+        - Auditoria
+      summary: Crea un registro de Log
+      operationId: crearLog
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:          
+          $ref: '#/components/requestBodies/RegistroLogRequest'
+    
+components:
+
+  schemas:
+    FiltrarAuditoriaRequest:
+       type: object
+       description: Objeto que contiene los filtros de la Auditoria
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+            fecha:
+              type: string
+              example: "2019"
+              description: Filtro por fecha
+            usuario:
+              type: string
+              example: "Admin"
+              description: Filtro por usuario
+            accion:
+              type: string
+              example: "Insertar"
+              description: Filtro por acción
+            parametros:
+              type: string
+              example: "Insertar"
+              description: Filtro por parámetros
+            ip:
+              type: string
+              example: "192."
+              description: Filtro por IP
+
+    RegistroAuditoriaRequest:
+       type: object
+       required:
+        - accion
+       description: Objeto que contiene un registro de Auditoria
+       properties:
+        accion:
+          type: string
+          example: "Creó un nuevo producto"
+          description: Acción que está siendo auditada
+        parametros:
+          type: string
+          example: "{ Codigo: 10, Nombre: 'Nuevo Producto' }"
+          description: Objeto serializado en formato JSON que contiene los parámetros de la acción
+
+    ObtenerTodosRegistrosResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de registros de Auditoria
+          items:
+            type: object
+            properties:
+              fecha:
+                type: string
+                example: 30-Jul/2019
+                description: Fecha en la que se registra la acción
+              usuario:
+                type: string
+                example: "DOMINIO\\USUARIO"
+                description: Usuario cuya acción está siendo auditada
+              accion:
+                type: string
+                example: "Creó un nuevo producto"
+                description: Acción que está siendo auditada
+              parametros:
+                type: string
+                example: "{ Codigo: 10, Nombre: 'Nuevo Producto' }"
+                description: Objeto serializado en formato JSON que contiene los parámetros de la acción
+              ip:
+                type: string
+                example: "192.168.0.100"
+                description: Dirección IP desde la cuál se realizó la acción
+                
+    RegistroLogRequest:
+      type: object
+      description: Solicitud general del log
+      properties:
+        message:
+          type: string
+          example: 'Ha ocurrido un problema'
+          description: Mensaje del log
+        additional:
+          type: array
+          description: Lista descripciónes de errores
+          items:
+            type: string
+            example: 'error en la vista'
+            description: Mensaje error
+        level:
+          type: integer
+          example: 5
+          description: Nivel del log
+        timestamp:
+          type: string
+          format: date-time
+          example: 2018-03-20T09:12:28Z
+          description: Indica la fecha del log
+        fileName:
+          type: string
+          example: 'archivo2.js'
+          description: Nombre del archivo
+        lineNumber:
+          type: string
+          example: '121'
+          description: Linea del archivo
+          
+  requestBodies:
+    RegistroAuditoriaRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RegistroAuditoriaRequest'
+      description: Solicitud de creación de un registro de Auditoria
+      required: true
+      
+    FiltrarAuditoriaRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarAuditoriaRequest'
+      description: Solicitud de filtro de Auditoria. Se debe ingresar al menos uno de los criterios del filtro
+      required: true
+      
+    RegistroLogRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RegistroLogRequest'
+      description: Solicitud de log. 
+      required: true

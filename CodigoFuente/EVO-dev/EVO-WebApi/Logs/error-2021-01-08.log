@@ -1,0 +1,1254 @@
+ -------------- Error (2021-01-08 08:01:26.6117) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:77ec332b-93a8-4ad3-8f81-62203542f50d
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2021-01-08 08:01:26.7914) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2021-01-08 08:01:27.0871) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:77ec332b-93a8-4ad3-8f81-62203542f50d
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2021-01-08 08:01:27.0871) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2021-01-08 14:59:08.6570) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:4ccc89ab-f2ce-4084-843b-dc93fc04bf0e
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2021-01-08 14:59:08.8316) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2021-01-08 14:59:08.9555) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:4ccc89ab-f2ce-4084-843b-dc93fc04bf0e
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2021-01-08 14:59:08.9585) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2021-01-08 15:03:08.0190) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:565061ef-dc82-4132-a484-b0f4b44df2aa
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2021-01-08 15:03:08.2464) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2021-01-08 15:03:08.5991) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:565061ef-dc82-4132-a484-b0f4b44df2aa
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2021-01-08 15:03:08.6735) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2021-01-08 15:04:18.1782) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no tiene roles asignados
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no tiene roles asignados
+
+ -------------- Error (2021-01-08 15:07:34.9038) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no tiene roles asignados
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no tiene roles asignados
+
+ -------------- Error (2021-01-08 15:07:52.9190) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no tiene roles asignados
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no tiene roles asignados
+
+ -------------- Error (2021-01-08 15:08:41.3329) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no tiene roles asignados
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no tiene roles asignados
+
+ -------------- Error (2021-01-08 15:11:05.1205) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no tiene roles asignados
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no tiene roles asignados
+
+ -------------- Error (2021-01-08 15:11:05.2707) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no tiene roles asignados
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no tiene roles asignados
+
+ -------------- Error (2021-01-08 15:12:16.6923) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no tiene roles asignados
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no tiene roles asignados
+
+ -------------- Error (2021-01-08 15:12:16.8822) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no tiene roles asignados
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no tiene roles asignados
+
+ -------------- Error (2021-01-08 15:16:48.2392) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no tiene roles asignados
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no tiene roles asignados
+
+ -------------- Error (2021-01-08 15:16:48.3650) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no tiene roles asignados
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no tiene roles asignados
+
+ -------------- Error (2021-01-08 15:17:11.4148) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no tiene roles asignados
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no tiene roles asignados
+
+ -------------- Error (2021-01-08 15:17:11.6626) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El usuario no tiene roles asignados
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El usuario no tiene roles asignados
+
+ -------------- Error (2021-01-08 16:41:08.4935) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerAcciones
+ Exception Type: System.InvalidOperationException
+ Exception Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+ Stack Trace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at EVO_DataAccess.DataAccess.DAArticulo.ObtenerAcciones() in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAArticulo.cs:line 937
+   at EVO_BusinessLogic.BLArticulo.ObtenerAcciones() in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLArticulo.cs:line 2453
+ Additional Info: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at EVO_DataAccess.DataAccess.DAArticulo.ObtenerAcciones() in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAArticulo.cs:line 937
+   at EVO_BusinessLogic.BLArticulo.ObtenerAcciones() in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLArticulo.cs:line 2453
+
+ -------------- Error (2021-01-08 16:41:08.4935) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: System.InvalidOperationException
+ Exception Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+ Stack Trace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ Additional Info: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+
+ -------------- Error (2021-01-08 16:41:08.4935) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLParametroGeneral.ObtenerValorPorNombre
+ Exception Type: System.InvalidOperationException
+ Exception Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+ Stack Trace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at EVO_DataAccess.DataAccess.DAParametroGeneral.ObtenerValorPorNombre(NombresParametrosGeneralesEnum nombre) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAParametroGeneral.cs:line 69
+   at EVO_BusinessLogic.BLParametroGeneral.ObtenerValorPorNombre(NombresParametrosGeneralesEnum nombre) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLParametroGeneral.cs:line 139
+ Additional Info: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at EVO_DataAccess.DataAccess.DAParametroGeneral.ObtenerValorPorNombre(NombresParametrosGeneralesEnum nombre) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAParametroGeneral.cs:line 69
+   at EVO_BusinessLogic.BLParametroGeneral.ObtenerValorPorNombre(NombresParametrosGeneralesEnum nombre) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLParametroGeneral.cs:line 139
+
+ -------------- Error (2021-01-08 16:41:08.7112) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario
+ Exception Type: System.InvalidOperationException
+ Exception Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+ Stack Trace:    at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ Additional Info: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+
+ -------------- Error (2021-01-08 16:41:10.1829) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:41:10.2223) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:42:10.3707) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:42:10.3707) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:42:10.4173) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:42:10.4173) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:42:10.4428) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:42:10.4428) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:42:36.9865) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:42:36.9912) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:42:37.0062) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:42:37.0062) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:42:37.0210) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 16:42:37.0210) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 17:06:15.9493) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: System.InvalidOperationException
+ Exception Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+ Stack Trace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ Additional Info: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+
+ -------------- Error (2021-01-08 17:06:15.9493) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: System.InvalidOperationException
+ Exception Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+ Stack Trace:    at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ Additional Info: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+
+ -------------- Error (2021-01-08 17:06:16.0349) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario
+ Exception Type: System.InvalidOperationException
+ Exception Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+ Stack Trace:    at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ Additional Info: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+
+ -------------- Error (2021-01-08 17:06:16.0349) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario
+ Exception Type: System.InvalidOperationException
+ Exception Message: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+ Stack Trace:    at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ Additional Info: System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+
+ -------------- Error (2021-01-08 17:06:17.7539) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLUsuario.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure )
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   at EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(String Usuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAUsuario.cs:line 48
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 282
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+
+ -------------- Error (2021-01-08 17:06:17.7539) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+ Stack Trace:    at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at EVO_BusinessLogic.BLUsuario.ObtenerUsuario(String nombreUsuario) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLUsuario.cs:line 288
+   at EVO_WebApi.Controllers.UsuariosApiController.ObtenerUsuario() in C:\EVO\CodigoFuente\EVO-dev\EVO-WebApi\Controllers\UsuariosApi.cs:line 196
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+

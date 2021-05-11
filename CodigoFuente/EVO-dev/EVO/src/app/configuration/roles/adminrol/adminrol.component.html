@@ -1,0 +1,162 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-right">
+                <a class="btn btn-success btn-round btn-fab mat-raised-button" routerLink="create">
+                    <span class="mat-button-wrapper">
+                        <i class="material-icons">fingerprint</i>
+                    </span>
+                    <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </a>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">fingerprint</i>
+                        </div>
+                        <h4 class="card-title">Administrador de Roles</h4>
+                    </div>
+
+                    <div class="card-body">
+                        <p-table #dt class="table table-striped" [value]="rol" selectionMode="multiple" [responsive]="true" 
+                            [resizableColumns]="true" columnResizeMode=expand [lazy]="true" (onLazyLoad)="loadCarsLazy($event)"
+                             [paginator]="false" [rows]="maxR" [totalRecords]="totalRow">
+                             
+                             <!-- Dropdown para la selección del numero de filas, 
+                               por defecto tiene el valor parametrizado en base de datos  -->
+                            <ng-template pTemplate="caption">
+                                <div class="ui-grid ui-grid-responsive ui-fluid">
+                                    <span class="pagewidth">
+                                        <p-dropdown (onChange)="onChange($event)" [options]="maxregister" optionLabel="name"
+                                        [showClear]="true"></p-dropdown>
+                                    </span>
+                                    <span class="bold pagewidth text-corp">
+                                        Mostrar
+                                    </span>
+                                </div>
+                            </ng-template>
+               
+                            <!-- Encabezado de tabla -->
+                            <ng-template pTemplate="header">
+                                <tr class="text-corp"> 
+                                    <th *ngFor="let item of columns" class="{{ item.class }}  align-items-center"> {{ item.header }}</th>
+                                </tr>
+                                                        
+                                <!-- Buscar por columnas -->
+                                <tr>
+                                    <th *ngFor="let col of columns" [ngSwitch]="col.field">
+                                        <div class="ui-inputgroup" *ngSwitchCase="'nombre'">
+                                            <input class="form-control" pInputText type="text"
+                                            (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </ng-template>
+               
+                             <!-- Contenido de la tabla -->
+                             <ng-template pTemplate="body" let-rol >
+                               <tr class="ng-star-inserted" [pSelectableRow]="rol" class="select">
+                                   <td class="align-middle">{{ rol.nombre }}</td>
+                                   <td class="text-center">
+                                        <div class="form-check form-check-inline" >
+                                            <label class="form-check-label" (change)="active($event.target.checked, rol)">
+                                                <input class="form-check-input" type="checkbox" [(ngModel)]="rol.activo" binary="true" >
+                                                <span class="form-check-sign">
+                                                    <span class="check"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                   </td>
+                                   <td class="text-center" widht="20%">
+                                        <button class="btn btn-info btn-round btn-fab mat-raised-button"  (click)="open(mymodal, rol)" matTooltip="Informacion">
+                                            <span class="mat-button-wrapper">
+                                                <i class="fa fa-eye"></i>
+                                            </span>
+                                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                            <div class="mat-button-focus-overlay"></div>
+                                        </button>
+
+                                        <button class="btn btn-success btn-round btn-fab mat-raised-button"routerLink="/configuracion/adminrol/{{ rol.nombre }}/{{ rol.rolId }}" matTooltip="Asociar usuarios">
+                                            <span class="mat-button-wrapper">
+                                                <i class="fa fa-user-plus"></i>
+                                            </span>
+                                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                            <div class="mat-button-focus-overlay"></div>
+                                        </button>
+
+                                        <button class="btn btn-warning btn-round btn-fab mat-raised-button" routerLink ="/configuracion/adminrol/edit/{{ rol.nombre }}/{{ rol.rolId}}" matTooltip="Editar rol">
+                                            <span class="mat-button-wrapper">
+                                                <i class="material-icons">create</i>
+                                            </span>
+                                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                            <div class="mat-button-focus-overlay"></div>
+                                        </button>
+                                   </td>
+                               </tr>
+                             </ng-template>
+               
+                             <!-- Contenido de la tabla con 0 registros -->
+                             <ng-template pTemplate="emptymessage" let-columns>
+                                <tr class="text-center">
+                                    <td [attr.colspan]="6">
+                                        <p>No hay registros disponibles para mostrar</p>
+                                    </td>
+                                </tr>
+                             </ng-template>
+                        </p-table>
+               
+                        <!-- Paginación -->
+                        <div class="footpaginator">
+                            <p-paginator #pg (onLazyLoad)="loadCarsLazy($event)" (onPageChange)="loadCarsLazy($event)"
+                                [rows]="maxR" [totalRecords]="totalRow" >
+                            </p-paginator>
+                            <span class="totalRow">{{ numFilas }} de {{ totalRow }} Registros</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal detalle Role -->
+<ng-template #mymodal let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Detalle Rol: {{ rolesId.nombre }}</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="row modalrow">
+        <div class="col-6 contentparams">
+            <strong>Nombre:</strong>
+            {{rolesId.nombre}}
+        </div>
+        <div class="col-6 contentparams">
+            <strong>Estado:</strong>
+            {{ rolesId.activo ? 'activo': 'desactivado' }}
+        </div>
+        <div class="col-6 contentparams mt-3">
+            <strong>Permisos:</strong>
+            
+            <p class="mb-0" *ngIf="rolesId.Administracion"> - Administración: {{ rolesId.Administracion ? 'activo':'desactivado'}} </p>
+            <p class="mb-0" *ngIf="rolesId.PlantaBeneficio"> - Planta Beneficio: {{ rolesId.PlantaBeneficio ? 'activo':'desactivado'}} </p>
+            <p class="mb-0" *ngIf="rolesId.PlantaDerivadosCarnicos"> - Planta Derivados: {{ rolesId.PlantaDerivadosCarnicos ? 'activo':'desactivado'}} </p>
+            <p class="mb-0" *ngIf="rolesId.PuntoVenta"> - Punto de Venta: {{ rolesId.PuntoVenta ? 'activo':'desactivado'}} </p>
+          
+        </div>
+        <div class="col-6 contentparams mt-3">
+            <strong>Módulos:</strong><br>
+            <p class="mb-0" *ngFor="let item of rolesId.FuncionalidadesIds">- {{ item.nombre }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="modal.dismiss('Cross click')">Ok</button>
+    </div>
+</ng-template>

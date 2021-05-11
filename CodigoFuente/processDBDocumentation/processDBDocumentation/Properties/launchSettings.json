@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "processDBDocumentation": {
+      "commandName": "Project",
+      "commandLineArgs": "ConnectionString=\"Data Source=localhost\\SQLEXPRESS;Initial Catalog=EVO;Integrated Security=True;\" Assembly=\"C:\\Proyectos .NET\\PorciCarnes\\EVO-PV\\CodigoFuente\\EVO\\EVO-DataAccess\\bin\\Debug\\netcoreapp2.1\\EVO_DataAccess.dll\""
+    }
+  }
+}

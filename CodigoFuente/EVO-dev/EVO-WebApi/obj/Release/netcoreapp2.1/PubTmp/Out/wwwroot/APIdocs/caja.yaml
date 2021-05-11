@@ -1,0 +1,117 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Cajas
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Cajas
+  version: "1.0.0"
+  title: API de    API de administración de Cajas
+
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Cajas
+    description: Gestión de Cajas
+paths:
+  /caja/estadocaja:
+    get:
+      tags: 
+        - Cajas
+      summary: Obtiene el estado de caja por punto de venta
+      operationId: obtenerEstadoCaja   
+      parameters:
+         - name: codigoPuntoVenta
+           in: query
+           description: Indica el código del punto de venta
+           required: true
+           schema:
+             type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:              
+              application/json:
+                schema:                  
+                    $ref: '#/components/schemas/estadoCajaResponse'
+  /caja/apertura:
+    get:
+      tags: 
+        - Cajas
+      summary: Obtiene el estado de la apertura de caja por punto de venta
+      operationId: obtenerAperturaCaja   
+      parameters:
+         - name: codigoPuntoVenta
+           in: query
+           description: Indica el código del punto de venta
+           required: true
+           schema:
+             type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:              
+              application/json:
+                schema:                  
+                    $ref: '#/components/schemas/aperturaCajaResponse'
+    post:
+        tags:
+          - Cajas
+        summary: Registrar la apertura de caja
+        operationId: asignarAperturaCaja
+        requestBody:
+            $ref: '#/components/requestBodies/aperturaCajaRequest'
+        responses:
+            '200':
+              description: Operación realizada con éxito      
+components:
+  schemas:
+    aperturaCajaResponse:
+      type: object
+      description: Representa la respuesta de un estado de caja
+      properties:         
+         fechaApertura:
+          type: string
+          example: '11/10/2020'
+          description: Indica la fecha de apertura de caja
+         fechaCierre:
+          type: string
+          example: '11/10/2020'
+          description: Indica la fecha de cierre de caja 
+         valorAsignado:
+          type: number
+          example: 1000000
+          description: Indica el valor asignado a la caja 
+    aperturaCajaRequest:
+      type: object
+      description: Representa el registro de apertura de caja
+      properties:        
+         codigoPuntoVenta:
+          type: string
+          example: 'PV-PRA'
+          description: Indica el código del punto de venta
+         valorApertura:
+          type: number
+          example: 1000000
+          description: Indica el valor de apertura de la caja
+    estadoCajaResponse:
+      type: object
+      description: Representa el estado de la caja en el punto de venta
+      properties:        
+         cierreCaja:
+          type: boolean
+          example: false
+          description: Indica el estado del cierre de caja del día anterior
+         aperturaCaja:
+          type: boolean
+          example: true
+          description: Indica el estado del apertura de caja del día de hoy               
+  requestBodies:
+      aperturaCajaRequest:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/aperturaCajaRequest'
+        description: Solicitud para el registro de la apertura de caja
+        required: true 

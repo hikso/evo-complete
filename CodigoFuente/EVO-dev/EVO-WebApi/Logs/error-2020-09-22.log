@@ -1,0 +1,108 @@
+ -------------- Error (2020-09-22 11:28:38.4403) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLParametroGeneral.ObtenerValorPorNombre
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El parámetro se encuentra vacio NOTIFICACION_CREDENCIALES_CORREO
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El parámetro se encuentra vacio NOTIFICACION_CREDENCIALES_CORREO
+
+ -------------- Error (2020-09-22 11:28:54.8982) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLParametroGeneral.ObtenerValorPorNombre
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El parámetro se encuentra vacio NOTIFICACION_CREDENCIALES_CORREO
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El parámetro se encuentra vacio NOTIFICACION_CREDENCIALES_CORREO
+
+ -------------- Error (2020-09-22 11:30:15.4890) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLParametroGeneral.ObtenerValorPorNombre
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El parámetro se encuentra vacio NOTIFICACION_CREDENCIALES_CORREO
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El parámetro se encuentra vacio NOTIFICACION_CREDENCIALES_CORREO
+
+ -------------- Error (2020-09-22 11:30:15.4890) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLParametroGeneral.ObtenerValorPorNombre
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El parámetro se encuentra vacio NOTIFICACION_CREDENCIALES_CORREO
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El parámetro se encuentra vacio NOTIFICACION_CREDENCIALES_CORREO
+
+ -------------- Error (2020-09-22 11:55:34.5366) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.AsignarComercialTrasladoBorrado
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Fecha limite sugerida no puede ser menor a hoy
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Fecha limite sugerida no puede ser menor a hoy
+
+ -------------- Error (2020-09-22 12:15:24.6000) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.AsignarComercialTrasladoBorrado
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Fecha limite sugerida no puede ser menor a hoy
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Fecha limite sugerida no puede ser menor a hoy
+
+ -------------- Error (2020-09-22 12:16:18.0683) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.AsignarComercialTrasladoBorrado
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Fecha limite sugerida no puede ser menor a hoy
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Fecha limite sugerida no puede ser menor a hoy
+
+ -------------- Error (2020-09-22 12:24:23.1773) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-09-22 12:29:08.3805) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLCajas.ObtenerEstadoCaja
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Caja no registrada
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Caja no registrada
+
+ -------------- Error (2020-09-22 12:29:12.7704) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-09-22 12:57:20.3501) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.AsignarComercialTrasladoBorrado
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Fecha limite sugerida no puede ser menor a hoy
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Fecha limite sugerida no puede ser menor a hoy
+
+ -------------- Error (2020-09-22 12:57:33.4109) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.AsignarComercialTrasladoBorrado
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Fecha limite sugerida no puede ser menor a hoy
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Fecha limite sugerida no puede ser menor a hoy
+

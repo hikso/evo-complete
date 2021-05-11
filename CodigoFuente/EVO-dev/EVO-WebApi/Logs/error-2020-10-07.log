@@ -1,0 +1,18 @@
+ -------------- Error (2020-10-07 10:53:57.5706) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerTodosArchivosxFiltro
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+
+ -------------- Error (2020-10-07 10:56:20.3513) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerTodosArchivosxFiltro
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+

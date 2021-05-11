@@ -1,0 +1,153 @@
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+:host ::ng-deep  p-calendar .ui-calendar{
+    width: 100%;
+    .ui-datepicker{
+        background-color: #ffffff;
+        height: auto;
+        top: 40px !important;
+        td{
+            padding: 0px;
+            span, a{
+                padding: 0px !important;
+                cursor: pointer !important;
+                &.ui-state-active:hover{
+                    color: #fff;
+                }
+            }
+            &.ui-datepicker-other-month{
+                opacity: .2;
+                span, a{
+                    cursor: default !important;
+                }
+            }
+        }
+    }
+    input{
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        width: 100%;
+    }
+    span{
+        width: 100%;
+    }
+}
+
+:host ::ng-deep  .ui-table-wrapper{
+    overflow: unset !important;
+}
+
+:host ::ng-deep .overflow-unset{
+    overflow: unset !important;
+}
+
+
+:host ::ng-deep  p-dropdown .ui-dropdown {
+    width: 100%;
+}
+
+:host ::ng-deep  p-multiSelect .ui-multiselect{
+    width: 100%;
+}
+
+:host ::ng-deep  p-multiSelect .ui-multiselect-filter-container input{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: unset;
+    border-bottom: 1px solid #fb8c00;
+}
+
+:host ::ng-deep  p-multiSelect .ui-multiselect-header .ui-multiselect-filter-container 
+.ui-multiselect-filter-icon {
+    left: unset;
+}
+
+:host ::ng-deep  p-multiSelect .ui-multiselect .ui-multiselect-panel{
+    background-color: #ffffff;
+}
+
+.pagewidth{
+    float: right;
+    min-width: 80px;
+}
+.ui-inputgroup .ui-inputgroup-addon{
+    border: none;
+}
+
+tr td{
+    vertical-align: middle;
+}
+
+.text-corp{
+    color: #7F0E06;
+}
+
+:host ::ng-deep .ui-dropdown-panel .ui-dropdown-list {
+    background-color: #fff !important;
+}
+
+:host ::ng-deep .select:hover{
+    background-color: #F5B90E;
+    color: #ffffff;
+}
+
+:host ::ng-deep p-paginator a {
+    color: #7F0E06;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+:host ::ng-deep .ui-state-active{
+    background-color: #7F0E06;
+    color: #ffffff;
+    min-width: 25px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding-top: 1.5px;
+    margin-top: -3px;
+}
+
+.footpaginator{
+ margin-top: 25px;
+ position: relative;
+}
+
+.totalRow{
+    position: absolute; 
+    top:1px; 
+    right:5px; 
+    margin: 5px;
+}
+
+
+.card .custom-checkbox  {
+    margin-top: 15px;
+}
+
+.custom-checkbox .custom-control-label{
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #ffffff;
+    border-color: #ffa726;
+    background-color: #ffa726;
+    box-shadow: none;
+}
+
+.custom-control-label::before, .custom-control-label::after  {
+    width: 20px;
+    height: 20px;
+    margin-top: -5px;
+}
+
+.columnC {
+    width: 20%;
+}

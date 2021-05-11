@@ -1,0 +1,46 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Básculas
+    url: https://evo/api
+info:
+  description:
+   API de administración de Básculas
+  version: "1.0.0"
+  title: API de Básculas
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Basculas
+    description: Gestión de Básculas
+paths:
+  /tipobasculas/:
+    get:
+      tags:
+        - Basculas
+      summary: Obtiene todos los tipos de básculas
+      operationId: obtenerTipoBasculas
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/TipoBasculaResponse' 
+components:
+  schemas:
+    TipoBasculaResponse: 
+      type: object
+      description: Representa un tipo de báscula
+      properties:
+        tipoBasculaId:
+          type: integer
+          example: 1
+          description: Id del tipo de báscula
+        nombre:
+          type: string
+          example: 'Báscula de piso'
+          description: Nomnbre del tipo de báscula
+        

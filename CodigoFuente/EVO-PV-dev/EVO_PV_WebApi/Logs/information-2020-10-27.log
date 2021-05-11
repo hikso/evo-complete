@@ -1,0 +1,6 @@
+2020-10-27 16:23:02.3940|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 
+2020-10-27 16:23:14.5266|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-10-27 16:23:14.5266|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-10-27 16:23:15.2223|EVO_PV_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_PV_WebApi |url: |action: 
+2020-10-27 16:23:15.2223|EVO_PV_BusinessLogic.VendedoresBL|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresBL - EVO_PV_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2020-10-27 16:23:17.6901|EVO_PV_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario en UsuariosApi |url: |action: 

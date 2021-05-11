@@ -1,0 +1,170 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Contenedores
+    url: https://evo/api
+info:
+  description:
+   API de administración de Contenedores
+  version: "1.0.0"
+  title: API de Contenedores
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Contenedores
+    description: Gestión de Contenedores
+paths:
+  /tipocontenedores:
+    get:
+      tags:
+        - Contenedores
+      summary: Obtiene todos los tipos de contenedores
+      operationId: obtenerTipoContenedores
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/TipoContenedorResponse' 
+  /tipocontenedores/pesaje:
+        get:
+          tags:
+            - Contenedores
+          summary: Obtiene todos los contenedores usados en el pesaje
+          operationId: obtenerContenedoresPesaje
+          parameters:
+            - name: pesajeId
+              in: query
+              description: Indica el id del pesaje
+              required: true
+              schema:
+                type: integer
+          responses:
+            '200':
+              description: Operación realizada con éxito
+              content:
+                  application/json:
+                    schema:
+                      type: array
+                      items:
+                       $ref: '#/components/schemas/pesajeContenedorResponse'
+  /tipocontenedores/codigobarras:
+        get:
+          tags:
+            - Contenedores
+          summary: Obtiene todos los codigos de barras contenedores usados en el pesaje
+          operationId: obtenerContenedoresCodigoBarras
+          parameters:           
+            - name: pesajeId
+              in: query
+              description: Indica el id del pesaje
+              required: true
+              schema:
+                type: integer
+          responses:
+            '200':
+              description: Operación realizada con éxito
+              content:
+                  application/json:
+                    schema:
+                      type: array
+                      items:
+                       $ref: '#/components/schemas/codigoBarrasResponse'  
+        post:
+            tags:
+              - Contenedores
+            summary: Registra el código de barras 
+            operationId: asignarCodigoBarras
+            parameters:
+            - name: pesajeId
+              in: query
+              description: Indica el id del pesaje
+              required: true
+              schema:
+                type: integer
+            - name: codigoBarras
+              in: query
+              description: Indica código de barras
+              required: true
+              schema:
+                type: string    
+            responses:
+              '200':
+                description: Operación realizada con éxito
+                content:
+                    application/json:
+                      schema:                       
+                        $ref: '#/components/schemas/codigoBarrasResponse'               
+components:
+  schemas:    
+    TipoContenedorResponse: 
+      type: object
+      description: Representa un tipo de contenedor
+      properties:
+        tipoContenedorId:
+          type: integer
+          example: 1
+          description: Id 
+        nombre:
+          type: string
+          example: 'Canasta'
+          description: Nomnbre 
+        peso:
+          type: number
+          example: 2.100000
+          description: peso
+        codigoBarras:
+          type: boolean
+          example: true
+          description: indica si tienen código de barras
+    pesajeContenedorResponse:
+      type: object
+      description: Representa la cantidad y tipo de contenedor usado para el pesaje
+      properties:
+        tipoContenedorId:
+          type: integer
+          example: 1
+          description: Id 
+        nombre:
+          type: string
+          example: 'Canasta'
+          description: Nomnbre 
+        peso:
+          type: number
+          example: 2.100000
+          description: peso
+        cantidad:
+          type: integer
+          example: 1
+          description: Cantidad usados
+    codigoBarrasResponse:
+      type: object
+      description: Representa un código de barras de un contenedor
+      properties:
+        codigoBarras:
+          type: string
+          example: '01421001232220820000060000000000022300000'
+          description: Código de barras (01421=código artículo | 00123=lote | 2=Estado Artículo | 220120=fecha vencimiento | 00006 = cantidad artículo | 0000000000022=peso entero(13) | 300000=peso decimal(6))       
+        lote:
+          type: string
+          example: 'Lote 123'
+          description: Lote de la bodega        
+        fechaVencimiento:
+          type: string
+          example: '12/12/2020'
+          description: Fecha de vencimiento de los artículos del contenedor
+        unidades:
+          type: integer
+          example: '34'
+          description: Unidades del artículo del contenedor
+        peso:
+          type: number
+          example: 4543
+          description: Peso del contenedor con los articulos
+        inconsistenciaCodigoBarras:
+          type: boolean
+          example: true
+          description: Indica si existe alguna inconsistencia entre pesaje de código de barras y báscula

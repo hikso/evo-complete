@@ -1,0 +1,433 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-right"> 
+                <a  class="btn btn-info pull-right mat-raised-button" routerLink="/pedidos/compras">
+                    <span class="mat-button-wrapper">
+                        <i class="fa fa-chevron-left"></i> 
+                        <span class="ml-1">Regresar</span>
+                    </span>
+                    <div class="mat-button-ripple mat-ripple"></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </a>  
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">alarm_on</i>
+                        </div>
+                        <h4 class="card-title">Gestión Compra Inventario</h4>
+                    </div>
+
+                    <div class="card-body">
+
+                        <div class="row align-items-center mt-3">
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <p><strong class="text-primary-corp">Número Pedido: </strong></p>
+                                {{ getPedido.numeroPedido }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <p><strong class="text-primary-corp">Cliente: </strong></p>
+                                {{ getPedido.cliente }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <p><strong class="text-primary-corp">Fecha Límite Sugerida: </strong></p>
+                                {{ getPedido.fechaLimiteSugerida }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <p><strong class="text-primary-corp">Fecha Solicitud: </strong></p>
+                                {{ getPedido.fechaSolicitud }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <p><strong class="text-primary-corp">Fecha Gestión Compra: </strong></p>
+                                {{ getPedido.fechaGestionCompra }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <p><strong class="text-primary-corp">Usuario: </strong></p>
+                                {{ getPedido.usuarioPedido }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <p><strong class="text-primary-corp">Estado: </strong></p>
+                                {{ getPedido.nombreEstadoPedido }}
+                            </div>
+                        </div>
+
+                        <!-- Articulos aprobados: formulario para entregas -->
+                        <div class="row mb-5" *ngIf="EntregasEnd">
+                            <div class="col-12">
+
+                                <p-table 
+                                    #dt 
+                                    class="table table-striped" 
+                                    [value]="getArticulos" 
+                                    [(selection)]="selectedItemsToManage"
+                                    selectionMode="multiple"                                    
+                                    [responsive]="true"
+                                    [resizableColumns]="true" 
+                                    columnResizeMode=expand 
+                                    [paginator]="true" 
+                                    [rows]="maxR">
+
+                                    <!-- Dropdown para la selección del numero de filas,
+                                    por defecto tiene el valor parametrizado en base de datos  -->
+                                    <ng-template pTemplate="caption">
+                                        <div class="ui-grid ui-grid-responsive ui-fluid">
+                                            <span class="pagewidth">
+                                            <p-dropdown (onChange)="onChange($event)" [options]="maxregister" optionLabel="name"
+                                                [showClear]="true"></p-dropdown>
+                                            </span>
+                                            <span class="bold pagewidth text-corp">
+                                            Mostrar
+                                            </span>
+                                        </div>
+                                    </ng-template>
+
+                                    <!-- Encabezado de tabla -->
+                                    <ng-template pTemplate="header">    
+                                        <tr class="text-corp">
+                                            <th class="columnCheck" id="init" style.width="{{'5%'}}">
+                                                <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                                            </th>
+                                            <th *ngFor="let item of columnsPedido" class="{{ item.class }}  align-items-center" [style.width]="item.width"> {{ item.header }}</th>
+                                        </tr>
+                                    </ng-template>
+
+                                    <!-- Contenido de la tabla -->
+                                    <ng-template pTemplate="body" let-getArticulos let-i="rowIndex">
+                                        <tr class="ng-star-inserted"
+                                        [pSelectableRow]="getArticulos"
+                                        class="select button-edit"
+                                        [ngClass]="{'article-edited' : getArticulos.edited}">
+                                            <td id="initbody">
+                                                <p-tableCheckbox [value]="getArticulos"></p-tableCheckbox>
+                                            </td>
+                                            <td>{{ getArticulos.codigoArticulo }}</td>
+                                            <td class="text-nombre" ><span matTooltip="{{ getArticulos.nombreArticulo }}">{{ getArticulos.nombreArticulo }}</span></td>
+                                            <td class="text-right">{{ getArticulos.cantidadSolicitada | decimalnumber }}</td>
+                                            <td pEditableColumn class="text-right">
+                                                <p-cellEditor>
+                                                    <ng-template pTemplate="input">
+                                                        <input
+                                                            type="number"
+                                                            min="0"
+                                                            [max]="getArticulos.cantidadPendiente"
+                                                            step="1"
+                                                            pInputText [(ngModel)]="getArticulos.cantidadGestionar"
+                                                            [pattern]="Eregular.valor"
+                                                            (keyup)="dataEdit($event, getArticulos)"
+                                                            (keydown.arrowup)="dataEditKeyUp(getArticulos)"
+                                                            (keydown.arrowdown)="dataEditKeyDown(getArticulos, getArticulos.cantidadGestionar)"
+                                                            (keydown.tab)="focusNextField(i); handlerChangeCantidad(getArticulos)"
+                                                            (keydown.enter)="focusNextField(i); handlerChangeCantidad(getArticulos)"
+                                                            (change)="handlerChangeCantidad(getArticulos)">
+                                                    </ng-template>
+
+                                                    <ng-template pTemplate="output" >
+                                                        {{ getArticulos.cantidadGestionar | decimalnumber }}
+                                                        <i class="fa fa-pencil margin-left"></i>
+                                                        <button [hidden]="!getArticulos.edited" class="btn btn-warning btn-round btn-fab mat-raised-button edited-button" matTooltip="Artículo Editado">
+                                                            <span class="mat-button-wrapper">
+                                                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                                            </span>
+                                                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                                            <div class="mat-button-focus-overlay"></div>
+                                                        </button>
+                                                    </ng-template>
+                                                </p-cellEditor>
+                                            </td>
+                                            <td class="text-right">{{ getArticulos.cantidadPendiente | decimalnumber }}</td>
+                                            <td class="text-right">{{ getArticulos.stockAlmacen | decimalnumber }}</td>
+                                            <td class="text-right text-observation" matTooltipClass="observation-tooltip" matTooltip="{{ getArticulos.observaciones }}">{{ getArticulos.observaciones }}</td>
+                                        </tr>
+                                    </ng-template>
+
+                                    <!-- Contenido de la tabla con 0 registros -->
+                                    <ng-template pTemplate="emptymessage" let-columns>
+                                        <tr class="text-center">
+                                            <td [attr.colspan]="6">
+                                            <p>No hay registros disponibles para mostrar</p>
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+                                </p-table>
+
+                            </div>
+                        </div>
+
+                        <!-- Btn Envio de informacion a distribución -->
+                        <div class="row" *ngIf="editMode">
+                            <div class="col-12 text-right">
+                                <button  class="btn btn-warning pull-right mat-raised-button col-12 col-sm-6 col-md-4 col-lg-4" type="button"
+                                    (click)="open(mymodal)"  [disabled]="buttonSelectAction"  *ngIf="EntregasEnd">
+                                    <span class="mat-button-wrapper">
+                                        <span class="ml-1" matTooltip="Detalle">Seleccionar Tipo Gestión</span>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Entregas programadas -->
+                        <p-accordion  [multiple]="true" #accordion>
+                            <p-accordionTab *ngFor="let accion of getAcciones; let key = index" header="{{ accion.nombreAccion }}" [ngClass]="{'hide': !accion.articulos.length }">
+                                <div class="col-12" >
+                                    <p-table #dt class="table table-striped" [value]="accion.articulos" selectionMode="single" [responsive]="true"
+                                        [resizableColumns]="true" columnResizeMode=expand [paginator]="false">
+    
+                                        <ng-template pTemplate="header">
+                                            <tr class="text-corp">
+                                                <th
+                                                    *ngFor="let item of columns"
+                                                    class="{{ item.class }}  align-items-center"
+                                                    [style.width]="item.width" 
+                                                    [hidden]="accion.accionId == 1 && item.showOnManagment || !editMode && item.hiddeOnEdit">
+                                                    
+                                                    <span *ngIf="item.field != 'cantidadGestionar'">
+                                                        {{ item.header }}
+                                                    </span>
+                                                    <span *ngIf="item.field == 'cantidadGestionar'">
+                                                        {{accion.fieldName}}
+                                                    </span>
+                                                </th>
+                                            </tr>
+                                        </ng-template>
+    
+                                        <ng-template pTemplate="body" let-articulo >
+                                            <tr class="ng-star-inserted" [pSelectableRow]="articulo" class="select" >
+                                                <td>{{ articulo.codigoArticulo }}</td>
+                                                <td class="text-nombre" ><span matTooltip="{{ articulo.nombreArticulo }}">{{ articulo.nombreArticulo }}</span></td>
+                                                <td class="text-right">{{ articulo.cantidadSolicitada | decimalnumber }} {{ articulo.unidadMedida }} </td>
+                                                <td pEditableColumn class="text-right">
+                                                    <p-cellEditor>
+                                                        <ng-template pTemplate="input">
+                                                            <input
+                                                                type="number"
+                                                                min="0"
+                                                                step="1"
+                                                                [style.height.px]="31"
+                                                                [max]="getArticulos.cantidadSolicitada"
+                                                                pInputText [(ngModel)]="articulo.cantidad"
+                                                                [pattern]="Eregular.valor"
+                                                                (keyup)="actionDataEdit($event, articulo)"
+                                                                (keydown.arrowup)="actionDataEditKeyUp(articulo)"
+                                                                (keydown.arrowdown)="actionDataEditKeyDown(articulo, articulo.cantidad)"
+                                                                (keydown.tab)="focusNextField(i); actionHandlerChangeCantidad(articulo)"
+                                                                (keydown.enter)="focusNextField(i); actionHandlerChangeCantidad(articulo)"
+                                                                (change)="actionHandlerChangeCantidad(articulo)">
+                                                        </ng-template>
+    
+                                                        <ng-template pTemplate="output" >
+                                                            {{ articulo.cantidad | decimalnumber }}
+                                                            <i class="fa fa-pencil margin-left"></i>
+                                                            <button [hidden]="!articulo.edited" class="btn btn-warning btn-round btn-fab mat-raised-button edited-button" matTooltip="Artículo Editado">
+                                                                <span class="mat-button-wrapper">
+                                                                    <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                                                </span>
+                                                                <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                                                <div class="mat-button-focus-overlay"></div>
+                                                            </button>
+                                                        </ng-template>
+                                                    </p-cellEditor>
+                                                </td>
+                                                <td class="text-right">{{ articulo.stockAlmacen | decimalnumber }}</td>
+                                                <td *ngIf="accion.accionId != 1" class="text-right">{{ articulo.ordenCompra }}</td>
+                                                <td class="text-right text-observation" matTooltipClass="observation-tooltip" matTooltip="{{ articulo.observaciones }}">{{ articulo.observaciones }}</td>
+                                                <td class="text-center">
+                                                    <button *ngIf="editMode" class="btn btn-danger btn-round btn-fab mat-raised-button" (click)="eliminarArticulo(articulo, accion)" matTooltip="Eliminar">
+                                                        <span class="mat-button-wrapper">
+                                                            <i class="fa fa-trash"></i>
+                                                        </span>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </ng-template>
+                                    </p-table>
+                                </div>
+                                <div class="col-12 mb-4 mt-2">
+                                    <a  class="btn btn-warning pull-right mat-raised-button"
+                                        *ngIf="getPedido.nombreEstadoPedido == 'Abierto'"
+                                        [hidden]="true"
+                                        (click)="openEditModal(modalEdit, accion.accionId)" matTooltip="Artículos pendientes">
+                                        <span class="mat-button-wrapper">
+                                            Artículos pendientes
+                                            <i class="material-icons">create</i>
+                                        </span>
+                                        <div class="mat-button-ripple mat-ripple"></div>
+                                        <div class="mat-button-focus-overlay"></div>
+                                    </a>
+                                    <button  class="btn btn-danger pull-right mat-raised-button" type="button"  (click)="deletedEntregaId( entregas.EntregaId )"
+                                        *ngIf="state" matTooltip="Eliminar">
+                                        <span class="mat-button-wrapper">
+                                            <i class="material-icons">delete_forever</i>
+                                        </span>
+                                        <div class="mat-button-ripple mat-ripple"></div>
+                                        <div class="mat-button-focus-overlay"></div>
+                                    </button >
+                                </div>
+                            </p-accordionTab>
+                        </p-accordion>
+                        <div class="row" style="width: 100%;" *ngIf="editMode">
+                            <div class="col-12 pull-right">
+                                <button [disabled]="isAnyGestioned || getPedido.nombreEstadoPedido != 'Abierto'" class="btn btn-success pull-right mat-raised-button col-12 col-sm-6 col-md-4 col-lg-3" type="button"
+                                    (click)="finalizarDocumento();">
+                                    <span class="mat-button-wrapper">
+                                        <span class="ml-1">Procesar Documento</span>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button>
+                                <button [disabled]="isAnyGestioned || getPedido.nombreEstadoPedido != 'Abierto'" class="btn btn-warning pull-right mat-raised-button col-12 col-sm-6 col-md-4 col-lg-3" type="button" 
+                                    (click)="guardarBorrador();">
+                                    <span class="mat-button-wrapper">
+                                        <span class="ml-1">Guardar Borrador</span>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button>
+                                <button  class="btn btn-danger pull-right mat-raised-button col-12 col-sm-6 col-md-4 col-lg-3" type="button" 
+                                    (click)="limpiarDocumento();"  [disabled]="buttonCleanEnable || getPedido.nombreEstadoPedido != 'Abierto'">
+                                    <span class="mat-button-wrapper">
+                                        <span class="ml-1">Limpiar Documento</span>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Programacion de entregas -->
+<ng-template #mymodal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Agregar Tipo de Gestión</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row" *ngIf="isAnyWithoutStock">
+            <label class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 text-corp">Artículos a Gestionar:</label>
+            <p *ngFor="let item of addWithoutStockItems" style="width: 100%;">
+                {{ item.nombreArticulo }}
+            </p>
+        </div>
+        <div class="row" *ngIf="!isAnyWithoutStock">
+            <label class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 text-corp">Artículos a Gestionar:</label>
+            <p *ngFor="let item of addWithStockItems" style="width: 100%;">
+                {{ item.nombreArticulo }}
+            </p>
+        </div>
+        <div class="row">
+            <label class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 text-corp">Tipo Gestión:</label>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
+                <p-dropdown 
+                    [panelStyle]="{'background':'#fff'}"
+                    [options]="acciones" 
+                    optionLabel="Nombre" 
+                    [showClear]="true" 
+                    [style]="{'width':'100%'}" 
+                    name="acciones" 
+                    placeholder="Seleccione una opción" 
+                    [(ngModel)]="accion" 
+                    required >
+                </p-dropdown>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer mt-4">
+        <button type="button" class="btn btn-danger mr-1" (click)="modal.dismiss('Cross click')">Cancelar</button>
+        <button type="button" class="btn btn-success" (click)="AddEntregas()">Agregar</button>
+    </div>
+</ng-template>
+
+<!-- Modal edición de artículos pendientes -->
+<ng-template #modalEdit let-modal>
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Artículos Pendientes por Agregar a Algún Tipo de Gestión</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+
+        <div class="row">
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-12 mt-2">
+
+                <p-table #dt class="table table-striped"
+                    [value]="pendientes"
+                    selectionMode="multiple"
+                    [(selection)]="selectedItems"
+                    [responsive]="true"
+
+                    columnResizeMode=expand [paginator]="false">
+
+                    <ng-template pTemplate="header">
+                        <tr class="text-corp">
+                            <th class="columnCheck" id="init" style.width="{{'2%'}}">
+                                <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                            </th>
+                            <th *ngFor="let item of columnsModal"
+                                class="{{ item.class }}  align-items-center"
+                                [style.width]="item.width">
+                                {{ item.header }}
+                            </th>
+                        </tr>
+                    </ng-template>
+
+                    <ng-template pTemplate="body" let-pendientes >
+                        <tr class="ng-star-inserted" [pSelectableRow]="pendientes" class="select" >
+                            <td id="initbody">
+                                <p-tableCheckbox [value]="pendientes"></p-tableCheckbox>
+                            </td>
+                            <td>{{ pendientes.codigoArticulo }}</td>
+                            <td>{{ pendientes.nombre }} </td>
+                            <td>
+                                {{ pendientes.cantidadSolicitada | decimalnumber }}
+                            </td>
+                            <td class="text-center">
+                                {{ pendientes.cantidadGestionar | decimalnumber }}
+                            </td>
+                            <td class="text-center">
+                                {{ pendientes.stockAlmacen | decimalnumber }}
+                            </td>
+                            <td class="text-center">
+                                {{ pendientes.observaciones }}
+                            </td>
+                        </tr>
+                    </ng-template>
+
+                    <!-- Contenido de la tabla con 0 registros -->
+                    <ng-template pTemplate="emptymessage" let-columns>
+                        <tr class="text-center">
+                            <td [attr.colspan]="5">
+                            <p>No hay registros disponibles para mostrar</p>
+                            </td>
+                        </tr>
+                    </ng-template>
+
+                </p-table>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal-footer mt-4">
+        <button type="button" class="btn btn-danger mr-1" (click)="modal.dismiss('Cross click')">Cancelar</button>
+        <button type="button" class="btn btn-success" (click)="addItemsToAction(); modal.dismiss('Cross click')">Aceptar</button>
+    </div>
+
+</ng-template>

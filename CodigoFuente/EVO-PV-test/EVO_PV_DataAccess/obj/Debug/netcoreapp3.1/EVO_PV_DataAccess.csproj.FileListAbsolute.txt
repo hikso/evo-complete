@@ -1,0 +1,11 @@
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_DataAccess\bin\Debug\netcoreapp3.1\EVO_PV_DataAccess.deps.json
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_DataAccess\bin\Debug\netcoreapp3.1\EVO_PV_DataAccess.dll
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_DataAccess\bin\Debug\netcoreapp3.1\EVO_PV_DataAccess.pdb
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_DataAccess\bin\Debug\netcoreapp3.1\EVO_PV_BusinessObjects.dll
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_DataAccess\bin\Debug\netcoreapp3.1\EVO_PV_BusinessObjects.pdb
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_DataAccess\obj\Debug\netcoreapp3.1\EVO_PV_DataAccess.csprojAssemblyReference.cache
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_DataAccess\obj\Debug\netcoreapp3.1\EVO_PV_DataAccess.AssemblyInfoInputs.cache
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_DataAccess\obj\Debug\netcoreapp3.1\EVO_PV_DataAccess.AssemblyInfo.cs
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_DataAccess\obj\Debug\netcoreapp3.1\EVO_PV_DataAccess.csproj.CopyComplete
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_DataAccess\obj\Debug\netcoreapp3.1\EVO_PV_DataAccess.dll
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_DataAccess\obj\Debug\netcoreapp3.1\EVO_PV_DataAccess.pdb

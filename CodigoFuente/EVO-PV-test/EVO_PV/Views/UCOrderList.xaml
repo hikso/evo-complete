@@ -1,0 +1,335 @@
+﻿<UserControl
+    x:Class="EVO_PV.Views.UCOrderList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:EVO_PV.Views"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="{Binding Path=WidthForUserControl, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Style/style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <CollectionViewSource x:Key="States" Source="{Binding Path=States, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <CollectionViewSource x:Key="Factories" Source="{Binding Path=Factories, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <BooleanToVisibilityConverter x:Key="VisibilityConverterBool" />
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Background="#eee">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Button
+            x:Name="NewRequest"
+            Grid.Row="0"
+            Width="40"
+            Height="40"
+            Margin="0,0,40,0"
+            Padding="0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Background="#4CAF50"
+            BorderBrush="#4CAF50"
+            Click="NewRequest_Click"
+            Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}">
+            <materialDesign:PackIcon Foreground="#FFFFFF" Kind="PlaylistAddCheck" />
+        </Button>
+
+        <Grid Grid.Row="1">
+            <materialDesign:Card Grid.Row="1" Margin="30,0,30,10">
+                <Grid Style="{StaticResource ContentCard}">
+                    <StackPanel>
+
+                        <DataGrid
+                            Width="1024"
+                            MaxHeight="470"
+                            AutoGenerateColumns="False"
+                            Background="Transparent"
+                            CanUserAddRows="False"
+                            CanUserDeleteRows="False"
+                            CanUserReorderColumns="False"
+                            CanUserResizeColumns="False"
+                            ItemsSource="{Binding OrderList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            ScrollViewer.CanContentScroll="True"
+                            ScrollViewer.VerticalScrollBarVisibility="Auto"
+                            SelectedItem="{Binding OrderSelect}"
+                            SelectionMode="Single">
+
+                            <DataGrid.Columns>
+
+                                <DataGridTextColumn
+                                    Width="5*"
+                                    Binding="{Binding Path=CodeOrder}"
+                                    Header="Número Pedido">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Foreground="#7F0E06"
+                                                    Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                    TextWrapping="Wrap" />
+                                                <TextBox
+                                                    x:Name="txtSearchArticleByUnitMeasure"
+                                                    Width="Auto"
+                                                    Text="{Binding Path=DataContext.SearchOrderByCodeOrder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn
+                                    Width="9*"
+                                    Binding="{Binding Path=DateRequest}"
+                                    Header="Fecha Solicitud">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Foreground="#7F0E06"
+                                                    Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                    TextWrapping="Wrap" />
+                                                <DatePicker
+                                                    Name="dpDateDelivery"
+                                                    Width="110"
+                                                    Margin="10,-4,-1,0"
+                                                    VerticalAlignment="Bottom"
+                                                    Background="#FFECECEC"
+                                                    Focusable="True"
+                                                    IsDropDownOpen="{Binding Path=Open}"
+                                                    IsTodayHighlighted="False"
+                                                    Language="ES-mx"
+                                                    SelectedDate="{Binding Path=DataContext.SearchOrderByOrderDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+                                                    <DatePicker.Resources>
+                                                        <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#FF9800" />
+                                                        <SolidColorBrush x:Key="MaterialDesignBody" Color="Black" />
+                                                    </DatePicker.Resources>
+                                                </DatePicker>
+
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn
+                                    Width="9*"
+                                    Binding="{Binding Path=DateDelivery}"
+                                    Header="Fecha Límite Sugerida">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                                <DatePicker
+                                                    Name="dpDateDelivery"
+                                                    Width="110"
+                                                    Margin="10,-4,-1,0"
+                                                    VerticalAlignment="Bottom"
+                                                    Background="#FFECECEC"
+                                                    Focusable="True"
+                                                    IsDropDownOpen="{Binding Path=Open}"
+                                                    IsTodayHighlighted="False"
+                                                    Language="ES-mx"
+                                                    SelectedDate="{Binding Path=DataContext.SearchOrderByOrderDateLimit, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+                                                    <DatePicker.Resources>
+                                                        <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#FF9800" />
+                                                        <SolidColorBrush x:Key="MaterialDesignBody" Color="Black" />
+                                                    </DatePicker.Resources>
+                                                </DatePicker>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn
+                                    Width="10*"
+                                    Binding="{Binding Path=State}"
+                                    Header="Estado Pedido">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                                <ComboBox
+                                                    x:Name="cbEstados"
+                                                    SelectedIndex="0"
+                                                    SelectedValue="{Binding Path=DataContext.SearchOrderByState, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                    SelectedValuePath="Name"
+                                                    Style="{StaticResource ComboBoxStyle}">
+                                                    <ComboBox.ItemsSource>
+                                                        <CompositeCollection>
+                                                            <CollectionContainer Collection="{Binding Source={StaticResource ResourceKey=States}}" />
+                                                        </CompositeCollection>
+                                                    </ComboBox.ItemsSource>
+                                                    <ComboBox.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <StackPanel>
+                                                                <TextBlock Text="{Binding Path=Name}" />
+                                                            </StackPanel>
+                                                        </DataTemplate>
+                                                    </ComboBox.ItemTemplate>
+                                                </ComboBox>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn
+                                    Width="10*"
+                                    Binding="{Binding Path=Factory}"
+                                    Header="Solicitud a">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                                <ComboBox
+                                                    x:Name="cbFactory"
+                                                    SelectedIndex="0"
+                                                    SelectedValue="{Binding Path=DataContext.SearchOrderByFactory, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                    SelectedValuePath="WhsName"
+                                                    Style="{StaticResource ComboBoxStyle}">
+                                                    <ComboBox.ItemsSource>
+                                                        <CompositeCollection>
+                                                            <CollectionContainer Collection="{Binding Source={StaticResource ResourceKey=Factories}}" />
+                                                        </CompositeCollection>
+                                                    </ComboBox.ItemsSource>
+                                                    <ComboBox.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <StackPanel>
+                                                                <TextBlock Text="{Binding Path=WhsName}" />
+                                                            </StackPanel>
+                                                        </DataTemplate>
+                                                    </ComboBox.ItemTemplate>
+                                                </ComboBox>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn
+                                    Width="5*"
+                                    Binding="{Binding Path=DaysDelivery}"
+                                    Header="Días para la Entrega">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Foreground="#7F0E06"
+                                                    Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                    TextWrapping="Wrap" />
+                                                <TextBox
+                                                    x:Name="txtSearchArticlesByMaximum"
+                                                    Width="Auto"
+                                                    Text="{Binding Path=DataContext.SearchOrderByOrderDays, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTemplateColumn Width="11*">
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Margin="0,0,0,22"
+                                                    Foreground="#7F0E06"
+                                                    Text="Acciones"
+                                                    TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button
+                                                    Margin="0,0,5,0"
+                                                    Background="#00BCD4"
+                                                    BorderBrush="#00BCD4"
+                                                    Command="{Binding Path=DataContext.ViewDetailsCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                    IsEnabled="{Binding BtnEye}">
+                                                    <materialDesign:PackIcon
+                                                        HorizontalAlignment="Center"
+                                                        Foreground="#FFFFFF"
+                                                        Kind="Eye" />
+                                                </Button>
+
+                                                <Button
+                                                    Margin="0,0,5,0"
+                                                    Background="#FF9800"
+                                                    BorderBrush="#FF9800"
+                                                    Command="{Binding Path=DataContext.ViewEditOrderCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                    IsEnabled="{Binding BtnEdit}">
+                                                    <materialDesign:PackIcon
+                                                        HorizontalAlignment="Center"
+                                                        Foreground="#FFFFFF"
+                                                        Kind="BorderColor" />
+                                                </Button>
+
+                                                <Button
+                                                    Margin="0,0,5,0"
+                                                    Background="#4CAF50"
+                                                    BorderBrush="#4CAF50"
+                                                    Command="{Binding Path=DataContext.ViewDuplicateOrderCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                    IsEnabled="{Binding BtnDuplicate}">
+                                                    <materialDesign:PackIcon
+                                                        HorizontalAlignment="Center"
+                                                        Foreground="#FFFFFF"
+                                                        Kind="ContentDuplicate" />
+                                                </Button>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <StackPanel>
+                            <TextBlock
+                                Margin="0,50,0,0"
+                                HorizontalAlignment="Center"
+                                Style="{StaticResource TextHeaderView}"
+                                Text="No hay pedidos para mostrar."
+                                Visibility="{Binding Path=ThereAreNotOrder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </materialDesign:Card>
+
+            <Grid Style="{StaticResource IconCard}">
+                <Grid.Effect>
+                    <DropShadowEffect
+                        BlurRadius="20"
+                        RenderingBias="Quality"
+                        ShadowDepth="1"
+                        Color="#FFECECEC" />
+                </Grid.Effect>
+                <Border Style="{StaticResource BorderCard}" />
+                <materialDesign:PackIcon
+                    Width="30"
+                    Height="30"
+                    Margin="5"
+                    Padding="10"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    Kind="PlaylistAddCheck" />
+            </Grid>
+            <Grid Style="{StaticResource Title}">
+                <StackPanel Style="{StaticResource ContentTitle}">
+                    <TextBlock Style="{StaticResource TextTitle}" Text="Consulta de Pedido" />
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+
+    </Grid>
+</UserControl>

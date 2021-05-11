@@ -1,0 +1,74 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Socios de Negocio
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Socios de Negocio
+  version: "1.0.0"
+  title: API de    API de administración de Socios de Negocio
+
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: SociosNegocio
+    description: Gestión de Socios de Negocio
+paths:
+  /sociosnegocio/:
+    get:
+      tags: 
+        - SociosNegocio
+      summary: Obtiene los socios de negocio
+      operationId: obtenerSociosNegocio      
+      responses:
+            '200':
+              description: Operación realizada con éxito
+              content:
+                  application/json:
+                    schema:
+                      type: array
+                      items:
+                       $ref: '#/components/schemas/socioNegocioResponse'
+  /sociosnegocio/filtrar:  
+    get:
+      tags:
+        - SociosNegocio
+      summary: Obtiene los socios de negocio por identificacion o nombre
+      operationId: obtenerSociosNegocioxFiltro
+      parameters:
+        - name: Identificacion
+          in: query
+          description: Indica la identificación        
+          schema:
+            type: string
+        - name: Nombre
+          in: query
+          description: Indica el nombre
+          schema:
+            type: string
+      responses:
+            '200':
+              description: Operación realizada con éxito
+              content:
+                  application/json:
+                    schema:
+                      type: array
+                      items:
+                       $ref: '#/components/schemas/socioNegocioResponse'
+components:
+  schemas:
+    socioNegocioResponse:
+      type: object
+      description: Representa un socio de negocio
+      properties:         
+         Identificacion:
+          type: string
+          example: 'CE-123456789'
+          description: Indica la Identificación
+         Nombre:
+          type: string
+          example: 'Camilo Usuga'
+          description: Indica el nombre         
+      
+ 

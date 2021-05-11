@@ -1,0 +1,596 @@
+﻿openapi: 3.0.0
+servers:
+# Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/Porcicarnes/Roles/1.0.0
+  - description: EVO - API de Roles de Usuario
+    url: https://evo/api
+info:
+  description: 
+   API de administración de Roles de usuario
+  version: "1.0.0"
+  title: API de Roles de Usuario
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Roles
+    description: WebAPI encargada de gestionar los roles, con la asignación de usuarios y funcionalidades
+paths:
+  /roles:
+    get:
+      tags: 
+        - Roles
+      summary: Obtiene todos los Roles
+      operationId: obtenerTodosRoles
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosRolesResponse'
+    post:
+      tags:
+        - Roles
+      summary: Crea un Rol
+      operationId: crearRol
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+          $ref: '#/components/requestBodies/CrearRolRequest'
+
+    put:
+      tags:
+        - Roles
+      summary: Actualiza un Rol
+      operationId: actualizarRol
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+          $ref: '#/components/requestBodies/ActualizarRolRequest'
+
+  /roles/{id}: 
+    get:
+      tags: 
+        - Roles
+      summary: Obtiene un Rol por su id
+      parameters:
+        - name: id
+          in: path
+          description: Id del Rol 
+          required: true
+          schema:
+            type: integer
+      operationId: obtenerRolxId
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerRolResponse'
+  
+  /roles/obtenerxnombre/{nombre}: 
+    get:
+      tags: 
+        - Roles
+      summary: Obtiene un Rol por su nombre
+      parameters:
+        - name: nombre
+          in: path
+          description: Nombre del Rol 
+          required: true
+          schema:
+            type: string
+      operationId: obtenerRolxNombre
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerRolResponse'
+  
+  /roles/filtrar:
+    post:
+      tags:
+        - Roles
+      summary: Obtiene todos los roles aplicando filtros de búsqueda
+      operationId: obtenerTodosRolesxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarRolRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosRolesResponse'
+  
+  /roles/activar:
+    put:
+      tags:
+        - Roles
+      summary: Activa / Inactiva un Rol
+      operationId: activarRol
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+          $ref: '#/components/requestBodies/ActivarRolRequest'
+  
+  /roles/usuarios/asociar:
+    post:
+      tags:
+        - Roles
+      summary: Asocia los usuarios seleccionados a un Rol
+      operationId: asociarUsuariosARol
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+          $ref: '#/components/requestBodies/AsociarUsuariosARolRequest'
+
+  /roles/usuarios/desasociar:
+    post:
+      tags:
+        - Roles
+      summary: Desasocia un usuario a un Rol
+      operationId: desasociarUsuarioARol
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+          $ref: '#/components/requestBodies/DesasociarUsuarioARolRequest'
+  
+  /roles/usuarios/desasociartodos:        
+     post:
+      tags: 
+        - Roles
+      summary: Id del rol para poder desasociar todos los usuarios
+      parameters:
+        - name: id
+          in: query
+          description: Id del Rol 
+          required: true
+          schema:
+            type: integer
+      operationId: desasociarTodosUsuariosARol
+      responses:
+        '200':
+          description: Operación realizada con éxito
+  
+  /roles/usuarios:
+    get:
+      tags: 
+        - Roles
+      summary: Obtiene todos los Usuarios de un Rol
+      operationId: obtenerTodosUsuariosXRol
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: rolId
+          in: query
+          description: Id del Rol 
+          required: true
+          schema:
+            type: integer   
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosUsuariosRolResponse'
+  
+  /roles/usuarios/filtrar:
+    post:
+      tags:
+        - Roles
+      summary: Obtiene todos los usuarios de un rol aplicando filtros de búsqueda
+      operationId: obtenerTodosUsuariosXRolxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarUsuarioXRolRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosUsuariosRolResponse'
+        
+components:
+  schemas:
+    ObtenerTodosUsuariosRolResponse:
+       type: object
+       description: Resultado general de la consulta
+       properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Obtiene los usuarios de un rol 
+          items:
+            type: object
+            properties:
+             usuarioId:
+              type: integer
+              example: 1
+              description: Usuario del Usuario
+             usuario:
+              type: string
+              example: "JUsuga"
+              description: Usuario del Usuario
+             nombre:
+              type: string
+              example: "Juan Camilo Usuga"
+              description: Nombre del Usuario
+    ObtenerRolResponse:
+       type: object
+       required:
+        - rolId
+        - nombre
+        - activo
+       description: Instancia de un Rol de usuario
+       properties:
+        rolId:
+           type: integer
+           example: 1
+           description: Id del Rol 
+        nombre:
+           type: string
+           example: "Administrador"
+           description: Nombre del Rol
+        PlantaBeneficio:
+           type: boolean
+           description: Indica si el rol tiene acceso a el modulo de Planta de Beneficio
+           example: TRUE
+        PlantaDerivadosCarnicos:
+            type: boolean
+            description: Indica si el rol tiene acceso a el modulo de Planta de Derivados Carnicos
+            example: TRUE
+        PuntosVenta:
+            type: boolean
+            description: Indica si el rol tiene acceso a el modulo de Puntos de Venta
+            example: TRUE
+        Administracion:
+            type: boolean
+            description: Indica si el rol tiene acceso a el modulo de Administracion
+            example: TRUE   
+        activo:
+           type: boolean
+           example: true
+           description: Indica si el Rol se encuentra activo / inactivo
+        usuarios:
+            type: array
+            description: Lista de Usuarios asociados al Rol
+            items:
+              $ref: '#/components/schemas/UsuarioResponse'
+        funcionalidades:
+            type: array
+            description: Lista de Funcionalidades que el Rol tiene autorizados
+            items:
+              $ref: '#/components/schemas/FuncionalidadResponse'
+    ActualizarRolRequest:
+       type: object
+       required:
+        - rolId
+        - nombre
+       description: Objeto que contiene el Rol a actualizar
+       properties:
+        rolId:
+          type: integer
+          example: 1
+          description: Id del Rol
+        nombre:
+          type: string
+          example: Administrador
+          description: Nombre del Rol
+        PlantaBeneficio:
+           type: boolean
+           description: Indica si el rol tiene acceso a el modulo de Planta de Beneficio
+           example: TRUE
+        PlantaDerivadosCarnicos:
+            type: boolean
+            description: Indica si el rol tiene acceso a el modulo de Planta de Derivados Carnicos
+            example: TRUE
+        PuntosVenta:
+            type: boolean
+            description: Indica si el rol tiene acceso a el modulo de Puntos de Venta
+            example: TRUE
+        Administracion:
+            type: boolean
+            description: Indica si el rol tiene acceso a el modulo de Administracion
+            example: TRUE
+        funcionalidadesIds:
+           type: array
+           description: Ids de las Funcionalidades a las que el Rol está autorizado
+           example: [1, 2, 3, 4]
+           items:
+             type: integer
+    AsociarUsuariosARolRequest:
+       type: object
+       required:
+        - rolId
+        - usuarios
+       description: Objeto necesario para asociar los usuarios al rol
+       properties:
+        rolId:
+          type: integer
+          example: 1
+          description: Id del Rol a asociar
+        usuarios:
+          type: array
+          description: Lista de usuarios a asociar al rol
+          example: [{'usuario':'JUSUGA','nombre':'Juan Camilo Usuga S'},{'usuario':'JEGiraldo','nombre':'Juan Esteban Giraldo Giraldo'},{'usuario':'AGiraldo','nombre':'Andrés Giraldo'}]
+          items:
+            $ref: '#/components/schemas/UsuarioResponse'
+    DesasociarUsuarioARolRequest:
+       type: object
+       required:
+        - rolId
+        - usuarioId
+       description: Objeto necesario para desasociar usuario a rol
+       properties:
+        rolId:
+          type: integer
+          example: 1
+          description: Id del Rol a desasociar
+        usuarioId:
+          type: integer
+          example: 1
+          description: Id del Usuario a desasociar del rol
+    ActivarRolRequest:
+       type: object
+       required:
+        - rolId
+       description: Objeto que contiene el Rol a activar / inactivar
+       properties:
+        rolId:
+          type: integer
+          example: 1
+          description: Id del Rol
+        activo:
+           type: boolean
+           description: Indica si el Rol se debe Activar (true) o Inactivar (false)
+           example: true
+    CrearRolRequest:
+       type: object
+       required:
+        - nombre
+       description: Objeto que contiene el Rol a crear
+       properties:
+        nombre:
+           type: string
+           example: "Administrador"
+           description: Nombre del rol que será registrado
+        PlantaBeneficio:
+           type: boolean
+           description: Indica si el rol tiene acceso a el modulo de Planta de Beneficio
+           example: TRUE
+        PlantaDerivadosCarnicos:
+            type: boolean
+            description: Indica si el rol tiene acceso a el modulo de Planta de Derivados Carnicos
+            example: TRUE
+        PuntosVenta:
+            type: boolean
+            description: Indica si el rol tiene acceso a el modulo de Puntos de Venta
+            example: TRUE
+        Administracion:
+            type: boolean
+            description: Indica si el rol tiene acceso a el modulo de Administracion
+            example: TRUE
+        funcionalidadesIds:
+           type: array
+           description: Ids de las Funcionalidades a las que el Rol está autorizado
+           example: [1, 2, 3, 4]
+           items:
+             type: integer
+    FiltrarRolRequest:
+       type: object
+       required:
+        - nombre
+       description: Objeto que contiene los filtros del Rol
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+            nombre:
+              type: string
+              example: "Admin"
+              description: Filtro por nombre
+    ObtenerTodosRolesResponse:
+      type: object
+      description: Resultado general de la consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de Roles de usuario
+          items:
+            type: object
+            properties:
+              rolId:
+                type: integer
+                example: 1
+                description: Id del Rol
+              nombre:
+                type: string
+                example: "Administrador"
+                description: Nombre del Rol 
+              activo:
+                type: boolean
+                example: true
+                description: "Indica si el Rol se encuentra activo / inactivo"
+    UsuarioResponse:
+       type: object
+       required:
+        - usuarioId
+        - nombreUsuario
+        - nombre
+       description: Objeto que representa un Usuario
+       properties:
+        usuarioId:
+          type: integer
+          example: 1
+          description: Id del usuario
+        nombreUsuario:
+          type: string
+          example: "JCUsuga"
+          description: Nombre de usuario
+        nombre:
+          type: string
+          example: "Juan Camilo Usuga"
+          description: Nombre completo del usuario
+    FuncionalidadResponse:
+       type: object
+       required:
+        - funcionalidadId
+        - nombre
+       description: Objeto que representa una Funcionalidad
+       properties:
+        funcionalidadId:
+          type: integer
+          example: 1
+          description: Id de la Funcionalidad
+        nombre:
+          type: string
+          example: 'Generación de reportes'
+          description: Nombre de la funcionalidad
+    FiltrarUsuarioXRolRequest:
+       type: object
+       required:
+        - nombre
+        - desde
+        - hasta
+        - rolId
+       description: Objeto que contiene los filtros del Rol
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros
+        rolId:
+           type: integer
+           example: 1
+           description: Indica el id del Rol   
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+            usuario:
+              type: string
+              example: "JUsuga"
+              description: Filtro por usuario
+            nombre:
+              type: string
+              example: "Juan Camilo Usuga Sepúlveda"
+              description: Filtro por nombre
+  requestBodies:
+    ActualizarRolRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ActualizarRolRequest'
+      description: Solicititud de actualización de un Rol
+      required: true
+      
+    AsociarUsuariosARolRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AsociarUsuariosARolRequest'
+      description: Solicititud de asociación de un usuario a un rol
+      required: true
+      
+    DesasociarUsuarioARolRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/DesasociarUsuarioARolRequest'
+      description: Solicititud de desasociación de un usuario al rol
+      required: true 
+      
+    ActivarRolRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ActivarRolRequest'
+      description: Solicititud de activación / inactivación de un Rol
+      required: true
+      
+    CrearRolRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CrearRolRequest'
+      description: Solicititud de creación de un Rol
+      required: true
+            
+    FiltrarRolRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarRolRequest'
+      description: Solicititud de filtro de Roles
+      required: true
+      
+    FiltrarUsuarioXRolRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarUsuarioXRolRequest'
+      description: Solicititud de filtro de Usuarios por Rol
+      required: true

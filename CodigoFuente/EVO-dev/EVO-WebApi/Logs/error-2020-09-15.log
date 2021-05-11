@@ -1,0 +1,54 @@
+ -------------- Error (2020-09-15 13:09:08.5059) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerTodosPedidosAbiertosxFiltro
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+
+ -------------- Error (2020-09-15 13:09:09.4293) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerTodosPedidosAbiertosxFiltro
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+
+ -------------- Error (2020-09-15 13:09:10.9444) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerTodosPedidosAbiertosxFiltro
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+
+ -------------- Error (2020-09-15 13:09:11.2409) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerTodosPedidosAbiertosxFiltro
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+
+ -------------- Error (2020-09-15 13:09:11.5373) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerTodosPedidosAbiertosxFiltro
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+
+ -------------- Error (2020-09-15 13:09:12.0225) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerTodosPedidosAbiertosxFiltro
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Debe especificar alguno de los filtros para realizar el proceso de búsqueda
+

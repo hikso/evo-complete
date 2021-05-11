@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!--Diccionario de etiqueta-->
+    <system:String x:Key="lblConsecutive">Consecutivo:</system:String>
+    <system:String x:Key="lblPedido">Número Pedido:</system:String>
+    <system:String x:Key="lblDate">Fecha:</system:String>
+    <system:String x:Key="lblRequest">Solcitud:</system:String>
+    <system:String x:Key="lblDelivery"># Entrega:</system:String>
+    <system:String x:Key="lblZone">Zona:</system:String>
+    <system:String x:Key="lblTypeClient">Tipo Cliente:</system:String>
+    <system:String x:Key="lblClient">Cliente:</system:String>
+    <system:String x:Key="lblMuelle">Muelle:</system:String>
+    <system:String x:Key="lblBasculeType">Tipo de bascula:</system:String>
+    <system:String x:Key="lblWeighingMachine">Báscula:</system:String>
+    <system:String x:Key="lblWarehouse">Bodega:</system:String>
+    <system:String x:Key="lblWeighingByBascule">INFORMACIÓN POR BÁSCULA:</system:String>
+    <system:String x:Key="lblSumaryWeight">Total Peso Contenedores:</system:String>
+    <system:String x:Key="3">:</system:String>
+    <system:String x:Key="4">:</system:String>
+    <system:String x:Key="5">:</system:String>
+    <system:String x:Key="6">:</system:String>    
+
+    <system:String x:Key="BtnConfirmationYes">Si</system:String>
+    <system:String x:Key="BtnConfirmationNot">No</system:String>  
+
+</ResourceDictionary>

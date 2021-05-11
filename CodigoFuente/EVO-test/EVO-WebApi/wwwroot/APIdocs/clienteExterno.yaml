@@ -1,0 +1,49 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Clientes Externos
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Clientes Externos
+  version: "1.0.0"
+  title: API de Clientes Externos
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: ClientesExternos
+    description: Gestión de Clientes Externos
+paths:
+  /clientesexternos:
+   get:
+      tags:
+        - ClientesExternos
+      summary: Obtiene todos los clientes externos
+      operationId: obtenerTodosClientesExternos
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/ObtenerClienteExternoResponse'
+components:
+  schemas:
+    ObtenerClienteExternoResponse:
+      type: object
+      required:
+        - CodigoCliente
+        - Nombre
+      description: Representa un cliente externo
+      properties:
+        CodigoCliente:
+          type: string
+          example: 'CE-1'
+          description: Código del cliente externo
+        Nombre:
+          type: string
+          example: 'Zenú'
+          description: Nombre del cliente externo
+    

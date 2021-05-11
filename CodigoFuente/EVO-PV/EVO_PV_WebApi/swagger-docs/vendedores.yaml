@@ -1,0 +1,52 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Vendedores
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Vendedores
+  version: "1.0.0"
+  title: API de Vendedores
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Vendedores
+    description: Gestión de Vendedores
+paths:
+  /vendedores/puntoventa:
+    get:
+      tags: 
+        - Vendedores
+      summary: Obtiene los vendedores por punto de venta
+      operationId: obtenerVendedoresxPuntoVenta
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:              
+              application/json:
+                schema:
+                   type: array
+                   items: 
+                    $ref: '#/components/schemas/vendedorResponse'
+components:
+  schemas:
+    vendedorResponse:
+      type: object
+      description: Representa un vendedor
+      properties:
+         vendedorId:
+          type: integer
+          example: 1
+          description: Id del vendedor
+         nombres:
+          type: string
+          example: 'Juan Camilo'
+          description: Nombres del vendedor
+         apellidos:
+          type: string
+          example: 'Usuga Sepúlveda'
+          description: Apellidos del vendedor  
+         
+  
+     

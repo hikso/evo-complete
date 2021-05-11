@@ -1,0 +1,286 @@
+<div class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-right"> 
+                    <a  class="btn btn-info pull-right mat-raised-button" routerLink="/distribucion/enrutamiento">
+                        <span class="mat-button-wrapper">
+                            <i class="fa fa-chevron-left"></i> 
+                            <span class="ml-1">Regresar</span>
+                        </span>
+                        <div class="mat-button-ripple mat-ripple"></div>
+                        <div class="mat-button-focus-overlay"></div>
+                    </a>  
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header card-header-warning card-header-icon">
+                            <div class="card-icon">
+                                <i class="material-icons">format_list_bulleted</i>
+                            </div>
+                            <h4 class="card-title">Edición de Entrega </h4>
+                        </div>
+    
+                        <div class="card-body">
+                            <div class="row">   
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <strong class="text-primary-corp">Número Pedido: </strong>
+                                    {{ delivery.codigoPedido }}
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <strong class="text-primary-corp">Cliente: </strong>
+                                    {{ delivery.cliente }}
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <strong class="text-primary-corp"># Entrega </strong>
+                                    {{ delivery.zona }}
+                                </div> 
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <strong class="text-primary-corp">Zona: </strong>
+                                    {{ delivery.zona }}
+                                </div> 
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <strong class="text-primary-corp">Orden de Compra: </strong>
+                                    {{ delivery.ordenCompra }}
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <strong class="text-primary-corp">Fecha y Hora Entrega: </strong>
+                                    {{ delivery.fechaEntrega }}  {{ delivery.horaEntrega }}
+                                </div>                            
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <strong class="text-primary-corp">Estado: </strong>
+                                    {{ delivery.estado }}
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <strong class="text-primary-corp">Vehiculo: </strong>
+                                    {{ delivery.TipoVehiculo }}
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                    <strong class="text-primary-corp">Usuario: </strong>
+                                    {{ delivery.usuario }}
+                                </div>
+                            </div>
+    
+                            <div class="row mt-5">
+                                <p-table #dt class="table table-striped" [value]="articulos" selectionMode="single" [responsive]="true" 
+                                    [resizableColumns]="true" columnResizeMode=expand [paginator]="false">
+                                    
+                                    <!-- Encabezado de tabla -->
+                                    <ng-template pTemplate="header">
+                                        <tr class="text-corp"> 
+                                            <th *ngFor="let item of columns" class="{{ item.class }}  align-items-center"  [style.width]="item.width"> {{ item.header }}</th>
+                                        </tr>
+                                    </ng-template>
+        
+                                    <!-- Contenido de la tabla -->
+                                    <ng-template pTemplate="body" let-article let-i="rowIndex" >
+                                        <tr class="ng-star-inserted" [pSelectableRow]="article" class="select  button-edit" 
+                                            [ngClass]="{'not-valid' : article.isDeleted, 'article-edited' : article.edited}">
+                                            <td>{{ article.codigo }}</td>
+                                            <td  class="text-nombre" ><span matTooltip="{{ article.nombre }}">{{ article.nombre }}</span></td>
+                                            <td  class="text-right">{{ article.cantidadAprobada | decimalnumber }}</td>
+                                            <td  class="text-right">{{ article.cantidadPendiente | decimalnumber }}</td>
+                                            <td  pEditableColumn class="text-right">
+                                                <p-cellEditor>
+                                                    <ng-template pTemplate="input">
+                                                        <input 
+                                                            type="number" 
+                                                            min="0" 
+                                                            [max]="article.cantidadEntrega" 
+                                                            step="1"  
+                                                            pInputText [(ngModel)]="article.cantidadEntrega" 
+                                                            [pattern]="Eregular.valor"
+                                                            (keydown.arrowup)="dataEditKeyUp(article)"
+                                                            (keydown.arrowdown)="dataEditKeyDown(article, article.cantidadEntrega)"
+                                                            (keydown.tab)="focusNextField(i); handlerChangeCantidad(article)"
+                                                            (keydown.enter)="focusNextField(i); handlerChangeCantidad(article)"
+                                                            (change)="handlerChangeCantidad(article)">
+                                                    </ng-template>
+                                                                        
+                                                    <ng-template pTemplate="output" >
+                                                        {{ article.cantidadEntrega | decimalnumber }}
+                                                        <i class="fa fa-pencil margin-left"></i>
+                                                        <button [hidden]="!article.edited" class="btn btn-warning btn-round btn-fab mat-raised-button edited-button" matTooltip="Artículo Editado">
+                                                            <span class="mat-button-wrapper">
+                                                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                                            </span>
+                                                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                                            <div class="mat-button-focus-overlay"></div>
+                                                        </button>
+                                                    </ng-template>
+                                                </p-cellEditor>
+                                            </td>
+                                            <td class="text-center">
+                                                <button class="btn btn-danger btn-round btn-fab mat-raised-button" matTooltip="Eliminar artículo" (click)="articleSelected = article; openModal(deleteArticles, 'md');" matTooltipClass='general-tooltip'>
+                                                    <span class="mat-button-wrapper">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+        
+                                    <!-- Contenido de la tabla con 0 registros -->
+                                    <ng-template pTemplate="emptymessage" let-columns>
+                                        <tr class="text-center">
+                                            <td [attr.colspan]="6">
+                                                <p>No hay registros disponibles para mostrar</p>
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+                                </p-table>
+
+                                <!-- Asociar Vehiculo a entregas -->
+                                <div class="col-12 mb-4">
+                                    <button  class="btn btn-danger pull-right mat-raised-button" type="button"  (click)="openModal(actualizarEntrega, 'md')"
+                                            matTooltip="Actualizar entrega">
+                                        <span class="mat-button-wrapper">
+                                            Actualizar entrega
+                                        </span>
+                                        <div class="mat-button-ripple mat-ripple"></div>
+                                        <div class="mat-button-focus-overlay"></div>
+                                    </button >
+                                    <button  class="btn btn-warning pull-right mat-raised-button" type="button" (click)="openModal(addPendingArticles, 'lg')"  matTooltip="Artículos pendientes">
+                                        <span class="mat-button-wrapper">
+                                            Artículos pendientes
+                                        </span>
+                                        <div class="mat-button-ripple mat-ripple"></div>
+                                        <div class="mat-button-focus-overlay"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Programacion de entregas -->
+    <ng-template #actualizarEntrega let-modal>
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Actualizar entrega</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+            </div>
+            <div class="row align-items-center">
+                <label class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 text-corp">Motivo:</label>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
+                    <p-dropdown [options]="motivosEdicionArticulos" optionLabel="Motivo" [showClear]="true" [style]="{'width':'100%'}" name="Motivo" placeholder="Seleccione una opción" [(ngModel)]="motivo" required ></p-dropdown>
+                </div>
+                <div class="row">
+                    <div class="col-8 no-padding">  
+                        <label class="col-12 text-corp">Fecha:</label>             
+                        <div class="col-12">  
+                            <p-calendar 
+                                [(ngModel)]="Fecha" 
+                                [locale]="calendarFormat" 
+                                dateFormat="dd/mm/yy" 
+                                [style]="{width:'100%'}"  
+                                inputStyleClass="form-control" 
+                                [minDate]="today"  
+                                placeholder="__/__/____" 
+                                value="fecha">
+                            </p-calendar>
+                        </div>
+                    </div>
+                    <div class="col-4">  
+                        <label class="col-12 text-corp">Hora:</label>
+                        <div class="col-12">
+                            <p-calendar 
+                                [(ngModel)]="Hora"
+                                [style]="{width:'100%'}" 
+                                [timeOnly]="true" 
+                                inputStyleClass="form-control" 
+                                hourFormat="24">
+                            </p-calendar>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer mt-4">
+            <button type="button" class="btn btn-danger mr-1" (click)="modal.dismiss('Cross click')">Cancelar</button>
+            <button type="button" class="btn btn-success" (click)="aceptarActualizaEntrega()">Aceptar</button>
+        </div>
+    </ng-template>
+
+    <!-- Modal pending articles -->
+    <ng-template #addPendingArticles let-modal>
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Artículos no programados en esta entrega</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <p-table #dt class="table table-striped" [value]="articulosPendientes" selectionMode="single" [responsive]="true" 
+                    [resizableColumns]="true" columnResizeMode=expand [paginator]="false" [(selection)]="entregasToAdd" selectionMode="multiple">
+                    
+                    <!-- Encabezado de tabla -->
+                    <ng-template pTemplate="header">
+                        <tr class="text-corp"> 
+                            <th class="columnCheck" id="init" style.width="{{'2%'}}">
+                                <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                            </th>
+                            <th *ngFor="let item of columnsForPending" class="{{ item.class }}  align-items-center"  [style.width]="item.width"> {{ item.header }}</th>
+                        </tr>
+                    </ng-template>
+
+                    <!-- Contenido de la tabla -->
+                    <ng-template pTemplate="body" let-pendingArticle >
+                        <tr class="ng-star-inserted" [pSelectableRow]="pendingArticle" class="select" >
+                            <td id="initbody">
+                                <p-tableCheckbox [value]="pendingArticle"></p-tableCheckbox>
+                            </td>
+                            <td>{{ pendingArticle.codigo }}</td>
+                            <td class="text-nombre"><span matTooltip="{{ pendingArticle.nombre }}">{{ pendingArticle.nombre }}</span></td>
+                            <td class="text-right">{{ pendingArticle.cantidadAprobada | decimalnumber }}</td>
+                            <td class="text-right">{{ pendingArticle.cantidadPendiente | decimalnumber }}</td>
+                        </tr>
+                    </ng-template>
+
+                    <!-- Contenido de la tabla con 0 registros -->
+                    <ng-template pTemplate="emptymessage" let-columns>
+                        <tr class="text-center">
+                            <td [attr.colspan]="5">
+                            <p>No hay registros disponibles para mostrar</p>
+                            </td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
+        </div>
+        <div class="modal-footer mt-4">
+            <button type="button" class="btn btn-danger mr-1" (click)="modal.dismiss('Cross click')">Cancelar</button>
+            <button type="button" class="btn btn-success" (click)="addArticlesToDelivery()">Aceptar</button>
+        </div>
+    </ng-template>
+
+    
+    <!-- Modal pending articles -->
+    <ng-template #deleteArticles let-modal>
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Eliminar Artículo</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <label class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 text-corp">Motivo de Eliminación artículo:</label>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12"> 
+                    <p-dropdown [options]="motivosArticulos" optionLabel="Motivo" [showClear]="true" [style]="{'width':'100%'}" name="Motivo" placeholder="Seleccione una opción" [(ngModel)]="motivoEliminacionArticulos" required ></p-dropdown>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer mt-4">
+            <button type="button" class="btn btn-danger mr-1" (click)="modal.dismiss('Cross click')">Cancelar</button>
+            <button type="button" class="btn btn-success" (click)="deleteArticle()">Aceptar</button>
+        </div>
+    </ng-template>

@@ -1,0 +1,92 @@
+.text-primary-corp{
+    font-weight: 700;
+    color: #7F0E06;
+}
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.pagewidth{
+    float: right;
+    min-width: 80px;
+}
+.ui-inputgroup .ui-inputgroup-addon{
+    border: none;
+}
+
+tr td{
+    vertical-align: middle;
+}
+
+.text-corp{
+    color: #7F0E06;
+}
+
+:host ::ng-deep .ui-dropdown-panel .ui-dropdown-list {
+    background-color: #fff !important;
+}
+
+:host ::ng-deep .select:hover{
+    background-color: #F5B90E;
+    color: #ffffff;
+}
+
+:host ::ng-deep p-paginator a {
+    color: #7F0E06;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+:host ::ng-deep .ui-accordion-header{
+    a{
+        color: #000;
+        &:focus{
+            color: #000;
+        }
+    } 
+}
+
+:host ::ng-deep .ui-state-active{
+    background-color: #7F0E06;
+    color: #ffffff;
+    padding-top: 1.5px;
+    margin-top: -3px;
+    border-radius: 2px;
+    a{
+        color: #fff;
+        &:focus{
+            color: #fff;
+        }
+    }
+}
+
+:host ::ng-deep .ui-accordion-content-wrapper{
+    border: 1px solid #7f0e06;
+    margin-bottom: 10px;
+    margin-top: -1px;
+    border-radius: 0 0 5px 5px;
+    border-top: 0px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+
+.delivery-header{
+    margin-bottom: 1rem;
+}
+
+.footpaginator{
+    margin-top: 25px;
+    position: relative;
+}
+
+.totalRow{
+    position: absolute; 
+    top:1px; 
+    right:5px; 
+    margin: 5px;
+}
+.delivery-title, .articles-title{
+    color: #7F0E06;
+}

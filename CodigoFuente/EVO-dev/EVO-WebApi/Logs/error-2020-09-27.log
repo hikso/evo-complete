@@ -1,0 +1,183 @@
+ -------------- Error (2020-09-27 10:43:45.5734) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxBodegaSAP
+ Exception Type: System.ServiceModel.CommunicationException
+ Exception Message: An error occurred while sending the request.
+ Stack Trace:    at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+ Additional Info: System.AggregateException: One or more errors occurred. (An error occurred while sending the request.) ---> System.ServiceModel.CommunicationException: An error occurred while sending the request. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.Http.WinHttpException: Se superó el tiempo de espera para la operación
+   at System.Threading.Tasks.RendezvousAwaitable`1.GetResult()
+   at System.Net.Http.WinHttpHandler.StartRequest(WinHttpRequestState state)
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.ServiceModelHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpClientRequestChannel.HttpClientChannelAsyncRequest.SendRequestAsync(Message message, TimeoutHelper timeoutHelper)
+   --- End of inner exception stack trace ---
+   at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at EVO_Proxy.ArticuloProxy.ObtenerArticuloxBodegaSAP(String codigoArticulo, String codigoBodega) in C:\EVO\CodigoFuente\EVO-dev\EVO-Proxy\ArticuloProxy.cs:line 47
+   at EVO_BusinessLogic.BLArticulo.ObtenerArticuloxBodegaSAP(String codigoArticulo, String codigoBodega) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLArticulo.cs:line 109
+---> (Inner Exception #0) System.ServiceModel.CommunicationException: An error occurred while sending the request. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.Http.WinHttpException: Se superó el tiempo de espera para la operación
+   at System.Threading.Tasks.RendezvousAwaitable`1.GetResult()
+   at System.Net.Http.WinHttpHandler.StartRequest(WinHttpRequestState state)
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.ServiceModelHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpClientRequestChannel.HttpClientChannelAsyncRequest.SendRequestAsync(Message message, TimeoutHelper timeoutHelper)
+   --- End of inner exception stack trace ---
+   at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)<---
+
+
+ -------------- Error (2020-09-27 10:43:45.6571) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerPedidoCompraGestion
+ Exception Type: System.ServiceModel.CommunicationException
+ Exception Message: An error occurred while sending the request.
+ Stack Trace:    at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+ Additional Info: System.AggregateException: One or more errors occurred. (An error occurred while sending the request.) ---> System.ServiceModel.CommunicationException: An error occurred while sending the request. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.Http.WinHttpException: Se superó el tiempo de espera para la operación
+   at System.Threading.Tasks.RendezvousAwaitable`1.GetResult()
+   at System.Net.Http.WinHttpHandler.StartRequest(WinHttpRequestState state)
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.ServiceModelHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpClientRequestChannel.HttpClientChannelAsyncRequest.SendRequestAsync(Message message, TimeoutHelper timeoutHelper)
+   --- End of inner exception stack trace ---
+   at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at EVO_BusinessLogic.BLArticulo.ObtenerArticuloxBodegaSAP(String codigoArticulo, String codigoBodega) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLArticulo.cs:line 117
+   at EVO_BusinessLogic.BLPedido.ObtenerPedidoCompraGestion(Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLPedido.cs:line 486
+---> (Inner Exception #0) System.ServiceModel.CommunicationException: An error occurred while sending the request. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.Http.WinHttpException: Se superó el tiempo de espera para la operación
+   at System.Threading.Tasks.RendezvousAwaitable`1.GetResult()
+   at System.Net.Http.WinHttpHandler.StartRequest(WinHttpRequestState state)
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.ServiceModelHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpClientRequestChannel.HttpClientChannelAsyncRequest.SendRequestAsync(Message message, TimeoutHelper timeoutHelper)
+   --- End of inner exception stack trace ---
+   at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)<---
+
+
+ -------------- Error (2020-09-27 10:50:44.6618) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-09-27 11:12:35.0211) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-09-27 11:16:13.0677) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-09-27 11:29:46.7434) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2020-09-27 11:31:03.6504) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: System.NullReferenceException
+ Exception Message: Object reference not set to an instance of an object.
+ Stack Trace:    at EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(List`1 compras, Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAArticulo.cs:line 328
+   at EVO_BusinessLogic.BLArticulo.ActualizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLArticulo.cs:line 950
+ Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+   at EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(List`1 compras, Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAArticulo.cs:line 328
+   at EVO_BusinessLogic.BLArticulo.ActualizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLArticulo.cs:line 950
+
+ -------------- Error (2020-09-27 11:32:26.8017) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ActualizarCompra
+ Exception Type: System.NullReferenceException
+ Exception Message: Object reference not set to an instance of an object.
+ Stack Trace:    at EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(List`1 compras, Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAArticulo.cs:line 328
+   at EVO_BusinessLogic.BLArticulo.ActualizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLArticulo.cs:line 950
+ Additional Info: System.NullReferenceException: Object reference not set to an instance of an object.
+   at EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(List`1 compras, Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAArticulo.cs:line 328
+   at EVO_BusinessLogic.BLArticulo.ActualizarCompra(BOActualizarCompraRequest actualizarCompraRequest) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLArticulo.cs:line 950
+
+ -------------- Error (2020-09-27 11:58:47.4744) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.FinalizarCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Artículos no gestionados completamente
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Artículos no gestionados completamente
+
+ -------------- Error (2020-09-27 11:59:44.9764) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.FinalizarCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Artículos no gestionados completamente
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Artículos no gestionados completamente
+
+ -------------- Error (2020-09-27 11:59:57.9175) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.FinalizarCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Artículos no gestionados completamente
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Artículos no gestionados completamente
+
+ -------------- Error (2020-09-27 12:01:00.5845) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.FinalizarCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Artículos no gestionados completamente
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Artículos no gestionados completamente
+
+ -------------- Error (2020-09-27 12:01:43.5841) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.AsignarCompra
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo ya está asociado a esa acción de compra
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo ya está asociado a esa acción de compra
+

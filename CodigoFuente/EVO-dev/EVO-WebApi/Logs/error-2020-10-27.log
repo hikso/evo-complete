@@ -1,0 +1,1041 @@
+ -------------- Error (2020-10-27 09:16:37.4681) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:94ce0312-ee55-4c67-b4e6-001ff9d0154b
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:16:37.8044) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:16:37.9155) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:94ce0312-ee55-4c67-b4e6-001ff9d0154b
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:16:37.9155) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:19:55.9793) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:94ce0312-ee55-4c67-b4e6-001ff9d0154b
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:19:55.9793) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:19:56.1663) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:94ce0312-ee55-4c67-b4e6-001ff9d0154b
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:19:56.1663) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:20:16.1484) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:94ce0312-ee55-4c67-b4e6-001ff9d0154b
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:20:16.1484) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:20:16.3289) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:94ce0312-ee55-4c67-b4e6-001ff9d0154b
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:20:16.3313) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:23:00.3929) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:075f81a2-8a15-4eb3-aaab-80b294b7a51c
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:23:00.3950) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:23:00.5327) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:075f81a2-8a15-4eb3-aaab-80b294b7a51c
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:23:00.5348) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:23:31.8641) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:94ce0312-ee55-4c67-b4e6-001ff9d0154b
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:23:31.8641) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:23:32.0564) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:94ce0312-ee55-4c67-b4e6-001ff9d0154b
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:23:32.0564) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:25:33.8282) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:075f81a2-8a15-4eb3-aaab-80b294b7a51c
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:25:33.8303) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:25:33.9366) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:075f81a2-8a15-4eb3-aaab-80b294b7a51c
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:25:33.9366) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:27:19.0105) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:075f81a2-8a15-4eb3-aaab-80b294b7a51c
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:27:19.0105) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:27:19.1556) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:075f81a2-8a15-4eb3-aaab-80b294b7a51c
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:27:19.1556) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:27:35.6076) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:94ce0312-ee55-4c67-b4e6-001ff9d0154b
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:27:35.6076) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:27:35.7250) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:94ce0312-ee55-4c67-b4e6-001ff9d0154b
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:27:35.7250) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:28:29.9164) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:94ce0312-ee55-4c67-b4e6-001ff9d0154b
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:28:29.9164) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:28:30.0789) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:94ce0312-ee55-4c67-b4e6-001ff9d0154b
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:28:30.0820) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:28:38.0788) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:075f81a2-8a15-4eb3-aaab-80b294b7a51c
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:28:38.0818) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:28:38.1975) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:075f81a2-8a15-4eb3-aaab-80b294b7a51c
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:28:38.1975) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:28:48.8492) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:075f81a2-8a15-4eb3-aaab-80b294b7a51c
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:28:48.8492) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:28:50.4487) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:075f81a2-8a15-4eb3-aaab-80b294b7a51c
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:28:50.4575) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:29:16.2234) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:075f81a2-8a15-4eb3-aaab-80b294b7a51c
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:29:16.2234) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 09:29:16.3720) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos
+ Exception Type: System.Data.SqlClient.SqlException
+ Exception Message: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+ Stack Trace:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ Additional Info: System.Data.SqlClient.SqlException (0x80131904): El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.loadSPCustomMapper[T](DbCommand cmd, CustomMapper`1 mapper)
+   at EFCoreExtensions.ExtensionMethods.EFCoreExtensions.LoadSPCustomMapper[T](DbContext context, String storedProcedureName, List`1 parameters, CustomMapper`1 mapper)
+   at EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(Int32 desde, Int32 hasta, String jobId) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAIntegracion.cs:line 217
+   at EVO_BusinessLogic.BLIntegracion.ObtenerlogsEjecucionArticulos(Int32 desde, Int32 hasta) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLIntegracion.cs:line 469
+ClientConnectionId:075f81a2-8a15-4eb3-aaab-80b294b7a51c
+Error Number:208,State:1,Class:16
+
+ -------------- Error (2020-10-27 09:29:16.3838) --------------
+ 
+ Action: 
+ Call Site: EVO_WebApi.Controllers.IntegracionesApiController.ObtenerlogsEjecucionArticulos
+ Exception Type: 
+ Exception Message: 
+ Stack Trace: 
+ Additional Info: El nombre de objeto 'EVO.dbo.sysssislog' no es válido.
+
+ -------------- Error (2020-10-27 16:23:28.1596) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+

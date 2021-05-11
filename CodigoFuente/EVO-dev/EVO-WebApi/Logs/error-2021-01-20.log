@@ -1,0 +1,36 @@
+ -------------- Error (2021-01-20 08:40:10.0857) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLCajas.ObtenerEstadoCaja
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: Caja no registrada
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: Caja no registrada
+
+ -------------- Error (2021-01-20 08:41:01.4048) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-20 08:41:01.7706) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-20 08:41:02.1678) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+

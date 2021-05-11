@@ -1,0 +1,91 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-right"> 
+                <a  class="btn btn-info pull-right mat-raised-button" routerLink="/distribucion/enrutamiento">
+                    <span class="mat-button-wrapper">
+                        <i class="fa fa-chevron-left"></i> 
+                        <span class="ml-1">Regresar</span>
+                    </span>
+                    <div class="mat-button-ripple mat-ripple"></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </a>  
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">format_list_bulleted</i>
+                        </div>
+                        <h4 class="card-title">Detalle Entrega: </h4>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="row">   
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Número Pedido: </strong>
+                                {{ getPedido.codigoPedido }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Cliente: </strong>
+                                {{ getPedido.cliente }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Zona: </strong>
+                                {{ getPedido.zona }}
+                            </div> 
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Orden de Compra: </strong>
+                                {{ getPedido.ordenCompra }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Fecha y Hora Entrega: </strong>
+                                {{ getPedido.fechaEntrega }}  {{ getPedido.horaEntrega }}
+                            </div>                            
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Estado: </strong>
+                                {{ getPedido.estado }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Vehículo: </strong>
+                                {{ getPedido.TipoVehiculo }}
+                            </div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <p-table #dt class="table table-striped" [value]="getArticulos" selectionMode="single" [responsive]="true" 
+                                [resizableColumns]="true" columnResizeMode=expand [paginator]="false">
+                                
+                                <!-- Encabezado de tabla -->
+                                <ng-template pTemplate="header">
+                                    <tr class="text-corp"> 
+                                        <th *ngFor="let item of columns" class="{{ item.class }}  align-items-center"> {{ item.header }}</th>
+                                    </tr>
+                                </ng-template>
+    
+                                <!-- Contenido de la tabla -->
+                                <ng-template pTemplate="body" let-getArticulos >
+                                    <tr class="ng-star-inserted" [pSelectableRow]="getArticulos" class="select" >
+                                        <td>{{ getArticulos.codigo }}</td>
+                                        <td>{{ getArticulos.nombre }}</td>
+                                        <td class='text-right'>{{ getArticulos.cantidadEntrega | decimalnumber }} KG</td>
+                                    </tr>
+                                </ng-template>
+    
+                                <!-- Contenido de la tabla con 0 registros -->
+                                <ng-template pTemplate="emptymessage" let-columns>
+                                    <tr class="text-center">
+                                        <td [attr.colspan]="3">
+                                        <p>No hay registros disponibles para mostrar</p>
+                                        </td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    

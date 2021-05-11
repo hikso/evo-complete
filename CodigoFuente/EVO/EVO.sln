@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EVO-DataAccess", "EVO-DataAccess\EVO-DataAccess.csproj", "{4D1809EE-8532-42CA-936D-8D017FB22906}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EVO-BusinessObjects", "EVO-BusinessObjects\EVO-BusinessObjects.csproj", "{8A940A77-8002-48A6-A5AD-C28DA80F821D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EVO-BusinessLogic", "EVO-BusinessLogic\EVO-BusinessLogic.csproj", "{FFF1D325-4D08-4947-9005-8D3897A9F25D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EVO-WebApi", "EVO-WebApi\EVO-WebApi.csproj", "{66E07D58-65C2-462A-84B2-8B71EA016075}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EVO-Services", "EVO-Services\EVO-Services.csproj", "{CE49DB77-35B0-40E7-A285-E973B2324E88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D1809EE-8532-42CA-936D-8D017FB22906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1809EE-8532-42CA-936D-8D017FB22906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1809EE-8532-42CA-936D-8D017FB22906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1809EE-8532-42CA-936D-8D017FB22906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A940A77-8002-48A6-A5AD-C28DA80F821D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A940A77-8002-48A6-A5AD-C28DA80F821D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A940A77-8002-48A6-A5AD-C28DA80F821D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A940A77-8002-48A6-A5AD-C28DA80F821D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF1D325-4D08-4947-9005-8D3897A9F25D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF1D325-4D08-4947-9005-8D3897A9F25D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF1D325-4D08-4947-9005-8D3897A9F25D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF1D325-4D08-4947-9005-8D3897A9F25D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66E07D58-65C2-462A-84B2-8B71EA016075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66E07D58-65C2-462A-84B2-8B71EA016075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66E07D58-65C2-462A-84B2-8B71EA016075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66E07D58-65C2-462A-84B2-8B71EA016075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE49DB77-35B0-40E7-A285-E973B2324E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE49DB77-35B0-40E7-A285-E973B2324E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE49DB77-35B0-40E7-A285-E973B2324E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE49DB77-35B0-40E7-A285-E973B2324E88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D9BF4DB-F850-4F9A-9CC2-456FB774E129}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://porcicarnesfuentes.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EVO-BusinessLogic\\EVO-BusinessLogic.csproj
+		SccProjectName1 = EVO-BusinessLogic
+		SccLocalPath1 = EVO-BusinessLogic
+		SccProjectUniqueName2 = EVO-BusinessObjects\\EVO-BusinessObjects.csproj
+		SccProjectName2 = EVO-BusinessObjects
+		SccLocalPath2 = EVO-BusinessObjects
+		SccProjectUniqueName3 = EVO-DataAccess\\EVO-DataAccess.csproj
+		SccProjectName3 = EVO-DataAccess
+		SccLocalPath3 = EVO-DataAccess
+		SccProjectUniqueName4 = EVO-WebApi\\EVO-WebApi.csproj
+		SccProjectName4 = EVO-WebApi
+		SccLocalPath4 = EVO-WebApi
+		SccProjectUniqueName5 = EVO-Services\\EVO-Services.csproj
+		SccProjectName5 = EVO-Services
+		SccLocalPath5 = EVO-Services
+	EndGlobalSection
+EndGlobal

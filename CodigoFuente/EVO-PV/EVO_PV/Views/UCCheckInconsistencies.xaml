@@ -1,0 +1,246 @@
+﻿<UserControl
+    x:Class="EVO_PV.Views.UCCheckInconsistencies"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:local="clr-namespace:EVO_PV.Utilities"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="UserControl"
+    d:DesignHeight="450"
+    d:DesignWidth="1024"
+    Focusable="True"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Style/style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Background="#eee">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="0,40,0,0">
+
+            <materialDesign:Card Grid.Row="1" Margin="30,0,30,0">
+
+                <Grid VerticalAlignment="Top" Style="{StaticResource ContentCard}">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Height="80">
+
+                        <Grid>
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+
+                            <StackPanel
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                Style="{StaticResource HeaderView}">
+                                <TextBlock
+                                    Width="100"
+                                    Style="{StaticResource TextHeaderView}"
+                                    Text="Fecha Inicio" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="0" Grid.Column="1">
+                                <DatePicker Name="dpStartDate" SelectedDate="{Binding Path=StartDateSelected, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True, UpdateSourceTrigger=LostFocus}" />
+                            </StackPanel>
+
+                            <StackPanel
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                Style="{StaticResource HeaderView}">
+                                <TextBlock Style="{StaticResource TextHeaderView}" Text="Punto de Venta" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Column="3">
+                                <ComboBox
+                                    x:Name="cbSalePoints"
+                                    DisplayMemberPath="WhsName"
+                                    IsEditable="True"
+                                    IsTextSearchEnabled="True"
+                                    ItemsSource="{Binding Path=SalePoints}"
+                                    SelectedValue="{Binding Path=SalePointSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                    SelectedValuePath="WhsCode"
+                                    Style="{StaticResource ComboBoxStyle}" />
+                            </StackPanel>
+
+                            <StackPanel
+                                Grid.Row="1"
+                                Grid.Column="0"
+                                Style="{StaticResource HeaderView}">
+                                <TextBlock
+                                    Width="100"
+                                    Style="{StaticResource TextHeaderView}"
+                                    Text="Fecha Final" />
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1" Grid.Column="1">
+                                <DatePicker Name="dpEndDate" SelectedDate="{Binding Path=EndDateSelected, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True, UpdateSourceTrigger=LostFocus}" />
+                            </StackPanel>
+
+                            <StackPanel
+                                Grid.Row="1"
+                                Grid.Column="3"
+                                HorizontalAlignment="Center"
+                                Style="{StaticResource HeaderView}">
+                                <Button
+                                    x:Name="btnConsultar"
+                                    Background="#4ACF50"
+                                    BorderBrush="#4ACF50"
+                                    Command="{Binding CmdViewInconsistencies}"
+                                    Content="Consultar"
+                                    IsEnabled="{Binding EnableSavedAndSendOrder}" />
+                            </StackPanel>
+
+                        </Grid>
+
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1">
+
+                        <DataGrid
+                            Width="Auto"
+                            AutoGenerateColumns="False"
+                            CanUserAddRows="False"
+                            CanUserDeleteRows="False"
+                            CanUserReorderColumns="False"
+                            CanUserResizeColumns="False"
+                            ItemsSource="{Binding Inconsistencies}"
+                            SelectedItem="{Binding InconsistenceSelected}"
+                            SelectionMode="Single"
+                            SelectionUnit="FullRow">
+
+                            <DataGrid.ItemContainerStyle>
+                                <Style TargetType="{x:Type DataGridRow}">
+                                    <Setter Property="Background" Value="{Binding Path=ErrorArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                                </Style>
+                            </DataGrid.ItemContainerStyle>
+
+                            <DataGrid.Columns>
+
+                                <DataGridTextColumn
+                                    Width="300"
+                                    Binding="{Binding Path=SalePoint}"
+                                    Header="Punto de Venta"
+                                    IsReadOnly="True" />
+                                <DataGridTextColumn
+                                    Width="150"
+                                    Binding="{Binding Path=RequestNumber}"
+                                    Header="Pedido"
+                                    IsReadOnly="True" />
+                                <DataGridTextColumn
+                                    Width="150"
+                                    Binding="{Binding Path=DeliveryNumber}"
+                                    Header="Entrega"
+                                    IsReadOnly="True" />
+                                <DataGridTextColumn
+                                    Width="200"
+                                    Binding="{Binding Path=EvidenceDate}"
+                                    Header="Fecha"
+                                    IsReadOnly="True" />
+                                <DataGridTemplateColumn
+                                    Width="150"
+                                    Header="Acciones"
+                                    IsReadOnly="True">
+                                    <DataGridTemplateColumn.CellTemplate>
+
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+
+                                                <Button
+                                                    Margin="0,0,5,0"
+                                                    Background="#00BCD4"
+                                                    BorderBrush="#00BCD4"
+                                                    Command="{Binding Path=DataContext.CmdViewDetail, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+                                                    <materialDesign:PackIcon
+                                                        HorizontalAlignment="Center"
+                                                        Foreground="#FFFFFF"
+                                                        Kind="Eye" />
+                                                </Button>
+
+                                            </StackPanel>
+                                        </DataTemplate>
+
+                                    </DataGridTemplateColumn.CellTemplate>
+
+                                </DataGridTemplateColumn>
+
+                            </DataGrid.Columns>
+
+                        </DataGrid>
+
+                    </StackPanel>
+
+                </Grid>
+
+            </materialDesign:Card>
+
+            <Grid Style="{StaticResource IconCard}">
+
+                <Grid.Effect>
+                    <DropShadowEffect
+                        BlurRadius="20"
+                        RenderingBias="Quality"
+                        ShadowDepth="1"
+                        Color="#FFECECEC" />
+                </Grid.Effect>
+
+                <Border Style="{StaticResource BorderCard}" />
+
+                <materialDesign:PackIcon
+                    Width="30"
+                    Height="30"
+                    Margin="5"
+                    Padding="10"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    Kind="PlaylistAddCheck" />
+
+            </Grid>
+
+            <Grid Style="{StaticResource Title}">
+
+                <StackPanel Style="{StaticResource ContentTitle}">
+                    <TextBlock Style="{StaticResource TextTitle}" Text="CONSULTA DE INCONSISTENCIAS " />
+                </StackPanel>
+
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+
+</UserControl>

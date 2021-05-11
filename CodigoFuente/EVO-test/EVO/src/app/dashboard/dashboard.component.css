@@ -1,0 +1,28 @@
+.card{
+    min-height: 183px;
+}
+
+.evo-card{
+    float: none !important;
+    margin-right: 0px !important;
+    text-align: center;
+    padding: 24px !important;
+}
+
+.stats> div, .evo-card{
+    cursor: pointer;
+}
+
+.stats> div:hover, .card:hover>.card-footer>.stats>div {
+   color: #ffffff;
+}
+
+.card:hover{
+    background: linear-gradient(60deg, #ffa726, #fb8c00); 
+    color: #ffffff !important;
+}
+
+.card:hover>.card-header-warning .card-icon{
+    background: #ffffff;
+    color:#fb8c00;
+}

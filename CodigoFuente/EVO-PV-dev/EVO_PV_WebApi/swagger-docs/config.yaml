@@ -1,0 +1,83 @@
+openapi: 3.0.0
+servers:
+  - description: EVO - API de Usuarios
+    url: https://evo/api
+info:
+  description: 
+   API de configuración general del sistema EVO 
+  version: "1.0.0"
+  title: API de Configuración General
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jegiraldo@porcicarnes.com.co
+tags:
+  - name: Config
+    description: WebAPI encargada de gestionar la Configuración del sistema EVO
+paths:
+  /ObtenerVersionActual:
+    get:
+      tags: 
+        - Config
+      summary: Retorna la versión actual del sistema EVO.
+      operationId: obtenerVersionActual
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/VersionResponse'
+  
+  /parametrosgenerales/obtenerxnombre/{nombre} :
+    get:
+      tags: 
+       - Config
+      summary: Obtiene un Parámetro General por su nombre.
+      operationId: obtenerParametroGeneralxNombre
+      parameters:
+        - name: nombre
+          in: path
+          description: Nombre del Parámetro General
+          required: true
+          example: 'SALARIO_MINIMO_2019'
+          schema:
+            type: string
+            nullable: false
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                    $ref: '#/components/schemas/ParametroGeneralResponse'
+
+
+components:
+  schemas:
+    ParametroGeneralResponse:
+        type: object
+        properties:
+          parametroGeneralId:
+            type: integer
+            example: 1
+            description: id del parámetro general
+          nombre:
+            type: string
+            example: "SALARIO_MINIMO_2019"
+            description: nombre del parámetro general
+          valor:
+            type: string
+            example: "828.116"
+            description: valor de parámetro general
+          activo:
+            type: boolean
+            example: true
+            description: Indica si el Parámetro General se encuentra activo / inactivo 
+    VersionResponse:
+     type: object
+     description: Objeto que contiene la versión de la aplicación
+     properties:
+      version:
+       type: string
+       example: '1.0.1'
+       description: Indica la versión de la aplicación

@@ -1,0 +1,151 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-warning card-header-icon">
+            <div class="card-icon">
+              <i class="material-icons">assignment</i>
+            </div>
+            <h4 class="card-title">Registro de Auditoria</h4>
+          </div>
+
+          <div class="card-body">
+            
+            <p-table #dt class="table table-striped" [value]="auditoria" selectionMode="multiple" [responsive]="true" 
+             [resizableColumns]="true" columnResizeMode=expand [lazy]="true" (onLazyLoad)="loadCarsLazy($event)"
+              [paginator]="false" [rows]="maxR" [totalRecords]="totalRow">
+              
+              <!-- Dropdown para la selección del numero de filas, 
+                por defecto tiene el valor parametrizado en base de datos  -->
+              <ng-template pTemplate="caption">
+                  <div class="ui-grid ui-grid-responsive ui-fluid">
+                    <span class="pagewidth">
+                      <p-dropdown (onChange)="onChange($event)" [options]="maxregister" optionLabel="name"
+                        [showClear]="true"></p-dropdown>
+                    </span>
+                    <span class="bold pagewidth text-corp">
+                      Mostrar
+                    </span>
+                  </div>
+              </ng-template>
+
+              <!-- Encabezado de tabla -->
+              <ng-template pTemplate="header">
+                  <tr class="text-corp"> 
+                    <th *ngFor="let item of columns" class="{{ item.class }}  align-items-center"> {{ item.header }}</th>
+                  </tr>
+                                          
+                  <!-- Fltros Buscar por columnas -->
+                  <tr>
+                      <th *ngFor="let col of columns" [ngSwitch]="col.field">
+                        <div class="ui-inputgroup" *ngSwitchCase="'fecha'">
+                          <input class="form-control" pInputText type="text"
+                            (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                          <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                        </div>
+                        <div class="ui-inputgroup" *ngSwitchCase="'usuario'">
+                          <input class="form-control" pInputText type="text"
+                            (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                          <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                        </div>
+                        <div class="ui-inputgroup" *ngSwitchCase="'detalle'">
+                          <input class="form-control" pInputText type="text"
+                            (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                          <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                        </div>
+                        <div class="ui-inputgroup" *ngSwitchCase="'parametros'">
+                          <input class="form-control" pInputText type="text"
+                            (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                          <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                        </div>
+                        <div class="ui-inputgroup" *ngSwitchCase="'ip'">
+                          <input class="form-control" pInputText type="text"
+                            (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                          <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                        </div>
+                      </th>
+                  </tr>
+              </ng-template>
+
+              <!-- Contenido de la tabla -->
+              <ng-template pTemplate="body" let-auditoria >
+                <tr class="ng-star-inserted" [pSelectableRow]="auditoria" class="select">
+                    <td>{{ auditoria.fecha }}</td>
+                    <td>{{ auditoria.usuario }}</td>
+                    <td>{{ auditoria.accion }}</td>
+                    <td>{{ auditoria.parametros | slice:0:40}} ...</td>
+                    <td class="text-center">{{ auditoria.ip }}</td>
+                    <td class="text-center">
+                      <button class="btn btn-info btn-round btn-fab mat-raised-button" (click)="open(mymodal, auditoria)" matTooltip="Detalle">
+                        <span class="mat-button-wrapper">
+                            <i class="fa fa-eye"></i>
+                        </span>
+                        <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                        <div class="mat-button-focus-overlay"></div>
+                      </button>
+                    </td>
+                </tr>
+              </ng-template>
+
+              <!-- Contenido de la tabla con 0 registros -->
+              <ng-template pTemplate="emptymessage" let-columns>
+                  <tr class="text-center">
+                    <td [attr.colspan]="6">
+                      <p>No hay registros disponibles para mostrar</p>
+                    </td>
+                  </tr>
+              </ng-template>
+            </p-table>
+
+            <!-- Paginación -->
+            <div class="footpaginator">
+              <p-paginator #pg (onLazyLoad)="loadCarsLazy($event)" (onPageChange)="loadCarsLazy($event)"
+                [rows]="maxR" [totalRecords]="totalRow" >
+              </p-paginator>
+              <span class="totalRow">{{ numFilas }} de {{ totalRow }} Registros</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal detalle de Auditoria -->
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Detalle Auditoria</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row modalrow">
+      <div class="col-6 contentparams">
+        <strong>Fecha:</strong>
+        {{ auditoriaId.fecha }}
+      </div>
+      <div class="col-6 contentparams">
+        <strong>IP:</strong>
+        {{ auditoriaId.ip }}
+      </div>
+      <div class="col-12 contentparams">
+        <strong>Usuario:</strong>
+        {{ auditoriaId.usuario }}
+      </div>
+      <div class="col-12 contentparams">
+        <strong>Detalle:</strong>
+        {{ auditoriaId.accion }}
+      </div>
+      <div class="col-12 contentparams">
+        <strong>Parámetros:</strong><br>
+        {{ auditoriaId.parametros }}
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.dismiss('Cross click')">Ok</button>
+  </div>
+</ng-template>

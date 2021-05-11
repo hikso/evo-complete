@@ -1,0 +1,268 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Integraciones
+    url: https://evo/api
+info:
+  description: 
+   API de administración de integraciones
+  version: "1.0.0"
+  title: API de Integraciones
+  termsOfService: "https://www.porcicarnes.com/"
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Integraciones
+    description: WebAPI encargada de gestionar las integraciones
+paths:
+  /sap/log/articulos: 
+    get:
+      tags:
+        - Integraciones
+      summary: Obtiene los logs de ejecución de las integraciónes de artículos
+      operationId: obtenerlogsEjecucionArticulos
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+            description: Operación realizada con éxito
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerLogsEjecucionArticulosResponse'         
+  /sap/articulos/estado: 
+    get:
+      tags:
+        - Integraciones
+      summary: Obtiene el estado de la ejecución de la integraciónes de artículos
+      operationId: obtenerEstadoEjecucionArticulos
+      responses:
+        '200':
+            description: Operación realizada con éxito
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerEstadoEjecucionArticulosResponse'                      
+  /sap/log/articulos/filtrar:
+    post:
+      tags:
+        - Integraciones
+      summary: Obtiene los logs de ejecución de las integraciónes de artículos aplicando filtros de búsqueda
+      operationId: obtenerLogsEjecucionArticulosxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarLogsEjecucionArticulosRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerLogsEjecucionArticulosResponse' 
+  /sap/articulos/ejecutar:
+    post:
+      tags:
+        - Integraciones
+      summary: Ejecuta la integración de los artículos de SAP
+      operationId: ejecutarSAPArticulos
+      responses:
+        '200':
+          description: Operación realizada con éxito
+  /sap/articulos/programar:
+    post:
+        tags:
+          - Integraciones
+        summary: Programa la ejecucion diaria de la integración de artículos de SAP a EVO 
+        operationId: programarArticulos
+        requestBody:
+          $ref: '#/components/requestBodies/ProgramarEjecucionRequest'
+        responses:
+          '200':
+                description: Operación realizada con éxito 
+  /sap/articulos/habilitar:
+    post:
+        tags:
+          - Integraciones
+        summary: Habilita / deshabilta la integración de productos 
+        operationId: habilitarSAPArticulos
+        requestBody:
+          $ref: '#/components/requestBodies/HabilitarIntegracionRequest'
+        responses:
+          '200':
+                description: Operación realizada con éxito               
+  
+components:
+  schemas:
+    FiltrarLogsEjecucionArticulosRequest:
+       type: object
+       description: Objeto que contiene los filtros de los logs de integración de artículos
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+              estado:
+                type: boolean
+                example: false
+                description: Estado de la ejecución de la integración
+              fechaInicio:
+                type: string
+                example: '30/08/2019 12:01'
+                description: Indica la fecha de inicio de la ejecución de la integración de artículos
+              fechaFin:
+                type: string
+                example: '30/08/2019 12:01'
+                description: Indica la fecha de finalización de la ejecución de la integración de artículos  
+              logJob:
+                type: string
+                example: "Unauthorized"
+                description: Indica el error generado en log de la ejecución del Job de la integración de artículos
+              logIntegracion:
+                type: string
+                example: "Wrong number"
+                description: Indica el error generado en el log de la ejecución del Paquete de la integración de artículos
+    ObtenerLogsEjecucionArticulosResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de registros de integraciones
+          items:
+            type: object
+            properties:
+              estado:
+                type: boolean
+                example: true
+                description: Estado de la integración
+              fechaInicio:
+                type: string
+                example: '30/08/2019 12:01:02'
+                description: Indica la fecha de inicio de la integración de artículos
+              fechaFin:
+                type: string
+                example: '30/08/2019 12:12:02'
+                description: Indica la fecha de finalización de la integración de artículos 
+              logJob:
+                type: string
+                example: "Error en el Job!!!"
+                description: Indica el log del Job
+              logIntegracion:
+                type: string
+                example: "Violación de clave primaria"
+                description: Indica el log de la integración
+    ProgramarEjecucionRequest:
+       type: object
+       description: Objeto de solicitud que contiene el estado de la programación de la integración
+       required:
+         - tipoProgramacion
+       properties:
+        tipoProgramacion:
+           type: string
+           enum: ['Una_Vez_a_Día','Frecuencia_al_Día']
+           example: 'Frecuencia_al_Día'
+           description: Describe el tipo de programación
+        horaEjecucionIntegracion:
+           type: string
+           example: "{'hour':'1','minute':'11'}"
+           description: Hora del día en que se ejecuta la integración en tipo programación una vez al día
+        frecuencia:
+           type: integer
+           example: 2
+           description: Minutos de frecuencia de la ejecución de la integración
+        horaInicio:
+           type: string
+           example: "{'hour':'1','minute':'11'}"
+           description: Hora del día en que se empieza la integración
+        horaFin:
+           type: string
+           example: "{'hour':'1','minute':'11'}"
+           description: Hora del día en que finaliza la integración  
+    HabilitarIntegracionRequest:
+       type: object
+       description: Objeto de solicitud que contiene el estado de la habilitación / deshabilitación de la integración
+       properties:
+        habilitado:
+           type: boolean
+           example: true
+           description: Indica si la integración se encuentra habilitada o deshabilitada
+    ObtenerEstadoEjecucionArticulosResponse:
+      type: object
+      description: Resultado general del estado de la ejecución de la integración
+      properties:
+        integracionHabilitada:
+          type: boolean
+          example: true
+          description: Indica si la integración se encuentra actualmente habilitada
+        horaEjecucion:
+           type: string
+           example: "{'hour':'1','minute':'0'}"
+           description: Hora del día en que se ejecuta la integración de artículos
+        fechaDeshabilitado:
+                type: string
+                example: "{'hour':'1','minute':'0'}"
+                description: Indica la fecha de deshabilitación de la integración de artículos
+        horaInicio:
+                type: string
+                example: "{'hour':'1','minute':'0'}"
+                description: Indica la hora de inicio de la programación
+        horaFin:
+                type: string
+                example: "{'hour':'1','minute':'0'}"
+                description: Indica la hora de fin de la programación 
+        tipoProgamacion:
+                type: string
+                enum: ['Una_Vez_a_Día','Frecuencia_al_Día']
+                example: 'Frecuencia_al_Día'
+                description: Indica el tipo de programación
+        frecuencia:
+                type: integer
+                example: 1
+                description: Indica la frecuencia de ejecución en minutos           
+  requestBodies:
+    ProgramarEjecucionRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ProgramarEjecucionRequest'
+      description: Solicitud de la programación de la integración
+      required: true  
+    HabilitarIntegracionRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/HabilitarIntegracionRequest'
+      description: Solicitud de la habilitación / deshabilitación de la integración
+      required: true  
+    FiltrarLogsEjecucionArticulosRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarLogsEjecucionArticulosRequest'
+      description: Solicitud de filtro de integraciones de artículos. Se debe ingresar al menos uno de los criterios del filtro
+      required: true

@@ -1,0 +1,62 @@
+.card-icon i{
+    font-size: 24px;;
+}
+
+.nav-pills .nav-item .nav-link {
+    line-height: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 100px;
+    text-align: center;
+    color: #555;
+    transition: all .3s;
+    padding: 10px 15px;
+}
+
+.nav-pills .nav-item i {
+    display: block;
+    font-size: 30px;
+    padding: 15px 0;
+}
+
+.nav-pills.nav-pills-warning .nav-item .nav-link.active, .nav-pills.nav-pills-warning .nav-item .nav-link.active:focus, .nav-pills.nav-pills-warning .nav-item .nav-link.active:hover {
+    background-color: #ff9800;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(255,152,0,.4);
+    color: #fff;
+}
+
+.card .custom-checkbox  {
+    margin-top: 15px;
+}
+
+.custom-checkbox .custom-control-label{
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    color: #ffffff;
+    border-color: #ffa726;
+    background-color: #ffa726;
+    box-shadow: none;
+}
+
+.custom-control-label::before, .custom-control-label::after  {
+    width: 20px;
+    height: 20px;
+    margin-top: -5px;
+}
+
+.mat-input-element, .mat-focused {
+    caret-color: #ffa726;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+    color: #F5B90E;
+}
+
+.form-control, .is-focused .form-control{
+    background-image: linear-gradient(to top, #F5B90E 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+
+}

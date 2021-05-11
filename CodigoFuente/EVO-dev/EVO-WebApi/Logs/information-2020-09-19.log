@@ -1,0 +1,14 @@
+2020-09-19 10:28:28.6578|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerEmpaques en EVO_WebApi - Api Artículos sin parámetros |url: |action: 
+2020-09-19 10:28:28.6578|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosEstados en Api Artículos sin parámetros |url: |action: 
+2020-09-19 10:28:28.6578|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedido en Api Pedidos con el parámetro 2 |url: |action: 
+2020-09-19 10:28:28.6634|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : EXPRESION_REGULAR_ENTERO_DECIMAL |url: |action: 
+2020-09-19 10:28:28.6634|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-19 10:28:28.6634|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MINIMO_DECIMALES |url: |action: 
+2020-09-19 10:28:28.7712|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEmpaques en EVO_WebApi - BLArticulo sin parámetros |url: |action: 
+2020-09-19 10:28:28.7712|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosEstados en BLArticulo sin parámetros |url: |action: 
+2020-09-19 10:28:28.7712|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-19 10:28:33.2188|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-19 10:28:33.2385|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-19 10:28:33.2385|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-19 10:28:33.2582|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedido con el parámetro: pedidoId: 2 |url: |action: 
+2020-09-19 10:28:33.3053|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : MAXIMO_DECIMALES |url: |action: 

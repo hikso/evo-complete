@@ -1,0 +1,271 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Facturación
+    url: https://evo/api
+info:
+  description: |
+   API de administración de facturación
+  version: "1.0.0"
+  title: API de administración de Facturación
+
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Facturacion
+    description: Gestión de Facturación
+paths:
+  /facturacion/ultimadevuelta:
+    get:
+      tags: 
+        - Facturacion
+      summary: Obtiene las ultima de devuelta de una factura POS
+      operationId: obtenerUltimaDevuelta
+      parameters:
+        - name: codigoPuntoVenta
+          in: query
+          description: Indica el código de punto de venta
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:              
+              application/json:
+                schema:   
+                    type: string
+  /facturacion/otrasformaspago:
+    get:
+      tags: 
+       - Facturacion
+      summary: Obtiene las otras formas de pago
+      operationId: obtenerOtrasFormasPago
+      responses:
+       '200':
+          description: Operación realizada con éxito
+          content:              
+             application/json:
+                schema:   
+                  $ref: '#/components/schemas/otraFormaPagoResponse'
+  /facturacion/bancos:
+    get:
+      tags: 
+        - Facturacion
+      summary: Obtiene los bancos
+      operationId: obtenerBancos
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:              
+              application/json:
+                schema:   
+                    type: array
+                    items: 
+                     $ref: '#/components/schemas/bancoResponse'  
+  /facturacion:
+    post:
+      tags: 
+        - Facturacion
+      summary: Registra una factura
+      operationId: asignarFacturaPOS
+      requestBody:
+          $ref: '#/components/requestBodies/facturaRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+  
+components:
+  schemas:
+    facturaRequest:
+      type: object
+      required:
+        - codigoPuntoVenta
+        - vendedorId
+        - identificacionCliente
+        - tipoBasculaId
+        - articulos
+        - formasPago
+        - totalAntesDescuento        
+        - valorImpuestos
+        - totalDocumento        
+      description: Representa la solicitud de la factura
+      properties:
+        codigoPuntoVenta:
+          type: string
+          example: 'PV-PRA'
+          description: Indica el código del punto de venta 
+        vendedorId:
+          type: integer
+          example: 1
+          description: Indica el id del vendedor
+        identificacionCliente:
+          type: string
+          example: '123987654'
+          description: Indica la identificación del socio de negocio(cliente de la factura)  
+        tipoBasculaId:
+          type: integer
+          example: 1
+          description: Indica el id del tipo de báscula 
+        observaciones:
+          type: string
+          example: 'El cliente viene a las 2pm'
+          description: Indica las observaciones de la factura(Opcional)
+        totalAntesDescuento:
+          type: integer
+          example: 510,000
+          description: Indica la sumatoria de los totales por artículo
+        porcentajeDescuento:
+          type: number
+          example: 50
+          description: Indica el porcentaje de descuento(Opcional)
+        totalConDescuento:
+          type: integer
+          example: 255,000
+          description: Indica el total de descuento(Opcional)
+        cantidadBolsas:
+          type: integer
+          example: 2
+          description: Indica la cantidad de bolsas(Opcional)
+        porcentajeCobroBolsa:
+          type: integer
+          example: 100
+          description: Indica el porcentaje de cobro del valor de la bolsa(Opcional)
+        valorBolsa:
+          type: integer
+          example: 100
+          description: Indica el valor de la bolsa(Opcional)
+        valorRealxCantidadBolsa:
+          type: integer
+          example: 100
+          description: Indica el valor real de la bolsa por la cantidad(Opcional)     
+        valorImpuestos:
+          type: integer
+          example: 50,000
+          description: Indica el valor de los impuestos de la factura        
+        totalDocumento:
+          type: integer
+          example: 500,525
+          description: Indica el total de la factura
+        articulos:
+          type: array
+          items:             
+            $ref: '#/components/schemas/articuloRequest'
+        formasPago:
+          type: array
+          items:             
+            $ref: '#/components/schemas/formaPagoRequest'
+    formaPagoRequest:
+      type: object
+      description: Representa una forma de pago de la factura
+      required:
+       - formaPagoId
+       - valorPago
+      properties:
+        formaPagoId:
+          type: integer
+          example: 1
+          description: Indica el id de la forma de pago  
+        bancoId:
+          type: integer
+          example: 2
+          description: Indica el id del banco
+        valorPago:
+          type: integer
+          example: 13000
+          description: Indica el valor del pago
+        consecutivoBono:
+          type: string
+          example: '4424343243'
+          description: Indica el consecutivo del bono  
+        empleadoBono:
+          type: string
+          example: 'Carlos Orozco'
+          description: Indica el nombre del empleado del bono(todo usuario EVO es empleado pero no todo empleado es usuario EVO)
+    articuloRequest:
+      type: object
+      description: Representa la compra de un artículo en la factura
+      required:
+       - codigoArticulo
+       - cantidad
+       - valorUnitario
+       - valorUnitarioMasIVA
+       - porcentajeIVA
+       - total
+       - codigoBodega
+       - codigoIVA
+       - eliminado
+      properties:
+        codigoArticulo:
+          type: string
+          example: 'PT-1485'
+          description: Indica el código del artículo   
+        cantidad:
+          type: number
+          example: 531,00.01
+          description: Indica la cantidad a comprar
+        valorUnitario:
+          type: integer
+          example: 13000
+          description: Indica el valor unitario
+        valorUnitarioMasIVA:
+          type: integer
+          example: 13000
+          description: Indica el valor unitario más IVA  
+        porcentajeIVA:
+          type: number
+          example: 19.2
+          description: Indica el porcentaje del IVA
+        total:
+          type: integer
+          example: 52000
+          description: Indica el total por artículo
+        codigoBodega:
+          type: string
+          example: 'PV-PRA'
+          description: Indica el código de la bodega del punto de venta
+        codigoIVA:
+          type: string
+          example: 'IVA 3687'
+          description: Indica el código del IVA
+        eliminado:
+          type: boolean
+          example: true
+          description: Indica si el artículo fue eliminado 
+    otraFormaPagoResponse:
+      type: object
+      description: Representa una forma de pago
+      properties:         
+         id:
+          type: integer
+          example: 1
+          description: Indica el id
+         nombre:
+          type: string
+          example: 'Tarjeta débito'
+          description: Indica el nombre
+    bancoResponse:
+      type: object
+      description: Representa una banco
+      properties:         
+         bancoId:
+          type: integer
+          example: 1
+          description: Indica el id
+         nit:
+          type: string
+          example: '456456645465-8'
+          description: Indica el NIT
+         nombre:
+          type: string
+          example: 'Banco 123'
+          description: Indica el nombre
+  requestBodies:
+   facturaRequest:
+      content:
+        application/json:
+          schema:
+              $ref: '#/components/schemas/facturaRequest'
+      description: Objeto de solicitud para registrar la factura
+      required: true        
+  

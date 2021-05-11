@@ -1,0 +1,68 @@
+.text-primary-corp{
+    font-weight: 700;
+    color: #7F0E06;
+}
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.pagewidth{
+    float: right;
+    min-width: 80px;
+}
+.ui-inputgroup .ui-inputgroup-addon{
+    border: none;
+}
+
+tr td{
+    vertical-align: middle;
+}
+
+.text-corp{
+    color: #7F0E06;
+}
+
+:host ::ng-deep .ui-dropdown-panel .ui-dropdown-list {
+    background-color: #fff !important;
+}
+
+:host ::ng-deep .select:hover{
+    background-color: #F5B90E;
+    color: #ffffff;
+}
+
+:host ::ng-deep p-paginator a {
+    color: #7F0E06;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+:host ::ng-deep .ui-state-active{
+    background-color: #7F0E06;
+    color: #ffffff;
+    min-width: 25px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding-top: 1.5px;
+    margin-top: -3px;
+}
+
+.footpaginator{
+    margin-top: 25px;
+    position: relative;
+}
+
+.totalRow{
+    position: absolute; 
+    top:1px; 
+    right:5px; 
+    margin: 5px;
+}
+
+:host ::ng-deep .ui-dropdown-panel .ui-dropdown-list,
+::ng-deep .ui-dropdown-panel .ui-dropdown-list {
+    background-color: #fff;
+}

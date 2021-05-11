@@ -1,0 +1,102 @@
+openapi: 3.0.0
+servers:
+# Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/Antioquena/Auditoria/1.0.0
+  - description: EVO - API de Bodegas
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Bodegas
+  version: "1.0.0"
+  title: API de Bodegas
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com
+tags:
+  - name: Bodegas
+    description: Gestión de Bodegas
+paths:
+   /bodegas/tipos:
+   get:
+      tags:
+        - Bodegas
+      summary: Obtiene los tipos de bodegas con las bodegas a las cuales se les pueden hacer solicitudes de pedido
+      operationId: obtenerTiposBodega
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/ObtenerTipoBodegaAResponse' 
+  /bodegas/planta:
+    get:
+      tags: 
+        - Bodegas
+      summary: Obtiene las bodegas de tipo planta
+      operationId: obtenerBodegasTipoPlanta
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                 type: array
+                 items:
+                   $ref: '#/components/schemas/BodegaResponse'   
+  /bodegas:
+    get:
+      tags: 
+        - Bodegas
+      summary: Obtiene la bodega por código
+      operationId: obtenerBodegaxCodigo      
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                 type: array
+                 items:
+                   $ref: '#/components/schemas/BodegaResponse'                       
+components:
+  schemas:
+    ObtenerTipoBodegaAResponse:
+      type: object
+      description: Indica el tipo de bodega al cual se pueden hacer solicitudes de pedido
+      properties:
+        tipoBodega:
+          type: string
+          example: "Punto de Venta"
+          description: Indica el nombre del tipo de bodega
+        bodegas:     
+          type: array
+          description: Indica la lista de bodegas del tipo de bodega
+          items:
+             type: object
+             properties:
+              codigo:
+               type: string
+               example: 'PV-PRA'
+               description: Código de la bodega
+              nombre:
+               type: string
+               example: 'Prado'
+               description: Nombre de la bodega 
+    BodegaResponse:
+          type: object
+          required: 
+           - WhsCode
+           - WhsName 
+          properties:
+             WhsCode:
+              type: string
+              example: 'COD-BODEGA-1'
+              description: Código bodega
+             WhsName:
+              type: string
+              example: "Bodega 1"
+              description: Nombre bodega

@@ -1,0 +1,485 @@
+﻿<UserControl
+    x:Class="EVO_PV.Views.UCModalPayment"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:EVO_PV.Views"
+    xmlns:local1="clr-namespace:EVO_PV.Utilities"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="600"
+    Height="Auto"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Dictionaries/DictTags.xaml" />
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Style/style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <local1:VisibilityConverter x:Key="VisibilityConverter" />
+            <BooleanToVisibilityConverter x:Key="VisibilityConverterBool" />
+            <local1:DecimalConverter x:Key="decimalConverter" />
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Width="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Label
+            Grid.Row="0"
+            Grid.ColumnSpan="4"
+            Margin="0,20,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Content="PAGO FACTURA"
+            FontSize="18"
+            FontWeight="Bold" />
+
+        <StackPanel
+            Grid.Row="1"
+            Grid.ColumnSpan="4"
+            Margin="25,20,0,20"
+            Orientation="Horizontal">
+            <Grid Width="Auto">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <StackPanel
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalAlignment="Left">
+                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Total Factura:" />
+                </StackPanel>
+                <StackPanel
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Margin="10,0,0,0"
+                    HorizontalAlignment="Left">
+                    <TextBox
+                        Width="100"
+                        Padding="5,0,0,0"
+                        BorderThickness="1"
+                        IsEnabled="False"
+                        IsReadOnly="True"
+                        Text="{Binding GenerateInvoice.TotalDocument, StringFormat='${0}', Converter={StaticResource decimalConverter}, ConverterParameter=Money, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                        TextAlignment="Right" />
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="2"
+            Grid.ColumnSpan="4"
+            Margin="25,0,20,20">
+            <TabControl>
+                <TabItem Header="Formas de Pago">
+
+                    <Grid Margin="0,0,25,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <StackPanel
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            Margin="0,20,0,0">
+                            <Grid Width="Auto">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <TextBlock
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Style="{StaticResource TextHeaderView}"
+                                    Text="Efectivo" />
+
+                                <TextBox
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Padding="0,0,5,0"
+                                    BorderThickness="1"
+                                    Text="{Binding TotalCash, StringFormat='${0}', Converter={StaticResource decimalConverter}, ConverterParameter=Money, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                    TextAlignment="Right" />
+                            </Grid>
+                        </StackPanel>
+                        <StackPanel
+                            Grid.Row="1"
+                            Grid.Column="0"
+                            Margin="0,10,0,0">
+                            <Grid Width="Auto">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <TextBlock
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Margin="15,10,0,0"
+                                    Style="{StaticResource TextHeaderView}"
+                                    Text="Otra Forma de Pago" />
+
+                                <ComboBox
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Grid.ColumnSpan="2"
+                                    DisplayMemberPath="Name"
+                                    IsEditable="True"
+                                    ItemsSource="{Binding Path=PaymentWays, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                    SelectedValue="{Binding Path=SelectedPaymentWay, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+                                <Button
+                                    Grid.Row="0"
+                                    Grid.Column="3"
+                                    Width="40"
+                                    Margin="10,0,0,10"
+                                    HorizontalAlignment="Right"
+                                    Background="#00BCD4"
+                                    BorderBrush="#00BCD4"
+                                    Command="{Binding CmdAddOtherFormPayment}">
+                                    <materialDesign:PackIcon
+                                        HorizontalAlignment="Center"
+                                        Foreground="#FFFFFF"
+                                        Kind="Plus" />
+                                </Button>
+                            </Grid>
+                        </StackPanel>
+                        <StackPanel
+                            Grid.Row="2"
+                            Grid.Column="0"
+                            Margin="0,0,0,0">
+                            <ItemsControl x:Name="icPaymentWays" ItemsSource="{Binding Path=PaymentWaysAdded, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <UniformGrid Columns="1" />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid Margin="0,0,0,5">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="10" />
+                                                <ColumnDefinition />
+                                                <ColumnDefinition />
+                                                <ColumnDefinition />
+                                            </Grid.ColumnDefinitions>
+                                            <Label
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                Grid.ColumnSpan="2"
+                                                Content="{Binding Path=PaymentName}"
+                                                Style="{StaticResource LabelStyle}"
+                                                Visibility="{Binding Path=HasBank, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                                            <TextBox
+                                                Grid.Row="1"
+                                                Grid.Column="0"
+                                                Grid.ColumnSpan="2"
+                                                Height="28"
+                                                Margin="10,0,10,0"
+                                                Padding="0,0,5,0"
+                                                BorderThickness="1"
+                                                Text="{Binding Path=PaymentValue, StringFormat='${0}', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}, ConverterParameter=Money}"
+                                                TextAlignment="Right"
+                                                Visibility="{Binding Path=HasBank, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+
+                                            <Label
+                                                Grid.Row="0"
+                                                Grid.Column="2"
+                                                Grid.ColumnSpan="2"
+                                                Content="Selecionar Banco"
+                                                Style="{StaticResource LabelStyle}"
+                                                Visibility="{Binding Path=HasBank, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                                            <ComboBox
+                                                Grid.Row="1"
+                                                Grid.Column="2"
+                                                Grid.ColumnSpan="2"
+                                                Margin="10,0,10,0"
+                                                DisplayMemberPath="Name"
+                                                ItemsSource="{Binding Path=DataContext.Banks, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}}"
+                                                SelectedValuePath="{Binding Path=BankSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                Visibility="{Binding Path=HasBank, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                                            <Label
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                Grid.ColumnSpan="2"
+                                                Content="{Binding Path=PaymentName}"
+                                                Style="{StaticResource LabelStyle}"
+                                                Visibility="{Binding Path=HasConsecutiveBond, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                                            <TextBox
+                                                Grid.Row="1"
+                                                Grid.Column="0"
+                                                Grid.ColumnSpan="2"
+                                                Height="28"
+                                                Margin="10,0,10,0"
+                                                Padding="0,0,5,0"
+                                                BorderThickness="1"
+                                                Text="{Binding Path=PaymentValue, StringFormat='${0}', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}, ConverterParameter=Money}"
+                                                TextAlignment="Right"
+                                                Visibility="{Binding Path=HasConsecutiveBond, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                                            <Label
+                                                Grid.Row="0"
+                                                Grid.Column="2"
+                                                Content="Consecutivo"
+                                                Style="{StaticResource LabelStyle}"
+                                                Visibility="{Binding Path=HasConsecutiveBond, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                                            <TextBox
+                                                Grid.Row="1"
+                                                Grid.Column="2"
+                                                Height="28"
+                                                Margin="10,0,10,0"
+                                                Padding="0,0,5,0"
+                                                BorderThickness="1"
+                                                Text="{Binding Path=ConsecutiveBond, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                TextAlignment="Right"
+                                                Visibility="{Binding Path=HasConsecutiveBond, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                                            <Label
+                                                Grid.Row="0"
+                                                Grid.Column="3"
+                                                Content="Portador"
+                                                Style="{StaticResource LabelStyle}"
+                                                Visibility="{Binding Path=HasConsecutiveBond, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                                            <TextBox
+                                                Grid.Row="1"
+                                                Grid.Column="3"
+                                                Height="28"
+                                                Margin="10,0,10,0"
+                                                Padding="5,0,0,0"
+                                                BorderThickness="1"
+                                                Text="{Binding Path=EmployeeBond, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                Visibility="{Binding Path=HasConsecutiveBond, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                                        </Grid>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+
+                        </StackPanel>
+                        <StackPanel
+                            Grid.Row="4"
+                            Grid.Column="0"
+                            Margin="0,20,0,0">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <TextBlock
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Style="{StaticResource TextHeaderView}"
+                                    Text="TOTAL RECIBIDO:" />
+
+                                <TextBox
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    IsEnabled="False"
+                                    IsReadOnly="True"
+                                    Text="{Binding TotalReceived, StringFormat='${0}', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}, ConverterParameter=Money}"
+                                    TextAlignment="Right" />
+                            </Grid>
+                        </StackPanel>
+                        <StackPanel
+                            Grid.Row="5"
+                            Grid.Column="0"
+                            Margin="0,10,0,20">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <TextBlock
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Style="{StaticResource TextHeaderView}"
+                                    Text="CAMBIO:" />
+
+                                <TextBox
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    IsEnabled="False"
+                                    IsReadOnly="True"
+                                    Text="{Binding Returned, StringFormat='${0}', Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}, ConverterParameter=Money}"
+                                    TextAlignment="Right" />
+                            </Grid>
+
+                        </StackPanel>
+
+                    </Grid>
+
+                </TabItem>
+
+            </TabControl>
+
+        </StackPanel>
+
+        <Grid
+            Grid.Row="3"
+            Grid.ColumnSpan="4"
+            Margin="20,0,0,0"
+            VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*" />
+                <ColumnDefinition Width="10*" />
+                <ColumnDefinition Width="45*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <StackPanel HorizontalAlignment="Center">
+                <Grid HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <TextBlock
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Margin="-1,0,0,0"
+                        Style="{StaticResource TextHeaderView}"
+                        Text="Número Copias" />
+
+                    <TextBox
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        Width="80"
+                        Style="{StaticResource TextBoxInvoiceStyleForInvoiceBascule}"
+                        Text="0"
+                        TextAlignment="Right" />
+                </Grid>
+            </StackPanel>
+            <StackPanel
+                Grid.Row="0"
+                Grid.Column="2"
+                Width="200"
+                Margin="0,20,0,0"
+                HorizontalAlignment="Right">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Width="60"
+                        Height="60"
+                        Style="{StaticResource IconCardButton}">
+
+                        <Grid.Effect>
+                            <DropShadowEffect
+                                BlurRadius="20"
+                                RenderingBias="Quality"
+                                ShadowDepth="1"
+                                Color="#FFECECEC" />
+                        </Grid.Effect>
+
+                        <Grid.InputBindings>
+                            <MouseBinding Command="{Binding CmdSavePayment}" MouseAction="LeftClick" />
+                        </Grid.InputBindings>
+
+                        <Border Background="#4ACF50" Style="{StaticResource BorderCardButton}" />
+
+                        <materialDesign:PackIcon
+                            Width="20"
+                            Height="20"
+                            Margin="0,-10,0,0"
+                            Padding="10"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Foreground="White"
+                            Kind="ContentSave" />
+                        <TextBlock
+                            Margin="0,0,0,10"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Bottom"
+                            Foreground="White"
+                            Text="Guardar" />
+                    </Grid>
+                    <Grid
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Width="60"
+                        Height="60"
+                        Style="{StaticResource IconCardButton}">
+
+                        <Grid.Effect>
+                            <DropShadowEffect
+                                BlurRadius="20"
+                                RenderingBias="Quality"
+                                ShadowDepth="1"
+                                Color="#FFECECEC" />
+                        </Grid.Effect>
+
+                        <Grid.InputBindings>
+                            <MouseBinding Command="{Binding CmdCancelPayment}" MouseAction="LeftClick" />
+                        </Grid.InputBindings>
+
+                        <Border Background="Red" Style="{StaticResource BorderCardButton}" />
+
+                        <materialDesign:PackIcon
+                            Width="30"
+                            Height="30"
+                            Margin="0,-10,0,0"
+                            Padding="10"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Foreground="White"
+                            Kind="Close" />
+                        <TextBlock
+                            Margin="0,0,0,10"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Bottom"
+                            Foreground="White"
+                            Text="Cancelar" />
+                    </Grid>
+
+                </Grid>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+
+</UserControl>

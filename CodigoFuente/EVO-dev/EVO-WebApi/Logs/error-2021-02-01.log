@@ -1,0 +1,62 @@
+ -------------- Error (2021-02-01 08:45:49.7257) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-02-01 08:48:22.6694) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerPedidoCompraGestion
+ Exception Type: System.InvalidOperationException
+ Exception Message: Nullable object must have a value.
+ Stack Trace:    at System.Nullable`1.get_Value()
+   at EVO_DataAccess.DataAccess.DAPedido.ObtenerPedidoCompraGestion(Int32 pedidoId, String[] estadosPedidoComprometidos) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAPedido.cs:line 364
+   at EVO_BusinessLogic.BLPedido.ObtenerPedidoCompraGestion(Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLPedido.cs:line 710
+ Additional Info: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at EVO_DataAccess.DataAccess.DAPedido.ObtenerPedidoCompraGestion(Int32 pedidoId, String[] estadosPedidoComprometidos) in C:\EVO\CodigoFuente\EVO-dev\EVO-DataAccess\DataAccess\DAPedido.cs:line 364
+   at EVO_BusinessLogic.BLPedido.ObtenerPedidoCompraGestion(Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLPedido.cs:line 710
+
+ -------------- Error (2021-02-01 08:48:22.7167) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerConsultaPedido
+ Exception Type: System.InvalidOperationException
+ Exception Message: Nullable object must have a value.
+ Stack Trace:    at EVO_BusinessLogic.BLPedido.ObtenerPedidoCompraGestion(Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLPedido.cs:line 716
+   at EVO_BusinessLogic.BLPedido.ObtenerConsultaPedido(Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLPedido.cs:line 1185
+ Additional Info: System.InvalidOperationException: Nullable object must have a value.
+   at EVO_BusinessLogic.BLPedido.ObtenerPedidoCompraGestion(Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLPedido.cs:line 716
+   at EVO_BusinessLogic.BLPedido.ObtenerConsultaPedido(Int32 pedidoId) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLPedido.cs:line 1185
+
+ -------------- Error (2021-02-01 08:50:58.1623) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-02-01 08:56:57.3658) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-02-01 10:48:11.4819) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.ObtenerPedidosCompraAbiertoxFiltro
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El valor del parámetro hasta debe ser mayor al valor del parámetro desde
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El valor del parámetro hasta debe ser mayor al valor del parámetro desde
+

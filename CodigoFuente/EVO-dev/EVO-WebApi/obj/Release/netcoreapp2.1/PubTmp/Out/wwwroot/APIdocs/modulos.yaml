@@ -1,0 +1,164 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Módulos
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Módulos
+  version: "1.0.0"
+  title: API de Modulos
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: krestrepo@porcicarnes.com
+
+paths:
+  /modulos:
+    get:
+      tags:
+        - Modulos
+      summary: Obtiene todos los Módulos
+      operationId: obtenerTodosModulos
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          example: 1
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          example: 100
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosModulosResponse'
+
+  /modulos/{id}:
+    get:
+      tags:
+        - Modulos
+      summary: Obtiene un Módulo por Id
+      operationId: obtenerModuloxId
+      parameters:
+        - name: id
+          in: path
+          description: Id del Módulo
+          required: true
+          example: 1
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerModuloResponse'
+
+  /modulos/obtenerxnombre/{nombre}:
+    get:
+      tags:
+        - Modulos
+      summary: Obtiene un Módulo por Nombre
+      operationId: obtenerModuloxNombre
+      parameters:
+        - name: nombre
+          in: path
+          description: Nombre del Módulo
+          required: true
+          example: PV
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerModuloResponse'
+                  
+components:
+  schemas:
+    ObtenerModuloResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        ModuloId:
+          type: integer
+          example: 1
+          description: Id del Módulo
+        Nombre:
+          type: string
+          example: PV
+          description: Nombre del Módulo
+        Activo:
+          type: boolean
+          example: False
+          description: Indica si el Módulo esta activo / inactivo
+        Funcionalidades:
+          type: array
+          description: Lista de Funcionalidades
+          items:
+            type: object
+            properties:
+              FuncionalidadId:
+                type: integer
+                example: 1
+                description: Id de la Funcionalidad
+              Nombre:
+                type: string
+                example: Facturar
+                description: Nombre de al Funcionalidad
+
+    ObtenerTodosModulosResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 50
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 5
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de Módulos
+          items:
+            type: object
+            properties:
+              ModuloId:
+                type: integer
+                example: 1
+                description: Id del Módulo
+              Nombre:
+                type: string
+                example: PV
+                description: Nombre del Módulo
+              Funcionalidades:
+                type: array
+                description: Lista de funcionalidades
+                items:
+                  type: object
+                  properties:
+                    FuncionalidadId:
+                      type: integer
+                      example: 1
+                      description: Id de la Funcionalidad
+                    Nombre:
+                      type: string
+                      example: Consultar Auditoria
+                      description: Nombre de la Funcionalidad
+              Activo:
+                type: boolean
+                example: False
+                description: Indica si el Módulo está activo / inactivo

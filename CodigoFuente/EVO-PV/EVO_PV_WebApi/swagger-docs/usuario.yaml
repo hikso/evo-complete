@@ -1,0 +1,101 @@
+openapi: 3.0.0
+servers:
+  - description: EVO - API de Usuarios
+    url: https://evo/api
+info:
+  description: 
+   API de administración de Usuarios
+  version: "1.0.0"
+  title: API de Usuarios
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Usuarios
+    description: WebAPI encargada de gestionar los Usuarios
+paths:
+  /usuarios/obtenerusuario/:
+    get:
+      tags: 
+        - Usuarios
+      summary: Retorna el usuario de EVO.
+      operationId: obtenerUsuario
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/UsuarioResponse'
+              
+  /usuarios/grupodominiomenosrol/{id}:
+    get:
+      tags: 
+        - Usuarios
+      summary: Retorna los usuarios de un grupo de dominio menos los usuarios de un rol en especifico.
+      operationId: obtenerTodosUsuariosGrupoDominioMenosRol
+      parameters:
+        - name: id
+          in: path
+          description: Indica el id del rol por el cual se van a encontrar los usuarios de dicho rol.
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosUsuariosGrupoDominioMenosRolResponse'
+components:
+  schemas:
+    UsuarioResponse:
+       type: object
+       description: Respuesta del usuario
+       properties:
+        exito:
+          type: boolean
+          example: true
+          description: Exito de la consulta
+        usuario:
+            type: object
+            properties:
+             usuarioId:
+               type: integer
+               example: 1
+               description: Id del usuario
+             nombre:
+               type: string
+               example: "JCUSUGA"
+               description: Usuario del usuario  
+             nombreUsuario:
+               type: string
+               example: "Juan Camilo Usuga"
+               description: Nombre del Usuario
+    ObtenerTodosUsuariosGrupoDominioMenosRolResponse:
+       type: object
+       description: Resultado general de la consulta
+       properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Obtiene los usuarios de un grupo y un dominio especifico menos los usuarios del rol informado
+          items:
+            type: object
+            properties:
+             usuario:
+              type: string
+              example: "JUsuga"
+              description: Usuario del Usuario
+             nombre:
+              type: string
+              example: "Juan Camilo Usuga"
+              description: Nombre del Usuario

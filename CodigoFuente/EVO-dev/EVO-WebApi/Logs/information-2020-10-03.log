@@ -1,0 +1,19 @@
+2020-10-03 23:56:31.7103|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerTipoVehiculo en Api Vehiculos |url: |action: 
+2020-10-03 23:56:31.7103|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerConductoresAuxiliares en Api Vehiculos |url: |action: 
+2020-10-03 23:56:31.7103|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerMuelles en Api Vehiculos |url: |action: 
+2020-10-03 23:56:31.7103|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:56:31.7103|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-10-03 23:56:31.7103|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:56:31.7712|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerTipoVehiculo en BO Vehiculos |url: |action: 
+2020-10-03 23:56:31.7712|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerConductoresAuxiliares en BO Vehiculos |url: |action: 
+2020-10-03 23:56:31.7712|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerMuelles en blMuelles. |url: |action: 
+2020-10-03 23:56:31.7885|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:56:31.7885|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-10-03 23:56:38.5814|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:56:38.5828|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:56:38.6663|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 
+2020-10-03 23:56:38.6991|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:56:38.6991|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:56:38.6991|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:56:38.6991|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:56:38.7122|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 

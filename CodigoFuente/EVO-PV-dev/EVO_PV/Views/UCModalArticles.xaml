@@ -1,0 +1,324 @@
+﻿<UserControl
+    x:Class="EVO_PV.Views.UCModalArticles"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:EVO_PV.ControlsCustom"
+    xmlns:local2="clr-namespace:EVO_PV.Utilities"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="900"
+    Height="600"
+    mc:Ignorable="d">
+
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Dictionaries/DictTags.xaml" />
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Style/style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+            </Grid>
+            <StackPanel Grid.Row="0">
+                <Grid>
+                    <TextBlock
+                        Padding="10,0,0,0"
+                        VerticalAlignment="Center"
+                        FontSize="20"
+                        Text="Artículos Relacionados" />
+
+                    <Button
+                        x:Name="NewRequest"
+                        Width="40"
+                        Margin="0,10,10,10"
+                        Padding="0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}">
+                        <Grid Width="40" HorizontalAlignment="Center">
+                            <materialDesign:PackIcon
+                                Width="25"
+                                Height="25"
+                                Margin="10,2,0,0"
+                                Foreground="#d7d7d7"
+                                Kind="Close" />
+                        </Grid>
+                    </Button>
+                </Grid>
+            </StackPanel>
+
+            <local:CustomArticlesDataGrid
+                Grid.Row="1"
+                Grid.Column="0"
+                MaxHeight="470"
+                Padding="15"
+                AutoGenerateColumns="False"
+                Background="White"
+                BorderBrush="Transparent"
+                CanUserAddRows="False"
+                CanUserDeleteRows="False"
+                CanUserReorderColumns="False"
+                ItemsSource="{Binding Path=Articles, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                RowHeaderWidth="0"
+                ScrollViewer.CanContentScroll="True"
+                ScrollViewer.VerticalScrollBarVisibility="Auto"
+                SelectedItemsList="{Binding ArticlesSelected, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                SelectionMode="Extended">
+                <DataGrid.Resources>
+                    <ResourceDictionary>
+                        <local2:DecimalConverter x:Key="decimalConverter" />
+                    </ResourceDictionary>
+                </DataGrid.Resources>
+                <DataGrid.ItemContainerStyle>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <Setter Property="Background" Value="{Binding Path=ColorCheckStockArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                        <Setter Property="Margin" Value="0,0,0,0" />
+                        <Setter Property="BorderThickness" Value="0" />
+                    </Style>
+                </DataGrid.ItemContainerStyle>
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Width="2*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <materialDesign:PackIcon
+                                    Width="17"
+                                    Height="17"
+                                    Margin="-5,0,0,0"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Foreground="Black"
+                                    Kind="{Binding Path=IconCheckStock, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn
+                        Width="6*"
+                        Header="Código Artículo"
+                        SortMemberPath="CodeArticle">
+                        <DataGridTemplateColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock
+                                        Foreground="#7F0E06"
+                                        Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                        TextWrapping="Wrap" />
+                                    <TextBox Width="Auto" Text="{Binding Path=DataContext.CodeFilter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock HorizontalAlignment="Center" Text="{Binding Path=CodeArticle}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn
+                        Width="15*"
+                        Header="Nombre"
+                        SortMemberPath="NameArticle">
+                        <DataGridTemplateColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock
+                                        Foreground="#7F0E06"
+                                        Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                        TextWrapping="Wrap" />
+                                    <TextBox Width="Auto" Text="{Binding Path=DataContext.NameFilter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Path=NameArticle}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn
+                        Width="7*"
+                        Header="Pedido Sugerido"
+                        SortMemberPath="SuggestedOrder">
+                        <DataGridTemplateColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock
+                                        Foreground="#7F0E06"
+                                        Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                        TextWrapping="Wrap" />
+                                    <TextBox Width="Auto" Text="{Binding Path=DataContext.SuggestedOrderFilter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock TextAlignment="Right">
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat=" {0} / {1} ">
+                                            <Binding
+                                                Converter="{StaticResource decimalConverter}"
+                                                Mode="TwoWay"
+                                                Path="SuggestedOrder"
+                                                UpdateSourceTrigger="PropertyChanged" />
+                                            <Binding
+                                                Mode="TwoWay"
+                                                Path="UnitMeasure"
+                                                UpdateSourceTrigger="PropertyChanged" />
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn
+                        Width="7*"
+                        Header="Stock"
+                        SortMemberPath="StockDecimal">
+                        <DataGridTemplateColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                    <TextBox Width="Auto" Text="{Binding Path=DataContext.StockFilter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock TextAlignment="Right">
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat=" {0} / {1} ">
+                                            <Binding
+                                                Converter="{StaticResource decimalConverter}"
+                                                Mode="TwoWay"
+                                                Path="Stock"
+                                                UpdateSourceTrigger="PropertyChanged" />
+                                            <Binding
+                                                Mode="TwoWay"
+                                                Path="UnitMeasure"
+                                                UpdateSourceTrigger="PropertyChanged" />
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn
+                        Width="7*"
+                        Header="Mínimo"
+                        SortMemberPath="MinimumDecimal">
+                        <DataGridTemplateColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                    <TextBox Width="Auto" Text="{Binding Path=DataContext.MinimumFilter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock TextAlignment="Right">
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat=" {0} / {1} ">
+                                            <Binding
+                                                Converter="{StaticResource decimalConverter}"
+                                                Mode="TwoWay"
+                                                Path="Minimum"
+                                                UpdateSourceTrigger="PropertyChanged" />
+                                            <Binding
+                                                Mode="TwoWay"
+                                                Path="UnitMeasure"
+                                                UpdateSourceTrigger="PropertyChanged" />
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn
+                        Width="7*"
+                        Header="Máximo"
+                        SortMemberPath="MaximumDecimal">
+                        <DataGridTemplateColumn.HeaderTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                    <TextBox Width="Auto" Text="{Binding Path=DataContext.MaximumFilter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.HeaderTemplate>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock TextAlignment="Right">
+                                    <TextBlock.Text>
+                                        <MultiBinding StringFormat=" {0} / {1} ">
+                                            <Binding
+                                                Converter="{StaticResource decimalConverter}"
+                                                Mode="TwoWay"
+                                                Path="Maximum"
+                                                UpdateSourceTrigger="PropertyChanged" />
+                                            <Binding
+                                                Mode="TwoWay"
+                                                Path="UnitMeasure"
+                                                UpdateSourceTrigger="PropertyChanged" />
+                                        </MultiBinding>
+                                    </TextBlock.Text>
+                                </TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+
+            </local:CustomArticlesDataGrid>
+
+            <StackPanel
+                Grid.Row="2"
+                Grid.Column="0"
+                Margin="0,15,0,15"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Orientation="Horizontal">
+
+                <Button
+                    x:Name="btnAddArticlesToOrder"
+                    Margin="0,0,5,0"
+                    Background="#4CAF50"
+                    BorderBrush="#4CAF50"
+                    Command="{Binding AddArticlesToOrderCommand}"
+                    CommandParameter="{Binding ElementName=Articles, Path=ArticlesSelected}"
+                    Content="Agregar Artículos" />
+
+                <Button
+                    x:Name="btnCloseModalArticles"
+                    Margin="0,0,5,0"
+                    Background="Red"
+                    BorderBrush="Red"
+                    Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
+                    Content="Cerrar" />
+
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>

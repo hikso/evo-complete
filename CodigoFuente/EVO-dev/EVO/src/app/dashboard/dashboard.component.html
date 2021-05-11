@@ -1,0 +1,87 @@
+<div class="main-content">
+    <div class="container-fluid" *ngIf="userActive">
+        <div class="row">
+            <a class="col-lg-3 col-md-6 col-sm-6" routerLink="/configuracion/auditoria" *ngIf="user.administrador">
+                <div class="card card-stats">
+                    <div class="card-header card-header-warning card-header-icon ">
+                        <div class="card-icon evo-card">
+                            <i class="material-icons">format_list_bulleted</i>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats col-12 text-center">
+                            <div class="col card-title">
+                                <h4>Auditoria</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="col-lg-3 col-md-6 col-sm-6" routerLink="/configuracion/adminrol">
+                    <div class="card card-stats">
+                        <div class="card-header card-header-warning card-header-icon ">
+                            <div class="card-icon evo-card">
+                                <i class="material-icons">fingerprint</i>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="stats col-12 text-center">
+                                <div class="col card-title">
+                                    <h4>Administrador de Roles</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            <!-- <a class="col-lg-3 col-md-6 col-sm-6" routerLink="/consultas/ctransporte">
+                <div class="card card-stats">
+                    <div class="card-header card-header-warning card-header-icon ">
+                        <div class="card-icon evo-card">
+                            <i class="material-icons">departure_board</i>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats col-12 text-center">
+                            <div class="col card-title">
+                                <h4>Costo Transporte</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a> -->
+            <a class="col-lg-3 col-md-6 col-sm-6" routerLink="/pedidos/consulta">
+                <div class="card card-stats">
+                    <div class="card-header card-header-warning card-header-icon ">
+                        <div class="card-icon evo-card">
+                            <i class="material-icons">home_work</i>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats col-12 text-center">
+                            <div class="col card-title">
+                                <h4>Consulta de Pedidos</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="col-lg-3 col-md-6 col-sm-6" routerLink="/distribucion/enrutamiento">
+                <div class="card card-stats">
+                    <div class="card-header card-header-warning card-header-icon ">
+                        <div class="card-icon evo-card">
+                            <i class="material-icons">directions_bus</i>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats col-12 text-center">
+                            <div class="col card-title">
+                                <h4>Enrutamiento</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+      

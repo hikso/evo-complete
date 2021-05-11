@@ -1,0 +1,2966 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/11/2019 9:20:54 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ET-DESARROLLO2"
+  DTS:CreatorName="ANTIOQUENA\krestrepo"
+  DTS:DTSID="{D5D84D50-3FED-4C00-9912-C5E84947AE2F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1301.433"
+  DTS:LocaleID="9226"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{27E99DBD-9190-43E8-BB75-3F5B432DC482}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.103.EVO.EVO]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{BDE2FAF8-20C4-42B0-B3B2-1C3C7ABE7444}"
+      DTS:ObjectName="192.168.1.103.EVO.EVO">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=192.168.1.103;User ID=EVO;Initial Catalog=EVO;Application Name=SSIS-Package1-{BDE2FAF8-20C4-42B0-B3B2-1C3C7ABE7444}192.168.1.103.EVO.EVO;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAADPQkHOHdy0agIcj9khGBCgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACZjUhuj+a+dVAu9GcrHIPOAAAAAASAAACgAAAAEAAAABkiEWsRdcDBmRKFHSwuY+MQAAAAcXoze6prPCB45tIUZ/1NrRQAAABeTLjDZM5kuJRSBNWgsKROlRnEFw</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.103.EVO.EVO1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{10A3D413-C18C-43ED-A2E5-FB6E6E71478E}"
+      DTS:ObjectName="192.168.1.103.EVO.EVO1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=192.168.1.103;User ID=EVO;Initial Catalog=EVO;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAADPQkHOHdy0agIcj9khGBCgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAXausFCpncVpxi5/3cjwMvAAAAAASAAACgAAAAEAAAADUpgL1q1eUQKBgykxlqoS8QAAAAm12pMLGygWfGknQARL9TGBQAAAAlu+WBij5x+mF+1cJx/tWsIM23tg</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.25.PRU_ANTIOQUENA.EVO1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3EC3A28D-011D-47F0-ABD0-C72DB4F64EA4}"
+      DTS:ObjectName="192.168.1.25.PRU_ANTIOQUENA.EVO1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=192.168.1.25;User ID=EVO;Initial Catalog=PRU_ANTIOQUENA;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAADPQkHOHdy0agIcj9khGBCgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAcfqEWig5GtAkNr/KHGYnpAAAAAASAAACgAAAAEAAAAEnZJTtBHeud2Q1pGfaArxcQAAAAbeZ1RHKmrO1itCTfcbeaBBQAAACYfIUVE9qmRnrbHzq2NWLad12x1A</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6253E8C3-B4E6-4900-B6D7-409AEAC42164}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="9226"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Tmp\New Text Document.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ItemCode"
+              DTS:DTSID="{3885EDBE-B525-4037-9E72-5EC25DE30188}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ItemName"
+              DTS:DTSID="{81E6B86E-B352-4CEB-9CB5-B09A23759E68}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FrgnName"
+              DTS:DTSID="{EEBC52F8-0F8C-4F83-91C7-210973BE7905}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ItmsGrpCod"
+              DTS:DTSID="{CDBDFF6C-58D8-4780-AADC-A41EC3854275}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CstGrpCode"
+              DTS:DTSID="{9FCE9CD1-6B00-4B58-9F79-7EE0C353F1D7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VatGourpSa"
+              DTS:DTSID="{324F88F9-CE9D-4CA9-B689-AD1FFCA4F891}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="254"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CodeBars"
+              DTS:DTSID="{52872D97-E812-4B69-B873-26B706FDA570}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VATLiable"
+              DTS:DTSID="{EA575EE1-9081-4192-8BAF-E1750F922003}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PrchseItem"
+              DTS:DTSID="{68C56D1F-B744-4BC7-8B9F-CCE11E5B6FE9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SellItem"
+              DTS:DTSID="{1B62E897-1DD8-40F7-9960-529BA070A0F1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="InvntItem"
+              DTS:DTSID="{99D6FBF6-A2AD-4665-BC0E-F2815DA3538B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="19"
+              DTS:DataScale="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OnHand"
+              DTS:DTSID="{69DD747D-25FC-4F7A-A157-96F14342FF5B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5F85B0A3-BF7B-4306-9AAA-BF05282DCD07}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="9226"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Tmp\asd.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ItemCode"
+              DTS:DTSID="{0002E237-18EF-42E7-A8CE-6545DDD1F034}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ItemName"
+              DTS:DTSID="{7F79EE4D-4B5C-4C9B-98ED-4E10B23D3078}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FrgnName"
+              DTS:DTSID="{5A8258FF-DA94-431E-8BE4-1F8EBA64A2B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ItmsGrpCod"
+              DTS:DTSID="{43638908-269E-49CC-83FF-B2232907E01D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CstGrpCode"
+              DTS:DTSID="{F77F1C83-A1C3-43AA-9E01-48CE8E352FE8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VatGourpSa"
+              DTS:DTSID="{6319D463-2FC4-435C-970A-1026DD8D557B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="254"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CodeBars"
+              DTS:DTSID="{5D2D556D-5605-4B38-AA3F-1A70A78DFC9F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VATLiable"
+              DTS:DTSID="{838A06B4-CD41-4358-AF20-C959204A784E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PrchseItem"
+              DTS:DTSID="{A60F8936-C0C2-4D72-9523-448B1BEA328A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SellItem"
+              DTS:DTSID="{8FCD5957-3666-48CF-A634-582CA2A6E2DC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="InvntItem"
+              DTS:DTSID="{4835E08C-69EB-4149-AA20-CCC820427226}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="19"
+              DTS:DataScale="6"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OnHand"
+              DTS:DTSID="{EC2E1D88-673A-4929-A58A-2D46AAE698A9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F440D36D-2040-469E-A644-FD2E943887DF}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="fechaDesde">
+      <DTS:VariableValue
+        DTS:DataType="7">1/1/2019</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{80CF7885-D84C-4B94-B172-0264EA68FBA4}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="fechaDesdeActualizacion">
+      <DTS:VariableValue
+        DTS:DataType="7">1/1/2019</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Actualización de Artículos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{ECEF7D74-E2C5-4DE9-BFFE-763435CBEFF6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Actualización de Artículos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Actualización de Artículos\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Actualización de Artículos\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Actualización de Artículos\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Actualización de Artículos\Derived Column.Inputs[Derived Column Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Actualización de Artículos\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Actualización de Artículos\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Actualización de Artículos\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Actualización de Artículos\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Actualización de Artículos\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Actualización de Artículos\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Actualización de Artículos\OLE DB Command"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="OLE DB Command"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">UPDATE OITM 
+SET
+Itemcode = ?,
+ItemName = ?,
+FrgnName = ?
+WHERE UpdateDate &gt; ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Actualización de Artículos\OLE DB Command.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[192.168.1.103.EVO.EVO1]"
+                  connectionManagerRefId="Package.ConnectionManagers[192.168.1.103.EVO.EVO1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input].Columns[ItemCode]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ItemCode"
+                      externalMetadataColumnId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].Columns[ItemCode]" />
+                    <inputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input].Columns[ItemName]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="ItemName"
+                      externalMetadataColumnId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].Columns[ItemName]" />
+                    <inputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input].Columns[FrgnName]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="FrgnName"
+                      externalMetadataColumnId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      lineageId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].Columns[FrgnName]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="wstr"
+                      length="50"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="wstr"
+                      length="100"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      dataType="wstr"
+                      length="100"
+                      name="Param_2">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      dataType="dbTimeStamp"
+                      name="Param_3">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Actualización de Artículos\OLE DB Command.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Actualización de Artículos\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Actualización de Artículos\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Actualización de Artículos\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Actualización de Artículos\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC actualizarIntegracionProductosSAP ?</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping">"@fechaUpdate:Input",{F440D36D-2040-469E-A644-FD2E943887DF};</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Actualización de Artículos\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[192.168.1.25.PRU_ANTIOQUENA.EVO1]"
+                  connectionManagerRefId="Package.ConnectionManagers[192.168.1.25.PRU_ANTIOQUENA.EVO1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].Columns[ItemCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ItemCode]"
+                      length="50"
+                      lineageId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].Columns[ItemCode]"
+                      name="ItemCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].Columns[ItemName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ItemName]"
+                      length="100"
+                      lineageId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].Columns[ItemName]"
+                      name="ItemName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].Columns[FrgnName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FrgnName]"
+                      length="100"
+                      lineageId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].Columns[FrgnName]"
+                      name="FrgnName"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ItemCode]"
+                      dataType="wstr"
+                      length="50"
+                      name="ItemCode" />
+                    <externalMetadataColumn
+                      refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ItemName]"
+                      dataType="wstr"
+                      length="100"
+                      name="ItemName" />
+                    <externalMetadataColumn
+                      refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FrgnName]"
+                      dataType="wstr"
+                      length="100"
+                      name="FrgnName" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ItemCode]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ItemCode]"
+                      name="ItemCode" />
+                    <outputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ItemName]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ItemName]"
+                      name="ItemName" />
+                    <outputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FrgnName]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FrgnName]"
+                      name="FrgnName" />
+                    <outputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Actualización de Artículos.Paths[Derived Column Output]"
+              endId="Package\Actualización de Artículos\OLE DB Command.Inputs[OLE DB Command Input]"
+              name="Derived Column Output"
+              startId="Package\Actualización de Artículos\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Actualización de Artículos.Paths[OLE DB Source Output]"
+              endId="Package\Actualización de Artículos\Derived Column.Inputs[Derived Column Input]"
+              name="OLE DB Source Output"
+              startId="Package\Actualización de Artículos\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Creación Nuevos Artículos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Creación Nuevos Artículos"
+      DTS:DTSID="{0083D0B8-0FD5-4494-8AC0-E8C71DC470E9}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Creación Nuevos Artículos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Creación Nuevos Artículos\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[OITM]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Creación Nuevos Artículos\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[192.168.1.103.EVO.EVO1]"
+                  connectionManagerRefId="Package.ConnectionManagers[192.168.1.103.EVO.EVO1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ItemCode]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ItemCode"
+                      externalMetadataColumnId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ItemCode]"
+                      lineageId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].Columns[ItemCode]" />
+                    <inputColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ItemName]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="ItemName"
+                      externalMetadataColumnId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ItemName]"
+                      lineageId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].Columns[ItemName]" />
+                    <inputColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FrgnName]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="FrgnName"
+                      externalMetadataColumnId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FrgnName]"
+                      lineageId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].Columns[FrgnName]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ItemCode]"
+                      dataType="wstr"
+                      length="50"
+                      name="ItemCode" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ItemName]"
+                      dataType="wstr"
+                      length="100"
+                      name="ItemName" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FrgnName]"
+                      dataType="wstr"
+                      length="100"
+                      name="FrgnName" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ItmsGrpCod]"
+                      dataType="i2"
+                      name="ItmsGrpCod" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CstGrpCode]"
+                      dataType="i2"
+                      name="CstGrpCode" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VatGourpSa]"
+                      dataType="wstr"
+                      length="8"
+                      name="VatGourpSa" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CodeBars]"
+                      dataType="wstr"
+                      length="254"
+                      name="CodeBars" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VATLiable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="VATLiable" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PrchseItem]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="PrchseItem" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SellItem]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="SellItem" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InvntItem]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="InvntItem" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OnHand]"
+                      dataType="numeric"
+                      name="OnHand"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IsCommited]"
+                      dataType="numeric"
+                      name="IsCommited"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OnOrder]"
+                      dataType="numeric"
+                      name="OnOrder"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IncomeAcct]"
+                      dataType="wstr"
+                      length="15"
+                      name="IncomeAcct" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExmptIncom]"
+                      dataType="wstr"
+                      length="15"
+                      name="ExmptIncom" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MaxLevel]"
+                      dataType="numeric"
+                      name="MaxLevel"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DfltWH]"
+                      dataType="wstr"
+                      length="8"
+                      name="DfltWH" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CardCode]"
+                      dataType="wstr"
+                      length="15"
+                      name="CardCode" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SuppCatNum]"
+                      dataType="wstr"
+                      length="50"
+                      name="SuppCatNum" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BuyUnitMsr]"
+                      dataType="wstr"
+                      length="100"
+                      name="BuyUnitMsr" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NumInBuy]"
+                      dataType="numeric"
+                      name="NumInBuy"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReorderQty]"
+                      dataType="numeric"
+                      name="ReorderQty"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MinLevel]"
+                      dataType="numeric"
+                      name="MinLevel"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LstEvlPric]"
+                      dataType="numeric"
+                      name="LstEvlPric"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LstEvlDate]"
+                      dataType="dbTimeStamp"
+                      name="LstEvlDate" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomPer]"
+                      dataType="numeric"
+                      name="CustomPer"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Canceled]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Canceled" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MnufctTime]"
+                      dataType="i4"
+                      name="MnufctTime" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WholSlsTax]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="WholSlsTax" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RetilrTax]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="RetilrTax" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SpcialDisc]"
+                      dataType="numeric"
+                      name="SpcialDisc"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DscountCod]"
+                      dataType="i2"
+                      name="DscountCod" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TrackSales]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="TrackSales" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalUnitMsr]"
+                      dataType="wstr"
+                      length="100"
+                      name="SalUnitMsr" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NumInSale]"
+                      dataType="numeric"
+                      name="NumInSale"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Consig]"
+                      dataType="numeric"
+                      name="Consig"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QueryGroup]"
+                      dataType="i4"
+                      name="QueryGroup" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Counted]"
+                      dataType="numeric"
+                      name="Counted"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OpenBlnc]"
+                      dataType="numeric"
+                      name="OpenBlnc"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EvalSystem]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="EvalSystem" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UserSign]"
+                      dataType="i2"
+                      name="UserSign" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FREE]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="FREE" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PicturName]"
+                      dataType="wstr"
+                      length="200"
+                      name="PicturName" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Transfered]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Transfered" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BlncTrnsfr]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="BlncTrnsfr" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UserText]"
+                      dataType="nText"
+                      name="UserText" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SerialNum]"
+                      dataType="wstr"
+                      length="17"
+                      name="SerialNum" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CommisPcnt]"
+                      dataType="numeric"
+                      name="CommisPcnt"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CommisSum]"
+                      dataType="numeric"
+                      name="CommisSum"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CommisGrp]"
+                      dataType="i2"
+                      name="CommisGrp" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TreeType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="TreeType" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TreeQty]"
+                      dataType="numeric"
+                      name="TreeQty"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastPurPrc]"
+                      dataType="numeric"
+                      name="LastPurPrc"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastPurCur]"
+                      dataType="wstr"
+                      length="3"
+                      name="LastPurCur" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LastPurDat]"
+                      dataType="dbTimeStamp"
+                      name="LastPurDat" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExitCur]"
+                      dataType="wstr"
+                      length="3"
+                      name="ExitCur" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExitPrice]"
+                      dataType="numeric"
+                      name="ExitPrice"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExitWH]"
+                      dataType="wstr"
+                      length="8"
+                      name="ExitWH" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AssetItem]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="AssetItem" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WasCounted]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="WasCounted" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ManSerNum]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="ManSerNum" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SHeight1]"
+                      dataType="numeric"
+                      name="SHeight1"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SHght1Unit]"
+                      dataType="i2"
+                      name="SHght1Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SHeight2]"
+                      dataType="numeric"
+                      name="SHeight2"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SHght2Unit]"
+                      dataType="i2"
+                      name="SHght2Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SWidth1]"
+                      dataType="numeric"
+                      name="SWidth1"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SWdth1Unit]"
+                      dataType="i2"
+                      name="SWdth1Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SWidth2]"
+                      dataType="numeric"
+                      name="SWidth2"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SWdth2Unit]"
+                      dataType="i2"
+                      name="SWdth2Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SLength1]"
+                      dataType="numeric"
+                      name="SLength1"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SLen1Unit]"
+                      dataType="i2"
+                      name="SLen1Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Slength2]"
+                      dataType="numeric"
+                      name="Slength2"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SLen2Unit]"
+                      dataType="i2"
+                      name="SLen2Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SVolume]"
+                      dataType="numeric"
+                      name="SVolume"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SVolUnit]"
+                      dataType="i2"
+                      name="SVolUnit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SWeight1]"
+                      dataType="numeric"
+                      name="SWeight1"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SWght1Unit]"
+                      dataType="i2"
+                      name="SWght1Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SWeight2]"
+                      dataType="numeric"
+                      name="SWeight2"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SWght2Unit]"
+                      dataType="i2"
+                      name="SWght2Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BHeight1]"
+                      dataType="numeric"
+                      name="BHeight1"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BHght1Unit]"
+                      dataType="i2"
+                      name="BHght1Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BHeight2]"
+                      dataType="numeric"
+                      name="BHeight2"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BHght2Unit]"
+                      dataType="i2"
+                      name="BHght2Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BWidth1]"
+                      dataType="numeric"
+                      name="BWidth1"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BWdth1Unit]"
+                      dataType="i2"
+                      name="BWdth1Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BWidth2]"
+                      dataType="numeric"
+                      name="BWidth2"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BWdth2Unit]"
+                      dataType="i2"
+                      name="BWdth2Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BLength1]"
+                      dataType="numeric"
+                      name="BLength1"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BLen1Unit]"
+                      dataType="i2"
+                      name="BLen1Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Blength2]"
+                      dataType="numeric"
+                      name="Blength2"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BLen2Unit]"
+                      dataType="i2"
+                      name="BLen2Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BVolume]"
+                      dataType="numeric"
+                      name="BVolume"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BVolUnit]"
+                      dataType="i2"
+                      name="BVolUnit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BWeight1]"
+                      dataType="numeric"
+                      name="BWeight1"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BWght1Unit]"
+                      dataType="i2"
+                      name="BWght1Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BWeight2]"
+                      dataType="numeric"
+                      name="BWeight2"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BWght2Unit]"
+                      dataType="i2"
+                      name="BWght2Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FixCurrCms]"
+                      dataType="wstr"
+                      length="3"
+                      name="FixCurrCms" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FirmCode]"
+                      dataType="i2"
+                      name="FirmCode" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LstSalDate]"
+                      dataType="dbTimeStamp"
+                      name="LstSalDate" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup1" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup2" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup3" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup4" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup5" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup6]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup7]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup7" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup8]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup8" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup9]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup9" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup10]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup10" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup11]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup11" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup12]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup12" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup13]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup13" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup14]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup14" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup15]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup15" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup16]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup16" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup17]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup17" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup18]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup18" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup19]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup19" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup20]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup20" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup21]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup21" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup22]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup22" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup23]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup23" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup24]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup24" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup25]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup25" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup26]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup26" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup27]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup27" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup28]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup28" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup29]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup29" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup30]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup30" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup31]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup31" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup32]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup32" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup33]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup33" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup34]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup34" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup35]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup35" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup36]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup36" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup37]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup37" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup38]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup38" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup39]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup39" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup40]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup40" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup41]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup41" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup42]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup42" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup43]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup43" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup44]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup44" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup45]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup45" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup46]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup46" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup47]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup47" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup48]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup48" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup49]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup49" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup50]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup50" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup51]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup51" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup52]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup52" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup53]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup53" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup54]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup54" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup55]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup55" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup56]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup56" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup57]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup57" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup58]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup58" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup59]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup59" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup60]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup60" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup61]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup61" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup62]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup62" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup63]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup63" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QryGroup64]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="QryGroup64" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CreateDate]"
+                      dataType="dbTimeStamp"
+                      name="CreateDate" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UpdateDate]"
+                      dataType="dbTimeStamp"
+                      name="UpdateDate" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExportCode]"
+                      dataType="wstr"
+                      length="20"
+                      name="ExportCode" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalFactor1]"
+                      dataType="numeric"
+                      name="SalFactor1"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalFactor2]"
+                      dataType="numeric"
+                      name="SalFactor2"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalFactor3]"
+                      dataType="numeric"
+                      name="SalFactor3"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalFactor4]"
+                      dataType="numeric"
+                      name="SalFactor4"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PurFactor1]"
+                      dataType="numeric"
+                      name="PurFactor1"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PurFactor2]"
+                      dataType="numeric"
+                      name="PurFactor2"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PurFactor3]"
+                      dataType="numeric"
+                      name="PurFactor3"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PurFactor4]"
+                      dataType="numeric"
+                      name="PurFactor4"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalFormula]"
+                      dataType="wstr"
+                      length="40"
+                      name="SalFormula" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PurFormula]"
+                      dataType="wstr"
+                      length="40"
+                      name="PurFormula" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VatGroupPu]"
+                      dataType="wstr"
+                      length="8"
+                      name="VatGroupPu" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AvgPrice]"
+                      dataType="numeric"
+                      name="AvgPrice"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PurPackMsr]"
+                      dataType="wstr"
+                      length="30"
+                      name="PurPackMsr" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PurPackUn]"
+                      dataType="numeric"
+                      name="PurPackUn"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalPackMsr]"
+                      dataType="wstr"
+                      length="30"
+                      name="SalPackMsr" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SalPackUn]"
+                      dataType="numeric"
+                      name="SalPackUn"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SCNCounter]"
+                      dataType="i2"
+                      name="SCNCounter" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ManBtchNum]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="ManBtchNum" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ManOutOnly]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="ManOutOnly" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DataSource]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="DataSource" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[validFor]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="validFor" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[validFrom]"
+                      dataType="dbTimeStamp"
+                      name="validFrom" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[validTo]"
+                      dataType="dbTimeStamp"
+                      name="validTo" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[frozenFor]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="frozenFor" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[frozenFrom]"
+                      dataType="dbTimeStamp"
+                      name="frozenFrom" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[frozenTo]"
+                      dataType="dbTimeStamp"
+                      name="frozenTo" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BlockOut]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="BlockOut" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ValidComm]"
+                      dataType="wstr"
+                      length="30"
+                      name="ValidComm" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FrozenComm]"
+                      dataType="wstr"
+                      length="30"
+                      name="FrozenComm" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LogInstanc]"
+                      dataType="i4"
+                      name="LogInstanc" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ObjType]"
+                      dataType="wstr"
+                      length="20"
+                      name="ObjType" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SWW]"
+                      dataType="wstr"
+                      length="16"
+                      name="SWW" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Deleted]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Deleted" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DocEntry]"
+                      dataType="i4"
+                      name="DocEntry" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ExpensAcct]"
+                      dataType="wstr"
+                      length="15"
+                      name="ExpensAcct" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FrgnInAcct]"
+                      dataType="wstr"
+                      length="15"
+                      name="FrgnInAcct" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipType]"
+                      dataType="i2"
+                      name="ShipType" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GLMethod]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="GLMethod" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ECInAcct]"
+                      dataType="wstr"
+                      length="15"
+                      name="ECInAcct" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FrgnExpAcc]"
+                      dataType="wstr"
+                      length="15"
+                      name="FrgnExpAcc" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ECExpAcc]"
+                      dataType="wstr"
+                      length="15"
+                      name="ECExpAcc" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TaxType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="TaxType" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ByWh]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="ByWh" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WTLiable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="WTLiable" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ItemType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="ItemType" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WarrntTmpl]"
+                      dataType="wstr"
+                      length="20"
+                      name="WarrntTmpl" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BaseUnit]"
+                      dataType="wstr"
+                      length="20"
+                      name="BaseUnit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CountryOrg]"
+                      dataType="wstr"
+                      length="3"
+                      name="CountryOrg" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StockValue]"
+                      dataType="numeric"
+                      name="StockValue"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Phantom]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Phantom" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IssueMthd]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="IssueMthd" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FREE1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="FREE1" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PricingPrc]"
+                      dataType="numeric"
+                      name="PricingPrc"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MngMethod]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MngMethod" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReorderPnt]"
+                      dataType="numeric"
+                      name="ReorderPnt"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InvntryUom]"
+                      dataType="wstr"
+                      length="100"
+                      name="InvntryUom" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PlaningSys]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="PlaningSys" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PrcrmntMtd]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="PrcrmntMtd" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OrdrIntrvl]"
+                      dataType="i2"
+                      name="OrdrIntrvl" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OrdrMulti]"
+                      dataType="numeric"
+                      name="OrdrMulti"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MinOrdrQty]"
+                      dataType="numeric"
+                      name="MinOrdrQty"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LeadTime]"
+                      dataType="i4"
+                      name="LeadTime" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IndirctTax]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="IndirctTax" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TaxCodeAR]"
+                      dataType="wstr"
+                      length="8"
+                      name="TaxCodeAR" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TaxCodeAP]"
+                      dataType="wstr"
+                      length="8"
+                      name="TaxCodeAP" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OSvcCode]"
+                      dataType="i4"
+                      name="OSvcCode" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ISvcCode]"
+                      dataType="i4"
+                      name="ISvcCode" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ServiceGrp]"
+                      dataType="i4"
+                      name="ServiceGrp" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NCMCode]"
+                      dataType="i4"
+                      name="NCMCode" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MatType]"
+                      dataType="wstr"
+                      length="3"
+                      name="MatType" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MatGrp]"
+                      dataType="i4"
+                      name="MatGrp" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductSrc]"
+                      dataType="wstr"
+                      length="2"
+                      name="ProductSrc" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ServiceCtg]"
+                      dataType="i4"
+                      name="ServiceCtg" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ItemClass]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="ItemClass" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Excisable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Excisable" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ChapterID]"
+                      dataType="i4"
+                      name="ChapterID" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NotifyASN]"
+                      dataType="wstr"
+                      length="40"
+                      name="NotifyASN" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProAssNum]"
+                      dataType="wstr"
+                      length="20"
+                      name="ProAssNum" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AssblValue]"
+                      dataType="numeric"
+                      name="AssblValue"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DNFEntry]"
+                      dataType="i4"
+                      name="DNFEntry" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UserSign2]"
+                      dataType="i2"
+                      name="UserSign2" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Spec]"
+                      dataType="wstr"
+                      length="30"
+                      name="Spec" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TaxCtg]"
+                      dataType="wstr"
+                      length="4"
+                      name="TaxCtg" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Series]"
+                      dataType="i2"
+                      name="Series" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Number]"
+                      dataType="i4"
+                      name="Number" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FuelCode]"
+                      dataType="i4"
+                      name="FuelCode" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BeverTblC]"
+                      dataType="wstr"
+                      length="2"
+                      name="BeverTblC" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BeverGrpC]"
+                      dataType="wstr"
+                      length="2"
+                      name="BeverGrpC" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BeverTM]"
+                      dataType="i4"
+                      name="BeverTM" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Attachment]"
+                      dataType="nText"
+                      name="Attachment" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AtcEntry]"
+                      dataType="i4"
+                      name="AtcEntry" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ToleranDay]"
+                      dataType="i4"
+                      name="ToleranDay" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UgpEntry]"
+                      dataType="i4"
+                      name="UgpEntry" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PUoMEntry]"
+                      dataType="i4"
+                      name="PUoMEntry" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SUoMEntry]"
+                      dataType="i4"
+                      name="SUoMEntry" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IUoMEntry]"
+                      dataType="i4"
+                      name="IUoMEntry" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IssuePriBy]"
+                      dataType="i2"
+                      name="IssuePriBy" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AssetClass]"
+                      dataType="wstr"
+                      length="20"
+                      name="AssetClass" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AssetGroup]"
+                      dataType="wstr"
+                      length="15"
+                      name="AssetGroup" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InventryNo]"
+                      dataType="wstr"
+                      length="12"
+                      name="InventryNo" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Technician]"
+                      dataType="i4"
+                      name="Technician" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Employee]"
+                      dataType="i4"
+                      name="Employee" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Location]"
+                      dataType="i4"
+                      name="Location" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[StatAsset]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="StatAsset" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Cession]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="Cession" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DeacAftUL]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="DeacAftUL" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AsstStatus]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="AsstStatus" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CapDate]"
+                      dataType="dbTimeStamp"
+                      name="CapDate" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AcqDate]"
+                      dataType="dbTimeStamp"
+                      name="AcqDate" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RetDate]"
+                      dataType="dbTimeStamp"
+                      name="RetDate" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GLPickMeth]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="GLPickMeth" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NoDiscount]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="NoDiscount" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MgrByQty]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="MgrByQty" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AssetRmk1]"
+                      dataType="wstr"
+                      length="100"
+                      name="AssetRmk1" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AssetRmk2]"
+                      dataType="wstr"
+                      length="100"
+                      name="AssetRmk2" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AssetAmnt1]"
+                      dataType="numeric"
+                      name="AssetAmnt1"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AssetAmnt2]"
+                      dataType="numeric"
+                      name="AssetAmnt2"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DeprGroup]"
+                      dataType="wstr"
+                      length="15"
+                      name="DeprGroup" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AssetSerNo]"
+                      dataType="wstr"
+                      length="32"
+                      name="AssetSerNo" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CntUnitMsr]"
+                      dataType="wstr"
+                      length="100"
+                      name="CntUnitMsr" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NumInCnt]"
+                      dataType="numeric"
+                      name="NumInCnt"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[INUoMEntry]"
+                      dataType="i4"
+                      name="INUoMEntry" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OneBOneRec]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="OneBOneRec" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RuleCode]"
+                      dataType="wstr"
+                      length="2"
+                      name="RuleCode" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ScsCode]"
+                      dataType="wstr"
+                      length="10"
+                      name="ScsCode" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SpProdType]"
+                      dataType="wstr"
+                      length="2"
+                      name="SpProdType" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IWeight1]"
+                      dataType="numeric"
+                      name="IWeight1"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IWght1Unit]"
+                      dataType="i2"
+                      name="IWght1Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IWeight2]"
+                      dataType="numeric"
+                      name="IWeight2"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IWght2Unit]"
+                      dataType="i2"
+                      name="IWght2Unit" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CompoWH]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="CompoWH" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CreateTS]"
+                      dataType="i4"
+                      name="CreateTS" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UpdateTS]"
+                      dataType="i4"
+                      name="UpdateTS" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VirtAstItm]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="VirtAstItm" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SouVirAsst]"
+                      dataType="wstr"
+                      length="50"
+                      name="SouVirAsst" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[InCostRoll]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="InCostRoll" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PrdStdCst]"
+                      dataType="numeric"
+                      name="PrdStdCst"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EnAstSeri]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="EnAstSeri" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LinkRsc]"
+                      dataType="wstr"
+                      length="50"
+                      name="LinkRsc" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OnHldPert]"
+                      dataType="numeric"
+                      name="OnHldPert"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[onHldLimt]"
+                      dataType="numeric"
+                      name="onHldLimt"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GSTRelevnt]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="GSTRelevnt" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SACEntry]"
+                      dataType="i4"
+                      name="SACEntry" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GstTaxCtg]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="GstTaxCtg" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_ID]"
+                      dataType="wstr"
+                      length="30"
+                      name="U_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_Tipo_Grupo]"
+                      dataType="wstr"
+                      length="30"
+                      name="U_Tipo_Grupo" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_SubGrupo]"
+                      dataType="wstr"
+                      length="30"
+                      name="U_SubGrupo" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_PLU]"
+                      dataType="wstr"
+                      length="20"
+                      name="U_PLU" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_HBT_TerceroFacPro]"
+                      dataType="wstr"
+                      length="15"
+                      name="U_HBT_TerceroFacPro" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_HBT_TerceroAmorti]"
+                      dataType="wstr"
+                      length="15"
+                      name="U_HBT_TerceroAmorti" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_HBT_TerceroBaja]"
+                      dataType="wstr"
+                      length="15"
+                      name="U_HBT_TerceroBaja" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_IFRS_TERM]"
+                      dataType="numeric"
+                      name="U_IFRS_TERM"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_IFRS_VENT]"
+                      dataType="numeric"
+                      name="U_IFRS_VENT"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_IFRS_MARK]"
+                      dataType="numeric"
+                      name="U_IFRS_MARK"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_IFRS_GTIA]"
+                      dataType="numeric"
+                      name="U_IFRS_GTIA"
+                      precision="19"
+                      scale="6" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_IFRS_Tiempo]"
+                      dataType="i4"
+                      name="U_IFRS_Tiempo" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_IFRS_ActPadre]"
+                      dataType="wstr"
+                      length="20"
+                      name="U_IFRS_ActPadre" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_HBT_FecPoliza]"
+                      dataType="dbTimeStamp"
+                      name="U_HBT_FecPoliza" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_HBT_FecVtoGarn]"
+                      dataType="dbTimeStamp"
+                      name="U_HBT_FecVtoGarn" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_HBT_FecMantto]"
+                      dataType="dbTimeStamp"
+                      name="U_HBT_FecMantto" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_IFRS_Tipo]"
+                      dataType="wstr"
+                      length="10"
+                      name="U_IFRS_Tipo" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_IFRS_EXCDET]"
+                      dataType="wstr"
+                      length="10"
+                      name="U_IFRS_EXCDET" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[U_IFRS_TipoAF]"
+                      dataType="wstr"
+                      length="10"
+                      name="U_IFRS_TipoAF" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Creación Nuevos Artículos\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Creación Nuevos Artículos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Creación Nuevos Artículos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Creación Nuevos Artículos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Creación Nuevos Artículos\SAP"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="SAP"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT        ItemCode, ItemName, FrgnName
+FROM            OITM
+WHERE        (CreateDate &gt;= ?)</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping">"@fechaDesde:Input",{F440D36D-2040-469E-A644-FD2E943887DF};</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Creación Nuevos Artículos\SAP.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[192.168.1.25.PRU_ANTIOQUENA.EVO1]"
+                  connectionManagerRefId="Package.ConnectionManagers[192.168.1.25.PRU_ANTIOQUENA.EVO1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].Columns[ItemCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].ExternalColumns[ItemCode]"
+                      length="50"
+                      lineageId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].Columns[ItemCode]"
+                      name="ItemCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].Columns[ItemName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].ExternalColumns[ItemName]"
+                      length="100"
+                      lineageId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].Columns[ItemName]"
+                      name="ItemName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].Columns[FrgnName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].ExternalColumns[FrgnName]"
+                      length="100"
+                      lineageId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].Columns[FrgnName]"
+                      name="FrgnName"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].ExternalColumns[ItemCode]"
+                      dataType="wstr"
+                      length="50"
+                      name="ItemCode" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].ExternalColumns[ItemName]"
+                      dataType="wstr"
+                      length="100"
+                      name="ItemName" />
+                    <externalMetadataColumn
+                      refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output].ExternalColumns[FrgnName]"
+                      dataType="wstr"
+                      length="100"
+                      name="FrgnName" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Error Output].Columns[ItemCode]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Error Output].Columns[ItemCode]"
+                      name="ItemCode" />
+                    <outputColumn
+                      refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Error Output].Columns[ItemName]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Error Output].Columns[ItemName]"
+                      name="ItemName" />
+                    <outputColumn
+                      refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Error Output].Columns[FrgnName]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Error Output].Columns[FrgnName]"
+                      name="FrgnName" />
+                    <outputColumn
+                      refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Creación Nuevos Artículos.Paths[OLE DB Source Output]"
+              endId="Package\Creación Nuevos Artículos\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Creación Nuevos Artículos\SAP.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{D56E33BC-ED02-4EDB-8966-67F27C2F0039}"
+      DTS:From="Package\Creación Nuevos Artículos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Actualización de Artículos" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Actualización de Artículos"
+          TopLeft="393,315" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Creación Nuevos Artículos"
+          TopLeft="397,213" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="498.25,255">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Actualización de Artículos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Actualización de Artículos\OLE DB Source"
+          TopLeft="294,58" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Actualización de Artículos\OLE DB Command"
+          TopLeft="289,241" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Actualización de Artículos\Derived Column"
+          TopLeft="295,140" />
+        <EdgeLayout
+          Id="Package\Actualización de Artículos.Paths[OLE DB Source Output]"
+          TopLeft="373.25,100">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40"
+              Start="0,0"
+              End="0,32.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,32.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Actualización de Artículos.Paths[Derived Column Output]"
+          TopLeft="374.75,182">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59"
+              Start="0,0"
+              End="0,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Actualización de Artículos\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Creación Nuevos Artículos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="101,42"
+          Id="Package\Creación Nuevos Artículos\SAP"
+          TopLeft="152,81" />
+        <NodeLayout
+          Size="138,42"
+          Id="Package\Creación Nuevos Artículos\OLE DB Destination"
+          TopLeft="130.333333333333,204" />
+        <EdgeLayout
+          Id="Package\Creación Nuevos Artículos.Paths[OLE DB Source Output]"
+          TopLeft="200.916666666667,123">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,81.0000000000001"
+              Start="0,0"
+              End="0,73.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Creación Nuevos Artículos\SAP">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Creación Nuevos Artículos\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

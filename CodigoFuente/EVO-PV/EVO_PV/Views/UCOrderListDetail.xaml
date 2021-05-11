@@ -1,0 +1,298 @@
+﻿<UserControl
+    x:Class="EVO_PV.Views.UCOrderListDetail"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:EVO_PV.Views"
+    xmlns:local1="clr-namespace:EVO_PV.Utilities"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Style/style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+
+    <Grid Background="#eee">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Button
+            x:Name="NewRequest"
+            Grid.Row="0"
+            Width="150"
+            Margin="0,0,40,0"
+            Padding="0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Background="#00BCD4"
+            BorderBrush="#00BCD4"
+            Command="{Binding Path=ViewDetails}"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}">
+            <Grid Width="150" HorizontalAlignment="Center">
+                <materialDesign:PackIcon
+                    Margin="10,2,0,0"
+                    Foreground="#FFFFFF"
+                    Kind="ChevronLeft" />
+                <TextBlock HorizontalAlignment="Center" Text="REGRESAR" />
+            </Grid>
+        </Button>
+
+        <Grid Grid.Row="1">
+            <materialDesign:Card Grid.Row="1" Margin="30,0,30,10">
+                <Grid Style="{StaticResource ContentCard}">
+                    <StackPanel>
+
+                        <StackPanel>
+                            <Grid Margin="0,10,0,20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Número Pedido: " />
+                                    <TextBlock Text="{Binding OrderListDetails.NumberOrderList}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Estado: " />
+                                    <TextBlock Text="{Binding OrderListDetails.State}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="2"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Planta: " />
+                                    <TextBlock Text="{Binding OrderListDetails.Plant}" />
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Fecha Solicitud: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DateRequest}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Fecha Aprobación: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DateSend}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="1"
+                                    Grid.Column="2"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Fecha Entrega: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DateReceipt}" />
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="2"
+                                    Grid.Column="0"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Fecha Cargue Vehículo: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DateCars}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Nombre Conductor: " />
+                                    <TextBlock Text="{Binding OrderListDetails.NameConductive}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="2"
+                                    Grid.Column="2"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Nombre Auxiliar: " />
+                                    <TextBlock Text="{Binding OrderListDetails.NameAuxiliary}" />
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+
+                        <DataGrid
+                            AutoGenerateColumns="False"
+                            Background="Transparent"
+                            CanUserAddRows="False"
+                            CanUserDeleteRows="False"
+                            CanUserReorderColumns="False"
+                            CanUserResizeColumns="False"
+                            ItemsSource="{Binding OrderListDetails.Registers}"
+                            SelectedItem="{Binding OrderSelect}"
+                            SelectionMode="Single">
+
+                            <DataGrid.Resources>
+                                <ResourceDictionary>
+                                    <local1:DecimalConverter x:Key="decimalConverter" />
+                                </ResourceDictionary>
+                            </DataGrid.Resources>
+
+                            <DataGrid.Columns>
+
+                                <DataGridTextColumn Binding="{Binding Path=CodeArticle}" Header="Código">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Foreground="#7F0E06"
+                                                    Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                    TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Binding="{Binding Path=NameArticle}" Header="Nombre">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Foreground="#7F0E06"
+                                                    Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                    TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn
+                                    Width="90"
+                                    Binding="{Binding Path=Observation}"
+                                    Header="Observaciones adicionales">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Binding="{Binding Path=StateArticle}" Header="Estado">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Binding="{Binding Path=QuantityRequest, Converter={StaticResource decimalConverter}}" Header="Cantidad Solicitada">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Binding="{Binding Path=UnitMeasure}" Header="Unidad Medida">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Binding="{Binding Path=QuantityApprove, Converter={StaticResource decimalConverter}}" Header="Cantidad Aprobada">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+
+                                <DataGridTextColumn Binding="{Binding Path=CostTransferred}" Header="Costo Traslado">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Binding="{Binding Path=TransportationCost}" Header="Costo Transporte">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                    </StackPanel>
+                </Grid>
+            </materialDesign:Card>
+
+            <Grid Style="{StaticResource IconCard}">
+                <Grid.Effect>
+                    <DropShadowEffect
+                        BlurRadius="20"
+                        RenderingBias="Quality"
+                        ShadowDepth="1"
+                        Color="#FFECECEC" />
+                </Grid.Effect>
+                <Border Style="{StaticResource BorderCard}" />
+                <materialDesign:PackIcon
+                    Width="30"
+                    Height="30"
+                    Margin="5"
+                    Padding="10"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    Kind="PlaylistAddCheck" />
+            </Grid>
+            <Grid Style="{StaticResource Title}">
+                <StackPanel Style="{StaticResource ContentTitle}">
+                    <TextBlock Style="{StaticResource TextTitle}" Text="Detalle Pedido: " />
+                    <TextBlock Style="{StaticResource TextTitle}" Text="{Binding OrderListDetails.NumberOrderList}" />
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+
+    </Grid>
+</UserControl>

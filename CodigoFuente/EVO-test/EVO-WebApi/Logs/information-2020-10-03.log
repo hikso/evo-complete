@@ -1,0 +1,141 @@
+2020-10-03 23:38:38.6211|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-10-03 23:38:38.7235|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-10-03 23:38:41.8078|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-10-03 23:38:56.8062|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:38:56.8651|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"desde":1,"hasta":100,"filtro":null} |url: |action: 
+2020-10-03 23:38:56.8651|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"desde":1,"hasta":100,"filtro":null} |url: |action: 
+2020-10-03 23:38:56.8807|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-03 23:38:56.8807|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-10-03 23:38:56.8807|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-03 23:38:56.8807|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-10-03 23:38:56.8807|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-03 23:38:56.8807|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-10-03 23:38:56.8965|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-03 23:38:56.8965|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-10-03 23:38:56.8965|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:38:56.8965|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:38:56.9143|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-10-03 23:38:56.9143|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-10-03 23:38:56.9143|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:38:56.9143|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:38:56.9936|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-10-03 23:38:56.9936|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-10-03 23:38:56.9936|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:38:56.9936|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:39:16.9631|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:39:16.9631|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerTipoVehiculo en Api Vehiculos |url: |action: 
+2020-10-03 23:39:16.9631|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerTipoVehiculo en BO Vehiculos |url: |action: 
+2020-10-03 23:39:16.9750|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:39:16.9750|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:39:16.9750|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:39:16.9750|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:39:16.9941|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerMuelles en Api Vehiculos |url: |action: 
+2020-10-03 23:39:16.9941|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerConductoresAuxiliares en Api Vehiculos |url: |action: 
+2020-10-03 23:39:16.9941|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerMuelles en blMuelles. |url: |action: 
+2020-10-03 23:39:16.9941|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerConductoresAuxiliares en BO Vehiculos |url: |action: 
+2020-10-03 23:39:17.0451|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 
+2020-10-03 23:39:17.0728|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:39:17.0728|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:39:17.0728|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:39:17.0728|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:39:17.0728|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 
+2020-10-03 23:42:03.8748|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-10-03 23:42:03.8748|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-10-03 23:42:03.8878|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-10-03 23:42:05.0940|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:42:05.0940|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:42:05.0940|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:42:05.1044|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:42:05.1044|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:42:05.1400|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 
+2020-10-03 23:42:05.1654|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerConductoresAuxiliares en Api Vehiculos |url: |action: 
+2020-10-03 23:42:05.1654|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerConductoresAuxiliares en BO Vehiculos |url: |action: 
+2020-10-03 23:42:05.1995|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerTipoVehiculo en Api Vehiculos |url: |action: 
+2020-10-03 23:42:05.1995|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:42:05.2170|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerTipoVehiculo en BO Vehiculos |url: |action: 
+2020-10-03 23:42:05.2170|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:42:05.2170|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerMuelles en Api Vehiculos |url: |action: 
+2020-10-03 23:42:05.2236|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerMuelles en blMuelles. |url: |action: 
+2020-10-03 23:42:05.2236|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:42:05.2236|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:42:05.2537|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 
+2020-10-03 23:42:41.1556|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-10-03 23:42:41.1556|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-10-03 23:42:41.1663|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-10-03 23:42:42.1704|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:42:42.1791|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerConductoresAuxiliares en Api Vehiculos |url: |action: 
+2020-10-03 23:42:42.1791|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:42:42.1791|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerConductoresAuxiliares en BO Vehiculos |url: |action: 
+2020-10-03 23:42:42.1791|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:42:42.1791|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerTipoVehiculo en Api Vehiculos |url: |action: 
+2020-10-03 23:42:42.1791|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerMuelles en Api Vehiculos |url: |action: 
+2020-10-03 23:42:42.1791|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerTipoVehiculo en BO Vehiculos |url: |action: 
+2020-10-03 23:42:42.1791|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerMuelles en blMuelles. |url: |action: 
+2020-10-03 23:42:42.1940|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:42:42.1940|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:42:42.1940|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 
+2020-10-03 23:42:42.2130|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:42:42.2130|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:42:42.2130|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:42:42.2130|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:42:42.2271|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 
+2020-10-03 23:44:19.3728|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-10-03 23:44:19.3728|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-10-03 23:44:19.3844|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-10-03 23:44:20.3228|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:44:20.3228|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:44:20.3228|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:44:20.3398|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:44:20.3398|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:44:20.3558|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerConductoresAuxiliares en Api Vehiculos |url: |action: 
+2020-10-03 23:44:20.3558|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerConductoresAuxiliares en BO Vehiculos |url: |action: 
+2020-10-03 23:44:20.3558|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerMuelles en Api Vehiculos |url: |action: 
+2020-10-03 23:44:20.3558|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerMuelles en blMuelles. |url: |action: 
+2020-10-03 23:44:20.3558|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerTipoVehiculo en Api Vehiculos |url: |action: 
+2020-10-03 23:44:20.3558|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerTipoVehiculo en BO Vehiculos |url: |action: 
+2020-10-03 23:44:20.3751|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 
+2020-10-03 23:44:20.3901|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:44:20.3901|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:44:20.3901|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:44:20.3968|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:44:20.3968|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 
+2020-10-03 23:44:40.4281|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-10-03 23:44:40.4281|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-10-03 23:44:40.4281|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-10-03 23:44:41.2008|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:44:41.2008|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerTipoVehiculo en Api Vehiculos |url: |action: 
+2020-10-03 23:44:41.2008|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerConductoresAuxiliares en Api Vehiculos |url: |action: 
+2020-10-03 23:44:41.2008|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerTipoVehiculo en BO Vehiculos |url: |action: 
+2020-10-03 23:44:41.2008|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerConductoresAuxiliares en BO Vehiculos |url: |action: 
+2020-10-03 23:44:41.2008|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:44:41.2107|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:44:41.2107|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerMuelles en Api Vehiculos |url: |action: 
+2020-10-03 23:44:41.2107|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerMuelles en blMuelles. |url: |action: 
+2020-10-03 23:44:41.2107|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:44:41.2107|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:44:41.2255|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 
+2020-10-03 23:44:41.2397|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:44:41.2397|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:44:41.2397|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:44:41.2397|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:44:41.2397|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 
+2020-10-03 23:45:05.0800|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2020-10-03 23:45:05.0854|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2020-10-03 23:45:05.0854|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2020-10-03 23:45:05.9783|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:45:05.9783|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:45:05.9783|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:45:05.9926|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerTipoVehiculo en Api Vehiculos |url: |action: 
+2020-10-03 23:45:05.9926|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:45:05.9926|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerTipoVehiculo en BO Vehiculos |url: |action: 
+2020-10-03 23:45:05.9926|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerConductoresAuxiliares en Api Vehiculos |url: |action: 
+2020-10-03 23:45:05.9926|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:45:05.9926|EVO_WebApi.Controllers.VehiculosApiController|Entró al método ObtenerMuelles en Api Vehiculos |url: |action: 
+2020-10-03 23:45:05.9926|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerConductoresAuxiliares en BO Vehiculos |url: |action: 
+2020-10-03 23:45:05.9926|EVO_BusinessLogic.BLVehiculo|Entró al método ObtenerMuelles en blMuelles. |url: |action: 
+2020-10-03 23:45:06.0100|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 
+2020-10-03 23:45:06.0220|EVO_WebApi.Controllers.EntregasApiController|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros Desde: 1 Hasta: 100 |url: |action: 
+2020-10-03 23:45:06.0220|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-10-03 23:45:06.0220|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerTodosEntregasEnrutamiento con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-10-03 23:45:06.0220|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-10-03 23:45:06.0220|EVO_BusinessLogic.BLEntrega|Entró al método ObtenerConteoTodosEntregasEnrutamiento |url: |action: 

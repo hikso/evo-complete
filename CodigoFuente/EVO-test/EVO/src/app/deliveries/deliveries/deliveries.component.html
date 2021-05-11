@@ -1,0 +1,308 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-right">
+                <a  class="btn btn-info pull-right mat-raised-button" routerLink="/pedidos/programar">
+                    <span class="mat-button-wrapper">
+                        <i class="fa fa-chevron-left"></i>
+                        <span class="ml-1">Regresar</span>
+                    </span>
+                    <div class="mat-button-ripple mat-ripple"></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </a>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">alarm_on</i>
+                        </div>
+                        <h4 class="card-title">Programación Entregas</h4>
+                    </div>
+
+                    <div class="card-body">
+
+                        <div class="row align-items-center mt-3">
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <strong class="text-primary-corp">Número Pedido: </strong>
+                                {{ getPedido.NumeroPedido }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <strong class="text-primary-corp">Cliente: </strong>
+                                {{ getPedido.Cliente }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <strong class="text-primary-corp">Zona: </strong>
+                                {{ getPedido.Zona }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                <strong class="text-primary-corp"># Entregas: </strong>
+                                {{ getPedido.NumeroEntregas }}
+                            </div>
+                        </div>
+
+                        <!-- Articulos aprobados: formulario para entregas -->
+                        <div class="row mt-4 mb-5" *ngIf="EntregasEnd">
+                            <div class="col-12 mt-2">
+
+                                <p-table #dt class="table table-striped" [value]="getArticulos" selectionMode="single" [responsive]="true"
+                                    [resizableColumns]="true" columnResizeMode=expand [paginator]="true" [rows]="maxR">
+
+                                    <!-- Dropdown para la selección del numero de filas,
+                                    por defecto tiene el valor parametrizado en base de datos  -->
+                                    <ng-template pTemplate="caption">
+                                        <div class="ui-grid ui-grid-responsive ui-fluid">
+                                            <span class="pagewidth">
+                                            <p-dropdown (onChange)="onChange($event)" [options]="maxregister" optionLabel="name"
+                                                [showClear]="true"></p-dropdown>
+                                            </span>
+                                            <span class="bold pagewidth text-corp">
+                                            Mostrar
+                                            </span>
+                                        </div>
+                                    </ng-template>
+
+                                    <!-- Encabezado de tabla -->
+                                    <ng-template pTemplate="header">
+                                        <tr class="text-corp">
+                                            <th *ngFor="let item of columnsPedido" class="{{ item.class }}  align-items-center" [style.width]="item.width"> {{ item.header }}</th>
+                                        </tr>
+                                    </ng-template>
+
+                                    <!-- Contenido de la tabla -->
+                                    <ng-template pTemplate="body" let-getArticulos let-i="rowIndex">
+                                        <tr class="ng-star-inserted"
+                                        [pSelectableRow]="getArticulos"
+                                        class="select button-edit"
+                                        *ngIf="getArticulos.HasPending" [ngClass]="{'article-edited' : getArticulos.edited}">
+                                            <td>{{ getArticulos.Codigo }}</td>
+                                            <td>{{ getArticulos.Nombre }}</td>
+                                            <td>{{ getArticulos.Estado }}</td>
+                                            <td class="text-right">{{ getArticulos.CantidadAprobada | decimalnumber }} {{ getArticulos.UnidadMedida }}</td>
+                                            <td pEditableColumn class="text-right">
+                                                <p-cellEditor>
+                                                    <ng-template pTemplate="input">
+                                                        <input
+                                                            type="number"
+                                                            min="0"
+                                                            [max]="getArticulos.DeliveryPendiente"
+                                                            step="1"
+                                                            pInputText [(ngModel)]="getArticulos.CantidadEntrega"
+                                                            [pattern]="Eregular.valor"
+                                                            (keyup)="dataEdit($event, getArticulos)"
+                                                            (keydown.arrowup)="dataEditKeyUp(getArticulos)"
+                                                            (keydown.arrowdown)="dataEditKeyDown(getArticulos, getArticulos.CantidadEntrega)"
+                                                            (keydown.tab)="focusNextField(i); handlerChangeCantidad(getArticulos)"
+                                                            (keydown.enter)="focusNextField(i); handlerChangeCantidad(getArticulos)"
+                                                            (change)="handlerChangeCantidad(getArticulos)">
+                                                    </ng-template>
+
+                                                    <ng-template pTemplate="output" >
+                                                        {{ getArticulos.CantidadEntrega | decimalnumber }}
+                                                        <i class="fa fa-pencil margin-left"></i>
+                                                        <button [hidden]="!getArticulos.edited" class="btn btn-warning btn-round btn-fab mat-raised-button edited-button" matTooltip="Artículo Editado">
+                                                            <span class="mat-button-wrapper">
+                                                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                                            </span>
+                                                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                                            <div class="mat-button-focus-overlay"></div>
+                                                        </button>
+                                                    </ng-template>
+                                                </p-cellEditor>
+                                            </td>
+                                            <td class="text-right">{{ getArticulos.Pendiente | decimalnumber }} {{ getArticulos.UnidadMedida }}</td>
+                                        </tr>
+                                    </ng-template>
+
+                                    <!-- Contenido de la tabla con 0 registros -->
+                                    <ng-template pTemplate="emptymessage" let-columns>
+                                        <tr class="text-center">
+                                            <td [attr.colspan]="6">
+                                            <p>No hay registros disponibles para mostrar</p>
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+                                </p-table>
+
+                            </div>
+                        </div>
+
+                        <!-- Btn Envio de informacion a distribución -->
+                        <div class="row mt-4" *ngIf="!noAutorizado">
+                            <div class="col-12 text-right">
+                                <button  class="btn btn-warning pull-right mat-raised-button col-12 col-sm-6 col-md-4 col-lg-4" type="button"
+                                    (click)="open(mymodal)" [disabled]="btnEntreg"  *ngIf="EntregasEnd">
+                                    <span class="mat-button-wrapper">
+                                        <i class="material-icons">backup</i>
+                                        <span class="ml-1">Agregar Entrega</span>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button>
+                                <button  class="btn btn-success pull-right mat-raised-button col-12 col-sm-6 col-md-4 col-lg-4" type="button"
+                                    [disabled]="btnDistr" (click)="SaveDistribucion(Id)" *ngIf="state">
+                                    <span class="mat-button-wrapper">
+                                        <i class="material-icons">backup</i>
+                                        <span class="ml-1">Enviar a enrutamiento</span>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Entregas programadas -->
+                        <div class="row mt-4" *ngFor="let entregas of getEntregas; let key = index">
+
+                            <h4 class="col-12 col-sm-12 col-md-2 col-lg-2 text-primary-corp">Entrega # {{ key+1 }}</h4>
+                            <h4 class="col-12 col-sm-12 col-md-2 col-lg-2 text-primary-corp">{{ entregas.FechaEntrega }}</h4>
+                            <h4 class="col-12 col-sm-12 col-md-2 col-lg-2 text-primary-corp">{{ entregas.HoraEntrega }}</h4>
+                            <h4 class="col-12 col-sm-12 col-md-3 col-lg-3 text-primary-corp">Tipo: {{ entregas.NombreTipoVehiculo }}</h4>
+                            <h4 class="col-12 col-sm-12 col-md-3 col-lg-3 text-primary-corp">Capacidad: {{ entregas.CapacidadTipoVehiculo | decimalnumber }} Kg.</h4>
+
+                            <div class="col-12 mt-2">
+                                <p-table #dt class="table table-striped" [value]="entregas.Detalles" selectionMode="single" [responsive]="true"
+                                    [resizableColumns]="true" columnResizeMode=expand [paginator]="false">
+
+                                    <ng-template pTemplate="header">
+                                        <tr class="text-corp">
+                                            <th *ngFor="let item of columns" class="{{ item.class }}  align-items-center" [style.width]="item.width">
+                                                {{ item.header }}
+                                            </th>
+                                        </tr>
+                                    </ng-template>
+
+                                    <ng-template pTemplate="body" let-entregas >
+                                        <tr class="ng-star-inserted" [pSelectableRow]="entregas" class="select" >
+                                            <td>{{ entregas.CodigoArticulo }}</td>
+                                            <td>{{ entregas.NombreArticulo }} </td>
+                                            <td class="text-right">{{ entregas.Cantidad | decimalnumber }} Kg.</td>
+                                        </tr>
+                                    </ng-template>
+                                </p-table>
+                            </div>
+                            <div class="col-12 col-sm-12 mt-2">
+                                <span  class="pull-right">
+                                    <strong class="text-primary-corp">Total: </strong>
+                                    {{ entregas.cantidadTotal | decimalnumber }} Kg.
+                                </span>
+                            </div>
+                            <div class="col-12 mb-4 mt-2">
+                                <a  class="btn btn-warning pull-right mat-raised-button"
+                                    routerLink="/pedidos/programar/entregas/edit/{{ entregas.EntregaId }}" matTooltip="Editar">
+                                    <span class="mat-button-wrapper">
+                                        <i class="material-icons">create</i>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </a>
+                                <button  class="btn btn-danger pull-right mat-raised-button" type="button"  (click)="deletedEntregaId( entregas.EntregaId )"
+                                    *ngIf="state" matTooltip="Eliminar">
+                                    <span class="mat-button-wrapper">
+                                        <i class="material-icons">delete_forever</i>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button >
+                            </div>
+
+                        </div>
+
+                        <!-- Entregas == 0 -->
+                        <div class="row mt-4" *ngIf='noAutorizado'>
+                            <div class="col-12 text-center">
+                                <h4>Pedido no habilitado para programar entregas.<br> Por favor, apruebe pedido primero</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Programacion de entregas -->
+<ng-template #mymodal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Cita de Entrega</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-8 no-padding">
+                <label class="col-12 text-corp">Fecha:</label>
+                <div class="col-12">
+                    <p-calendar
+                        [(ngModel)]="Fecha"
+                        [locale]="calendarFormat"
+                        dateFormat="dd/mm/yy"
+                        [style]="{width:'100%'}"
+                        inputStyleClass="form-control"
+                        [minDate]="today"
+                        placeholder="__/__/____"
+                        value="fecha">
+                    </p-calendar>
+                </div>
+            </div>
+            <div class="col-4">
+                <label class="col-12 text-corp">Hora:</label>
+                <div class="col-12">
+                    <p-calendar
+                        [(ngModel)]="Hora"
+                        [style]="{width:'100%'}"
+                        [timeOnly]="true"
+                        inputStyleClass="form-control"
+                        hourFormat="24">
+                    </p-calendar>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="col-12 col-sm-12">
+                    <label class="text-corp">Cantidad total para la entrega: </label>
+                    {{ peso | decimalnumber }}
+                </div>
+            </div>
+            <div class="col-12" *ngIf="tiposVehiculo !== undefined && tiposVehiculo.length">
+                <label class="col-12 text-corp">Tipo vehiculo:</label>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <p-dropdown
+                        [options]="tiposVehiculo"
+                        [showClear]="true"
+                        [style]="{'width':'100%'}"
+                        [panelStyle]="{'background-color': 'white'}"
+                        placeholder="Seleccione una opción"
+                        [(ngModel)]="tipoVehiculo"
+                        optionLabel="TipoVehiculo"
+                        (onChange)="handlerChangeTipoVehiculo($event)"
+                        dataKey="TipoVehiculo">
+                        <ng-template let-item pTemplate="item">
+                            {{ item.value.TipoVehiculo }} / ({{ item?.value.capacidad | decimalnumber }} KG)
+                        </ng-template>
+                        <ng-template let-item pTemplate="selectedItem">
+                            <div class="ui-helper-clearfix">
+                                {{ item.value.TipoVehiculo }} / ({{ item?.value.capacidad | decimalnumber }} KG)
+                            </div>
+                        </ng-template>
+                    </p-dropdown>
+                </div>
+            </div>
+            <div class="col-12 mt-3" *ngIf="tiposVehiculo !== undefined && !tiposVehiculo.length">
+                <div class="col-12 col-sm-12">
+                    <label class="text-corp">*La cantidad total de la entrega supera las capacidades de los vehículos</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer mt-4">
+        <button type="button" class="btn btn-danger mr-1" (click)="modal.dismiss('Cross click')">Cancelar</button>
+        <button type="button" class="btn btn-success" (click)="AddEntregas()">Agregar</button>
+    </div>
+</ng-template>

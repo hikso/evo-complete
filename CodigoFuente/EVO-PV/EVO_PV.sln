@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EVO_PV_DataAccess", "EVO_PV_DataAccess\EVO_PV_DataAccess.csproj", "{7381AFC2-7DCA-4FD2-9D6C-BFED2DC26115}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EVO_PV_BusinessObjects", "EVO_PV_BusinessObjects\EVO_PV_BusinessObjects.csproj", "{2F849121-CF30-41CF-A371-048C774DCE5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EVO_PV_BusinessLogic", "EVO_PV_BusinessLogic\EVO_PV_BusinessLogic.csproj", "{CF16CC8F-F827-42D5-B171-F4BE004748A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EVO_PV_Proxy", "EVO_PV_Proxy\EVO_PV_Proxy.csproj", "{5C38C017-BE2C-4DE5-A7CC-1EABF70ABDF6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EVO_PV", "EVO_PV\EVO_PV.csproj", "{E89F6E96-1BB1-48EF-B4ED-21CE96BBB05D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EVO_PV_WebApi", "EVO_PV_WebApi\EVO_PV_WebApi.csproj", "{B68F9552-F96A-4D85-954E-B29F566CF532}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7381AFC2-7DCA-4FD2-9D6C-BFED2DC26115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7381AFC2-7DCA-4FD2-9D6C-BFED2DC26115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7381AFC2-7DCA-4FD2-9D6C-BFED2DC26115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7381AFC2-7DCA-4FD2-9D6C-BFED2DC26115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F849121-CF30-41CF-A371-048C774DCE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F849121-CF30-41CF-A371-048C774DCE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F849121-CF30-41CF-A371-048C774DCE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F849121-CF30-41CF-A371-048C774DCE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF16CC8F-F827-42D5-B171-F4BE004748A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF16CC8F-F827-42D5-B171-F4BE004748A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF16CC8F-F827-42D5-B171-F4BE004748A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF16CC8F-F827-42D5-B171-F4BE004748A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C38C017-BE2C-4DE5-A7CC-1EABF70ABDF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C38C017-BE2C-4DE5-A7CC-1EABF70ABDF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C38C017-BE2C-4DE5-A7CC-1EABF70ABDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C38C017-BE2C-4DE5-A7CC-1EABF70ABDF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E89F6E96-1BB1-48EF-B4ED-21CE96BBB05D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E89F6E96-1BB1-48EF-B4ED-21CE96BBB05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E89F6E96-1BB1-48EF-B4ED-21CE96BBB05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E89F6E96-1BB1-48EF-B4ED-21CE96BBB05D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B68F9552-F96A-4D85-954E-B29F566CF532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68F9552-F96A-4D85-954E-B29F566CF532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68F9552-F96A-4D85-954E-B29F566CF532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68F9552-F96A-4D85-954E-B29F566CF532}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54AAC413-E648-4EFC-994D-5C2589370B0B}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://porcicarnesfuentes.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EVO_PV_DataAccess\\EVO_PV_DataAccess.csproj
+		SccProjectName1 = EVO_PV_DataAccess
+		SccLocalPath1 = EVO_PV_DataAccess
+		SccProjectUniqueName2 = EVO_PV_BusinessObjects\\EVO_PV_BusinessObjects.csproj
+		SccProjectName2 = EVO_PV_BusinessObjects
+		SccLocalPath2 = EVO_PV_BusinessObjects
+		SccProjectUniqueName3 = EVO_PV_BusinessLogic\\EVO_PV_BusinessLogic.csproj
+		SccProjectName3 = EVO_PV_BusinessLogic
+		SccLocalPath3 = EVO_PV_BusinessLogic
+		SccProjectUniqueName4 = EVO_PV_Proxy\\EVO_PV_Proxy.csproj
+		SccProjectName4 = EVO_PV_Proxy
+		SccLocalPath4 = EVO_PV_Proxy
+		SccProjectUniqueName5 = EVO_PV\\EVO_PV.csproj
+		SccProjectName5 = EVO_PV
+		SccLocalPath5 = EVO_PV
+		SccProjectUniqueName6 = EVO_PV_WebApi\\EVO_PV_WebApi.csproj
+		SccProjectName6 = EVO_PV_WebApi
+		SccLocalPath6 = EVO_PV_WebApi
+	EndGlobalSection
+EndGlobal

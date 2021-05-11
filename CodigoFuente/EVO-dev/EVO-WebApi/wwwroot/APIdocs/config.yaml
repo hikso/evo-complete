@@ -1,0 +1,40 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Usuarios
+    url: https://evo/api
+info:
+  description: 
+   API de configuración general del sistema EVO 
+  version: "1.0.0"
+  title: API de Configuración General
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Config
+    description: WebAPI encargada de gestionar la Configuración del sistema EVO
+paths:
+  /config/obtenerversionactual:
+    get:
+      tags: 
+        - Config
+      summary: Retorna la versión actual del sistema EVO.
+      operationId: obtenerVersionActual
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/VersionResponse'
+components:
+  schemas:
+    VersionResponse:
+     type: object
+     description: Objeto que contiene la versión de la aplicación
+     properties:
+      version:
+       type: string
+       example: '1.0.1'
+       description: Indica la versión de la aplicación
+                  

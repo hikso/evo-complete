@@ -1,0 +1,151 @@
+<div class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-right"> 
+                    <a  class="btn btn-info pull-right mat-raised-button" routerLink="/distribucion/enrutamiento/vehiculos">
+                        <span class="mat-button-wrapper">
+                            <i class="fa fa-chevron-left"></i> 
+                            <span class="ml-1">Regresar</span>
+                        </span>
+                        <div class="mat-button-ripple mat-ripple"></div>
+                        <div class="mat-button-focus-overlay"></div>
+                    </a>  
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header card-header-warning card-header-icon">
+                            <div class="card-icon">
+                                <i class="material-icons">departure_board</i>
+                            </div>
+                            <h4 class="card-title">Detalles Vehículo Programado: </h4>
+                        </div>
+                        <div class="card-body">
+                            
+                            <div class="row" *ngIf="car">
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="car.tipoVehiculo">
+                                    <strong class="text-primary-corp">Tipo Vehículo: </strong>
+                                    {{ car.tipoVehiculo }}
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="car.placa">
+                                    <strong class="text-primary-corp">Placa: </strong>
+                                    {{ car.placa }}
+                                </div>                            
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="car.unidadesCanastas">
+                                    <strong class="text-primary-corp">Unidades Canasta: </strong>
+                                    {{ car.unidadesCanastas }}
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="car.capacidadVehiculo">
+                                    <strong class="text-primary-corp">Capacidad: </strong>
+                                    {{ car.capacidadVehiculo | decimalnumber }} KG
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="car.muelle">
+                                    <strong class="text-primary-corp">Muelle: </strong>
+                                    {{ car.muelle }}
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="car.cantidadTotal">
+                                    <strong class="text-primary-corp">Cantidad Total: </strong>
+                                    {{ car.cantidadTotal | decimalnumber }} KG
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="car.totalEntregasAsociadas">
+                                    <strong class="text-primary-corp">Entregas Asociadas: </strong>
+                                    {{ car.totalEntregasAsociadas }}
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="car.unidadesTotales">
+                                    <strong class="text-primary-corp">Unidad Total: </strong>
+                                    {{ car.unidadesTotales }}
+                                </div>
+                            </div>
+    
+                            <div class="row mt-1">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <h4 class="delivery-title">Entregas: 
+                                        <button class="btn btn-warning btn-round btn-fab mat-raised-button" (click)="collapseAllAccordionTabs()">
+                                            <span class="mat-button-wrapper">
+                                                <i [hidden]="typeOfCollapse" class="fa fa-expand" matTooltip="Expandir Entregas"></i>
+                                                <i [hidden]="!typeOfCollapse" class="fa fa-compress" matTooltip="Comprimir Entregas"></i>
+                                            </span>
+                                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                            <div class="mat-button-focus-overlay"></div>
+                                        </button>
+                                    </h4>
+                                    <p-accordion [multiple]="true" [activeIndex]="entregaIndex" #accordion>
+                                        <p-accordionTab *ngFor="let entrega of entregas" header="Entrega {{ entrega.numeroEntrega }} / Hora de entrega: {{ entrega.horaEntrega }} / {{ entrega.cliente }}" >
+                                            <div class="row delivery-header">
+                                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="entrega.tipnumeroPedidooVehiculo">
+                                                    <strong class="text-primary-corp">Número Pedido: </strong>
+                                                    {{ entrega.numeroPedido }}
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="entrega.cliente">
+                                                    <strong class="text-primary-corp">Cliente: </strong>
+                                                    {{ entrega.cliente }}
+                                                </div>                            
+                                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="entrega.codigo">
+                                                    <strong class="text-primary-corp">Código Cliente: </strong>
+                                                    {{ entrega.codigo }}
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="entrega.zona">
+                                                    <strong class="text-primary-corp">Zona: </strong>
+                                                    {{ entrega.zona }}
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="entrega.fechaEntrega">
+                                                    <strong class="text-primary-corp">Fecha: </strong>
+                                                    {{ entrega.fechaEntrega }}
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="entrega.horaEntrega">
+                                                    <strong class="text-primary-corp">Hora: </strong>
+                                                    {{ entrega.horaEntrega }}
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="entrega.cantidad">
+                                                    <strong class="text-primary-corp">Cantidad Entrega: </strong>
+                                                    {{ entrega.cantidad | decimalnumber }} KG
+                                                </div>
+                                                <div class="col-12 col-sm-6 col-md-4 col-lg-4" *ngIf="entrega.unidades">
+                                                    <strong class="text-primary-corp">Unidades: </strong>
+                                                    {{ car.unidades }}
+                                                </div>
+                                            </div>
+                                            <h4 class="articles-title">Artículos: </h4>
+                                            <p-table #dt class="table table-striped" [value]="entrega.articulos" selectionMode="multiple" [responsive]="true" 
+                                                [resizableColumns]="true" columnResizeMode=expand [lazy]="true" [paginator]="false" >                                        
+                    
+                                                <!-- Encabezado de tabla -->
+                                                <ng-template pTemplate="header">
+                                                    <tr class="text-corp">
+                                                        <th *ngFor="let item of columns" class="{{ item.class }}  align-items-center"> {{ item.header }}</th>
+                                                    </tr>
+                                                </ng-template>
+                    
+                                                <!-- Contenido de la tabla -->
+                                                <ng-template pTemplate="body" let-articulos >
+                                                    <tr class="ng-star-inserted" class="select">
+                                                        <td>{{ articulos.codigo }}</td>
+                                                        <td>{{ articulos.nombre }}</td>
+                                                        <td>{{ articulos.estado }}</td>
+                                                        <td class="text-right">{{ articulos.cantidad | decimalnumber }} / {{ articulos.unidadMedida }}</td>
+                                                        <td>{{ articulos.observaciones }}</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <!--  -->
+                                                    </tr>
+                                                </ng-template>
+                    
+                                                <!-- Contenido de la tabla con 0 registros -->
+                                                <ng-template pTemplate="emptymessage" let-columns>
+                                                    <tr class="text-center">
+                                                        <td [attr.colspan]="8">
+                                                        <p>No hay registros disponibles para mostrar</p>
+                                                        </td>
+                                                    </tr>
+                                                </ng-template>
+                                            </p-table>
+                                        </p-accordionTab>
+                                    </p-accordion>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    

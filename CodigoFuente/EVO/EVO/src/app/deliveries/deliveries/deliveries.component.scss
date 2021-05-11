@@ -1,0 +1,126 @@
+.text-primary-corp{
+    font-weight: 700;
+    color: #7F0E06;
+}
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+::ng-deep .ui-datepicker {
+    background-color: #ffffff;
+}
+
+.pagewidth{
+    float: right;
+    min-width: 80px;
+}
+
+:host ::ng-deep .ui-dropdown-panel .ui-dropdown-list {
+    background-color: #fff !important;
+}
+
+:host ::ng-deep .select:hover{
+    background-color: #F5B90E;
+    color: #ffffff;
+}
+
+:host ::ng-deep p-paginator a {
+    color: #7F0E06;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+:host ::ng-deep .ui-state-active{
+    background-color: #7F0E06;
+    color: #ffffff;
+    min-width: 25px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding-top: 1.5px;
+    margin-top: -3px;
+}
+
+:host ::ng-deep .ui-editable-column{
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    color: #000;
+    i{
+        float: right;
+        margin-top: 5px;
+    }
+}
+
+.text-corp{
+    color: #7F0E06;
+}
+
+::ng-deep .ui-datepicker {
+    background-color: #ffffff;
+}
+::ng-deep .ui-datepicker {
+
+    .ui-state-default{
+        cursor: pointer;
+        &:hover{
+            background-color: #F5B90E;
+            color: #000;
+        }
+    }
+    .ui-state-highlight{
+        background-color: #F5B90E;
+        color: #000;
+    }
+    .ui-state-active{
+        background-color: #7F0E06;
+        color: #fff;
+    }
+    .ui-state-disabled{
+        background-color: #69696924 !important;
+    }
+    background-color: #ffffff;
+}
+::ng-deep .ui-timepicker{
+    .ui-hour-picker{
+        margin: 0px;
+    }
+}
+
+.footpaginator{
+ margin-top: 25px;
+ position: relative;
+}
+
+.margin-left{
+    margin-left: 1rem;
+}
+::ng-deep .article-edited{
+    position: relative;
+    background-color: #ffa82657 !important;
+    &:hover{
+        color: #000 !important;
+    }
+}
+
+::ng-deep .edited-button{
+    position: absolute !important;
+    left: -40px;
+    animation: selection 3s infinite;
+}
+
+@keyframes selection {
+    0% {
+        left: -40px;
+    }
+    50% {
+        left: -45px;
+    }
+    100% {
+        left: -40px;
+    }
+}
+.pull-right{
+    float: right;
+}

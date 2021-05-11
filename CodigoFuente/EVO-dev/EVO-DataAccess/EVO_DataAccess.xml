@@ -1,0 +1,663 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EVO_DataAccess</name>
+    </assembly>
+    <members>
+        <member name="T:EVO_DataAccess.Context.Contexto">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 02-Ago/2019
+            Descripción      : Se crea la clase que tendra el contexto de la BD
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.Context.Contexto.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Se realiza la conexion con la BD 
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.RegistrosAuditoria">
+            <summary>
+            Tabla de Registros de Auditoria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.ParametrosGenerales">
+            <summary>
+            Tabla de Parámetros Generales del Sistema
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Usuarios">
+            <summary>
+            Tabla de Usuarios del sistema
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.UsuariosxRol">
+            <summary>
+            Tabla de relación entre Usuarios y Roles
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Roles">
+            <summary>
+            Tabla de Roles del sistema
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Modulos">
+            <summary>
+            Tabla de Módulos del sistema
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Funcionalidades">
+            <summary>
+            Tabla de funcionalidades del sistema
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.FuncionalidadesxRol">
+            <summary>
+            Tabla de la funcionalidades de los roles
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAAuditorias">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 02-Ago/2019
+            Descripción      : Se crea la clase que almacenara todo el registro de auditoria
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAAuditorias.CrearRegistro(EVO_BusinessObjects.RegistroAuditoria)">
+            <summary>
+            Este mètodo crea un registro en la tabla de auditoria
+            </summary>
+            <param name="nuevoRegistro">Registro de auditoria de tipo RegistroAuditoria</param>
+            <returns>Verdadero si el registro se puede insertar, falso de lo contrario</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAAuditorias.ObtenerConteoTodosRegistrosxFiltro(EVO_BusinessObjects.FiltroAuditoria)">
+            <summary>
+            Este método permite saber cuántos registros se generan a partir de los filtros generados para la consulta
+            </summary>
+            <param name="filtro">Criterios de filtro para la consulta</param>
+            <returns>Número de registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAAuditorias.ObtenerNumeroTotalRegistros">
+            <summary>
+            Este método obtiene el número total de registros de la tabla de Auditoria
+            </summary>
+            <returns>Número total de registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAAuditorias.ObtenerTodosRegistros(System.Int32,System.Int32)">
+            <summary>
+            Este metodo obtiene todos los registros de auditoria
+            </summary>
+            <param name="desde">Indica el nùmero de registro desde el cuàl se quiere obtener los registros de auditoria</param>
+            <param name="hasta">Indica el nùmero de registro hasta el cuàl se quiere obtener los registros de auditoria</param>
+            <returns>Si esta dentro de el numero de registros permitidos, devuelve una lista de RegistroAuditoria.</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAAuditorias.ObtenerTodosRegistrosxFiltro(EVO_BusinessObjects.FiltroAuditoria)">
+            <summary>
+            Este método obtiene todos los registros de Auditoria aplicando un filtro de búsqueda sobre las acciones
+            </summary>
+            <param name="filtro">Filtro de búsqueda a aplicar sobre las acciones de auditoria</param>
+            <returns>Lista de Registros de Auditoria</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAAuditorias.mapeadorRegistroAuditoria(System.Data.Common.DbDataReader)">
+            <summary>
+            Mapea un objeto DbDataReader a un objeto de tipo RegistroAuditoria
+            </summary>
+            <param name="reader">DbDataReader</param>
+            <returns>Instancia de objeto de tipo RegistroAuditoria</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAFuncionalidades">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 08-Ago/2019
+            Descripción      : Acceso a datos de Funcionalidad
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAFuncionalidades.ObtenerFuncionalidadxId(System.Int32)">
+            <summary>
+            Este metodo trae las funcionalidades asignadas a un Id
+            </summary>
+            <param name="funcionalidadId">Id de funcionalidad a buscar de tipo funcionalidad</param>
+            <returns>Id de la funcionalidad</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAFuncionalidades.ObtenerFuncionalidadxModuloId(System.Int32)">
+            <summary>
+            Este metodo trae las funcionalidades asignadas a un Modulo
+            </summary>
+            <param name="moduloId">Id de el modulo de tipo funcionalidad</param>
+            <returns>Id de la funcionalidad</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAModulos">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 12-Ago/2019
+            Descripción      : Acceso a datos de modulos
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAModulos.obtenerTodosModulos(System.Int32,System.Int32)">
+            <summary>
+            Este método obtiene los modulos creados en el sistema
+            </summary>
+            <param name="desde">Indica el número de registro desde el cuál se deben cargar los registros</param>
+            <param name="hasta">Indica el número de registro hasta el cuál se deben cargar los registros</param>
+            <returns>Lista de modulos de tipo modulo</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAModulos.ObtenerModuloxNombre(System.String)">
+            <summary>
+            Obtiene un módulo especifico por el nombre
+            </summary>
+            <param name="nombre">Indica el nombre por el cual se va a filtrar</param>
+            <returns>Id del módulo, nombre y si esta inactivo</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAModulos.ObtenerModuloxId(System.Int32)">
+            <summary>
+            Obtiene un módulo especifico por el nombre
+            </summary>
+            <param name="moduloid">Indica el Id por el cual se va a filtrar</param>
+            <returns>Id del módulo, Nombre y si esta inactivo</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAParametrosGenerales">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 02-Ago/2019
+            Descripción      : Clase de acceso a datos para los parámetros generales del sistema
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametrosGenerales.CrearParametroGeneral(EVO_BusinessObjects.ParametroGeneral)">
+            <summary>
+            Este metodo crea un parametro general 
+            </summary>
+            <param name="nuevoParametroGeneral">Parametro general a crear</param>
+            <returns>Verdadero si se pudo crear</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametrosGenerales.ObtenerParametroGeneralPorNombre(System.String)">
+            <summary>
+            Este metodo obtiene un parametro general por el nombre
+            </summary>
+            <param name="nombre">Nombre del parametro a buscar</param>
+            <returns>ParametroId, Nombre, valor y inactivo si el parametro se encuentra creado</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametrosGenerales.ObtenerValorPorNombre(System.String)">
+            <summary>
+            Este método obtiene el valor de un parámetro general del sistema dado su nombre
+            </summary>
+            <param name="nombre">Nombre del parámetro general a buscar</param>
+            <returns>Valor del parámetro general</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametrosGenerales.ActualizarParametroGeneral(EVO_BusinessObjects.ParametroGeneral)">
+            <summary>
+            Este metodo actualiza el parametro general
+            </summary>
+            <param name="actualizarParametroGeneral">Parametro general a actualizar</param>
+            <returns>Verdadero si se pudo actualizar</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametrosGenerales.ObtenerParametroGeneralxId(System.Int32)">
+            <summary>
+            Este metodo busca un parametro general por su Id
+            </summary>
+            <param name="parametroGeneralId">Id del parametro general</param>
+            <returns>ParametroId, Nombre, valor y inactivo si el parametro se encuentra creado</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametrosGenerales.ObtenerParametroGeneralxNombre(System.String)">
+            <summary>
+            Este metodo busca un parametro geneal por su nombre
+            </summary>
+            <param name="nombre"></param>
+            <returns>ParametroId, Nombre, valor y inactivo si el parametro se encuentra creado</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametrosGenerales.ObtenerNumeroTotalRegistros">
+            <summary>
+            Este método obtiene el número total de registros de la tabla de Parámetros Generales
+            </summary>
+            <returns>Número total de registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametrosGenerales.ObtenerTodosParametrosGenerales(System.Int32,System.Int32)">
+            <summary>
+            Este método obtiene los prametros generales creados en el sistema
+            </summary>
+            <param name="desde">Indica el número de registro desde el cuál se deben cargar los registros</param>
+            <param name="hasta">Indica el número de registro hasta el cuál se deben cargar los registros</param>
+            <returns>Lista de parametros generales de tipo ParametroGeneral</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametrosGenerales.InactivarParametroGeneral(EVO_BusinessObjects.ParametroGeneral)">
+            <summary>
+            Este metodo inactiva un parametro general
+            </summary>
+            <param name="parametroGeneralInactivar">Parametro a inactivar</param>
+            <returns>Verdadero si se pudo inactivar</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DARoles">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 02-Ago/2019
+            Descripción      : Acceso a datos de roles
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.DesasociarUsuarioARol(EVO_BusinessObjects.DesasociarUsuarioARol)">
+            <summary>
+            Este método desasocia un usuario a un rol
+            </summary>
+            <param name="desasociarUsuarioARol">Objeto que contiene el id del rol y el usuario del Usuario</param>
+            <returns>Retorna verdadero si se pudo desasociar de lo contrario false</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.asociarUsuarioARol(EVO_BusinessObjects.AsociarUsuarioARol)">
+            <summary>
+            Este método asocia un usuario a un rol
+            </summary>
+            <param name="asociarUsuarioARol">Objeto que incluye el id del rol y el usuario , nombre del Usuario</param>
+            <returns>Retorna verdadero si se pudo asociar de lo contrario false</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.obtenerUsuarioEstaAsociadoARol(EVO_BusinessObjects.AsociarUsuarioARol)">
+            <summary>
+            Verifica si el usuario ya está asociado a este rol
+            </summary>
+            <param name="asociarUsuarioARol">objeto que contiene el usuario , nombre del Usuario y el id del rol</param>
+            <returns>Retorna true si el usuario está asociado al rol de lo contrario false</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.obtenerUsuarioEstaDesasociadoARol(EVO_BusinessObjects.DesasociarUsuarioARol)">
+            <summary>
+            Verifica si el usuario ya está asociado a este rol
+            </summary>
+            <param name="desasociarUsuarioARol">objeto que contiene el usuario y el id del rol</param>
+            <returns>Retorna true si el usuario está desasociado al rol de lo contrario false</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.asociarUsuarios(EVO_BusinessObjects.Rol)">
+            <summary>
+            Este metodo actualiza los usuarios asignados al rol
+            </summary>
+            <param name="rolAActualizar">Rol a actualizar de tipo Rol</param>
+            <returns>Verdadero si el rol se pudo actualizar</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.ActualizarFuncionalidadesARol(EVO_BusinessObjects.Rol)">
+            <summary>
+            Este método actualiza las funcionalidades asociadas a un rol
+            </summary>
+            <param name="rolAActualizar">Rol a actualizar de tipo Rol</param>
+            <returns>Verdadero si el rol se pudo actualizar</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.ActualizarRol(EVO_BusinessObjects.Rol)">
+            <summary>
+            Este método permite actualizar un rol en el sistema
+            </summary>
+            <param name="rolAActualizar">Rol a actualizar de tipo Rol</param>
+            <returns>Verdadero si el rol se pudo actualizar</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.CrearRol(EVO_BusinessObjects.Rol)">
+            <summary>
+            Crear un nuevo rol en el sistema
+            </summary>
+            <param name="nuevoRol">Rol a crear</param>
+            <returns>Verdadero si el rol se pudó crear en el sistema</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.desasociarUsuarios(EVO_BusinessObjects.Rol)">
+            <summary>
+            Este metodo actualiza los usuarios asignados al rol
+            </summary>
+            <param name="rolAActualizar">Rol a actualizar de tipo Rol</param>
+            <returns>Verdadero si el rol se pudo actualizar</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.InactivarRol(EVO_BusinessObjects.Rol)">
+            <summary>
+            Este método permite Inactivar / Reactivar un rol en el sistema
+            </summary>
+            <param name="rolAInactivar">Rola a inactivar</param>
+            <returns>Verdadero si el rol se pudó inactivar / reactivar</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.ObtenerConteoTodosRolesxFiltro(EVO_BusinessObjects.FiltroRol)">
+            <summary>
+            Este método permite saber cuántos registros se generan a partir de los filtros generados para la consulta
+            </summary>
+            <param name="filtro">Filtro de búsqueda sobre la Auditoria</param>
+            <returns>Número de Registros retornados en el filtro</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.ObtenerNumeroTotalRegistros">
+            <summary>
+            Este método obtiene el número total de registros de la tabla de Roles
+            </summary>
+            <returns>Número total de registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.ObtenerRolxId(System.Int32)">
+            <summary>
+            Este método obtiene un rol por su id
+            </summary>
+            <param name="RolId">Id del Rol a obtener</param>
+            <returns>Instancia de objeto de un Rol de tipo Rol</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.ObtenerRolxNombre(System.String)">
+            <summary>
+            Este método obtiene un rol por su Nombre
+            </summary>
+            <param name="nombre">Nombre del Rol a obtener</param>
+            <returns>Instancia de objeto de un Rol de tipo Rol</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.ObtenerTodosRoles(System.Int32,System.Int32)">
+            <summary>
+            Este método obtiene los roles creados en el sistema
+            </summary>
+            <param name="desde">Indica el número de registro desde el cuál se deben cargar los registros</param>
+            <param name="hasta">Indica el número de registro hasta el cuál se deben cargar los registros</param>
+            <returns>Lista de roles de tipo Rol</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.ObtenerTodosRolesxFiltro(EVO_BusinessObjects.FiltroRol)">
+            <summary>
+            Este metodo obtiene todos los Roles aplicando un filtro de búsqueda
+            </summary>
+            <param name="filtro">Filtro de búsqueda sobre los Roles</param>
+            <returns>Lista de Roles</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARoles.mapeadorRegistroRol(System.Data.Common.DbDataReader)">
+            <summary>
+            Mapea un objeto DbDataReader a un objeto de tipo Rol
+            </summary>
+            <param name="reader">DbDataReader</param>
+            <returns>Instancia de objeto de tipo Rol</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAUsuarios">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 02-Ago/2019
+            Descripción      : Acceso a datos de Usuarios
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAUsuarios.ObtenerUsuarioPorUsuario(System.String)">
+            <summary>
+            Este método obtiene un usuario por su nombre de usuario
+            </summary>
+            <param name="Usuario">Nombre de usuario. Ej: KRestrepo</param>
+            <returns>Instancia de un usuario</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAUsuarios.RegistrarUsuario(EVO_BusinessObjects.Usuario)">
+            <summary>
+            Este método registra un usuario
+            </summary>
+            <param name="Usuario">Instancia de usuario a registrar</param>
+            <returns>Retorna true si todo salio bien de lo contrario false</returns>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFFuncionalidad">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            :Representa la funcionalidad de un rol
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidad.FuncionalidadId">
+            <summary>
+            Define la clave primaria 
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidad.ModuloId">
+            <summary>
+            Define la clave foránea a módulos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidad.Nombre">
+            <summary>
+            Define el nombre de la funcionalidad
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidad.Inactivo">
+            <summary>
+             Define el estado de la funcionalidad
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidad.Modulo">
+            <summary>
+             Define la propiedad de navegación al módulo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidad.FuncionalidadesxRol">
+            <summary>
+             Define la propiedad de navegación de las funcionalidades de un rol
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFFuncionalidadesxRol">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa la relación muchos a muchos entre rol y funcionalidad.
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidadesxRol.FuncionalidadesxRolId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidadesxRol.RolId">
+            <summary>
+            Define la clave foranea a rol
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidadesxRol.FuncionalidadId">
+            <summary>
+            Define la clave foranea a funcionlidad
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidadesxRol.Rol">
+            <summary>
+            Define la propiedad de navegación de rol
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidadesxRol.Funcionalidad">
+            <summary>
+            Define la propiedad de navegación de funcionalidad
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFModulo">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa un módulo asociado a la funcionalidad
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFModulo.ModuloID">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFModulo.Nombre">
+            <summary>
+            Define el nombre del módulo
+            </summary>
+                
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFModulo.Inactivo">
+            <summary>
+             Define el estado del módulo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFModulo.Funcionalidades">
+            <summary>
+             Define la propiedad de navegación de las funcionalidades de este módulo
+            </summary>         
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFParametroGeneral">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa un parametro del sistema.
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFParametroGeneral.ParametroGeneralId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFParametroGeneral.Nombre">
+            <summary>
+            Define el nombre de parametro
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFParametroGeneral.Valor">
+            <summary>
+            Define el valor del parametro
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFParametroGeneral.Inactivo">
+            <summary>
+             Define si el parámetro se encuentra inactivo
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFRegistroAuditoria">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa un registro de audítoria.
+            </summary>   
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.RegistroAuditoriaId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.UsuarioId">
+            <summary>
+            Define la clave foreanea a Usuario
+            </summary>
+            
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.Fecha">
+            <summary>
+            Define la fecha de registro del registro de audítoria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.Accion">
+            <summary>
+             Define la Acción del registro de audítoria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.Parametros">
+            <summary>
+             Parámetros de la acción
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.IP">
+            <summary>
+            Define la IP del cliente el cual generó el registro de audítoria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.Usuario">
+            <summary>
+            Define la propiedad de navegación a Usuario 
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFRol">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa un rol del usuario.
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.RolId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.Nombre">
+            <summary>
+            Define el nombre del rol.
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.Inactivo">
+            <summary>
+             Define si el rol se encuentra inactivo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.UsuariosxRol">
+            <summary>
+             Define la propiedad de navegación que representa los usuarios de un rol
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.FuncionalidadesxRol">
+            <summary>
+             Define la propiedad de navegación que representa las funcionalidades de un rol
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFUsuario">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa a un usuario del sistema.
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuario.UsuarioId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuario.Usuario">
+            <summary>
+            Define el usuario
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuario.Nombre">
+            <summary>
+            Define el nombre del usuario
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuario.Inactivo">
+            <summary>
+            Define si e usuario se encuentra inactivo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuario.UsuariosxRol">
+            <summary>
+             Define la propiedad de navegación de los roles de un usuario
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFUsuariosxRol">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa la relación de muchos a muchos entre Rol y Usuario.
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuariosxRol.UsuariosxRolId">
+            <summary>
+            Define la clave primaria 
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuariosxRol.RolId">
+            <summary>
+            Define la clave foranea a Rol
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuariosxRol.UsuarioId">
+            <summary>
+            Define la clave foranea a Usuario
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuariosxRol.Rol">
+            <summary>
+            Define la propiedad de navegación Rol
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuariosxRol.Usuario">
+            <summary>
+            Define la propiedad de navegación usuario
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Utils.AppConfiguration">
+            <summary>
+            Autor            : Juan Camilo Usuga
+            Fecha de Creación: 31-Jul/2019
+            Descripción      : Esta clase permite leer elementos de configuración del archivo appsettings.json
+                               Tomado de: https://www.ttmind.com/techpost/How-to-read-appSettings-JSON-from-Class-Library-in-ASP-NET-Core
+            </summary>
+            
+        </member>
+        <member name="P:EVO_DataAccess.Utils.AppConfiguration.AppSettings">
+            <summary>
+            Sección de elementos de configuración AppSettings
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Utils.AppConfiguration.ConnectionString">
+            <summary>
+            Sección de elementos de Cadenas de Conexión
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.Utils.AppConfiguration.#ctor">
+            <summary>
+            Lee el archivo appsettings.json de la ruta raíz y busca las propiedades ConnectionString y ApplicationSettings
+            </summary>
+        </member>
+    </members>
+</doc>

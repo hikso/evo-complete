@@ -1,0 +1,337 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-right">
+                <a  class="btn btn-info pull-right mat-raised-button" routerLink="/pedidos/programar/entregas/{{ getPedido.pedidoId }}">
+                    <span class="mat-button-wrapper">
+                        <i class="fa fa-chevron-left"></i>
+                        <span class="ml-1">Regresar</span>
+                    </span>
+                    <div class="mat-button-ripple mat-ripple"></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </a>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">format_list_numbered</i>
+                        </div>
+                        <h4 class="card-title">Editar Entrega: </h4>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Cliente: </strong>
+                                {{ getPedido.cliente }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Zona: </strong>
+                                {{ getPedido.zona }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Orden de Compra: </strong>
+                                {{ getPedido.ordenCompra }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Número Pedido: </strong>
+                                {{ getPedido.codigoPedido }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Estado: </strong>
+                                {{ getPedido.estado }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Usuario: </strong>
+                                {{ getPedido.usuario }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Vehículo: </strong>
+                                {{ getPedido.TipoVehiculo }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Fecha y Hora Entrega: </strong>
+                                {{ getPedido.fechaEntrega }} {{ getPedido.horaEntrega }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Total Cantidad Entrega: </strong>
+                                {{ getPedido.cantidadTotal | decimalnumber }}
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-12 mb-1">
+                                <button  class="btn btn-warning pull-right mat-raised-button mt-2"
+                                    type="button" (click)="open(mymodal)">
+                                    <span class="mat-button-wrapper">
+                                        <i class="material-icons">backup</i>
+                                        <span class="ml-1">Editar entrega</span>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-12 mt-2">
+
+                                <p-table #dt class="table table-striped" [value]="getArticulos" selectionMode="single" [responsive]="true"
+                                    [resizableColumns]="true" columnResizeMode=expand [paginator]="false" >
+
+                                    <ng-template pTemplate="header">
+                                        <tr class="text-corp">
+                                            <th *ngFor="let item of columns" class="{{ item.class }}  align-items-center" [style.width]="item.width">
+                                                {{ item.header }}
+                                            </th>
+                                        </tr>
+                                    </ng-template>
+
+                                    <ng-template pTemplate="body" let-getArticulos let-i="rowIndex" >
+                                        <tr class="ng-star-inserted" [pSelectableRow]="getArticulos" class="select button-edit"
+                                        [ngClass]="{'article-edited' : getArticulos.edited}">
+                                            <td>{{ getArticulos.codigo }}</td>
+                                            <td>{{ getArticulos.nombre }} </td>
+                                            <td class="text-right">{{ getArticulos.cantidadAprobada | decimalnumber }} </td>
+                                            <td class="text-right">
+                                                 {{ getArticulos.cantidadPendiente | decimalnumber }}
+                                            </td>
+                                            <td pEditableColumn class="text-right" >
+                                                <p-cellEditor>
+                                                    <ng-template pTemplate="input">
+                                                        <input type="number" min="0"
+                                                            class="text-right"
+                                                            [max]="getArticulos.DeliveryPendiente"
+                                                            (change)="handlerChangeCantidad(getArticulos)"
+                                                            (keyup)="dataEdit($event, getArticulos)"
+                                                            (keydown.arrowup)="dataEditKeyUp(getArticulos)"
+                                                            (keydown.arrowdown)="dataEditKeyDown(getArticulos, getArticulos.cantidadEntrega)"
+                                                            (keydown.tab)="focusNextField(i)"
+                                                            (keydown.enter)="focusNextField(i)"
+                                                            pInputText [(ngModel)]="getArticulos.cantidadEntrega"
+                                                        >
+                                                    </ng-template>
+
+                                                    <ng-template pTemplate="output" >
+                                                        {{ getArticulos.cantidadEntrega | decimalnumber }}
+                                                        <i class="fa fa-pencil margin-left"></i>
+                                                        <button [hidden]="!getArticulos.edited" class="btn btn-warning btn-round btn-fab mat-raised-button edited-button" matTooltip="Artículo Editado">
+                                                            <span class="mat-button-wrapper">
+                                                                <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                                            </span>
+                                                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                                            <div class="mat-button-focus-overlay"></div>
+                                                        </button>
+                                                    </ng-template>
+                                                </p-cellEditor>
+                                            </td>
+                                            <td class="text-center">
+                                                <button class="btn btn-danger btn-round btn-fab mat-raised-button" matTooltip="Eliminar artículo" (click)="deletedArticulo(getArticulos)" matTooltipClass='general-tooltip'>
+                                                    <span class="mat-button-wrapper">
+                                                        <i class="fa fa-trash"></i>
+                                                    </span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+
+                                    <!-- Contenido de la tabla con 0 registros -->
+                                    <ng-template pTemplate="emptymessage" let-columns>
+                                        <tr class="text-center">
+                                            <td [attr.colspan]="6">
+                                            <p>No hay registros disponibles para mostrar</p>
+                                            </td>
+                                        </tr>
+                                    </ng-template>
+                                </p-table>
+                            </div>
+
+                            <!-- Agregar Items a la entregas -->
+                            <div class="col-12 mb-2 mt-3">
+
+                                <button  class="btn btn-success pull-right mat-raised-button mt-2"
+                                    (click)="save()">
+                                    <span class="mat-button-wrapper">
+                                        <i class="material-icons">save</i>
+                                        <span class="ml-1">Guardar</span>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button>
+
+                                <button  class="btn btn-warning pull-right mat-raised-button mt-2"
+                                    (click)="openEditModal(modalEdit)">
+                                    <span class="mat-button-wrapper">
+                                        <i class="material-icons">note_add</i>
+                                        <span class="ml-1">Articulos pendientes</span>
+                                    </span>
+                                    <div class="mat-button-ripple mat-ripple"></div>
+                                    <div class="mat-button-focus-overlay"></div>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Programacion de entregas -->
+<ng-template #mymodal let-modal>
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Editar Cita Entrega</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+
+        <div class="row">
+
+            <div class="col-8 no-padding">
+                <label class="col-12 text-corp">Fecha:</label>
+                <div class="col-12">
+                    <p-calendar
+                        [(ngModel)]="Fecha"
+                        [locale]="calendarFormat"
+                        dateFormat="dd/mm/yy"
+                        [style]="{width:'100%'}"
+                        inputStyleClass="form-control"
+                        [minDate]="today"
+                        placeholder="__/__/____"
+                        value="fecha">
+                    </p-calendar>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <label class="col-12 text-corp">Hora:</label>
+                <div class="col-12">
+                    <p-calendar
+                        [(ngModel)]="Hora"
+                        [style]="{width:'100%'}"
+                        [timeOnly]="true"
+                        inputStyleClass="form-control"
+                        hourFormat="24">
+                    </p-calendar>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12 no-padding">
+                <label class="col-12 text-corp">Tipo Vehiculo:</label>
+                <div class="col-12">
+                    <p-dropdown
+                        [options]="tiposVehiculo"
+                        [showClear]="true"
+                        [style]="{'width':'100%'}"
+                        [panelStyle]="{'background-color': 'white'}"
+                        placeholder="Seleccione una opción"
+                        [(ngModel)]="tipoVehiculo"
+                        optionLabel="TipoVehiculo"
+                        (onChange)="handlerChangeTipoVehiculo($event)"
+                        dataKey="TipoVehiculo">
+                        <ng-template let-item pTemplate="item">
+                            {{ item.value.TipoVehiculo }} / ({{ item?.value.capacidad | decimalnumber }} KG)
+                        </ng-template>
+                    </p-dropdown>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="modal-footer mt-4">
+        <!-- <button type="button" class="btn btn-danger mr-1" (click)="modal.dismiss('Cross click')">Cancelar</button> -->
+        <button type="button" class="btn btn-success" (click)="changeDate(); modal.dismiss('Cross click')">Actualizar</button>
+    </div>
+
+</ng-template>
+
+<!-- Modal edición -->
+<ng-template #modalEdit let-modal>
+
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Artículos Pendientes por Programar</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+
+        <div class="row">
+        </div>
+
+        <div class="row align-items-center">
+            <div class="col-12 mt-2">
+
+                <p-table #dt class="table table-striped"
+                    [value]="pendientes"
+                    selectionMode="multiple"
+                    [(selection)]="selectedItems"
+                    [responsive]="true"
+
+                    columnResizeMode=expand [paginator]="false">
+
+                    <ng-template pTemplate="header">
+                        <tr class="text-corp">
+                            <th class="columnCheck" id="init" style.width="{{'2%'}}">
+                                <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                            </th>
+                            <th *ngFor="let item of columnsModal"
+                                class="{{ item.class }}  align-items-center"
+                                [style.width]="item.width">
+                                {{ item.header }}
+                            </th>
+                        </tr>
+                    </ng-template>
+
+                    <ng-template pTemplate="body" let-pendientes >
+                        <tr class="ng-star-inserted" [pSelectableRow]="pendientes" class="select" >
+                            <td id="initbody">
+                                <p-tableCheckbox [value]="pendientes"></p-tableCheckbox>
+                            </td>
+                            <td>{{ pendientes.codigo }}</td>
+                            <td>{{ pendientes.nombre }} </td>
+                            <td>
+                                {{ pendientes.cantidadAprobada | decimalnumber }} Kg
+                            </td>
+                            <td class="text-center">
+                                {{ pendientes.cantidadPendiente | decimalnumber }} Kg
+                            </td>
+                        </tr>
+                    </ng-template>
+
+                    <!-- Contenido de la tabla con 0 registros -->
+                    <ng-template pTemplate="emptymessage" let-columns>
+                        <tr class="text-center">
+                            <td [attr.colspan]="5">
+                            <p>No hay registros disponibles para mostrar</p>
+                            </td>
+                        </tr>
+                    </ng-template>
+
+                </p-table>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal-footer mt-4">
+        <button type="button" class="btn btn-danger mr-1" (click)="modal.dismiss('Cross click')">Cancelar</button>
+        <button type="button" class="btn btn-success" (click)="addItems(); modal.dismiss('Cross click')">Aceptar</button>
+    </div>
+
+</ng-template>

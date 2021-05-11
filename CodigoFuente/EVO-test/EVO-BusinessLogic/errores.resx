@@ -1,0 +1,1270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="errAccionNoInformada" xml:space="preserve">
+    <value>La acción del usuario no fue informada</value>
+  </data>
+  <data name="errCaracteresExcedidos" xml:space="preserve">
+    <value>El número de carácteres insertados supera el permitido</value>
+  </data>
+  <data name="errFiltroAccionVacio" xml:space="preserve">
+    <value>El filtro de acción se encuentra vacío</value>
+  </data>
+  <data name="errFiltroFechaVacio" xml:space="preserve">
+    <value>El filtro de fecha se encuentra vacío</value>
+  </data>
+  <data name="errFiltroFormatoFechaInvalido" xml:space="preserve">
+    <value>El formato de la fecha no es válido, debe ser dd-mm-aaaa o introudcir una porción de la fecha aaaa, mm-aaaa</value>
+  </data>
+  <data name="errFiltroIPVacia" xml:space="preserve">
+    <value>El campo de la IP no puede estar vacío</value>
+  </data>
+  <data name="errIdNegativo" xml:space="preserve">
+    <value>No se puede ingresar un número menor a 0</value>
+  </data>
+  <data name="errIPFormatoIncorrecto" xml:space="preserve">
+    <value>La IP no tiene el formato correcto</value>
+  </data>
+  <data name="errIPNoInformada" xml:space="preserve">
+    <value>La IP no fue informada</value>
+  </data>
+  <data name="errNombreRolVacio" xml:space="preserve">
+    <value>El nombre no puede estar vacio o no se encuentra registrado en el sistema</value>
+  </data>
+  <data name="erroFiltroUsuarioVacio" xml:space="preserve">
+    <value>El campo del usuario no puede estar vacío</value>
+  </data>
+  <data name="errPaginacionSuperada" xml:space="preserve">
+    <value>El tamaño de los registros a cargar no puede superar un número máximo de: {0} registros.</value>
+  </data>
+  <data name="errRolIdVacio" xml:space="preserve">
+    <value>Debe especificar el id del rol</value>
+  </data>
+  <data name="errRolVacio" xml:space="preserve">
+    <value>El rol especificado no existe en el sistema</value>
+  </data>
+  <data name="errRolYaExiste" xml:space="preserve">
+    <value>El rol ya se encuentra creado en el sistema</value>
+  </data>
+  <data name="errUsuarioNoExiste" xml:space="preserve">
+    <value>El usuario: {0} no existe en el sistema</value>
+  </data>
+  <data name="errUsuarioNoInformado" xml:space="preserve">
+    <value>El usuario no fue informado</value>
+  </data>
+  <data name="errIdFuncionalidadNoExiste" xml:space="preserve">
+    <value>El Id de la funcionalidad: {0} no existe</value>
+  </data>
+  <data name="errNombreParametroGeneral" xml:space="preserve">
+    <value>El nombre del parámetro general no fue informado</value>
+  </data>
+  <data name="errValorParametroGeneral" xml:space="preserve">
+    <value>El valor del parámetro general no fue informado</value>
+  </data>
+  <data name="errFiltroVacio" xml:space="preserve">
+    <value>El filtro no puede estar vacío</value>
+  </data>
+  <data name="errParamDesdeCero" xml:space="preserve">
+    <value>El valor del parámetro desde debe ser mayor a 0</value>
+  </data>
+  <data name="errParametrosFiltroVacios" xml:space="preserve">
+    <value>Debe especificar alguno de los filtros para realizar el proceso de búsqueda</value>
+  </data>
+  <data name="errParamHastaMenorDesde" xml:space="preserve">
+    <value>El valor del parámetro hasta debe ser mayor al valor del parámetro desde</value>
+  </data>
+  <data name="errParametroGeneralNoNumerico" xml:space="preserve">
+    <value>El valor del parámetro general: {0} debe ser numérico</value>
+  </data>
+  <data name="errObtenerTodosRoles" xml:space="preserve">
+    <value>No se pudo obtener todos los roles</value>
+  </data>
+  <data name="errObtenerTotalRegistros" xml:space="preserve">
+    <value>No se pudo obtener el total de registros</value>
+  </data>
+  <data name="errObtenerValorPorNombre" xml:space="preserve">
+    <value>No se pudo obtener el valor por nombre</value>
+  </data>
+  <data name="errIdUsuarioNoExiste" xml:space="preserve">
+    <value>El Id del usuario: {0} no existe</value>
+  </data>
+  <data name="errParametroGeneralVacio" xml:space="preserve">
+    <value>El parámetro se encuentra vacio {0}</value>
+  </data>
+  <data name="errRegistroAuditoriaVacio" xml:space="preserve">
+    <value>El registro de auditoria no puede estar vacío</value>
+  </data>
+  <data name="errParametroGeneralIdVacio" xml:space="preserve">
+    <value>Debe especificar el id del parámetro general</value>
+  </data>
+  <data name="errNombreModuloVacio" xml:space="preserve">
+    <value>Debe especificar el nombre del módulo</value>
+  </data>
+  <data name="errUsuarioRolVacio" xml:space="preserve">
+    <value>El UsuarioRol no puede estar vacio</value>
+  </data>
+  <data name="errRolIdInValido" xml:space="preserve">
+    <value>El Id del rol no es válido</value>
+  </data>
+  <data name="errUsuarioIdValido" xml:space="preserve">
+    <value>El Id del usuario no es válido</value>
+  </data>
+  <data name="errUsuarioAsociadoARol" xml:space="preserve">
+    <value>{0} ya está asociado a este rol</value>
+  </data>
+  <data name="errNombreNoInformado" xml:space="preserve">
+    <value>El nombre no fue informado</value>
+  </data>
+  <data name="errUsuarioNoAsociadoARol" xml:space="preserve">
+    <value>{0} no está asociado a este rol</value>
+  </data>
+  <data name="errAsignarRolVacio" xml:space="preserve">
+    <value>Asignar rol no fue informado </value>
+  </data>
+  <data name="errRolNoExiste" xml:space="preserve">
+    <value>El rol no existe</value>
+  </data>
+  <data name="errNombreParametroGeneralYaExiste" xml:space="preserve">
+    <value>El nombre del parámetro general ya existe en el sistema</value>
+  </data>
+  <data name="errParametroGeneralNoExiste" xml:space="preserve">
+    <value>El parámetro general solicitado no existe en el sistema</value>
+  </data>
+  <data name="errRolIdNoExiste" xml:space="preserve">
+    <value>El Id del rol a actualizar no existe</value>
+  </data>
+  <data name="errUsuariosARol" xml:space="preserve">
+    <value>Los usuarios a asociar no fueron informados</value>
+  </data>
+  <data name="errRolInactivo" xml:space="preserve">
+    <value>El rol no se puede editar porque está inactivo</value>
+  </data>
+  <data name="errNoRolNoAsociarUsuarios" xml:space="preserve">
+    <value>No se puede agregar usuarios ya que el rol está inactivo</value>
+  </data>
+  <data name="errAutenticacionSolicitudVacio" xml:space="preserve">
+    <value>La solicitud de autenticación no fue informada</value>
+  </data>
+  <data name="errDominioNoInformado" xml:space="preserve">
+    <value>El Usuario no tiene dominio</value>
+  </data>
+  <data name="errSesionNoExiste" xml:space="preserve">
+    <value>La sesión no existe</value>
+  </data>
+  <data name="errTokenNoInformado" xml:space="preserve">
+    <value>El token no fue informado</value>
+  </data>
+  <data name="errValidarSolicitudVacio" xml:space="preserve">
+    <value>Validar solicitud no fue informado</value>
+  </data>
+  <data name="errIdModuloNoExiste" xml:space="preserve">
+    <value>El Id de el Mòdulo no existe en el sistema</value>
+  </data>
+  <data name="errModuloNoExiste" xml:space="preserve">
+    <value>El modulo no se encuentra registrado en el sistema</value>
+  </data>
+  <data name="errJobNoExisteEnBD" xml:space="preserve">
+    <value>El Job {0} no existe en la base de datos</value>
+  </data>
+  <data name="errParametroGeneralNoExisteBD" xml:space="preserve">
+    <value>El parámetro general {0} no existe en base de datos </value>
+  </data>
+  <data name="errPasoNoExisteEnJob" xml:space="preserve">
+    <value>El paso {0} no existe en el Job</value>
+  </data>
+  <data name="errProgramacionNoExisteEnJob" xml:space="preserve">
+    <value>La programación {0} no existe en e Job</value>
+  </data>
+  <data name="errProgramarSolicitudDiaNoFormato" xml:space="preserve">
+    <value>La hora de programación diaria de la integración no cumple con el formato correcto</value>
+  </data>
+  <data name="errProgramarSolicitudHoraNoInformado" xml:space="preserve">
+    <value>La hora de programación diaria de la integración no fue informada</value>
+  </data>
+  <data name="errProgramarSolicitudNoInformado" xml:space="preserve">
+    <value>Programar solicitud no fué informado</value>
+  </data>
+  <data name="errhabilitarEjecucionIntegracionSolicitudNoInformado" xml:space="preserve">
+    <value>HabilitarEjecución integración no fue informado</value>
+  </data>
+  <data name="errHoraFormatoInvalido" xml:space="preserve">
+    <value>La hora debe ser con el formáto HH:MM:SS:MS</value>
+  </data>
+  <data name="errSistemaVacio" xml:space="preserve">
+    <value>Debe seleccionar al menos uno de los sistemas que tendrá acceso al rol</value>
+  </data>
+  <data name="errProgramarFechaFinFrecuenciaDiaNoFormato" xml:space="preserve">
+    <value>La fecha de programación de fin de la frecuencia al día no tiene el formato correcto</value>
+  </data>
+  <data name="errProgramarFechaInicioFrecuenciaDiaNoFormato" xml:space="preserve">
+    <value>La fecha de programación de inicio de la frecuencia al día no tiene el formato correcto</value>
+  </data>
+  <data name="errProgramarSolicitudFrecuenciaMayorA100" xml:space="preserve">
+    <value>El frecuencia no debe ser mayor a 100 minutos</value>
+  </data>
+  <data name="errProgramarSolicitudFrecuenciaMenorA5" xml:space="preserve">
+    <value>La frecuencia deber ser mayor o igual a 5 minutos</value>
+  </data>
+  <data name="errProgramarSolicitudFrecuenciaNoInformado" xml:space="preserve">
+    <value>La frecuencia no fué informada</value>
+  </data>
+  <data name="errTipoProgramacionNoExiste" xml:space="preserve">
+    <value>El tipo de programación seleccionado no existe</value>
+  </data>
+  <data name="errCantidadArticuloNoInformado" xml:space="preserve">
+    <value>Cantidad no informado</value>
+  </data>
+  <data name="errCodigoArticuloNoInformado" xml:space="preserve">
+    <value>Código del artículo no informado</value>
+  </data>
+  <data name="errCodigoPuntoVentaNoInformado" xml:space="preserve">
+    <value>El código del punto de venta no fué informado</value>
+  </data>
+  <data name="errEstadoArticuloNoInformado" xml:space="preserve">
+    <value>Estado artículo no informado</value>
+  </data>
+  <data name="errFechaEntregaFechaPedidoMenor" xml:space="preserve">
+    <value>La fecha de entrega no puede ser menor a la fecha del pedido</value>
+  </data>
+  <data name="errFechaFormatoDDMMYYY" xml:space="preserve">
+    <value>La fecha debe tener el formato dd/mm/yyyy</value>
+  </data>
+  <data name="errHoraFinMayor" xml:space="preserve">
+    <value>La hora final no puede ser menor a la inicial</value>
+  </data>
+  <data name="errPedidoVacio" xml:space="preserve">
+    <value>El Pedido no fué informado</value>
+  </data>
+  <data name="errSolicitudNoInformado" xml:space="preserve">
+    <value>"Solicitud Para" no informado</value>
+  </data>
+  <data name="errUnidadMedidaArticuloNoInformado" xml:space="preserve">
+    <value>Unidad medida no informado</value>
+  </data>
+  <data name="errBodegaNoEncontrada" xml:space="preserve">
+    <value>La bodega con código {0} no está registrada</value>
+  </data>
+  <data name="errCodigoNoInformado" xml:space="preserve">
+    <value>El código no fué informado</value>
+  </data>
+  <data name="errEstadoPedidoNoRegistrado" xml:space="preserve">
+    <value>El estado del pedido no está registrado</value>
+  </data>
+  <data name="codigoArticuloNoInformado" xml:space="preserve">
+    <value>El código del artículo no fué informado</value>
+  </data>
+  <data name="codigoBodegaNoInformado" xml:space="preserve">
+    <value>El código de la bodega no fué informado</value>
+  </data>
+  <data name="errArticuloBodegaNoRegistrado" xml:space="preserve">
+    <value>El artículo en la bodega no está registrado</value>
+  </data>
+  <data name="errUnidadeMedidaNoRegistrado" xml:space="preserve">
+    <value>La unidad de medida no está registrada</value>
+  </data>
+  <data name="errUnidadMedidaNoInformado" xml:space="preserve">
+    <value>La unidad de medida no fué informada</value>
+  </data>
+  <data name="errBodegaNoRegistrada" xml:space="preserve">
+    <value>La bodega no está registrada</value>
+  </data>
+  <data name="errEstadoPedidoNoInformado" xml:space="preserve">
+    <value>Estado pedido no fué informado</value>
+  </data>
+  <data name="errFechaEntregaObligatoria" xml:space="preserve">
+    <value>La fecha de entrega es obligatioria</value>
+  </data>
+  <data name="errNomobreEstadoPedidoNoInformado" xml:space="preserve">
+    <value>El nombre del estado de pedido no fué informado</value>
+  </data>
+  <data name="errCodigosBodegasNoInformadas" xml:space="preserve">
+    <value>El código de las bodegas no fueron informadas</value>
+  </data>
+  <data name="errBuscarArticuloNoInformado" xml:space="preserve">
+    <value>Los parámetros de búsqueda del articulo no fueron informados</value>
+  </data>
+  <data name="errFechaDesde" xml:space="preserve">
+    <value>Fecha desde no informado</value>
+  </data>
+  <data name="errFechaPara" xml:space="preserve">
+    <value>Fecha para no informado</value>
+  </data>
+  <data name="errPendientePedidoNoInformado" xml:space="preserve">
+    <value>Estado pendiente no informado</value>
+  </data>
+  <data name="errCodigoArticuloFormatoIncorrecto" xml:space="preserve">
+    <value>El código del artículo no tiene el formáto correcto</value>
+  </data>
+  <data name="codigoBodegaNoFormato" xml:space="preserve">
+    <value>El código de la bodega no tiene el formato correcto</value>
+  </data>
+  <data name="errArticuloCantidadPedidoExcede" xml:space="preserve">
+    <value>No se puede solicitar más de 2 artículos con el mismo código</value>
+  </data>
+  <data name="errArticuloTipoPedidoExcede" xml:space="preserve">
+    <value>No se puede agregar el mismo artículo con el mismo estado</value>
+  </data>
+  <data name="errPedidoIdNoInformado" xml:space="preserve">
+    <value>El PedidoId no fue informádo</value>
+  </data>
+  <data name="errConfiguracionNotificacion" xml:space="preserve">
+    <value>Configuración notificación no informada</value>
+  </data>
+  <data name="errFechaFormatoMMDDYYY" xml:space="preserve">
+    <value>La fecha no está con formáto mm/dd/yyyy</value>
+  </data>
+  <data name="errFechaHasta" xml:space="preserve">
+    <value>"Fecha Hasta" no informada</value>
+  </data>
+  <data name="errPedidoBorrador" xml:space="preserve">
+    <value>PedidoBorrador no fué informado</value>
+  </data>
+  <data name="errArticuloNoExisteEnBaseDeDatos" xml:space="preserve">
+    <value>El artículo {0} no existe en base de datos</value>
+  </data>
+  <data name="errCostosTransporteNoInformado" xml:space="preserve">
+    <value>Costos Transporte no informádo</value>
+  </data>
+  <data name="errFilaSinCodigoNombre" xml:space="preserve">
+    <value>La fila {0} del excel no está informado con se debe</value>
+  </data>
+  <data name="errValorCostoTransporteNoFormato" xml:space="preserve">
+    <value>El valor del costo de transporte de la fila {0} no tiene el formato correcto</value>
+  </data>
+  <data name="errValorCostoTransporteNoInformado" xml:space="preserve">
+    <value>El valor del costo de transporte de la fila {0} no fue informado</value>
+  </data>
+  <data name="errArticulosConelMismoEstado" xml:space="preserve">
+    <value>No pueden haber 2 artículos con el mismo estado</value>
+  </data>
+  <data name="errFechaHastaMenorDesde" xml:space="preserve">
+    <value>La fecha Hasta no debe ser menor a fecha Desde</value>
+  </data>
+  <data name="errNoStockEVO" xml:space="preserve">
+    <value>El stock es inferior a la cantidad aprobada</value>
+  </data>
+  <data name="errPrefijoBodegasNoInformado" xml:space="preserve">
+    <value>El Prefijo de las bodegas no fué informado</value>
+  </data>
+  <data name="errArticuloNoAprobadoEnPlanta" xml:space="preserve">
+    <value>Hay artículos en entregas que no fueron aprobados en comercial</value>
+  </data>
+  <data name="errDetallePedidoEntregaNoPedido" xml:space="preserve">
+    <value>Artículo a entregar no se encuentra en el pedido</value>
+  </data>
+  <data name="errDetallePedidoIdNoInformado" xml:space="preserve">
+    <value>DetallePedidoId no informado</value>
+  </data>
+  <data name="errEntregaNoInformada" xml:space="preserve">
+    <value>Las entrega no fue informada</value>
+  </data>
+  <data name="errFechaEntrega" xml:space="preserve">
+    <value>Fecha de entrega de  no informada</value>
+  </data>
+  <data name="errHoraEntrega" xml:space="preserve">
+    <value>Fecha hora de entrega no informada</value>
+  </data>
+  <data name="errHoraFormatoHHMM" xml:space="preserve">
+    <value>El formato de HH:MM no es valido</value>
+  </data>
+  <data name="errPedidoNOExiste" xml:space="preserve">
+    <value>El pedido no existe</value>
+  </data>
+  <data name="errEntregaIdNoInformado" xml:space="preserve">
+    <value>Id de la entrega no informado</value>
+  </data>
+  <data name="errDetalleEntregaIdNoInformado" xml:space="preserve">
+    <value>Detalle de entrega id  no informado</value>
+  </data>
+  <data name="errEntreaSinDetalles" xml:space="preserve">
+    <value>La entrega no tiene detalles</value>
+  </data>
+  <data name="errEntregaNoExiste" xml:space="preserve">
+    <value>La entrega no existe</value>
+  </data>
+  <data name="errIdsEntregasNoInformados" xml:space="preserve">
+    <value>Los ids de las entregas no fueron informados</value>
+  </data>
+  <data name="errEntregaSinDetalles" xml:space="preserve">
+    <value>La entrega no contiene detalles</value>
+  </data>
+  <data name="errEntregasNoInformadas" xml:space="preserve">
+    <value>El pedido no tiene entregas</value>
+  </data>
+  <data name="errMotivoIdNoInformado" xml:space="preserve">
+    <value>Modivo id no informado</value>
+  </data>
+  <data name="errMotivoNoExiste" xml:space="preserve">
+    <value>El Motivo no está registrado</value>
+  </data>
+  <data name="errVehiculoIdNoInformado" xml:space="preserve">
+    <value>VehiculoId no fue informado</value>
+  </data>
+  <data name="errAuxiliarIdNoInformada" xml:space="preserve">
+    <value>AudxiliarId no informado</value>
+  </data>
+  <data name="errAuxiliarNoRegistrado" xml:space="preserve">
+    <value>Auxiliar no esta registrado</value>
+  </data>
+  <data name="errCapacidadVehiculoExcedida" xml:space="preserve">
+    <value>El peso de la entrega {0} kg excede la capacidad {1} del vehiculo con placa {2}</value>
+  </data>
+  <data name="errConductorIdNoInformada" xml:space="preserve">
+    <value>ConductorId no informado</value>
+  </data>
+  <data name="errConductorNoRegistrado" xml:space="preserve">
+    <value>Conductor no esta registrado</value>
+  </data>
+  <data name="errEmpleadoIdNoInformado" xml:space="preserve">
+    <value>EmpleadoId no fue informado</value>
+  </data>
+  <data name="errEntregaDistribucionNoInformada" xml:space="preserve">
+    <value>EntregaDistribución no fue informada</value>
+  </data>
+  <data name="errUsuarioNoRegistrado" xml:space="preserve">
+    <value>Usuario no registrado</value>
+  </data>
+  <data name="errVehiculoNoRegistrado" xml:space="preserve">
+    <value>El vehiculo no está registrado</value>
+  </data>
+  <data name="errConductorAuxiliarIgual" xml:space="preserve">
+    <value>El conductor y auxiliar no pueden ser el mismo empleado</value>
+  </data>
+  <data name="errEmpleadosMismoCargo" xml:space="preserve">
+    <value>Los empleados no pueden ser del mismo cargo</value>
+  </data>
+  <data name="errUsuarioIdNoExiste" xml:space="preserve">
+    <value>UsuarioId no existe</value>
+  </data>
+  <data name="errUsuarioNoRoles" xml:space="preserve">
+    <value>El usuario no tiene roles asignados</value>
+  </data>
+  <data name="errUsuarioNoDirectorio" xml:space="preserve">
+    <value>El usuario no está en el directorio activo</value>
+  </data>
+  <data name="errUsuarioNoEVO" xml:space="preserve">
+    <value>El usuario no está en EVO</value>
+  </data>
+  <data name="errVehiculoEntregaId" xml:space="preserve">
+    <value>VehiculoEntregaId no informado</value>
+  </data>
+  <data name="errArtuloEntregaNoExiste" xml:space="preserve">
+    <value>El artículo asociado a la entrega no existe</value>
+  </data>
+  <data name="errIdArticuloEntrega" xml:space="preserve">
+    <value>DetalleEntregaId no se informó correctamente</value>
+  </data>
+  <data name="errActualizarEntregaNula" xml:space="preserve">
+    <value>El objeto ActualizarEntrea llegó vacío</value>
+  </data>
+  <data name="errArticulosEntregasNulo" xml:space="preserve">
+    <value>Los artículos de la actualización de entrega están vacíos</value>
+  </data>
+  <data name="errCantidadArticuloEntrega" xml:space="preserve">
+    <value>El cantidad del artículo no puede ser cero</value>
+  </data>
+  <data name="errIdEstadoArticulo" xml:space="preserve">
+    <value>Id del estado del artículo no informado</value>
+  </data>
+  <data name="errTipoMotivoNoInformado" xml:space="preserve">
+    <value>El Tipo de motivo no ha sido informado</value>
+  </data>
+  <data name="errDetalleEntregaIdNula" xml:space="preserve">
+    <value>El parametro DetalleEntregaID llegó nula.</value>
+  </data>
+  <data name="errProcesoIdNoInformado" xml:space="preserve">
+    <value>ProcesoId no ha sido informado</value>
+  </data>
+  <data name="errMuelleIdIdNoInformado" xml:space="preserve">
+    <value>El id del muelle no fue informado</value>
+  </data>
+  <data name="errCantidadEntregaCeroNegativa" xml:space="preserve">
+    <value>La cantidad de entrega no puede ser negativa o cero</value>
+  </data>
+  <data name="errCantidadAprobadaCeroNegativa" xml:space="preserve">
+    <value>La cantidad aprobada no puede ser cero o negativa</value>
+  </data>
+  <data name="errCantidadEntregaAprobada" xml:space="preserve">
+    <value>La cantidad de entrega no debe exceder a la aprobada</value>
+  </data>
+  <data name="errCantidadEntregaPendiente" xml:space="preserve">
+    <value>La cantidad de entrega no debe exceder a la pendiente(nuevo)</value>
+  </data>
+  <data name="errCantidadPendienteCeroNegativa" xml:space="preserve">
+    <value>La cantidad pendiente no puede ser cero o negativa</value>
+  </data>
+  <data name="errActualizarVehiculoNoInformada" xml:space="preserve">
+    <value>Objetos para actualizar vehículos en entrega, no fué informado</value>
+    <comment>Andres H</comment>
+  </data>
+  <data name="errTipoVehiculoIdNoInformado" xml:space="preserve">
+    <value>TipoVehiculoId no ha sido informado</value>
+  </data>
+  <data name="errEntregaAsignadaViaje" xml:space="preserve">
+    <value>La entrega ya ha sido asignada a un viaje</value>
+  </data>
+  <data name="errFechaEntregaMismaFecha" xml:space="preserve">
+    <value>Las fechas de entrega deben ser iguales</value>
+  </data>
+  <data name="errArticuloNoExisteEnEntrega" xml:space="preserve">
+    <value>El artículo no existe en la entrega</value>
+  </data>
+  <data name="errArticulosEntregasNoInformados" xml:space="preserve">
+    <value>Los artículos de la entrega no fueron informados</value>
+  </data>
+  <data name="errNombreArticuloNoInformado" xml:space="preserve">
+    <value>Nombre de artículo no informado</value>
+  </data>
+  <data name="errDetalleEntregaRespuestaNoInformado" xml:space="preserve">
+    <value>EntregaRespuesta no informado</value>
+  </data>
+  <data name="errPesajeBasculaSolcitud" xml:space="preserve">
+    <value>PesajeBasculaSolicitud no informado</value>
+  </data>
+  <data name="errContenedoresNoInformados" xml:space="preserve">
+    <value>Cantidad de contenedores no informados</value>
+  </data>
+  <data name="errContenedorIdNoInformado" xml:space="preserve">
+    <value>ContenedorId no informado</value>
+  </data>
+  <data name="errPesoNoInformado" xml:space="preserve">
+    <value>Peso no informado</value>
+  </data>
+  <data name="errTipoBasculaIdNoInformado" xml:space="preserve">
+    <value>TipoBasculaId no fué informado</value>
+  </data>
+  <data name="errPesoArticuloNoInformado" xml:space="preserve">
+    <value>El peso del artículo no fue informado</value>
+  </data>
+  <data name="errPesoArticuloSuperiorBascula" xml:space="preserve">
+    <value>El peso del artículo no debe ser igual o superior a de la báscula</value>
+  </data>
+  <data name="errTipoContenedorIdDuplicado" xml:space="preserve">
+    <value>TipoContenedorId no puede estar más de dos veces</value>
+  </data>
+  <data name="errTipoContenedorNoExiste" xml:space="preserve">
+    <value>Tipo Contenedor no existe</value>
+  </data>
+  <data name="errContenedorBaseNoInformado" xml:space="preserve">
+    <value>Contenedor Base no informado(obligatorio)</value>
+  </data>
+  <data name="errContenedorNombreNoInformado" xml:space="preserve">
+    <value>Nombre de contenedor no informado</value>
+  </data>
+  <data name="errPesoArticuloMalCalculado" xml:space="preserve">
+    <value>El peso del artículo ha sido mal calculado</value>
+  </data>
+  <data name="errCodigoClienteNoInformado" xml:space="preserve">
+    <value>El código del cliente no fue informado</value>
+  </data>
+  <data name="errClienteNoExiste" xml:space="preserve">
+    <value>El cliente no existe</value>
+  </data>
+  <data name="errArticuloNoExiste" xml:space="preserve">
+    <value>El artículo no existe</value>
+  </data>
+  <data name="errPesajeSuperior" xml:space="preserve">
+    <value>El pesaje supera la tolerancia superior</value>
+  </data>
+  <data name="errEstadoEntregaNoRegistrado" xml:space="preserve">
+    <value>EstadoEntrega no registrado</value>
+  </data>
+  <data name="errEstadoEntregaIdNoInformado" xml:space="preserve">
+    <value>El id del estado de la entrega no ha sido informado</value>
+  </data>
+  <data name="errPesajeEntregaNoRegistrado" xml:space="preserve">
+    <value>PesajeEntrega no está registrado</value>
+  </data>
+  <data name="errBaseBinSoloLosdos" xml:space="preserve">
+    <value>El contenedor Bin solo debe de ir con contenedor base</value>
+  </data>
+  <data name="errCantidadContenedoresNoInformado" xml:space="preserve">
+    <value>Cantidad de contenedores no informada</value>
+  </data>
+  <data name="errPesajeRequestNoInformado" xml:space="preserve">
+    <value>PesajeRequest no fue informado</value>
+  </data>
+  <data name="errPesoBasculaNoInformado" xml:space="preserve">
+    <value>Peso báscula no informado</value>
+  </data>
+  <data name="errTipoContenedorNoInformado" xml:space="preserve">
+    <value>TipoContenedorId no informado</value>
+  </data>
+  <data name="errPesajeEntregaIdNoInformado" xml:space="preserve">
+    <value>PesajeEntregaId no fue Informado</value>
+  </data>
+  <data name="errBarrasNoInformado" xml:space="preserve">
+    <value>Código de barras no informado</value>
+  </data>
+  <data name="errBarrasSoloNumeros" xml:space="preserve">
+    <value>Código de barras solo debe ser números</value>
+  </data>
+  <data name="errLogintudBarras" xml:space="preserve">
+    <value>La longitud del código de barras no es la adecuada</value>
+  </data>
+  <data name="errPesajeIdNoInformado" xml:space="preserve">
+    <value>Pesaje Id no informado</value>
+  </data>
+  <data name="errPesajeNORegistrado" xml:space="preserve">
+    <value>Pesaje no registrado</value>
+  </data>
+  <data name="errBarrasNoConcuerdaArticulo" xml:space="preserve">
+    <value>El código no barras no concuerda con el artículo pesado</value>
+  </data>
+  <data name="errPesoBarras" xml:space="preserve">
+    <value>Peso código de barras no informada</value>
+  </data>
+  <data name="errUnidadesBarras" xml:space="preserve">
+    <value>Unidades código de barras no informada</value>
+  </data>
+  <data name="errbOCantidadRecibidaRequestNoInformado" xml:space="preserve">
+    <value>CantidadRecibidaRequest no ha sido informado</value>
+  </data>
+  <data name="errCantidadRecibidaNoInformada" xml:space="preserve">
+    <value>Cantidad recibida no informada</value>
+  </data>
+  <data name="errPesajeArticuloNoRegistrado" xml:space="preserve">
+    <value>Pesaje artículo no registrado</value>
+  </data>
+  <data name="errSoloUnidadMedidaUnidad" xml:space="preserve">
+    <value>Solo aplica a unidad de medida "UNIDAD"</value>
+  </data>
+  <data name="errEstadoArticuloCodigoBarras" xml:space="preserve">
+    <value>Estado artículo codigo barras no concuerda con el del pedido</value>
+  </data>
+  <data name="errFechaVencimientoMenor" xml:space="preserve">
+    <value>Fecha vencimiento menor a hoy</value>
+  </data>
+  <data name="errMedidaUnidadNoPesable" xml:space="preserve">
+    <value>Unidad de medida "UNIDAD" no es pesable</value>
+  </data>
+  <data name="errPesajeArticuloIdNoInformado" xml:space="preserve">
+    <value>PesajeartículoId no informado</value>
+  </data>
+  <data name="errUsuarioIdNoInformado" xml:space="preserve">
+    <value>UsuarioId no informado</value>
+  </data>
+  <data name="errArticuloNoPesado" xml:space="preserve">
+    <value>Faltán artículo(s) por pesar</value>
+  </data>
+  <data name="errArchivosRequestNoInformados" xml:space="preserve">
+    <value>Los archivos no fueron informados</value>
+  </data>
+  <data name="errBase64NoInformado" xml:space="preserve">
+    <value>Base64 no informado</value>
+  </data>
+  <data name="errBase64Novalido" xml:space="preserve">
+    <value>Base64 no válido</value>
+  </data>
+  <data name="errEvidenciaRequestNoInformado" xml:space="preserve">
+    <value>EvidenciaRequest no ha sido informado</value>
+  </data>
+  <data name="errExtensionArchivoNoInformado" xml:space="preserve">
+    <value>Extensión del archivo no informado </value>
+  </data>
+  <data name="errExtensionNovalida" xml:space="preserve">
+    <value>Extensión no válida</value>
+  </data>
+  <data name="errNombreArchivoNoInformado" xml:space="preserve">
+    <value>Nombre del archivo no informado</value>
+  </data>
+  <data name="errNombreArchivoNoValido" xml:space="preserve">
+    <value>Nombre de archivo no válido</value>
+  </data>
+  <data name="errObservacionesNoInformadas" xml:space="preserve">
+    <value>Observaciones no fueron informadas</value>
+  </data>
+  <data name="errArchivosIncompletos" xml:space="preserve">
+    <value>Como minimo debe se debe enviar una evidencia y el documento de translado</value>
+  </data>
+  <data name="errArchivosRepetidos" xml:space="preserve">
+    <value>No deben existir archivos repetidos en en el mismo envío</value>
+  </data>
+  <data name="errExtensionArchivoNoValida" xml:space="preserve">
+    <value>La extensión del archivo no es válida</value>
+  </data>
+  <data name="errConsecutivoNoInformado" xml:space="preserve">
+    <value>Consecutivo no informado</value>
+  </data>
+  <data name="errCorreoElectronicoNoInformado" xml:space="preserve">
+    <value>Correo electrónico no informado</value>
+  </data>
+  <data name="errCorreoElectronicoNoValido" xml:space="preserve">
+    <value>Correo electrónico no es válido</value>
+  </data>
+  <data name="errRutaNoInformada" xml:space="preserve">
+    <value>Ruta no informada</value>
+  </data>
+  <data name="errCorreoElectronicoNoRegistrado" xml:space="preserve">
+    <value>Correo eletrónico no está registrado</value>
+  </data>
+  <data name="errCorreosElectronicosNoInformado" xml:space="preserve">
+    <value>Correos electronicos no informados</value>
+  </data>
+  <data name="errCorreosElectronicosObligatorios" xml:space="preserve">
+    <value>Como minimo debe ir el correo emisor y receptor</value>
+  </data>
+  <data name="errNameClienteNoInformado" xml:space="preserve">
+    <value>Nombre de cliente no está registrado</value>
+  </data>
+  <data name="errDocumentoNoExiste" xml:space="preserve">
+    <value>El documento no existe</value>
+  </data>
+  <data name="errLimiteEspacioServidor" xml:space="preserve">
+    <value>El tamaño de los archivos de la evidencia supera el tamaño de alojamiendo del servidor</value>
+  </data>
+  <data name="errTamanioArchivosGoogle" xml:space="preserve">
+    <value>El tamaño máximo de las evidencias no debe sobrepasar los 25 mb</value>
+  </data>
+  <data name="errEvidenciaIdNoInformado" xml:space="preserve">
+    <value>EvideniaId no informado</value>
+  </data>
+  <data name="errEvidenciaNoRegistrada" xml:space="preserve">
+    <value>Evidencia no registrada</value>
+  </data>
+  <data name="errNumeroEntregaNoInformado" xml:space="preserve">
+    <value>NúmeroEntrega no informado</value>
+  </data>
+  <data name="errArchivoNoEncontrado" xml:space="preserve">
+    <value>Archivo no encontrado</value>
+  </data>
+  <data name="errGUIDNoInformado" xml:space="preserve">
+    <value>GUID no informado</value>
+  </data>
+  <data name="errRecepcionFinalizada" xml:space="preserve">
+    <value>La recepción ya fue finalizada</value>
+  </data>
+  <data name="errClientesParametrizacionNoRegistrado" xml:space="preserve">
+    <value>ClienteParametrizacion no registrado</value>
+  </data>
+  <data name="errRecepcionPesajeCodigoBarrasNoInformado" xml:space="preserve">
+    <value>RecepcionPesajeCodigoBarras no informado</value>
+  </data>
+  <data name="errRecepcionPesajeCodigoBarrasNoPesaje" xml:space="preserve">
+    <value>Pesaje por código de barras no permitido en este cliente</value>
+  </data>
+  <data name="errRecepcionToleranciaInferiorNoInformado" xml:space="preserve">
+    <value>RecepcionToleranciaInferior no informado</value>
+  </data>
+  <data name="errRecepcionToleranciaSuperiorNoInformado" xml:space="preserve">
+    <value>RecepcionToleranciaSuperior no informado</value>
+  </data>
+  <data name="errPesajeToleranciaMenor" xml:space="preserve">
+    <value>El pesaje menos la tolerancia inferior no puede ser menor a 0</value>
+  </data>
+  <data name="errAperturaCajaRequestNoInformado" xml:space="preserve">
+    <value>AperturaCajaRequest no informado</value>
+  </data>
+  <data name="errValorAperturaNoInformado" xml:space="preserve">
+    <value>ValorApertura no informado</value>
+  </data>
+  <data name="errCajaNoRegistrada" xml:space="preserve">
+    <value>Caja no registrada</value>
+  </data>
+  <data name="errEstadoCuadreCajaNoInformado" xml:space="preserve">
+    <value>EstadoCuadreCaja no registrado</value>
+  </data>
+  <data name="errInconsistenciaNoRegistrada" xml:space="preserve">
+    <value>Inconsistencia no registrada</value>
+  </data>
+  <data name="errDocumentosNoInformados" xml:space="preserve">
+    <value>Documentos no informados</value>
+  </data>
+  <data name="errIdentificacionNoInformada" xml:space="preserve">
+    <value>Identificación no informada</value>
+  </data>
+  <data name="errSocioNegocioNoRegistrado" xml:space="preserve">
+    <value>El socio de negocio no está registrado</value>
+  </data>
+  <data name="errSocioNegocioInactivo" xml:space="preserve">
+    <value>Socio de negocio inactivo</value>
+  </data>
+  <data name="errFechaMeridiano" xml:space="preserve">
+    <value>Las fechas deben ser todas {0}</value>
+  </data>
+  <data name="errNuevoViaje" xml:space="preserve">
+    <value>Ya existe un viaje en {0}</value>
+  </data>
+  <data name="errVehiculoNuevoViaje" xml:space="preserve">
+    <value>EL vehiculo con placa {0} ya tiene asignado viaje para {1} en la {2}</value>
+  </data>
+  <data name="errVehiculoSinViaje" xml:space="preserve">
+    <value>El vehiculo con placa {0} no tiene viaje disponible para {1} en la {2} </value>
+  </data>
+  <data name="errViajeNoExiste" xml:space="preserve">
+    <value>El viaje no existe</value>
+  </data>
+  <data name="errInconsistencia" xml:space="preserve">
+    <value>Tiene novedad de caja la cual se debe resolver, por lo tanto, valide el cierre del día anterior, y si no se encuentran inconsistencias se debe cumplir con las políticas de {0} a la compañía</value>
+  </data>
+  <data name="errPesajesArticulosIdsNoInformado" xml:space="preserve">
+    <value>PesajesArticulosIds no informado</value>
+  </data>
+  <data name="errPesajesArticulosIdsNoInformados" xml:space="preserve">
+    <value>PesajeArticulos tiene ids no informados</value>
+  </data>
+  <data name="errPesajesArticulosIdsSinIds" xml:space="preserve">
+    <value>PesajesArticulosIds no tiene ids</value>
+  </data>
+  <data name="errTipoInventarioNoRegistrado" xml:space="preserve">
+    <value>TipoInventario no registrado</value>
+  </data>
+  <data name="errProcesoNoRegistrado" xml:space="preserve">
+    <value>Proceso no registrado</value>
+  </data>
+  <data name="errDetallesFacturaIdsNoInformado" xml:space="preserve">
+    <value>DetallesFacturaIds no informado</value>
+  </data>
+  <data name="errDetallesFacturaIdsNoInformados" xml:space="preserve">
+    <value>DetallesFacturaIds tiene Ids no informados</value>
+  </data>
+  <data name="errDetallesFacturaIdsSinIds" xml:space="preserve">
+    <value>DetallesFacturaIds no tiene Ids</value>
+  </data>
+  <data name="errArticuloBodegaNoInformado" xml:space="preserve">
+    <value>ArticuloBodega no informado</value>
+  </data>
+  <data name="errArticuloBodegaStockNoInformado" xml:space="preserve">
+    <value>ArticuloBodega stock no informado</value>
+  </data>
+  <data name="errArticulosFacturaNoInformados" xml:space="preserve">
+    <value>Artículos factura no informados</value>
+  </data>
+  <data name="errCantidadArticuloFacturaNoInformada" xml:space="preserve">
+    <value>Cantidad del artículo a facturar no fue informada</value>
+  </data>
+  <data name="errCodigoImpuestoNoRegistrado" xml:space="preserve">
+    <value>Código Impuesto no registrado o inactivo</value>
+  </data>
+  <data name="errCodigoIVANoInformado" xml:space="preserve">
+    <value>Código del IVA no informado</value>
+  </data>
+  <data name="errFacturaNoInformada" xml:space="preserve">
+    <value>Factura no informada</value>
+  </data>
+  <data name="errIdentificacionClienteNoInformada" xml:space="preserve">
+    <value>IdentificacionCliente no informada</value>
+  </data>
+  <data name="errPorcentajeIVANoInformado" xml:space="preserve">
+    <value>Porcentaje del IVA no informado</value>
+  </data>
+  <data name="errPorcentajeIVASuperaLimite" xml:space="preserve">
+    <value>El porcentaje del IVA no puede ser mayor a 100%</value>
+  </data>
+  <data name="errStockInsuficiente" xml:space="preserve">
+    <value>No hay stock suficiente para la cantidad solicitada del artículo {0}</value>
+  </data>
+  <data name="errTotalAntesDescuento" xml:space="preserve">
+    <value>Total antes del descuento está mal calculado</value>
+  </data>
+  <data name="errValorTotalArticuloFactura" xml:space="preserve">
+    <value>La cantidad por el valor+IVA del artículo {0} no concuerda con el valor total. </value>
+  </data>
+  <data name="errValorTotalArticuloNoInformado" xml:space="preserve">
+    <value>Valor total del artículo a facturar no informado</value>
+  </data>
+  <data name="errValorUnitarioIVANoInformado" xml:space="preserve">
+    <value>Valor unitario más IVA del artículo a facturar no informado</value>
+  </data>
+  <data name="errValorUnitarioMasIVA" xml:space="preserve">
+    <value>El precio unitario más el valor del IVA del artículo {0} a facturar no corresponde con el campo Valor+IVA</value>
+  </data>
+  <data name="errValorUnitarioNoInformado" xml:space="preserve">
+    <value>Valor unitario del artículo a facturar no informado</value>
+  </data>
+  <data name="errVendedorIdNoInformado" xml:space="preserve">
+    <value>VendedorId no informado</value>
+  </data>
+  <data name="errVendedorNoActivo" xml:space="preserve">
+    <value>Vendedor no activo</value>
+  </data>
+  <data name="errVendedorNoRegistrado" xml:space="preserve">
+    <value>Vendedor no registrado</value>
+  </data>
+  <data name="errImpuestoBolsasMalCalculado" xml:space="preserve">
+    <value>ImpuestoBolsas mal calculado</value>
+  </data>
+  <data name="errImpuestoBolsasNoInformado" xml:space="preserve">
+    <value>ImpuestoBolsas no informado</value>
+  </data>
+  <data name="errPorcentajeDescuentoMayo100" xml:space="preserve">
+    <value>PorcentajeDescuento supera el 100%</value>
+  </data>
+  <data name="errPorcentajeDescuentoNoInformado" xml:space="preserve">
+    <value>PorcentajeDescuento no informado</value>
+  </data>
+  <data name="errStockBolsaInsuficiente" xml:space="preserve">
+    <value>No hay stock disponible de bolsas</value>
+  </data>
+  <data name="errTotalAntesDescuentoNoInformado" xml:space="preserve">
+    <value>TotalAntesDescuento no informado</value>
+  </data>
+  <data name="errTotalConDescuentoMalCalculado" xml:space="preserve">
+    <value>TotalConDescuento mal calculado</value>
+  </data>
+  <data name="errValorDescuentoNoInformado" xml:space="preserve">
+    <value>ValorDescuento no informado</value>
+  </data>
+  <data name="errBancoIdNoInfomado" xml:space="preserve">
+    <value>BancoIdNoInformado</value>
+  </data>
+  <data name="errBancoNoRegistrado" xml:space="preserve">
+    <value>Banco no registrado</value>
+  </data>
+  <data name="errConsecutivoBonoNoInformado" xml:space="preserve">
+    <value>Consecutivo del bono porcicarnes no informado</value>
+  </data>
+  <data name="errEmpleadoNoInformado" xml:space="preserve">
+    <value>Empleado no informado</value>
+  </data>
+  <data name="errFormapagoEfectivo" xml:space="preserve">
+    <value>Forma de pago efectivo más de una vez</value>
+  </data>
+  <data name="errFormaPagoIdNoInformado" xml:space="preserve">
+    <value>FormaPagoId no informado</value>
+  </data>
+  <data name="errFormaPagoNoRegistrado" xml:space="preserve">
+    <value>FormaPago no registrado</value>
+  </data>
+  <data name="errFormasPagoNoInformadas" xml:space="preserve">
+    <value>Formas de pago no fueron asignadas</value>
+  </data>
+  <data name="errImpuestoMalCalculado" xml:space="preserve">
+    <value>Impuesto mal calculado</value>
+  </data>
+  <data name="errImpuestoNoInformado" xml:space="preserve">
+    <value>Impuesto no informado</value>
+  </data>
+  <data name="errTotalNoInformado" xml:space="preserve">
+    <value>Total no informado</value>
+  </data>
+  <data name="errValoPagoNoAsignado" xml:space="preserve">
+    <value>Valor de pago no asignado</value>
+  </data>
+  <data name="errValorBolsaNoInformado" xml:space="preserve">
+    <value>Valor Bolsa no informado</value>
+  </data>
+  <data name="errImpuestoBolsas" xml:space="preserve">
+    <value>ImpuestoBolsas no informado</value>
+  </data>
+  <data name="errTipoFacturaNoRegistrado" xml:space="preserve">
+    <value>TipoFactura no registrado</value>
+  </data>
+  <data name="errAperturaCajaNoRegistrada" xml:space="preserve">
+    <value>Apertura de caja no registrada</value>
+  </data>
+  <data name="errArticulosProduccionNoInformados" xml:space="preserve">
+    <value>Articulos a producción no informados</value>
+  </data>
+  <data name="errCodigoPedidoNoInformado" xml:space="preserve">
+    <value>Código pedido no informado</value>
+  </data>
+  <data name="errObservacionExcede" xml:space="preserve">
+    <value />
+  </data>
+  <data name="errContenedoresNoBaseNoInformados" xml:space="preserve">
+    <value>No fueron informados los contenedores</value>
+  </data>
+  <data name="errPesajeAlCinco" xml:space="preserve">
+    <value>Pesaje al cinco no debe superar máximo cinco contenedores(no base) </value>
+  </data>
+  <data name="errPesajeALOcho" xml:space="preserve">
+    <value>Pesaje al ocho no debe superar máximo ocho contenedores(no base)</value>
+  </data>
+  <data name="errEmpaqueNoInformado" xml:space="preserve">
+    <value>Empaque no informado</value>
+  </data>
+  <data name="errTipoSolicitudNoInformado" xml:space="preserve">
+    <value>Tipo solicitud no informado</value>
+  </data>
+  <data name="errPrefijoArticuloPlantaNoRegistrado" xml:space="preserve">
+    <value>Prefijo artículo planta no informado no está registrado</value>
+  </data>
+  <data name="errTipoBodegaNoInformado" xml:space="preserve">
+    <value>Tipo bodega no informado</value>
+  </data>
+  <data name="errEnviarPedidoNoInformado" xml:space="preserve">
+    <value>EnviarPedido no informado</value>
+  </data>
+  <data name="errArticulosNoInformados" xml:space="preserve">
+    <value>Artículos no informados</value>
+  </data>
+  <data name="errNumeroPedidoNoInformado" xml:space="preserve">
+    <value>NumeroPedido no informado</value>
+  </data>
+  <data name="errArticuloNoExistePedido" xml:space="preserve">
+    <value>Artículo no existe en el pedido</value>
+  </data>
+  <data name="errCantidadArticulosDiferente" xml:space="preserve">
+    <value>No concuerda la cantidad de artículos a editar</value>
+  </data>
+  <data name="errModificarCantidadArticuloPedido" xml:space="preserve">
+    <value>No es posible actualizar por una cantidad mayor a la solicitada</value>
+  </data>
+  <data name="errPedidoNoEditable" xml:space="preserve">
+    <value>El pedido no se puede actualizar</value>
+  </data>
+  <data name="errCancelarPedidoNoInformado" xml:space="preserve">
+    <value>CancelarPedido no Informado</value>
+  </data>
+  <data name="tipoSolicitudNoInformado" xml:space="preserve">
+    <value>El Tipo de Solicitud no fué informada</value>
+  </data>
+  <data name="errEmpaqueIdInformadoCompras" xml:space="preserve">
+    <value>El empaque Id  del Artículo no puede ser informado cuando es tipo compras.</value>
+  </data>
+  <data name="errEstadoArticuloIdInformadoCompras" xml:space="preserve">
+    <value>El Estado del Artículo no puede ser informado cuando es tipo compras.</value>
+  </data>
+  <data name="errCantidadGestionarNoInformado" xml:space="preserve">
+    <value>Cantidad Gestionar no informado</value>
+  </data>
+  <data name="errCompraRequestNoInformado" xml:space="preserve">
+    <value>CompraRequest no informado</value>
+  </data>
+  <data name="errAccionIdNoInformado" xml:space="preserve">
+    <value>AccionId no informado</value>
+  </data>
+  <data name="errArticuloCompraExisteAccion" xml:space="preserve">
+    <value>El artículo ya está asociado a esa acción de compra</value>
+  </data>
+  <data name="errActualizarCompraRequestNoInformado" xml:space="preserve">
+    <value>ActualizarCompraRequest no Informado</value>
+  </data>
+  <data name="errArticulosMasVecesEnAccion" xml:space="preserve">
+    <value>Un artículo solo deber estar una vez en cada acción de compra</value>
+  </data>
+  <data name="errAccionNoRegistrada" xml:space="preserve">
+    <value>La acción no esta registrada</value>
+  </data>
+  <data name="errArticuloNoGestionadoCompletamente" xml:space="preserve">
+    <value>Artículos no gestionados completamente</value>
+  </data>
+  <data name="errGestionadaExcedeSolicitada" xml:space="preserve">
+    <value>Cantidad gestionada excede la solicitada</value>
+  </data>
+  <data name="errCantidadGestionarFormato" xml:space="preserve">
+    <value>CantidadGestionar formato no valido</value>
+  </data>
+  <data name="errGestionCompraNoRegistrado" xml:space="preserve">
+    <value>GestionCompra no registrado</value>
+  </data>
+  <data name="errCantidadExcedeFaltante" xml:space="preserve">
+    <value>La cantidad a gestionar supera la cantidad faltante</value>
+  </data>
+  <data name="errPedidoSinArticulos" xml:space="preserve">
+    <value>El pedido no contiene artículos</value>
+  </data>
+  <data name="errArticuloCompraExisteAccionEnvioPV" xml:space="preserve">
+    <value>La compra del artículo está gestionada en Gestionar Compra con Envío a PV</value>
+  </data>
+  <data name="errArticuloCompraExisteAccionGestionCompra" xml:space="preserve">
+    <value>La compra del artículo está gestionada en Gestionar Traslado con Gestión de Compra</value>
+  </data>
+  <data name="errEstadosPedidoNoRegistrados" xml:space="preserve">
+    <value>No hay estados de pedido registrados</value>
+  </data>
+  <data name="errPedidoCompraSinOrdenes" xml:space="preserve">
+    <value>Faltán ordenes de compra sin registrar</value>
+  </data>
+  <data name="errDebeGuardarPedido" xml:space="preserve">
+    <value>Para Generar Documento primero debe Guardar </value>
+  </data>
+  <data name="errProximoNumeroDocumentoNoInformado" xml:space="preserve">
+    <value>ProximoNumeroDocumento no informado</value>
+  </data>
+  <data name="errSerieIDNoInformado" xml:space="preserve">
+    <value>SeridId no informado</value>
+  </data>
+  <data name="errSerieNoRegistrada" xml:space="preserve">
+    <value>Serie no registrada en SAP</value>
+  </data>
+  <data name="errSerieRespuestaNoInformada" xml:space="preserve">
+    <value>SerieRespuesta no informada</value>
+  </data>
+  <data name="errInitialNumNoInformado" xml:space="preserve">
+    <value>InitialNum no informado</value>
+  </data>
+  <data name="errInitialNumNoNumero" xml:space="preserve">
+    <value>InitialNum debe ser un número</value>
+  </data>
+  <data name="errLastNumNoInformado" xml:space="preserve">
+    <value>LastNum no informado</value>
+  </data>
+  <data name="errLastNumNoNumero" xml:space="preserve">
+    <value>LastNum deb ser un número</value>
+  </data>
+  <data name="errNextNumberNoInformado" xml:space="preserve">
+    <value>NextNumber no informado</value>
+  </data>
+  <data name="errNextNumberNoNumero" xml:space="preserve">
+    <value>NextNumber debe ser un número</value>
+  </data>
+  <data name="errSerieNameNoInformado" xml:space="preserve">
+    <value>SerieName no informado</value>
+  </data>
+  <data name="errSerieNoInformado" xml:space="preserve">
+    <value>Serie no informada</value>
+  </data>
+  <data name="errSerieNoNumero" xml:space="preserve">
+    <value>Sere debe ser un número</value>
+  </data>
+  <data name="errAprobadaExcedeSolciitada" xml:space="preserve">
+    <value>Cantidad aprobada excede la solicitida</value>
+  </data>
+  <data name="errEmpaquesNoInformados" xml:space="preserve">
+    <value>Empaques no informados</value>
+  </data>
+  <data name="errFechaLimiteSugeridaMenorAHoy" xml:space="preserve">
+    <value>Fecha limite sugerida no puede ser menor a hoy</value>
+  </data>
+  <data name="errFechaLimiteSugeridaNoInformada" xml:space="preserve">
+    <value>FechaLimiteSugerida no informada</value>
+  </data>
+  <data name="errDocumentoNoInformado" xml:space="preserve">
+    <value>Número de documento no informado</value>
+  </data>
+  <data name="errGestionesComprasNoInformadas" xml:space="preserve">
+    <value>Gestiones compras no informadas</value>
+  </data>
+  <data name="errOrdenCompraNoInformada" xml:space="preserve">
+    <value>Orden de compra no informada</value>
+  </data>
+  <data name="errCantidadExcedeSolicitada" xml:space="preserve">
+    <value>La cantidad a gestionar supera la cantidad solicitada</value>
+  </data>
+  <data name="errArchivoCargaNoInformado" xml:space="preserve">
+    <value>El archivo carga no ha sido informado</value>
+  </data>
+  <data name="errDirectorioNoExiste" xml:space="preserve">
+    <value>El Directorio en el sistema de archivos no existe</value>
+  </data>
+  <data name="errFechaCarga" xml:space="preserve">
+    <value>Fecha de carga no informada</value>
+  </data>
+  <data name="errEstadoInvalido" xml:space="preserve">
+    <value>Este estado no está permitido en este proceso.</value>
+  </data>
+  <data name="errCantidadExcedeSolicitada" xml:space="preserve">
+    <value>La cantidad a gestionar supera la cantidad solicitada</value>
+  </data>
+  <data name="errEnviarPedidoSAP" xml:space="preserve">
+    <value>EnviarPedidoSAP Mensaje {0}</value>
+  </data>
+</root>

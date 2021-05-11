@@ -1,0 +1,1069 @@
+﻿<UserControl
+    x:Class="EVO_PV.Views.UCReceive"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:local="clr-namespace:EVO_PV.Utilities"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="1024"
+    Height="Auto"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Dictionaries/DictTags.xaml" />
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Style/style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <CollectionViewSource x:Key="Requests" Source="{Binding Path=Requests, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <CollectionViewSource x:Key="Deliveries" Source="{Binding Path=Deliveries, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <CollectionViewSource x:Key="Bascules" Source="{Binding Path=Bascules, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <CollectionViewSource x:Key="WareHouses" Source="{Binding Path=WareHouses, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <local:VisibilityConverter x:Key="VisibilityConverter" />
+            <BooleanToVisibilityConverter x:Key="VisibilityConverterBool" />
+            <local:BrushColorBasculeConverter x:Key="BrushColorBasculeConverter" />
+            <local:DecimalConverter x:Key="decimalConverter" />
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid Background="#eee">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="0,40,0,0">
+            <materialDesign:Card Grid.Row="1" Margin="30,0,30,10">
+                <Grid Style="{StaticResource ContentCard}">
+                    <StackPanel>
+                        <StackPanel>
+                            <Grid Margin="0,0,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25*" />
+                                    <ColumnDefinition Width="25*" />
+                                    <ColumnDefinition Width="25*" />
+                                    <ColumnDefinition Width="25*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="4"
+                                    HorizontalAlignment="Right"
+                                    Orientation="Horizontal"
+                                    Style="{StaticResource HeaderView}"
+                                    Visibility="{Binding Path=DeliveryId, Converter={StaticResource VisibilityConverter}}">
+                                    <Button
+                                        x:Name="btnOpenEvidence"
+                                        Margin="0,0,5,0"
+                                        Background="#4ACF50"
+                                        BorderBrush="#4ACF50"
+                                        Command="{Binding OpenEvidenceFormCommand}"
+                                        Content="Enviar Inconsistencias" />
+                                </StackPanel>
+                            </Grid>
+                            <Grid Margin="0,10,0,20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="25*" />
+                                    <ColumnDefinition Width="25*" />
+                                    <ColumnDefinition Width="25*" />
+                                    <ColumnDefinition Width="25*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+
+                                <StackPanel
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    Margin="0,0,0,30"
+                                    Orientation="Horizontal"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="{DynamicResource lblConsecutive}" />
+                                    <TextBlock Style="{StaticResource DataText}" Text="{Binding DeliveryHeader.Consecutive}" />
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="{DynamicResource lblFechaEntrega}" />
+                                    <TextBlock Style="{StaticResource DataText}" Text="{Binding DeliveryHeader.DeliveryDate}" />
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="2"
+                                    Grid.Column="0"
+                                    Orientation="Horizontal"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="{DynamicResource lblPedido}" />
+                                    <ComboBox
+                                        SelectedIndex="0"
+                                        SelectedValue="{Binding Path=OrderId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                        SelectedValuePath="OrderId"
+                                        Style="{StaticResource ComboBoxStyle}">
+                                        <ComboBox.ItemsSource>
+                                            <CompositeCollection>
+                                                <ComboBoxItem
+                                                    x:Name="Codigo"
+                                                    Content="Seleccione..."
+                                                    IsSelected="True"
+                                                    Visibility="Collapsed" />
+                                                <CollectionContainer Collection="{Binding Source={StaticResource ResourceKey=Requests}}" />
+                                            </CompositeCollection>
+                                        </ComboBox.ItemsSource>
+                                        <ComboBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <StackPanel>
+                                                    <TextBlock Text="{Binding Path=Code}" />
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </ComboBox.ItemTemplate>
+                                    </ComboBox>
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                                    Orientation="Horizontal"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="{DynamicResource lblDelivery}" />
+                                    <ComboBox
+                                        x:Name="cBoxDeliveries"
+                                        SelectedIndex="0"
+                                        SelectedValue="{Binding Path=DeliveryId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                        SelectedValuePath="DeliveryId"
+                                        Style="{StaticResource ComboBoxStyle}">
+                                        <ComboBox.ItemsSource>
+                                            <CompositeCollection>
+                                                <ComboBoxItem
+                                                    x:Name="DeliveryNumber"
+                                                    Content="Seleccione..."
+                                                    IsSelected="True" />
+                                                <CollectionContainer Collection="{Binding Source={StaticResource ResourceKey=Deliveries}}" />
+                                            </CompositeCollection>
+                                        </ComboBox.ItemsSource>
+                                        <ComboBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <StackPanel>
+                                                    <TextBlock Text="{Binding Path=DeliveryNumber}" />
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </ComboBox.ItemTemplate>
+                                    </ComboBox>
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="2"
+                                    Grid.Column="2"
+                                    Orientation="Horizontal"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="{DynamicResource lblBasculeType}" />
+                                    <TextBlock Style="{StaticResource DataText}" Text="{DynamicResource lblBasculeTypeFloor}" />
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="1"
+                                    Grid.Column="2"
+                                    Orientation="Horizontal"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="{DynamicResource lblFechaActual}" />
+                                    <TextBlock Style="{StaticResource DataText}" Text="{Binding DeliveryHeader.CurrentDate}" />
+                                </StackPanel>
+                            </Grid>
+
+                        </StackPanel>
+
+                        <StackPanel Visibility="{Binding Path=DeliveryId, Converter={StaticResource VisibilityConverter}}">
+                            <Expander
+                                x:Name="ArticlesExpanded"
+                                Margin="10"
+                                Header="Artículos"
+                                IsExpanded="{Binding Path=IsExpanded, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                Style="{StaticResource ExpanderArticles}">
+                                <DataGrid
+                                    x:Name="dgDeliveryArticles"
+                                    Grid.RowSpan="2"
+                                    Grid.ColumnSpan="5"
+                                    Width="1024"
+                                    AutoGenerateColumns="False"
+                                    CanUserAddRows="False"
+                                    CanUserDeleteRows="False"
+                                    CanUserReorderColumns="False"
+                                    CanUserResizeColumns="True"
+                                    HorizontalScrollBarVisibility="Disabled"
+                                    ItemsSource="{Binding ArticlesToBeReceives}"
+                                    ScrollViewer.CanContentScroll="True"
+                                    ScrollViewer.IsDeferredScrollingEnabled="False"
+                                    ScrollViewer.VerticalScrollBarVisibility="Disabled"
+                                    SelectedItem="{Binding ArticleSelected}"
+                                    SelectionMode="Single"
+                                    SelectionUnit="FullRow"
+                                    VerticalScrollBarVisibility="Disabled">
+
+                                    <DataGrid.Resources>
+                                        <ResourceDictionary>
+                                            <local:DecimalConverter x:Key="decimalConverter" />
+                                        </ResourceDictionary>
+                                    </DataGrid.Resources>
+                                    <DataGrid.ItemContainerStyle>
+                                        <Style TargetType="{x:Type DataGridRow}">
+                                            <Setter Property="Background" Value="{Binding Path=ErrorArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                                        </Style>
+                                    </DataGrid.ItemContainerStyle>
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn
+                                            Width="5*"
+                                            Binding="{Binding Path=ArticleCode}"
+                                            Header="Código Artículo"
+                                            IsReadOnly="True">
+                                            <DataGridTextColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Vertical">
+                                                        <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                        <TextBox Text="{Binding Path=DataContext.FilterCodeArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+                                                            <i:Interaction.Triggers>
+                                                                <i:EventTrigger EventName="KeyDown">
+                                                                    <cmd:EventToCommand Command="{Binding Path=DataContext.FilterDeliveryArticlesCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                                </i:EventTrigger>
+                                                            </i:Interaction.Triggers>
+                                                        </TextBox>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </DataGridTextColumn.HeaderTemplate>
+                                        </DataGridTextColumn>
+
+                                        <DataGridTextColumn
+                                            Width="12*"
+                                            Binding="{Binding Path=ArticleName}"
+                                            Header="Nombre"
+                                            IsReadOnly="True">
+
+                                            <DataGridTextColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Vertical">
+                                                        <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                        <TextBox MinWidth="200" Text="{Binding Path=DataContext.FilterNameArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+                                                            <i:Interaction.Triggers>
+                                                                <i:EventTrigger EventName="KeyDown">
+                                                                    <cmd:EventToCommand Command="{Binding Path=DataContext.FilterDeliveryArticlesCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                                </i:EventTrigger>
+                                                            </i:Interaction.Triggers>
+                                                        </TextBox>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </DataGridTextColumn.HeaderTemplate>
+                                        </DataGridTextColumn>
+
+                                        <DataGridTextColumn
+                                            Width="4*"
+                                            Binding="{Binding Path=State}"
+                                            Header="Estado"
+                                            IsReadOnly="True">
+
+                                            <DataGridTextColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Vertical">
+                                                        <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                        <TextBox Text="{Binding Path=DataContext.FilterStateArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+                                                            <i:Interaction.Triggers>
+                                                                <i:EventTrigger EventName="KeyDown">
+                                                                    <cmd:EventToCommand Command="{Binding Path=DataContext.FilterDeliveryArticlesCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                                </i:EventTrigger>
+                                                            </i:Interaction.Triggers>
+                                                        </TextBox>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </DataGridTextColumn.HeaderTemplate>
+                                        </DataGridTextColumn>
+
+                                        <DataGridTextColumn
+                                            Width="5*"
+                                            Binding="{Binding Path=QuantityRequested, Converter={StaticResource decimalConverter}}"
+                                            Header="Cantidad Solicitada"
+                                            IsReadOnly="True">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style TargetType="TextBlock">
+                                                    <Setter Property="HorizontalAlignment" Value="Right" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                            <DataGridTextColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Vertical">
+                                                        <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                        <TextBox Text="{Binding Path=DataContext.FilterQuantityDelivery, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+                                                            <i:Interaction.Triggers>
+                                                                <i:EventTrigger EventName="KeyDown">
+                                                                    <cmd:EventToCommand Command="{Binding Path=DataContext.FilterDeliveryArticlesCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                                </i:EventTrigger>
+                                                            </i:Interaction.Triggers>
+                                                        </TextBox>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </DataGridTextColumn.HeaderTemplate>
+                                        </DataGridTextColumn>
+
+                                        <DataGridTextColumn
+                                            Width="5*"
+                                            Binding="{Binding Path=QuantityAprobed, Converter={StaticResource decimalConverter}}"
+                                            Header="Cantidad Aprobada"
+                                            IsReadOnly="True">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style TargetType="TextBlock">
+                                                    <Setter Property="HorizontalAlignment" Value="Right" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                            <DataGridTextColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Vertical">
+                                                        <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                        <TextBox Text="{Binding Path=DataContext.FilterQuantityDelivery, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+                                                            <i:Interaction.Triggers>
+                                                                <i:EventTrigger EventName="KeyDown">
+                                                                    <cmd:EventToCommand Command="{Binding Path=DataContext.FilterDeliveryArticlesCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                                </i:EventTrigger>
+                                                            </i:Interaction.Triggers>
+                                                        </TextBox>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </DataGridTextColumn.HeaderTemplate>
+                                        </DataGridTextColumn>
+
+                                        <DataGridTextColumn
+                                            Width="5*"
+                                            Binding="{Binding Path=QuantitySended, Converter={StaticResource decimalConverter}}"
+                                            Header="Cantidad Enviada"
+                                            IsReadOnly="True">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style TargetType="TextBlock">
+                                                    <Setter Property="HorizontalAlignment" Value="Right" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                            <DataGridTextColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Vertical">
+                                                        <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                        <TextBox Text="{Binding Path=DataContext.FilterQuantityDelivery, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+                                                            <i:Interaction.Triggers>
+                                                                <i:EventTrigger EventName="KeyDown">
+                                                                    <cmd:EventToCommand Command="{Binding Path=DataContext.FilterDeliveryArticlesCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                                </i:EventTrigger>
+                                                            </i:Interaction.Triggers>
+                                                        </TextBox>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </DataGridTextColumn.HeaderTemplate>
+                                        </DataGridTextColumn>
+
+                                        <DataGridTemplateColumn Width="5*" Header="Cantidad Recibida">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <TextBox
+                                                        KeyDown="TextBox_KeyDown"
+                                                        Text="{Binding Path=QuantityReceive, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}}"
+                                                        TextAlignment="Right" />
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                            <DataGridTemplateColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Vertical">
+                                                        <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                        <TextBox Text="{Binding Path=DataContext.FilterQuantityDelivery, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.HeaderTemplate>
+                                        </DataGridTemplateColumn>
+
+                                        <DataGridTextColumn
+                                            Width="4*"
+                                            Binding="{Binding Path=MeasureUnit}"
+                                            Header="Ud Medida"
+                                            IsReadOnly="True">
+
+                                            <DataGridTextColumn.HeaderTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Vertical">
+                                                        <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                        <TextBox Text="{Binding Path=DataContext.FilterUnitMeasureDelivery, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+                                                            <i:Interaction.Triggers>
+                                                                <i:EventTrigger EventName="KeyDown">
+                                                                    <cmd:EventToCommand Command="{Binding Path=DataContext.FilterDeliveryArticlesCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                                </i:EventTrigger>
+                                                            </i:Interaction.Triggers>
+                                                        </TextBox>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </DataGridTextColumn.HeaderTemplate>
+                                        </DataGridTextColumn>
+
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Expander>
+                            <StackPanel
+                                Name="stackContainers"
+                                Orientation="Horizontal"
+                                Visibility="{Binding Path=ArticleSelected, Converter={StaticResource VisibilityConverter}}">
+                                <ItemsControl
+                                    x:Name="ContainersItemControl"
+                                    AlternationCount="100"
+                                    ItemsSource="{Binding Path=Containers, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <UniformGrid Columns="{Binding Containers.Count, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Margin="0,0,0,5">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition />
+                                                    <RowDefinition />
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition />
+                                                </Grid.ColumnDefinitions>
+                                                <Label
+                                                    Grid.Row="0"
+                                                    Grid.Column="0"
+                                                    Content="{Binding Path=ContainerLabel}"
+                                                    Style="{StaticResource LabelStyle}" />
+                                                <TextBox
+                                                    Grid.Row="1"
+                                                    Grid.Column="0"
+                                                    GotFocus="TextBox_GotFocus"
+                                                    LostFocus="TextBox_LostFocus"
+                                                    Style="{StaticResource TextBoxStyle}"
+                                                    Text="{Binding Path=ContainerQuantity, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                    TextAlignment="Right">
+                                                    <i:Interaction.Triggers>
+                                                        <i:EventTrigger EventName="KeyDown">
+                                                            <cmd:EventToCommand Command="{Binding Path=DataContext.UpdateContainers, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}}" />
+                                                        </i:EventTrigger>
+                                                        <i:EventTrigger EventName="LostFocus">
+                                                            <cmd:EventToCommand Command="{Binding Path=DataContext.UpdateContainers, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}}" />
+                                                        </i:EventTrigger>
+                                                        <i:EventTrigger EventName="TextChanged">
+                                                            <cmd:EventToCommand Command="{Binding Path=DataContext.UpdateContainers, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ItemsControl}}}" />
+                                                        </i:EventTrigger>
+                                                    </i:Interaction.Triggers>
+                                                </TextBox>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </StackPanel>
+
+                            <StackPanel
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Margin="0,30,0,0"
+                                Style="{StaticResource HeaderView}">
+                                <TextBlock Style="{StaticResource TextHeaderView}" Text="{DynamicResource lblSumaryWeight}" />
+                                <TextBlock Style="{StaticResource DataText}" Text="{Binding Path=ContainersTotalWeight, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}}" />
+                            </StackPanel>
+
+                            <StackPanel
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Margin="0,-30,100,0"
+                                HorizontalAlignment="Right"
+                                Style="{StaticResource HeaderView}">
+                                <TextBlock Style="{StaticResource TextHeaderViewBascule}" Text="{DynamicResource lblBasculeWeight}" />
+                            </StackPanel>
+                            <StackPanel
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                Margin="0,0,100,0"
+                                HorizontalAlignment="Right"
+                                Style="{StaticResource HeaderView}">
+                                <TextBox
+                                    Background="{Binding Path=WeighingBasculeState, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource BrushColorBasculeConverter}}"
+                                    Style="{StaticResource DataTextBascule}"
+                                    Text="{Binding Path=WeighingBascule, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}}" />
+                            </StackPanel>
+                            <StackPanel Margin="0,30" Visibility="{Binding Path=ArticleSelected, Converter={StaticResource VisibilityConverter}}">
+                                <TextBlock Style="{StaticResource TextHeaderView}" Text="{DynamicResource lblWeighingByBascule}" />
+                                <TabControl Margin="10,0,10,0" Padding="30">
+                                    <TabItem
+                                        Padding="10"
+                                        Background="White"
+                                        FontWeight="DemiBold"
+                                        Foreground="#7F0E06"
+                                        Header="Peso Arrume al 8">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="MouseLeftButtonUp">
+                                                <cmd:EventToCommand Command="{Binding CmdAtEightSelected}" />
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                        <StackPanel>
+                                            <DataGrid
+                                                x:Name="dgWeighingsAtEight"
+                                                Grid.RowSpan="2"
+                                                Grid.ColumnSpan="5"
+                                                Width="Auto"
+                                                AutoGenerateColumns="False"
+                                                CanUserAddRows="False"
+                                                CanUserDeleteRows="False"
+                                                CanUserReorderColumns="False"
+                                                CanUserResizeColumns="True"
+                                                ItemsSource="{Binding WeighingDetail}"
+                                                SelectedItem="{Binding ArticleBeingWeighing}"
+                                                SelectionMode="Single"
+                                                SelectionUnit="FullRow">
+                                                <DataGrid.ItemContainerStyle>
+                                                    <Style TargetType="{x:Type DataGridRow}">
+                                                        <Setter Property="Background" Value="{Binding Path=ErrorArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                                                    </Style>
+                                                </DataGrid.ItemContainerStyle>
+                                                <DataGrid.Columns>
+                                                    <DataGridTemplateColumn Width="2*" Header="Peso Báscula">
+                                                        <DataGridTemplateColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBox
+                                                                    VerticalAlignment="Center"
+                                                                    Text="{Binding Path=BasculeWeight, Converter={StaticResource decimalConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                                    TextAlignment="Right">
+                                                                    <i:Interaction.Triggers>
+                                                                        <i:EventTrigger EventName="TextChanged">
+                                                                            <cmd:EventToCommand Command="{Binding Path=DataContext.BasculeWeightChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                                        </i:EventTrigger>
+                                                                    </i:Interaction.Triggers>
+                                                                </TextBox>
+                                                            </DataTemplate>
+                                                        </DataGridTemplateColumn.CellTemplate>
+                                                    </DataGridTemplateColumn>
+
+                                                    <DataGridTemplateColumn
+                                                        Width="2*"
+                                                        Header="Peso Total Artículo"
+                                                        IsReadOnly="True">
+                                                        <DataGridTemplateColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                                                                    Grid.Row="2"
+                                                                    Grid.Column="3"
+                                                                    HorizontalAlignment="Right"
+                                                                    VerticalAlignment="Center">
+                                                                    <TextBlock.Text>
+                                                                        <MultiBinding StringFormat=" {0} {1} ">
+                                                                            <Binding
+                                                                                Converter="{StaticResource decimalConverter}"
+                                                                                Mode="TwoWay"
+                                                                                Path="ArticleWeight"
+                                                                                UpdateSourceTrigger="PropertyChanged" />
+                                                                            <Binding
+                                                                                Mode="TwoWay"
+                                                                                Path="MeasureUnit"
+                                                                                UpdateSourceTrigger="PropertyChanged" />
+                                                                        </MultiBinding>
+                                                                    </TextBlock.Text>
+                                                                </TextBlock>
+                                                            </DataTemplate>
+                                                        </DataGridTemplateColumn.CellTemplate>
+                                                    </DataGridTemplateColumn>
+                                                    <DataGridTemplateColumn
+                                                        Width="6*"
+                                                        Header="Detalle Contenedores"
+                                                        IsReadOnly="True">
+                                                        <DataGridTemplateColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <Grid>
+                                                                    <Grid.ColumnDefinitions>
+                                                                        <ColumnDefinition Width="*" />
+                                                                        <ColumnDefinition Width="100" />
+                                                                    </Grid.ColumnDefinitions>
+                                                                    <Grid.RowDefinitions>
+                                                                        <RowDefinition />
+                                                                        <RowDefinition />
+                                                                    </Grid.RowDefinitions>
+
+                                                                    <Label
+                                                                        Grid.Row="0"
+                                                                        Grid.Column="0"
+                                                                        Margin="0"
+                                                                        HorizontalAlignment="Left"
+                                                                        VerticalAlignment="Top"
+                                                                        Content="Contenedores"
+                                                                        FontSize="13"
+                                                                        Style="{StaticResource LabelStyle}" />
+                                                                    <ItemsControl
+                                                                        Name="icContainers"
+                                                                        Grid.Row="1"
+                                                                        Grid.Column="0"
+                                                                        ItemsSource="{Binding Path=Containers, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                                                        <ItemsControl.ItemTemplate>
+                                                                            <DataTemplate>
+                                                                                <Grid Margin="5,0,0,5">
+                                                                                    <Grid.ColumnDefinitions>
+                                                                                        <ColumnDefinition Width="*" />
+                                                                                        <ColumnDefinition Width="*" />
+                                                                                    </Grid.ColumnDefinitions>
+                                                                                    <Grid.RowDefinitions>
+                                                                                        <RowDefinition />
+                                                                                    </Grid.RowDefinitions>
+                                                                                    <TextBlock
+                                                                                        Grid.Row="0"
+                                                                                        Grid.Column="0"
+                                                                                        Text="{Binding ContainerLabel}" />
+                                                                                    <TextBlock
+                                                                                        Grid.Row="0"
+                                                                                        Grid.Column="1"
+                                                                                        Text="{Binding ContainerQuantity, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, StringFormat='Cantidad: {0}'}" />
+                                                                                </Grid>
+
+                                                                            </DataTemplate>
+                                                                        </ItemsControl.ItemTemplate>
+                                                                    </ItemsControl>
+                                                                    <Label
+                                                                        Grid.Row="0"
+                                                                        Grid.Column="1"
+                                                                        Margin="0"
+                                                                        HorizontalAlignment="Center"
+                                                                        VerticalAlignment="Top"
+                                                                        Content="Peso Total"
+                                                                        FontSize="13"
+                                                                        Style="{StaticResource LabelStyle}" />
+                                                                    <StackPanel
+                                                                        Grid.Row="1"
+                                                                        Grid.Column="1"
+                                                                        VerticalAlignment="Center">
+                                                                        <TextBlock Text="{Binding ContainersTotalWeight, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}, StringFormat=' {0} KG'}" TextAlignment="Right" />
+                                                                    </StackPanel>
+
+                                                                </Grid>
+                                                            </DataTemplate>
+                                                        </DataGridTemplateColumn.CellTemplate>
+                                                    </DataGridTemplateColumn>
+                                                </DataGrid.Columns>
+                                            </DataGrid>
+                                            <Button
+                                                x:Name="btnAddWeighingAtEight"
+                                                Width="200"
+                                                Margin="15,15,0,15"
+                                                HorizontalAlignment="Left"
+                                                Background="#4ACF50"
+                                                BorderBrush="#4ACF50"
+                                                Command="{Binding SaveWeighingConfirmationCommand}"
+                                                Content="Agregar Registro"
+                                                IsEnabled="{Binding EnableSave}" />
+                                            <StackPanel
+                                                Margin="0,-20,0,30"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Bottom"
+                                                Orientation="Horizontal"
+                                                Visibility="{Binding Path=EnableSaveFalse, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}">
+                                                <TextBlock Style="{StaticResource InfoDataText}" Text="La entrega ya fue recibida y no puede recibir pesajes." />
+                                            </StackPanel>
+                                            <StackPanel Visibility="{Binding Path=ArticleSelected, Converter={StaticResource VisibilityConverter}}">
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition />
+                                                        <ColumnDefinition />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition />
+                                                    </Grid.RowDefinitions>
+
+                                                    <StackPanel Grid.Row="0" Grid.Column="0">
+                                                        <TextBlock Style="{StaticResource TextTotalView}" Text="{DynamicResource lblTotalWeightByBascule}" />
+                                                    </StackPanel>
+                                                    <StackPanel Grid.Row="0" Grid.Column="1">
+                                                        <TextBlock Style="{StaticResource DataText}" Text="{Binding Path=TotalWeightByBascule, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}}" />
+                                                    </StackPanel>
+
+                                                </Grid>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </TabItem>
+                                    <TabItem
+                                        Padding="10"
+                                        Background="White"
+                                        FontWeight="DemiBold"
+                                        Foreground="#7F0E06"
+                                        Header="Peso Arrume al 5">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="MouseLeftButtonUp">
+                                                <cmd:EventToCommand Command="{Binding CmdAtFiveSelected}" />
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                        <StackPanel>
+                                            <DataGrid
+                                                x:Name="dgWeighingsAtFive"
+                                                Grid.RowSpan="2"
+                                                Grid.ColumnSpan="5"
+                                                Width="Auto"
+                                                AutoGenerateColumns="False"
+                                                CanUserAddRows="False"
+                                                CanUserDeleteRows="False"
+                                                CanUserReorderColumns="False"
+                                                CanUserResizeColumns="True"
+                                                ItemsSource="{Binding WeighingDetailAtFive}"
+                                                SelectedItem="{Binding ArticleBeingWeighing}"
+                                                SelectionMode="Single"
+                                                SelectionUnit="FullRow">
+                                                <DataGrid.ItemContainerStyle>
+                                                    <Style TargetType="{x:Type DataGridRow}">
+                                                        <Setter Property="Background" Value="{Binding Path=ErrorArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                                                    </Style>
+                                                </DataGrid.ItemContainerStyle>
+                                                <DataGrid.Columns>
+                                                    <DataGridTemplateColumn Width="2*" Header="Peso Báscula">
+                                                        <DataGridTemplateColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBox
+                                                                    VerticalAlignment="Center"
+                                                                    Text="{Binding Path=BasculeWeight, Converter={StaticResource decimalConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                                    TextAlignment="Right">
+                                                                    <i:Interaction.Triggers>
+                                                                        <i:EventTrigger EventName="TextChanged">
+                                                                            <cmd:EventToCommand Command="{Binding Path=DataContext.BasculeWeightChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                                        </i:EventTrigger>
+                                                                    </i:Interaction.Triggers>
+                                                                </TextBox>
+                                                            </DataTemplate>
+                                                        </DataGridTemplateColumn.CellTemplate>
+                                                    </DataGridTemplateColumn>
+
+                                                    <DataGridTemplateColumn
+                                                        Width="2*"
+                                                        Header="Peso Total Artículo"
+                                                        IsReadOnly="True">
+                                                        <DataGridTemplateColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <TextBlock
+                                                                    Grid.Row="2"
+                                                                    Grid.Column="3"
+                                                                    HorizontalAlignment="Right"
+                                                                    VerticalAlignment="Center">
+                                                                    <TextBlock.Text>
+                                                                        <MultiBinding StringFormat=" {0} {1} ">
+                                                                            <Binding
+                                                                                Converter="{StaticResource decimalConverter}"
+                                                                                Mode="TwoWay"
+                                                                                Path="ArticleWeight"
+                                                                                UpdateSourceTrigger="PropertyChanged" />
+                                                                            <Binding
+                                                                                Mode="TwoWay"
+                                                                                Path="MeasureUnit"
+                                                                                UpdateSourceTrigger="PropertyChanged" />
+                                                                        </MultiBinding>
+                                                                    </TextBlock.Text>
+                                                                </TextBlock>
+                                                            </DataTemplate>
+                                                        </DataGridTemplateColumn.CellTemplate>
+                                                    </DataGridTemplateColumn>
+                                                    <DataGridTemplateColumn
+                                                        Width="6*"
+                                                        Header="Detalle Contenedores"
+                                                        IsReadOnly="True">
+                                                        <DataGridTemplateColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <Grid>
+                                                                    <Grid.ColumnDefinitions>
+                                                                        <ColumnDefinition Width="*" />
+                                                                        <ColumnDefinition Width="100" />
+                                                                    </Grid.ColumnDefinitions>
+                                                                    <Grid.RowDefinitions>
+                                                                        <RowDefinition />
+                                                                        <RowDefinition />
+                                                                    </Grid.RowDefinitions>
+
+                                                                    <Label
+                                                                        Grid.Row="0"
+                                                                        Grid.Column="0"
+                                                                        Margin="0"
+                                                                        HorizontalAlignment="Left"
+                                                                        VerticalAlignment="Top"
+                                                                        Content="Contenedores"
+                                                                        FontSize="13"
+                                                                        Style="{StaticResource LabelStyle}" />
+                                                                    <ItemsControl
+                                                                        Name="icContainers"
+                                                                        Grid.Row="1"
+                                                                        Grid.Column="0"
+                                                                        ItemsSource="{Binding Path=Containers, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                                                        <ItemsControl.ItemTemplate>
+                                                                            <DataTemplate>
+                                                                                <Grid Margin="5,0,0,5">
+                                                                                    <Grid.ColumnDefinitions>
+                                                                                        <ColumnDefinition Width="*" />
+                                                                                        <ColumnDefinition Width="*" />
+                                                                                    </Grid.ColumnDefinitions>
+                                                                                    <Grid.RowDefinitions>
+                                                                                        <RowDefinition />
+                                                                                    </Grid.RowDefinitions>
+                                                                                    <TextBlock
+                                                                                        Grid.Row="0"
+                                                                                        Grid.Column="0"
+                                                                                        Text="{Binding ContainerLabel}" />
+                                                                                    <TextBlock
+                                                                                        Grid.Row="0"
+                                                                                        Grid.Column="1"
+                                                                                        Text="{Binding ContainerQuantity, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, StringFormat='Cantidad: {0}'}" />
+                                                                                </Grid>
+
+                                                                            </DataTemplate>
+                                                                        </ItemsControl.ItemTemplate>
+                                                                    </ItemsControl>
+                                                                    <Label
+                                                                        Grid.Row="0"
+                                                                        Grid.Column="1"
+                                                                        Margin="0"
+                                                                        HorizontalAlignment="Center"
+                                                                        VerticalAlignment="Top"
+                                                                        Content="Peso Total"
+                                                                        FontSize="13"
+                                                                        Style="{StaticResource LabelStyle}" />
+                                                                    <StackPanel
+                                                                        Grid.Row="1"
+                                                                        Grid.Column="1"
+                                                                        VerticalAlignment="Center">
+                                                                        <TextBlock Text="{Binding ContainersTotalWeight, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}, StringFormat=' {0} KG'}" TextAlignment="Right" />
+                                                                    </StackPanel>
+
+                                                                </Grid>
+                                                            </DataTemplate>
+                                                        </DataGridTemplateColumn.CellTemplate>
+                                                    </DataGridTemplateColumn>
+                                                </DataGrid.Columns>
+                                            </DataGrid>
+                                            <Button
+                                                x:Name="btnAddWeighingAtFive"
+                                                Width="200"
+                                                Margin="15,15,0,15"
+                                                HorizontalAlignment="Left"
+                                                Background="#4ACF50"
+                                                BorderBrush="#4ACF50"
+                                                Command="{Binding SaveWeighingConfirmationCommand}"
+                                                Content="Agregar Registro"
+                                                IsEnabled="{Binding EnableSave}" />
+                                            <StackPanel
+                                                Margin="0,-20,0,30"
+                                                HorizontalAlignment="Left"
+                                                VerticalAlignment="Bottom"
+                                                Orientation="Horizontal"
+                                                Visibility="{Binding Path=EnableSaveFalse, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}">
+                                                <TextBlock Style="{StaticResource InfoDataText}" Text="La entrega ya fue recibida y no puede recibir pesajes." />
+                                            </StackPanel>
+                                            <StackPanel Visibility="{Binding Path=ArticleSelected, Converter={StaticResource VisibilityConverter}}">
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition />
+                                                        <ColumnDefinition />
+                                                    </Grid.ColumnDefinitions>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition />
+                                                    </Grid.RowDefinitions>
+
+                                                    <StackPanel Grid.Row="0" Grid.Column="0">
+                                                        <TextBlock Style="{StaticResource TextTotalView}" Text="{DynamicResource lblTotalWeightByBascule}" />
+                                                    </StackPanel>
+                                                    <StackPanel Grid.Row="0" Grid.Column="1">
+                                                        <TextBlock Style="{StaticResource DataText}" Text="{Binding Path=TotalWeightByBascule, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}}" />
+                                                    </StackPanel>
+
+                                                </Grid>
+                                            </StackPanel>
+                                        </StackPanel>
+
+                                    </TabItem>
+                                </TabControl>
+                            </StackPanel>
+                            <StackPanel Margin="0,30" Visibility="{Binding Path=ArticleSelected, Converter={StaticResource VisibilityConverter}}">
+                                <TextBlock Style="{StaticResource TextHeaderView}" Text="{DynamicResource lblWeighingByBarCode}" />
+
+                                <DataGrid
+                                    x:Name="dgWeighingsBarCode"
+                                    Grid.RowSpan="2"
+                                    Grid.ColumnSpan="5"
+                                    Width="1024 "
+                                    AutoGenerateColumns="False"
+                                    CanUserAddRows="False"
+                                    CanUserDeleteRows="False"
+                                    CanUserReorderColumns="False"
+                                    CanUserResizeColumns="True"
+                                    ItemsSource="{Binding BarCodeDetails, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                    SelectedItem="{Binding ArticleBarCodeToRead}"
+                                    SelectionMode="Single"
+                                    SelectionUnit="FullRow">
+                                    <DataGrid.Resources>
+                                        <ResourceDictionary>
+                                            <local:DecimalConverter x:Key="decimalConverter" />
+                                        </ResourceDictionary>
+                                    </DataGrid.Resources>
+                                    <DataGrid.ItemContainerStyle>
+                                        <Style TargetType="{x:Type DataGridRow}">
+                                            <Setter Property="Background" Value="{Binding Path=ErrorArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                                        </Style>
+                                    </DataGrid.ItemContainerStyle>
+                                    <DataGrid.Columns>
+
+                                        <DataGridTemplateColumn Width="10*" Header="Código de Barras">
+                                            <DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <TextBox Text="{Binding Path=BarCode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                                        <i:Interaction.Triggers>
+                                                            <i:EventTrigger EventName="LostFocus">
+                                                                <cmd:EventToCommand Command="{Binding Path=DataContext.BarCodeReadedCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                            </i:EventTrigger>
+                                                        </i:Interaction.Triggers>
+                                                    </TextBox>
+                                                </DataTemplate>
+                                            </DataGridTemplateColumn.CellTemplate>
+                                        </DataGridTemplateColumn>
+
+                                        <DataGridTextColumn
+                                            Width="5*"
+                                            Binding="{Binding Path=ArticleCode}"
+                                            Header="Código Artículo"
+                                            IsReadOnly="True" />
+
+                                        <DataGridTextColumn
+                                            Width="5*"
+                                            Binding="{Binding Path=ArticleName}"
+                                            Header="Nombre"
+                                            IsReadOnly="True" />
+
+                                        <DataGridTextColumn
+                                            Width="5*"
+                                            Binding="{Binding Path=Lot}"
+                                            Header="Lote"
+                                            IsReadOnly="True">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style TargetType="TextBlock">
+                                                    <Setter Property="HorizontalAlignment" Value="Right" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+
+                                        <DataGridTextColumn
+                                            Width="5*"
+                                            Binding="{Binding Path=ArticleState}"
+                                            Header="Estado"
+                                            IsReadOnly="True" />
+
+                                        <DataGridTextColumn
+                                            Width="5*"
+                                            Binding="{Binding Path=ExpirationDate}"
+                                            Header="Fecha de Vencimiento"
+                                            IsReadOnly="True" />
+
+                                        <DataGridTextColumn
+                                            Width="5*"
+                                            Binding="{Binding Path=ArticleQuantity}"
+                                            Header="Unidades por Contenedor"
+                                            IsReadOnly="True">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style TargetType="TextBlock">
+                                                    <Setter Property="HorizontalAlignment" Value="Right" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+
+                                        <DataGridTextColumn
+                                            Width="5*"
+                                            Binding="{Binding Path=Weight, Converter={StaticResource decimalConverter}}"
+                                            Header="Peso Código de Barras"
+                                            IsReadOnly="True" />
+
+                                        <DataGridTextColumn
+                                            Width="5*"
+                                            Binding="{Binding Path=MeasureUnit}"
+                                            Header="Ud Medida"
+                                            IsReadOnly="True" />
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </StackPanel>
+                            <StackPanel Visibility="{Binding Path=ArticleSelected, Converter={StaticResource VisibilityConverter}}">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition />
+                                        <ColumnDefinition />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
+                                    <StackPanel Grid.Row="0" Grid.Column="0">
+                                        <TextBlock Style="{StaticResource TextTotalView}" Text="{DynamicResource lblTotalWeightByBarCode}" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="0" Grid.Column="1">
+                                        <TextBlock Style="{StaticResource DataText}" Text="{Binding Path=TotalWeightByBarCode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}}" />
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel
+                            Margin="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Bottom"
+                            Orientation="Horizontal"
+                            Visibility="{Binding Path=ThereAreDifferences, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}">
+                            <TextBlock Style="{StaticResource InfoDataText}" Text="*Hay diferencia entre el pesaje de báscula y el peso de los códigos de barra para este pesaje" />
+                        </StackPanel>
+                        <StackPanel
+                            Margin="0,20"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom"
+                            Orientation="Horizontal"
+                            Visibility="{Binding Path=DeliveryId, Converter={StaticResource VisibilityConverter}}">
+                            <Button
+                                x:Name="btnSave"
+                                Margin="0,0,5,0"
+                                Background="#4ACF50"
+                                BorderBrush="#4ACF50"
+                                Command="{Binding ConfirmReceiveByDeliveryCommand}"
+                                Content="Confirmar Recepción"
+                                IsEnabled="{Binding EnableSave}" />
+                        </StackPanel>
+                        <StackPanel
+                            Margin="0,-20,0,30"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom"
+                            Orientation="Horizontal"
+                            Visibility="{Binding Path=EnableSaveFalse, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}">
+                            <TextBlock Style="{StaticResource InfoDataText}" Text="La entrega ya fue recibida." />
+                        </StackPanel>
+
+                    </StackPanel>
+                </Grid>
+            </materialDesign:Card>
+
+            <Grid Style="{StaticResource IconCard}">
+                <Grid.Effect>
+                    <DropShadowEffect
+                        BlurRadius="20"
+                        RenderingBias="Quality"
+                        ShadowDepth="1"
+                        Color="#FFECECEC" />
+                </Grid.Effect>
+                <Border Style="{StaticResource BorderCard}" />
+                <materialDesign:PackIcon
+                    Width="30"
+                    Height="30"
+                    Margin="5"
+                    Padding="10"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    Kind="PlaylistAddCheck" />
+            </Grid>
+            <Grid Style="{StaticResource Title}">
+                <StackPanel Style="{StaticResource ContentTitle}">
+                    <TextBlock Style="{StaticResource TextTitle}" Text="Plantilla Recepción de Mercancia Punto de Venta" />
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+    </Grid>
+
+</UserControl>

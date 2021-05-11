@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArticuloEliminadoCorrectamente" xml:space="preserve">
+    <value>Artículo eliminado correctamente</value>
+  </data>
+  <data name="ArticulosEliminadosCorrectamente" xml:space="preserve">
+    <value>Artículos eliminados correctamente</value>
+  </data>
+  <data name="BoxGetOpen" xml:space="preserve">
+    <value>Se ha realizado el cuadre de caja exitosamente</value>
+  </data>
+  <data name="CleanForm" xml:space="preserve">
+    <value>¿Está seguro que desea limpiar la solicitud?</value>
+  </data>
+  <data name="CleanFormSuccess" xml:space="preserve">
+    <value>limpiado correctamente</value>
+  </data>
+  <data name="ConfirmarActualizarSolicitud" xml:space="preserve">
+    <value>¿Está seguro qué desea actualizar el pedido?</value>
+  </data>
+  <data name="ConfirmarAperturaDeCaja" xml:space="preserve">
+    <value>¿Está seguro que desea guardar la configuración de apertura de caja?</value>
+  </data>
+  <data name="ConfirmarEliminarArticulo" xml:space="preserve">
+    <value>¿Seguro desea eliminar el artículo de la lista de facturación?</value>
+  </data>
+  <data name="ConfirmarEnviarSolicitudPedidoAComercial" xml:space="preserve">
+    <value>¿Está seguro qué desea enviar el pedido?</value>
+  </data>
+  <data name="ConfirmarGuadarSolicitudPedido" xml:space="preserve">
+    <value>¿Está seguro que desea guardar este pedido como borrador?</value>
+  </data>
+  <data name="ConfirmarMercanciaRecibida" xml:space="preserve">
+    <value>Se ha confirmado la recepción con éxito</value>
+  </data>
+  <data name="ConfirmarPesajeBascula" xml:space="preserve">
+    <value>¿Está seguro qué desea guardar este pesaje?</value>
+  </data>
+  <data name="ConfirmarPesajePorCantidad" xml:space="preserve">
+    <value>¿Está seguro qué esta es la cantidad recibida por unidades?</value>
+  </data>
+  <data name="ConfirmarRecepcion" xml:space="preserve">
+    <value>¿Está seguro qué desea confirmar está recepción?</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DictMessages" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>dictmessages.resx;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="DictMessages_Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>dictmessages.designer.cs;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EliminarArticuloPedido" xml:space="preserve">
+    <value>¿Desea eliminar el artículo de la solicitud ?</value>
+  </data>
+  <data name="EliminarArticulosCambioPlanta" xml:space="preserve">
+    <value>El cambio de planta eliminará los artículos. ¿Está seguro?</value>
+  </data>
+  <data name="EliminarArticulosPedido" xml:space="preserve">
+    <value>¿Desea eliminar los artículos de la solicitud?</value>
+  </data>
+  <data name="ErrMasArticulo" xml:space="preserve">
+    <value>El artículo {0} con código {1} ya existe en la solicitud.</value>
+  </data>
+  <data name="ErrMasDosArticulos" xml:space="preserve">
+    <value>El artículo {0} con código {1} está dos veces</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorAlAbrirCaja" xml:space="preserve">
+    <value>Tiene novedad de caja la cual se debe resolver, por lo tanto, valide el cierre del día anterior, y si no se encuentran inconsistencias se debe cumplir con las políticas de reponer el faltante o consignar el sobrante a la compañía.</value>
+  </data>
+  <data name="ErrorAlAgregarArticuloExistente" xml:space="preserve">
+    <value>Error al intentar agregar un artículo ya existente en está factura.</value>
+  </data>
+  <data name="ErrorAlAgregarArticuloSinPrecioUnitario" xml:space="preserve">
+    <value>Artículo sin precio unitario</value>
+  </data>
+  <data name="ErrorAlAgregarArticuloSinStock" xml:space="preserve">
+    <value>Error al intentar agregar un artículo sin stock disponible.</value>
+  </data>
+  <data name="ErrorAlGuardarFacturaArticuloSinCantidad" xml:space="preserve">
+    <value>Error, debe ingresar la cantidad del articulo.</value>
+  </data>
+  <data name="ErrorArticuloOrdenMismoEstado" xml:space="preserve">
+    <value>Artículos iguales con el mismo estado </value>
+  </data>
+  <data name="ErrorCantidadArticulo" xml:space="preserve">
+    <value>Se debe ingresar la Cantidad del Artículo</value>
+  </data>
+  <data name="ErrorCantidadArticuloMaximoPermitido" xml:space="preserve">
+    <value>Error, si desea agregar un valor mayor debe crear una nueva solicitud.</value>
+  </data>
+  <data name="ErrorCantidadOUnidadDeMedidaNoValidos" xml:space="preserve">
+    <value>Error, la unidad de medida o cantidad no son validos.</value>
+  </data>
+  <data name="ErrorCodigoDeBarrasNoEsValido" xml:space="preserve">
+    <value>El código de barras no cumple con el formato deseado</value>
+  </data>
+  <data name="ErrorContenedoresNoAsignados" xml:space="preserve">
+    <value>No ha asignado cantidades a ningún contenedor</value>
+  </data>
+  <data name="ErrorDebeExistirContenedorTipoBase" xml:space="preserve">
+    <value>Debe existir almenos 1 contenedor tipo base</value>
+  </data>
+  <data name="ErrorDebeSeleccionarEstadoYEmpaque" xml:space="preserve">
+    <value>Error al guardar, verifique que los artículos tengan selección de estado y empaque</value>
+  </data>
+  <data name="ErrorDebeSeleccionarUnMotivo" xml:space="preserve">
+    <value>Error al cancelar la solicitud, debe seleccionar un motivo de cancelación.</value>
+  </data>
+  <data name="ErrorDebeSeleccionarUnVendedor" xml:space="preserve">
+    <value>Debe seleccionar un vendedor para guardar la factura.</value>
+  </data>
+  <data name="ErrorDebeTerminarLaEntregaAnterior" xml:space="preserve">
+    <value>Debe terminar de recibir la entrega anterior para recibir esta.</value>
+  </data>
+  <data name="ErrorElCodigoDeBarrasNoCorrespondeAlCodigoArticulo" xml:space="preserve">
+    <value>El código de barras ingresado no contiene el código de artículo correcto </value>
+  </data>
+  <data name="ErrorElDiaAnteriorNoSeCerroLaCaja" xml:space="preserve">
+    <value>El día de ayer no se realizó el respectivo cierre de caja</value>
+  </data>
+  <data name="ErrorEnElEstadoArticulo" xml:space="preserve">
+    <value>El código de barras ingresado no contiene el estado artículo correcto</value>
+  </data>
+  <data name="ErrorEnElPesoIndicado" xml:space="preserve">
+    <value>El código de barras ingresado no contiene el peso artículo correcto</value>
+  </data>
+  <data name="ErrorEstadoArticulo" xml:space="preserve">
+    <value>Debe informar el estado del artículo</value>
+  </data>
+  <data name="ErrorFechaEntregaSolicitudPedidoAbierto" xml:space="preserve">
+    <value>Se debe ingresar la Fecha Límite Sugerida</value>
+  </data>
+  <data name="ErrorFechaPedidoMayorActual" xml:space="preserve">
+    <value>La fecha de pedido no puede mayor a la fecha actual</value>
+  </data>
+  <data name="ErrorGeneral" xml:space="preserve">
+    <value>Algo ocurrio en el sistema</value>
+  </data>
+  <data name="ErrorLaFechaNoCorresponde" xml:space="preserve">
+    <value>Error, la fecha no corresponde a la fecha superior a la actual</value>
+  </data>
+  <data name="ErrorLasUnidadesIndicadas" xml:space="preserve">
+    <value>El código de barras ingresado no contiene las unidades artículo correcto</value>
+  </data>
+  <data name="ErrorNoSeleccionPuntoVenta" xml:space="preserve">
+    <value>Debe seleccionar un punto de venta</value>
+  </data>
+  <data name="ErrorOrderErased" xml:space="preserve">
+    <value>Actualmente existe una solicitud</value>
+  </data>
+  <data name="ErrorPedidoSinArticulos" xml:space="preserve">
+    <value>La solicitud debe tener como mínimo un artículo</value>
+  </data>
+  <data name="ErrorPesoArticuloInvalido" xml:space="preserve">
+    <value>El peso del artículo no es valido</value>
+  </data>
+  <data name="ErrorSeleccionarPlanta" xml:space="preserve">
+    <value>Debe seleccionar una opción en Solicitud a</value>
+  </data>
+  <data name="ErrorSinArticulosParaFacturar" xml:space="preserve">
+    <value>Error, No se puede facturar sin artículos.</value>
+  </data>
+  <data name="ErrorSoloBinPuedeIrConBase" xml:space="preserve">
+    <value>El contenedor Bin Solo puede ir con contenedor tipo base</value>
+  </data>
+  <data name="ErrorVerificarInformacion" xml:space="preserve">
+    <value>Por favor verifique el valor ingresado para realizar el cuadre de caja</value>
+  </data>
+  <data name="EvidenciaEnviada" xml:space="preserve">
+    <value>Las incidencias han sido enviadas con exito</value>
+  </data>
+  <data name="ExistePedidoBorrador" xml:space="preserve">
+    <value>Ya existe un borrador para esta bodega</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Información</value>
+  </data>
+  <data name="ItemAddedAndBack" xml:space="preserve">
+    <value>¿Está seguro que desea regresar?, se perderan los artículos agregados.</value>
+  </data>
+  <data name="MessageSpinner" xml:space="preserve">
+    <value>Se está guardando el registro y creando  los documentos  de recepción  de la mercancia</value>
+  </data>
+  <data name="NoArticulosPlanta" xml:space="preserve">
+    <value>No ha seleccionado una planta</value>
+  </data>
+  <data name="PesajeRegistradoConExito" xml:space="preserve">
+    <value>Se ha registrado un nuevo pesaje con éxito</value>
+  </data>
+  <data name="RegistrarSolicitudPedidoBorrador" xml:space="preserve">
+    <value>Solicitud guardada correctamente</value>
+  </data>
+  <data name="RegistrarSolicitudPedidoBorradorActualizado" xml:space="preserve">
+    <value>La solicitud se ha actualizado correctamente.</value>
+  </data>
+  <data name="RegistrarSolicitudPedidoBorradorError" xml:space="preserve">
+    <value>Ha ocurrido un error al actualizar la solicitud.</value>
+  </data>
+  <data name="RegistrarSolicitudPedidoDefinitivo" xml:space="preserve">
+    <value>Se genera el documento exitosamente. Número Pedido: {0}</value>
+  </data>
+  <data name="RegistrarSolicitudPedidoDefinitivoActualizar" xml:space="preserve">
+    <value>Se genera el documento exitosamente. Número Pedido: {0}</value>
+  </data>
+  <data name="SeleccionarTipoSolicitud" xml:space="preserve">
+    <value>Debe seleccionar un tipo de solicitud para crear una nueva.</value>
+  </data>
+  <data name="SolicitudCancelada" xml:space="preserve">
+    <value>Se cancela el documento exitosamente. Número de Pedido: {0}</value>
+  </data>
+  <data name="SolicitudesBorradores" xml:space="preserve">
+    <value>Ya existen borradores para cada planta</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Correcto</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Peligro</value>
+  </data>
+</root>

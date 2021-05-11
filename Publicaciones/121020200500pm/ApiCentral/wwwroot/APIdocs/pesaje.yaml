@@ -1,0 +1,168 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Pesaje
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Pesaje
+  version: "1.0.0"
+  title: API de Pesaje
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Pesaje
+    description: Gestión de Pesaje
+paths:  
+    /pesaje/recepcion/cantidadrecibida:
+        post:
+          tags:
+            - Pesaje
+          summary: Registra la cantidad recibida en recepción de artículos de unidad de medida tipo unidad.
+          operationId: asignarCantidadRecibida
+          requestBody:
+              $ref: '#/components/requestBodies/cantidadRecibidaRequest'
+          responses:
+            '200':
+              description: Operación realizada con éxito      
+    /pesaje/recepcion:
+        get:
+          tags: 
+            - Pesaje
+          summary: Obtiene los pesajes de un artículo en recepción
+          operationId: obtenerPesajesRecepcion
+          parameters:
+            - name: pesajeArticuloId
+              in: query
+              description: Indica el id del artículo en el pesaje
+              required: true
+              schema:
+                type: integer
+          responses:
+            '200':
+              description: Operación realizada con éxito
+              content:
+                  application/json:
+                    schema:
+                      type: array
+                      items:
+                       $ref: '#/components/schemas/pesajeResponse'        
+    /pesaje/recepcion/cinco:        
+        post:
+          tags:
+            - Pesaje
+          summary: Registra un pesaje en recepción a cinco
+          operationId: AsignarPesajeRecepcionCinco
+          requestBody:
+              $ref: '#/components/requestBodies/pesajeRequest'
+          responses:
+            '200':
+              description: Operación realizada con éxito
+    /pesaje/recepcion/ocho:        
+        post:
+          tags:
+            - Pesaje
+          summary: Registra un pesaje en recepción a ocho
+          operationId: AsignarPesajeRecepcionOcho
+          requestBody:
+              $ref: '#/components/requestBodies/pesajeRequest'
+          responses:
+            '200':
+              description: Operación realizada con éxito               
+components:
+  schemas: 
+    cantidadRecibidaRequest:
+      type: object
+      description: Representa una cantidad recibida de un artículo de unidad de medida unidad
+      properties:
+        codigoArticulo:
+          type: string
+          example: 'PT-1485'
+          description: Código del artículo
+        entregaId:
+          type: integer
+          example: 1
+          description: Id de la entrega
+        detalleEntregaId:
+          type: integer
+          example: 1
+          description: Id del detalle de la entrega
+        cantidadRecibida:
+          type: number
+          example: 123
+          description: Cantidad recibida con unidad de medida por unidad
+    pesajeResponse:
+      type: object
+      description: Representa un pesaje
+      properties:
+        PesajeId:
+          type: integer
+          example: 1
+          description: Id del pesaje  
+        pesoBascula:
+          type: number
+          example: 123
+          description: Peso de la báscula
+        pesoArticulo:
+          type: number
+          example: 123
+          description: Peso del artículo
+        pesoAl:
+          type: string
+          example: 'Cinco
+          description: Cantidad máxima de contenedores(no base)
+    pesajeRequest:
+      type: object
+      description: Representa un pesaje
+      properties:
+        codigoArticulo:
+          type: string
+          example: 'PT-1485'
+          description: Código del artículo   
+        entregaId:
+          type: integer
+          example: 1
+          description: Id de la entrega  
+        detalleEntregaId:
+          type: integer
+          example: 1
+          description: Id del detalle de la entrega  
+        pesoBascula:
+          type: number
+          example: 123
+          description: Peso de la báscula
+        pesoArticulo:
+          type: number
+          example: 123
+          description: Peso del artículo
+        contenedores:
+          type: array
+          items:
+            $ref: '#/components/schemas/contenedorRequest'
+    contenedorRequest:
+      type: object
+      description: Representa la cantidad y tipo de contenedor usado para el pesaje
+      properties:
+        tipoContenedorId:
+          type: integer
+          example: 3
+          description: Id del tipo de contenedor        
+        cantidad:
+          type: integer
+          example: 45
+          description: Cantidad del contenedor        
+  requestBodies:
+      pesajeRequest:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/pesajeRequest'
+        description: Solicitud para el registro del pesaje
+        required: true
+      cantidadRecibidaRequest:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/cantidadRecibidaRequest'
+        description: Solicitud para el registro de la cantidad recibida cuando sea por unidad
+        required: true

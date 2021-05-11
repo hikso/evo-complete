@@ -1,0 +1,227 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">spellcheck</i>
+                        </div>
+                        <h4 class="card-title">Sap Articulos</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 mt-3 text-right">                                
+                                <h4 class="text-success">La integración se encuentra habilitada</h4>
+                            </div>
+                        </div>
+
+                        <!-- Frecuencia de ejcucion -->
+                        <div class="col-12 mt-3 mb-3">
+                            <div class="page-categories">
+                                <ul class="nav nav-pills nav-pills-warning nav-pills-icons " role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist">
+                                            Una vez al día
+                                        </a>
+                                    </li>
+                                    <li class="nav-item"  >
+                                        <a class="nav-link" data-toggle="tab" href="#link2" role="tablist">
+                                            Varias veces al día
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content tab-space tab-subcategories mt-5">
+                                    <div class="tab-pane active" id="link1">
+                                        
+                                        <form #form="ngForm" (submit)="onSubmit(form)">
+                                            <div class="row mt-3  align-items-center">
+                                                <div class="col-12" >
+                                                <h5>Hora del día en que se ejecutará la integración de productos: </h5>
+                                                </div>
+                                                <div class="col-6">
+                                                    <ngb-timepicker [(ngModel)]="ejecutionH.horaEjecucion" name="horaEjecucion" [meridian]="meridian"></ngb-timepicker>
+                                                </div>
+                                                <div class="col-6">
+                                                    <button class="btn btn-success mat-raised-button" type="submit">
+                                                        <span class="mat-button-wrapper">Guardar</span>
+                                                        <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                                        <div class="mat-button-focus-overlay"></div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="tab-pane" id="link2">
+                                        <form #formH="ngForm" (submit)="onSubmitRange(form)">
+                                            <div class="row mt-3 align-items-center">
+                                                <div class="col-12" >
+                                                    <h5>La integración de productos se ejecutará cada: </h5>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                                                    <mat-form-field class="example-full-width" >
+                                                        <input matInput placeholder="Frecuencia" [(ngModel)]="ejecutionH.frecuencia"  name="frecuencia" autocomplete="off" type="number" required>
+                                                    </mat-form-field>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                                                    <ngb-timepicker [(ngModel)]="ejecutionH.horaInicio" name="horaInicio" [meridian]="meridian" required></ngb-timepicker>
+                                                </div>
+                                                <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                                                    <ngb-timepicker [(ngModel)]="ejecutionH.horaFin" name="horaFin" [meridian]="meridian" required></ngb-timepicker>
+                                                </div>
+                                                <div class="col-3">
+                                                    <button class="btn btn-success mat-raised-button" type="submit">
+                                                        <span class="mat-button-wrapper">Guardar</span>
+                                                        <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                                        <div class="mat-button-focus-overlay"></div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- resultados log historicos -->
+                        <div class="col-12 mt-4">
+                            <p-table #dt class="table table-striped" [value]="logs" selectionMode="multiple" [responsive]="true" 
+                                [resizableColumns]="true" columnResizeMode=expand [lazy]="true" (onLazyLoad)="loadCarsLazy($event)"
+                                 [paginator]="false" [rows]="maxR" [totalRecords]="totalRow">
+                                 
+                                <!-- Dropdown para la selección del numero de filas, 
+                                   por defecto tiene el valor parametrizado en base de datos  -->
+                                <ng-template pTemplate="caption">
+                                    <div class="ui-grid ui-grid-responsive ui-fluid">
+                                        <span class="pagewidth">
+                                            <p-dropdown (onChange)="onChange($event)" [options]="maxregister" optionLabel="name"
+                                            [showClear]="true"></p-dropdown>
+                                        </span>
+                                        <span class="bold pagewidth text-corp">
+                                            Mostrar
+                                        </span>
+                                    </div>
+                                </ng-template>
+                   
+                                <!-- Encabezado de tabla -->
+                                <ng-template pTemplate="header">
+                                    <tr class="text-corp"> 
+                                        <th *ngFor="let item of columns" class="{{ item.class }}  align-items-center"> {{ item.header }}</th>
+                                    </tr>
+                                                            
+                                    <!-- Buscar por columnas -->
+                                    <tr>
+                                        <th *ngFor="let col of columns" [ngSwitch]="col.field" id="{{ col.field }}">
+                                            <div class="ui-inputgroup dropdown" *ngSwitchCase="'estado'" id="estadoTop">
+                                                <p-dropdown [showClear]="true" [autoWidth]="true" [options]="state" 
+                                                    optionLabel="name" [(ngModel)]="selectedItem"
+                                                    (onChange)="getFilter(selectedItem.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                                </p-dropdown>
+                                                <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                            </div>
+                                            <div class="ui-inputgroup" *ngSwitchCase="'fechaInicio'">
+                                                <input class="form-control" pInputText type="text"
+                                                (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                                <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                            </div>
+                                            <div class="ui-inputgroup" *ngSwitchCase="'fechaFin'">
+                                                <input class="form-control" pInputText type="text"
+                                                (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                                <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                            </div>
+                                            <div class="ui-inputgroup" *ngSwitchCase="'logJob'">
+                                                <input class="form-control" pInputText type="text"
+                                                (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                                <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                            </div>
+                                            <div class="ui-inputgroup" *ngSwitchCase="'logIntegracion'">
+                                                <input class="form-control" pInputText type="text"
+                                                (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                                <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </ng-template>
+                   
+                                 <!-- Contenido de la tabla -->
+                                <ng-template pTemplate="body" let-logs >
+                                    <tr class="ng-star-inserted" [pSelectableRow]="logs" class="select">
+                                        <td>{{ logs.estado? 'Exitosa' : 'Fallida' }}</td>
+                                        <td>{{ logs.fechaInicio }}</td>
+                                        <td>{{ logs.fechaFin }}</td>
+                                        <td>{{ logs.logJob | slice:0:40}} ...</td>
+                                        <td>{{ logs.logIntegracion | slice:0:40}} ...</td>
+                                        <td class="text-center">
+                                            <button class="btn btn-info btn-round btn-fab mat-raised-button"  (click)="open(mymodal, logs)">
+                                                <span class="mat-button-wrapper">
+                                                    <i class="fa fa-eye"></i>
+                                                </span>
+                                                <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                                <div class="mat-button-focus-overlay"></div>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </ng-template>
+                   
+                                 <!-- Contenido de la tabla con 0 registros -->
+                                 <ng-template pTemplate="emptymessage" let-columns>
+                                    <tr class="text-center">
+                                        <td [attr.colspan]="6">
+                                            <p>No hay registros disponibles para mostrar</p>
+                                        </td>
+                                    </tr>
+                                 </ng-template>
+                            </p-table>
+                   
+                            <!-- Paginación -->
+                            <div class="footpaginator">
+                                <p-paginator #pg (onLazyLoad)="loadCarsLazy($event)" (onPageChange)="loadCarsLazy($event)"
+                                    [rows]="maxR" [totalRecords]="totalRow" >
+                                </p-paginator>
+                                <span class="totalRow">{{ numFilas }} de {{ totalRow }} Registros</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal detalle Logs -->
+<ng-template #mymodal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Detalle Logs</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row modalrow">
+            <div class="col-12 contentparams">
+                <strong>Estado:</strong>
+                {{ logsId.estado ? 'Exitoso': 'Fallido'}}
+            </div>
+            <div class="col-6 contentparams">
+                <strong>Fecha Inicio:</strong>
+                {{logsId.fechaInicio}}
+            </div>
+            <div class="col-6 contentparams mt-3">
+                <strong>Fecha Fin:</strong>
+                {{ logsId.fechaFin }}
+            </div>
+            <div class="col-12 contentparams mt-3">
+                <strong>Log del Job:</strong><br>
+                {{ logsId.logJob }}
+            </div>
+            <div class="col-12 contentparams mt-3">
+                <strong>Log del Integración:</strong><br>
+                {{ logsId.logIntegracion }}
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.dismiss('Cross click')">Ok</button>
+    </div>
+</ng-template>

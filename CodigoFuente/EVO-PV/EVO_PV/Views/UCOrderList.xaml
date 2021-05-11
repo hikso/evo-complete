@@ -1,0 +1,164 @@
+﻿<UserControl x:Class="EVO_PV.Views.UCOrderList"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EVO_PV.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1024">
+    
+    <UserControl.Resources>
+        <ResourceDictionary >
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Style/style.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <Grid Background="#eee" >
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="0" x:Name="NewRequest" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}"  Width="40" Height="40" Padding="0" Margin="0 0 40 0"
+                    Background="#4CAF50" BorderBrush="#4CAF50" VerticalAlignment="Top" HorizontalAlignment="Right"  Click="NewRequest_Click">
+            <materialDesign:PackIcon Kind="PlaylistAddCheck" Foreground="#FFFFFF"/>
+        </Button>
+
+        <Grid Grid.Row="1">
+            <materialDesign:Card Margin="30 0 30 10" Grid.Row="1" >
+                <Grid Style="{StaticResource ContentCard}">
+                    <StackPanel>
+
+                        <DataGrid ItemsSource="{Binding OrderList}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeColumns="False" 
+                                  CanUserReorderColumns="False" SelectionMode="Single"  Background="Transparent" SelectedItem="{Binding OrderSelect}" >
+                            
+                            <DataGrid.Columns>
+                                
+                                <DataGridTextColumn Binding="{Binding Path=CodeOrder}" Header="Número Pedido">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock TextWrapping="Wrap" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" Foreground="#7F0E06"/>
+                                                <TextBox Text="{Binding SearchArticlesByUnitMeasure}" x:Name="txtSearchArticleByUnitMeasure" Width="Auto"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+                                
+                                <DataGridTextColumn Binding="{Binding Path=DateRequest}" Header="Fecha Solicitud">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock TextWrapping="Wrap" Text="{Binding Content, RelativeSource= {RelativeSource Mode=TemplatedParent}}"  Foreground="#7F0E06"/>
+                                                <TextBox Text="{Binding SearchArticlesBySuggestedOrder}" x:Name="txtSearchArticleBySuggestedOrder" Width="Auto" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Binding="{Binding Path=DateDelivery}" Header="Fecha Entrega" >
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" Foreground="#7F0E06"/>
+                                                <TextBox Text="{Binding SearchArticlesByStock}" x:Name="txtSearchArticlesByStock" Width="Auto"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+                                
+                                <DataGridTextColumn Binding="{Binding Path=State}" Header="Estado" >
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Text="{Binding Content, RelativeSource= {RelativeSource Mode=TemplatedParent}}" Foreground="#7F0E06"/>
+                                                <TextBox Text="{Binding SearchArticlesByMinimum}" x:Name="txtSearchArticlesByMinimum" Width="Auto"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+                                
+                                <DataGridTextColumn Binding="{Binding Path=Factory}" Header="Planta">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" Foreground="#7F0E06"/>
+                                                <TextBox Text="{Binding SearchArticlesByMaximum}" x:Name="txtSearchArticlesByMaximum" Width="Auto" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTextColumn Binding="{Binding Path=DaysDelivery}" Header="Días para la Entrega">
+                                    <DataGridTextColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" Foreground="#7F0E06"/>
+                                                <TextBox Text="{Binding SearchArticlesByMaximum}" x:Name="txtSearchArticlesByMaximum" Width="Auto"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTextColumn.HeaderTemplate>
+                                </DataGridTextColumn>
+
+                                <DataGridTemplateColumn Width="Auto">
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical" >
+                                                <TextBlock TextWrapping="Wrap" Text="Acciones" Foreground="#7F0E06" Margin="0 0 0 22"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Background="#00BCD4" BorderBrush="#00BCD4" Margin="0 0 5 0"  Command="{Binding Path=DataContext.ViewDetailsCommand,       
+                                                    RelativeSource= {RelativeSource FindAncestor,  AncestorType={x:Type DataGrid}}}">
+                                                    <materialDesign:PackIcon Kind="Eye" HorizontalAlignment="Center"  Foreground="#FFFFFF" />
+                                                </Button>
+
+                                                <Button Background="#FF9800" BorderBrush="#FF9800" Margin="0 0 5 0" IsEnabled="{Binding BtnEye}" Command="{Binding Path=DataContext.ViewEditOrderCommand,      
+                                                    RelativeSource= {RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" >
+                                                    <materialDesign:PackIcon Kind="BorderColor" HorizontalAlignment="Center"  Foreground="#FFFFFF" />
+                                                </Button>
+
+                                                <Button Background="#4CAF50" BorderBrush="#4CAF50" Margin="0 0 5 0" IsEnabled="{Binding BtnDuplicate}" Command="{Binding Path=DataContext.ViewDuplicateOrderCommand,      
+                                                    RelativeSource= {RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" >
+                                                    <materialDesign:PackIcon Kind="ContentDuplicate" HorizontalAlignment="Center"  Foreground="#FFFFFF" />
+                                                </Button>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        
+                    </StackPanel>
+                </Grid>
+            </materialDesign:Card>
+
+            <Grid Style="{StaticResource IconCard}">
+                <Grid.Effect>
+                    <DropShadowEffect BlurRadius="20" Color="#FFECECEC" RenderingBias="Quality" ShadowDepth="1"/>
+                </Grid.Effect>
+                <Border Style="{StaticResource BorderCard}"/>
+                <materialDesign:PackIcon Kind="PlaylistAddCheck" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Foreground="White" Width="30" Height="30" Padding="10"/>
+            </Grid>
+            <Grid Style="{StaticResource Title}">
+                <StackPanel Style="{StaticResource ContentTitle}">
+                    <TextBlock Text="Consulta de Pedido" Style="{StaticResource TextTitle}"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+
+    </Grid>
+</UserControl>

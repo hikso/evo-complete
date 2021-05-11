@@ -1,0 +1,11 @@
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_Proxy\bin\Debug\netcoreapp3.1\EVO_PV_Proxy.deps.json
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_Proxy\bin\Debug\netcoreapp3.1\EVO_PV_Proxy.dll
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_Proxy\bin\Debug\netcoreapp3.1\EVO_PV_Proxy.pdb
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_Proxy\bin\Debug\netcoreapp3.1\EVO_PV_BusinessObjects.dll
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_Proxy\bin\Debug\netcoreapp3.1\EVO_PV_BusinessObjects.pdb
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_Proxy\obj\Debug\netcoreapp3.1\EVO_PV_Proxy.csprojAssemblyReference.cache
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_Proxy\obj\Debug\netcoreapp3.1\EVO_PV_Proxy.AssemblyInfoInputs.cache
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_Proxy\obj\Debug\netcoreapp3.1\EVO_PV_Proxy.AssemblyInfo.cs
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_Proxy\obj\Debug\netcoreapp3.1\EVO_PV_Proxy.csproj.CopyComplete
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_Proxy\obj\Debug\netcoreapp3.1\EVO_PV_Proxy.dll
+C:\EVO\CodigoFuente\EVO-PV-test\EVO_PV_Proxy\obj\Debug\netcoreapp3.1\EVO_PV_Proxy.pdb

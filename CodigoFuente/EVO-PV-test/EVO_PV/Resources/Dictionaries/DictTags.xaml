@@ -1,0 +1,46 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <!--  Diccionario de etiqueta Solicitud Pedido  -->
+    <system:String x:Key="lblDateRequest">Fecha de solicitud:</system:String>
+    <system:String x:Key="lblRequestFor">Solicitud a:</system:String>
+    <system:String x:Key="lblDateDelivery">Fecha Límite Sugerida:</system:String>
+    <system:String x:Key="BtnConfirmationYes">Si</system:String>
+    <system:String x:Key="BtnConfirmationNot">No</system:String>
+    <system:String x:Key="lblConsecutive">Consecutivo:</system:String>
+    <system:String x:Key="lblPedido">Número Pedido:</system:String>
+    <system:String x:Key="lblDate">Fecha:</system:String>
+    <system:String x:Key="lblRequest">Solcitud:</system:String>
+    <system:String x:Key="lblDelivery"># Entrega:</system:String>
+    <system:String x:Key="lblZone">Zona:</system:String>
+    <system:String x:Key="lblTypeClient">Tipo Cliente:</system:String>
+    <system:String x:Key="lblClient">Cliente:</system:String>
+    <system:String x:Key="lblMuelle">Muelle:</system:String>
+    <system:String x:Key="lblFechaActual">Fecha Actual:</system:String>
+    <system:String x:Key="lblFechaEntrega">Fecha Entrega:</system:String>
+    <system:String x:Key="lblBasculeType">Tipo de bascula:</system:String>
+    <system:String x:Key="lblWeighingMachine">Báscula:</system:String>
+    <system:String x:Key="lblWarehouse">Bodega:</system:String>
+    <system:String x:Key="lblWeighingByBascule">INFORMACIÓN POR BÁSCULA:</system:String>
+    <system:String x:Key="lblWeighingByBarCode">INFORMACIÓN POR CÓDIGO DE BARRAS:</system:String>
+    <system:String x:Key="lblTotalWeightByBascule">Total peso artículos por báscula:</system:String>
+    <system:String x:Key="lblTotalWeightByBarCode">Total peso artículos por código de barra:</system:String>
+    <system:String x:Key="lblSumaryWeight">Total Peso Contenedores:</system:String>
+    <system:String x:Key="lblBasculeWeight">Peso Báscula</system:String>
+    <system:String x:Key="lblBasculeTypeFloor">Báscula de piso</system:String>
+    <system:String x:Key="lblTitleDocumentsGenerated">Se han generado los siguientes documentos:</system:String>
+    <system:String x:Key="BtnCloseMessage">Cerrar</system:String>
+    <system:String x:Key="lblIdentificacionCajero">Identificación:</system:String>
+    <system:String x:Key="lblNombre">Nombre:</system:String>
+    <system:String x:Key="lblCargo">Cargo:</system:String>
+    <system:String x:Key="lblFechaApertura">Fecha Apertura:</system:String>
+    <system:String x:Key="lblFechaCierre">Fecha Cierre:</system:String>
+    <system:String x:Key="lblValorApertura">Valor Apertura:</system:String>
+    <system:String x:Key="lblValorAsignado">Valor Asignado:</system:String>
+    <system:String x:Key="lblNovedad">Novedad Faltante o Sobrante:</system:String>
+    <system:String x:Key="lblConsecutivoFactura">Consecutivo Factura:</system:String>
+    <system:String x:Key="lblNroCopias">Nro Copias:</system:String>
+
+</ResourceDictionary>

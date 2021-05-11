@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegracionBasculasPorcicarnes", "Integracion\IntegracionBasculasPorcicarnes.csproj", "{215E8AA2-C679-4EEE-ACED-40F0FA90A038}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "testIntegracion", "testIntegracion\testIntegracion.csproj", "{7076DED0-509E-49C9-8890-7565FCD9BC84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{215E8AA2-C679-4EEE-ACED-40F0FA90A038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215E8AA2-C679-4EEE-ACED-40F0FA90A038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215E8AA2-C679-4EEE-ACED-40F0FA90A038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215E8AA2-C679-4EEE-ACED-40F0FA90A038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7076DED0-509E-49C9-8890-7565FCD9BC84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7076DED0-509E-49C9-8890-7565FCD9BC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7076DED0-509E-49C9-8890-7565FCD9BC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7076DED0-509E-49C9-8890-7565FCD9BC84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {942854B0-26B1-45E9-841A-7E42D3F1236F}
+	EndGlobalSection
+EndGlobal

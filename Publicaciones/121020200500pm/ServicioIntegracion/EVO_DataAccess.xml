@@ -1,0 +1,3608 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EVO_DataAccess</name>
+    </assembly>
+    <members>
+        <member name="T:EVO_DataAccess.Context.Contexto">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 02-Ago/2019
+            Descripción      : Se crea la clase que tendra el contexto de la BD
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.Context.Contexto.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Se realiza la conexion con la BD 
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Acciones">
+            <summary>
+            Tabla de  las acciones
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.RegistrosAuditoria">
+            <summary>
+            Tabla de Registros de Auditoria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.ParametrosGenerales">
+            <summary>
+            Tabla de Parámetros Generales del Sistema
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Usuarios">
+            <summary>
+            Tabla de Usuarios del sistema
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.UsuariosxRol">
+            <summary>
+            Tabla de relación entre Usuarios y Roles
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Roles">
+            <summary>
+            Tabla de Roles del sistema
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Modulos">
+            <summary>
+            Tabla de Módulos del sistema
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Funcionalidades">
+            <summary>
+            Tabla de funcionalidades del sistema
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.FuncionalidadesxRol">
+            <summary>
+            Tabla de las funcionalidades de los roles
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Sesiones">
+            <summary>
+            Tabla de las sesiones de los usuarios
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Bodegas">
+            <summary>
+            Tabla de las bodegas
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Pedidos">
+            <summary>
+            Tabla de los pedidos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.DetallesPedido">
+            <summary>
+            Tabla de los detalles pedidos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.EstadosXPedido">
+            <summary>
+            Tabla de los detalles pedidos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.EstadosArticulo">
+            <summary>
+            Tabla de los detalles pedidos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.ArticulosXBodega">
+            <summary>
+            Tabla de las unidades de medida
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Articulos">
+            <summary>
+            Tabla de los artículos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.LogsIntegracion">
+            <summary>
+            Tabla de los Log Integración
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.ClientesExternos">
+            <summary>
+            Tabla de Clientes Externos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Entregas">
+            <summary>
+            Tabla de Entregas
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.DetalleEntregas">
+            <summary>
+            Tabla de Detalle Entregas
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Motivos">
+            <summary>
+            Tabla de motivos de edición de entregas
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.TiposVehiculo">
+            <summary>
+            Tabla de tipos de vehiculos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Vehiculo">
+            <summary>
+            Tabla de vehiculos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Empleados">
+            <summary>
+            Tabla de Conductores y Auxiliares
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.VehiculoEntregas">
+            <summary>
+            Tabla Vehiculo Entregas
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.VehiculoEntregasDetalles">
+            <summary>
+            Tabla Vehiculo Entregas Detalles
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Procesos">
+            <summary>
+            Tabla Procesos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.MotivosProcesos">
+            <summary>
+            Tabla Procesos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Muelles">
+            <summary>
+            Tabla Muelles
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.TiposContenedor">
+            <summary>
+            Tabla TiposContenedor
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.TiposBascula">
+            <summary>
+            Tabla TiposBascula
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.EstadosEntrega">
+            <summary>
+            Tabla EstadosEntrega
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.ClientesParametrizacion">
+            <summary>
+            Tabla PesajesTolerancia
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.PesajesEntrega">
+            <summary>
+            Tabla PesajesEntrega
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.PesajesArticulo">
+            <summary>
+            Tabla PesajesArticulo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Pesajes">
+            <summary>
+            Tabla Pesajes
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.PesajesContenedor">
+            <summary>
+            Tabla PesajesContenedor 
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.PesajesCodigoBarras">
+            <summary>
+            Tabla PesajesCodigoBarras
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Evidencias">
+            <summary>
+            Tabla Evidencias
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.DetallesEvidencia">
+            <summary>
+            Tabla Evidencias
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Documentos">
+            <summary>
+            Tabla Documentos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Cajas">
+            <summary>
+            Tabla Cajas
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Inconsistencias">
+            <summary>
+            Tabla Inconsistencias
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.EstadosCuadreCaja">
+            <summary>
+            Tabla EstadosCuadreCaja
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.CuadresCaja">
+            <summary>
+            Tabla CuadresCaja
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.SociosNegocio">
+            <summary>
+            Tabla SociosNegocio
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Impuestos">
+            <summary>
+            Tabla Impuestos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.TiposDescuentos">
+            <summary>
+            Tabla TiposDescuentos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.ComponentesArticulo">
+            <summary>
+            Tabla ComponentesArticulo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.DescuentosSocioArticulo">
+            <summary>
+            Tabla DescuentosSocioArticulo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Inventarios">
+            <summary>
+            Tabla Inventarios
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.DetallesInventario">
+            <summary>
+            Tabla DetallesInventario
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.TiposFactura">
+            <summary>
+            Tabla TiposFactura
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Facturas">
+            <summary>
+            Tabla Facturas
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.DetallesFactura">
+            <summary>
+            Tabla DetallesFactura
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.TiposInventario">
+            <summary>
+            Tabla TiposInventario
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Vendedores">
+            <summary>
+            Tabla Vendedores
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.VendedoresPuntoVenta">
+            <summary>
+            Tabla VendedoresPuntoVenta
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Transformaciones">
+            <summary>
+            Tabla Transformaciones
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.FormasPago">
+            <summary>
+            Tabla FormasPago
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Bancos">
+            <summary>
+            Tabla Bancos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.UsuariosBodega">
+            <summary>
+            Tabla UsuariosBodega
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.TiposSolicitud">
+            <summary>
+            Tabla TiposSolicitud
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Empaques">
+            <summary>
+            Tabla Empaques
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.Series">
+            <summary>
+            Tabla Series
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.TiposBodegasParametrizacion">
+            <summary>
+            Tabla TiposBodegasParametrizacion
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Context.Contexto.GestionCompras">
+            <summary>
+            Tabla GestionCompras
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAArticulo">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 21-Sep/2019
+            Descripción      : Implementa el acceso a datos de los artículos
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.EliminarCompra(System.Int32,System.Int32)">
+            <summary>
+            Gestiona la eliminación de la compra/traslado de un artículo en una acción
+            </summary>
+            <param name="detallePedidoId">Indica el id del detalle del pedido</param>
+            <param name="accionId">Indica el id de la acción</param>
+            <response >bool</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo(System.String,System.String)">
+            <summary>
+            Este método obtiene los artìculos por el codigo de la bodega y el codigo del artìculo
+            </summary>
+            <param name="codigoBodega">Indica el codigo de la bodega</param>
+            <param name="codigoArticulo">Indica el codigo del artìculo</param>
+            <returns>Instancia de objeto de tipo ArticuloBodega</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.obtenerArticuloxCodigo(System.String)">
+            <summary>
+            Obtiene artículo por código
+            </summary>
+            <param name="codigo">Indica el código del artículo</param>
+            <returns>Articulo</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerArticulosBodegaxCodigoNombreArticulo(EVO_BusinessObjects.BuscarArticuloBodegaSolicitud)">
+            <summary>
+            Este método obtiene los artículos de la bodega por el codigo para obtener el nombre
+            </summary>
+            <param name="buscarArticuloBodegaSolicitud">Indica el artículo de la bodega</param>
+            <returns>Instancia de objeto de tipo ArticuloBodega</returns>
+            
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.LimpiarCompras(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Gestiona la eliminación de todas las ordenes de compras de todos los artículos
+            </summary>
+            <param name="pedidoId">Indica el id del pedido</param>
+            <response>bool</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ActualizarCompra(System.Collections.Generic.List{EVO_BusinessObjects.BOGestionCompra},System.Int32)">
+            <summary>
+            Gestiona la actualización de la compra de los artículos
+            </summary>
+            <param name="compras">Artículos a gestionar en la solicitud de pedido</param>        
+            <param name="pedidoId">Id del pedido</param>
+            <response>bool</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.FinalizarCompra(System.Collections.Generic.List{EVO_BusinessObjects.BOGestionCompra},System.Int32,System.Int32)">
+            <summary>
+            Gestiona la finalización de la compra de los artículos
+            </summary>
+            <param name="compras">Artículos a gestionar en la solicitud de pedido</param>
+            <param name="estadoPedidoId">Id del estado del pedido</param>
+            <param name="pedidoId">Id del pedido</param>
+            <response>bool</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.AsignarCompra(EVO_BusinessObjects.BOCompraRequest)">
+            <summary>
+            Gestiona la compra de los artículos
+            </summary>
+            <param name="body">Solicitud para la compra de los artículos</param>
+            <response>bool</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerTodasTransformaciones" -->
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerArticulosPesaje(System.Int32)">
+            <summary>
+            Obtiene los artículos de una entrega en estado alistamiento
+            </summary>
+            <param name="id">Indica el id de la entrega</param>
+            <response>DetalleEntregaRespuesta</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerEstadoArticuloxId(System.Int32)">
+            <summary>
+            Este método obtiene el estado del artículo por el id
+            </summary>
+            <param name="EstadoArticuloId">Indica el id del Artículo</param>
+            <returns>Instancia de objeto de tipo EstadoArticulo</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerTodosArticulosxFiltro(EVO_BusinessObjects.FiltroArticulo)">
+            <summary>
+            Este método obtiene todos los artículos por el filtro 
+            </summary>
+            <param name="filtro">Indica el valor del filtro</param>
+            <returns>Lista de ArticuloBodega</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerConteoTodosRegistrosxFiltro(EVO_BusinessObjects.FiltroArticulo)">
+            <summary>
+            Este método obtiene todos los conteos del registro por el filtro
+            </summary>
+            <param name="filtro">Indica el valor del filtro</param>
+            <returns>Conteo de todos los registros por filtro</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerTodosArticulosxBodega(System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Este método obtienen todos los artículos por bodega
+            </summary>
+            <param name="desde">Indica el valor de Desde</param>
+            <param name="hasta">Indica el valor hasta</param>
+            <param name="whsCode">Indica el valor de la bodega</param>
+            <returns>Lista de ArticuloBodega</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerTodosArticulosxBodegaPlantas(System.String)">
+            <summary>
+            Este método obtienen todos los artículos del punto de venta que se fabrican en las dos plantas
+            </summary>       
+            <param name="whsCode">Indica el valor de la bodega</param>
+            <returns>Lista de ArticuloBodega</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerConteoTodosRegistros(System.String,System.String)">
+            <summary>
+            Este método obtiene los conteo de los registros
+            </summary>
+            <param name="whsCode">Indica el valor de la bodega punto de venta</param>
+            <param name="whsCodePlanta">Indica el valor de la bodega planta</param>
+            <returns>Conteo de todos los registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerConteoTodosRegistrosPlantas(System.String,System.String)">
+            <summary>
+            Este método obtiene los conteo de los registros
+            </summary>
+            <param name="whsCode">Indica el valor de la bodega punto de venta</param>      
+            <returns>Conteo de todos los registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerConteoTodosRegistrosCompras(System.String)">
+            <summary>
+            Este método obtiene los conteo de los registros para compras
+            </summary>
+            <param name="whsCode">Indica el valor de la bodega punto de venta</param>      
+            <returns>Conteo de todos los registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerTodosEstados">
+            <summary>
+            Este método obtiene todos los estados 
+            </summary>
+            <returns>Lista de EstadoArticulo</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerAcciones">
+            <summary>
+            Este método obtiene todos las acciones de un artículo 
+            </summary>
+            <returns>Lista de Acciones</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerTodosArticulos">
+            <summary>
+            Este método obtiene todos los artículos
+            </summary>
+            <returns>Lista de Articulo</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerTodosArticulosxPuntoVenta(System.String)">
+            <summary>
+            Este método obtiene todo los artículos del punto de venta
+            </summary>
+            <param name="codigoPuntoVenta">Indica el valor del código del punto de venta</param>
+            <returns>Lista de todos los artículos del punto de venta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAArticulo.ActualizarArticuloBodega(EVO_BusinessObjects.ArticuloBodega)">
+            <summary>
+            Este método actualiza el artículo en la bodega
+            </summary>
+            <param name="articuloBodega">Objeto de negocio de tipo ArticuloBodega</param>      
+            <returns>bool</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAArticulo.ObtenerEmpaques" -->
+        <member name="T:EVO_DataAccess.DataAccess.DAAuditoria">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 02-Ago/2019
+            Descripción      : Se crea la clase que almacenara todo el registro de auditoria
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAAuditoria.CrearRegistro(EVO_BusinessObjects.RegistroAuditoria)">
+            <summary>
+            Este mètodo crea un registro en la tabla de auditoria
+            </summary>
+            <param name="nuevoRegistro">Registro de auditoria de tipo RegistroAuditoria</param>
+            <returns>Verdadero si el registro se puede insertar, falso de lo contrario</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAAuditoria.ObtenerConteoTodosRegistros">
+            <summary>
+            Este método permite saber cuántos registros se generan de la consulta
+            </summary>
+            <returns>Número de registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAAuditoria.ObtenerConteoTodosRegistrosxFiltro(EVO_BusinessObjects.FiltroAuditoria)">
+            <summary>
+            Este método permite saber cuántos registros se generan a partir de los filtros generados para la consulta
+            </summary>
+            <param name="filtro">Criterios de filtro para la consulta</param>
+            <returns>Número de registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAAuditoria.ObtenerTodosRegistros(System.Int32,System.Int32)">
+            <summary>
+            Este metodo obtiene todos los registros de auditoria
+            </summary>
+            <param name="desde">Indica el nùmero de registro desde el cuàl se quiere obtener los registros de auditoria</param>
+            <param name="hasta">Indica el nùmero de registro hasta el cuàl se quiere obtener los registros de auditoria</param>
+            <returns>Si esta dentro de el numero de registros permitidos, devuelve una lista de RegistroAuditoria.</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAAuditoria.ObtenerTodosRegistrosxFiltro(EVO_BusinessObjects.FiltroAuditoria)">
+            <summary>
+            Este método obtiene todos los registros de Auditoria aplicando un filtro de búsqueda sobre las acciones
+            </summary>
+            <param name="filtro">Filtro de búsqueda a aplicar sobre las acciones de auditoria</param>
+            <returns>Lista de Registros de Auditoria</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAAuditoria.mapeadorRegistroAuditoria(System.Data.Common.DbDataReader)">
+            <summary>
+            Mapea un objeto DbDataReader a un objeto de tipo RegistroAuditoria
+            </summary>
+            <param name="reader">DbDataReader</param>
+            <returns>Instancia de objeto de tipo RegistroAuditoria</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DABascula">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 3-Mar/2020
+            Descripción      : Implementa el acceso a datos de las básculas
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DABascula.ObtenerTipoBasculas" -->
+        <member name="M:EVO_DataAccess.DataAccess.DABascula.ObtenerTipoBasculaxId(System.Int32)">
+            <summary>
+            Obtiene el objeto de negocio TipoBascula por Id
+            </summary>
+            <param name="tipoBasculaId"></param>
+            <returns>TipoBascula</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DABascula.ObtenerTipoBasculaxNombre(EVO_BusinessObjects.Enum.TiposBasculaEnum)">
+            <summary>
+            Obtiene el objeto de negocio TipoBascula por nombre
+            </summary>
+            <param name="tipoBasculaEnum">Nombre la báscula</param>
+            <returns>TipoBascula</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DABase">
+            <summary>
+            Autor            : Duban Camilo Cardona
+            Fecha de Creación: 05-Nov/2019
+            Descripción      : Esta es la clase base de los objetos de acceso a datos. Desde aquí se configura el mapeador con automapper.
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DABase.#ctor">
+            <summary>
+            Constructor de la clase, aquí se configura el automapper
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DABodega">
+            <summary>
+            Autor            : Juan Camilo Usuga
+            Fecha de Creación: 21-Sep/2019
+            Descripción      : Esta clase implementa los métodos de acceso a datos de las bodegas
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DABodega.ObtenerBodegaPorCodigo(System.String)">
+            <summary>
+            Este método obtiene una bodega por el código
+            </summary>
+            <param name="codigo">indica el valor de el código</param>
+            <returns>Instancia de tipo Bodega</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DABodega.ObtenerBodegasPuntosVentaPorUsuario(System.Int32)" -->
+        <member name="M:EVO_DataAccess.DataAccess.DABodega.ObtenerTipoBodegaParametrizacion(System.String,System.String)">
+            <summary>
+            Devuelve la parametrización por el tipo de bodega
+            </summary>
+            <param name="codigoBodegaDe">Indica el código de donde se realizará el pedido</param>
+            <param name="tipoBodega">Indica del tipo de bodega al cual se le hará el pedido</param>
+            <response>BOTipoBodegaParametrizacion</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DABodega.ObtenerBodegasxPrefijo(System.String)">
+            <summary>
+            Este método obtiene las bodega por el prefijo 
+            </summary>
+            <param name="prefijo">Indica el prefijo de la bodega example: PB-PT</param>
+            <returns>Lista de Bodega</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DABodega.ObtenerBodegasxFiltro(System.String,System.String)" -->
+        <member name="T:EVO_DataAccess.DataAccess.DACajas">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 12-Abr/2020
+            Descripción      : Se crea la clase de acceso a datos de Cajas
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DACajas.ObtenerCaja(System.String,System.String)">
+            <summary>
+            Obtiene la caja por código punto de venta y IP
+            </summary>
+            <param name="codigoPuntoVenta">Código del punto de venta</param>
+            <param name="IP">IP de la caja</param>
+            <response>BOCaja</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DACajas.ObtenerEstadoCuadreCaja(EVO_BusinessObjects.Enum.EstadosCuadreCajaEnum)">
+            <summary>
+            Obtiene estado del cuadre de caja
+            </summary>
+            <param name="nombreEstadoCuadreCaja">Apertura</param>       
+            <response>BOCaja</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DACajas.ObtenerInconsistencia(EVO_BusinessObjects.Enum.InconsistenciasEnum)">
+            <summary>
+            Obtiene una inconsistencia
+            </summary>
+            <param name="inconsistenciasEnum">Reponer faltante</param>       
+            <response>BOInconsistencia</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DACajas.AsignarAperturaCaja(EVO_BusinessObjects.BOAperturaCajaRequest)">
+            <summary>
+            Registrar la apertura de caja
+            </summary>
+            <param name="body">Solicitud para el registro de la apertura de caja</param>
+            <response>Bool</response>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAClienteExterno">
+            <summary>
+            Autor            : Juan Camilo Usuga
+            Fecha de Creación: 24-Oct/2019
+            Descripción      : Esta clase implementa los métodos de acceso a datos de los Clientes externos
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAClienteExterno.ObtenerTodosClientesExternos">
+            <summary>
+            Este método obtiene todos los clientes externos
+            </summary>
+            <returns>Lista de Clientes Externos</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAClienteExterno.ObtenerTodosClienteExternoxCodigo(System.String)">
+            <summary>
+            Obtiene un cliente externo por código
+            </summary>
+            <param name="codigo">C-1017149286</param>
+            <returns>Objeto de negoio de tipo cliente externo</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAClientesParametrizacion">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 11-Abr/2020
+            Descripción      : Implementa el acceso a datos del proceso de parametrización de clientes
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAClientesParametrizacion.ObtenerPatrametrizacionesxCliente(System.String)">
+            <summary>
+            Obtiene las parametrizaciones del cliente
+            </summary>
+            <param name="codigoCliente">Indica el código del cliente</param>
+            <response>BOParametrizacionResponse</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAContenedor.ObtenerTipoContenedores" -->
+        <member name="M:EVO_DataAccess.DataAccess.DAContenedor.ObtenerTipoContenedorxId(System.Int32)">
+            <summary>
+            Obtiene un objeto de negocio tipo de contenedor por el id
+            </summary>
+            <param name="tipoContenedorId">5</param>
+            <returns>TipoContenedorRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAContenedor.ObtenerTipoContenedorxNombre(EVO_BusinessObjects.Enum.TiposContenedorEnum)">
+            <summary>
+            Obtiene un objeto de negocio tipo de contenedor por el nombre
+            </summary>
+            <param name="tipoContenedorNombre">Nombre 1</param>
+            <returns>TipoContenedorRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAContenedor.AsignarCodigoBarras(System.Int32,System.Int32,EVO_BusinessObjects.BOCodigoBarras)">
+            <summary>
+            Registra el código de barras y obtiene los datos del código de barras
+            </summary>
+            <param name="pesajeId">Indica el id del pesaje</param>
+            <param name="usuarioId">Indica el id del usuario</param>    
+            <param name="bOCodigoBarras">Representa el código de barras</param>    
+            <response>bool</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAContenedor.ObtenerContenedoresPesaje(System.Int32)" -->
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAContenedor.ObtenerContenedoresCodigoBarras(System.Int32)" -->
+        <member name="T:EVO_DataAccess.DataAccess.DADocumento">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 2-Abr/2020
+            Descripción      : Implementa el acceso a datos de documento
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DADocumento.ObtenerDocumentoxNombre(EVO_BusinessObjects.Enum.DocumentosEnum)">
+            <summary>
+            Obtiene documento por nombre
+            </summary>
+            <param name="documento">Indica nombre del documento</param>
+            <returns>BODocumento</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DADocumento.ObtenerDocumentos" -->
+        <member name="M:EVO_DataAccess.DataAccess.DAEntrega.ObtenerEstadoEntregaxNombre(EVO_BusinessObjects.Enum.EstadosEntregasEnum)">
+            <summary>
+            Este método obtiene el estado de la entrega por el nombre
+            </summary>
+            <param name="estadoEntregaEnum">Indica el estado de la entrega</param>
+            <returns>BOEstadoEntrega</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAEntrega.ObtenerTodosEntregasEnrutamiento(System.Int32,System.Int32)">
+            <summary>
+            Obtiene todas las entregas en enrutamiento
+            </summary>
+            <param name="desde">Indica el parametro desde donde se va obtener el pedido ejemplo: 1</param>
+            <param name="hasta">Indica el parametro hasta donde se va obtener el pedido ejemplo: 10</param>
+            <returns>Lista de tipo EntregaDistribucionRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAEntrega.GetDetalleEntregaxId(System.Int32)">
+            <summary>
+            Obtiene el objeto de negocio DetalleEntrega
+            </summary>
+            <param name="detalleEntregaId">3</param>
+            <returns>DetalleEntrega</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAEntrega.EliminarArticuloDistribucion(EVO_BusinessObjects.EliminarArticuloDistribucion)">
+            <summary>
+            Edita un artículo asociado a una entrega en el módulo de distribución, en el negocio se entiende por eliminar
+            </summary>
+            <param name="eliminarArticuloDistribucion">solicitud eliminarArticuloDistribucion</param>
+            <response code="200">Booleano Operación realizada con éxito</response>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAEvidencia">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 26-Mar/2020
+            Descripción      : Implementa el acceso a datos del proceso de Evidencia
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAEvidencia.AsignarEvidencia(EVO_BusinessObjects.BOEvidenciaRequest)">
+            <summary>
+            Registra la evidencia
+            </summary>
+            <param name="bOEvidenciaRequest">Indica el objeto de negocio que contiene las eviencias</param>      
+            <response>bool</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAEvidencia.ObtenerEvidencias" -->
+        <member name="M:EVO_DataAccess.DataAccess.DAEvidencia.ObtenerEvidencia(System.Int32)">
+            <summary>
+            Obtiene la evidencia por evidenciaId
+            </summary>
+            <param name="evidenciaId">Indica de la evidencia</param>
+            <response>BOEvidencia</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAEvidencia.ObtenerEvidenciasxFiltro(System.String,System.String,System.String)" -->
+        <member name="T:EVO_DataAccess.DataAccess.DAFacturacion">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 20-May/2020
+            Descripción      : Se crea la clase de acceso a datos de Facturación
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAFacturacion.ObtenerFormasPago" -->
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAFacturacion.ObtenerBancos" -->
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAFacturacion.ObtenerImpuestos" -->
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAFacturacion.ObtenerTiposFactura" -->
+        <member name="M:EVO_DataAccess.DataAccess.DAFacturacion.ObtenerUltimaDevuelta(System.String)">
+            <summary>
+            Obtiene las ultima de devuelta de una factura POS
+            </summary>
+            <param name="codigoPuntoVenta">Indica el código de punto de venta</param>
+            <response>string</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAFacturacion.AsignarFactura(EVO_BusinessObjects.FacturaRequestBO)">
+            <summary>
+            Registra una factura
+            </summary>
+            <param name="body">Objeto de solicitud para registrar la factura</param>
+            <response>bool</response>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAFuncionalidad">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 08-Ago/2019
+            Descripción      : Acceso a datos de Funcionalidad
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAFuncionalidad.ObtenerFuncionalidadxId(System.Int32)">
+            <summary>
+            Este metodo trae las funcionalidades asignadas a un Id
+            </summary>
+            <param name="funcionalidadId">Id de funcionalidad a buscar de tipo funcionalidad</param>
+            <returns>Instancia de tipo Funcionalidad</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAFuncionalidad.ObtenerFuncionalidadxModuloId(System.Int32)">
+            <summary>
+            Este metodo trae las funcionalidades asignadas a un Modulo
+            </summary>
+            <param name="moduloId">Id de el modulo de tipo funcionalidad</param>
+            <returns>Lista de funcionalidades por el id del modulo</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAIntegracion">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 10-Sep/2019
+            Descripción      : Acceso a datos de las integraciones
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAIntegracion.ObtenerJobXNombre(System.String)">
+            <summary>
+            Este método obtiene el nombre del job a ejecutar
+            </summary>
+            <param name="nombreJob">Indica el nombre del job</param>
+            <returns>Nombre del job</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAIntegracion.IniciarJobXNombre(System.String)">
+            <summary>
+            Este método inicia el job por el nombre 
+            </summary>
+            <param name="nombreJob">Indica el nombre del job</param>
+            <returns>Verdadero o falso si pudo iniciar el job por el nombre encontrado</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAIntegracion.ProgramarJobXNombre(EVO_BusinessObjects.ProgramarEjecucionIntegracionSolicitud)">
+            <summary>
+            Este método programa el job por cada nombre encontrado
+            </summary>
+            <param name="programarEjecucionIntegracionSolicitud">Indica el valor de la programación solicitada</param>
+            <returns>Verdadero o falso si se pudo programar el job por el nombre</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAIntegracion.HabilitarJob(EVO_BusinessObjects.HabilitarEjecucionIntegracionSolicitud)">
+            <summary>
+            Este método habilita el job de la integración 
+            </summary>
+            <param name="habilitarEjecucionIntegracionSolicitud">Indica si se habilito</param>
+            <returns>Verdadero o falso si se habilito el job</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAIntegracion.ObtenerEstadoIntegracion(EVO_BusinessObjects.JobParametros)">
+            <summary>
+            Este método obtiene el estado de la integración 
+            </summary>
+            <param name="jobParametros">Indica los valores de los parametros enviados en el job</param>
+            <returns>Instancia de tipo EstadoEjecucionIntegracionRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAIntegracion.ObtenerlogsEjecucion(System.Int32,System.Int32,System.String)">
+            <summary>
+            Este método obtiene el log de la ejecución del job
+            </summary>
+            <param name="desde">Indica el valor desde el cual obtendra los valor ejemplo desde: 1</param>
+            <param name="hasta">Indica el valor hasta el cual obtendra los valor ejemplo hasta: 10</param>
+            <param name="jobId">Indica el valor del id del job</param>
+            <returns>Lista de los logs de las integración</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAIntegracion.ObtenerConteoTodosRegistros(System.String)">
+            <summary>
+            Este método obtiene el conteo de todos los registros
+            </summary>
+            <param name="jobId">Indica el valor del id del job</param>
+            <returns>Id del job</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAIntegracion.ObtenerLogsEjecucionArticulosxFiltro(EVO_BusinessObjects.FiltroIntegracion)">
+            <summary>
+            Este método obtiebe el log de la ejecución de los artículos filtrados
+            </summary>
+            <param name="filtro">Indica los valores por los cuales se realizo el filtro</param>
+            <returns>Lista de el log de las integraciones realizado el filtro</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAIntegracion.MapeadorRegistrosLogIntegraciones(System.Data.Common.DbDataReader)">
+            <summary>
+            Este método mapea un DbDataReader en una instancia de un LogIntegracionRespuesta
+            </summary>
+            <param name="reader">DbDataReader</param>
+            <returns>Instancia de LogIntegracionRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAIntegracion.InstanciarServidor">
+            <summary>
+            Este método permite obtener la instancia de un servidor
+            </summary>
+            <returns>Instancia de Servidor</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAInventario">
+            <summary>
+            Autor            : Juan Camilo Usuga
+            Fecha de Creación: 21-May/2019
+            Descripción      : Esta clase implementa los métodos de acceso a datos de inventario
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAInventario.ObtenerTipoInventarioxNombre(EVO_BusinessObjects.Enum.TiposInventarioEnum)">
+            <summary>
+            Obtiene el tipo de inventario por nombre
+            </summary>
+            <param name="tipoInventarioEnum">Enumerador del tipo de inventario</param>       
+            <response>TipoInventarioBO</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAInventario.Asignar(System.Collections.Generic.List{EVO_BusinessObjects.InventarioBO})">
+            <summary>
+            Asigna entradas o salidas al inventario
+            </summary>
+            <param name="inventarios">Entrada de inventarios</param>       
+            <response>bool</response>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAModulo">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 12-Ago/2019
+            Descripción      : Acceso a datos de modulos
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAModulo.obtenerTodosModulos(System.Int32,System.Int32)">
+            <summary>
+            Este método obtiene los modulos creados en el sistema
+            </summary>
+            <param name="desde">Indica el número de registro desde el cuál se deben cargar los registros</param>
+            <param name="hasta">Indica el número de registro hasta el cuál se deben cargar los registros</param>
+            <returns>Lista de modulos de tipo modulo</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAModulo.ObtenerModuloxNombre(System.String)">
+            <summary>
+            Obtiene un módulo especifico por el nombre
+            </summary>
+            <param name="nombre">Indica el nombre por el cual se va a filtrar</param>
+            <returns>Instancia de tipo Modulo por nombre</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAModulo.ObtenerModuloxId(System.Int32)">
+            <summary>
+            Obtiene un módulo especifico por el nombre
+            </summary>
+            <param name="moduloid">Indica el Id por el cual se va a filtrar</param>
+            <returns>Instancia de tipo Modulo por id</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAMotivo">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 21-Sep/2019
+            Descripción      : Implementa el acceso a datos de los artículos
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAParametroGeneral">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 02-Ago/2019
+            Descripción      : Clase de acceso a datos para los parámetros generales del sistema
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametroGeneral.CrearParametroGeneral(EVO_BusinessObjects.ParametroGeneral)">
+            <summary>
+            Este metodo crea un parametro general 
+            </summary>
+            <param name="nuevoParametroGeneral">Parametro general a crear</param>
+            <returns>Verdadero si se pudo crear</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametroGeneral.ObtenerValorPorNombre(EVO_BusinessObjects.Enum.NombresParametrosGeneralesEnum)">
+            <summary>
+            Este método obtiene el valor de un parámetro general del sistema dado su nombre
+            </summary>
+            <param name="nombre">Nombre del parámetro general a buscar</param>
+            <returns>Valor del parámetro general</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametroGeneral.ActualizarParametroGeneral(EVO_BusinessObjects.ParametroGeneral)">
+            <summary>
+            Este metodo actualiza el parametro general
+            </summary>
+            <param name="actualizarParametroGeneral">Parametro general a actualizar</param>
+            <returns>Verdadero si se pudo actualizar</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametroGeneral.ObtenerParametroGeneralxId(System.Int32)">
+            <summary>
+            Este metodo busca un parametro general por su Id
+            </summary>
+            <param name="parametroGeneralId">Id del parametro general</param>
+            <returns>ParametroId, Nombre, valor y inactivo si el parametro se encuentra creado</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametroGeneral.ObtenerParametroGeneralxNombre(System.String)">
+            <summary>
+            Este metodo busca un parametro geneal por su nombre
+            </summary>
+            <param name="nombre"></param>
+            <returns>ParametroId, Nombre, valor y inactivo si el parametro se encuentra creado</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametroGeneral.ObtenerNumeroTotalRegistros">
+            <summary>
+            Este método obtiene el número total de registros de la tabla de Parámetros Generales
+            </summary>
+            <returns>Número total de registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametroGeneral.ObtenerTodosParametrosGenerales(System.Int32,System.Int32)">
+            <summary>
+            Este método obtiene los prametros generales creados en el sistema
+            </summary>
+            <param name="desde">Indica el número de registro desde el cuál se deben cargar los registros</param>
+            <param name="hasta">Indica el número de registro hasta el cuál se deben cargar los registros</param>
+            <returns>Lista de parametros generales de tipo ParametroGeneral</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAParametroGeneral.ActivarParametroGeneral(EVO_BusinessObjects.ParametroGeneral)">
+            <summary>
+            Este metodo activa / inactiva un parametro general
+            </summary>
+            <param name="parametroGeneralInactivar">Parametro a inactivar</param>
+            <returns>Verdadero si se pudo activar / inactivar</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAPedido">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 20-Sep/2019
+            Descripción      : Se crea la clase de acceso a datos de Pedidos
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.CrearPedido(EVO_BusinessObjects.Pedido)">
+            <summary>
+            Este método crea el pedido 
+            </summary>
+            <param name="pedido">Indica el pedido a crear</param>
+            <returns>Verdadero si se pudo crear el pedido</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerDocumentosPendientesOrdenesSAP">
+            <summary>
+            Retorna los números de documento pendientes de números de orden
+            </summary>       
+            <response>BOGestionCompra</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.AsignarOrdenesCompraxDocumento(System.String,System.Collections.Generic.List{EVO_BusinessObjects.BOGestionCompra})">
+            <summary>
+            Asigna las ordenes de compra a un documento
+            </summary>
+            <param name="documento">Número de documento</param>
+            <param name="gestionesCompras">Ordenes de compra</param>
+            <response>true</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerGestionCompra(System.Int32,System.Int32)">
+            <summary>
+            Retorna un objecto de negocio tipo GestionCompra
+            </summary>
+            <param name="detallePedidoId">Id del detalle del pedido</param>
+            <param name="accionId">Id de la acción de compra</param>
+            <response>BOGestionCompra</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAPedido.ObtenerSolicitudPedidoBorrador(System.String)" -->
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerPedidoCompraGestion(System.Int32,System.String[])">
+            <summary>
+            Retorna el detalle del pedido de tipo compra a gestionar
+            </summary>
+            <param name="pedidoId">Indica el id del pedido</param>
+            <response>BOPedidoCompraGestionResponse</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.AsignarComercialTrasladoBorrado(EVO_BusinessObjects.BOPedidoTrasladoRequest)">
+            <summary>
+            Asigna un pedido en comercial como borrador(Abierto).
+            </summary>
+            <param name="body">Solicitud de una actualización a pedido en comercial traslado</param>
+            <response>bool</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerConsultaPedido(System.Int32)">
+            <summary>
+            Retorna el detalle del pedido
+            </summary>
+            <param name="pedidoId"></param>
+            <response>BOPedidoConsultaResponse</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAPedido.ObtenerTiposSolicitudPedido" -->
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.EliminarArticuloEntrega(System.Int32)">
+            <summary>
+            Este método elimina un artículo de una entrega
+            </summary>
+            <param name="id">2</param>
+            <returns>boolean</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAPedido.ObtenerPedidosBorrador(System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAPedido.ObtenerPedidosEntregasxEstadoId(System.Int32)" -->
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerConteoPedidosCompraAbiertoxFiltro(EVO_BusinessObjects.BOFiltrarPedidoCompraRequest)">
+            <summary>
+            Retorna el conteo de los pedidos compra abiertos por filtro
+            </summary>
+            <param name="filtro">Contiene los campos para filtrar</param>
+            <response>int</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAPedido.ObtenerPedidosCompraAbiertoxFiltro(EVO_BusinessObjects.BOFiltrarPedidoCompraRequest)" -->
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAPedido.ObtenerPedidosCompraAbierto(System.Int32,System.Int32)" -->
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ExisteArticuloEntrega(System.Int32)">
+            <summary>
+            Este método valida que el artículo exista en la entrega
+            </summary>
+            <param name="id">2</param>
+            <returns>Instancia de tipo EstadoPedido</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerEstadoPedidoxId(System.Int32)">
+            <summary>
+            Este método obtiene el estado del pedido por id
+            </summary>
+            <param name="estadoPedidoId">Indica el estado del pedido</param>
+            <returns>Instancia de tipo EstadoPedido</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerVehiculosConEntregas">
+            <summary>
+            Este método retorna los vehiculos que tienen entregas todavia en sin cerrar 
+            </summary>       
+            <returns>Lista de tipo VehiculoRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ActualizarProgramacionEntrega(EVO_BusinessObjects.EntregaSolicitud)">
+            <summary>
+            Este método retorna un booleano indicando si la entrega en programación ha sido actualizada
+            </summary>       
+            <param name="entregaSolicitud"></param>
+            <returns>Booleano</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ActualizarDistribucionEntrega(EVO_BusinessObjects.EntregaSolicitud)">
+            <summary>
+            Este método retorna un booleano indicando si la entrega en distribución ha sido actualizada
+            </summary>
+            <param name="entregaSolicitud">Referencia del body al modelo request</param>
+            <returns>Booleano</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ValidarViaje(System.Int32)">
+            <summary>
+            Este método retorna un booleano si el viaje existe o no
+            </summary>       
+            <param name="vehiculoEntregaId">2</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerViajeEntregas(System.Int32)">
+            <summary>
+            Este método retorna un objeto que representa un viaje(con entregas y artículos asociados)
+            </summary>       
+            <param name="vehiculoEntregaId">2</param>
+            <returns>ObtenerViajeEntregasRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ActualizarEstadoAPedido(System.Int32,System.Int32)">
+            <summary>
+            Actualiza el pedido y las entregas al estado enrutamiento
+            </summary>
+            <param name="idPedido">6</param>
+            <param name="idEstado">7</param>
+            <returns>Booleano</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerEntregasPedidoxId(System.Int32)">
+            <summary>
+            Retorna una lista de entregas 
+            </summary>
+            <param name="id">Id del pedido</param>
+            <returns>lista de entregas</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerVehiculoEntregas(System.Int32)">
+            <summary>
+            Obtiene el vehiculo , auxiliar , conductor y detalles de entregas asociadas al viaje de entregas , con capacidad de más entregas
+            </summary>
+            <param name="id">Id del vehiculo</param>        
+            <returns>Objeto de tipo VehiculoEntrega</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.CrearActualizarDistribucion(EVO_BusinessObjects.DistribucionSolicitud)">
+            <summary>
+            Crea o Actualiza una distribución
+            </summary>
+            <param name="distribucion">Objeto de tipo AsignarDistribucion</param>
+            <returns></returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.AgregarEntregas(System.Collections.Generic.List{EVO_BusinessObjects.EntregaPedido})">
+            <summary>
+            AgregarEntregas
+            </summary>
+            <param name="entregas">Colección de entregas</param>       
+            <returns>Booleano</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerEstadoPedidoxNombre(EVO_PV_BusinessObjects.Enum.EstadosPedidoEnum)">
+            <summary>
+            Este método obtiene el estado del pedido por el nombre
+            </summary>
+            <param name="estadoPedidoEnum">Indica el estado del pedido</param>
+            <returns>El estado del pedido por nombre</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerNumeroPedidoXCodigoBodega(System.String)">
+            <summary>
+            Este método obtiene el número del pedido por el codigo de la bodega
+            </summary>
+            <param name="whsCode">Indica el código de la bodega</param>       
+            <returns>2</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.EliminarEntregas(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Elimina entregas y detalles del pedido
+            </summary>
+            <param name="ids">Colección de ids de entregas</param>    
+            <returns>Booleano</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerTodosRegistros(System.Int32,System.Int32,System.String)">
+            <summary>
+            Este método obtiene todos los registros
+            </summary>
+            <param name="desde">Indica desde que parametro obtendra los registros ejemplo: 1</param>
+            <param name="hasta">Indica hasta que parametro obtendra los registros ejemplo: 10</param>
+            <param name="whsCode">Indica el código de la bodega</param>
+            <returns>Lista de todos los registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerConteoTodosRegistros(System.String)">
+            <summary>
+            Este método obtiene el conteo de todos los registros
+            </summary>
+            <param name="whsCode">Indica el código de la bodega</param>
+            <returns>Número de todos los registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerTodosRegistrosxFiltro(EVO_BusinessObjects.FiltroPedido)">
+            <summary>
+            Este método obtiene todos los registros por filtro
+            </summary>
+            <param name="filtro">Indica el valor del filtro</param>
+            <returns>Lista de todos los registros por filtro</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerConteoTodosRegistrosxFiltro(EVO_BusinessObjects.FiltroPedido)">
+            <summary>
+            Este método obtiene el conteo de todos los registros por el filtro
+            </summary>
+            <param name="filtro">Indica el valor del filtro</param>
+            <returns>Número de todos los registro realizado el filtro</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerSerie(System.String)">
+            <summary>
+            Obtiene la serie del punto de venta activa
+            </summary>
+            <param name="nombreSerie">SC-PRA</param>      
+            <returns>SerieRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ActualizarEntrega(EVO_BusinessObjects.ActualizarEntrega)">
+            <summary>
+            Actualiza entrega del pedido
+            </summary>
+            <param name="entrega">Entrega de un pedido</param>      
+            <returns>Booleano</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.CrearSerie(EVO_BusinessObjects.SerieRespuesta)">
+            <summary>
+            Crea la serie
+            </summary>
+            <param name="serieRespuesta"></param>    
+            <returns>Booleano</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ActualizarSerie(EVO_BusinessObjects.SerieRespuesta)">
+            <summary>
+            Actualiza la serie
+            </summary>
+            <param name="serieRespuesta"></param>    
+            <returns>Booleano</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerTodosPedidosADistribucionxFiltro(EVO_BusinessObjects.FiltroPedidoDistribucion)">
+            <summary>
+            Este método obtiene todos los pedidos a distribución por el filtro
+            </summary>
+            <param name="filtro">Indica el valor del filtro</param>
+            <returns>Lista de todos los pedidos en despachos realizado el filtro</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerTodosPedidosAbiertosxFiltro(EVO_BusinessObjects.FiltroPedidoBeneficio)">
+            <summary>
+            Este método obtiene todos los pedidos a la planta de Beneficio por el filtro
+            </summary>
+            <param name="filtro">Indica el valor del filtro</param>
+            <returns>Lista de todos los pedidos de la planta de beneficio realizado el filtro</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerTodasSeries">
+            <summary>
+            Obtiene todas las series/// </summary>           
+            <returns>List<SerieRespuesta></SerieRespuesta></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAPedido.ObtenerTodosPedidosAceptadosxFiltro(EVO_BusinessObjects.FiltroPedidoBeneficio)" -->
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.EditarPedido(EVO_BusinessObjects.BOEditarPedidoRequest)">
+            <summary>
+            Editar un pedido
+            </summary>
+            <param name="body">Solicitud de edición de pedido</param>
+            <response>bool</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerTodosPedidosABenficioxFiltro(EVO_BusinessObjects.FiltroPedidoBeneficio)">
+            <summary>
+            Este método obtiene todos los pedidos a la planta de Beneficio por el filtro
+            </summary>
+            <param name="filtro">Indica el valor del filtro</param>
+            <returns>Lista de todos los pedidos de la planta de beneficio realizado el filtro</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerStockArticuloBodegas(System.String,System.String)">
+            <summary>
+            Obtiene el stock de un artículo en la(s) bodega(s) EVO 
+            </summary>
+            <param name="codigoArticulo">Código del artículo</param>
+            <param name="prefijoBodegas">Prefijo de las bodegas</param>
+            <returns>Retorna la cantidad en decimal</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerConteoPedidosCompraAbierto">
+            <summary>
+            Este método obtiene el conteo de todos los pedidos tipo compra abiertos
+            </summary>
+            <returns>Número de todos los pedidos a planta de beneficio</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerConteoTodosPedidosABeneficio">
+            <summary>
+            Este método obtiene el conteo de todos los pedidos a la planta de Beneficio
+            </summary>
+            <returns>Número de todos los pedidos a planta de beneficio</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ActualizarPedido(EVO_BusinessObjects.Pedido)">
+            <summary>
+            Este método actualiza el pedido
+            </summary>
+            <param name="pedido">Indica el pedido a realizar</param>
+            <returns>Verdadero o falso si se pudo actualizar el pedido</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerTodosPedidosABeneficio(System.Int32,System.Int32)">
+            <summary>
+            Este método obtiene todos los pedidos a planta de Beneficio
+            </summary>
+            <param name="desde">Indica el parametro desde donde se va obtener el pedido ejemplo: 1</param>
+            <param name="hasta">Indica el parametro hasta donde se va obtener el pedido ejemplo: 10</param>
+            <returns>Lista de todos los pedidos a planta de beneficio</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerTodosPedidosADistribucion(System.Int32,System.Int32)">
+            <summary>
+            Este método obtiene todos los pedidos a distribución
+            </summary>
+            <param name="desde">Indica el parametro desde donde se va obtener el pedido ejemplo: 1</param>
+            <param name="hasta">Indica el parametro hasta donde se va obtener el pedido ejemplo: 10</param>
+            <returns>Lista de todos los pedidos a distribución</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerTodosCantidadPedidosxEstadoId(System.Int32)">
+            <summary>
+            Este método obtiene todas las cantidades del pedido por el id del estado
+            </summary>
+            <param name="estadoPedidoId">Indica el id del pedido</param>
+            <returns>Número de todos los id por el estado</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ExistePedido(EVO_BusinessObjects.ObtenerPedidoBorradorPeticion)">
+            <summary>
+            Este método comprueba si el pedido existe
+            </summary>
+            <param name="pedido">Indica el pedido</param>
+            <returns>Verdadero o falso si existe el pedido</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.CantidadPedidos(EVO_BusinessObjects.ObtenerPedidoBorradorPeticion)">
+            <summary>
+            Este método comprueba la cantidad de pedidos según ciertas condiciones
+            </summary>
+            <param name="pedido">Indica el pedido</param>
+            <returns>Entero</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerTodosEstadosPedido">
+            <summary>
+            Este método obtiene todos los estados del pedido
+            </summary>
+            <returns>Lista de todos los estados del pedido</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerConsultaPedidoxId(System.Int32)">
+            <summary>
+            Este método obtiene el id del pedido a consultar
+            </summary>
+            <param name="pedidoId">Indica el id del pedido</param>
+            <returns>Instancia de tipo ConsultaPedidoRespuesta el cual consulta el pedido por el id</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerPedidoxId(System.Int32)">
+            <summary>
+            Este método obtiene el pedido por el id del pedido
+            </summary>
+            <param name="pedidoId">Indica el id del pedido</param>
+            <returns>Instancia de tipo ObtenerPedidoRespuesta el cual obtiene el pedido por id</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerSolicitudPedidoEnPlanta(System.Int32)">
+            <summary>
+            Este método obtiene la solicitud del pedido en la planta
+            </summary>
+            <param name="pedidoId">Indica el id del pedido</param>
+            <returns>Instancia de tipo PedidoEnPlantaRespuesta para obtener la solicitud del pedido en la planta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerPedidosAbiertos(System.Int32,System.Int32)">
+            <summary>
+            Este método obtiene todos los pedidos en estado abierto
+            </summary>
+            <param name="desde">Indica apartir desde que valor se obtendran los datos ejemplo: desde 1</param>
+            <param name="hasta">Indica apartir hasta que valor se obtendran los datos ejemplo: hasta 10</param>
+            <returns>Lista de negocio PedidoBeneficioRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerPedidosAceptados(System.Int32,System.Int32)">
+            <summary>
+            Este método obtiene todos los pedidos en estado aceptado y aceptado parcial
+            </summary>
+            <param name="desde">Indica apartir desde que valor se obtendran los datos ejemplo: desde 1</param>
+            <param name="hasta">Indica apartir hasta que valor se obtendran los datos ejemplo: hasta 10</param>
+            <returns>Lista de negocio PedidoBeneficioRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerConteoTodosPedidosAbiertos">
+            <summary>
+            Este método obtiene el conteo de todos los pedidos en estado abiertos
+            </summary>
+            <returns>Número total de pedidos en estado abierto</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.ObtenerConteoTodosPedidosAceptados">
+            <summary>
+            Este método obtiene el conteo de todos los pedidos en estado aprobado y aprobado parcial
+            </summary>
+            <returns>Número total de pedidos en estado aprobado y aprobado parcial</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.mapeadorPedidoBeneficio(System.Data.Common.DbDataReader)">
+            <summary>
+            Mapea un objeto DbDataReader a un objeto de tipo PedidoBeneficioRespuesta
+            </summary>
+            <param name="reader">DbDataReader</param>
+            <returns>Instancia de objeto de tipo PedidoBeneficioRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPedido.mapeadorPedidoDistribucion(System.Data.Common.DbDataReader)">
+            <summary>
+            Mapea un objeto DbDataReader a un objeto de tipo PedidoDistribucionRespuesta
+            </summary>
+            <param name="reader">DbDataReader</param>
+            <returns>Instancia de objeto de tipo PedidoDistribucionRespuesta</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAPesaje">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 22-Mar/2020
+            Descripción      : Se crea la clase de acceso a datos de Pesaje
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPesaje.ObtenerPesajeEntrega(System.Int32,System.Int32)">
+            <summary>
+            Obtiene todos los pesajes de la entrega en un estado en concreto
+            </summary>
+            <param name="entregaId">Indica el id de la entrega</param>
+            <param name="estadoEntregaId">Indica el id del estado de la entrega</param>
+            <response>BOPesajeEntrega</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPesaje.ObtenerPesajeEntrega(System.Int32)">
+            <summary>
+            Obtiene la entrega asociada al pesaje
+            </summary>
+            <param name="pesajeEntregaId">Indica el id de la entrega del pesaje</param>      
+            <response>BOPesajeEntrega</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPesaje.ObtenerPesajeArticulo(System.Int32)">
+            <summary>
+            Obtiene el objeto a pesar
+            </summary>
+            <param name="pesajeArticuloId">Indica el id del artículo en pesaje</param>      
+            <response>BOPesajeArticulo</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPesaje.AsignarPesajeRecepcion(EVO_BusinessObjects.BOPesajeRequest)">
+            <summary>
+            Registra un pesaje en recepción
+            </summary>
+            <param name="body">Solicitud para el registro del pesaje</param>
+            <response>bool</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPesaje.ObtenerPesaje(System.Int32)">
+            <summary>
+            Obtiene el pesaje por id
+            </summary>
+            <param name="pesajeId">1</param>
+            <response>BOPesaje</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPesaje.AsignarPesajeEntrega(System.Int32,System.Int32)">
+            <summary>
+            Registra un pesaje entrega
+            </summary>
+            <param name="entregaId">Id de la entrega</param>
+            <param name="estadoEntregaId">Id del estado de la entrega</param>
+            <response>bool</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPesaje.AsignarPesajeArticulo(System.Int32,System.Int32,System.Decimal,System.Int32)">
+            <summary>
+            Registra un pesaje artículo
+            </summary>
+            <param name="pesajeEntregaId">Id del pesaje entrega</param>
+            <param name="detalleEntregaId">Id del detalle de la entrega</param>
+            <param name="cantidadRecibida">Cantida recibida del artículo</param>
+            <param name="usuarioId">Id del Usuario</param>
+            <response>bool</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAPesaje.ActualizarInconsistenciaCodigoBarras(System.Int32,System.Boolean)">
+            <summary>
+            Actualiza un pesaje artículo con la inconsistencia
+            </summary>
+            <param name="pesajeArticuloId">id del artículo asociado al pesaje</param>
+            <param name="inconsistencia">indica si existe inconsistencia en el pesaje</param>
+            <response>bool</response>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAProcesos">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 12-Abr/2020
+            Descripción      : Se crea la clase de acceso a datos de Cajas
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAProcesos.ObtenerProcesoxNombre(EVO_BusinessObjects.Enum.ProcesosEnum)">
+            <summary>
+            Obtiene el proceso por nombre
+            </summary>
+            <param name="procesoEnum">Enumerador del proceso</param>       
+            <response>ProcesoBO</response>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DARecepcion">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 20-Mar/2020
+            Descripción      : Implementa el acceso a datos del proceso de recepción
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARecepcion.AsignarConfirmacion(System.Int32,System.Collections.Generic.List{EVO_BusinessObjects.BODocumentoRecepcionArticulo},System.Int32)">
+            <summary>
+            Confirma que se recibió la mercancia
+            </summary>
+            <param name="pesajeEntregaId">Indica el id del pesaje entrega</param>
+            <param name="documentosRecepcion">Indica que documentos se generan </param>       
+            <response >bool</response>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DARol">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 02-Ago/2019
+            Descripción      : Acceso a datos de roles
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerRolesxUsuarioId(System.Int32)">
+            <summary>
+            Este método obtiene todos los roles por usuarioId
+            </summary>
+            <param name="UsuarioId">Id del usuario</param>
+            <returns>Colección de instacias de negocio de Roles</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.DesasociarUsuarioARol(EVO_BusinessObjects.DesasociarUsuariosARol)">
+            <summary>
+            Este método desasocia un usuario a un rol
+            </summary>
+            <param name="desasociarUsuariosARol">Objeto que contiene el id del rol y ids de los usuarios</param>
+            <returns>Retorna verdadero si se pudo desasociar de lo contrario false</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.AsociarUsuariosARol(EVO_BusinessObjects.AsociarUsuariosARol)">
+            <summary>
+            Este método asocia un usuario a un rol
+            </summary>
+            <param name="asociarUsuariosARol">Objeto que incluye el id del rol y el usuario , nombre del Usuario</param>
+            <returns>Retorna verdadero si se pudo asociar</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.DesasociarTodosUsuariosARol(System.Int32)">
+            <summary>
+            Este método desasocia todos los usuarios a un rol
+            </summary>
+            <param name="id">Objeto que incluye el id del rol</param>
+            <returns>Retorna verdadero si se pudo desasociar todos los usuarios a un rol de lo contrario false</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerUsuarioEstaAsociadoARol(EVO_BusinessObjects.Usuario,System.Int32)">
+            <summary>
+            Verifica si el usuario ya está asociado a este rol
+            </summary>
+            <param name="asociarUsuarioARol">Objeto que contiene el usuario , nombre del Usuario</param>
+            <param name="rolId">Id del rol</param>
+            <returns>Retorna true si el usuario está asociado al rol de lo contrario false</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerUsuarioEstaDesasociadoARol(System.Int32,System.Int32)">
+            <summary>
+            Verifica si el usuario ya está desasociado a este rol
+            </summary>
+            <param name="rolId">Id del rol</param>
+            <param name="usuarioId">Id del usuario</param>
+            <returns>Retorna true si el usuario está desasociado al rol de lo contrario false</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerTodosUsuariosxRol(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Este método obtiene todos los usuarios de un rol
+            </summary>
+            <param name="desde">Indica el nùmero de registro desde el cuàl se quiere obtener los registros de auditoria</param>
+            <param name="hasta">Indica el nùmero de registro hasta el cuàl se quiere obtener los registros de auditoria</param>
+            <param name="rolId">Indica el id del Rol</param>
+            <returns>Si esta dentro de el numero de registros permitidos, devuelve una lista de usuarios.</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerTodosUsuariosxRolxFiltro(EVO_BusinessObjects.FiltroUsuario)">
+            <summary>
+            Este método obtiene todos los usuarios por el rol con su respectivo filtro
+            </summary>
+            <param name="desde">Indica desde que parametro se le aplica el filtro ejemplo: desde 1</param>
+            <param name="hasta">Indica hasta que parametro se le aplica el filtro ejemplo: hasta 10</param>
+            <param name="idRol">Indica el id del Rol</param>
+            <returns></returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ActualizarFuncionalidadesARol(EVO_BusinessObjects.Rol)">
+            <summary>
+            Este método actualiza las funcionalidades asociadas a un rol
+            </summary>
+            <param name="rolAActualizar">Rol a actualizar de tipo Rol</param>
+            <returns>Verdadero si el rol se pudo actualizar</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ActualizarRol(EVO_BusinessObjects.Rol)">
+            <summary>
+            Este método permite actualizar un rol en el sistema
+            </summary>
+            <param name="rolAActualizar">Rol a actualizar de tipo Rol</param>
+            <returns>Verdadero si el rol se pudo actualizar</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.CrearRol(EVO_BusinessObjects.Rol)">
+            <summary>
+            Crear un nuevo rol en el sistema
+            </summary>
+            <param name="nuevoRol">Rol a crear</param>
+            <returns>Verdadero si el rol se pudó crear en el sistema</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.DesasociarUsuarios(EVO_BusinessObjects.Rol)">
+            <summary>
+            Este metodo actualiza los usuarios asignados al rol
+            </summary>
+            <param name="rolAActualizar">Rol a actualizar de tipo Rol</param>
+            <returns>Verdadero si el rol se pudo actualizar</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ActivarRol(EVO_BusinessObjects.Rol)">
+            <summary>
+            Este método permite Activar / Inactivar un rol en el sistema
+            </summary>
+            <param name="rolAActivar">Rol a activar / inactivar</param>
+            <returns>Verdadero si el rol se pudó activar / inactivar</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerConteoTodosRolesxFiltro(EVO_BusinessObjects.FiltroRol)">
+            <summary>
+            Este método permite saber cuántos registros se generan a partir de los filtros generados para la consulta
+            </summary>
+            <param name="filtro">Filtro de búsqueda sobre la Auditoria</param>
+            <returns>Número de Registros retornados en el filtro</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerConteoTodosUsuariosxRolxFiltro(EVO_BusinessObjects.FiltroUsuario)">
+            <summary>
+            Este método permite saber cuántos registros se generan a partir de los filtros generados para la consulta
+            </summary>
+            <param name="filtro">Filtro de búsqueda sobre los usuarios</param>
+            <returns>Número de Registros retornados en el filtro</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerNumeroTotalRegistros">
+            <summary>
+            Este método obtiene el número total de registros de la tabla de Roles
+            </summary>
+            <returns>Número total de registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerRolxId(System.Int32)">
+            <summary>
+            Este método obtiene un rol por su id
+            </summary>
+            <param name="RolId">Id del Rol a obtener</param>
+            <returns>Instancia de objeto de un Rol de tipo Rol</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerRolxNombre(System.String)">
+            <summary>
+            Este método obtiene un rol por su Nombre
+            </summary>
+            <param name="nombre">Nombre del Rol a obtener</param>
+            <returns>Instancia de objeto de un Rol de tipo Rol</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerNumeroTotalRegistrosUsuariosXRol(System.Int32)">
+            <summary>
+            Este método permite saber cuántos registros se generan de la consulta
+            </summary>
+            <returns>Número de registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerTodosRoles(System.Int32,System.Int32)">
+            <summary>
+            Este método obtiene los roles creados en el sistema
+            </summary>
+            <param name="desde">Indica el número de registro desde el cuál se deben cargar los registros</param>
+            <param name="hasta">Indica el número de registro hasta el cuál se deben cargar los registros</param>
+            <returns>Lista de roles de tipo Rol</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.ObtenerTodosRolesxFiltro(EVO_BusinessObjects.FiltroRol)">
+            <summary>
+            Este metodo obtiene todos los Roles aplicando un filtro de búsqueda
+            </summary>
+            <param name="filtro">Filtro de búsqueda sobre los Roles</param>
+            <returns>Lista de Roles</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DARol.mapeadorRegistroRol(System.Data.Common.DbDataReader)">
+            <summary>
+            Mapea un objeto DbDataReader a un objeto de tipo Rol
+            </summary>
+            <param name="reader">DbDataReader</param>
+            <returns>Instancia de objeto de tipo Rol</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DASocioNegocio">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 15-Abr/2020
+            Descripción      : Implementa el acceso a datos del proceso de SocioNegocio
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DASocioNegocio.ObtenerSociosNegocio" -->
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DASocioNegocio.ObtenerSociosNegocioxFiltro(System.String,System.String)" -->
+        <member name="M:EVO_DataAccess.DataAccess.DASocioNegocio.ObtenerSocioNegocio(System.String)">
+            <summary>
+            Obtiene socio de negocio por identificación
+            </summary>    
+            <param name="identificacion">Indica la identificación</param>
+            <response>BOSocioNegocio</response>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAUsuario">
+            <summary>
+            Autor            : Kevin Restrepo Giraldo
+            Fecha de Creación: 02-Ago/2019
+            Descripción      : Acceso a datos de Usuarios
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorId(System.Int32)" -->
+        <member name="M:EVO_DataAccess.DataAccess.DAUsuario.ObtenerUsuarioPorUsuario(System.String)">
+            <summary>
+            Este método obtiene un usuario por su nombre de usuario
+            </summary>
+            <param name="Usuario">Nombre de usuario. Ej: KRestrepo</param>
+            <returns>Instancia de un usuario</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAUsuario.RegistrarUsuario(EVO_BusinessObjects.Usuario)">
+            <summary>
+            Este método registra un usuario
+            </summary>
+            <param name="Usuario">Instancia de usuario a registrar</param>
+            <returns>Retorna true si todo salio bien de lo contrario false</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAUsuario.ObtenerTodosUsuarios">
+            <summary>
+            Este método retorna todos los usuarios
+            </summary>      
+            <returns>Retorna una lista de objeto de negocio usuario</returns>
+        </member>
+        <member name="T:EVO_DataAccess.DataAccess.DAVehiculo">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 18-Dic/2019
+            Descripción      : Implementa el acceso a datos de los Vehiculos
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAVehiculo.ActualizarVehiculoEnrutamiento(EVO_BusinessObjects.ActualizarVehiculoEnrutamiento)">
+            <summary>
+            Actualizar el encabezado del viaje asociados en enrutamiento
+            </summary>
+            <param name="edicionVehiculoEnrutamiento">Solicitud de actualización de vehículo en enrutamiento</param>
+            <response code="200">Devuelve boolenao con operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAVehiculo.ObtenerMuelles">
+            <summary>
+            Obtiene una lista de muelles 
+            </summary>  
+            <returns>Lista de Muelles</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAVehiculo.ObtenerTipoVehiculo">
+            <summary>
+            Este método obtiene tipos de vehiculos
+            </summary>      
+            <returns>Lista de tipo TipoVehiculoRespuesta</returns>
+            
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAVehiculo.ObtenerTiposVehiculosFiltrados(System.Decimal)">
+            <summary>
+            Obtiene los tipos de vehiculos capaces de llevar la entrega
+            </summary>
+            <param name="cantidad">599095</param>
+            <response>Lista de negocio de tipo TipoVehiculoRespuesta </response>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAVehiculo.ObtenerVehiculosxTipo(System.Int32)">
+            <summary>
+            Obtiene los vehiculos por tipo
+            </summary>
+            <param name="id"></param>
+            <returns>Lista de tipo VehiculoRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DataAccess.DAVehiculo.ObtenerVehiculoxId(System.Int32)">
+            <summary>
+            Obtiene un vehiculo por el id
+            </summary>
+            <param name="id"></param>
+            <returns>Objeto de tipo VehiculoRespuesta</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAVehiculo.ObtenerVehiculoEnrutamiento(System.Int32)" -->
+        <member name="T:EVO_DataAccess.DataAccess.DAVendedores">
+            <summary>
+            Autor            : Juan Camilo Usuga Sepúlveda
+            Fecha de Creación: 28-Abr/2020
+            Descripción      : Se crea la clase de acceso a datos de Vendedores
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EVO_DataAccess.DataAccess.DAVendedores.ObtenerVendedoresxPuntoVenta(System.String)" -->
+        <member name="M:EVO_DataAccess.DataAccess.DAVendedores.ObtenerVendedor(System.Int32)">
+            <summary>
+            Obtiene vendedor por id
+            </summary>    
+            <param name="id">Indica el id del vendedor</param>
+            <response>BOVendedorResponse</response>
+        </member>
+        <member name="T:EVO_DataAccess.DAAuntenticacion">
+            <summary>
+            Autor            : Duban Cardona
+            Fecha de Creación: 26-Ago/2019
+            Descripción      : Acceso a datos de las sesiones
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.DAAuntenticacion.InsertarSesion(EVO_BusinessObjects.AutenticarSolicitud)">
+            <summary>
+            Este método registra una session
+            </summary>
+            <param name="autenticarSolicitud">autenticarSolicitud</param>
+            <returns>Retorna true si todo salio correcto, sino false</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DAAuntenticacion.ObtenerSesionPorToken(EVO_BusinessObjects.ValidarSesionSolicitud)">
+            <summary>
+            Este método obtiene un objeto de tipo sesion por su token de forma asíncrona.
+            </summary>
+            <param name="validarSesionSolicitud">Contiene el token y la ip</param>
+            <returns>Retorna un objeto de tipo SesionSolicitud</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DAAuntenticacion.ActualizarSesion(EVO_BusinessObjects.SesionSolicitud)">
+            <summary>
+            Este método actualiza la sesion 
+            </summary>
+            <param name="sesion">Objeto de negocio de sesión</param>
+            <returns>Retorna un true si todo es exitoso, de lo contrario false</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DAAuntenticacion.ObtenerTodosRegistros(System.Int32,System.Int32)">
+            <summary>
+            Este método obtiene todos los registros de sesiones
+            </summary>
+            <param name="desde">Indica el nùmero de registro desde el cuàl se quiere obtener los registros de las sesiones</param>
+            <param name="hasta">Indica el nùmero de registro hasta el cuàl se quiere obtener los registros de las sesiones</param>
+            <returns>Retorna una Lista objetos de negocio de sesiones registradas</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DAAuntenticacion.ObtenerConteoTodosRegistros">
+            <summary>
+            Este método permite saber cuántos registros se generan de la consulta
+            </summary>
+            <returns>Número de registros</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DAAuntenticacion.ObtenerConteoTodosRegistrosxFiltro(EVO_BusinessObjects.FiltroSesion)">
+            <summary>
+            Este método permite saber cuántos registros se generan a partir de los filtros generados para la consulta
+            </summary>
+            <param name="filtro">Criterios de filtro para la consulta</param>
+            <returns>Número de registros por filtro</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DAAuntenticacion.ObtenerTodosRegistrosxFiltro(EVO_BusinessObjects.FiltroSesion)">
+            <summary>
+            Este método obtiene todos los registros de sesiones aplicando un filtro de búsqueda sobre las acciones
+            </summary>
+            <param name="filtro">Filtro de búsqueda a aplicar sobre las acciones de la sesiones</param>
+            <returns>Lista de objetos de negocio de SesionRespuesta</returns>
+        </member>
+        <member name="M:EVO_DataAccess.DAAuntenticacion.mapeadorRegistrosSesiones(System.Data.Common.DbDataReader)">
+            <summary>
+            Mapea un objeto DbDataReader a un objeto de tipo RegistroAuditoria
+            </summary>
+            <param name="reader">DbDataReader</param>
+            <returns>Instancia de objeto de tipo RegistroAuditoria</returns>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFAccion">
+            <summary>
+            Autor                  : Andrés Holguín Osorio
+            Fecha de creación      : 12-Agosto/2020
+            </summary>    
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFArticulo">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 17-Sep/2019 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFArticulo.EstadoId">
+            <summary>
+            Define la clave foránea de EstadosPedido
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFArticulo.EstadoPedido">
+            <summary>
+            Define la propiedad de navegación a EstadosPedido 
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFArticulo.EmpaqueId">
+            <summary>
+            Define la clave foránea de EstadosPedido
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFArticulo.Empaques">
+            <summary>
+            Define la propiedad de navegación a EstadosPedido 
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFArticulo.ArticuloCompraPV">
+            <summary>
+            Define la propiedad de artiuclos que no son de compra de PV 
+            </summary> 
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFArticulo.ImpuestosArticulos">
+            <summary>
+             Define la propiedad de navegación a ImpuestosArticulos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFArticulo.ImpuestosSociosArticulos">
+            <summary>
+             Define la propiedad de navegación a ImpuestosSociosArticulos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFArticulo.ListasPrecios">
+            <summary>
+             Define la propiedad de navegación a ListasPrecios
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFArticuloBodega">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 17-Sep/2019   
+            </summary>    
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFBanco">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 23-May/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFBanco.DetallesFacturaFormaPago">
+            <summary>
+             Define la propiedad de navegación a DetallesFacturaFormaPago
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFBodega">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 17-Sep/2019
+            Descripción            : Representa una bodega.
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFBodega.VendedoresPuntoVenta">
+            <summary>
+             Define la propiedad de navegación a VendedoresPuntoVenta
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFBodega.DetallesFactura">
+            <summary>
+             Define la propiedad de navegación a DetallesFactura
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFCaja">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 11-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFCaja.CuadresCaja">
+            <summary>
+             Define la propiedad de navegación a CuadresCaja
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFClienteExterno">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 21-Oct/2019
+            Descripción            : Representa un rol del usuario.
+            </summary>    
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFClienteParametrizacion">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 19-Mar/2020    
+            </summary> 
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFCuadreCaja">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 11-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFCuadreCaja.CajaId">
+            <summary>
+            Define la clave foránea de Caja
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFCuadreCaja.Caja">
+            <summary>
+            Define la propiedad de navegación a Evidencias
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFCuadreCaja.EstadoCuadreCajaId">
+            <summary>
+            Define la clave foránea de EstadosCuadreCaja
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFCuadreCaja.EstadoCuadreCaja">
+            <summary>
+            Define la propiedad de navegación a CuadreCaja
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFCuadreCaja.UsuarioId">
+            <summary>
+            Define la clave foránea de Usuarios
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFCuadreCaja.Usuario">
+            <summary>
+            Define la propiedad de navegación a Usuarios
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFCuadreCaja.InconsistenciaId">
+            <summary>
+            Define la clave foránea de Inconsistencias
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFCuadreCaja.Inconsistencia">
+            <summary>
+            Define la propiedad de navegación a Inconsistencias
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFCuadreCaja.FechaCuadre">
+            <summary>
+            Define la fecha del cuadre de caja
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFCuadreCaja.Facturas">
+            <summary>
+             Define la propiedad de navegación a Facturas
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFDetalleEntrega">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 6-Dic/2019
+            Descripción            : Representa un detalle de la entrega del pedido.
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleEntrega.Entrega">
+            <summary>
+            Define la propiedad de navegación de entrega
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleEntrega.DetallePedido">
+            <summary>
+            Define la propiedad de navegación detalle pedido
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleEntrega.PesajeArticulo">
+            <summary>
+            Define la propiedad de navegación a PesajesArticulo
+            </summary>     
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFDetalleEvidencia">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 26-Mar/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleEvidencia.DetalleEvidenciaId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleEvidencia.EvidenciaId">
+            <summary>
+            Define la clave foránea de Evidencias
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleEvidencia.Evidencia">
+            <summary>
+            Define la propiedad de navegación a Evidencias
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleEvidencia.NombreArchivo">
+            <summary>
+            Define nombre del archivo
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleEvidencia.ExtensionArchivo">
+            <summary>
+            Extension del archivo
+            </summary>       
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFDetalleFactura">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 25-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFactura.FacturaId">
+            <summary>
+            Define la clave foránea a Factura
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFactura.Factura">
+            <summary>
+            Define la propiedad de navegación de Factura
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFactura.CodigoArticulo">
+            <summary>
+            Define la clave foránea de Articulo
+            </summary> 
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFactura.Articulo">
+            <summary>
+            Define la propiedad de navegación a Articulo
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFactura.CodigoBodega">
+            <summary>
+            Define la clave foránea de Bodegas
+            </summary> 
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFactura.Bodega">
+            <summary>
+            Define la propiedad de navegación a Bodegas
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFactura.IVAId">
+            <summary>
+            Define la clave foránea a Impuestos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFactura.Impuesto">
+            <summary>
+            Define la propiedad de navegación de Impuestos
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFDetalleFacturaFormaPago">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 23-May/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFacturaFormaPago.FacturaId">
+            <summary>
+            Define la clave foránea a Facturas
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFacturaFormaPago.Factura">
+            <summary>
+            Define la propiedad de navegación de Facturas
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFacturaFormaPago.FormaPagoId">
+            <summary>
+            Define la clave foránea a FormaPago
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFacturaFormaPago.FormaPago">
+            <summary>
+            Define la propiedad de navegación de FormaPago
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFacturaFormaPago.BancoId">
+            <summary>
+            Define la clave foránea a Bancos
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetalleFacturaFormaPago.Banco">
+            <summary>
+            Define la propiedad de navegación de Bancos
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFDetallePedido">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 17-Sep/2019  
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetallePedido.PedidoId">
+            <summary>
+            Define la clave foránea de Pedido
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetallePedido.Pedido">
+            <summary>
+            Define la propiedad de navegación a Pedido 
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetallePedido.Articulo">
+            <summary>
+            Define la propiedad de navegación a Articulos 
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetallePedido.EstadoArticuloId">
+            <summary>
+            Define la clave foránea del estado del artículo
+            </summary>   
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetallePedido.EstadoArticulo">
+            <summary>
+            Define la propiedad de navegación a EstadosArticulo 
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetallePedido.EmpaqueId">
+            <summary>
+            Define la clave foránea a Empaques
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetallePedido.Empaque">
+            <summary>
+            Define la propiedad de navegación a Empaque 
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDetallePedido.GestionCompras">
+            <summary>
+             Define la propiedad de navegación a GestionCompras
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFDocumento">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 2-Abr/2020
+            Descripción            : Representa un documento.
+            </summary> 
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFDocumento.PesajesArticulo">
+            <summary>
+             Define la propiedad de navegación que representa los articulos a pesar
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFEmpaque">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 13-Jul/2020   
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEmpaque.EmpaqueId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEmpaque.EmpaqueNombre">
+            <summary>
+            Define el nombre del empaque.
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEmpaque.EmpaqueActivo">
+            <summary>
+             Define si el registro se encuentra activo o inactivo
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFEmpleado">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 19-Dic/2019  
+            </summary>  
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFEntrega">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 6-Dic/2019
+            Descripción            : Representa una entrega del pedido.
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEntrega.Pedido">
+            <summary>
+            Define la propiedad de navegación a pedido
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEntrega.Usuario">
+            <summary>
+            Define la propiedad de navegación a Usuario 
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEntrega.EstadoEntrega">
+            <summary>
+            Define la propiedad de navegación a Estados Entrega(Pedido) 
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEntrega.TipoVehiculo">
+            <summary>
+            Define la propiedad de navegación a TipoVehiculo
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEntrega.Detalles">
+            <summary>
+            Define la propiedad de navegación a los detalles de entrega
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEntrega.PesajesEntrega">
+            <summary>
+            Define la propiedad de navegación a PesajesEntrega
+            </summary>      
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFEstadoArticulo">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 17-Sep/2019
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEstadoArticulo.DetallesPedido">
+            <summary>
+             Define la propiedad de navegación que representa los detalles del pedido
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFEstadoCuadreCaja">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 12-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEstadoCuadreCaja.CuadresCaja">
+            <summary>
+             Define la propiedad de navegación a CuadresCaja
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFEstadoEntrega">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 19-Mar/2020
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEstadoEntrega.PesajesEntrega">
+            <summary>
+             Define la propiedad de navegación a PesajesEntrega
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFEstadoPedido">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 17-Sep/2019
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEstadoPedido.Pedidos">
+            <summary>
+             Define la propiedad de navegación que representa los pedidos con este estado
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFEvidencia">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 26-Mar/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEvidencia.EvidenciaId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEvidencia.PesajeEntregaId">
+            <summary>
+            Define la clave foránea de PesajesEntrega
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEvidencia.PesajeEntrega">
+            <summary>
+            Define la propiedad de navegación a PesajesEntrega
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEvidencia.UsuarioId">
+            <summary>
+            Define la clave foránea del usuario
+            </summary>     
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEvidencia.Usuario">
+            <summary>
+            Define la propiedad de navegación al Usuario
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEvidencia.GUID">
+            <summary>
+            Define el GUID que sera el nombre del directorio de las evidencias
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEvidencia.Observaciones">
+            <summary>
+            Define las observaciones de la evidencia
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEvidencia.FechaEvidencia">
+            <summary>
+            Define la fecha de la evidencia
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFEvidencia.DetallesEvidencia">
+            <summary>
+             Define la propiedad de navegación a DetallesEvidencia
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFFactura">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 25-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.TipoFacturaId">
+            <summary>
+            Define la clave foránea a TipoFactura
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.TipoFactura">
+            <summary>
+            Define la propiedad de navegación de TipoFactura
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.CuadreCajaId">
+            <summary>
+            Define la clave foránea a CuadreCaja
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.CuadreCaja">
+            <summary>
+            Define la propiedad de navegación de CuadreCaja
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.UsuarioId">
+            <summary>
+            Define la clave foránea de Usuarios
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.Usuario">
+            <summary>
+            Define la propiedad de navegación a Usuarios
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.VendedorId">
+            <summary>
+            Define la clave foránea de Vendedores
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.Vendedor">
+            <summary>
+            Define la propiedad de navegación a Vendedores
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.Identificacion">
+            <summary>
+            Define la clave foránea de SocioNegocio
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.SocioNegocio">
+            <summary>
+            Define la propiedad de navegación a SocioNegocio
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.TipoBasculaId">
+            <summary>
+            Define la clave foránea de TiposBascula
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.TipoBascula">
+            <summary>
+            Define la propiedad de navegación a TiposBascula
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.DetallesFactura">
+            <summary>
+             Define la propiedad de navegación a DetallesFactura
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFactura.DetallesFacturaFormaPago">
+            <summary>
+             Define la propiedad de navegación a DetallesFacturaFormaPago
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFFormaPago">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 20-May/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFormaPago.DetallesFacturaFormaPago">
+            <summary>
+             Define la propiedad de navegación a DetallesFacturaFormaPago
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFFuncionalidad">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            :Funcionalidadesde del sistema
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidad.FuncionalidadId">
+            <summary>
+            Id de la Funcionalidad
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidad.ModuloId">
+            <summary>
+            Id del Módulo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidad.Nombre">
+            <summary>
+            Define el nombre de la funcionalidad
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidad.Activo">
+            <summary>
+             Define si el registro se encuentra activo o inactivo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidad.Modulo">
+            <summary>
+             Define la propiedad de navegación al módulo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidad.FuncionalidadesxRol">
+            <summary>
+             Define la propiedad de navegación de las funcionalidades de un rol
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFFuncionalidadesxRol">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa la relación muchos a muchos entre rol y funcionalidad.
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidadesxRol.FuncionalidadesxRolId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidadesxRol.RolId">
+            <summary>
+            Define la clave foranea a rol
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidadesxRol.FuncionalidadId">
+            <summary>
+            Define la clave foranea a funcionlidad
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidadesxRol.Rol">
+            <summary>
+            Define la propiedad de navegación de rol
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFFuncionalidadesxRol.Funcionalidad">
+            <summary>
+            Define la propiedad de navegación de funcionalidad
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFGestionCompra">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 27-Ago/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFGestionCompra.DetallePedidoId">
+            <summary>
+            Define la clave foránea a DetallesPedido
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFGestionCompra.DetallePedido">
+            <summary>
+            Define la propiedad de navegación a DetallesPedido 
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFGestionCompra.AccionId">
+            <summary>
+            Define la clave foránea a Acciones
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFGestionCompra.Accion">
+            <summary>
+            Define la propiedad de navegación a Acciones 
+            </summary>       
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFImpuesto">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 26-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFImpuesto.ImpuestosArticulo">
+            <summary>
+             Define la propiedad de navegación a ImpuestosArticulo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFImpuesto.ImpuestosSociosArticulos">
+            <summary>
+             Define la propiedad de navegación a ImpuestosSociosArticulos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFImpuesto.DetallesFactura">
+            <summary>
+             Define la propiedad de navegación a DetallesFactura
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFImpuestoArticulo">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 29-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFImpuestoArticulo.CodigoArticulo">
+            <summary>
+            Define la clave foránea de Articulo
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFImpuestoArticulo.Articulo">
+            <summary>
+            Define la propiedad de navegación a Articulo
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFImpuestoArticulo.Impuesto">
+            <summary>
+            Define la propiedad de navegación a Impuestos
+            </summary>       
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFImpuestoSocioArticulo">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 26-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFImpuestoSocioArticulo.Identificacion">
+            <summary>
+            Define la clave foránea de SocioNegocio
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFImpuestoSocioArticulo.SocioNegocio">
+            <summary>
+            Define la propiedad de navegación a SocioNegocio
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFImpuestoSocioArticulo.CodigoArticulo">
+            <summary>
+            Define la clave foránea de Articulo
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFImpuestoSocioArticulo.Articulo">
+            <summary>
+            Define la propiedad de navegación a Articulo
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFImpuestoSocioArticulo.Impuesto">
+            <summary>
+            Define la propiedad de navegación a Impuestos
+            </summary>       
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFInconsistencia">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 11-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFInconsistencia.CuadresCaja">
+            <summary>
+             Define la propiedad de navegación a CuadresCaja
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFInventario">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 23-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFInventario.TipoInventarioId">
+            <summary>
+            Define la clave foránea a TipoInventario
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFInventario.TipoInventario">
+            <summary>
+            Define la propiedad de navegación de TipoInventario
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFInventario.ProcesoId">
+            <summary>
+            Define la clave foránea a Procesos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFInventario.Proceso">
+            <summary>
+            Define la propiedad de navegación de Procesos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFInventario.PesajeArticuloId">
+            <summary>
+            Define la clave foránea a PesajesArticulo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFInventario.PesajeArticulo">
+            <summary>
+            Define la propiedad de navegación de PesajesArticulo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFInventario.DetalleFacturaId">
+            <summary>
+            Define la clave foránea a DetalleFactura
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFInventario.DetalleFactura">
+            <summary>
+            Define la propiedad de navegación de DetalleFactura
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFListaPrecio">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 26-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFListaPrecio.Identificacion">
+            <summary>
+            Define la clave foránea de SocioNegocio
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFListaPrecio.SocioNegocio">
+            <summary>
+            Define la propiedad de navegación a SocioNegocio
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFListaPrecio.CodigoArticulo">
+            <summary>
+            Define la clave foránea de Articulo
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFListaPrecio.Articulo">
+            <summary>
+            Define la propiedad de navegación a Articulo
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFListaPrecio.TipoListaPrecioId">
+            <summary>
+            Define la clave foránea de TiposListaPrecio
+            </summary>           
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFListaPrecio.TipoListaPrecio">
+            <summary>
+            Define la propiedad de navegación a TiposListaPrecio
+            </summary>       
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFLogIntegracion">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 23-Sep/2019
+            Descripción            : Representa un log de integración.
+            </summary>   
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFLogIntegracion.InstanceId">
+            <summary>
+            Define la clave foránea la ejecucion de la ejecución del job
+            </summary>  
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFModulo">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa un módulo asociado a la funcionalidad
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFModulo.ModuloID">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFModulo.Nombre">
+            <summary>
+            Define el nombre del módulo
+            </summary>
+                
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFModulo.Activo">
+            <summary>
+             Define si el registro se encuentra activo o inactivo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFModulo.Funcionalidades">
+            <summary>
+             Define la propiedad de navegación de las funcionalidades de este módulo
+            </summary>         
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFMotivo">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 10-Dic/2019
+            Descripción            : Representa un motivo de edición de una entrega.
+            </summary> 
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFMotivoProceso">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 12-Feb/2020
+            Descripción            : Representa un motivo asociado a un proceso.
+            </summary>   
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFMuelle">
+            <summary>
+            Autor                  : Andrés Holguín
+            Fecha de creación      : 17-Feb/2020
+            Descripción            : Representa un muelle asociado a un vehículo en el modulo de enrutamiento.
+            </summary> 
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFParametroGeneral">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa un parametro del sistema.
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFParametroGeneral.ParametroGeneralId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFParametroGeneral.Nombre">
+            <summary>
+            Define el nombre de parametro
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFParametroGeneral.Valor">
+            <summary>
+            Define el valor del parametro
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFParametroGeneral.Activo">
+            <summary>
+             Define si el registro se encuentra activo o inactivo
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFPedido">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 17-Sep/2019
+            Descripción            : Representa un pedido.
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.WhsCode">
+            <summary>
+            Define la clave foránea de quien hizo el pedido
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.BodegaDe">
+            <summary>
+             Define la propiedad de navegación de quien hizo el pedido
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.SolicitudPara">
+            <summary>
+            Define la clave foránea para quien va el pedido
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.BodegaPara">
+            <summary>
+             Define la propiedad de navegación de quien hizo el pedido
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.UsuarioId">
+            <summary>
+            Define la clave foránea a Usuario
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.Usuario">
+            <summary>
+            Define la propiedad de navegación a Usuario 
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.EstadoPedidoId">
+            <summary>
+            Define la clave foránea a EstadosPedido
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.EstadoPedido">
+            <summary>
+            Define la propiedad de navegación a EstadosPedido 
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.TipoSolicitudId">
+            <summary>
+            Define la clave foránea a TiposSolicitud
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.TipoSolicitud">
+            <summary>
+            Define la propiedad de navegación a TiposSolicitud 
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.DetallesXPedido">
+            <summary>
+            Define la propiedad de navegación a los detalles de pedido
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.EntregasXPedido">
+            <summary>
+            Define la propiedad de navegación a los detalles de entregas
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.UsuarioAproboId">
+            <summary>
+            Define la clave foránea a Usuario
+            </summary>        
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPedido.UsuarioAprobo">
+            <summary>
+            Define la propiedad de navegación a Usuario 
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFPesaje">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 19-Mar/2020   
+            </summary>   
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesaje.PesajeArticuloId">
+            <summary>
+            Define la clave foránea a PesajesArticulo
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesaje.PesajeArticulo">
+            <summary>
+            Define la propiedad de navegación a PesajesArticulo
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesaje.UsuarioId">
+            <summary>
+            Define la clave foránea del usuario
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesaje.Usuario">
+            <summary>
+            Define la propiedad de navegación al Usuario
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesaje.TipoBasculaId">
+            <summary>
+            Define la clave foránea de TiposBascula
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesaje.TipoBascula">
+            <summary>
+            Define la propiedad de navegación a TiposBascula
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesaje.PesajesCodigoBarras">
+            <summary>
+             Define la propiedad de navegación a PesajesCodigoBarras
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesaje.PesajeContenedor">
+            <summary>
+             Define la propiedad de navegación a PesajesContenedor
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFPesajeArticulo">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 19-Mar/2020    
+            </summary>   
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeArticulo.PesajeEntregaId">
+            <summary>
+            Define la clave foránea de PesajesEntrega
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeArticulo.PesajeEntrega">
+            <summary>
+            Define la propiedad de navegación a PesajesEntrega
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeArticulo.DetalleEntregaId">
+            <summary>
+            Define la clave foránea de DetalleEntrega
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeArticulo.DetalleEntrega">
+            <summary>
+            Define la propiedad de navegación a DetalleEntrega
+            </summary>     
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeArticulo.UsuarioId">
+            <summary>
+            Define la clave foránea del usuario
+            </summary>     
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeArticulo.Usuario">
+            <summary>
+            Define la propiedad de navegación al Usuario
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeArticulo.DocumentoId">
+            <summary>
+            Define la clave foránea de Documentos
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeArticulo.Documento">
+            <summary>
+            Define la propiedad de navegación a Documentos
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeArticulo.Pesajes">
+            <summary>
+             Define la propiedad de navegación a Pesajes
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFPesajeCodigoBarras">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 19-Mar/2020
+            </summary> 
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeCodigoBarras.PesajeId">
+            <summary>
+            Define la clave foránea a Pesajes
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeCodigoBarras.Pesaje">
+            <summary>
+            Define la propiedad de navegación a Pesajes
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeCodigoBarras.UsuarioId">
+            <summary>
+            Define la clave foránea del usuario
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeCodigoBarras.Usuario">
+            <summary>
+            Define la propiedad de navegación al Usuario
+            </summary>      
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFPesajeContenedor">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 19-Mar/2020   
+            </summary> 
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeContenedor.PesajeId">
+            <summary>
+            Define la clave foránea a Pesajes
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeContenedor.Pesaje">
+            <summary>
+            Define la propiedad de navegación a Pesajes
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeContenedor.TipoContenedorId">
+            <summary>
+            Define la clave foránea a TipoContenedor
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeContenedor.TipoContenedor">
+            <summary>
+            Define la propiedad de navegación a TipoContenedor
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeContenedor.Cantidad">
+            <summary>
+            Define la cantidad de este tipo de contenedores
+            </summary>       
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFPesajeEntrega">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 19-Mar/2020    
+            </summary>   
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeEntrega.EstadoEntregaId">
+            <summary>
+            Define la clave foránea de EstadoEntrega
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeEntrega.EstadoEntrega">
+            <summary>
+            Define la propiedad de navegación a EstadosEntrega
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeEntrega.EntregaId">
+            <summary>
+            Define la clave foránea de Entrega
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeEntrega.Entrega">
+            <summary>
+            Define la propiedad de navegación a Entrega
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFPesajeEntrega.PesajesArticulo">
+            <summary>
+             Define la propiedad de navegación a PesajesArticulo
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFProceso">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 12-Feb/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFProceso.Motivos">
+            <summary>
+             Define la propiedad de navegación que representa los motivos del proceso
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFRegistroAuditoria">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa un registro de audítoria.
+            </summary>   
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.RegistroAuditoriaId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.UsuarioId">
+            <summary>
+            Define la clave foreanea a Usuario
+            </summary>
+            
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.Fecha">
+            <summary>
+            Define la fecha de registro del registro de audítoria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.Accion">
+            <summary>
+             Define la Acción del registro de audítoria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.Parametros">
+            <summary>
+             Parámetros de la acción
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.IP">
+            <summary>
+            Define la IP del cliente el cual generó el registro de audítoria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRegistroAuditoria.Usuario">
+            <summary>
+            Define la propiedad de navegación a Usuario 
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFRol">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa un rol del usuario.
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.RolId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.Nombre">
+            <summary>
+            Define el nombre del rol.
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.PlantaBeneficio">
+            <summary>
+             Define si el registro se encuentra activo o inactivo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.PlantaDerivadosCarnicos">
+            <summary>
+             Define si el registro se encuentra activo o inactivo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.PuntosVenta">
+            <summary>
+             Define si el registro se encuentra activo o inactivo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.Administracion">
+            <summary>
+             Define si el registro se encuentra activo o inactivo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.Activo">
+            <summary>
+             Define si el registro se encuentra activo o inactivo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.UsuariosxRol">
+            <summary>
+             Define la propiedad de navegación que representa los usuarios de un rol
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFRol.FuncionalidadesxRol">
+            <summary>
+             Define la propiedad de navegación que representa las funcionalidades de un rol
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFSerie">
+            <summary>
+            Autor                  : Andrés Holguín Osorio
+            Fecha de creación      : 21-Agosto/2020
+            </summary>    
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFSesion">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 25-Ago/2019
+            Descripción            : Representa la sesión del usuario.
+            </summary>   
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFSesion.SesionId">
+            <summary>
+            Define la clave primaria de la sesión
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFSesion.UsuarioId">
+            <summary>
+            Define la clave foránea del usuario de la sesión
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFSesion.Token">
+            <summary>
+             Define el token de la sesión
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFSesion.IP">
+            <summary>
+             Define la IP del equipo que generó el inicio de la sesión
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFSesion.FechaInicio">
+            <summary>
+            Define la fecha de inicio de sesión
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFSesion.FechaExpiracion">
+            <summary>
+            Define la fecha de expiración de sesión
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFSesion.Usuario">
+            <summary>
+            Define la propiedad de navegación al usuario de la sesión
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFSocioNegocio">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 15-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFSocioNegocio.ImpuestosSociosArticulos">
+            <summary>
+             Define la propiedad de navegación a ImpuestosSociosArticulos
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFSocioNegocio.ListasPrecios">
+            <summary>
+             Define la propiedad de navegación a ListasPrecios
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFTipoBascula">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 27-Feb/2020   
+            </summary>   
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFTipoBascula.Pesajes">
+            <summary>
+             Define la propiedad de navegación a Pesajes
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFTipoBodegaParametrizacion">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 23-Jul/2020    
+            </summary> 
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFTipoBodegaParametrizacion.Bodega">
+            <summary>
+            Define la propiedad de navegación a Bodegas 
+            </summary>       
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFTipoContenedor">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 25-Feb/2020
+            Descripción            : Representa un tipo de contenedor
+            </summary> 
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFTipoContenedor.PesajeContenedor">
+            <summary>
+             Define la propiedad de navegación a PesajeContenedor
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFTipoFactura">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 24-Abr/2020 
+            </summary>    
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFTipoInventario">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 24-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFTipoInventario.Inventarios">
+            <summary>
+             Define la propiedad de navegación a Inventarios
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFTipoListaPrecio">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 26-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFTipoListaPrecio.ListasPrecio">
+            <summary>
+             Define la propiedad de navegación a ListasPrecio
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFTipoSolicitud">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 09-Jul/2019
+            </summary>    
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFTipoVehiculo">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 18-Dic/2019 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFTipoVehiculo.Vehiculos">
+            <summary>
+            Define la propiedad de navegación a los Vehiculos
+            </summary>      
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFTransformacion">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 26-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFTransformacion.CodigoArticulo">
+            <summary>
+            Define la clave foránea de Articulo
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFTransformacion.Articulo">
+            <summary>
+            Define la propiedad de navegación a Artículo
+            </summary>       
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFUsuario">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa a un usuario del sistema.
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuario.UsuarioId">
+            <summary>
+            Define la clave primaria
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuario.Usuario">
+            <summary>
+            Define el usuario
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuario.Nombre">
+            <summary>
+            Define el nombre del usuario
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuario.Identificacion">
+            <summary>
+            Define el nombre del usuario
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuario.Activo">
+            <summary>
+            Define si el registro se encuentra activo o inactivo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuario.UsuariosxRol">
+            <summary>
+             Define la propiedad de navegación de los roles de un usuario
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuario.CuadresCaja">
+            <summary>
+             Define la propiedad de navegación a CuadresCaja
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFUsuarioBodega">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 09-Jul/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuarioBodega.UsuarioId">
+            <summary>
+            Define la clave foránea del usuario de la sesión
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuarioBodega.Usuario">
+            <summary>
+            Define la propiedad de navegación al usuario de la sesión
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuarioBodega.CodigoBodega">
+            <summary>
+            Define la clave foránea de la bodega
+            </summary>       
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuarioBodega.Bodega">
+            <summary>
+            Define la propiedad de navegación Bodega
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFUsuariosxRol">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 02-Ago/2019
+            Descripción            : Representa la relación de muchos a muchos entre Usuario y Rol.
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuariosxRol.UsuariosxRolId">
+            <summary>
+            Define la clave primaria 
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuariosxRol.RolId">
+            <summary>
+            Define la clave foranea a Rol
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuariosxRol.UsuarioId">
+            <summary>
+            Define la clave foranea a Usuario
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuariosxRol.Rol">
+            <summary>
+            Define la propiedad de navegación Rol
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFUsuariosxRol.Usuario">
+            <summary>
+            Define la propiedad de navegación usuario
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFVehiculo">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 18-Dic/2019 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVehiculo.TipoVehiculoId">
+            <summary>
+            Representa id que es clave foránea de tipo vehiculo
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVehiculo.TipoVehiculo">
+            <summary>
+            Define la propiedad de navegación a TiposVehiculo 
+            </summary>      
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFVehiculoEntrega">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 19-Dic/2019  
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVehiculoEntrega.Usuario">
+            <summary>
+            Define la propiedad de navegación a Usuario
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVehiculoEntrega.Vehiculo">
+            <summary>
+            Define la propiedad de navegación a vehiculo
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVehiculoEntrega.Conductor">
+            <summary>
+            Define la propiedad de navegación a Empleado
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVehiculoEntrega.Muelle">
+            <summary>
+            Define la propiedad de navegación a Empleado
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVehiculoEntrega.Auxiliar">
+            <summary>
+            Define la propiedad de navegación a Empleado
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVehiculoEntrega.VehiculoEntregasDetalles">
+            <summary>
+            Define la propiedad de navegación a los detalles VehiculoEntregasDetalles
+            </summary>      
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFVehiculoEntregaDetalle">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 19-Dic/2019   
+            </summary>  
+            
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVehiculoEntregaDetalle.VehiculoEntrega">
+            <summary>
+            Define la propiedad de navegación a Usuario
+            </summary>  
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVehiculoEntregaDetalle.Entrega">
+            <summary>
+            Define la propiedad de navegación a Entregas
+            </summary>  
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFVendedor">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 28-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVendedor.VendedoresPuntoVenta">
+            <summary>
+             Define la propiedad de navegación a VendedoresPuntoVenta
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVendedor.Facturas">
+            <summary>
+             Define la propiedad de navegación a Facturas
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Entities.EFVendedorPuntoVenta">
+            <summary>
+            Autor                  : Juan Camilo Usuga Sepúlveda
+            Fecha de creación      : 28-Abr/2020 
+            </summary>    
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVendedorPuntoVenta.VendedorId">
+            <summary>
+            Define la clave foránea a Vendedores
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVendedorPuntoVenta.Vendedor">
+            <summary>
+            Define la propiedad de Vendedores
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVendedorPuntoVenta.CodigoPuntoVenta">
+            <summary>
+            Define la clave foránea a Bodegas
+            </summary>      
+        </member>
+        <member name="P:EVO_DataAccess.Entities.EFVendedorPuntoVenta.Bodega">
+            <summary>
+            Define la propiedad de Vendedores
+            </summary>
+        </member>
+        <member name="T:EVO_DataAccess.Utils.AppConfiguration">
+            <summary>
+            Autor            : Juan Camilo Usuga
+            Fecha de Creación: 31-Jul/2019
+            Descripción      : Esta clase permite leer elementos de configuración del archivo appsettings.json
+                               Tomado de: https://www.ttmind.com/techpost/How-to-read-appSettings-JSON-from-Class-Library-in-ASP-NET-Core
+            </summary>
+            
+        </member>
+        <member name="P:EVO_DataAccess.Utils.AppConfiguration.AppSettings">
+            <summary>
+            Sección de elementos de configuración AppSettings
+            </summary>
+        </member>
+        <member name="P:EVO_DataAccess.Utils.AppConfiguration.ConnectionString">
+            <summary>
+            Sección de elementos de Cadenas de Conexión
+            </summary>
+        </member>
+        <member name="M:EVO_DataAccess.Utils.AppConfiguration.#ctor">
+            <summary>
+            Lee el archivo appsettings.json de la ruta raíz y busca las propiedades ConnectionString y ApplicationSettings
+            </summary>
+        </member>
+    </members>
+</doc>

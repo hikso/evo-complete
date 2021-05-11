@@ -1,0 +1,2336 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Pedidos
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Pedidos
+  version: "1.0.0"
+  title: API de Pedidos
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Pedidos
+    description: Gestión de Pedidos
+paths: 
+  /pedidos:
+    post:
+      tags:
+        - Pedidos
+      summary: Crea un pedido
+      operationId: crearPedido
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+        $ref: '#/components/requestBodies/PedidoRequest'
+  /pedidos/estado/borrador:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene las solicitudes de un pedido en estado borrador
+      operationId: obtenerSolicitudPedidoBorrador
+      parameters:
+        - name : solicitudDe
+          in: query
+          description: Indica el código del punto de venta quien realizó el pedido
+          required: true
+          schema:
+           type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/ObtenerSolicitudPedidoBorradorResponse' 
+  /pedidos/tipos/solicitud:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene los tipos de solicitud de un pedido
+      operationId: obtenerTiposSolicitudPedido
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/ObtenerTipoSolicitudPedidoResponse' 
+  /pedidos/recepcion/:
+   get:
+      tags:
+       - Pedidos
+      summary: Obtiene los pedidos en recepción con entregas en estado "Programado"
+      operationId: obtenerPedidosRecepcion
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/PedidoResponse'   
+  /pedidos/alistamiento/:
+   get:
+      tags:
+       - Pedidos
+      summary: Obtiene los pedidos en alistamiento con entregas en estado "En tránsito"
+      operationId: obtenerPedidosAlistamiento
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/PedidoResponse'   
+  /pedidos/distribucion/actualizar:
+   post:
+      tags:
+       - Pedidos
+      summary: Actualiza una entrega en distribución
+      operationId: actualizarEntregaDistribucion
+      requestBody:
+          $ref: '#/components/requestBodies/EntregaDistribucionRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+  /pedidos/entrega/articulos:
+   get:
+      tags:
+       - Pedidos
+      summary: Obtiene los artículos que no existen en la entrega
+      operationId: obtenerArticulosPendientes
+      parameters:
+        - name : entregaId
+          in: query
+          description: Indica el id de la entrega
+          required: true
+          schema:
+           type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/ArticuloPendienteResponse'   
+  /pedidos/entrega/actualizar:
+   post:
+      tags:
+       - Pedidos
+      summary: Actualiza una entrega
+      operationId: actualizarEntrega
+      requestBody:
+          $ref: '#/components/requestBodies/EntregaRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+  /pedidos/entregas/articulo/eliminar:
+   post:
+      tags:
+        - Pedidos
+      summary: Elimina un artículo asociado a una entrega
+      parameters:
+        - name: id
+          in: query
+          description: Id del detalle entrega 
+          required: true
+          schema:
+            type: integer
+      operationId: eliminarArticuloEntrega      
+      responses:
+        '200':
+          description: Operación realizada con éxito      
+  /pedidos/viaje/entregas:
+   get:
+      tags:
+       - Pedidos
+      summary: Obtiene los detalles del viaje entregas
+      operationId: obtenerViajeEntregas
+      parameters:
+        - name : vehiculoEntregaId
+          in: query
+          description: Indica el id del viaje
+          required: true
+          schema:
+           type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerViajeEntregasResponse'   
+  /pedidos/aprobar:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene los pedidos con estado abierto
+      operationId: obtenerPedidosAbiertos
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosComercialResponse' 
+  /pedidos/aceptados:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene los pedidos con estado aceptado y aceptado parcial
+      operationId: obtenerPedidosAceptados
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosComercialResponse'      
+  /pedidos/aprobar/filtrar:
+   post:
+      tags:
+        - Pedidos
+      summary: Obtiene todos los registros de pedidos en estado abierto con filtros de búsqueda
+      operationId: obtenerTodosPedidosAbiertosxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarPedidoComercialRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosComercialResponse'      
+  /pedidos/aceptados/filtrar:
+   post:
+      tags:
+        - Pedidos
+      summary: Obtiene todos los registros de pedidos en estado aceptado y aceptado parcial con filtros de búsqueda
+      operationId: obtenerTodosPedidosAceptadosxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarPedidoComercialRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosComercialResponse'      
+  /pedidos/solicitud/habilitar:
+   get:
+      tags:
+        - Pedidos
+      summary: Verifica si se puede solicitar pedidos a las plantas
+      operationId: habilitarSolicitudPedido
+      parameters:
+        - name: codigoCliente
+          in: query
+          description: Indica el código del cliente que realizó la solicitud
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito
+  /pedidos/solicitud/filtrar:
+    post:
+      tags:
+        - Pedidos
+      summary: Obtiene todos los registros de solicitud de pedidos aplicando filtros de búsqueda
+      operationId: obtenerTodosPedidosSolicitudxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarPedidoSolicitudRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosSolicitudResponse'         
+  /pedidos/solicitud/consulta:
+    get:
+      tags:
+        - Pedidos
+      summary: Consulta la solicitud del pedido por el id
+      operationId: obtenerConsultaPedidoSolicitudxId
+      parameters:
+        - name: id
+          in: query
+          description: Indica el pedido id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ConsultaPedidoSolicitudResponse'                      
+  /pedidos/solicitud/obtenerxid:
+    get:
+      tags:
+        - Pedidos
+      summary: Obtiene la solicitud del pedido por el id
+      operationId: obtenerPedidoSolicitudxId
+      parameters:
+        - name: id
+          in: query
+          description: Indica el pedido ID
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerPedidoSolicitudResponse'                                      
+  /pedidos/solicitud/borrador:
+    post:
+      tags:
+        - Pedidos
+      summary: Obtiene si actualmente existe una solicitud de pedido en estado "Borrador"
+      operationId: ExistePedidoSolicitudBorrador
+      requestBody:
+          $ref: '#/components/requestBodies/ObtenerPedidoSolicitudBorradorRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              text/plain:
+                schema:
+                  type: boolean
+                  example: true   
+  /pedidos/solicitud/actualizar:
+   post:
+      tags:
+        - Pedidos
+      summary: Actualiza una solicitud del pedido
+      operationId: actualizarSolicitudPedido
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+        $ref: '#/components/requestBodies/PedidoSolicitudRequest'            
+  /pedidos/solicitud/borradores:
+   get:
+      tags:
+        - Pedidos
+      summary: Verifica que actualmente existan solicitudes en estado borrador en cada planta
+      operationId: existeSolicitudPlantasBorrador
+      parameters:
+        - name: codigoPuntoVenta
+          in: query
+          description: Código del punto de venta
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito  
+          content:
+              application/json:
+                schema:
+                  type: boolean      
+  /pedidos/solicitud:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene los registros de Pedidos
+      operationId: obtenerTodosPedidosSolicitud
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: WhsCode
+          in: query
+          description: Indica el código de la bodega 
+          required: true
+          schema:
+            type: string    
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosSolicitudResponse'
+   post:
+      tags:
+        - Pedidos
+      summary: Solicita un pedido
+      operationId: solicitarPedido
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+        $ref: '#/components/requestBodies/PedidoSolicitudRequest'      
+  /pedidos/comercial:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene los registros de pedidos hacia comercial
+      operationId: obtenerTodosPedidosAComercial
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosComercialResponse'                 
+  /pedidos/comercial/filtrar:
+   post:
+      tags:
+        - Pedidos
+      summary: Obtiene todos los registros de pedidos en comercial aplicando filtros de búsqueda
+      operationId: obtenerTodosPedidosAComercialxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarPedidoComercialRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosComercialResponse'      
+  /pedidos/comercial/actualizar:                
+   post:
+      tags:
+       - Pedidos
+      summary: Actualiza un pedido en comercial.
+      operationId: actualizarPedidoComercial
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+          $ref: '#/components/requestBodies/ActualizarPedidoComercialRequest'                      
+  /pedidos/comercial/solicitud:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene una solicitud del pedido de un punto de venta o cliente externo en comercial   
+      operationId: obtenerSolicitudPedidoComercial
+      parameters:
+        - name: id
+          in: query
+          description: Pedido Id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerPedidoEnComercialResponse'                                         
+  /pedidos/codigos/beneficio:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene los códigos de los pedidos en planta beneficio
+      operationId: ObtenerCodigosPedidosBeneficio
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   type: string                
+  /pedidos/cantidadxestados:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene por estado la cantidad de pedidos
+      operationId: obtenerTodosCantidadPedidosxEstado
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/ObtenerEstadoPedidoResponse'
+  /pedidos/estados:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene los estados de los Pedidos
+      operationId: obtenerTodosEstadosPedido
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/ObtenerEstadoPedidoResponse'             
+  /pedidos/distribucion/filtrar:
+    post:
+      tags:
+        - Pedidos
+      summary: Obtiene todos los registros de Pedidos en distribución aplicando filtros de búsqueda
+      operationId: obtenerTodosEntregasDistribucionxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarEntregasDistribucionRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosEntregasDistribucionResponse'                                                
+  /pedidos/distribucion/asignarvehiculo:
+   post:
+      tags:
+        - Pedidos
+      summary: Asignar Vehiculo
+      operationId: AsignarVehiculo
+      requestBody:
+          $ref: '#/components/requestBodies/AsignarDistribucionRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              text/plain:
+                schema:
+                  type: boolean
+                  example: true            
+  /pedidos/distribucion/conductores:
+   post:
+      tags:
+        - Pedidos
+      summary: Obtiene conductores para un vehiculo
+      operationId: ObtenerConductores
+      requestBody:
+          $ref: '#/components/requestBodies/FechaEntregaRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/ConductorResponse'                       
+  /pedidos/distribucion/tipovehiculo:
+    get:
+      tags:
+        - Pedidos
+      summary: Obtiene los tipos de vehiculos
+      operationId: obtenerTipoVehiculo
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/TipoVehiculoResponse'        
+  /pedidos/distribucion/vehiculo:
+    get:
+      tags:
+        - Pedidos
+      summary: Obtiene los vehiculos por un tipo
+      operationId: obtenerVehiculoxTipo
+      parameters:
+        - name: id
+          in: query
+          description: Indica el id del tipo de vehiculo
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/VehiculoResponse'                       
+  /pedidos/distribucion/vehiculos:
+    get:
+      tags:
+        - Pedidos
+      summary: Obtiene los vehiculos con entregas pendientes finalizar
+      operationId: obtenerVehiculos
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/EnrutamientoResponse'                                        
+  /pedidos/entregas/agregar:
+    post:
+      tags:
+        - Pedidos
+      summary: Agrega entregas
+      operationId: AgregarEntregas
+      requestBody:
+          $ref: '#/components/requestBodies/EntregasRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              text/plain:
+                schema:
+                  type: boolean
+                  example: true   
+  /pedidos/entregas/actualizar:
+    post:
+      tags:
+        - Pedidos
+      summary: Actualiza entrega
+      operationId: ActualizarEntrega
+      requestBody:
+          $ref: '#/components/requestBodies/ActualizarEntregaRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              text/plain:
+                schema:
+                  type: boolean
+                  example: true                   
+  /pedidos/entregas/eliminar:
+    post:
+      tags:
+        - Pedidos
+      summary: Eliminar entregas
+      operationId: EliminarEntregas
+      requestBody:
+          $ref: '#/components/requestBodies/EliminarEntregasRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              text/plain:
+                schema:
+                  type: boolean
+                  example: true                                   
+  /pedidos/entregas/obtener:  
+    get:
+      tags:
+        - Pedidos
+      summary: Obtiene las entregas en pedido por el id
+      operationId: obtenerEntregasPedidoxId
+      parameters:
+        - name: id
+          in: query
+          description: Indica el pedido id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/EntregasResponse'   
+  /pedidos/entregas/estado/programado:
+    post:
+      tags:
+        - Pedidos
+      summary: Actualiza el pedido y las entregas al estado programado
+      operationId: PedidoEntregasEnrutamiento
+      requestBody:
+          $ref: '#/components/requestBodies/ADistribucionRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              text/plain:
+                schema:
+                  type: boolean
+                  example: true   
+  /pedidos/entregas/id:
+     get:
+      tags:
+        - Pedidos
+      summary: Obtiene entrega por id
+      operationId: obtenerEntregaxId
+      parameters:
+        - name: id
+          in: query
+          description: Indica el id de entrega
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                   $ref: '#/components/schemas/EntregaResponse'
+components:
+  schemas:
+    
+    ObtenerSolicitudPedidoBorradorResponse:
+      type: object
+      description: Indica la solicitud del pedido en estado borrador
+      properties:
+        PedidoId:
+          type: integer
+          example: 1
+          description: Id del pedido
+        FechaSolicitud:
+          type: string
+          example: "26/06/2020"
+          description: Fecha de la solicitud
+        FechaLimiteSolicitud:
+          type: string
+          example: "26/06/2020"
+          description: Fecha limite de la solicitud
+        EstadoPedido:
+          type: string
+          example: "Borrador"
+          description: Estado de la solicitud
+        SolicitudA:
+          type: string
+          example: "26/06/2020"
+          description: Fecha de la solicitud
+        DiasEntrega:
+          type: string
+          example: "0"
+          description: Días para la entrega  
+    ObtenerTipoSolicitudPedidoResponse:
+      type: object
+      description: Indica el tipo de solicitud para un pedido
+      properties:
+        TipoSolicitudId:
+          type: integer
+          example: 1
+          description: Id del tipo de solicitud
+        TipoSolicitudNombre:
+          type: string
+          example: "Traslado"
+          description: Nombre del tipo de solicitud
+    PedidoResponse:
+      type: object
+      description: Representa el encabezado de un pedido
+      properties:
+        PedidoId:
+          type: integer
+          example: 1
+          description: Id del pedido
+        Codigo:
+          type: string
+          example: 'PRA-1'
+          description: Código del pedido
+    ArticuloPendienteResponse:
+      type: object
+      description: Obtiene los artículos pendientes que no están en la entrega
+      properties:
+        IdEstadoArticulo:
+          type: integer
+          example: "1"
+          description: ID del estado del Artículo
+        codigo:
+          type: string
+          example: 'PT-1485'
+          description: Código del artículo
+        nombre:
+          type: string
+          example: 'Cabeza de cerdo'
+          description: Nombre del artículo
+        cantidadAprobada:
+          type: string
+          example: '1000000'
+          description: Cantidad aprobada
+        cantidadPendiente:
+          type: string
+          example: '123'
+          description: Cantidad pendiente
+        cantidadEntrega:
+          type: string
+          example: '456'
+          description: Cantidad entrega
+    ObtenerViajeEntregasResponse:
+      type: object
+      description: Obtiene las entregas de un viaje
+      properties:
+        tipoVehiculo:
+          type: string
+          example: 'Turbo'
+          description: Nombre del tipo de vehiculo
+        capacidadVehiculo:
+             type: string
+             example: '12 kg'
+             description: Capacidad en KG 
+        unidadesCanastas:
+             type: string
+             example: '1500'
+             description: Unidades de canastas
+        placa:
+             type: string
+             example: 'XYZ 123'
+             description: Placa del vehiculo
+        totalEntregasAsociadas:
+             type: string
+             example: '3'
+             description: Total entregas asociadas
+        cantidadTotal:
+             type: string
+             example: '15 kg'
+             description: Cantidad total en KG
+        unidadesTotales:
+             type: string
+             example: '6'
+             description: Unidades totales
+        entregas:     
+          type: array
+          description: Lista de las entregas
+          items:
+           type: object
+           properties:
+            numeroEntrega:
+             type: string
+             example: '1'
+             description: Número de la entrega
+            numeroPedido:
+             type: string
+             example: 'PRA-1'
+             description: Número del pedido
+            cliente:
+             type: string
+             example: 'SAN ANTONIO DE PRADO'
+             description: Nombre del cliente
+            codigo:
+             type: string
+             example: 'PV-PRA'
+             description: Para cliente externo es NIT y para interno es el código bodega
+            zona:
+             type: string
+             example: 'Norte'
+             description: Zona del cliente
+            fechaEntrega:
+             type: string
+             example: '07/01/2020'
+             description: Fecha entrega
+            horaEntrega:
+             type: string
+             example: '8:00'
+             description: Hora militar de la entrega
+            cantidad:
+             type: string
+             example: '2000 KG'
+             description: Peso de la cantidad de los artículo
+            unidades:
+             type: string
+             example: '2'
+             description: Unidades solicitadas por artículo 
+            articulos:     
+              type: array
+              description: Lista de artículos de la entrega
+              items:
+                 type: object
+                 properties:
+                  codigo:
+                   type: string
+                   example: 'PT-1485'
+                   description: Código del artículo
+                  nombre:
+                   type: string
+                   example: 'Pierna'
+                   description: Nombre del artículo 
+                  estado:
+                     type: string
+                     example: 'Refrigerado'
+                     description: Estado del artículo
+                  cantidad:
+                     type: string
+                     example: '800 '
+                     description: Cantidad 
+                  unidadMedida:
+                     type: string
+                     example: 'KG'
+                     description: Unidad de medida
+                  observaciones:
+                     type: string
+                     example: ''
+                     description: Observaciones
+    AsignarDistribucionRequest:
+       type: object
+       required:
+        - vehiculoId
+        - muelleId
+        - conductorId
+        - auxiliarId
+        - entregasIds
+        - nuevoViaje
+       description: Crea o actualiza una distribución
+       properties:
+        vehiculoId:
+             type: integer
+             example: 1
+             description: Id del vehiculo
+        conductorId:
+             type: integer
+             example: 1
+             description: Id del conductor
+        muelleId:
+             type: integer
+             example: 1
+             description: Id del muelle
+        auxiliarId:
+             type: integer
+             example: 1
+             description: Id del conductor auxiliar
+        entregasIds:
+           type: array
+           description: Ids de las entregas asociadas al viaje
+           example: [1, 2, 3, 4]
+           items:
+             type: integer     
+        nuevoViaje:
+             type: boolean
+             example: true
+             description: Identifica si es o no un nuevo viaje       
+    FechaEntregaRequest:
+       type: object
+       required:
+        - fecha
+        - hora
+       description: Fecha de una entrega
+       properties:
+        fecha:
+             type: string
+             example: "10/12/2019"
+             description: Fecha de entrega
+        cargo:
+             type: string
+             example: "12:34"
+             description: Hora de entrega    
+    ConductorResponse:
+       type: object
+       required:
+        - conductorId
+        - nombres
+        - apellidos
+        - cedula
+        - cargo
+       description: Respuesta de un conductor
+       properties:
+        conductorId:
+          type: integer
+          example: 1
+          description: Id del conductor
+        nombres:
+          type: string
+          example: "Juan Camilo"
+          description: Nombres
+        apellidos:
+             type: string
+             example: "Usuga Sepúlveda"
+             description: Apellidos
+        cargo:
+             type: string
+             example: "Auxiliar"
+             description: Tipo de cargo del conductor  
+    EnrutamientoResponse:
+      type: object
+      description: Obtiene el estado actual del encabezado de enrutamiento
+      properties:
+         vehiculoEntregaId:
+          type: integer
+          example: 1
+          description: Id del viaje 
+         totalPeso:
+          type: number
+          format: decimal
+          example: 500.45
+          description: Peso de la entrega 
+         cantidadEntregas:
+          type: integer
+          example: 1
+          description: cantidad de entregas   
+         tipoVehiculo:
+           $ref: '#/components/schemas/TipoVehiculoResponse'
+         vehiculo:
+           $ref: '#/components/schemas/VehiculoResponse'
+         muelle:
+           $ref: '#/components/schemas/MuelleResponse'
+         conductor:
+           $ref: '#/components/schemas/EmpleadoResponse'
+         auxiliar:
+           $ref: '#/components/schemas/EmpleadoResponse'     
+    EmpleadoResponse:
+       type: object
+       required:
+        - empleadoId
+        - nombres
+        - apellidos
+        - cedula
+        - cargo
+       description: Respuesta de un empleado
+       properties:
+        empleadoId:
+          type: integer
+          example: 1
+          description: Id del empleado
+        nombres:
+          type: string
+          example: "Juan Camilo"
+          description: Nombres
+        apellidos:
+             type: string
+             example: "Usuga Sepúlveda"
+             description: Apellidos
+        cedula:
+             type: string
+             example: "9734539"
+             description: Cédula
+        cargo:
+             type: string
+             example: "Auxiliar"
+             description: Tipo de cargo         
+    VehiculoResponse:
+       type: object
+       description: Indica un vehiculo
+       properties:
+        vehiculoId:
+          type: integer
+          example: 1
+          description: Id del vehiculo
+        muelle:
+          type: string
+          example: "Muelle 1"
+          description: Nombre del muelle  
+        tipoVehiculoNombre:
+          type: string
+          example: "Sencillo"
+          description: Tipo de vehículo   
+        placa:
+          type: string
+          example: "LRY-24E"
+          description: Número de la placa  
+        capacidad:
+             type: number
+             format: decimal
+             example: 234.13
+             description: Capacidad de peso
+        peso:
+             type: number
+             format: decimal
+             example: 25
+             description: Peso
+        totalEntregas:
+          type: number
+          format: decimal
+          example: 500.45
+          description: Peso de los artículos        
+        unidad:
+          type: string
+          example: "Kg"
+          description: Unidad del peso (Kilogramos)
+    TipoVehiculoResponse:
+       type: object
+       required:
+        - TipoVehiculoId
+        - TipoVehiculo
+       description: Indica un tipo de vehiculo
+       properties:
+        TipoVehiculoId:
+          type: integer
+          example: 1
+          description: Id del tipo de vehiculo
+        TipoVehiculo:
+          type: string
+          example: "Doble troque"
+          description: Tipo de vehiculo
+    MuelleResponse:
+       type: object
+       required:
+        - MuelleId
+        - Muelle
+       description: Indica un muelle
+       properties:
+        MuelleId:
+          type: integer
+          example: 1
+          description: Id del muelle
+        Muelle:
+          type: string
+          example: "Muelle 1"
+          description: Nombre del muelle      
+    EntregaResponse:     
+        type: object
+        description: Objeto que contiene una entrega del pedido
+        properties:
+         pedidoId:
+             type: integer
+             example: 1
+             description: Id de pedido
+         codigoPedido:
+             type: string
+             example: "PRA-01"
+             description: Código pedido
+         usuario:
+             type: string
+             example: "Juan Camilo Usuga S"
+             description: Usuario
+         cliente:
+             type: string
+             example: "SAN ANTONIO DE PRADO"
+             description: Cliente
+         zona:
+             type: string
+             example: "Sur"
+             description: Zona del cliente
+         ordenCompra:
+             type: string
+             example: "ZA-12-34-E"
+             description: Orden de compra      
+         fechaEntrega:
+             type: string
+             example: "21/07/2019"
+             description: Fecha entrega
+         horaEntrega:
+             type: string
+             example: "19:45"
+             description: Hora entrega     
+         estado:
+             type: string
+             example: "Distribución"
+             description: Estado entrega
+         placa:
+             type: string
+             example: "LRY-23E"
+             description: Placa vehiculo
+         TipoVehiculoId:
+             type: integer
+             example: 4
+             description: Id del tipo de vehículo    
+         TipoVehiculo:
+             type: string
+             example: "Doble Troque"
+             description: Nombre del tipo de vehículo
+         CapacidadTipoVehiculo:
+             type: string
+             example: "3000 kg"
+             description: "Capacidad del tipo de vehiculo"
+         Detalles:     
+          type: array
+          description: Lista de detalles de la entrega
+          items:
+           type: object
+           properties:
+            DetalleEntregaId:
+             type: integer
+             example: 1
+             description: Id del detalle de la entrega
+            IdEstadoArticulo:
+             type: integer
+             example: "1"
+             description: ID del estado del Artículo
+            CodigoArticulo:
+             type: string
+             example: "PT-1485"
+             description: Código Artículo
+            NombreArticulo:
+             type: string
+             example: "Pierna"
+             description:  Nombre Artículo
+            Cantidad:
+             type: number
+             format: decimal
+             example: 234.13
+             description: Cantidad a enviar
+    EntregasResponse:
+          type: object
+          description: Objeto que contiene un encabezado y detalles de entrega del pedido
+          properties:
+           NumeroPedido:
+               type: string
+               example: "PRA-1"
+               description: Código del pedido
+           Cliente:
+               type: string
+               example: "San Antonio de Prado"
+               description: Nombre del cliente
+           Zona:
+               type: string
+               example: "Sur"
+               description: Zona del cliente
+           NumeroEntregas:
+               type: string
+               example: "2"
+               description: Número de entregas           
+           Articulos:     
+                 type: array
+                 description: Detalle del pedido
+                 items:
+                    type: object
+                    description: Objeto que contiene un detalle del pedido
+                    properties:
+                     DetallePedidoId:
+                         type: integer
+                         example: 1
+                         description: Id del detalle del pedido
+                     Codigo:
+                         type: string
+                         example: "PT-1485"
+                         description: Código del artículo
+                     Nombre:
+                         type: string
+                         example: "Pierna Premium"
+                         description: Nombre del artículo
+                     Estado:
+                         type: string
+                         example: "Congelado"
+                         description: Estado del artículo
+                     UnidadMedida:
+                         type: string
+                         example: "Kg"
+                         description: Unidad de medida
+                     CantidadAprobada:
+                         type: string
+                         example: "36.200"
+                         description: Cantidad Aprobada 
+           Entregas:     
+               type: array
+               description: Lista de entregas
+               items:
+                  type: object
+                  description: Objeto que contiene una entrega del pedido
+                  properties:
+                   EntregaId:
+                       type: integer
+                       example: 1
+                       description: Id de entrega
+                   FechaEntrega:
+                       type: string
+                       example: "21/07/2019"
+                       description: Fecha entrega
+                   HoraEntrega:
+                       type: string
+                       example: "10:25"
+                       description: Hora entrega
+                   NombreTipoVehiculo:
+                       type: string
+                       example: "Doble Troque"
+                       description: Nombre del tipo de vehiculo
+                   CapacidadTipoVehiculo:
+                       type: string
+                       example: "3000 kg"
+                       description: "Capacidad del tipo de vehiculo"
+                   CantidadTotal:
+                       type: number
+                       example: 3000
+                       description: "Cantidad total de la entrega"
+                   Detalles:     
+                    type: array
+                    description: Lista de detalles de la entrega
+                    items:
+                     type: object
+                     properties:
+                      DetalleEntregaId:
+                       type: integer
+                       example: 1
+                       description: Id del detalle de la entrega
+                      DetallePedidoId:
+                       type: integer
+                       example: 1
+                       description: Id del detale el pedido
+                      CodigoArticulo:
+                       type: string
+                       example: "PT-1485"
+                       description: Código Artículo
+                      NombreArticulo:
+                       type: string
+                       example: "Pierna"
+                       description:  Nombre Artículo
+                      Cantidad:
+                       type: number
+                       format: decimal
+                       example: 234.13
+                       description: Cantidad a enviar
+    EntregasRequest:
+          type: object
+          description: Objeto que contiene una entrega del pedido
+          properties:
+           PedidoId:
+               type: integer
+               example: 1
+               description: Id del pedido
+           FechaEntrega:
+               type: string
+               example: "21/07/2019"
+               description: Fecha entrega
+           HoraEntrega:
+               type: string
+               example: "10:25"
+               description: Hora entrega
+           TipoVehiculoId:
+               type: integer
+               example: 1
+               description: Id del tipo de vehiculo
+           Detalles:     
+            type: array
+            description: Lista de detalles de la entrega
+            items:
+             type: object
+             properties:
+              DetallePedidoId:
+               type: integer
+               example: 1
+               description: Id del detale el pedido
+              Cantidad:
+               type: number
+               format: decimal
+               example: 234.13
+               description: Cantidad a enviar
+    ActualizarEntregaRequest:
+          type: object
+          description: Objeto que contiene una entrega de actualización del pedido
+          required:
+           - EntregaId
+           - PedidoId
+           - FechaEntrega
+           - HoraEntrega
+           - TipoVehiculoId
+          properties:
+           EntregaId:
+               type: integer
+               example: 1
+               description: Id de la entrega
+           PedidoId:
+               type: integer
+               example: 1
+               description: Id del pedido     
+           FechaEntrega:
+               type: string
+               example: "21/07/2019"
+               description: Fecha entrega
+           HoraEntrega:
+               type: string
+               example: "10:25"
+               description: Hora entrega
+           TipoVehiculoId:
+               type: integer
+               example: "1"
+               description: id del tipo de vehiculo
+           EstadoEntregaId:
+               type: integer
+               example: 1
+               description: Id del estado de la entrega
+           MotivoEdicionId:
+               type: integer
+               example: 1
+               description: Id del motivo de edición de la entrega
+           Detalles:     
+            type: array
+            description: Lista de detalles de la entrega
+            items:
+             type: object
+             properties:
+              DetalleEntregaId:
+               type: integer
+               example: 1
+               description: Id del detalle de la entrega
+              DetallePedidoId:
+               type: integer
+               example: 1
+               description: Id del detale el pedido 
+              Cantidad:
+               type: number
+               format: decimal
+               example: 234.13
+               description: Cantidad a enviar           
+    ActualizarPedidoComercialRequest:
+          type: object
+          description: Objeto que contiene el pedido
+          properties:
+           PedidoId:
+               type: number
+               example: 1
+               description: Id del pedido
+           Estado:
+               type: string
+               example: "Abierto"
+               description: Estado del pedido)      
+           Detalles:     
+            type: array
+            description: Lista de detalles del Pedido
+            items:
+             type: object
+             properties:
+              CantidadAprobada:
+               type: number
+               format: decimal
+               example: 234.13
+               description: Cantidad aprobada del artículo
+    ObtenerPedidoEnComercialResponse:
+      type: object
+      description: Objeto que contiene el pedido
+      properties:
+        FechaSolicitud:
+          type: string
+          format: date
+          example: 08/10/2019
+          description: Fecha solicitud del pedido
+        FechaEntrega:
+          type: string
+          format: date
+          example: 08/10/2019
+          description: Fecha entrega del pedido
+        FechaAprobacion:
+          type: string
+          format: date
+          example: 08/10/2019
+          description: Fecha aporbación del pedido  
+        Cliente:
+          type: string
+          example: 'PRADO'
+          description: Nombre del cliente
+        Usuario:
+          type: string
+          example: 'Juan Camilo Usuga Sepúlveda'
+          description: Nombre del usuario que registró la solicitud
+        Codigo:
+          type: string
+          example: 'PRA-1'
+          description: Código del pedido
+        Estado:
+          type: string
+          example: 'Abierto'
+          description: Nombre del estado del pedido
+        Zona:
+           type: string
+           example: "Norte 1"
+           description: Indica la zona del punto de venta o cliente externo  
+        PedidoDetallesRespuesta:
+          type: array
+          description: Lista de detalles del Pedido
+          items:
+            type: object
+            properties:
+              DetallePedidoId:
+                type: integer
+                example: 1
+                description: Id del detalle del Pedido
+              Codigo:
+                type: string
+                example: 'PT-045'
+                description: Código del artículo
+              Nombre:
+                type: string
+                example: 'Lomo'
+                description: Nombre del artículo
+              Estado:
+               type: string
+               example: 'Refigerado'
+               description: Estado del artículo
+              CantidadSolicitada:
+                type: number
+                format: decimal
+                example: 56020
+                description: Cantidad solicitada del articulo
+              UnidadMedida:
+               type: string
+               example: 'kg'
+               description: Unidad de medida del artículo
+              CantidadAprobada:
+               type: number
+               format: decimal
+               example: 234.13
+               description: Cantidad aprobada del artículo
+              StockDisponible:
+                type: number
+                format: decimal
+                example: 1540.23
+                description: Stock disponible
+    ObtenerPedidoSolicitudBorradorRequest:
+      type: object
+      required:
+        - WhsCode
+        - SolicitudPara
+      description: Solicitud verificar si existe pedido en borrador
+      properties:
+        WhsCode:
+          type: string
+          example: 'PV-PRA'
+          description: Código de la bodega que genera el pedido
+        SolicitudPara:
+          type: string
+          example: 'PB'
+          description: Código de la bodega para donde va el pedido
+    ObtenerEstadoPedidoResponse:
+       type: object
+       required:
+        - EstadoId
+        - EstadoNombre
+       description: Indica un estado del pedido
+       properties:
+        EstadoId:
+          type: integer
+          example: 1
+          description: Id del estado del pedido
+        EstadoNombre:
+          type: string
+          example: "Abierto"
+          description: Estado del pedido
+    ObtenerPedidoSolicitudResponse:
+       type: object
+       description: Objeto que contiene el pedido
+       properties:
+        FechaPedido:
+          type: string
+          format: date
+          example: 08/10/2019
+          description: Fecha del pedido
+        CodigoPedido:
+          type: string
+          example: 'PB-10029'
+          description: Código del pedido
+        SolicitudPara:
+          type: string
+          example: 'PB-PT'
+          description: Código de la bodega tipo planta
+        FechaEntrega:
+          type: string
+          format: date
+          example: 12/12/2019
+          description: Fecha entrega
+        EstadoPedidoId:
+          type: integer
+          example: 1
+          description: Estado Pedido Id 
+        Detalles:
+          type: array
+          description: Lista de detalles del Pedido
+          items:
+            type: object
+            properties:
+              DetallePedidoId:
+                type: integer
+                example: 1
+                description: Id del detalle del pedido
+              CodigoArticulo:
+                type: string
+                example: "PT-A1"
+                description: Código del artículo
+              NombreArticulo:
+                type: string
+                example: 'Lomo'
+                description: Nombre del artículo
+              EstadoArticulo:
+                type: integer
+                example: 1
+                description: Id del estado del artículo
+              Cantidad:
+               type: number
+               format: decimal
+               example: 234.13
+               description: Cantidad del artículo solicitada
+              UnidadMedida:
+                type: string
+                example: "KG"
+                description: Unidad de medida del artículo
+              PedidoSugerido:
+               type: string
+               example: '234.13'
+               description: Pedido sugerido
+              Stock:
+                type: string
+                example: '3250'
+                description: Stock
+              StockMinimo:
+                type: string
+                example: '1540.23'
+                description: Stock minímo
+              StockMaximo:
+                type: string
+                example: '1540.23'
+                description: Stock máximo
+    ConsultaPedidoSolicitudResponse:
+       type: object
+       description: Objeto que contiene la consulta del pedido
+       properties:
+        NumeroPedido:
+          type: string
+          example: 'PRA-10029'
+          description: Número del pedido
+        EstadoPedido:
+          type: string
+          example: 'Enviado'
+          description: Estado del pedido
+        FechaSolicitud:
+          type: string
+          example: '12/12/2019'
+          description: Fecha de la solicitud del pedido
+        FechaEnvio:
+          type: string
+          example: '12/12/2019'
+          description: Fecha cuando se envíó el pedido
+        FechaRecibido:
+          type: string
+          example: '12/12/2019'
+          description: Fecha cuando el pedido fué recibído en el punto de venta
+        FechaCargueEnVehiculo:
+          type: string
+          example: '12/12/2019'
+          description: Fecha de cargue en vehículo 
+        NombreConductor:
+          type: string
+          example: 'Juan Camilo'
+          description: Nombre del conductor del vehículo
+        PlacaVehiculo:
+          type: string
+          example: 'TNB365'
+          description: Placa del vehículo
+        NombreAuxiliar:
+          type: string
+          example: 'Duban'
+          description: Nombre del auxiliar
+        Planta:
+          type: string
+          example: 'Planta Beneficio'
+          description: Nombre de la planta  
+        Detalles:
+          type: array
+          description: Lista de detalles del Pedido
+          items:
+            type: object
+            properties:
+              CodigoArticulo:
+                type: string
+                example: "PT-A1"
+                description: Código del artículo
+              NombreArticulo:
+                type: string
+                example: 'Lomo'
+                description: Nombre del artículo
+              EstadoArticulo:
+                type: string
+                example: 'Refigerado'
+                description: Estado del artículo
+              CantidadSolicitada:
+               type: string
+               example: '234.13'
+               description: Cantidad del artículo solicitada
+              UnidadMedida:
+                type: string
+                example: "KG"
+                description: Unidad de medida del artículo
+              CantidadAprobada:
+                type: string
+                example: '3250'
+                description: Cantidad aprobada por la planta
+              FechaEntrega:
+                type: string
+                example: '02/12/2019'
+                description: Fecha cuando llego el artículo a la bodega que solicitó el pedido que fue aprobado
+              CostoTraslado:
+                type: string
+                example: '1540.23'
+                description: Costo de traslado por artículo
+              CostoTransporte:
+                type: string
+                example: '1540.23'
+                description: Costo de transporte por artículo
+    ConsultaPedidoRequest:
+       type: object
+       description: Objeto que contiene el id del pedido
+       properties:
+        pedidoId:
+           type: integer
+           example: 1
+           description: Indica id del pedido    
+    FiltrarPedidoSolicitudRequest:
+       type: object
+       description: Objeto que contiene los filtros de la solicitud de los pedidos
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros
+        whsCode:
+           type: string
+           example: 'PB-PT'
+           description: Indica el código de la bodega
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+            desde:
+                type: string
+                example: 30/08/2019
+                description: Fecha en la que se registra el pedido
+            hasta:
+                type: string
+                example: 15/09/2019
+                description: Fecha en la que se registra el pedido
+            estado:
+              type: string
+              example: 2
+              description: Id del estado del pedido
+            plantaBeneficio:
+              type: boolean
+              example: true
+              description: Filtro por Planta Beneficio
+            plantaDerivados:
+              type: boolean
+              example: false
+              description: Filtro por Planta Derivados  
+            pendientes:
+              type: string
+              example: true
+              description: Los pendientes son todos los NO cerrados  
+            numeropedido:
+              type: string
+              example: PRA-1
+              description: Filtro por numero de pedido
+    PedidoSolicitudRequest:
+      type: object
+      required:
+        - WhsCode
+        - SolicitudPara        
+        - EstadoPedido
+      description: Solicitud del pedido
+      properties:
+        PedidoId:
+          type: integer
+          example: 1
+          description: Id del pedido
+        WhsCode:
+          type: string
+          example: 'PV-PRA'
+          description: Código de la bodega que genera el pedido
+        SolicitudPara:
+          type: string
+          example: 'PB'
+          description: Código de la bodega para donde va el pedido
+        Usuario:
+          type: string
+          example: 'jusuga'
+          description: Usuario del Usuario que generó el pedido
+        FechaEntrega:
+          type: string          
+          example: '29/03/2018'
+          description: Indica la fecha de entrega del pedido       
+        EstadoPedido:
+          type: string
+          example: 'Definitivo'
+          description: Estado del pedido
+        detalles:
+          type: array
+          description: Detalles del Pedido
+          items:
+            type: object
+            required:
+             - ItemCode
+             - EstadoArticuloId
+             - Cantidad
+            properties:
+              DetallePedidoId:
+                type: integer
+                example: 1
+                description: Id del detalle del pedido
+              ItemCode:
+                type: string
+                example: "P01"
+                description: Código del artículo
+              EstadoArticuloId:
+               type: integer
+               example: 1
+               description: Id del estado del pedido
+              Cantidad:
+               type: number
+               format: decimal
+               example: 234.13
+               description: Cantidad del artículo solicitada
+    ObtenerTodosPedidosComercialResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de registros de Pedidos
+          items:
+            type: object
+            properties:
+              PedidoId:
+                type: integer
+                example: 1
+                description: Id del pedido            
+              codigoPedido:
+                type: string
+                example: "PV-01"
+                description: Código del pedido
+              fechaSolicitud:
+                type: string
+                example: 30/08/2019
+                description: Fecha en la que se registra el pedido
+              fechaEntrega:
+                type: string
+                example: 31/08/2019
+                description: Fecha en que se entrega el pedido
+              estado:
+                type: string
+                example: "Abierto"
+                description: Estado el pedido
+              cliente:
+                type: string
+                example: "Punto de venta Prado"
+                description: Nombre del cliente
+              diasEntrega:
+                type: string
+                example: "1"
+                description: Días para la entrega del pedido
+              Zona:
+               type: string
+               example: "Norte 1"
+               description: Indica la zona del punto de venta o cliente externo
+    ObtenerTodosPedidosSolicitudResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de registros de Pedidos
+          items:
+            type: object
+            properties:
+              PedidoId:
+                type: integer
+                example: 1
+                description: Id del pedido            
+              codigoPedido:
+                type: string
+                example: "PV-01"
+                description: Código del pedido
+              fechaSolicitud:
+                type: string
+                example: 30/08/2019
+                description: Fecha en la que se registra el pedido
+              fechaEntrega:
+                type: string
+                example: 31/08/2019
+                description: Fecha en que se entrega el pedido
+              estado:
+                type: string
+                example: "Abierto"
+                description: Estado el pedido
+              planta:
+                type: string
+                example: "Planta Beneficio"
+                description: Nombre de la planta
+              diasEntrega:
+                type: string
+                example: "1"
+                description: Días para la entrega del pedido     
+    FiltrarPedidoComercialRequest:
+       type: object
+       description: Objeto que contiene los filtros de los pedidos a comercial
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+            codigoPedido:
+                type: string
+                example: "PRA-01"
+                description: Código de la solicitud del pedido
+            fechaSolicitud:
+                type: string
+                example: "30/08/2019"
+                description: Fecha de solicitud del pedido
+            fechaEntrega:
+                type: string
+                example: "15/09/2019"
+                description: Fecha de solicitud del pedido    
+            estado:
+                type: string
+                description: Estado de la solicitud pedido
+                example: "Abierto"
+            cliente:
+                type: string
+                description: Nombre del cliente externo o punto de venta
+                example: "Zenú"
+            diasEntrega:
+                type: string
+                description: Diás para la entrega del pedido
+                example: "5"    
+            Zona:
+               type: string
+               example: "Norte 1"
+               description: Indica la zona del punto de venta o cliente externo   
+    FiltrarEntregasDistribucionRequest:
+       type: object
+       description: Objeto que contiene los filtros de los pedidos en despacho
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+              cliente:
+                type: string
+                example: "Punto de venta Prado"
+                description: Nombre del cliente
+              codigoPedido:
+                type: string
+                example: "PV-01"
+                description: Código del pedido
+              numeroEntrga:
+                type: string
+                example: "1"
+                description: Número de la entrega
+              fechaEntrega:
+                type: string
+                example: "30/08/2019"
+                description: Fecha de laentrega 
+              horaEntrega:
+                type: string
+                example: "12:45"
+                description: Horaentrega
+              peso:
+                type: string
+                example: "233.567 kg"
+                description: Peso de los artículos de las entregas
+              zona:
+               type: string
+               example: "Norte 1"
+               description: Indica la zona del punto de venta o cliente externo
+    ObtenerTodosEntregasDistribucionResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de registros de entregas
+          items:
+            type: object
+            properties:
+              entregaId:
+                type: integer
+                example: 1
+                description: Id de entrega            
+              cliente:
+                type: string
+                example: "Punto de venta Prado"
+                description: Nombre del cliente
+              codigoPedido:
+                type: string
+                example: "PV-01"
+                description: Código del pedido
+              numeroEntrga:
+                type: string
+                example: "1"
+                description: Número de la entrega
+              fechaEntrega:
+                type: string
+                example: "30/08/2019"
+                description: Fecha de la entrega 
+              horaEntrega:
+                type: string
+                example: "12:45"
+                description: Horaentrega
+              peso:
+                type: string
+                example: "233.567 kg"
+                description: Peso de los artículos de las entregas
+              zona:
+               type: string
+               example: "Norte 1"
+               description: Indica la zona del punto de venta o cliente externo
+    EntregaRequest:
+      type: object
+      description: Objeto que petición para actualizar una entrega
+      properties:
+        EntregaId:
+          type: integer
+          example: 1
+          description: Id de la entrega
+        FechaEntrega:
+          type: string
+          example: '08/10/2019'
+          description: Fecha de entrega
+        HoraEntrega:
+          type: string
+          example: '10:03'
+          description: Código del pedido
+        TipoVehiculoId:
+          type: integer
+          example: 1
+          description: Id del tipo de vehiculo
+        Articulos:
+          type: array
+          description: Lista artículos de la entrega a actualizar
+          items:
+            type: object
+            properties:
+              DetalleEntregaId:
+                type: integer
+                example: 1
+                description: Id del detalle de la entrega
+              IdEstadoArticulo:
+                type: integer
+                example: 1
+                description: Id del estado del artículo
+              codigo:
+                type: string
+                example: 'PT-1485'
+                description: Código del artículo
+              CantidadEntrega:
+                type: number
+                format: decimal
+                example: 234.13
+                description: Cantidad del artículo solicitada
+              CantidadPendiente:
+                type: number
+                format: decimal
+                example: 234.13
+                description: Cantidad pendiente
+              CantidadAprobada:
+                type: number
+                format: decimal
+                example: 234.13
+                description: Cantidad aprobada
+    EntregaDistribucionRequest:
+      type: object
+      description: Objeto que petición para actualizar una entrega dentro del módulo de Distribucion
+      properties:
+        MotivoID:
+          type: integer
+          example: 1
+          description: Id del motivo
+        EntregaId:
+          type: integer
+          example: 1
+          description: Id de la entrega
+        FechaEntrega:
+          type: string
+          example: '08/10/2019'
+          description: Fecha de entrega
+        HoraEntrega:
+          type: string
+          example: '10:03'
+          description: Código del pedido
+        Articulos:
+          type: array
+          description: Lista artículos de la entrega a actualizar
+          items:
+            type: object
+            properties:
+              DetalleEntregaId:
+                type: integer
+                example: 1
+                description: Id del detalle de la entrega
+              CantidadEntrega:
+                type: number
+                format: decimal
+                example: 234.13
+                description: Cantidad del artículo solicitada
+    PedidoRequest:
+      type: object
+      required:
+        - WhsCode
+        - SolicitudPara
+        - Usuario
+        - EstadoPedido
+        - TipoSolicitudId
+      description: Solicitud del pedido
+      properties:
+        PedidoId:
+          type: integer
+          example: 1
+          description: Id del pedido
+        WhsCode:
+          type: string
+          example: 'PV-PRA'
+          description: Código de la bodega que genera el pedido
+        SolicitudPara:
+          type: string
+          example: 'PB'
+          description: Código de la bodega para donde va el pedido
+        Usuario:
+          type: string
+          example: 'jusuga'
+          description: Usuario del Usuario que generó el pedido
+        FechaEntrega:
+          type: string          
+          example: '29/03/2018'
+          description: Indica la fecha de entrega del pedido
+        EstadoPedido:
+          type: string
+          example: 'Definitivo'
+          description: Estado del pedido
+        TipoSolicitudId:
+          type: integer
+          example: 1
+          description: Id del tipo de solicitud
+        detalles:
+          type: array
+          description: Detalles del Pedido
+          items:
+            type: object
+            required:
+             - ItemCode
+             - EstadoArticuloId
+             - Cantidad
+            properties:
+              ItemCode:
+                type: string
+                example: "P01"
+                description: Código del artículo
+              EstadoArticuloId:
+               type: integer
+               example: 1
+               description: Id del estado del pedido
+              Cantidad:
+               type: number
+               format: decimal
+               example: 234.13
+               description: Cantidad del artículo solicitada
+              EmpaqueId:
+               type: integer
+               example: 1
+               description: Id del empaque
+              Observacion:
+               type: string
+               example: ''
+               description: Observacion
+  requestBodies:
+    PedidoRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PedidoRequest'
+      description: Solicitud de pedido
+      required: true
+    PedidoSolicitudRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PedidoSolicitudRequest'
+      description: Solicitud de pedido
+      required: true
+    
+    FiltrarPedidoSolicitudRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarPedidoSolicitudRequest'
+      description: Solicitud de filtro de soliciutd de pedidos. Se debe ingresar al menos uno de los criterios del filtro
+      required: true
+    ConsultaPedidoRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ConsultaPedidoRequest'
+      description: Solicitud consulta pedido detalle.
+      required: true
+    ObtenerPedidoSolicitudBorradorRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ObtenerPedidoSolicitudBorradorRequest'
+      description: Verifica si actualmente existe una solicitud de pedido en estado "borrador"
+      required: true     
+    FiltrarPedidoComercialRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarPedidoComercialRequest'
+      description: Solicitud de filtro de pedidos en comerical. Se debe ingresar al menos uno de los criterios del filtro
+      required: true
+    ActualizarPedidoComercialRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ActualizarPedidoComercialRequest'
+      description: Solicitud de actualización de Pedidos a planta beneficio. 
+      required: true
+    FiltrarEntregasDistribucionRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarEntregasDistribucionRequest'
+      description: Solicitud de filtro de entregas a distribución. Se debe ingresar al menos uno de los criterios del filtro
+      required: true
+    EntregasRequest:
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+             $ref: '#/components/schemas/EntregasRequest'
+      description: Solicitud de entregas de un pedido
+      required: true  
+    ActualizarEntregaRequest:
+      content:
+        application/json:
+          schema:
+             $ref: '#/components/schemas/ActualizarEntregaRequest'
+      description: Solicitud de actualización de entrega de un pedido
+      required: true    
+    EliminarEntregasRequest:
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+             description: Ids de las Entregas a eliminar
+             example: [1, 2, 3, 4]
+             type: integer
+      description: Solicitud de actualización de entregas de un pedido
+      required: true  
+    ADistribucionRequest:
+      content:
+        application/json:
+          schema:
+             description: Id del pedido
+             example: 1
+             type: integer
+      description: Solicitud de actualización del pedido de entregas a distrución
+      required: true
+    FechaEntregaRequest:
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/FechaEntregaRequest'
+      description: Array de fechas de entrega asociadas al viaje
+      required: true 
+    AsignarDistribucionRequest:
+      content:
+        application/json:
+          schema:
+              $ref: '#/components/schemas/AsignarDistribucionRequest'
+      description: Solicitud para generar una relación entre el vehiculo,conductor y entregas
+      required: true
+    EntregaRequest:
+      content:
+        application/json:
+          schema:
+              $ref: '#/components/schemas/EntregaRequest'
+      description: Referencia del body al modelo request
+      required: true
+    EntregaDistribucionRequest:
+      content:
+        application/json:
+          schema:
+              $ref: '#/components/schemas/EntregaDistribucionRequest'
+      description: Referencia del body al modelo request
+      required: true  

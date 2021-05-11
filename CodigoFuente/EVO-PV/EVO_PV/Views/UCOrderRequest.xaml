@@ -1,0 +1,716 @@
+﻿<UserControl
+    x:Class="EVO_PV.Views.UCOrderRequest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:local="clr-namespace:EVO_PV.Utilities"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="UserControl"
+    d:DesignHeight="450"
+    d:DesignWidth="1024"
+    Focusable="True"
+    KeyDown="UserControl_KeyDown"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Dictionaries/DictTags.xaml" />
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Style/style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <CollectionViewSource x:Key="Factories" Source="{Binding Path=Factories, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <CollectionViewSource x:Key="StatesArticle" Source="{Binding Path=StatesArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid Width="Auto" Background="#eee">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Grid
+            Grid.Row="0"
+            Width="Auto"
+            Margin="0,40,0,0">
+
+            <materialDesign:Card Grid.Row="1" Margin="30,0,30,10">
+
+                <Grid Width="Auto" Style="{StaticResource ContentCard}">
+
+                    <StackPanel Width="Auto">
+
+                        <StackPanel>
+
+                            <Grid Margin="0,10,0,20">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Style="{StaticResource HeaderView}">
+
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="{DynamicResource lblDateRequest}" />
+
+                                    <TextBlock Style="{StaticResource DateCreation}" Text="{Binding UpdateSourceTrigger=PropertyChanged, StringFormat='dd/MM/yyyy', Path=DateOrder, ValidatesOnDataErrors=True, NotifyOnValidationError=True, Mode=OneWay}" />
+
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Style="{StaticResource HeaderView}">
+
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="{DynamicResource lblDateDelivery}" />
+
+                                    <DatePicker
+                                        Name="dpDateDelivery"
+                                        Width="180"
+                                        Margin="10,-4,-1,0"
+                                        VerticalAlignment="Bottom"
+                                        Background="#FFECECEC"
+                                        DisplayDateStart="{Binding NowDate, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                        Focusable="False"
+                                        IsDropDownOpen="{Binding Path=Open}"
+                                        IsTodayHighlighted="False"
+                                        Language="ES-mx"
+                                        MouseLeftButtonUp="dpDateDelivery_GotFocus"
+                                        SelectedDate="{Binding Path=DateDelivery, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True, UpdateSourceTrigger=LostFocus}">
+                                        <DatePicker.Resources>
+                                            <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="#FF9800" />
+                                            <SolidColorBrush x:Key="MaterialDesignBody" Color="Black" />
+                                        </DatePicker.Resources>
+                                    </DatePicker>
+
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="2"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="{DynamicResource lblRequestFor}" />
+                                    <ComboBox
+                                        x:Name="cbPlantas"
+                                        SelectedIndex="0"
+                                        SelectedValue="{Binding Path=FactoryCode, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                        SelectedValuePath="WhsCode"
+                                        Style="{StaticResource ComboBoxStyle}">
+                                        <ComboBox.ItemsSource>
+                                            <CompositeCollection>
+                                                <ComboBoxItem
+                                                    x:Name="Codigo"
+                                                    Content="Seleccione..."
+                                                    IsSelected="True"
+                                                    Visibility="Collapsed" />
+                                                <CollectionContainer Collection="{Binding Source={StaticResource ResourceKey=Factories}}" />
+                                            </CompositeCollection>
+                                        </ComboBox.ItemsSource>
+                                        <ComboBox.ItemTemplate>
+                                            <DataTemplate>
+                                                <StackPanel>
+                                                    <TextBlock Text="{Binding Path=WhsName}" />
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </ComboBox.ItemTemplate>
+                                    </ComboBox>
+                                </StackPanel>
+
+                            </Grid>
+
+                        </StackPanel>
+
+                        <StackPanel
+                            Width="Auto"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom"
+                            Orientation="Horizontal">
+
+                            <DataGrid
+                                x:Name="dgOrderArticles"
+                                Grid.RowSpan="2"
+                                Grid.ColumnSpan="3"
+                                Width="1020"
+                                AutoGenerateColumns="False"
+                                Background="White"
+                                CanUserAddRows="False"
+                                CanUserDeleteRows="True"
+                                CanUserReorderColumns="False"
+                                CanUserResizeColumns="False"
+                                ItemsSource="{Binding ArticlesOrder}"
+                                SelectedItem="{Binding ArticleOrderSelected}"
+                                SelectionMode="Single"
+                                SelectionUnit="FullRow">
+
+                                <DataGrid.Resources>
+                                    <ResourceDictionary>
+                                        <local:DecimalConverter x:Key="decimalConverter" />
+                                    </ResourceDictionary>
+                                </DataGrid.Resources>
+                                <DataGrid.ItemContainerStyle>
+                                    <Style TargetType="{x:Type DataGridRow}">
+                                        <Setter Property="Background" Value="{Binding Path=ErrorArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                                        <Setter Property="Margin" Value="0,0,0,0" />
+                                        <Setter Property="BorderThickness" Value="0" />
+                                    </Style>
+                                </DataGrid.ItemContainerStyle>
+
+                                <DataGrid.ColumnHeaderStyle>
+                                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                                        <Setter Property="Height" Value="80" />
+                                        <Setter Property="BorderBrush" Value="White" />
+                                        <Setter Property="BorderThickness" Value="0" />
+                                        <Setter Property="Margin" Value="0,0,0,40" />
+                                        <Setter Property="Foreground" Value="#7F0E06" />
+                                        <Setter Property="VerticalContentAlignment" Value="Bottom" />
+                                        <Setter Property="FontWeight" Value="DemiBold" />
+                                        <Style.Resources>
+                                            <!--  Reset the Button style inside the DatePicker to default values  -->
+                                            <Style TargetType="{x:Type TextBox}">
+                                                <Setter Property="Foreground" Value="Black" />
+                                                <Setter Property="BorderThickness" Value="0,0,0,1" />
+                                                <Setter Property="BorderBrush" Value="Black" />
+                                                <Setter Property="Padding" Value="5" />
+                                                <Setter Property="Margin" Value="0,10,0,0" />
+                                                <Setter Property="FontWeight" Value="Normal" />
+                                            </Style>
+                                        </Style.Resources>
+                                    </Style>
+                                </DataGrid.ColumnHeaderStyle>
+                                <DataGrid.RowStyle>
+                                    <Style TargetType="{x:Type DataGridRow}">
+                                        <Setter Property="Height" Value="Auto" />
+                                    </Style>
+                                </DataGrid.RowStyle>
+                                <DataGrid.Columns>
+
+                                    <DataGridTextColumn
+                                        Width="20*"
+                                        Binding="{Binding Path=CodeArticle}"
+                                        Header="Código Artículo"
+                                        IsReadOnly="True">
+
+                                        <DataGridTextColumn.HeaderTemplate>
+
+                                            <DataTemplate>
+
+                                                <StackPanel Orientation="Vertical">
+
+                                                    <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+
+                                                    <TextBox x:Name="txtCodeArticleSearch" Text="{Binding Path=DataContext.CodeArticleSearch, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+
+                                                        <i:Interaction.Triggers>
+                                                            <i:EventTrigger EventName="KeyDown">
+                                                                <cmd:EventToCommand Command="{Binding Path=DataContext.KeyDownFindCodeArticleCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                            </i:EventTrigger>
+                                                        </i:Interaction.Triggers>
+
+                                                    </TextBox>
+
+                                                    <Popup
+                                                        Width="Auto"
+                                                        Height="Auto"
+                                                        Margin="1"
+                                                        IsOpen="{Binding Path=DataContext.IsOpenPopCodeArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                        Placement="Bottom"
+                                                        PlacementTarget="{Binding ElementName=txtCodeArticleSearch}"
+                                                        StaysOpen="False">
+
+                                                        <Border
+                                                            Background="AliceBlue"
+                                                            BorderBrush="Black"
+                                                            BorderThickness="0">
+
+                                                            <StackPanel
+                                                                HorizontalAlignment="Center"
+                                                                VerticalAlignment="Center"
+                                                                Orientation="Vertical">
+
+                                                                <DataGrid
+                                                                    Width="Auto"
+                                                                    AutoGenerateColumns="False"
+                                                                    CanUserAddRows="False"
+                                                                    CanUserDeleteRows="False"
+                                                                    CanUserReorderColumns="False"
+                                                                    CanUserResizeColumns="True"
+                                                                    ItemsSource="{Binding Path=DataContext.FindArticles, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                                    SelectedItem="{Binding Path=DataContext.FindArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                                    SelectionMode="Single"
+                                                                    SelectionUnit="FullRow">
+
+                                                                    <DataGrid.Columns>
+
+                                                                        <DataGridTextColumn
+                                                                            Width="Auto"
+                                                                            Binding="{Binding Path=CodeArticle}"
+                                                                            Header="Código"
+                                                                            IsReadOnly="True" />
+
+                                                                        <DataGridTextColumn
+                                                                            Width="Auto"
+                                                                            Binding="{Binding Path=NameArticle}"
+                                                                            Header="Nombre"
+                                                                            IsReadOnly="True" />
+
+                                                                    </DataGrid.Columns>
+
+                                                                </DataGrid>
+
+                                                            </StackPanel>
+
+                                                        </Border>
+
+                                                    </Popup>
+
+                                                </StackPanel>
+
+                                            </DataTemplate>
+
+                                        </DataGridTextColumn.HeaderTemplate>
+
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="VerticalAlignment" Value="Center" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+
+                                    <DataGridTextColumn
+                                        Width="38*"
+                                        Binding="{Binding Path=NameArticle}"
+                                        Header="Nombre"
+                                        IsReadOnly="True">
+
+                                        <DataGridTextColumn.HeaderTemplate>
+
+                                            <DataTemplate>
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                    <TextBox
+                                                        x:Name="txtNameArticleSearch"
+                                                        Width="200"
+                                                        Text="{Binding Path=DataContext.NameArticleSearch, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+
+                                                        <i:Interaction.Triggers>
+                                                            <i:EventTrigger EventName="KeyDown">
+                                                                <cmd:EventToCommand Command="{Binding Path=DataContext.KeyDownFindNameArticleCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                            </i:EventTrigger>
+                                                        </i:Interaction.Triggers>
+                                                    </TextBox>
+                                                    <Popup
+                                                        Width="Auto"
+                                                        Height="Auto"
+                                                        Margin="1"
+                                                        IsOpen="{Binding Path=DataContext.IsOpenPopNameArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                        Placement="Bottom"
+                                                        PlacementTarget="{Binding ElementName=txtNameArticleSearch}"
+                                                        StaysOpen="False">
+                                                        <Border Background="White">
+                                                            <StackPanel
+                                                                HorizontalAlignment="Center"
+                                                                VerticalAlignment="Center"
+                                                                Orientation="Vertical">
+
+                                                                <DataGrid
+                                                                    Width="Auto"
+                                                                    AutoGenerateColumns="False"
+                                                                    CanUserAddRows="False"
+                                                                    CanUserDeleteRows="False"
+                                                                    CanUserReorderColumns="False"
+                                                                    CanUserResizeColumns="True"
+                                                                    ItemsSource="{Binding Path=DataContext.FindArticles, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                                    SelectedItem="{Binding Path=DataContext.FindArticle, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                                    SelectionMode="Single"
+                                                                    SelectionUnit="FullRow">
+                                                                    <DataGrid.Columns>
+
+                                                                        <DataGridTextColumn
+                                                                            Width="Auto"
+                                                                            Binding="{Binding Path=CodeArticle}"
+                                                                            Header="Código"
+                                                                            IsReadOnly="True" />
+
+                                                                        <DataGridTextColumn
+                                                                            Width="Auto"
+                                                                            Binding="{Binding Path=NameArticle}"
+                                                                            Header="Nombre"
+                                                                            IsReadOnly="True" />
+
+                                                                    </DataGrid.Columns>
+
+                                                                </DataGrid>
+                                                            </StackPanel>
+                                                        </Border>
+                                                    </Popup>
+                                                </StackPanel>
+                                            </DataTemplate>
+
+                                        </DataGridTextColumn.HeaderTemplate>
+
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="VerticalAlignment" Value="Center" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+                                    <DataGridTemplateColumn Width="25*" Header="Observaciones adicionales">
+
+                                        <DataGridTemplateColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                    <TextBox Width="60" IsReadOnly="True" />
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.HeaderTemplate>
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <StackPanel>
+                                                    <TextBox
+                                                        AcceptsReturn="True"
+                                                        Background="White"
+                                                        Text="{Binding Observations, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                        TextWrapping="Wrap"
+                                                        VerticalScrollBarVisibility="Visible" />
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+
+                                    <DataGridTemplateColumn Width="25*" Header="Cantidad">
+
+                                        <DataGridTemplateColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                    <TextBox
+                                                        Width="60"
+                                                        Text="{Binding Path=DataContext.QuantityArticleSearch, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                        TextAlignment="Right" />
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.HeaderTemplate>
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Grid VerticalAlignment="Center" FocusManager.FocusedElement="{Binding ElementName=Quantity}">
+                                                    <TextBox
+                                                        x:Name="Quantity"
+                                                        VerticalAlignment="Center"
+                                                        Focusable="True"
+                                                        PreviewKeyDown="dg_PreviewKeyDown"
+                                                        Text="{Binding Quantity, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource decimalConverter}}"
+                                                        TextAlignment="Right" />
+                                                </Grid>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+
+                                    <DataGridComboBoxColumn
+                                        Width="25*"
+                                        DisplayMemberPath="Name"
+                                        Header="Estado"
+                                        SelectedValueBinding="{Binding Path=StateArticleId, Mode=TwoWay}"
+                                        SelectedValuePath="StateArticleId">
+                                        <DataGridComboBoxColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+
+                                                    <ComboBox
+                                                        x:Name="cbStateArticle"
+                                                        Width="200"
+                                                        SelectedIndex="0"
+                                                        SelectedValue="{Binding Path=DataContext.StateArticleIdSearch, Mode=TwoWay, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                        SelectedValuePath="StateArticleId"
+                                                        Style="{StaticResource ComboBoxStyleGrid}">
+                                                        <ComboBox.ItemsSource>
+                                                            <CompositeCollection>
+                                                                <ComboBoxItem
+                                                                    x:Name="StateArticleId"
+                                                                    Content="Seleccione..."
+                                                                    IsSelected="True"
+                                                                    Visibility="Collapsed" />
+                                                                <CollectionContainer Collection="{Binding Source={StaticResource ResourceKey=StatesArticle}}" />
+                                                            </CompositeCollection>
+                                                        </ComboBox.ItemsSource>
+                                                        <ComboBox.ItemTemplate>
+                                                            <DataTemplate>
+                                                                <StackPanel>
+                                                                    <TextBlock Text="{Binding Path=Name}" />
+                                                                </StackPanel>
+                                                            </DataTemplate>
+                                                        </ComboBox.ItemTemplate>
+                                                    </ComboBox>
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </DataGridComboBoxColumn.HeaderTemplate>
+                                        <DataGridComboBoxColumn.ElementStyle>
+                                            <Style TargetType="ComboBox">
+                                                <Setter Property="ItemsSource" Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path=DataContext.StatesArticle}" />
+                                                <Setter Property="VerticalAlignment" Value="Center" />
+                                            </Style>
+                                        </DataGridComboBoxColumn.ElementStyle>
+                                        <DataGridComboBoxColumn.EditingElementStyle>
+                                            <Style TargetType="ComboBox">
+                                                <Setter Property="ItemsSource" Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path=DataContext.StatesArticle}" />
+                                            </Style>
+                                        </DataGridComboBoxColumn.EditingElementStyle>
+                                    </DataGridComboBoxColumn>
+
+                                    <DataGridTextColumn
+                                        Width="15*"
+                                        Binding="{Binding Path=UnitMeasure}"
+                                        Header="Unidad de Medida"
+                                        IsReadOnly="True">
+                                        <DataGridTextColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                    <TextBox Margin="0,0,10,0" Text="{Binding Path=DataContext.UnitMeasureArticleSearch, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </DataGridTextColumn.HeaderTemplate>
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="VerticalAlignment" Value="Center" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+
+                                    <DataGridTextColumn
+                                        Width="21*"
+                                        Binding="{Binding Path=SuggestedOrder, Converter={StaticResource decimalConverter}}"
+                                        Header="Sugerido"
+                                        IsReadOnly="True">
+                                        <DataGridTextColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                    <TextBox IsReadOnly="True" Text="{Binding Path=DataContext.SuggestedOrderArticleSearch, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </DataGridTextColumn.HeaderTemplate>
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="HorizontalAlignment" Value="Right" />
+                                                <Setter Property="VerticalAlignment" Value="Center" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+
+                                    <DataGridTextColumn
+                                        Width="25*"
+                                        Binding="{Binding Path=Stock, Converter={StaticResource decimalConverter}}"
+                                        Header="Stock"
+                                        IsReadOnly="True">
+                                        <DataGridTextColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                    <TextBox IsReadOnly="True" Text="{Binding Path=DataContext.StockArticleSearch, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </DataGridTextColumn.HeaderTemplate>
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="HorizontalAlignment" Value="Right" />
+                                                <Setter Property="VerticalAlignment" Value="Center" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+
+                                    <DataGridTextColumn
+                                        Width="21*"
+                                        Binding="{Binding Path=Minimum, Converter={StaticResource decimalConverter}}"
+                                        Header="Mínimo"
+                                        IsReadOnly="True">
+                                        <DataGridTextColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                    <TextBox IsReadOnly="True" Text="{Binding Path=DataContext.MinimumArticleSearch, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </DataGridTextColumn.HeaderTemplate>
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="HorizontalAlignment" Value="Right" />
+                                                <Setter Property="VerticalAlignment" Value="Center" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+
+                                    <DataGridTextColumn
+                                        Width="21*"
+                                        Binding="{Binding Path=Maximum, Converter={StaticResource decimalConverter}}"
+                                        Header="Máximo"
+                                        IsReadOnly="True">
+                                        <DataGridTextColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <StackPanel Orientation="Vertical">
+                                                    <TextBlock Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" TextWrapping="Wrap" />
+                                                    <TextBox IsReadOnly="True" Text="{Binding Path=DataContext.MaximumArticleSearch, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}" />
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </DataGridTextColumn.HeaderTemplate>
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="HorizontalAlignment" Value="Right" />
+                                                <Setter Property="VerticalAlignment" Value="Center" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+
+                                    <DataGridTemplateColumn Width="19*">
+                                        <DataGridTemplateColumn.HeaderTemplate>
+                                            <DataTemplate>
+                                                <StackPanel HorizontalAlignment="Center" Orientation="Vertical">
+                                                    <TextBlock
+                                                        Margin="20,0,0,5"
+                                                        Text="Agregar"
+                                                        TextAlignment="Center"
+                                                        TextWrapping="Wrap" />
+                                                    <Button
+                                                        Width="30"
+                                                        Height="30"
+                                                        Margin="25,0,5,0"
+                                                        Padding="0"
+                                                        HorizontalAlignment="Center"
+                                                        HorizontalContentAlignment="Center"
+                                                        Background="#4CAF50"
+                                                        BorderBrush="#4ACF50"
+                                                        BorderThickness="13"
+                                                        Command="{Binding Path=DataContext.ValidateFindArticleCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+                                                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Add" />
+                                                    </Button>
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.HeaderTemplate>
+                                        <DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button
+                                                    Width="30"
+                                                    Height="30"
+                                                    Margin="5,0,5,0"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    Background="Red"
+                                                    BorderBrush="Red"
+                                                    BorderThickness="13"
+                                                    Command="{Binding Path=DataContext.DeleteArticleOrderCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}">
+                                                    <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Trash" />
+                                                </Button>
+                                            </DataTemplate>
+                                        </DataGridTemplateColumn.CellTemplate>
+                                    </DataGridTemplateColumn>
+
+                                </DataGrid.Columns>
+
+                            </DataGrid>
+
+                        </StackPanel>
+
+                        <StackPanel
+                            Margin="0,20"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom"
+                            Orientation="Horizontal">
+
+                            <Button
+                                x:Name="btnCleanPage"
+                                Margin="0,0,5,0"
+                                Background="Red"
+                                BorderBrush="Red"
+                                Command="{Binding CleanFormCommand}"
+                                Content="Limpiar solicitud" />
+
+                            <Button
+                                x:Name="btnSelectArticles"
+                                Margin="0,0,5,0"
+                                Background="#00BCD4"
+                                BorderBrush="#00BCD4"
+                                Command="{Binding ShowModalArticlesCommand}"
+                                Content="Seleccionar Artículos(F3)" />
+
+                            <Button
+                                x:Name="btnSave"
+                                Margin="0,0,5,0"
+                                Background="#FF9800"
+                                BorderBrush="#FF9800"
+                                Command="{Binding ValidateOpenConfirmationCommand}"
+                                Content="Guardar(Ctrl+S)"
+                                IsEnabled="{Binding EnableSavedAndSendOrder}" />
+
+                            <Button
+                                x:Name="btnSend"
+                                Margin="0,0,5,0"
+                                Background="#4ACF50"
+                                BorderBrush="#4ACF50"
+                                Command="{Binding ValidateErasedConfirmationCommand}"
+                                Content="Enviar a Comercial(Ctrl+G)"
+                                IsEnabled="{Binding EnableSavedAndSendOrder}" />
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </Grid>
+
+            </materialDesign:Card>
+
+            <Grid Style="{StaticResource IconCard}">
+
+                <Grid.Effect>
+                    <DropShadowEffect
+                        BlurRadius="20"
+                        RenderingBias="Quality"
+                        ShadowDepth="1"
+                        Color="#FFECECEC" />
+                </Grid.Effect>
+
+                <Border Style="{StaticResource BorderCard}" />
+
+                <materialDesign:PackIcon
+                    Width="30"
+                    Height="30"
+                    Margin="5"
+                    Padding="10"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    Kind="PlaylistAddCheck" />
+
+            </Grid>
+
+            <Grid Style="{StaticResource Title}">
+
+                <StackPanel Style="{StaticResource ContentTitle}">
+                    <TextBlock Style="{StaticResource TextTitle}" Text="Solicitud de Pedido " />
+                </StackPanel>
+
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+
+</UserControl>
+
+
+

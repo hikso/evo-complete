@@ -1,0 +1,46 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Documentos
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Documentos
+  version: "1.0.0"
+  title: API de Documentos
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Documentos
+    description: Gestión de Documentos
+paths:
+  /documentos:
+    get:
+      tags: 
+        - Documentos
+      summary: Obtiene los documentos
+      operationId: obtenerDocumentos   
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:              
+              application/json:
+                schema:
+                   type: array
+                   items: 
+                    $ref: '#/components/schemas/documentoResponse'
+components:
+  schemas:
+    documentoResponse:
+      type: object
+      description: Representa la respuesta de un documento
+      properties:
+         documentoId:
+          type: integer
+          example: 1
+          description: Id del documento
+         documento:
+          type: string
+          example: 'Documento 1'
+          description: Nombre del documento
+   

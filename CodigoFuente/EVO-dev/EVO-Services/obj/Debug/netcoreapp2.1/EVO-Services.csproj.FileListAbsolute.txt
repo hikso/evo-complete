@@ -1,0 +1,11 @@
+C:\EVO\CodigoFuente\EVO-dev\EVO-Services\bin\Debug\netcoreapp2.1\EVO-Services.deps.json
+C:\EVO\CodigoFuente\EVO-dev\EVO-Services\bin\Debug\netcoreapp2.1\EVO-Services.dll
+C:\EVO\CodigoFuente\EVO-dev\EVO-Services\bin\Debug\netcoreapp2.1\EVO-Services.pdb
+C:\EVO\CodigoFuente\EVO-dev\EVO-Services\bin\Debug\netcoreapp2.1\EVO_BusinessObjects.dll
+C:\EVO\CodigoFuente\EVO-dev\EVO-Services\bin\Debug\netcoreapp2.1\EVO_BusinessObjects.pdb
+C:\EVO\CodigoFuente\EVO-dev\EVO-Services\obj\Debug\netcoreapp2.1\EVO-Services.csprojAssemblyReference.cache
+C:\EVO\CodigoFuente\EVO-dev\EVO-Services\obj\Debug\netcoreapp2.1\EVO-Services.AssemblyInfoInputs.cache
+C:\EVO\CodigoFuente\EVO-dev\EVO-Services\obj\Debug\netcoreapp2.1\EVO-Services.AssemblyInfo.cs
+C:\EVO\CodigoFuente\EVO-dev\EVO-Services\obj\Debug\netcoreapp2.1\EVO-Services.csproj.CopyComplete
+C:\EVO\CodigoFuente\EVO-dev\EVO-Services\obj\Debug\netcoreapp2.1\EVO-Services.dll
+C:\EVO\CodigoFuente\EVO-dev\EVO-Services\obj\Debug\netcoreapp2.1\EVO-Services.pdb

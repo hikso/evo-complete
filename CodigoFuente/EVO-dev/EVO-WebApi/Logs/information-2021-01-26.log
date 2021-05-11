@@ -1,0 +1,515 @@
+2021-01-26 09:16:28.6842|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2021-01-26 09:16:31.1966|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2021-01-26 09:19:07.2143|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2021-01-26 09:19:07.3483|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2021-01-26 09:22:29.4153|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2021-01-26 09:22:29.4364|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2021-01-26 09:25:56.4183|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2021-01-26 09:25:56.4271|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2021-01-26 09:27:21.1524|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2021-01-26 09:27:51.5231|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2021-01-26 09:34:11.9805|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2021-01-26 09:34:31.0245|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2021-01-26 09:34:33.5336|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2021-01-26 09:34:34.5533|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegaxCodigo en Api con el parametro codigo = PV-PRA |url: |action: 
+2021-01-26 09:34:34.5845|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2021-01-26 09:34:34.6500|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2021-01-26 09:34:34.9363|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2021-01-26 09:34:35.0611|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : VALOR_BOLSA |url: |action: 
+2021-01-26 09:34:35.0817|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : FORMATO_DECIMAL |url: |action: 
+2021-01-26 09:34:35.0967|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2021-01-26 09:34:35.5255|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : PORCENTAJE_BOLSA |url: |action: 
+2021-01-26 09:34:40.8928|EVO_WebApi.Controllers.CajasApiController|Entró al método ObtenerEstadoCaja en CajasApi con el parámetro = PV-PRA |url: |action: 
+2021-01-26 09:34:40.9038|EVO_BusinessLogic.BLCajas|Entró al método ObtenerEstadoCaja en BLCajas con los parámetros codigoPuntoVenta = PV-PRA,IP = 127.0.0.1 |url: |action: 
+2021-01-26 09:34:40.9104|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2021-01-26 09:34:40.9104|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2021-01-26 09:34:40.9104|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : EXPRESION_REGULAR_IP |url: |action: 
+2021-01-26 09:34:40.9522|EVO_WebApi.Controllers.SociosNegocioApiController|Entró al método ObtenerSociosNegocio en SociosNegocioApi sin parámetros |url: |action: 
+2021-01-26 09:34:40.9522|EVO_BusinessLogic.BLSocioNegocio|Entró al método ObtenerSociosNegocio en BLSocioNegocio sin parámetros |url: |action: 
+2021-01-26 09:34:41.0646|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegaxCodigo en Api con el parametro codigo = PV-PRA |url: |action: 
+2021-01-26 09:34:41.0646|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2021-01-26 09:34:41.0712|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2021-01-26 09:34:41.0900|EVO_BusinessLogic.BLCajas|Entró al método ObtenerEstadoCuadreCaja en BLCajas con los parámetros estadosCuadreCajaEnum = Apertura |url: |action: 
+2021-01-26 09:34:41.0991|EVO_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_WebApi con parámetro codigo = PV-PRA |url: |action: 
+2021-01-26 09:34:41.0991|EVO_BusinessLogic.BLVendedores|Entró al método ObtenerVendedoresxPuntoVenta en BLVendedores - EVO_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2021-01-26 09:34:41.0991|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2021-01-26 09:34:41.0991|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2021-01-26 09:34:41.1301|EVO_BusinessLogic.BLCajas|Entró al método ObtenerEstadoCuadreCaja en BLCajas con los parámetros estadosCuadreCajaEnum = Apertura |url: |action: 
+2021-01-26 09:34:41.2176|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegasTipoPuntoVenta en Api Bodegas sin parámetros |url: |action: 
+2021-01-26 09:34:41.2176|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPuntoVenta en BLBodegas sin parámetros |url: |action: 
+2021-01-26 09:34:41.2234|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2021-01-26 09:34:41.2463|EVO_WebApi.Controllers.EvidenciaApiController|Entró al método ObtenerEvidencias en EvidenciaApi sin parámetros |url: |action: 
+2021-01-26 09:34:41.2463|EVO_BusinessLogic.BLEvidencia|Entró al método ObtenerEvidencias en BLEvidencia sin parámetros |url: |action: 
+2021-01-26 09:34:41.3736|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedidoBorrador en EVO-WebApi - PedidosApi con el parámetro solicitudPara = PV-PRA  |url: |action: 
+2021-01-26 09:34:41.3809|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTiposSolicitudPedido en EVO-WebApi - PedidosApi sin parámetros |url: |action: 
+2021-01-26 09:34:41.4261|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2021-01-26 09:34:41.4261|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2021-01-26 09:34:41.4322|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2021-01-26 09:34:41.4322|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2021-01-26 09:34:41.4435|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2021-01-26 09:34:41.4435|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2021-01-26 09:34:41.4435|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2021-01-26 09:34:41.4435|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2021-01-26 09:34:41.4435|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTiposSolicitudPedido en EVO_WebApi - BLPedido sin parámetros |url: |action: 
+2021-01-26 09:34:41.4435|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedidoBorrador en EVO-WebApi - BLPedidos con el parámetro solocitudDe = PV-PRA |url: |action: 
+2021-01-26 09:34:42.0405|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosRecepcion en Api Pedidos |url: |action: 
+2021-01-26 09:34:42.0405|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2021-01-26 09:34:42.0405|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2021-01-26 09:34:42.0405|EVO_WebApi.Controllers.ContenedoresApiController|Entró al método ObtenerTipoContenedores en Api Contenedores |url: |action: 
+2021-01-26 09:34:42.0518|EVO_BusinessLogic.BLContenedor|Entró al método ObtenerTipoBasculas en blBasculas. |url: |action: 
+2021-01-26 09:34:42.0518|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2021-01-26 09:34:42.0518|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2021-01-26 09:34:42.0518|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosRecepcion en BLPedidos |url: |action: 
+2021-01-26 09:34:42.1983|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegaxCodigo en Api con el parametro codigo = PV-PRA |url: |action: 
+2021-01-26 09:34:42.1983|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2021-01-26 09:34:42.1983|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2021-01-26 09:34:42.2359|EVO_WebApi.Controllers.PedidosApiController|Entró al método CrearPedido en Api Pedidos con los parámetros desde : 1  hasta : 100 |url: |action: 
+2021-01-26 09:34:42.2391|EVO_WebApi.Controllers.VendedoresApiController|Entró al método ObtenerVendedoresxPuntoVenta en VendedoresApi - EVO_WebApi con parámetro codigo = PV-PRA |url: |action: 
+2021-01-26 09:34:42.2391|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2021-01-26 09:34:42.2391|EVO_BusinessLogic.BLVendedores|Entró al método ObtenerVendedoresxPuntoVenta en BLVendedores - EVO_WebApi con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2021-01-26 09:34:42.2391|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2021-01-26 09:34:42.2391|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2021-01-26 09:34:42.2391|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2021-01-26 09:34:42.2391|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2021-01-26 09:34:42.2558|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2021-01-26 09:34:42.2558|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2021-01-26 09:34:42.2766|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosRegistros con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2021-01-26 09:34:42.2766|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2021-01-26 09:34:42.3315|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2021-01-26 09:34:42.3433|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidos con el parametro whsCode PV-PRA |url: |action: 
+2021-01-26 09:34:42.6862|EVO_BusinessLogic.BLAuditoria|Entró al método Registrar con los parámetros: {"RegistroAuditoriaId":0,"Fecha":"0001-01-01T00:00:00","Usuario":"ANTIOQUENA\\hsanchez","Accion":"Obtener artículos","Parametros":"maximumPageSize =100 , NamePV = PV-PRA","IP":"127.0.0.1","UsuarioId":0} |url: |action: 
+2021-01-26 09:34:42.6862|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuarioPorUsuario con el parámetro: nombreUsuario = hsanchez |url: |action: 
+2021-01-26 09:34:42.6948|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_CARACTERES_ACCION_REGISTRO_AUDITORIA |url: |action: 
+2021-01-26 09:34:42.8806|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2021-01-26 09:34:42.8806|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2021-01-26 09:34:42.8806|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2021-01-26 09:34:42.8806|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2021-01-26 09:34:42.8806|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasSolicitud en EVO-WebApi - BodegasApi sin parámetros |url: |action: 
+2021-01-26 09:34:42.8806|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2021-01-26 09:34:42.8806|EVO_BusinessLogic.BLBodega|Entró al método ObtenerTiposBodega en EVO-WebApi sin parámetros |url: |action: 
+2021-01-26 09:34:42.8962|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPlanta en BLBodegas sin parámetros |url: |action: 
+2021-01-26 09:34:42.8962|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2021-01-26 09:34:42.8962|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGOS_BODEGAS_TIPO_PLANTA |url: |action: 
+2021-01-26 09:34:42.8962|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2021-01-26 09:34:42.8962|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2021-01-26 09:34:42.9143|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPuntoVenta en BLBodegas sin parámetros |url: |action: 
+2021-01-26 09:34:42.9143|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2021-01-26 09:34:42.9143|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_BODEGA_COMPRAS |url: |action: 
+2021-01-26 09:34:42.9297|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : AR-COM |url: |action: 
+2021-01-26 09:34:42.9297|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = AR-COM |url: |action: 
+2021-01-26 09:34:44.8084|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerParametroGeneralxNombre con el parámetro: nombre : NIT_DEFECTO_FACTURACION |url: |action: 
+2021-01-26 09:34:44.9209|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosFacturacion en ArticulosApi - EVO-WebApi con el parámetro codigoCliente =  PV-PRA , identificacionSocio = C-811019880 |url: |action: 
+2021-01-26 09:34:44.9209|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosFacturacion en BLArticulo - EVO-WebApi con los parámetros codigoPuntoVenta = PV-PRA , identificacionSocio = C-811019880 |url: |action: 
+2021-01-26 09:34:44.9274|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2021-01-26 09:34:44.9274|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2021-01-26 09:34:44.9274|EVO_BusinessLogic.BLSocioNegocio|Entró al método ObtenerSocioNegocio en BLSocioNegocio - EVO-WebApi con el parámetro identificacion = C-811019880 |url: |action: 
+2021-01-26 09:34:44.9772|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosArticulosxPuntoVenta en BLArticulo con el parámetro codigoPuntoVenta = PV-PRA |url: |action: 
+2021-01-26 09:34:44.9772|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2021-01-26 09:34:44.9772|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2021-01-26 09:34:45.4173|EVO_WebApi.Controllers.UsuariosApiController|Entró al método ObtenerUsuario |url: |action: 
+2021-01-26 09:34:45.4173|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuario con el parámetro: nombreUsuario = ANTIOQUENA\hsanchez |url: |action: 
+2021-01-26 09:34:45.4173|EVO_BusinessLogic.BLRol|Entró al método ObtenerRolesxUsuarioId con el parámetro: UsuarioId = 1 |url: |action: 
+2021-01-26 09:34:45.4547|EVO_WebApi.Controllers.CajasApiController|Entró al método ObtenerAperturaCaja en CajasApi con el parámetro = PV-PRA |url: |action: 
+2021-01-26 09:34:45.4584|EVO_BusinessLogic.BLCajas|Entró al método ObtenerAperturaCaja en BLCajas con los parámetros codigoPuntoVenta = PV-PRA,IP = 127.0.0.1 |url: |action: 
+2021-01-26 09:34:45.4584|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2021-01-26 09:34:45.4584|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2021-01-26 09:34:45.4584|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : EXPRESION_REGULAR_IP |url: |action: 
+2021-01-26 09:34:49.1426|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerSolicitudPedidoBorrador en EVO-WebApi - PedidosApi con el parámetro solicitudPara = PV-PRA  |url: |action: 
+2021-01-26 09:34:49.1453|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerTiposSolicitudPedido en EVO-WebApi - PedidosApi sin parámetros |url: |action: 
+2021-01-26 09:34:49.1453|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2021-01-26 09:34:49.1453|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2021-01-26 09:34:49.1453|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2021-01-26 09:34:49.1453|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2021-01-26 09:34:49.1453|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2021-01-26 09:34:49.1453|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2021-01-26 09:34:49.1453|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2021-01-26 09:34:49.1640|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2021-01-26 09:34:49.1640|EVO_BusinessLogic.BLPedido|Entró al método ObtenerSolicitudPedidoBorrador en EVO-WebApi - BLPedidos con el parámetro solocitudDe = PV-PRA |url: |action: 
+2021-01-26 09:34:49.1640|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTiposSolicitudPedido en EVO_WebApi - BLPedido sin parámetros |url: |action: 
+2021-01-26 09:34:53.6615|EVO_WebApi.Controllers.BodegasApiController|Entró al método ObtenerTiposBodega en EVO-WebApi sin parámetros |url: |action: 
+2021-01-26 09:34:53.6615|EVO_BusinessLogic.BLBodega|Entró al método ObtenerTiposBodega en EVO-WebApi sin parámetros |url: |action: 
+2021-01-26 09:34:53.6615|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPlanta en BLBodegas sin parámetros |url: |action: 
+2021-01-26 09:34:53.6615|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGOS_BODEGAS_TIPO_PLANTA |url: |action: 
+2021-01-26 09:34:53.6813|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2021-01-26 09:34:53.6813|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegasTipoPuntoVenta en BLBodegas sin parámetros |url: |action: 
+2021-01-26 09:34:53.6813|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2021-01-26 09:34:53.7141|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerEmpaques en EVO_WebApi - Api Artículos sin parámetros |url: |action: 
+2021-01-26 09:34:53.7141|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerEmpaques en EVO_WebApi - BLArticulo sin parámetros |url: |action: 
+2021-01-26 09:34:53.8231|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosEstados en Api Artículos sin parámetros |url: |action: 
+2021-01-26 09:34:53.8356|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosEstados en BLArticulo sin parámetros |url: |action: 
+2021-01-26 09:34:54.0297|EVO_BusinessLogic.BLAuditoria|Entró al método Registrar con los parámetros: {"RegistroAuditoriaId":0,"Fecha":"0001-01-01T00:00:00","Usuario":"ANTIOQUENA\\hsanchez","Accion":"Obtener empaques","Parametros":"","IP":"127.0.0.1","UsuarioId":0} |url: |action: 
+2021-01-26 09:34:54.0297|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuarioPorUsuario con el parámetro: nombreUsuario = hsanchez |url: |action: 
+2021-01-26 09:34:54.0365|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_CARACTERES_ACCION_REGISTRO_AUDITORIA |url: |action: 
+2021-01-26 09:34:54.1933|EVO_BusinessLogic.BLAuditoria|Entró al método Registrar con los parámetros: {"RegistroAuditoriaId":0,"Fecha":"0001-01-01T00:00:00","Usuario":"ANTIOQUENA\\hsanchez","Accion":"Obtener estado de artículos","Parametros":"","IP":"127.0.0.1","UsuarioId":0} |url: |action: 
+2021-01-26 09:34:54.1933|EVO_BusinessLogic.BLUsuario|Entró al método ObtenerUsuarioPorUsuario con el parámetro: nombreUsuario = hsanchez |url: |action: 
+2021-01-26 09:34:54.1933|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : MAXIMO_CARACTERES_ACCION_REGISTRO_AUDITORIA |url: |action: 
+2021-01-26 09:34:56.8126|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-00005 |url: |action: 
+2021-01-26 09:34:56.8329|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-100 |url: |action: 
+2021-01-26 09:34:56.8329|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-102 |url: |action: 
+2021-01-26 09:34:56.8329|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-103 |url: |action: 
+2021-01-26 09:34:56.8329|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-104 |url: |action: 
+2021-01-26 09:34:56.8329|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-105 |url: |action: 
+2021-01-26 09:34:56.8329|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-106 |url: |action: 
+2021-01-26 09:34:56.8496|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-107 |url: |action: 
+2021-01-26 09:34:56.8496|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-109 |url: |action: 
+2021-01-26 09:34:56.8496|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-110 |url: |action: 
+2021-01-26 09:34:56.8496|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1102 |url: |action: 
+2021-01-26 09:34:56.8496|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1112 |url: |action: 
+2021-01-26 09:34:56.8656|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1113 |url: |action: 
+2021-01-26 09:34:56.8656|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1114 |url: |action: 
+2021-01-26 09:34:56.8656|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1120 |url: |action: 
+2021-01-26 09:34:56.8656|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1123 |url: |action: 
+2021-01-26 09:34:56.8656|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1124 |url: |action: 
+2021-01-26 09:34:56.8798|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1126 |url: |action: 
+2021-01-26 09:34:56.8798|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1132 |url: |action: 
+2021-01-26 09:34:56.8798|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1140 |url: |action: 
+2021-01-26 09:34:56.8798|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1142 |url: |action: 
+2021-01-26 09:34:56.8798|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1150 |url: |action: 
+2021-01-26 09:34:56.8798|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1152 |url: |action: 
+2021-01-26 09:34:56.8964|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1154 |url: |action: 
+2021-01-26 09:34:56.8964|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1162 |url: |action: 
+2021-01-26 09:34:56.8964|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1163 |url: |action: 
+2021-01-26 09:34:56.8964|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1164 |url: |action: 
+2021-01-26 09:34:56.8964|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1166 |url: |action: 
+2021-01-26 09:34:56.8964|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1205 |url: |action: 
+2021-01-26 09:34:56.9129|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1206 |url: |action: 
+2021-01-26 09:34:56.9129|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1210 |url: |action: 
+2021-01-26 09:34:56.9129|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1211 |url: |action: 
+2021-01-26 09:34:56.9129|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1212 |url: |action: 
+2021-01-26 09:34:56.9129|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1213 |url: |action: 
+2021-01-26 09:34:56.9266|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1214 |url: |action: 
+2021-01-26 09:34:56.9266|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1215 |url: |action: 
+2021-01-26 09:34:56.9266|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1216 |url: |action: 
+2021-01-26 09:34:56.9266|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1217 |url: |action: 
+2021-01-26 09:34:56.9266|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1218 |url: |action: 
+2021-01-26 09:34:56.9266|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1260 |url: |action: 
+2021-01-26 09:34:56.9436|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1262 |url: |action: 
+2021-01-26 09:34:56.9436|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1263 |url: |action: 
+2021-01-26 09:34:56.9436|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1303 |url: |action: 
+2021-01-26 09:34:56.9436|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1310 |url: |action: 
+2021-01-26 09:34:56.9436|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1311 |url: |action: 
+2021-01-26 09:34:56.9581|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1319 |url: |action: 
+2021-01-26 09:34:56.9581|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1321 |url: |action: 
+2021-01-26 09:34:56.9581|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1322 |url: |action: 
+2021-01-26 09:34:56.9581|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1323 |url: |action: 
+2021-01-26 09:34:56.9581|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1324 |url: |action: 
+2021-01-26 09:34:56.9581|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1325 |url: |action: 
+2021-01-26 09:34:56.9764|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1328 |url: |action: 
+2021-01-26 09:34:56.9764|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1329 |url: |action: 
+2021-01-26 09:34:56.9764|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1330 |url: |action: 
+2021-01-26 09:34:56.9764|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1331 |url: |action: 
+2021-01-26 09:34:56.9764|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1332 |url: |action: 
+2021-01-26 09:34:56.9901|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1333 |url: |action: 
+2021-01-26 09:34:56.9901|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1334 |url: |action: 
+2021-01-26 09:34:56.9901|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1335 |url: |action: 
+2021-01-26 09:34:56.9901|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1336 |url: |action: 
+2021-01-26 09:34:56.9901|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1337 |url: |action: 
+2021-01-26 09:34:57.0052|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1338 |url: |action: 
+2021-01-26 09:34:57.0052|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1340 |url: |action: 
+2021-01-26 09:34:57.0052|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1341 |url: |action: 
+2021-01-26 09:34:57.0052|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1342 |url: |action: 
+2021-01-26 09:34:57.0052|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1343 |url: |action: 
+2021-01-26 09:34:57.0052|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1344 |url: |action: 
+2021-01-26 09:34:57.0218|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1345 |url: |action: 
+2021-01-26 09:34:57.0218|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1346 |url: |action: 
+2021-01-26 09:34:57.0218|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1347 |url: |action: 
+2021-01-26 09:34:57.0218|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1348 |url: |action: 
+2021-01-26 09:34:57.0218|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1349 |url: |action: 
+2021-01-26 09:34:57.0218|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1350 |url: |action: 
+2021-01-26 09:34:57.0377|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1351 |url: |action: 
+2021-01-26 09:34:57.0377|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1352 |url: |action: 
+2021-01-26 09:34:57.0377|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1353 |url: |action: 
+2021-01-26 09:34:57.0377|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1354 |url: |action: 
+2021-01-26 09:34:57.0377|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1355 |url: |action: 
+2021-01-26 09:34:57.0520|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1356 |url: |action: 
+2021-01-26 09:34:57.0520|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1357 |url: |action: 
+2021-01-26 09:34:57.0520|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1358 |url: |action: 
+2021-01-26 09:34:57.0520|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1359 |url: |action: 
+2021-01-26 09:34:57.0520|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1360 |url: |action: 
+2021-01-26 09:34:57.0670|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1361 |url: |action: 
+2021-01-26 09:34:57.0670|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1362 |url: |action: 
+2021-01-26 09:34:57.0670|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1364 |url: |action: 
+2021-01-26 09:34:57.0670|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1384 |url: |action: 
+2021-01-26 09:34:57.0670|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1385 |url: |action: 
+2021-01-26 09:34:57.0670|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1386 |url: |action: 
+2021-01-26 09:34:57.0836|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1405 |url: |action: 
+2021-01-26 09:34:57.0836|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1406 |url: |action: 
+2021-01-26 09:34:57.0836|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1421 |url: |action: 
+2021-01-26 09:34:57.0836|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1422 |url: |action: 
+2021-01-26 09:34:57.0836|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1432 |url: |action: 
+2021-01-26 09:34:57.0836|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1433 |url: |action: 
+2021-01-26 09:34:57.1002|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1441 |url: |action: 
+2021-01-26 09:34:57.1002|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1442 |url: |action: 
+2021-01-26 09:34:57.1002|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1443 |url: |action: 
+2021-01-26 09:34:57.1002|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1461 |url: |action: 
+2021-01-26 09:34:57.1002|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1463 |url: |action: 
+2021-01-26 09:34:57.1140|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1464 |url: |action: 
+2021-01-26 09:34:57.1140|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1470 |url: |action: 
+2021-01-26 09:34:57.1140|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1471 |url: |action: 
+2021-01-26 09:34:57.1140|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1474 |url: |action: 
+2021-01-26 09:34:57.1140|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1478 |url: |action: 
+2021-01-26 09:34:57.1140|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1479 |url: |action: 
+2021-01-26 09:34:57.1301|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1480 |url: |action: 
+2021-01-26 09:34:57.1301|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1481 |url: |action: 
+2021-01-26 09:34:57.1301|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1482 |url: |action: 
+2021-01-26 09:34:57.1301|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1483 |url: |action: 
+2021-01-26 09:34:57.1301|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1485 |url: |action: 
+2021-01-26 09:34:57.1301|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-14851 |url: |action: 
+2021-01-26 09:34:57.1458|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1488 |url: |action: 
+2021-01-26 09:34:57.1458|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1489 |url: |action: 
+2021-01-26 09:34:57.1458|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1490 |url: |action: 
+2021-01-26 09:34:57.1458|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1491 |url: |action: 
+2021-01-26 09:34:57.1458|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1492 |url: |action: 
+2021-01-26 09:34:57.1458|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1493 |url: |action: 
+2021-01-26 09:34:57.1621|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1494 |url: |action: 
+2021-01-26 09:34:57.1621|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1495 |url: |action: 
+2021-01-26 09:34:57.1621|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1496 |url: |action: 
+2021-01-26 09:34:57.1621|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1497 |url: |action: 
+2021-01-26 09:34:57.1621|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1499 |url: |action: 
+2021-01-26 09:34:57.1621|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1500 |url: |action: 
+2021-01-26 09:34:57.1787|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1501 |url: |action: 
+2021-01-26 09:34:57.1787|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1502 |url: |action: 
+2021-01-26 09:34:57.1787|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1503 |url: |action: 
+2021-01-26 09:34:57.1787|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1504 |url: |action: 
+2021-01-26 09:34:57.1787|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1505 |url: |action: 
+2021-01-26 09:34:57.1930|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1506 |url: |action: 
+2021-01-26 09:34:57.1930|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1507 |url: |action: 
+2021-01-26 09:34:57.1930|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1508 |url: |action: 
+2021-01-26 09:34:57.1930|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1509 |url: |action: 
+2021-01-26 09:34:57.1930|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1510 |url: |action: 
+2021-01-26 09:34:57.2084|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1511 |url: |action: 
+2021-01-26 09:34:57.2084|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1512 |url: |action: 
+2021-01-26 09:34:57.2084|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1513 |url: |action: 
+2021-01-26 09:34:57.2084|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1514 |url: |action: 
+2021-01-26 09:34:57.2084|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1515 |url: |action: 
+2021-01-26 09:34:57.2084|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-152 |url: |action: 
+2021-01-26 09:34:57.2256|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-154 |url: |action: 
+2021-01-26 09:34:57.2256|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1612 |url: |action: 
+2021-01-26 09:34:57.2256|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1613 |url: |action: 
+2021-01-26 09:34:57.2256|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1631 |url: |action: 
+2021-01-26 09:34:57.2256|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1649 |url: |action: 
+2021-01-26 09:34:57.2396|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1650 |url: |action: 
+2021-01-26 09:34:57.2396|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1651 |url: |action: 
+2021-01-26 09:34:57.2396|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1652 |url: |action: 
+2021-01-26 09:34:57.2396|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1653 |url: |action: 
+2021-01-26 09:34:57.2396|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1654 |url: |action: 
+2021-01-26 09:34:57.2396|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1655 |url: |action: 
+2021-01-26 09:34:57.2563|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1656 |url: |action: 
+2021-01-26 09:34:57.2563|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1659 |url: |action: 
+2021-01-26 09:34:57.2563|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1660 |url: |action: 
+2021-01-26 09:34:57.2563|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1664 |url: |action: 
+2021-01-26 09:34:57.2563|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-1811 |url: |action: 
+2021-01-26 09:34:57.2725|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2001 |url: |action: 
+2021-01-26 09:34:57.2725|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2002 |url: |action: 
+2021-01-26 09:34:57.2725|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2004 |url: |action: 
+2021-01-26 09:34:57.2725|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2103 |url: |action: 
+2021-01-26 09:34:57.2868|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2104 |url: |action: 
+2021-01-26 09:34:57.2868|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2105 |url: |action: 
+2021-01-26 09:34:57.2868|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2106 |url: |action: 
+2021-01-26 09:34:57.2868|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2107 |url: |action: 
+2021-01-26 09:34:57.2868|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2108 |url: |action: 
+2021-01-26 09:34:57.3028|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-2109 |url: |action: 
+2021-01-26 09:34:57.3028|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3002 |url: |action: 
+2021-01-26 09:34:57.3028|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3101 |url: |action: 
+2021-01-26 09:34:57.3028|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3102 |url: |action: 
+2021-01-26 09:34:57.3185|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3103 |url: |action: 
+2021-01-26 09:34:57.3185|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3105 |url: |action: 
+2021-01-26 09:34:57.3185|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3107 |url: |action: 
+2021-01-26 09:34:57.3185|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3108 |url: |action: 
+2021-01-26 09:34:57.3185|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3201 |url: |action: 
+2021-01-26 09:34:57.3351|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3202 |url: |action: 
+2021-01-26 09:34:57.3351|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3204 |url: |action: 
+2021-01-26 09:34:57.3351|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3205 |url: |action: 
+2021-01-26 09:34:57.3351|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3206 |url: |action: 
+2021-01-26 09:34:57.3485|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3207 |url: |action: 
+2021-01-26 09:34:57.3485|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3208 |url: |action: 
+2021-01-26 09:34:57.3485|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3209 |url: |action: 
+2021-01-26 09:34:57.3485|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3300 |url: |action: 
+2021-01-26 09:34:57.3485|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3301 |url: |action: 
+2021-01-26 09:34:57.3643|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3302 |url: |action: 
+2021-01-26 09:34:57.3643|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3303 |url: |action: 
+2021-01-26 09:34:57.3643|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3304 |url: |action: 
+2021-01-26 09:34:57.3945|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3305 |url: |action: 
+2021-01-26 09:34:57.3975|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-3401 |url: |action: 
+2021-01-26 09:34:57.3975|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-4101 |url: |action: 
+2021-01-26 09:34:57.3975|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5001 |url: |action: 
+2021-01-26 09:34:57.3975|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5002 |url: |action: 
+2021-01-26 09:34:57.4135|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5003 |url: |action: 
+2021-01-26 09:34:57.4135|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5004 |url: |action: 
+2021-01-26 09:34:57.4327|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5006 |url: |action: 
+2021-01-26 09:34:57.4327|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5008 |url: |action: 
+2021-01-26 09:34:57.4327|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5009 |url: |action: 
+2021-01-26 09:34:57.4447|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5011 |url: |action: 
+2021-01-26 09:34:57.4447|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5020 |url: |action: 
+2021-01-26 09:34:57.4447|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5233 |url: |action: 
+2021-01-26 09:34:57.4578|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5238 |url: |action: 
+2021-01-26 09:34:57.4578|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5239 |url: |action: 
+2021-01-26 09:34:57.4578|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5241 |url: |action: 
+2021-01-26 09:34:57.4578|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5242 |url: |action: 
+2021-01-26 09:34:57.4743|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5243 |url: |action: 
+2021-01-26 09:34:57.4743|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5244 |url: |action: 
+2021-01-26 09:34:57.4743|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5245 |url: |action: 
+2021-01-26 09:34:57.4743|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5246 |url: |action: 
+2021-01-26 09:34:57.4921|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5247 |url: |action: 
+2021-01-26 09:34:57.4921|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5248 |url: |action: 
+2021-01-26 09:34:57.4921|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5256 |url: |action: 
+2021-01-26 09:34:57.4921|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-5257 |url: |action: 
+2021-01-26 09:34:57.5069|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-9001 |url: |action: 
+2021-01-26 09:34:57.5069|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-9004 |url: |action: 
+2021-01-26 09:34:57.5069|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-994 |url: |action: 
+2021-01-26 09:34:57.5069|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-995 |url: |action: 
+2021-01-26 09:34:57.5228|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-998 |url: |action: 
+2021-01-26 09:34:57.5228|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-999 |url: |action: 
+2021-01-26 09:34:57.5228|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-1666 |url: |action: 
+2021-01-26 09:34:57.5228|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-1866 |url: |action: 
+2021-01-26 09:34:57.5412|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7001 |url: |action: 
+2021-01-26 09:34:57.5412|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7002 |url: |action: 
+2021-01-26 09:34:57.5412|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7003 |url: |action: 
+2021-01-26 09:34:57.5524|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7004 |url: |action: 
+2021-01-26 09:34:57.5524|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7005 |url: |action: 
+2021-01-26 09:34:57.5524|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7006 |url: |action: 
+2021-01-26 09:34:57.5524|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7007 |url: |action: 
+2021-01-26 09:34:57.5524|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7008 |url: |action: 
+2021-01-26 09:34:57.5682|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7009 |url: |action: 
+2021-01-26 09:34:57.5682|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7010 |url: |action: 
+2021-01-26 09:34:57.5682|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7011 |url: |action: 
+2021-01-26 09:34:57.5682|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7012 |url: |action: 
+2021-01-26 09:34:57.5682|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7013 |url: |action: 
+2021-01-26 09:34:57.5851|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7014 |url: |action: 
+2021-01-26 09:34:57.5851|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7015 |url: |action: 
+2021-01-26 09:34:57.5851|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7016 |url: |action: 
+2021-01-26 09:34:57.5851|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7017 |url: |action: 
+2021-01-26 09:34:57.5989|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7018 |url: |action: 
+2021-01-26 09:34:57.5989|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7019 |url: |action: 
+2021-01-26 09:34:57.5989|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7020 |url: |action: 
+2021-01-26 09:34:57.5989|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7021 |url: |action: 
+2021-01-26 09:34:57.6139|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7022 |url: |action: 
+2021-01-26 09:34:57.6139|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7023 |url: |action: 
+2021-01-26 09:34:57.6139|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7024 |url: |action: 
+2021-01-26 09:34:57.6139|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7025 |url: |action: 
+2021-01-26 09:34:57.6304|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7026 |url: |action: 
+2021-01-26 09:34:57.6304|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7028 |url: |action: 
+2021-01-26 09:34:57.6304|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7031 |url: |action: 
+2021-01-26 09:34:57.6304|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7032 |url: |action: 
+2021-01-26 09:34:57.6304|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7033 |url: |action: 
+2021-01-26 09:34:57.6477|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7034 |url: |action: 
+2021-01-26 09:34:57.6477|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7036 |url: |action: 
+2021-01-26 09:34:57.6477|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7037 |url: |action: 
+2021-01-26 09:34:57.6477|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7038 |url: |action: 
+2021-01-26 09:34:57.6642|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7039 |url: |action: 
+2021-01-26 09:34:57.6642|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7040 |url: |action: 
+2021-01-26 09:34:57.6642|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7041 |url: |action: 
+2021-01-26 09:34:57.6772|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7042 |url: |action: 
+2021-01-26 09:34:57.6772|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7043 |url: |action: 
+2021-01-26 09:34:57.6772|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7044 |url: |action: 
+2021-01-26 09:34:57.6772|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7045 |url: |action: 
+2021-01-26 09:34:57.6938|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7046 |url: |action: 
+2021-01-26 09:34:57.6938|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7049 |url: |action: 
+2021-01-26 09:34:57.6938|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7050 |url: |action: 
+2021-01-26 09:34:57.6938|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7051 |url: |action: 
+2021-01-26 09:34:57.7078|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7052 |url: |action: 
+2021-01-26 09:34:57.7078|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7053 |url: |action: 
+2021-01-26 09:34:57.7078|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7054 |url: |action: 
+2021-01-26 09:34:57.7078|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7055 |url: |action: 
+2021-01-26 09:34:57.7078|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7056 |url: |action: 
+2021-01-26 09:34:57.7266|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7057 |url: |action: 
+2021-01-26 09:34:57.7266|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7058 |url: |action: 
+2021-01-26 09:34:57.7266|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7059 |url: |action: 
+2021-01-26 09:34:57.7266|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7060 |url: |action: 
+2021-01-26 09:34:57.7414|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7061 |url: |action: 
+2021-01-26 09:34:57.7414|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7062 |url: |action: 
+2021-01-26 09:34:57.7414|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7063 |url: |action: 
+2021-01-26 09:34:57.7414|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7064 |url: |action: 
+2021-01-26 09:34:57.7575|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7065 |url: |action: 
+2021-01-26 09:34:57.7575|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7066 |url: |action: 
+2021-01-26 09:34:57.7575|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7067 |url: |action: 
+2021-01-26 09:34:57.7575|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7068 |url: |action: 
+2021-01-26 09:34:57.7746|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7069 |url: |action: 
+2021-01-26 09:34:57.7746|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7070 |url: |action: 
+2021-01-26 09:34:57.7746|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7071 |url: |action: 
+2021-01-26 09:34:57.7915|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7072 |url: |action: 
+2021-01-26 09:34:57.7915|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7073 |url: |action: 
+2021-01-26 09:34:57.8024|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7074 |url: |action: 
+2021-01-26 09:34:57.8024|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7089 |url: |action: 
+2021-01-26 09:34:57.8024|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7090 |url: |action: 
+2021-01-26 09:34:57.8182|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7091 |url: |action: 
+2021-01-26 09:34:57.8182|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7093 |url: |action: 
+2021-01-26 09:34:57.8182|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7094 |url: |action: 
+2021-01-26 09:34:57.8182|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7095 |url: |action: 
+2021-01-26 09:34:57.8367|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7096 |url: |action: 
+2021-01-26 09:34:57.8367|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7097 |url: |action: 
+2021-01-26 09:34:57.8367|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7098 |url: |action: 
+2021-01-26 09:34:57.8490|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7099 |url: |action: 
+2021-01-26 09:34:57.8490|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7100 |url: |action: 
+2021-01-26 09:34:57.8490|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7101 |url: |action: 
+2021-01-26 09:34:57.8490|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7102 |url: |action: 
+2021-01-26 09:34:57.8689|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7104 |url: |action: 
+2021-01-26 09:34:57.8689|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7105 |url: |action: 
+2021-01-26 09:34:57.8689|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7106 |url: |action: 
+2021-01-26 09:34:57.8807|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7107 |url: |action: 
+2021-01-26 09:34:57.8807|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7108 |url: |action: 
+2021-01-26 09:34:57.8807|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7109 |url: |action: 
+2021-01-26 09:34:57.8978|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7110 |url: |action: 
+2021-01-26 09:34:57.8978|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7111 |url: |action: 
+2021-01-26 09:34:57.8978|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7118 |url: |action: 
+2021-01-26 09:34:57.9123|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7119 |url: |action: 
+2021-01-26 09:34:57.9123|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7120 |url: |action: 
+2021-01-26 09:34:57.9123|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7121 |url: |action: 
+2021-01-26 09:34:57.9123|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7122 |url: |action: 
+2021-01-26 09:34:57.9287|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7123 |url: |action: 
+2021-01-26 09:34:57.9287|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7126 |url: |action: 
+2021-01-26 09:34:57.9287|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7127 |url: |action: 
+2021-01-26 09:34:57.9427|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7128 |url: |action: 
+2021-01-26 09:34:57.9427|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7129 |url: |action: 
+2021-01-26 09:34:57.9427|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7130 |url: |action: 
+2021-01-26 09:34:57.9427|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7131 |url: |action: 
+2021-01-26 09:34:57.9601|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7136 |url: |action: 
+2021-01-26 09:34:57.9601|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7137 |url: |action: 
+2021-01-26 09:34:57.9601|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7138 |url: |action: 
+2021-01-26 09:34:57.9742|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7139 |url: |action: 
+2021-01-26 09:34:57.9742|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7143 |url: |action: 
+2021-01-26 09:34:57.9742|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7144 |url: |action: 
+2021-01-26 09:34:57.9904|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7145 |url: |action: 
+2021-01-26 09:34:57.9904|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7146 |url: |action: 
+2021-01-26 09:34:57.9904|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7147 |url: |action: 
+2021-01-26 09:34:58.0049|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7148 |url: |action: 
+2021-01-26 09:34:58.0049|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7149 |url: |action: 
+2021-01-26 09:34:58.0049|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7150 |url: |action: 
+2021-01-26 09:34:58.0049|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7151 |url: |action: 
+2021-01-26 09:34:58.0248|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7152 |url: |action: 
+2021-01-26 09:34:58.0248|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7153 |url: |action: 
+2021-01-26 09:34:58.0248|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7154 |url: |action: 
+2021-01-26 09:34:58.0389|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7159 |url: |action: 
+2021-01-26 09:34:58.0389|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7160 |url: |action: 
+2021-01-26 09:34:58.0389|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7164 |url: |action: 
+2021-01-26 09:34:58.0536|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7165 |url: |action: 
+2021-01-26 09:34:58.0536|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7166 |url: |action: 
+2021-01-26 09:34:58.0536|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodasTransformaciones en BLArticulo - EVO-WebApi |url: |action: 
+2021-01-26 09:34:58.4143|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-100 |url: |action: 
+2021-01-26 09:34:58.4143|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-102 |url: |action: 
+2021-01-26 09:34:58.4143|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-103 |url: |action: 
+2021-01-26 09:34:58.4294|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-1866 |url: |action: 
+2021-01-26 09:34:58.4294|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7001 |url: |action: 
+2021-01-26 09:34:58.4294|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7002 |url: |action: 
+2021-01-26 09:34:58.4434|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7131 |url: |action: 
+2021-01-26 09:34:58.4434|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PTD-7132 |url: |action: 
+2021-01-26 09:34:58.5689|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxCodigoBodegaCodigoArticulo con los parámetros codigoBodega = PV-PRA , codigoArticulo = PT-998 |url: |action: 
+2021-01-26 09:34:58.7373|EVO_WebApi.Controllers.PedidosApiController|Entró al método ExistePedidoBorrador con los parámetros {"WhsCode":"PV-PRA","SolicitudPara":"PB-PT"} |url: |action: 
+2021-01-26 09:34:58.7451|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2021-01-26 09:34:58.7451|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2021-01-26 09:34:58.7550|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2021-01-26 09:34:58.7550|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2021-01-26 09:34:58.7719|EVO_BusinessLogic.BLPedido|Entró al método ExistePedidoBorrador con los parámetros; {"WhsCode":"PV-PRA","SolicitudPara":"PB-PT","EstadoPedidoId":0,"CantidadPedidosBorradorxBodega":null} |url: |action: 
+2021-01-26 09:34:58.7719|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PB-PT |url: |action: 
+2021-01-26 09:34:58.7719|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PB-PT |url: |action: 
+2021-01-26 09:34:58.7719|EVO_BusinessLogic.BLBodega|Entró al método ObtenerBodegaPorCodigo con el parámetro: código : PV-PRA |url: |action: 
+2021-01-26 09:34:58.7888|EVO_BusinessLogic.BLClientesParametrizacion|Entró al método ObtenerEncabezadoRecepcion en BLClientesParametrizacion con el parámetro codigoCliente = PV-PRA |url: |action: 
+2021-01-26 09:35:02.7782|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerTodosArticulosxBodega en Api Artículos con los parámetros desde=1, hasta=100 ,whsCodePuntoVenta=PV-PRA, whsCodePlanta=PB-PT,tipoSolicitud =1  |url: |action: 
+2021-01-26 09:35:02.7782|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2021-01-26 09:35:02.7897|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerTodosArticulosxBodega de BLArticulos con los parámetros: desde: 1, hasta: 100 ,whsCodePuntoVenta: PV-PRA,whsCodePuntoVenta: PB-PT,tipoSolicitud: 1 |url: |action: 
+2021-01-26 09:35:02.7897|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2021-01-26 09:35:02.7897|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 
+2021-01-26 09:35:02.7897|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_ARTICULO_PUNTOVENTA |url: |action: 
+2021-01-26 09:35:02.8020|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PURCHASE_ORDER_TYPE_ID |url: |action: 
+2021-01-26 09:35:02.9081|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerConteoTodosRegistros de BLArticulos con el parámetro whsCode = PV-PRA |url: |action: 
+2021-01-26 09:35:02.9081|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : PREFIJO_BODEGAS_PUNTO_VENTA |url: |action: 

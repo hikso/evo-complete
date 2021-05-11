@@ -1,0 +1,245 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-right"> 
+                <a  class="btn btn-info pull-right mat-raised-button" routerLink="/distribucion/enrutamiento/vehiculos">
+                    <span class="mat-button-wrapper">
+                        <i class="material-icons">departure_board</i>
+                        <span class="ml-1">Vehículos</span>
+                    </span>
+                    <div class="mat-button-ripple mat-ripple"></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </a>  
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">directions_bus</i>
+                        </div>
+                        <h4 class="card-title">Entregas Pendientes Por Enrutamiento</h4>
+                    </div>
+
+                    <div class="card-body">
+
+                        <p-table #dt class="table table-striped" 
+                            [value]="distribucion" selectionMode="multiple" [responsive]="true" 
+                            [resizableColumns]="true" columnResizeMode=expand [lazy]="true" 
+                            (onLazyLoad)="loadCarsLazy($event)"
+                            [paginator]="false" [rows]="maxR" [totalRecords]="totalRow" 
+                            [(selection)]="addEntregas">
+                            
+                            <!-- Dropdown para la selección del numero de filas, 
+                                por defecto tiene el valor parametrizado en base de datos  -->
+                            <ng-template pTemplate="caption">
+                                <div class="ui-grid ui-grid-responsive ui-fluid">
+                                    <span class="pagewidth">
+                                    <p-dropdown (onChange)="onChange($event)" [options]="maxregister" optionLabel="name"
+                                        [showClear]="true"></p-dropdown>
+                                    </span>
+                                    <span class="bold pagewidth text-corp">
+                                    Mostrar
+                                    </span>
+                                </div>
+                            </ng-template>
+
+                            <!-- Encabezado de tabla -->
+                            <ng-template pTemplate="header">
+                                <tr class="text-corp"> 
+                                    <th class="columnCheck" id="init">
+                                        <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                                    </th>
+                                    <th *ngFor="let item of columns" class="{{ item.class }}  align-items-center"> {{ item.header }}</th>
+                                </tr>
+                                                        
+                                <!-- Fltros Buscar por columnas -->
+                                <tr>
+                                    <th></th>
+                                    <th *ngFor="let col of columns" [ngSwitch]="col.field">
+                                        <div class="ui-inputgroup" *ngSwitchCase="'cliente'">
+                                            <input class="form-control" pInputText type="text"
+                                                (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                        </div>
+                                        <div class="ui-inputgroup" *ngSwitchCase="'codigoPedido'">
+                                            <input class="form-control" pInputText type="text"
+                                                (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                        </div>
+                                        <div class="ui-inputgroup" *ngSwitchCase="'codigo'">
+                                            <input class="form-control" pInputText type="text"
+                                                (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                        </div>
+                                        <div class="ui-inputgroup" *ngSwitchCase="'entrega'">
+                                            <input class="form-control" pInputText type="text"
+                                                (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                        </div>
+                                        <div class="ui-inputgroup" *ngSwitchCase="'fechaEntrega'">
+                                            <input class="form-control" pInputText type="text"
+                                                (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                        </div>
+                                        <div class="ui-inputgroup" *ngSwitchCase="'hora'">
+                                            <input class="form-control" pInputText type="text"
+                                                (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                        </div>
+                                        <div class="ui-inputgroup" *ngSwitchCase="'cantidad'">
+                                            <input class="form-control" pInputText type="text"
+                                                (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                        </div>
+                                        <div class="ui-inputgroup" *ngSwitchCase="'zona'">
+                                            <input class="form-control" pInputText type="text"
+                                                (input)="getFilter($event.target.value, col.field, col.filterMatchMode, undefined, undefined)">
+                                            <span class="ui-inputgroup-addon"><i class="pi pi-filter"></i></span>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </ng-template>
+
+                            <!-- Contenido de la tabla -->
+                            <ng-template pTemplate="body" let-distribucion >
+                                <tr class="ng-star-inserted" [pSelectableRow]="distribucion" class="select">
+                                    <td id="initbody">
+                                        <p-tableCheckbox
+                                            [value]="distribucion">
+                                        </p-tableCheckbox>
+                                    </td>
+                                    <td widht="30%">{{ distribucion.cliente }}</td>
+                                    <td>{{ distribucion.codigoPedido}}</td>
+                                    <td class="text-right">{{ distribucion.numeroEntrega }}</td>
+                                    <td>{{ distribucion.fechaEntrega }}</td>
+                                    <td class="text-center">{{ distribucion.horaEntrega }}</td>
+                                    <td class="text-right">{{ distribucion.peso | decimalnumber }} Kg</td>
+                                    <td class="text-center">{{ distribucion.zona }}</td>
+                                    <td class="text-center">
+                                        <button class="btn btn-info btn-round btn-fab mat-raised-button" matTooltip="Ver detalle entrega" routerLink="/distribucion/enrutamiento/entrega/{{ distribucion.entregaId }}">
+                                            <span class="mat-button-wrapper">
+                                                <i class="fa fa-eye"></i>
+                                            </span>
+                                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                            <div class="mat-button-focus-overlay"></div>
+                                        </button>
+                                        <button class="btn btn-warning btn-round btn-fab mat-raised-button" matTooltip="Editar detalle entrega" routerLink="/distribucion/enrutamiento/entrega/edit/{{ distribucion.entregaId }}">
+                                            <span class="mat-button-wrapper">
+                                                <i class="fa fa-pencil"></i>
+                                            </span>
+                                            <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                            <div class="mat-button-focus-overlay"></div>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </ng-template>
+
+                            <!-- Contenido de la tabla con 0 registros -->
+                            <ng-template pTemplate="emptymessage" let-columns>
+                                <tr class="text-center">
+                                    <td [attr.colspan]="9">
+                                    <p>No hay registros disponibles para mostrar</p>
+                                    </td>
+                                </tr>
+                            </ng-template>
+                        </p-table>
+
+                        <!-- Asociar Vehiculo a entregas -->
+                        <div>                            
+                            <button [disabled]="!this.addEntregas.length" class="btn btn-success mat-raised-button mt-2"
+                                (click)="open(mymodal)">
+                                <span class="mat-button-wrapper">
+                                    <i class="material-icons">directions_bus</i>
+                                    <span class="ml-1">Asociar Vehículo</span>
+                                </span>
+                                <div class="mat-button-ripple mat-ripple"></div>
+                                <div class="mat-button-focus-overlay"></div>
+                            </button>
+                        </div>
+
+                        <!-- Paginación -->
+                        <div class="footpaginator">
+                            <p-paginator #pg (onLazyLoad)="loadCarsLazy($event)" (onPageChange)="loadCarsLazy($event)"
+                                [rows]="maxR" [totalRecords]="totalRow" >
+                            </p-paginator>
+                            <span class="totalRow">{{ numFilas }} de {{ totalRow }} Registros</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Programacion de entregas -->
+<ng-template #mymodal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title text-corp" id="modal-basic-title">Asociar Vehículo</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <form #form="ngForm" (submit)="onSubmit(form)">
+        <div class="modal-body">
+            <div class="row">
+            </div>
+            <div class="row align-items-center">
+                <label class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 text-corp">Tipo de Vehículo:</label>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <p-dropdown
+                        [options]="tipo"
+                        [showClear]="true" 
+                        [style]="{'width':'100%'}"
+                        [panelStyle]="{'background-color': 'white'}"
+                        placeholder="Seleccione una opción" 
+                        [(ngModel)]="vehiculo.tipo"
+                        optionLabel="TipoVehiculo"
+                        (onChange)="onChangeT($event)"
+                        name="tipo"
+                        dataKey="TipoVehiculo">
+                        <ng-template let-item pTemplate="item">
+                            {{ item.value.TipoVehiculo }} / ({{ item?.value.capacidad | decimalnumber }} KG)
+                        </ng-template>
+                        <ng-template let-item pTemplate="selectedItem">
+                            <div class="ui-helper-clearfix">
+                                {{ item.value.TipoVehiculo }} / ({{ item?.value.capacidad | decimalnumber }} KG)
+                            </div>
+                        </ng-template>
+                    </p-dropdown>
+                </div>
+                <label class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mt-4 text-corp">Placa del Vehículo:</label>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <p-dropdown [options]="placa" optionLabel="placa" [showClear]="true" [style]="{'width':'100%'}" name="placa" 
+                        placeholder="Seleccione una opción" [(ngModel)]="vehiculo.placa" required  [disabled]="enableCars"></p-dropdown>
+
+                </div>
+                <label class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mt-4 text-corp">Muelle:</label>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <p-dropdown [options]="muelles" optionLabel="Muelle" [showClear]="true" [style]="{'width':'100%'}" name="muelle" 
+                        placeholder="Seleccione una opción" [(ngModel)]="vehiculo.muelle" required  [disabled]="enableCars"></p-dropdown>
+                </div>
+                <label class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mt-4 text-corp">Conductor:</label>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <p-dropdown [options]="conductor" optionLabel="name" [showClear]="true" [style]="{'width':'100%'}" name="conductor" 
+                        placeholder="Seleccione una opción" [(ngModel)]="vehiculo.conductor"  required></p-dropdown>
+                </div>
+                <label class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mt-4 text-corp">Auxiliar de Conductor:</label>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <p-dropdown [options]="auxiliar" optionLabel="name" [showClear]="true" [style]="{'width':'100%'}" name="auxiliar" 
+                        placeholder="Seleccione una opción" [(ngModel)]="vehiculo.auxiliar"  required></p-dropdown>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mt-4">
+                    <div class="custom-control custom-checkbox mr-sm-2 col-12 col-sm-12 col-md-12 col-lg-12" >
+                        <input type="checkbox" class="custom-control-input" id="nv" name="nuevo" [(ngModel)]="vehiculo.nuevo">
+                        <label class="custom-control-label" for="nv">Asignar a un nuevo viaje</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer mt-4">
+            <button type="button" class="btn btn-danger mr-1" (click)="modal.dismiss('Cross click')">Cancelar</button>
+            <button type="submit" class="btn btn-success" [disabled]="!form.valid">Agregar</button>
+        </div>
+    </form>
+</ng-template>

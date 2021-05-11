@@ -1,0 +1,107 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-right mb-4"> 
+                <a  class="btn btn-info pull-right mat-raised-button" routerLink="/configuracion/adminrol">
+                    <span class="mat-button-wrapper">
+                        <i class="fa fa-chevron-left"></i> 
+                        <span class="ml-1">Regresar</span>
+                    </span>
+                    <div class="mat-button-ripple mat-ripple"></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </a>  
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">fingerprint</i>
+                        </div>
+                        <h4 class="card-title">Crear Rol</h4>
+                    </div>
+                    <div class="card-body">
+                        <form #form="ngForm" (submit)="onSubmit(form)">
+                            <div class="row">
+                                <div class="col-12">
+                                    <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Nombre" name="nombre" [(ngModel)]="rolcreate.nombre" autocomplete="off" required>
+                                    </mat-form-field>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="mt-4">Permisos</label>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                            <div class="custom-control custom-checkbox mr-sm-2" (change)="validation(form)">
+                                                <input type="checkbox" class="custom-control-input" id="pb" name="PlantaBeneficio" [(ngModel)]="rolcreate.PlataBeneficio" binary="false" >
+                                                <label class="custom-control-label" for="pb">Planta de beneficio</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                            <div class="custom-control custom-checkbox mr-sm-2" (change)="validation(form)">
+                                                <input type="checkbox" class="custom-control-input" id="pdc" name="PlantaDerivadosCarnicos" [(ngModel)]="rolcreate.PlantaDerivadosCarnicos">
+                                                <label class="custom-control-label" for="pdc">Planta de derivados Cárnicos</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                            <div class="custom-control custom-checkbox mr-sm-2" (change)="validation(form)">
+                                                <input type="checkbox" class="custom-control-input" id="pv" name="PuntosVenta" [(ngModel)]="rolcreate.PuntosVenta">
+                                                <label class="custom-control-label" for="pv">Punto de Venta</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                                            <div class="custom-control custom-checkbox mr-sm-2" (change)="validation(form)">
+                                                <input type="checkbox" class="custom-control-input" id="ad" name="Administracion" [(ngModel)]="rolcreate.Administracion">
+                                                <label class="custom-control-label" for="ad">Administración</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="page-categories">
+                                                <label class="mt-4">Modulos</label>
+                                                <br>
+                                                <ul class="nav nav-pills nav-pills-warning nav-pills-icons " role="tablist">
+                                                    <li class="nav-item" *ngFor="let mf of modFunc; let i = index" >
+                                                        <a class="nav-link {{ i+1 === 1 ? 'active': ''}}" data-toggle="tab" href="#link{{i+1}}" role="tablist">
+                                                            {{ mf.Nombre }}
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content tab-space tab-subcategories">
+                                                    <div class="tab-pane  {{ i+1 === 1 ? 'active': ''}}" id="link{{i+1}}"  *ngFor="let items of modFunc; let i = index">
+                                                        <div class="row mt-3" >
+                                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6" *ngFor="let funct of items?.Funcionalidades; let j = index"  >
+                                                                <div class="custom-control custom-checkbox mr-sm-2"  (change)="addFunc($event.target.checked, funct)">
+                                                                    <input type="checkbox" class="custom-control-input" id="f{{funct.FuncionalidadId}}" name="FuncionalidadesIds[]" 
+                                                                    value="{{funct.FuncionalidadId}}" >
+                                                                    <label class="custom-control-label" for="f{{funct.FuncionalidadId}}">{{ funct.Nombre }}</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button class="btn btn-success pull-right mat-raised-button" type="submit" [disabled]=" !form.valid || !validar ">
+                                                <span class="mat-button-wrapper">Guardar</span>
+                                                <div class="mat-button-ripple mat-ripple" matripple=""></div>
+                                                <div class="mat-button-focus-overlay"></div>
+                                            </button>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

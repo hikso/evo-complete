@@ -1,0 +1,439 @@
+ -------------- Error (2021-01-29 08:20:04.5833) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 08:25:44.3660) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 08:27:31.9586) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 08:29:59.3484) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 08:32:53.5227) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 08:37:39.0360) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 09:28:02.0211) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 09:34:19.8484) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 09:37:20.4127) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 09:41:54.7403) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 09:49:13.2396) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 09:54:14.9437) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 09:56:12.8668) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 10:22:54.2100) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 10:23:18.4690) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+
+ -------------- Error (2021-01-29 10:47:44.8651) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 10:48:37.0484) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+
+ -------------- Error (2021-01-29 10:49:34.9443) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 10:50:02.1461) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+
+ -------------- Error (2021-01-29 10:51:46.0512) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 10:52:39.6846) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+
+ -------------- Error (2021-01-29 10:58:26.5680) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 10:59:14.1531) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+
+ -------------- Error (2021-01-29 11:00:45.1319) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 11:01:00.2712) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+
+ -------------- Error (2021-01-29 11:02:56.8960) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 11:03:07.6875) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+
+ -------------- Error (2021-01-29 11:05:29.2415) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 11:05:41.2971) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+
+ -------------- Error (2021-01-29 16:22:00.5226) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 16:25:56.0052) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 16:32:44.9602) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 16:36:13.1628) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 16:38:50.8205) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 16:39:13.6286) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+
+ -------------- Error (2021-01-29 16:39:57.6469) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+
+ -------------- Error (2021-01-29 16:41:34.2153) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: EnviarPedidoSAP Mensaje false|-5002
+Falta el número de artículo; especifique uno  [PRQ1.ItemCode][line: 1]|
+
+ -------------- Error (2021-01-29 16:41:36.7553) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 17:02:46.5361) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 17:02:50.2652) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: EnviarPedidoSAP Mensaje false|Transaction (Process ID 244) was deadlocked on lock | communication buffer resources with another process and has been chosen as the deadlock victim. Rerun the transaction.|
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: EnviarPedidoSAP Mensaje false|Transaction (Process ID 244) was deadlocked on lock | communication buffer resources with another process and has been chosen as the deadlock victim. Rerun the transaction.|
+
+ -------------- Error (2021-01-29 17:05:25.2886) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+
+ -------------- Error (2021-01-29 17:08:08.0528) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLPedido.CrearPedido
+ Exception Type: System.ServiceModel.CommunicationException
+ Exception Message: An error occurred while sending the request.
+ Stack Trace:    at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+ Additional Info: System.AggregateException: One or more errors occurred. (An error occurred while sending the request.) ---> System.ServiceModel.CommunicationException: An error occurred while sending the request. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.Http.WinHttpException: Se superó el tiempo de espera para la operación
+   at System.Threading.Tasks.RendezvousAwaitable`1.GetResult()
+   at System.Net.Http.WinHttpHandler.StartRequest(WinHttpRequestState state)
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.ServiceModelHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpClientRequestChannel.HttpClientChannelAsyncRequest.SendRequestAsync(Message message, TimeoutHelper timeoutHelper)
+   --- End of inner exception stack trace ---
+   at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at EVO_Proxy.PedidoProxy.EnviarPedido(String xml) in C:\EVO\CodigoFuente\EVO-dev\EVO-Proxy\PedidoProxy.cs:line 36
+   at EVO_BusinessLogic.BLPedido.CrearPedido(Pedido pedido) in C:\EVO\CodigoFuente\EVO-dev\EVO-BusinessLogic\BLPedido.cs:line 5276
+---> (Inner Exception #0) System.ServiceModel.CommunicationException: An error occurred while sending the request. ---> System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.Http.WinHttpException: Se superó el tiempo de espera para la operación
+   at System.Threading.Tasks.RendezvousAwaitable`1.GetResult()
+   at System.Net.Http.WinHttpHandler.StartRequest(WinHttpRequestState state)
+   --- End of inner exception stack trace ---
+   at System.ServiceModel.Channels.ServiceModelHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpClientRequestChannel.HttpClientChannelAsyncRequest.SendRequestAsync(Message message, TimeoutHelper timeoutHelper)
+   --- End of inner exception stack trace ---
+   at System.Runtime.AsyncResult.End[TAsyncResult](IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.SendAsyncResult.End(SendAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannel.EndCall(String action, Object[] outs, IAsyncResult result)
+   at System.ServiceModel.Channels.ServiceChannelProxy.TaskCreator.<>c__DisplayClass1_0.<CreateGenericTask>b__0(IAsyncResult asyncResult)<---
+
+
+ -------------- Error (2021-01-29 17:51:24.1141) --------------
+ 
+ Action: 
+ Call Site: EVO_BusinessLogic.BLArticulo.ObtenerArticuloxCodigoBodegaCodigoArticulo
+ Exception Type: EVO_BusinessObjects.Exceptions.EVOException
+ Exception Message: El artículo en la bodega no está registrado
+ Stack Trace: 
+ Additional Info: EVO_BusinessObjects.Exceptions.EVOException: El artículo en la bodega no está registrado
+

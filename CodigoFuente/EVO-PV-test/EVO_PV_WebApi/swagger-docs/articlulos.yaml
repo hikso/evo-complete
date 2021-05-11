@@ -1,0 +1,367 @@
+openapi: 3.0.0
+servers:
+  - description: EVO - API de Articulos
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Articulos
+  version: "1.0.0"
+  title: API de Artículos
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jegiraldo@porcicarnes.com.co
+tags:
+  - name: Articulos
+    description: Gestión de Artículos
+paths:
+  /articulos/bodega/buscar:
+   post:
+      tags:
+        - Articulos
+      summary: Busca un artículo de bodega
+      operationId: BuscarArticulosBodega
+      requestBody:
+          $ref: '#/components/requestBodies/BuscarArticuloRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                 type: array
+                 items: 
+                  $ref: '#/components/schemas/ArticuloResponse'     
+  /obtenerTodosArticulos:
+   get:
+      tags:
+        - Articulos
+      summary: Obtiene todos los Articulos
+      operationId: obtenerTodosArticulos
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/ArticuloUnicoResponse'
+  /articulos/bodega:
+   get:
+      tags:
+        - Articulos
+      summary: Obtiene todos los Articulos por bodega
+      operationId: obtenerTodosArticulosxBodega
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: whsCode
+          in: query
+          description: Indica el código de la bodega
+          required: true
+          schema:
+            type: string
+        - name: TipoSolicitud
+          in: query
+          description: Tipo de Solicitud para definir si es compra o traslado
+          required: true
+          schema:
+            type: string    
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosArticulosResponse'
+  /obtenerTodosArticulosBodegaxFiltro:
+    post:
+      tags:
+        - Articulos
+      summary: Obtiene todos los artículos aplicando filtros de búsqueda
+      operationId: obtenerTodosArticulosBodegaxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarArticuloRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosArticulosResponse'              
+  /obtenerTodosEstados:
+    get:
+      tags:
+        - Articulos
+      summary: Obtiene los estados del artículo
+      operationId: obtenerTodosEstados
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/EstadoArticuloResponse'
+  /obtenerAcciones:
+    get:
+      tags:
+        - Articulos
+      summary: Obtiene los estados del artículo
+      operationId: obtenerAcciones
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/AccionResponse'
+  /obtenerTodasUnidadesMedida:
+    get:
+      tags:
+        - Articulos
+      summary: Obtiene las unidades de medida
+      operationId: obtenerTodosUnidadesMedida
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/UnidadMedidaResponse'
+          
+components:
+  schemas:
+    ArticuloResponse:
+       type: object
+       description: Artículo encontrado
+       properties:
+          codigoArticulo:
+            type: string
+            example: 'PT-1485'
+            description: Codigo de el artículo
+          NombreArticulo:
+            type: string
+            example: 'Pierna Premium'
+            description: Nombre de el producto
+          stock:
+            type: string
+            example: '3250'
+            description: Stock de el producto en bodega
+          minimo:
+            type: string
+            example: '1540.23'
+            description: Stock mínimo que se debe tener de el producto en bodega
+          maximo:
+            type: string
+            example: '5000'
+            description: Stock máximo que se debe tener de el producto en bodega
+          estadoId:
+            type: integer
+            example: 1
+            description: Id del estado del pedido
+          empaqueId:
+            type: integer
+            example: 1
+            description: Id del empaque
+    ArticuloUnicoResponse:
+      type: object
+      description: Representa un artículo
+      properties:
+        itemCode:
+          type: string
+          example: 'PT-A1'
+          description: Representa el código del artículo
+        itemName:
+          type: string
+          example: 'A1'
+          description: Representa el nombre del artículo
+    FiltrarArticuloRequest:
+       type: object
+       description: Objeto que contiene los filtros de los Artículos
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros       
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+            codigoArticulo:
+              type: string
+              example: "PT-1485"
+              description: Filtro por Codigo de Artículo
+            nombreArticulo:
+              type: string
+              example: "Admin"
+              description: Filtro por Nombre de Artículo
+            unidadMedida:
+              type: string
+              example: "kg"
+              description: Filtro por Unidad de Medida
+            stock:
+              type: string
+              example: "3534"
+              description: Filtro por el stock del Artículo  
+            minimo:
+              type: string
+              example: "10"
+              description: Filtro por cantidad mínima de stock
+            maximo:
+              type: string
+              example: "50"
+              description: Filtro por cantidad máxima de stock           
+            whsCode:
+              type: string  
+              example: 'code1'
+              description: Indica el código de la bodega 
+    ObtenerTodosArticulosResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 1000
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de registros de Articulos
+          items:
+            type: object
+            properties:
+              codigoArticulo:
+                type: string
+                example: 'PT-1485'
+                description: Codigo de el artículo
+              NombreArticulo:
+                type: string
+                example: 'Pierna Premium'
+                description: Nombre de el producto
+              UnidadMedida:
+                type: string
+                example: 'KG'
+                description: Nombre de la unidad de medida
+              stock:
+                type: string
+                example: '3250'
+                description: Stock de el producto en bodega
+              minimo:
+                type: string
+                example: '1540.23'
+                description: Stock mínimo que se debe tener de el producto en bodega
+              maximo:
+                type: string
+                example: '5000'
+                description: Stock máximo que se debe tener de el producto en bodega
+    EstadoArticuloResponse:
+       type: object
+       required:
+        - EstadoArticuloId
+        - Nombre
+       description: Indica un estado del artículo
+       properties:
+        EstadoArticuloId:
+          type: integer
+          example: 1
+          description: Id del estado del artículo
+        Nombre:
+          type: string
+          example: "Refrigerado"
+          description: Estado del artículo
+    AccionResponse:
+       type: object
+       required:
+        - AccionId
+        - Nombre
+       description: Indica una acción por artículo
+       properties:
+        AccionId:
+          type: integer
+          example: 1
+          description: Id de la acción
+        Nombre:
+          type: string
+          example: "Con Gestión de Compras"
+          description: Descripción de la acción
+    UnidadMedidaResponse:
+       type: object
+       required:
+        - UnidadMedidaId
+        - Nombre
+        - Codigo
+       description: Indica la unidad de medida del artículo
+       properties:
+        UnidadMedidaId:
+          type: integer
+          example: 1
+          description: Id del Artículo
+        Nombre:
+          type: string
+          example: "Kilogramos"
+          description: Unidad del Artículo  
+        Codigo:
+          type: string
+          example: "1485"
+          description: Código del Artículo
+    BuscarArticuloRequest:
+       type: object
+       required:        
+        - CodigoBodega
+        - TipoSolicitud
+       description: Indica los parámetros de búsqueda
+       properties:
+        Nombre:
+          type: string
+          example: "Artículo 1"
+          description: Nombre del artículo  
+        Codigo:
+          type: string
+          example: "COD-03"
+          description: Código del artículo
+        CodigoBodega:
+          type: string
+          example: "HAS-01"
+          description: Código de la bodega  
+        TipoSolicitud:
+          type: integer
+          example: 2
+          description: Tipo de Solicitud para definir si es compra o traslado          
+  requestBodies:
+    FiltrarArticuloRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarArticuloRequest'
+      description: Solicitud de filtro de Auditoria. Se debe ingresar al menos uno de los criterios del filtro
+      required: true
+    BuscarArticuloRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BuscarArticuloRequest'
+      description: Solicitud de búsqueda de un artículo de bodega
+      required: true

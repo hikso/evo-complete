@@ -1,0 +1,251 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO
+    url: https://evo/api
+info:
+  description: API de administración de Parámetros Generales
+  version: "1.0.0"
+  title: API de Parámetros Generales
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: ParametrosGenerales
+    description: Controladora de Parámetros Generales
+paths:
+  /parametrosgenerales:
+    get:
+      tags: 
+       - ParametrosGenerales
+      summary: Obtiene los Parámetros Generales del sistema
+      operationId: obtenerTodosParametrosGenerales
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se debe obtener la información
+          example: 1
+          required: true
+          schema:
+            type: integer
+            nullable: false
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se debe obtener la información
+          required: true
+          example: 100
+          schema:
+            type: integer
+            nullable: false
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                    $ref: '#/components/schemas/ObtenerTodosParametrosGeneralesResponse'
+    post:
+      tags:
+       - ParametrosGenerales
+      summary: Crea un Parámetro General
+      operationId: crearParametroGeneral
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+          $ref: '#/components/requestBodies/CrearParametroGeneralRequest'                  
+  /parametrosgenerales/{id} :
+    get:
+      tags: 
+       - ParametrosGenerales
+      summary: Obtiene un Parámtro General por el id.
+      operationId: obtenerParametroGeneralxId
+      parameters:
+        - name: id
+          in: path
+          description: Id del Parámetro General
+          required: true
+          example: 1
+          schema:
+            type: integer
+            nullable: false
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                    $ref: '#/components/schemas/ParametroGeneralResponse'
+  /parametrosgenerales/obtenerxnombre/{nombre} :
+    get:
+      tags: 
+       - ParametrosGenerales
+      summary: Obtiene un Parámetro General por su nombre.
+      operationId: obtenerParametroGeneralxNombre
+      parameters:
+        - name: nombre
+          in: path
+          description: Nombre del Parámetro General
+          required: true
+          example: 'SALARIO_MINIMO_2019'
+          schema:
+            type: string
+            nullable: false
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                    $ref: '#/components/schemas/ParametroGeneralResponse'                  
+
+                  
+  /parametrosgenerales/actualizar :                  
+    put:
+      tags:
+       - ParametrosGenerales
+      summary: Actualiza un Parámetro General
+      operationId: actualizarParametroGeneral
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+          $ref: '#/components/requestBodies/ActualizarParametroGeneralRequest'      
+  /parametrosgenerales/activar :
+    post:
+      tags:
+       - ParametrosGenerales
+      summary: Activa / inactiva un Parámetro General
+      operationId: activarParametroGeneral
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+          $ref: '#/components/requestBodies/ActivarParametroGeneralRequest'
+components:
+  schemas:
+    ObtenerTodosParametrosGeneralesResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de Roles de usuario
+          items:
+            type: object
+            properties:
+              parametroGeneralId:
+               type: integer
+               example: 1
+               description: id del parámetro general
+              nombre:
+               type: string
+               example: "SALARIO_MINIMO_2019"
+               description: nombre del parámetro general
+              valor:
+                type: string
+                example: "828.116"
+                description: valor de parámetro general
+              activo:
+                type: boolean
+                example: true
+                description: Indica si el Parámetro General se encuentra activo / inactivo
+              
+    ParametroGeneralResponse:
+        type: object
+        properties:
+          parametroGeneralId:
+            type: integer
+            example: 1
+            description: id del parámetro general
+          nombre:
+            type: string
+            example: "SALARIO_MINIMO_2019"
+            description: nombre del parámetro general
+          valor:
+            type: string
+            example: "828.116"
+            description: valor de parámetro general
+          activo:
+            type: boolean
+            example: true
+            description: Indica si el Parámetro General se encuentra activo / inactivo 
+    CrearParametroGeneralRequest:
+       type: object
+       required:
+        - nombre
+        - valor
+       description: Objeto que contiene un parámetro general
+       properties:
+        nombre:
+          type: string
+          example: "SALARIO_MINIMO_2019"
+          description: Nombre del parámetro general
+        valor:
+          type: string
+          example: "828.116"
+          description: Valor de parámetro general      
+    ActualizarParametroGeneralRequest:
+       type: object
+       required:
+        - parametroGeneralId
+        - nombre
+        - valor
+       description: Objeto que contiene un parámetro general
+       properties:
+        parametroGeneralId:
+          type: integer
+          example: 1
+          description: Id del parámetro general
+        nombre:
+          type: string
+          example: "SALARIO_MINIMO_2019"
+          description: Nombre del parámetro general
+        valor:
+          type: string
+          example: "828.116"
+          description: Valor de parámetro general
+    ActivarParametroGeneralRequest:
+       type: object
+       required:
+        - parametroGeneralId
+        - activo
+       description: Objeto que contiene un Parámetro General a activar / inactivar
+       properties:
+        parametroGeneralId:
+          type: integer
+          example: 1
+          description: Id del Parámetro General
+        activo:
+          type: boolean
+          example: true
+          description: Activa / inactiva el Parámetro General      
+  requestBodies:
+    CrearParametroGeneralRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/CrearParametroGeneralRequest'
+      description: Solicititud de creación de un Parámetro general
+      required: true
+    ActualizarParametroGeneralRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ActualizarParametroGeneralRequest'
+      description: Solicititud de actualización de un Parámetro General
+      required: true  
+    ActivarParametroGeneralRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ActivarParametroGeneralRequest'
+      description: Solicititud de activación / inactivación de un Parámetro General
+      required: true

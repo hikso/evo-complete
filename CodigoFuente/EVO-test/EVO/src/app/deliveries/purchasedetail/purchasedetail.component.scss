@@ -1,0 +1,211 @@
+.text-primary-corp{
+    font-weight: 700;
+    color: #7F0E06;
+}
+.card-body{
+    p{
+        margin: 0px;
+    }
+}
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+::ng-deep .ui-datepicker {
+    background-color: #ffffff;
+}
+
+.pagewidth{
+    float: right;
+    min-width: 80px;
+}
+
+:host ::ng-deep .select:hover{
+    background-color: #F5B90E;
+    color: #ffffff;
+}
+
+:host ::ng-deep p-paginator a {
+    color: #7F0E06;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+:host ::ng-deep .ui-editable-column{
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    color: #000;
+    i{
+        float: right;
+        margin-top: 5px;
+    }
+}
+
+.text-corp{
+    color: #7F0E06;
+}
+
+::ng-deep .ui-datepicker {
+    background-color: #ffffff;
+}
+::ng-deep .ui-datepicker {
+
+    .ui-state-default{
+        cursor: pointer;
+        &:hover{
+            background-color: #F5B90E;
+            color: #000;
+        }
+    }
+    .ui-state-highlight{
+        background-color: #F5B90E;
+        color: #000;
+    }
+    .ui-state-active{
+        background-color: #7F0E06;
+        color: #fff;
+    }
+    .ui-state-disabled{
+        background-color: #69696924 !important;
+    }
+    background-color: #ffffff;
+}
+::ng-deep .ui-timepicker{
+    .ui-hour-picker{
+        margin: 0px;
+    }
+}
+
+.footpaginator{
+ margin-top: 25px;
+ position: relative;
+}
+
+.margin-left{
+    margin-left: 1rem;
+}
+::ng-deep .article-edited{
+    position: relative;
+    background-color: #ffa82657 !important;
+    &:hover{
+        color: #000 !important;
+    }
+}
+
+::ng-deep .edited-button{
+    position: absolute !important;
+    left: -40px;
+    animation: selection 3s infinite;
+}
+
+@keyframes selection {
+    0% {
+        left: -40px;
+    }
+    50% {
+        left: -45px;
+    }
+    100% {
+        left: -40px;
+    }
+}
+.pull-right{
+    float: right;
+}
+.text-observation, .text-nombre{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 23px;
+}
+
+:host ::ng-deep .ui-accordion-header{
+    a{
+        color: #000;
+        &:focus{
+            color: #000;
+        }
+    } 
+}
+
+:host ::ng-deep .ui-accordion-content-wrapper{
+    border: 1px solid #7f0e06;
+    margin-bottom: 10px;
+    margin-top: -1px;
+    border-radius: 0 0 5px 5px;
+    border-top: 0px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+:host ::ng-deep .ui-accordion-header-text{
+    font-weight: 700;
+    color: #7F0E06;
+}
+
+.table th, .table td{
+    vertical-align: middle;
+}
+
+::ng-deep #init p-tableheadercheckbox .ui-state-default {
+    color: #ffffff;
+    min-width: 25px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding-top: 4.5px;
+    margin-top: -3px;
+    border: 1px solid #7F0E06;;
+}
+
+:host ::ng-deep .ui-editable-column{
+    background: #fff;
+    box-shadow: inset 0 0 2px #000;
+    color: #000;
+    i{
+        float: right;
+        margin-top: 5px;
+    }
+}
+
+::ng-deep .edited-button{
+    position: absolute !important;
+    left: -40px;
+    animation: selection 3s infinite;
+}
+
+@keyframes selection {
+    0% {
+        left: -40px;
+    }
+    50% {
+        left: -45px;
+    }
+    100% {
+        left: -40px;
+    }
+}
+
+::ng-deep .ui-chkbox-box.ui-state-active{
+    background-color: #7F0E06;
+    color: #ffffff;
+    min-width: 25px !important;
+    height: 25px !important;
+    width: 25px !important;
+    border-radius: 50% !important;
+    padding-top: 4.5px;
+    margin-top: -3px;
+}
+
+::ng-deep .observation-tooltip{
+    max-width: unset !important;
+}

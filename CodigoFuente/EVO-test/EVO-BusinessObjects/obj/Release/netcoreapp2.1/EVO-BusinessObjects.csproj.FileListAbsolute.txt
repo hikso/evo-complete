@@ -1,0 +1,8 @@
+C:\EVO\CodigoFuente\EVO-test\EVO-BusinessObjects\bin\Release\netcoreapp2.1\EVO_BusinessObjects.deps.json
+C:\EVO\CodigoFuente\EVO-test\EVO-BusinessObjects\bin\Release\netcoreapp2.1\EVO_BusinessObjects.dll
+C:\EVO\CodigoFuente\EVO-test\EVO-BusinessObjects\bin\Release\netcoreapp2.1\EVO_BusinessObjects.pdb
+C:\EVO\CodigoFuente\EVO-test\EVO-BusinessObjects\obj\Release\netcoreapp2.1\EVO-BusinessObjects.csprojAssemblyReference.cache
+C:\EVO\CodigoFuente\EVO-test\EVO-BusinessObjects\obj\Release\netcoreapp2.1\EVO-BusinessObjects.AssemblyInfoInputs.cache
+C:\EVO\CodigoFuente\EVO-test\EVO-BusinessObjects\obj\Release\netcoreapp2.1\EVO-BusinessObjects.AssemblyInfo.cs
+C:\EVO\CodigoFuente\EVO-test\EVO-BusinessObjects\obj\Release\netcoreapp2.1\EVO_BusinessObjects.dll
+C:\EVO\CodigoFuente\EVO-test\EVO-BusinessObjects\obj\Release\netcoreapp2.1\EVO_BusinessObjects.pdb

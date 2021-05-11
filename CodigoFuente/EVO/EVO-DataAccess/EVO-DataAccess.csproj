@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>EVO_DataAccess</RootNamespace>
+    <AssemblyName>EVO_DataAccess</AssemblyName>
+  </PropertyGroup>
+
+  <!--<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Proyectos .NET\PorciCarnes\EVO-PV\CodigoFuente\EVO\EVO-DataAccess\EVO_DataAccess.xml</DocumentationFile>
+  </PropertyGroup>-->
+  <ItemGroup>
+    <Compile Remove="Migrations\20190809152040_1_crear_tablas.cs" />
+    <Compile Remove="Migrations\20190809152040_1_crear_tablas.Designer.cs" />
+    <Compile Remove="Migrations\20200505162639_202005051125_3_crear_jobs.cs" />
+    <Compile Remove="Migrations\20200505162639_202005051125_3_crear_jobs.Designer.cs" />
+    <Compile Remove="Migrations\20200505171508_3_crear_jobs.cs" />
+    <Compile Remove="Migrations\20200505171508_3_crear_jobs.Designer.cs" />
+    <Compile Remove="Migrations\20200505174326_3_crear_jobs.cs" />
+    <Compile Remove="Migrations\20200505174326_3_crear_jobs.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="DatosSemillas\1_080820190553pm.sql~RF1721342.TMP" />
+    <None Remove="DatosSemillas\1_080820190553pm.sql~RF1914651.TMP" />
+    <None Remove="DatosSemillas\1_080820190553pm.sql~RF1dfbea2.TMP" />
+    <None Remove="DatosSemillas\1_080820190553pm.sql~RF24068739.TMP" />
+    <None Remove="DatosSemillas\1_080820190553pm.sql~RF2deff2.TMP" />
+    <None Remove="DatosSemillas\1_080820190553pm.sql~RF6623a4.TMP" />
+    <None Remove="DatosSemillas\1_080820190553pm.sql~RFd48258.TMP" />
+    <None Remove="Entities\EFEmpleado.cs~RFcacac3b.TMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.1" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EVO-BusinessObjects\EVO-BusinessObjects.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EFCoreExtensions">
+      <HintPath>References\EFCoreExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo">
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft SQL Server\140\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc">
+      <HintPath>..\..\..\..\Program Files\Microsoft SQL Server\140\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo">
+      <HintPath>..\..\..\..\Program Files\Microsoft SQL Server\140\SDK\Assemblies\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum">
+      <HintPath>..\..\..\..\Program Files\Microsoft SQL Server\140\SDK\Assemblies\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

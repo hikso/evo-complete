@@ -1,0 +1,271 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Evidencia
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Evidencia
+  version: "1.0.0"
+  title: API de Evidencia
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Evidencia
+    description: Gestión de Evidencia
+paths:
+  /evidencia/enviar:
+    post:
+        tags:
+          - Evidencia
+        summary: Envía evidencias
+        operationId: enviarEvidencia
+        requestBody:
+            $ref: '#/components/requestBodies/evidenciaRequest'
+        responses:
+            '200':
+              description: Operación realizada con éxito      
+  /evidencia/evidencias:
+    get:
+      tags: 
+        - Evidencia
+      summary: Obtiene las evidencias
+      operationId: obtenerEvidencias    
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:              
+              application/json:
+                schema:
+                   type: array
+                   items: 
+                    $ref: '#/components/schemas/evidenciaResponse'
+  /evidencia/evidencias/filtrar:
+    get:
+      tags: 
+        - Evidencia
+      summary: Obtiene las evidencias filtradas
+      operationId: obtenerEvidenciasxFiltro
+      parameters:
+          - name: fechaInicio
+            in: query
+            description: Indica la fecha de inicio de la evidencia(dd/mm/aaa)            
+            schema:
+              type: string
+          - name: fechaFin
+            in: query
+            description: Indica la fecha de fin de la evidencia(dd/mm/aaa)           
+            schema:
+              type: string
+          - name: puntoVenta
+            in: query
+            description: Indica el nombre del punto de venta            
+            schema:
+              type: string    
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:              
+              application/json:
+                schema:
+                   type: array
+                   items: 
+                    $ref: '#/components/schemas/evidenciaResponse'
+                    
+  /evidencia/detalle:
+    get:
+      tags: 
+        - Evidencia
+      summary: Obtiene del detalle de la evidencia
+      operationId: obtenerDetalleEvidencia
+      parameters:
+        - name: evidenciaId
+          in: query
+          description: Indica de la evidencia
+          required: true
+          schema:
+            type: integer
+        - name: numeroEntrega
+          in: query
+          description: Indica el número de la entrega
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:              
+              application/json:
+                schema:                   
+                    $ref: '#/components/schemas/detalleEvidenciaResponse'
+  /evidencia/archivo:
+    get:
+      tags: 
+        - Evidencia
+      summary: Obtiene el archivo en base64
+      operationId: obtenerArchivoEvidencia
+      parameters:
+        - name: GUID
+          in: query
+          description: Indica el número unico retornado en el detalle de evidencia
+          required: true
+          schema:
+            type: string
+        - name: nombreArchivo
+          in: query
+          description: Indica el nombre del archivo
+          required: true
+          schema:
+            type: string
+        - name: extensionArchivo
+          in: query
+          description: Indica la extensión del archivo
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito                            
+components:
+  schemas:
+    evidenciaRequest:
+      type: object
+      description: Representa el encabezado de la evidencia
+      properties:
+         pesajeEntregaId:
+          type: integer
+          example: 1
+          description: Id del pesaje entrega
+         observaciones:
+          type: string
+          example: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos'
+          description: Observaciones de la evidencia
+         detalles:
+          type: array
+          items:             
+            $ref: '#/components/schemas/archivoRequest'
+    archivoRequest:
+      type: object
+      description: Representa archivo enviado
+      properties:
+        base64:
+          type: string
+          example: 'wAAAAAAAAAAAGgVCLYAAA3kICWdL5abo4J/TI1u/TBUkd7+5ui'
+          description: Archivo en base64
+        NombreArchivo:
+          type: string
+          example: 'evidencia1'
+          description: Nombre del archivo
+        ExtensionArchivo:
+          type: string
+          example: 'gif'
+          description: Extensión del archivo   
+    evidenciaResponse:
+      type: object
+      description: Representa la evidencia
+      properties:
+        evidenciaId:
+          type: integer
+          example: 1
+          description: Id de la evidencia
+        puntoVenta:
+          type: string
+          example: 'San Antonio de Prado'
+          description: Nombre de punto de venta
+        numeroPedido:
+          type: string
+          example: 'PRA-1'
+          description: Número del pedido
+        numeroEntrega:
+          type: string
+          example: '1'
+          description: Número de la entrega     
+        fechaEvidencia:
+          type: string
+          example: '12/12/2019'
+          description: Fecha de la evidencia           
+    detalleEvidenciaResponse:
+      type: object
+      description: Representa el detalle de la evidencia
+      properties:
+        puntoVenta:
+          type: string
+          example: 'San Antonio de Prado'
+          description: Nombre de punto de venta
+        numeroPedido:
+          type: string
+          example: '1'
+          description: Número del pedido
+        numeroEntrega:
+          type: string
+          example: '1'
+          description: Número de la entrega    
+        usuario:
+          type: string
+          example: 'cg-jcusuga'
+          description: Usuario que generó la evidencia
+        fechaEvidencia:
+          type: string
+          example: '12/12/2019'
+          description: Fecha de la evidencia
+        correoOrigen:
+          type: string
+          example: 'origen@dominio.com'
+          description: Email de origen   
+        correoDestino:
+          type: string
+          example: 'destino@dominio.com'
+          description: Email de destino
+        observaciones:
+          type: string
+          example: 'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archio.'
+          description: Observaciones de la evidencia
+        GUID:
+          type: string
+          example: '3F2504E0-4F89-11D3-9A0C-0305E82C3301'
+          description: Identificador del directorio donde están ubicados los archivos
+        archivos:
+          type: array
+          items:             
+              $ref: '#/components/schemas/archivoResponse'
+        documentosArticulos:
+          type: array
+          items:             
+              $ref: '#/components/schemas/documentoArticuloResponse'        
+    archivoResponse:
+      type: object
+      description: Representa archivo devuelto
+      properties:        
+        NombreArchivo:
+          type: string
+          example: 'evidencia1'
+          description: Nombre del archivo
+        ExtensionArchivo:
+          type: string
+          example: 'gif'
+          description: Extensión del archivo
+    documentoArticuloResponse:
+      type: object
+      description: Representa el documento generado al artículo en recepción
+      properties:       
+        codigoArticulo:
+          type: string
+          example: 'PT-1485'
+          description: Código del artículo
+        nombreArticulo:
+          type: string
+          example: 'Pierna'
+          description: Nombre del artículo
+        documento:
+          type: string
+          example: 'Documento 1'
+          description: Nombre del documento
+  requestBodies:
+      evidenciaRequest:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/evidenciaRequest'
+        description: Solicitud para el registro de la evidencia
+        required: true
+     

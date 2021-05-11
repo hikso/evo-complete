@@ -1,0 +1,1645 @@
+﻿openapi: 3.0.0
+servers:
+# Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/juancamilous1808/HansTest/1.0.0
+  - description: EVO - API de Pedidos
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Pedidos
+  version: "1.0.0"
+  title: API de Pedidos
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Pedidos
+    description: Gestión de Pedidos
+paths:
+  /pedidos/comercial/traslado/borrador:
+    post:
+      tags:
+        - Pedidos
+      summary:  Asigna un pedido en comercial como borrador(Abierto).
+      operationId: asignarComercialTrasladoBorrado
+      requestBody:
+        $ref: '#/components/requestBodies/PedidoTrasladoRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+  /pedidos/compra/gestion:
+    get:
+      tags:
+        - Pedidos
+      summary: Retorna el detalle del pedido de tipo compra a gestionar
+      operationId: ObtenerPedidoCompraGestion
+      parameters:
+        - name : pedidoId
+          in: query
+          description: Indica el id del pedido
+          required: true
+          schema:
+           type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/pedidoCompraGestionResponse'   
+  /pedidos/compra/abierto/filtrar:
+    post:
+      tags:
+        - Pedidos
+      summary: Obtiene todos los registros de pedidos de tipo solicitud compra con o sin filtros de búsqueda
+      operationId: obtenerPedidosCompraAbiertoxFiltro
+      requestBody:
+        $ref: '#/components/requestBodies/filtrarPedidoCompraRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerPedidosCompraResponse'      
+  /pedidos/pedido/cancelar:
+   post:
+      tags:
+        - Pedidos
+      summary: Cancelar un pedido
+      operationId: cancelarPedido
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+        $ref: '#/components/requestBodies/cancelarPedidoRequest'
+  /pedidos/pedido/editar:
+   post:
+      tags:
+        - Pedidos
+      summary: Editar un pedido
+      operationId: editarPedido
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+        $ref: '#/components/requestBodies/editarPedidoRequest'
+  /pedidos/consulta/pedido:
+    get:
+      tags:
+        - Pedidos
+      summary: Retorna el detalle del pedido
+      operationId: ObtenerConsultaPedido
+      parameters:
+        - name : pedidoId
+          in: query
+          description: Indica el id del pedido
+          required: true
+          schema:
+           type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/pedidoConsultaResponse'   
+  /pedidos/solicitud/habilitar:
+   get:
+      tags:
+        - Pedidos
+      summary: Verifica si se puede solicitar pedidos a las plantas
+      operationId: habilitarSolicitudPedido
+      parameters:
+        - name: codigoCliente
+          in: query
+          description: Indica el código del cliente que realizó la solicitud
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito 
+  /pedidos/distribucion:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene los registros de pedidos en distribución
+      operationId: obtenerTodosPedidosDistribucion
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosDistribucionResponse'    
+  /pedidos/cantidadxestados:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene por estado la cantidad de pedidos
+      operationId: obtenerTodosCantidadPedidosxEstado
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/ObtenerEstadoPedidoResponse'
+  /pedidos/solicitud/borradores:
+   get:
+      tags:
+        - Pedidos
+      summary: Verifica que actualmente existan solicitudes en estado borrador en cada planta
+      operationId: existeSolicitudPlantasBorrador
+      parameters:
+        - name: codigoPuntoVenta
+          in: query
+          description: Código del punto de venta
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito  
+          content:
+              application/json:
+                schema:
+                  type: boolean      
+  /pedidos/estados:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene los estados de los Pedidos
+      operationId: obtenerTodosEstadosPedido
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/ObtenerEstadoPedidoResponse'
+  /pedidos/plantabeneficio:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene los registros de pedidos hacia planta beneficio
+      operationId: obtenerTodosPedidosABeneficio
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosBeneficioResponse'                
+   post:
+      tags:
+        - Pedidos
+      summary: Obtiene todos los registros de Pedidos a planta beneficio aplicando filtros de búsqueda
+      operationId: obtenerTodosPedidosABenficioxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarPedidoBeneficioRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosBeneficioResponse'                
+  /pedidos/plantabeneficio/solicitud:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene una solicitud del pedido de un punto de venta o cliente externo desde la planta   
+      operationId: obtenerSolicitudPedido
+      parameters:
+        - name: id
+          in: query
+          description: Pedido Id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerPedidoEnPlantaResponse'                                   
+  /pedidos:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene los registros de Pedidos
+      operationId: obtenerTodosPedidos
+      parameters:
+        - name: desde
+          in: query
+          description: Indica el número de registro desde el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: hasta
+          in: query
+          description: Indica el número de registro hasta el cuál se deben obtener los registros
+          required: true
+          schema:
+            type: integer
+        - name: WhsCode
+          in: query
+          description: Indica el código de la bodega 
+          required: true
+          schema:
+            type: string    
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosResponse'
+   post:
+      tags:
+        - Pedidos
+      summary: Crea un pedido
+      operationId: crearPedido
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+        $ref: '#/components/requestBodies/PedidoRequest'
+  /pedidos/filtrar:
+    post:
+      tags:
+        - Pedidos
+      summary: Obtiene todos los registros de Pedidos aplicando filtros de búsqueda
+      operationId: obtenerTodosPedidosxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarPedidoRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosPedidosResponse'  
+  /cargaArchivos/filtrar:
+     post:
+      tags:
+        - Pedidos
+      summary: Obtiene todos los archivos de canales filtrados
+      operationId: obtenerTodosArchivosxFiltro
+      requestBody:
+          $ref: '#/components/requestBodies/FiltrarArchivoRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerTodosArchivosResponse'
+  /pedidos/consulta:
+    get:
+      tags:
+        - Pedidos
+      summary: Consulta el pedido por el id
+      operationId: obtenerConsultaPedidoxId
+      parameters:
+        - name: id
+          in: query
+          description: Indica el pedido ID
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ConsultaPedidoResponse'                      
+  /pedidos/obtener:
+    get:
+      tags:
+        - Pedidos
+      summary: Obtiene el pedido por el id
+      operationId: obtenerPedidoxId
+      parameters:
+        - name: id
+          in: query
+          description: Indica el pedido ID
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/ObtenerPedidoResponse'                                      
+  /pedidos/borrador:
+    post:
+      tags:
+        - Pedidos
+      summary: Obtiene si actualmente existe un pedido en estado "Borrador"
+      operationId: ExistePedidoBorrador
+      requestBody:
+          $ref: '#/components/requestBodies/ObtenerPedidoBorradorRequest'
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              text/plain:
+                schema:
+                  type: boolean
+                  example: true   
+  /pedidos/actualizar:
+   post:
+      tags:
+        - Pedidos
+      summary: Actualizar un pedido
+      operationId: actualiPedido
+      responses:
+        '200':
+          description: Operación realizada con éxito
+      requestBody:
+        $ref: '#/components/requestBodies/PedidoRequest'   
+  /pedidos/series:
+   get:
+      tags:
+        - Pedidos
+      summary: Obtiene los registros de series
+      operationId: obtenerSerie
+      parameters:
+        - name: CodigoBodega
+          in: query
+          description: Indica el código de bodega
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                 type: string
+                 items: 
+                  $ref: '#/components/schemas/SerieResponse'
+  /pedidos/cargarArchivo:
+     post:
+         tags:
+          - Pedidos
+         summary: cargar archivos
+         operationId: cargarArchivo
+         requestBody:
+            $ref: '#/components/requestBodies/CargarArchivoRequest'
+         responses:
+            '200':
+              description: Operación realizada con éxito 
+  /pedidos/eliminarArchivo:
+     post:
+         tags:
+          - Pedidos
+         summary: eliminar archivos
+         operationId: eliminarArchivo
+         requestBody:
+            $ref: '#/components/requestBodies/EliminarArchivoRequest'
+         responses:
+            '200':
+              description: Operación realizada con éxito    
+components:
+  schemas:
+    CargarArchivoRequest:
+      type: object
+      description: Representa archivo enviado
+      properties:
+        fechaInicial:
+          type: string
+          example: '12/12/2020'
+          description: Fecha inicial carga
+        fechaFinal:
+          type: string
+          example: '12/12/2020'
+          description: Fecha final carga
+        base64:
+          type: string
+          example: 'wAAAAAAAAAAAGgVCLYAAA3kICWdL5abo4J/TI1u/TBUkd7+5ui'
+          description: Archivo en base64
+        NombreArchivo:
+          type: string
+          example: 'CargaCanales20200924_155600R'
+          description: Nombre del archivo
+        Separador:
+          type: string
+          example: ';'
+          description: separador decimal
+    EliminarArchivoRequest:
+      type: object
+      description: Representa archivo enviado
+      properties:
+        NombreArchivo:
+          type: string
+          example: 'CargaCanales20200924_155600R'
+          description: Nombre del archivo
+    PedidoTrasladoRequest:
+      type: object
+      description: Pedido tipo traslado a actualizar en comercial
+      properties:
+        fechaLimiteSugerida:
+          type: string
+          example: '12/12/2020'
+          description: Fecha limite sugerida
+        articulos:
+          type: array
+          description: Artículos del pedido
+          items:
+            $ref: '#/components/schemas/ArticuloTrasladoRequest'
+    ArticuloTrasladoRequest:
+      type: object
+      description: Articulo tipo traslado a actualizar en comercial
+      properties:
+        detallePedidoId:
+          type: integer
+          example: 1
+          description: Id del detalle del pedido  
+        estadoArticuloId:
+          type: integer
+          example: 1
+          description: Id del estado del artículo
+        empaqueId:
+          type: integer
+          example: 1
+          description: Id del tipo de empaque  
+        cantidadAprobada:
+          type: string
+          example: '145030'
+          description: Cantidad del artículo aprobada        
+    pedidoCompraGestionResponse:
+      type: object
+      description: Pedido tipo compra a gestionar
+      properties:
+        numeroPedido:
+          type: string
+          example: 'PRA-523'
+          description: Número pedido
+        cliente:
+          type: string
+          example: 'Punto venta Prado'
+          description: Nombre del cliente
+        fechaLimiteSugerida:
+          type: string
+          example: '12/12/2020'
+          description: Fecha limite sugerida
+        fechaSolicitud:
+          type: string
+          example: '12/12/2020'
+          description: Fecha de solicitud
+        fechaGestionCompra:
+          type: string
+          example: '12/12/2020'
+          description: Fecha de la gestión de compra   
+        usuarioPedido:
+          type: string
+          example: 'cg-jcusuga'
+          description:  Nombre del usuario que realizó el pedido
+        nombreEstadoPedido:
+          type: string
+          example: 'Abierto'
+          description:  Nombre del estado del pedido 
+        articulos:
+          type: array
+          description: Artículos del pedido
+          items:
+            $ref: '#/components/schemas/articuloCompraResponse'
+        acciones:
+          type: array
+          description: Acciones de compras asociadas a los artículos del pedido
+          items:
+            $ref: '#/components/schemas/accionCompraResponse'  
+    articuloAccionCompraResponse:
+      type: object
+      description: Acción de compra
+      properties:
+        detallePedidoId:
+          type: integer
+          example: 1
+          description: Id del detalle del pedido 
+        cantidad:
+          type: string
+          example: '50.000'
+          description: Cantidad asociada a esta orden de compra 
+        ordenCompra:
+          type: string
+          example: 'AVCRTY454643fgf'
+          description: Orden de compra 
+    accionCompraResponse:
+      type: object
+      description: Artículo asociado a la gestion de compra del pedido
+      properties:
+        accionId:
+          type: integer
+          example: 1
+          description: Id de la acción de compra 
+        nombreAccion:
+          type: string
+          example: 'Solicitud traslado'
+          description: Nombre de la acción de compra 
+        articulos:
+          type: array
+          description: Artículos asociados a las gestiones de compra del pedido
+          items:
+            $ref: '#/components/schemas/articuloAccionCompraResponse'        
+    articuloCompraResponse:
+      type: object
+      description: Artículo de tipo compra
+      properties:
+        detallePedidoId:
+          type: integer
+          example: 1
+          description: Id del detalle del pedido  
+        codigoArticulo:
+          type: string
+          example: 'CAF-18026'
+          description: Código del artículo
+        nombreArticulo:
+          type: string
+          example: 'Pitillos x 200'
+          description: Nombre del artículo
+        cantidadSolicitada:
+          type: string
+          example: '20.000'
+          description: Cantidad solicitada
+        unidadMedida:
+          type: string
+          example: 'Unidades'
+          description: Unidad de medida del artículo
+        cantidadGestionar:
+          type: string
+          example: '5.000'
+          description: Cantidad a gestionar
+        stockAlmacen:
+          type: string
+          example: '150.000'
+          description: Stock del almacen de compras de este artículo
+        observaciones:
+          type: string
+          example: 'Observaciones del artículo'
+          description: Observaciones del artículo
+    ObtenerPedidosCompraResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de registros de Pedidos
+          items:
+            type: object
+            properties:
+              pedidoId:
+                type: integer
+                example: 1
+                description: Id del pedido            
+              numeroPedido:
+                type: string
+                example: "PRA-1"
+                description: Número del pedido
+              fechaSolicitud:
+                type: string
+                example: 30/08/2019
+                description: Fecha de solicitud del pedido
+              fechaLimiteSugerida:
+                type: string
+                example: 30/08/2019
+                description: Fecha limite de entrega sugerida del pedido  
+              estado:
+                type: string
+                example: "Abierto"
+                description: Estado el pedido
+              cliente:
+                type: string
+                example: "Punto de venta Prado"
+                description: Nombre del cliente
+              diasEntrega:
+                type: string
+                example: "2"
+                description: Días que faltan para la entrega del pedido          
+    FiltrarPedidoCompraRequest:
+       type: object
+       description: Objeto que contiene los filtros de los pedidos tipo compra
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+            numeroPedido:
+                type: string
+                example: 'PRA-1'
+                description: Indica el número del pedido
+            fechaSolicitud:
+                type: string
+                example: 30/08/2019
+                description: Fecha solicitud del pedido
+            fechaLimiteSugerida:
+                type: string
+                example: 15/09/2019
+                description: Fecha limite sugerida del pedido
+            estadoPedido:
+                type: string
+                example: 'Abierto'
+                description: Indica el estado del pedido
+            cliente:
+                type: string
+                example: 'Punto de venta Bello'
+                description: Nombre del cliente que solicitó el pedido
+            diasEntrega:
+                type: string
+                example: '2'
+                description: Días que faltan para la entrega del pedido        
+    cancelarPedidoRequest:
+      type: object
+      required:
+        - pedidoId
+        - motivoId        
+      description: Cancelar pedido
+      properties:
+        pedidoId:
+          type: integer
+          example: 1
+          description: Id del pedido
+        motivoId:
+          type: integer
+          example: 1
+          description: Id del Motivo        
+    editarPedidoRequest:
+      type: object
+      required:
+        - pedidoId
+        - articulos        
+      description: Editar pedido
+      properties:
+        pedidoId:
+          type: integer
+          example: 1
+          description: Id del pedido       
+        articulos:
+          type: array
+          description: Artículos del pedido
+          items:
+            type: object
+            required:
+             - detallePedidoId      
+             - estadoArticuloId
+             - empaqueId           
+             - cantidad
+            properties: 
+              detallePedidoId:
+               type: integer
+               example: 1
+               description: Id del detalle del pedido
+              estadoArticuloId:
+               type: integer
+               example: 1
+               description: Id del estado del pedido
+              cantidad:
+               type: number
+               format: decimal
+               example: 234.13
+               description: Cantidad del artículo solicitada
+              empaqueId:
+               type: integer
+               example: 1
+               description: Id del empaque
+              observacion:
+               type: string
+               example: ''
+               description: Observacion
+    SerieResponse:
+       type: string
+       description: Artículo encontrado
+       properties:
+          Series:
+            type: string
+            example: '1220'
+            description: Codigo de la serie     
+    pedidoConsultaResponse:
+      type: object
+      description: Detalle de un pedido
+      properties:
+        tipoSolicitud:
+          type: string
+          example: 'Traslado'
+          description: Tipo de solicitud
+        numeroPedido:
+          type: string
+          example: 'PRA-523'
+          description: Número pedido
+        estadoPedido:
+          type: string
+          example: 'Abierto'
+          description: Estado pedido
+        fechaCargueVehiculo:
+          type: string
+          example: '12/12/2020'
+          description: Fecha Cargue Vehiculo
+        nombreConductor:
+          type: string
+          example: 'Juan Camilo'
+          description:  Nombre del conductor
+        fechaSolicitud:
+          type: string
+          example: '12/12/2020'
+          description: Fecha de solicitud
+        horaEstimadaEntrega:
+          type: string
+          example: '10:30'
+          description:  Hora estimada entrega
+        vehiculo:
+          type: string
+          example: 'ARG 123'
+          description: Placa del vehiculo
+        auxiliar:
+          type: string
+          example: 'Hugo'
+          description:  nombre del auxiliar
+        fechaLimiteSugerida:
+          type: string
+          example: '12/12/2020'
+          description: Fecha limite sugerida
+        planeacionEntrega:
+          type: string
+          example: '1/3 , 2/3 , 3/3' 
+          description: Planeación de entregas
+        fechaEntrega:
+          type: string
+          example: '12/12/2020'
+          description: Fecha entrega
+        solicitudA:
+          type: string
+          example: 'Planta de beneficio'
+          description: Solicitud A
+        cancelarPedido:
+           type: boolean
+           example: true
+           description: Cancelar pedido
+        articulos:
+          type: array
+          description: Lista de registros de Pedidos
+          items:
+            $ref: '#/components/schemas/articuloConsultaResponse'  
+        acciones:
+          type: array
+          description: Acciones de compras asociadas a los artículos del pedido
+          items:
+            $ref: '#/components/schemas/accionCompraResponse'      
+    articuloConsultaResponse:
+      type: object
+      description: Artículo de la consulta del pedido
+      properties:
+        codigoArticulo:
+          type: string
+          example: 'PT-1485'
+          description: Código del artículo
+        nombreArticulo:
+          type: string 
+          example: 'Pierna Premium'
+          description: Nombre del artículo
+        cantidadSolicitada:
+          type: string
+          example: '100.000'
+          description:  Cantidad solicitada
+        cantidadAprobada:
+          type: string
+          example: '25.250'
+          description: Cantidad aprobada
+        cantidadProgramada:
+          type: string
+          example: '25.250 / 32.123 / 66.354'
+          description: Cantidades por entrega programada
+        estado:
+          type: string
+          example: 'Refigerado'
+          description: Estado del artículo
+        empaque:
+          type: string
+          example: 'Tradicional'
+          description: Empaque del artículo
+        unidadMedida:
+          type: string
+          example: 'Kg'
+          description: Unidad de medida del artículo
+        observaciones:
+          type: string
+          example: 'Este es un ejemplo de un observación'
+          description: Observaciones del artículo
+    ObtenerTodosPedidosDistribucionResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de registros de Pedidos
+          items:
+            type: object
+            properties:
+              PedidoId:
+                type: integer
+                example: 1
+                description: Id del pedido            
+              codigoPedido:
+                type: string
+                example: "PV-01"
+                description: Código del pedido
+              ordenCompra:
+                type: string
+                example: "Orden 1A"
+                description: Orden de compra (para clientes externos) 
+              fechaSolicitud:
+                type: string
+                example: 30/08/2019
+                description: Fecha en la que se registra el pedido
+              estado:
+                type: string
+                example: "Abierto"
+                description: Estado el pedido
+              cliente:
+                type: string
+                example: "Punto de venta Prado"
+                description: Nombre del cliente
+              entregas:
+                type: string
+                example: "2"
+                description: Cantidad máxima de entregas                           
+    ObtenerPedidoEnPlantaResponse:
+      type: object
+      description: Objeto que contiene el pedido
+      properties:
+        FechaSolicitud:
+          type: string
+          format: date
+          example: 08/10/2019
+          description: Fecha solicitud del pedido
+        FechaEntrega:
+          type: string
+          format: date
+          example: 08/10/2019
+          description: Fecha entrega del pedido
+        FechaAprobacion:
+          type: string
+          format: date
+          example: 08/10/2019
+          description: Fecha aporbación del pedido  
+        Cliente:
+          type: string
+          example: 'PRADO'
+          description: Nombre del cliente
+        Usuario:
+          type: string
+          example: 'Juan Camilo Usuga Sepúlveda'
+          description: Nombre del usuario que registró la solicitud
+        Codigo:
+          type: string
+          example: 'PRA-1'
+          description: Código del pedido
+        Estado:
+          type: string
+          example: 'Abierto'
+          description: Nombre del estado del pedido 
+        PedidoDetallesRespuesta:
+          type: array
+          description: Lista de detalles del Pedido
+          items:
+            type: object
+            properties:
+              Codigo:
+                type: string
+                example: 1
+                description: Código del artículo
+              Nombre:
+                type: string
+                example: 'Lomo'
+                description: Nombre del artículo
+              Estado:
+               type: string
+               example: 'Refigerado'
+               description: Estado del artículo
+              CantidadSolicitada:
+                type: string
+                example: "56020"
+                description: Cantidad solicitada del articulo
+              UnidadMedida:
+               type: string
+               example: 'kg'
+               description: Unidad de medida del artículo
+              CantidadAprobada:
+               type: number
+               format: decimal
+               example: 234.13
+               description: Cantidad aprobada del artículo
+              StockDisponible:
+                type: string
+                example: '1540.23'
+                description: Stock disponible
+              CantidadEnviada:
+               type: number
+               format: decimal
+               example: 234.13
+               description: Cantidad enviada del artículo
+              FechaEntrega1:
+               type: string
+               format: date
+               example: 08/10/2019
+               description: Primer fecha de entrega
+              FechaEntrega2:
+               type: string
+               format: date
+               example: 08/11/2019
+               description: Segunda fecha de entrega
+              EstadoArticuloId:
+               type: number
+               format: integer
+               example: 1
+               description: Id del estado del artículo
+              EmpaqueId:
+               type: number
+               format: integer
+               example: 1
+               description: Id del empaque
+              Empaque:
+               type: string               
+               example: 'Tradicional'
+               description: Id del empaque
+    ObtenerPedidoBorradorRequest:
+      type: object
+      required:
+        - WhsCode
+        - SolicitudPara
+      description: Solicitud verificar si existe pedido en borrador
+      properties:
+        WhsCode:
+          type: string
+          example: 'PV-PRA'
+          description: Código de la bodega que genera el pedido
+        SolicitudPara:
+          type: string
+          example: 'PB'
+          description: Código de la bodega para donde va el pedido
+    ObtenerEstadoPedidoResponse:
+       type: object
+       required:
+        - EstadoId
+        - EstadoNombre
+       description: Indica un estado del pedido
+       properties:
+        EstadoId:
+          type: integer
+          example: 1
+          description: Id del estado del pedido
+        EstadoNombre:
+          type: string
+          example: "Abierto"
+          description: Estado del pedido
+    ObtenerPedidoResponse:
+       type: object
+       description: Objeto que contiene el pedido
+       properties:
+        FechaPedido:
+          type: string
+          format: date
+          example: 08/10/2019
+          description: Fecha del pedido
+        CodigoPedido:
+          type: string
+          example: 'PB-10029'
+          description: Código del pedido
+        SolicitudPara:
+          type: string
+          example: 'PB-PT'
+          description: Código de la bodega tipo planta
+        FechaEntrega:
+          type: string
+          format: date
+          example: 12/12/2019
+          description: Fecha entrega
+        EstadoPedidoId:
+          type: integer
+          example: 1
+          description: Estado Pedido Id 
+        Detalles:
+          type: array
+          description: Lista de detalles del Pedido
+          items:
+            type: object
+            properties:
+              CodigoArticulo:
+                type: string
+                example: "PT-A1"
+                description: Código del artículo
+              NombreArticulo:
+                type: string
+                example: 'Lomo'
+                description: Nombre del artículo
+              EstadoArticulo:
+                type: integer
+                example: 1
+                description: Id del estado del artículo
+              Cantidad:
+               type: number
+               format: decimal
+               example: 234.13
+               description: Cantidad del artículo solicitada
+              UnidadMedida:
+                type: string
+                example: "KG"
+                description: Unidad de medida del artículo
+              PedidoSugerido:
+               type: string
+               example: '234.13'
+               description: Pedido sugerido
+              Stock:
+                type: string
+                example: '3250'
+                description: Stock
+              StockMinimo:
+                type: string
+                example: '1540.23'
+                description: Stock minímo
+              StockMaximo:
+                type: string
+                example: '1540.23'
+                description: Stock máximo
+              Observacion:
+               type: string
+               example: ''
+               description: Observacion
+    ConsultaPedidoResponse:
+       type: object
+       description: Objeto que contiene la consulta del pedido
+       properties:
+        NumeroPedido:
+          type: string
+          example: 'PRA-10029'
+          description: Número del pedido
+        EstadoPedido:
+          type: string
+          example: 'Enviado'
+          description: Estado del pedido
+        FechaSolicitud:
+          type: string
+          example: '12/12/2019'
+          description: Fecha de la solicitud del pedido
+        FechaEnvio:
+          type: string
+          example: '12/12/2019'
+          description: Fecha cuando se envíó el pedido
+        FechaRecibido:
+          type: string
+          example: '12/12/2019'
+          description: Fecha cuando el pedido fué recibído en el punto de venta
+        FechaCargueEnVehiculo:
+          type: string
+          example: '12/12/2019'
+          description: Fecha de cargue en vehículo 
+        NombreConductor:
+          type: string
+          example: 'Juan Camilo'
+          description: Nombre del conductor del vehículo
+        PlacaVehiculo:
+          type: string
+          example: 'TNB365'
+          description: Placa del vehículo
+        NombreAuxiliar:
+          type: string
+          example: 'Duban'
+          description: Nombre del auxiliar
+        Planta:
+          type: string
+          example: 'Planta Beneficio'
+          description: Nombre de la planta  
+        Detalles:
+          type: array
+          description: Lista de detalles del Pedido
+          items:
+            type: object
+            properties:
+              CodigoArticulo:
+                type: string
+                example: "PT-A1"
+                description: Código del artículo
+              NombreArticulo:
+                type: string
+                example: 'Lomo'
+                description: Nombre del artículo
+              EstadoArticulo:
+                type: string
+                example: 'Refigerado'
+                description: Estado del artículo
+              CantidadSolicitada:
+               type: string
+               example: '234.13'
+               description: Cantidad del artículo solicitada
+              UnidadMedida:
+                type: string
+                example: "KG"
+                description: Unidad de medida del artículo
+              CantidadAprobada:
+                type: string
+                example: '3250'
+                description: Cantidad aprobada por la planta
+              CantidadEnviada:
+                type: string
+                example: '1540.23'
+                description: Cantidad enviada por la planta
+              FechaEntrega:
+                type: string
+                example: '02/12/2019'
+                description: Fecha cuando llego el artículo a la bodega que solicitó el pedido que fue aprobado
+              CostoTraslado:
+                type: string
+                example: '1540.23'
+                description: Costo de traslado por artículo
+              CostoTransporte:
+                type: string
+                example: '1540.23'
+                description: Costo de transporte por artículo
+    ConsultaPedidoRequest:
+       type: object
+       description: Objeto que contiene el id del pedido
+       properties:
+        pedidoId:
+           type: integer
+           example: 1
+           description: Indica id del pedido    
+    FiltrarPedidoRequest:
+       type: object
+       description: Objeto que contiene los filtros de los pedidos
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros
+        whsCode:
+           type: string
+           example: 'PB-PT'
+           description: Indica el código de la bodega
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+            desde:
+                type: string
+                example: 30/08/2019
+                description: Fecha en la que se registra el pedido
+            hasta:
+                type: string
+                example: 15/09/2019
+                description: Fecha en la que se registra el pedido
+            estado:
+              type: string
+              example: 2
+              description: Id del estado del pedido
+            plantaBeneficio:
+              type: boolean
+              example: true
+              description: Filtro por Planta Beneficio
+            plantaDerivados:
+              type: boolean
+              example: false
+              description: Filtro por Planta Derivados  
+            pendientes:
+              type: string
+              example: true
+              description: Los pendientes son todos los NO cerrados  
+            numeropedido:
+              type: string
+              example: PRA-1
+              description: Filtro por numero de pedido
+    FiltrarArchivoRequest:
+       type: object
+       description: Objeto que contiene los filtros de los archivos
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+            desde:
+                type: string
+                example: 30/08/2019
+                description: Fecha inicial en la que se carga el archivo
+            hasta:
+                type: string
+                example: 15/09/2019
+                description: Fecha final en la que se carga el archivo
+            fechaCarga:
+                type: string
+                example: 15/09/2019
+                description: Fecha en la que se carga el archivo
+            nombreArchivo:
+              type: string
+              example: 2
+              description: Id del estado del pedido
+    PedidoRequest:
+      type: object
+      required:
+        - WhsCode
+        - SolicitudPara
+        - Usuario
+        - EstadoPedido
+        - TipoSolicitudId
+      description: Solicitud del pedido
+      properties:
+        PedidoId:
+          type: integer
+          example: 1
+          description: Id del pedido
+        WhsCode:
+          type: string
+          example: 'PV-PRA'
+          description: Código de la bodega que genera el pedido
+        SolicitudPara:
+          type: string
+          example: 'PB'
+          description: Código de la bodega para donde va el pedido
+        Usuario:
+          type: string
+          example: 'jusuga'
+          description: Usuario del Usuario que generó el pedido
+        FechaEntrega:
+          type: string          
+          example: '29/03/2018'
+          description: Indica la fecha de entrega del pedido
+        EstadoPedido:
+          type: string
+          example: 'Definitivo'
+          description: Estado del pedido
+        TipoSolicitudId:
+          type: integer
+          example: 1
+          description: Id del tipo de solicitud
+        detalles:
+          type: array
+          description: Detalles del Pedido
+          items:
+            type: object
+            required:
+             - ItemCode
+             - Cantidad
+            properties:
+              ItemCode:
+                type: string
+                example: "P01"
+                description: Código del artículo
+              EstadoArticuloId:
+               type: integer
+               example: 1
+               description: Id del estado del pedido
+              Cantidad:
+               type: number
+               format: decimal
+               example: 234.13
+               description: Cantidad del artículo solicitada
+              EmpaqueId:
+               type: integer
+               example: 1
+               description: Id del empaque
+              Observacion:
+               type: string
+               example: ''
+               description: Observacion
+    ObtenerTodosPedidosBeneficioResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de registros de Pedidos
+          items:
+            type: object
+            properties:
+              PedidoId:
+                type: integer
+                example: 1
+                description: Id del pedido            
+              codigoPedido:
+                type: string
+                example: "PV-01"
+                description: Código del pedido
+              fechaSolicitud:
+                type: string
+                example: 30/08/2019
+                description: Fecha en la que se registra el pedido
+              fechaEntrega:
+                type: string
+                example: 31/08/2019
+                description: Fecha en que se entrega el pedido
+              estado:
+                type: string
+                example: "Abierto"
+                description: Estado el pedido
+              cliente:
+                type: string
+                example: "Punto de venta Prado"
+                description: Nombre del cliente
+              diasEntrega:
+                type: string
+                example: "1"
+                description: Días para la entrega del pedido
+              solicitudA:
+                type: string
+                example: "Planta Beneficio"
+                description: Indica donde se está solicitando el pedido
+              codigoSolicitudA:
+                type: string
+                example: "PB-PDC"
+                description: Indica el código donde se está solicitando el pedido
+    ObtenerTodosPedidosResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de registros de Pedidos
+          items:
+            type: object
+            properties:
+              PedidoId:
+                type: integer
+                example: 1
+                description: Id del pedido            
+              codigoPedido:
+                type: string
+                example: "PV-01"
+                description: Código del pedido
+              fechaSolicitud:
+                type: string
+                example: 30/08/2019
+                description: Fecha en la que se registra el pedido
+              fechaEntrega:
+                type: string
+                example: 31/08/2019
+                description: Fecha en que se entrega el pedido
+              estado:
+                type: string
+                example: "Abierto"
+                description: Estado el pedido
+              planta:
+                type: string
+                example: "Planta Beneficio"
+                description: Nombre de la planta
+              diasEntrega:
+                type: string
+                example: "1"
+                description: Días para la entrega del pedido 
+    ObtenerTodosArchivosResponse:
+      type: object
+      description: Resultado general de consulta
+      properties:
+        numeroTotalRegistros:
+          type: integer
+          example: 37567
+          description: Número total de registros que posee la consulta
+        tamanhoPaginacion:
+          type: integer
+          example: 50
+          description: Número de registros a mostrar por página
+        registros:
+          type: array
+          description: Lista de registros de archivos
+          items:
+            type: object
+            properties:
+              ArchivoId:
+                type: integer
+                example: 1
+                description: Id del archivo            
+              NombreArchivo:
+                type: string
+                example: "CargaArchivoCanal_09/30/2020_12:15:44.csv"
+                description: nombre del archivo cargado
+              fechaCarga:
+                type: string
+                example: 30/08/2019
+                description: Fecha en la que se carrga el archivo
+              fechaInicial:
+                type: string
+                example: 31/08/2019
+                description: Fecha inicial en la que se carga el archivo
+              fechaFinal:
+                type: string
+                example: 31/08/2019
+                description: Fecha final en la que se carga el archivo
+    FiltrarPedidoBeneficioRequest:
+       type: object
+       description: Objeto que contiene los filtros de los pedidos a planta beneficio
+       properties:
+        desde:
+           type: integer
+           example: 1
+           description: Indica el número de registro desde el cuál se deben obtener los registros
+        hasta:
+           type: integer
+           example: 100
+           description: Indica el número de registro hasta el cuál se deben obtener los registros
+        filtro:
+          type: object
+          description: Criterios por los que se filtrará la consulta
+          properties:
+            filtrarPorFecha:
+                type: boolean
+                example: true
+                description: Indica si se filtra por fecha
+            fechaSolicitudDesde:
+                type: string
+                example: 30/08/2019
+                description: Fecha seleccionada en la que se registra el pedido(Desde)
+            fechaSolicitudHasta:
+                type: string
+                example: 15/09/2019
+                description: Fecha seleccionada en la que se registra el pedido(Hasta)
+            estadosIds:
+                type: array
+                description: Ids de los estados de los pedidos seleccionados
+                example: [1, 2, 3, 4]
+                items:
+                 type: integer
+            clientesInternosCodigos:
+                type: array
+                description: Códigos de los clientes internos seleccionados
+                example: ['CI 1','CI 2','CI 3','CI 4']
+                items:
+                 type: string
+            clientesExternosCodigo:
+                type: array
+                description: Códigos de los clientes externos seleccionados
+                example: ['CE 1','CE 2','CE 3','CE 4']
+                items:
+                 type: string     
+  requestBodies:
+    CargarArchivoRequest:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CargarArchivoRequest'
+        description: Solicitud para el archivo de carga de canales
+        required: true
+    EliminarArchivoRequest:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EliminarArchivoRequest'
+        description: Solicitud para el eliminar el archivo de carga
+        required: true
+    filtrarPedidoCompraRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarPedidoCompraRequest'
+      description: Solicitud de filtro de pedidos compra . Si no se ingresa ninguno de los criterios del filtro retorna todo
+      required: true
+    PedidoRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PedidoRequest'
+      description: Solicitud de pedido
+      required: true
+    FiltrarPedidoRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarPedidoRequest'
+      description: Solicitud de filtro de Pedidos. Se debe ingresar al menos uno de los criterios del filtro
+      required: true
+    FiltrarArchivoRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarArchivoRequest'
+      description: Solicitud de filtro de Archivos. Se debe ingresar al menos uno de los criterios del filtro
+      required: true
+    ConsultaPedidoRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ConsultaPedidoRequest'
+      description: Solicitud consulta pedido detalle.
+      required: true
+    ObtenerPedidoBorradorRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ObtenerPedidoBorradorRequest'
+      description: Solicitud obtener si actualmente existe un pedido en borrado
+      required: true     
+    FiltrarPedidoBeneficioRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FiltrarPedidoBeneficioRequest'
+      description: Solicitud de filtro de Pedidos a planta beneficio. Se debe ingresar al menos uno de los criterios del filtro
+      required: true
+    editarPedidoRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/editarPedidoRequest'
+      description: Solicitud de edición de pedido
+      required: true
+    cancelarPedidoRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/cancelarPedidoRequest'
+      description: Solicitud de cancelación de pedido
+      required: true
+    PedidoTrasladoRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PedidoTrasladoRequest'
+      description: Solicitud de una actualización a pedido en comercial traslado
+      required: true  

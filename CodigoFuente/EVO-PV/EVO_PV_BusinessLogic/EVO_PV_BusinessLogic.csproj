@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="NLog" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EVO_PV_BusinessObjects\EVO_PV_BusinessObjects.csproj" />
+    <ProjectReference Include="..\EVO_PV_DataAccess\EVO_PV_DataAccess.csproj" />
+    <ProjectReference Include="..\EVO_PV_Proxy\EVO_PV_Proxy.csproj" />
+  </ItemGroup>
+
+</Project>

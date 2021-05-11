@@ -1,0 +1,55 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Motivos
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Motivos
+  version: "1.0.0"
+  title: API de Motivos
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: Motivos
+    description: Gestión de Motivos
+paths:
+  /motivos:
+     get:
+      tags:
+        - Motivos
+      summary: Obtiene motivos de edición asociados a las entregas
+      operationId: obtenerMotivos
+      parameters:
+        - name : tipoMotivo
+          in: query
+          description: Indica el nombre del tipo de motivo
+          required: true
+          schema:
+           type: string
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                   $ref: '#/components/schemas/MotivoResponse'   
+components:
+  schemas:
+    MotivoResponse:
+         type: object
+         required:
+          - MotivoId
+          - Motivo
+         description: Indica un motivo
+         properties:
+          MotivoId:
+            type: integer
+            example: 1
+            description: Id del motivo
+          Motivo:
+            type: string
+            example: "EL cliente canceló la entrega"
+            description: Valor del motivo                   

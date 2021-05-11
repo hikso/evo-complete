@@ -1,0 +1,729 @@
+﻿<UserControl
+    x:Class="EVO_PV.Views.UCOrderListDetail"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:EVO_PV.Views"
+    xmlns:local1="clr-namespace:EVO_PV.Utilities"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="{Binding Path=WidthForUserControl, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/EVO_PV;Component/Resources/Style/style.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <BooleanToVisibilityConverter x:Key="VisibilityConverterBool" />
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+
+    <Grid Background="#eee">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Button
+            x:Name="NewRequest"
+            Grid.Row="0"
+            Width="150"
+            Margin="0,0,40,0"
+            Padding="0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Background="#00BCD4"
+            BorderBrush="#00BCD4"
+            Command="{Binding Path=ViewDetails}"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Visibility="{Binding Path=IsNotCraftOrder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}">
+            <Grid Width="150" HorizontalAlignment="Center">
+                <materialDesign:PackIcon
+                    Margin="10,2,0,0"
+                    Foreground="#FFFFFF"
+                    Kind="ChevronLeft" />
+                <TextBlock HorizontalAlignment="Center" Text="REGRESAR" />
+            </Grid>
+        </Button>
+        <Button
+            Grid.Row="0"
+            Width="150"
+            Margin="0,0,40,0"
+            Padding="0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Background="#00BCD4"
+            BorderBrush="#00BCD4"
+            Command="{Binding Path=ViewDetailsCraft}"
+            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+            Visibility="{Binding Path=IsCraftOrder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}">
+            <Grid Width="150" HorizontalAlignment="Center">
+                <materialDesign:PackIcon
+                    Margin="10,2,0,0"
+                    Foreground="#FFFFFF"
+                    Kind="ChevronLeft" />
+                <TextBlock HorizontalAlignment="Center" Text="REGRESAR" />
+            </Grid>
+        </Button>
+
+        <Grid Grid.Row="1">
+            <materialDesign:Card Grid.Row="1" Margin="30,0,30,10">
+                <Grid Style="{StaticResource ContentCard}">
+                    <StackPanel>
+                        <StackPanel.Resources>
+                            <FrameworkElement x:Key="ProxyElement" DataContext="{Binding}" />
+                        </StackPanel.Resources>
+                        <ContentControl Content="{StaticResource ProxyElement}" Visibility="Collapsed" />
+                        <StackPanel Visibility="{Binding Path=IsNotCraftOrder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}">
+                            <Grid Margin="0,10,0,20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Número Pedido: " />
+                                    <TextBlock Text="{Binding OrderListDetails.NumberOrderList}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Estado Pedido: " />
+                                    <TextBlock Text="{Binding OrderListDetails.State}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="2"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Fecha Cargue Vehículo: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DateCars}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="3"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Nombre Conductor: " />
+                                    <TextBlock Text="{Binding OrderListDetails.NameConductive}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Fecha Solicitud: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DateRequest}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Hora Estimada Entrega: " />
+                                    <TextBlock Text="{Binding OrderListDetails.Plant}" Visibility="{Binding Path=IsNotOpenOrder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="1"
+                                    Grid.Column="2"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Vehículo: " />
+                                    <TextBlock Text="{Binding OrderListDetails.Car}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="1"
+                                    Grid.Column="3"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Auxiliar: " />
+                                    <TextBlock Text="{Binding OrderListDetails.Aux}" />
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="2"
+                                    Grid.Column="0"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Fecha Límite Sugerida: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DateReceipt}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                                    Style="{StaticResource HeaderView}"
+                                    Visibility="{Binding Path=IsNotPurchaseOrder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Planeación Entrega: " />
+                                    <TextBlock Text="{Binding OrderListDetails.NameAuxiliary}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="2"
+                                    Grid.Column="2"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Fecha Entrega: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DateSend, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding Path=IsNotOpenOrder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="2"
+                                    Grid.Column="3"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Solicitud a: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DeliveryIsFor}" />
+                                </StackPanel>
+                                <StackPanel
+                                    Grid.Row="3"
+                                    Grid.Column="0"
+                                    Style="{StaticResource HeaderView}"
+                                    Visibility="{Binding Path=IsAprovedtOrder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Fecha Aprobación: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DateRequest}" />
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+                        <StackPanel Visibility="{Binding Path=IsCraftOrder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}">
+                            <Grid Margin="0,10,0,20">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Fecha Solicitud: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DateRequest}" />
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Estado Pedido: " />
+                                    <TextBlock Text="{Binding OrderListDetails.State}" />
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="1"
+                                    Grid.Column="0"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Fecha Límite Sugerida: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DateReceipt}" />
+                                </StackPanel>
+
+                                <StackPanel
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Style="{StaticResource HeaderView}">
+                                    <TextBlock Style="{StaticResource TextHeaderView}" Text="Solicitud a: " />
+                                    <TextBlock Text="{Binding OrderListDetails.DeliveryIsFor}" />
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+
+                        <DataGrid
+                            Width="1000"
+                            MaxHeight="470"
+                            AutoGenerateColumns="False"
+                            Background="Transparent"
+                            CanUserAddRows="False"
+                            CanUserDeleteRows="False"
+                            CanUserReorderColumns="False"
+                            CanUserResizeColumns="False"
+                            ColumnWidth="*"
+                            ItemsSource="{Binding OrderListDetails.Registers}"
+                            ScrollViewer.CanContentScroll="True"
+                            ScrollViewer.VerticalScrollBarVisibility="Auto"
+                            SelectedItem="{Binding OrderSelect}"
+                            SelectionMode="Single">
+
+                            <DataGrid.Resources>
+                                <ResourceDictionary>
+                                    <local1:DecimalConverter x:Key="decimalConverter" />
+                                </ResourceDictionary>
+                            </DataGrid.Resources>
+
+                            <DataGrid.Columns>
+
+                                <DataGridTemplateColumn Width="10*" Header="Código Artículo">
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Foreground="#7F0E06"
+                                                    Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                    TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=CodeArticle}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTemplateColumn Width="10*" Header="Nombre">
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Foreground="#7F0E06"
+                                                    Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                    TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=NameArticle}" TextWrapping="Wrap" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTemplateColumn Width="10*" Header="Cantidad Solicitada">
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Foreground="#7F0E06"
+                                                    Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                    TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=QuantityRequest, Converter={StaticResource decimalConverter}}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTemplateColumn
+                                    Width="10*"
+                                    Header="Cantidad Aprobada"
+                                    Visibility="{Binding DataContext.NotShowQuantityColumns, Source={StaticResource ProxyElement}, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Foreground="#7F0E06"
+                                                    Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                    TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=QuantityApprove, Converter={StaticResource decimalConverter}}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+
+                                <DataGridTemplateColumn
+                                    Width="11*"
+                                    Header="Cantidad Programada"
+                                    Visibility="{Binding DataContext.NotShowQuantityColumns, Source={StaticResource ProxyElement}, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Foreground="#7F0E06"
+                                                    Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                    TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=QuantityApprove, Converter={StaticResource decimalConverter}}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTemplateColumn
+                                    Width="10*"
+                                    Header="Estado"
+                                    Visibility="{Binding DataContext.IsNotPurchaseOrder, Source={StaticResource ProxyElement}, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=StateArticle}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTemplateColumn
+                                    Width="10*"
+                                    Header="Empaque"
+                                    Visibility="{Binding DataContext.IsNotPurchaseOrder, Source={StaticResource ProxyElement}, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Foreground="#7F0E06" Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=Package}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                                <DataGridTemplateColumn Width="10*" Header="Unidad Medida">
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Foreground="#7F0E06"
+                                                    Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                    TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=UnitMeasure}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+
+                                <DataGridTemplateColumn Width="20*" Header="Observaciones">
+                                    <DataGridTemplateColumn.HeaderTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock
+                                                    Foreground="#7F0E06"
+                                                    Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                    TextWrapping="Wrap" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.HeaderTemplate>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel>
+                                                <TextBlock
+                                                    Name="TextPopObservationDetail"
+                                                    Width="120"
+                                                    MaxWidth="120"
+                                                    HorizontalAlignment="Left"
+                                                    Text="{Binding Observation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                    TextTrimming="CharacterEllipsis" />
+                                                <Button
+                                                    Width="20"
+                                                    Height="20"
+                                                    Margin="-10,-20,10,0"
+                                                    Padding="0,0,2,0"
+                                                    HorizontalAlignment="Right"
+                                                    Background="#00BCD4"
+                                                    BorderBrush="#00BCD4"
+                                                    Command="{Binding Path=DataContext.CmdOpenEditObservationItem, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                    CommandParameter="{Binding Path=.}">
+                                                    <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Eye" />
+                                                </Button>
+                                                <Popup
+                                                    x:Name="InfoPopup"
+                                                    AllowsTransparency="True"
+                                                    IsOpen="{Binding IsPopObservationOpen, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                    Placement="Bottom"
+                                                    StaysOpen="False">
+                                                    <Border
+                                                        x:Name="InfoPopupBorder"
+                                                        Width="200"
+                                                        Height="100"
+                                                        Panel.ZIndex="10"
+                                                        Background="White"
+                                                        BorderBrush="LightGray"
+                                                        BorderThickness="1"
+                                                        CornerRadius="5">
+                                                        <Border.Effect>
+                                                            <DropShadowEffect
+                                                                BlurRadius="10"
+                                                                Direction="270"
+                                                                Opacity="0.5"
+                                                                ShadowDepth="7" />
+                                                        </Border.Effect>
+                                                        <TextBox
+                                                            x:Name="TextAreaPopup"
+                                                            AcceptsReturn="True"
+                                                            Background="White"
+                                                            Text="{Binding Observation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                            TextWrapping="Wrap"
+                                                            VerticalScrollBarVisibility="Visible" />
+                                                    </Border>
+                                                </Popup>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <StackPanel
+                            Name="stackContainers"
+                            Orientation="Horizontal"
+                            Visibility="{Binding Path=IsPurchaseOrder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}">
+                            <ItemsControl
+                                x:Name="ContainersItemControl"
+                                Width="980"
+                                HorizontalAlignment="Center"
+                                ItemsSource="{Binding Path=OrderListDetails.Actions, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Expander
+                                            x:Name="ArticlesExpanded"
+                                            Margin="10"
+                                            Header="{Binding Path=ActionName}"
+                                            Style="{StaticResource ExpanderArticles}">
+                                            <DataGrid
+                                                AutoGenerateColumns="False"
+                                                Background="Transparent"
+                                                CanUserAddRows="False"
+                                                CanUserDeleteRows="False"
+                                                CanUserReorderColumns="False"
+                                                CanUserResizeColumns="False"
+                                                ItemsSource="{Binding Articles}"
+                                                SelectedItem="{Binding OrderSelect}"
+                                                SelectionMode="Single">
+
+                                                <DataGrid.Resources>
+                                                    <ResourceDictionary>
+                                                        <local1:DecimalConverter x:Key="decimalConverter" />
+                                                    </ResourceDictionary>
+                                                </DataGrid.Resources>
+
+                                                <DataGrid.Columns>
+
+                                                    <DataGridTextColumn
+                                                        Width="10*"
+                                                        Binding="{Binding Path=ArticleCode}"
+                                                        Header="Código Artículo">
+                                                        <DataGridTextColumn.HeaderTemplate>
+                                                            <DataTemplate>
+                                                                <StackPanel Orientation="Vertical">
+                                                                    <TextBlock
+                                                                        Foreground="#7F0E06"
+                                                                        Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                                        TextWrapping="Wrap" />
+                                                                </StackPanel>
+                                                            </DataTemplate>
+                                                        </DataGridTextColumn.HeaderTemplate>
+                                                    </DataGridTextColumn>
+
+                                                    <DataGridTextColumn
+                                                        Width="10*"
+                                                        Binding="{Binding Path=ArticleName}"
+                                                        Header="Nombre">
+                                                        <DataGridTextColumn.HeaderTemplate>
+                                                            <DataTemplate>
+                                                                <StackPanel Orientation="Vertical">
+                                                                    <TextBlock
+                                                                        Foreground="#7F0E06"
+                                                                        Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                                        TextWrapping="Wrap" />
+                                                                </StackPanel>
+                                                            </DataTemplate>
+                                                        </DataGridTextColumn.HeaderTemplate>
+                                                    </DataGridTextColumn>
+
+                                                    <DataGridTextColumn
+                                                        Width="10*"
+                                                        Binding="{Binding Path=QuantityRequested, Converter={StaticResource decimalConverter}}"
+                                                        Header="Cantidad Solicitada">
+                                                        <DataGridTextColumn.HeaderTemplate>
+                                                            <DataTemplate>
+                                                                <StackPanel Orientation="Vertical">
+                                                                    <TextBlock
+                                                                        Foreground="#7F0E06"
+                                                                        Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                                        TextWrapping="Wrap" />
+                                                                </StackPanel>
+                                                            </DataTemplate>
+                                                        </DataGridTextColumn.HeaderTemplate>
+                                                    </DataGridTextColumn>
+
+                                                    <DataGridTextColumn
+                                                        Width="10*"
+                                                        Binding="{Binding Path=Quantity, Converter={StaticResource decimalConverter}}"
+                                                        Header="Cantidad Gestionada">
+                                                        <DataGridTextColumn.HeaderTemplate>
+                                                            <DataTemplate>
+                                                                <StackPanel Orientation="Vertical">
+                                                                    <TextBlock
+                                                                        Foreground="#7F0E06"
+                                                                        Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                                        TextWrapping="Wrap" />
+                                                                </StackPanel>
+                                                            </DataTemplate>
+                                                        </DataGridTextColumn.HeaderTemplate>
+                                                    </DataGridTextColumn>
+
+                                                    <DataGridTextColumn
+                                                        Width="10*"
+                                                        Binding="{Binding Path=MeasureUnit}"
+                                                        Header="Unidad Medida">
+                                                        <DataGridTextColumn.HeaderTemplate>
+                                                            <DataTemplate>
+                                                                <StackPanel Orientation="Vertical">
+                                                                    <TextBlock
+                                                                        Foreground="#7F0E06"
+                                                                        Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                                        TextWrapping="Wrap" />
+                                                                </StackPanel>
+                                                            </DataTemplate>
+                                                        </DataGridTextColumn.HeaderTemplate>
+                                                    </DataGridTextColumn>
+
+                                                    <DataGridTemplateColumn Width="20*" Header="Observaciones">
+                                                        <DataGridTemplateColumn.HeaderTemplate>
+                                                            <DataTemplate>
+                                                                <StackPanel Orientation="Vertical">
+                                                                    <TextBlock
+                                                                        Foreground="#7F0E06"
+                                                                        Text="{Binding Content, RelativeSource={RelativeSource Mode=TemplatedParent}}"
+                                                                        TextWrapping="Wrap" />
+                                                                </StackPanel>
+                                                            </DataTemplate>
+                                                        </DataGridTemplateColumn.HeaderTemplate>
+                                                        <DataGridTemplateColumn.CellTemplate>
+                                                            <DataTemplate>
+                                                                <StackPanel>
+                                                                    <TextBlock
+                                                                        Name="TextPopObservationDetail"
+                                                                        Width="120"
+                                                                        MaxWidth="120"
+                                                                        HorizontalAlignment="Left"
+                                                                        Text="{Binding Observation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                                        TextTrimming="CharacterEllipsis" />
+                                                                    <Button
+                                                                        Width="20"
+                                                                        Height="20"
+                                                                        Margin="-10,-20,10,0"
+                                                                        Padding="0,0,2,0"
+                                                                        HorizontalAlignment="Right"
+                                                                        Background="#00BCD4"
+                                                                        BorderBrush="#00BCD4"
+                                                                        Command="{Binding Path=DataContext.CmdOpenEditObservationItem, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}}"
+                                                                        CommandParameter="{Binding Path=.}">
+                                                                        <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Eye" />
+                                                                    </Button>
+                                                                    <Popup
+                                                                        x:Name="InfoPopup"
+                                                                        AllowsTransparency="True"
+                                                                        IsOpen="{Binding IsPopObservationOpen, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                                        Placement="Bottom"
+                                                                        StaysOpen="False">
+                                                                        <Border
+                                                                            x:Name="InfoPopupBorder"
+                                                                            Width="200"
+                                                                            Height="100"
+                                                                            Panel.ZIndex="10"
+                                                                            Background="White"
+                                                                            BorderBrush="LightGray"
+                                                                            BorderThickness="1"
+                                                                            CornerRadius="5">
+                                                                            <Border.Effect>
+                                                                                <DropShadowEffect
+                                                                                    BlurRadius="10"
+                                                                                    Direction="270"
+                                                                                    Opacity="0.5"
+                                                                                    ShadowDepth="7" />
+                                                                            </Border.Effect>
+                                                                            <TextBox
+                                                                                x:Name="TextAreaPopup"
+                                                                                AcceptsReturn="True"
+                                                                                Background="White"
+                                                                                Text="{Binding Observation, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                                                                TextWrapping="Wrap"
+                                                                                VerticalScrollBarVisibility="Visible" />
+                                                                        </Border>
+                                                                    </Popup>
+                                                                </StackPanel>
+                                                            </DataTemplate>
+                                                        </DataGridTemplateColumn.CellTemplate>
+                                                    </DataGridTemplateColumn>
+
+                                                </DataGrid.Columns>
+                                            </DataGrid>
+                                        </Expander>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+
+                        <StackPanel
+                            Margin="0,20"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Bottom"
+                            Orientation="Horizontal">
+                            <Button
+                                x:Name="btnCleanPage"
+                                Margin="0,0,5,0"
+                                Background="Red"
+                                BorderBrush="Red"
+                                Command="{Binding CancelOrderCommand}"
+                                Content="Cancelar Solicitud"
+                                IsEnabled="{Binding EnableCancelOrder}"
+                                Visibility="{Binding Path=IsNotCraftOrder, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource VisibilityConverterBool}}" />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </materialDesign:Card>
+
+            <Grid Style="{StaticResource IconCard}">
+                <Grid.Effect>
+                    <DropShadowEffect
+                        BlurRadius="20"
+                        RenderingBias="Quality"
+                        ShadowDepth="1"
+                        Color="#FFECECEC" />
+                </Grid.Effect>
+                <Border Style="{StaticResource BorderCard}" />
+                <materialDesign:PackIcon
+                    Width="30"
+                    Height="30"
+                    Margin="5"
+                    Padding="10"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Foreground="White"
+                    Kind="PlaylistAddCheck" />
+            </Grid>
+            <Grid Style="{StaticResource Title}">
+                <StackPanel Style="{StaticResource ContentTitle}">
+                    <TextBlock Style="{StaticResource TextTitle}" Text="Consulta Solicitud de Pedido: " />
+                    <TextBlock Style="{StaticResource TextTitle}" Text="{Binding OrderListDetails.TypeOrder}" />
+                </StackPanel>
+            </Grid>
+
+
+        </Grid>
+
+
+    </Grid>
+</UserControl>

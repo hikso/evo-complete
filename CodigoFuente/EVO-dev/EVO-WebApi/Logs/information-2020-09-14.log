@@ -1,0 +1,1019 @@
+2020-09-14 15:28:13.3558|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"desde":1,"hasta":100,"filtro":null} |url: |action: 
+2020-09-14 15:28:13.3558|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"desde":1,"hasta":100,"filtro":null} |url: |action: 
+2020-09-14 15:28:13.4442|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:28:13.4442|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:28:15.8258|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:28:15.8258|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:28:15.8437|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:28:15.8496|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:28:15.8496|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:28:15.8496|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:28:15.8711|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-14 15:28:15.8711|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-14 15:28:15.9156|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-14 15:28:15.9156|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-14 15:28:15.9156|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 15:28:15.9156|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 15:28:16.0393|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-14 15:28:16.0393|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-14 15:28:16.0393|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 15:28:16.0393|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 15:28:20.5098|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 15:28:20.5098|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:28:20.5098|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 15:28:20.5098|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:28:20.5222|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:28:20.5222|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:28:20.5222|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:28:20.5222|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:28:20.5222|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:28:21.0005|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:28:21.0209|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:28:21.9994|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:28:21.9994|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:28:22.0898|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:28:48.8072|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:28:48.8363|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:28:48.8363|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:28:48.8363|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:28:48.8363|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:28:48.8501|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:28:48.8501|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:28:48.8501|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:28:48.8501|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:28:48.8648|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:28:48.8648|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:28:49.0546|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:28:49.0546|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:28:49.1214|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:28:55.9945|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:28:55.9945|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:28:55.9945|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:28:55.9945|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:28:55.9945|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:28:55.9945|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:28:55.9945|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:28:56.0077|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:28:56.0077|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:28:56.0077|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:28:56.0077|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:28:56.1380|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:28:56.1380|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:28:56.2322|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:29:04.9901|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 15:29:04.9901|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:29:05.0196|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 15:29:05.0209|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:29:05.0209|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:29:05.0209|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:29:05.0401|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:29:05.0401|EVO_WebApi.Controllers.ArticulosApiController|Entró al método EliminarCompra en ArticulosApi - EVO-WebApi con los parámetros detallePedidoId = 9 , accionId=2 |url: |action: 
+2020-09-14 15:29:05.0401|EVO_BusinessLogic.BLArticulo|Entró al método EliminarCompra en BLArticulo - EVO-WebApi con los parámetros detallePedidoId = 9 , accionId=2 |url: |action: 
+2020-09-14 15:29:05.0401|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:29:05.0401|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:29:05.0401|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:29:05.0401|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:29:05.0401|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:29:05.0401|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:29:05.0546|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:29:05.0546|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 9 , accionId = 2 |url: |action: 
+2020-09-14 15:29:05.0546|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:29:05.1203|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:29:05.1203|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:29:05.1942|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:29:05.1942|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 15:29:05.1942|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:29:05.2086|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:29:05.2086|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:29:05.2086|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:29:05.2086|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:29:05.2086|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:29:05.2248|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:29:05.2248|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:29:05.3243|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:29:05.3243|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:29:05.3876|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:29:09.4994|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:29:09.4994|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:29:09.4994|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:29:09.4994|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:29:09.5068|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:29:09.5068|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:29:09.5068|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:29:09.5068|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:29:09.5068|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:29:09.5215|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:29:09.5215|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:29:09.5921|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:29:09.5921|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:29:09.6526|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:40:13.9954|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 15:40:14.0274|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:40:14.0274|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 15:40:14.0274|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:40:14.0908|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:40:14.0908|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:40:14.1019|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:40:14.1019|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:40:14.1019|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:40:14.1964|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:40:14.1964|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:40:14.6825|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:40:14.6825|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:40:14.7656|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:41:04.2913|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 15:41:04.2913|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 15:41:04.2913|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:41:04.2913|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:41:04.3033|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:41:04.3033|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:41:04.3033|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:41:04.3033|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:41:04.3033|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:41:04.3797|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:41:04.3829|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:41:04.5849|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:41:04.5849|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:41:04.9147|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:41:57.2918|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 15:41:57.2918|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 15:41:57.3234|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:41:57.3234|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:41:57.3234|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:41:57.3342|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:41:57.3342|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:41:57.3342|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:41:57.3342|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:41:57.4104|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:41:57.4141|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:41:57.5413|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:41:57.5413|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:41:57.6074|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:45:10.3596|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 15:45:10.3664|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:45:10.3664|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:45:10.3877|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 15:45:10.3877|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:45:10.3877|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:45:10.3877|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:45:10.3972|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:45:10.3972|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:45:10.4830|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:45:10.4830|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:45:10.6066|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:45:10.6066|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:45:10.6846|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:46:07.9458|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 15:46:07.9458|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:46:07.9458|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 15:46:07.9458|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:46:07.9680|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:46:07.9799|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:46:07.9799|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:46:08.0202|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:46:08.0202|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:46:08.1493|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:46:08.1493|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:46:08.3466|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:46:08.3466|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:46:09.5241|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:46:11.2625|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 15:46:11.2625|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:46:11.2625|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:46:11.2757|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 15:46:11.2757|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:46:11.2757|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:46:11.2757|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:46:11.2757|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:46:11.2757|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:46:11.3306|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:46:11.3335|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:46:11.4051|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:46:11.4051|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:46:11.4727|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:47:32.1310|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:47:32.1310|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:47:32.1310|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:47:32.1310|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:47:32.1310|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:47:32.1471|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:47:32.1471|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:47:32.1471|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:47:32.1471|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:47:32.1782|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:47:32.1782|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:47:32.4153|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:47:32.4153|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:47:32.6040|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:55:44.5552|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 15:55:44.5552|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:55:44.5761|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 15:55:44.5761|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:55:44.5761|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:55:44.5838|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:55:44.5838|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:55:44.5838|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:55:44.5838|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:55:44.6465|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:55:44.6465|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:55:44.7464|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:55:44.7464|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:55:44.8143|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:55:48.4071|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:55:48.4071|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:55:48.4071|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:55:48.4129|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:55:48.4129|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:55:48.4129|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:55:48.4129|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:55:48.4129|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:55:48.4129|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:55:48.4292|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:55:48.4292|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:55:48.5080|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:55:48.5080|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:55:48.6083|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:56:06.0083|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 15:56:06.0083|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 15:56:06.0336|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:56:06.0336|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:56:06.0467|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:56:06.0467|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:56:06.0526|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:56:06.0526|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:56:06.0526|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:56:06.1260|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:56:06.1260|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:56:06.1974|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:56:06.1974|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:56:06.2814|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:56:12.9852|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:56:12.9852|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:56:12.9852|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:56:12.9898|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:56:12.9898|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:56:12.9898|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:56:12.9898|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:56:12.9898|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:56:12.9898|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:56:12.9898|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:56:13.0068|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:56:13.0970|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:56:13.0970|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:56:13.1759|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:56:34.6444|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ActualizarCompra en ArticulosApi - EVO-WebApi con los parámetros {"pedidoId":6,"articulosActualizarCompra":[{"detallePedidoId":8,"cantidadGestionar":"100","accionId":2},{"detallePedidoId":0,"cantidadGestionar":"827.000000","accionId":2}]} |url: |action: 
+2020-09-14 15:56:34.6600|EVO_BusinessLogic.BLArticulo|Entró al método ActualizarCompra en EVO-WebApi con los parámetros {"PedidoId":6,"EstadoPedidoId":0,"FechaGestionCompra":"0001-01-01T00:00:00","ArticulosActualizarCompra":[{"DetallePedidoId":8,"CantidadGestionar":"100","AccionId":2},{"DetallePedidoId":0,"CantidadGestionar":"827.000000","AccionId":2}]} |url: |action: 
+2020-09-14 15:56:34.6645|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:56:34.6645|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:56:34.6645|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:56:34.6645|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:56:34.6645|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:56:34.6645|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:56:34.7050|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:56:34.7050|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:56:34.8300|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:56:34.8300|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:56:34.9259|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:56:34.9259|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 8 , accionId = 2 |url: |action: 
+2020-09-14 15:57:54.1452|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 15:57:54.1487|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:57:54.1632|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 15:57:54.1632|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:57:54.1929|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:57:54.1957|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:57:54.1957|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:57:54.1957|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:57:54.1957|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:57:54.2670|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:57:54.2715|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:57:54.3427|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:57:54.3427|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:57:54.4114|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:58:05.9686|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:58:05.9686|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 15:58:05.9686|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 15:58:05.9756|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:58:05.9756|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:58:05.9756|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:58:05.9756|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:58:05.9756|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:58:05.9756|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:58:06.0346|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:58:06.0380|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:58:06.0983|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:58:06.0990|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:58:06.1573|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:58:12.0390|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ActualizarCompra en ArticulosApi - EVO-WebApi con los parámetros {"pedidoId":6,"articulosActualizarCompra":[{"detallePedidoId":8,"cantidadGestionar":"100","accionId":2},{"detallePedidoId":9,"cantidadGestionar":"827.000000","accionId":2}]} |url: |action: 
+2020-09-14 15:58:12.0390|EVO_BusinessLogic.BLArticulo|Entró al método ActualizarCompra en EVO-WebApi con los parámetros {"PedidoId":6,"EstadoPedidoId":0,"FechaGestionCompra":"0001-01-01T00:00:00","ArticulosActualizarCompra":[{"DetallePedidoId":8,"CantidadGestionar":"100","AccionId":2},{"DetallePedidoId":9,"CantidadGestionar":"827.000000","AccionId":2}]} |url: |action: 
+2020-09-14 15:58:12.0390|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 15:58:12.0390|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 15:58:12.0390|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 15:58:12.0390|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 15:58:12.0390|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 15:58:12.0390|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 15:58:12.0789|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 15:58:12.0789|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:58:12.2164|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 15:58:12.2164|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 15:58:12.3696|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 15:58:12.3696|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 8 , accionId = 2 |url: |action: 
+2020-09-14 15:58:12.3696|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 9 , accionId = 2 |url: |action: 
+2020-09-14 16:17:21.9353|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 16:17:21.9481|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:17:21.9481|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:17:21.9481|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:17:21.9595|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:17:21.9595|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:17:21.9595|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:17:21.9595|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 16:17:21.9595|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:17:22.0009|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:17:22.0009|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:17:22.1019|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:17:22.1019|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:17:22.1790|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 16:22:00.8570|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 16:22:00.8570|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 16:22:00.9273|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:22:00.9744|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:22:01.6882|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"desde":1,"hasta":100,"filtro":null} |url: |action: 
+2020-09-14 16:22:01.6882|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"desde":1,"hasta":100,"filtro":null} |url: |action: 
+2020-09-14 16:22:01.6882|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:22:01.6972|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:22:02.7473|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:22:02.7473|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:22:02.7473|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:22:02.7593|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:22:02.7593|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:22:02.7593|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:22:02.7593|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:22:02.7593|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:22:02.7593|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:22:02.7593|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-14 16:22:02.7593|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-14 16:22:02.7727|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:22:02.7727|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:22:02.7880|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-14 16:22:02.7880|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-14 16:22:02.7880|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 16:22:02.7880|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 16:22:02.8412|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-14 16:22:02.8412|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-14 16:22:02.8412|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 16:22:02.8412|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 16:22:03.2655|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:22:03.2846|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:22:03.9596|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 16:22:03.9596|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:22:04.8341|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:22:04.8341|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:22:04.9783|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 16:22:05.0667|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 16:22:05.0682|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:22:05.0682|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:22:05.0682|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:22:05.0682|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:22:05.0682|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:22:05.0682|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:22:05.0909|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:22:05.0909|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:22:05.2209|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:22:05.2209|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:22:05.4113|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 16:22:07.7552|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:22:07.7552|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:22:07.7552|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:22:07.7709|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:22:07.7709|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:22:07.7709|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:22:07.7709|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:22:07.7709|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:22:07.7709|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:22:07.8251|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:22:07.8251|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:22:07.9860|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:22:07.9860|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:22:08.1502|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 16:22:10.3275|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:22:10.3275|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:22:10.3275|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:22:10.3275|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:22:10.3360|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:22:10.3360|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:22:10.3360|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:22:10.3360|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:22:10.3360|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:22:10.3846|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:22:10.3846|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:22:10.5144|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:22:10.5144|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:22:10.6307|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 16:22:13.9595|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ActualizarCompra en ArticulosApi - EVO-WebApi con los parámetros {"pedidoId":6,"articulosActualizarCompra":[{"detallePedidoId":8,"cantidadGestionar":"100","accionId":2},{"detallePedidoId":9,"cantidadGestionar":"827.000000","accionId":2}]} |url: |action: 
+2020-09-14 16:22:13.9740|EVO_BusinessLogic.BLArticulo|Entró al método ActualizarCompra en EVO-WebApi con los parámetros {"PedidoId":6,"EstadoPedidoId":0,"FechaGestionCompra":"0001-01-01T00:00:00","ArticulosActualizarCompra":[{"DetallePedidoId":8,"CantidadGestionar":"100","AccionId":2},{"DetallePedidoId":9,"CantidadGestionar":"827.000000","AccionId":2}]} |url: |action: 
+2020-09-14 16:22:13.9740|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:22:13.9740|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:22:13.9740|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:22:13.9740|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:22:13.9740|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:22:13.9740|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:22:14.0190|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:22:14.0190|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:22:14.1743|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:22:14.1743|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:22:14.3152|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":15.000000} |url: |action: 
+2020-09-14 16:22:14.3152|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 8 , accionId = 2 |url: |action: 
+2020-09-14 16:22:14.3447|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 9 , accionId = 2 |url: |action: 
+2020-09-14 16:34:23.7258|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:23.7258|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 16:34:23.8394|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:34:23.8394|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:34:26.0889|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:34:26.0889|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:34:26.1052|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:34:26.1052|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:26.1163|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:34:26.5890|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:34:26.6021|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:26.6021|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:26.6021|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:28.1680|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:28.1680|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:28.1792|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:28.1792|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:28.3433|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:30.8454|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:34:30.8542|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:34:30.8542|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:34:30.8542|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:34:30.8542|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:34:30.8542|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:34:30.8652|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:34:30.8652|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:30.8652|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:34:30.8652|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:34:30.8818|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:30.8818|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:30.8818|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:30.9533|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:30.9533|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:30.9533|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:30.9533|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:31.0251|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:35.0603|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:35.0603|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:34:35.0603|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:34:35.0748|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:34:35.0933|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 16:34:35.0933|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:34:35.0933|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:34:35.1024|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:35.1024|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:34:35.1233|EVO_WebApi.Controllers.ArticulosApiController|Entró al método EliminarCompra en ArticulosApi - EVO-WebApi con los parámetros detallePedidoId = 9 , accionId=2 |url: |action: 
+2020-09-14 16:34:35.1233|EVO_BusinessLogic.BLArticulo|Entró al método EliminarCompra en BLArticulo - EVO-WebApi con los parámetros detallePedidoId = 9 , accionId=2 |url: |action: 
+2020-09-14 16:34:35.1233|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:34:35.1352|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:34:35.1352|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:34:35.1352|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:34:35.1352|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:35.1352|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:34:35.1352|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:35.1504|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 9 , accionId = 2 |url: |action: 
+2020-09-14 16:34:35.1504|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:35.2386|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:35.2386|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:35.2410|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:35.2410|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:35.3389|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:35.3518|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:35.3518|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:34:35.3518|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:34:35.3518|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:34:35.3518|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:34:35.3518|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:35.3518|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:34:35.3746|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:34:35.3746|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:35.3746|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:35.3815|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:35.4533|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:35.4533|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:35.4533|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:35.4586|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:35.5332|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:37.5190|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:34:37.5205|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:34:37.5205|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:34:37.5205|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:34:37.5205|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:34:37.5205|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:34:37.5205|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:34:37.5205|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:37.5205|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:34:37.5404|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:34:37.5404|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:37.5404|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:37.5404|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:37.6563|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:37.6563|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:37.6563|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:37.6563|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:37.8583|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:37.8760|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:34:37.8760|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:34:37.8760|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:34:37.8831|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:34:37.8831|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:34:37.8831|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:34:37.8831|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:34:37.8831|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:37.8831|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:34:37.9061|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:34:37.9061|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:37.9061|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:37.9137|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:38.0135|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:38.0135|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:38.0135|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:38.0135|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:38.1049|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:45.3462|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:45.3524|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:34:45.3524|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 16:34:45.3524|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:34:45.3524|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:34:45.3646|EVO_WebApi.Controllers.ArticulosApiController|Entró al método EliminarCompra en ArticulosApi - EVO-WebApi con los parámetros detallePedidoId = 9 , accionId=2 |url: |action: 
+2020-09-14 16:34:45.3646|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:34:45.3646|EVO_BusinessLogic.BLArticulo|Entró al método EliminarCompra en BLArticulo - EVO-WebApi con los parámetros detallePedidoId = 9 , accionId=2 |url: |action: 
+2020-09-14 16:34:45.3646|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:34:45.3646|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:34:45.3646|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:34:45.3646|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:45.3646|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:34:45.3646|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:34:45.3646|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:34:45.3818|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 9 , accionId = 2 |url: |action: 
+2020-09-14 16:34:45.3818|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:34:45.3818|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:45.3818|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:45.3818|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:45.5829|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:45.5829|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:45.5851|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:45.5851|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:45.7655|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:48.1714|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:34:48.1714|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:34:48.1714|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:34:48.1714|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:34:48.1786|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:34:48.1786|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:34:48.1786|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:34:48.1786|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:48.1786|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:34:48.2002|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:34:48.2002|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:48.2002|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:48.2002|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:48.2837|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:48.2837|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:48.2837|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:48.2878|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:48.3587|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:54.1866|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ActualizarCompra en ArticulosApi - EVO-WebApi con los parámetros {"pedidoId":6,"articulosActualizarCompra":[{"detallePedidoId":8,"cantidadGestionar":"100","accionId":2},{"detallePedidoId":9,"cantidadGestionar":"827.000000","accionId":2}]} |url: |action: 
+2020-09-14 16:34:54.2030|EVO_BusinessLogic.BLArticulo|Entró al método ActualizarCompra en EVO-WebApi con los parámetros {"PedidoId":6,"EstadoPedidoId":0,"FechaGestionCompra":"0001-01-01T00:00:00","ArticulosActualizarCompra":[{"DetallePedidoId":8,"CantidadGestionar":"100","AccionId":2},{"DetallePedidoId":9,"CantidadGestionar":"827.000000","AccionId":2}]} |url: |action: 
+2020-09-14 16:34:54.2030|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:34:54.2030|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:34:54.2030|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:34:54.2108|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:34:54.2108|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:34:54.2108|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:34:54.2108|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:34:54.2108|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:54.2255|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:54.2255|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:54.3715|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:54.3715|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:34:54.3715|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:34:54.3715|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:34:54.5160|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:34:54.5160|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 8 , accionId = 2 |url: |action: 
+2020-09-14 16:35:02.3041|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ActualizarCompra en ArticulosApi - EVO-WebApi con los parámetros {"pedidoId":6,"articulosActualizarCompra":[{"detallePedidoId":8,"cantidadGestionar":"100","accionId":2},{"detallePedidoId":9,"cantidadGestionar":"827.000000","accionId":2}]} |url: |action: 
+2020-09-14 16:35:02.3041|EVO_BusinessLogic.BLArticulo|Entró al método ActualizarCompra en EVO-WebApi con los parámetros {"PedidoId":6,"EstadoPedidoId":0,"FechaGestionCompra":"0001-01-01T00:00:00","ArticulosActualizarCompra":[{"DetallePedidoId":8,"CantidadGestionar":"100","AccionId":2},{"DetallePedidoId":9,"CantidadGestionar":"827.000000","AccionId":2}]} |url: |action: 
+2020-09-14 16:35:02.3041|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:35:02.3041|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:35:02.3041|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:35:02.3041|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:35:02.3041|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:35:02.3041|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:35:02.3248|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:35:02.3248|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:35:02.3248|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:35:02.3248|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:35:02.4723|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:35:02.4723|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:35:02.4740|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:35:02.4740|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:35:02.6097|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:35:02.6097|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 8 , accionId = 2 |url: |action: 
+2020-09-14 16:35:12.4686|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 16:35:12.4686|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 16:35:12.4686|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:35:12.4686|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:35:12.4686|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:35:12.4762|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:35:12.4762|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:35:12.4762|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:35:12.4762|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:35:12.4762|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:35:12.4915|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:35:12.4915|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:35:12.4915|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:35:12.7870|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:35:12.7870|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:35:12.7870|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:35:12.7870|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:35:12.9737|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:35:19.9030|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:35:19.9030|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:35:19.9030|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:35:19.9030|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:35:19.9030|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:35:19.9128|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:35:19.9128|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:35:19.9128|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:35:19.9128|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:35:19.9290|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:35:19.9290|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:35:19.9290|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:35:19.9290|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:35:20.0023|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:35:20.0023|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:35:20.0023|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:35:20.0065|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:35:20.0678|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:35:24.5223|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ActualizarCompra en ArticulosApi - EVO-WebApi con los parámetros {"pedidoId":6,"articulosActualizarCompra":[{"detallePedidoId":8,"cantidadGestionar":"100","accionId":2},{"detallePedidoId":9,"cantidadGestionar":"827.000000","accionId":2}]} |url: |action: 
+2020-09-14 16:35:24.5223|EVO_BusinessLogic.BLArticulo|Entró al método ActualizarCompra en EVO-WebApi con los parámetros {"PedidoId":6,"EstadoPedidoId":0,"FechaGestionCompra":"0001-01-01T00:00:00","ArticulosActualizarCompra":[{"DetallePedidoId":8,"CantidadGestionar":"100","AccionId":2},{"DetallePedidoId":9,"CantidadGestionar":"827.000000","AccionId":2}]} |url: |action: 
+2020-09-14 16:35:24.5223|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:35:24.5223|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:35:24.5223|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:35:24.5223|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:35:24.5223|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:35:24.5362|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:35:24.5362|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:35:24.5362|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:35:24.5362|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:35:24.5362|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:35:24.6848|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:35:24.6848|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:35:24.6848|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:35:24.6848|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:35:24.8410|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:35:24.8410|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 8 , accionId = 2 |url: |action: 
+2020-09-14 16:52:47.7672|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-14 16:52:47.7714|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:52:47.7714|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:52:47.7881|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:52:47.7881|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:52:47.7881|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-14 16:52:47.7881|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-14 16:52:47.7881|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 16:52:47.8499|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 
+2020-09-14 16:52:47.8765|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-14 16:52:47.8765|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:52:47.8814|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:52:47.8814|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:52:47.8814|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:52:47.8814|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-14 16:52:47.8814|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-14 16:52:47.8814|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 16:52:47.9010|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 
+2020-09-14 16:56:59.0367|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-14 16:56:59.1023|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:57:00.7394|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:57:00.7547|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:57:00.7624|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:57:00.7624|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-14 16:57:00.7768|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-14 16:57:00.7768|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 16:57:00.8317|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 
+2020-09-14 16:57:00.8876|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosAbiertos en Api Pedidos con los parámetros desde = 1 hasta = 100 |url: |action: 
+2020-09-14 16:57:00.9142|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:57:00.9142|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:57:00.9142|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:57:00.9142|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:57:00.9282|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-14 16:57:00.9282|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosAbiertos con los parámetros: desde: 1, hasta: 100 |url: |action: 
+2020-09-14 16:57:00.9282|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 16:57:00.9282|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoTodosPedidosAbiertos |url: |action: 
+2020-09-14 16:57:13.8341|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"desde":1,"hasta":100,"filtro":null} |url: |action: 
+2020-09-14 16:57:13.8341|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"desde":1,"hasta":100,"filtro":null} |url: |action: 
+2020-09-14 16:57:13.8341|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:57:13.8341|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:57:13.8341|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:57:13.8341|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:57:13.8341|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:57:13.8341|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:57:13.8341|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:57:13.8341|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:57:13.8341|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-14 16:57:13.8499|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_TABLA |url: |action: 
+2020-09-14 16:57:13.8499|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-14 16:57:13.8499|EVO_BusinessLogic.BLPedido|Entró al método ObtenerPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-14 16:57:13.8499|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 16:57:13.8644|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 16:57:13.8861|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-14 16:57:13.8861|EVO_BusinessLogic.BLPedido|Entró al método ObtenerConteoPedidosCompraAbiertoxFiltro con los parámetros {"Desde":1,"Hasta":100,"NumeroPedido":null,"FechaSolicitud":null,"FechaLimiteSugerida":null,"EstadoPedido":null,"Cliente":null,"DiasEntrega":null} |url: |action: 
+2020-09-14 16:57:13.8861|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 16:57:13.8861|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : TAMANHO_PAGINACION_WEBAPI |url: |action: 
+2020-09-14 16:57:15.1828|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 16:57:15.1828|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 16:57:15.1828|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:57:15.1828|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:57:15.1828|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:57:15.1828|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:57:15.1940|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:57:15.1940|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:57:15.1940|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:57:15.6166|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:57:15.6166|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:57:15.6303|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:57:15.6303|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:57:16.5099|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:57:16.5099|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:57:16.5099|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:57:16.5222|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:57:16.5886|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:57:19.7487|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:57:19.7487|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:57:19.7487|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:57:19.7563|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:57:19.7563|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:57:19.7563|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:57:19.7563|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:57:19.7563|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:57:19.7563|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:57:19.7731|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:57:19.7731|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:57:19.7731|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:57:19.7731|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:57:19.9376|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:57:19.9376|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:57:19.9376|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:57:19.9376|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:57:20.0940|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:57:23.8429|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ActualizarCompra en ArticulosApi - EVO-WebApi con los parámetros {"pedidoId":6,"articulosActualizarCompra":[{"detallePedidoId":8,"cantidadGestionar":"100","accionId":2},{"detallePedidoId":9,"cantidadGestionar":"827.000000","accionId":2}]} |url: |action: 
+2020-09-14 16:57:23.8576|EVO_BusinessLogic.BLArticulo|Entró al método ActualizarCompra en EVO-WebApi con los parámetros {"PedidoId":6,"EstadoPedidoId":0,"FechaGestionCompra":"0001-01-01T00:00:00","ArticulosActualizarCompra":[{"DetallePedidoId":8,"CantidadGestionar":"100","AccionId":2},{"DetallePedidoId":9,"CantidadGestionar":"827.000000","AccionId":2}]} |url: |action: 
+2020-09-14 16:57:23.8576|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:57:23.8576|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:57:23.8649|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:57:23.8649|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:57:23.8649|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:57:23.8649|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:57:23.8649|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:57:23.8649|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:57:23.8804|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:57:23.8804|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:57:24.0599|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:57:24.0599|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:57:24.0599|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:57:24.0599|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:57:24.2347|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:57:24.2347|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 8 , accionId = 2 |url: |action: 
+2020-09-14 16:57:31.5978|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ActualizarCompra en ArticulosApi - EVO-WebApi con los parámetros {"pedidoId":6,"articulosActualizarCompra":[{"detallePedidoId":8,"cantidadGestionar":"100","accionId":2},{"detallePedidoId":9,"cantidadGestionar":"827.000000","accionId":2}]} |url: |action: 
+2020-09-14 16:57:31.6001|EVO_BusinessLogic.BLArticulo|Entró al método ActualizarCompra en EVO-WebApi con los parámetros {"PedidoId":6,"EstadoPedidoId":0,"FechaGestionCompra":"0001-01-01T00:00:00","ArticulosActualizarCompra":[{"DetallePedidoId":8,"CantidadGestionar":"100","AccionId":2},{"DetallePedidoId":9,"CantidadGestionar":"827.000000","AccionId":2}]} |url: |action: 
+2020-09-14 16:57:31.6001|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:57:31.6001|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:57:31.6001|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:57:31.6001|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:57:31.6001|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:57:31.6001|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:57:31.6171|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:57:31.6171|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:57:31.6171|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:57:31.6171|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:57:31.7939|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:57:31.7939|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:57:31.7939|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:57:31.7939|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:57:32.0146|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:57:32.0146|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 8 , accionId = 2 |url: |action: 
+2020-09-14 16:58:02.3749|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 16:58:02.3749|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 16:58:02.4040|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:58:02.4040|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:58:02.4040|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:58:02.4140|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:58:02.4140|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:58:02.4140|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:58:02.4140|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:58:02.4339|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:58:02.4339|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:58:02.4339|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:58:02.4445|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:58:02.7168|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:58:02.7168|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:58:02.7168|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:58:02.7168|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:58:02.8834|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:58:10.8240|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:58:10.8240|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 16:58:10.8240|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 16:58:10.8240|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:58:10.8240|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:58:10.8359|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:58:10.8359|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:58:10.8359|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:58:10.8359|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:58:10.8516|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:58:10.8516|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:58:10.8516|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:58:10.8516|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:58:11.1138|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:58:11.1138|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:58:11.1152|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:58:11.1152|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:58:11.3295|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:58:19.6115|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ActualizarCompra en ArticulosApi - EVO-WebApi con los parámetros {"pedidoId":6,"articulosActualizarCompra":[{"detallePedidoId":8,"cantidadGestionar":"100","accionId":2},{"detallePedidoId":9,"cantidadGestionar":"827.000000","accionId":2}]} |url: |action: 
+2020-09-14 16:58:19.6115|EVO_BusinessLogic.BLArticulo|Entró al método ActualizarCompra en EVO-WebApi con los parámetros {"PedidoId":6,"EstadoPedidoId":0,"FechaGestionCompra":"0001-01-01T00:00:00","ArticulosActualizarCompra":[{"DetallePedidoId":8,"CantidadGestionar":"100","AccionId":2},{"DetallePedidoId":9,"CantidadGestionar":"827.000000","AccionId":2}]} |url: |action: 
+2020-09-14 16:58:19.6182|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 16:58:19.6182|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 16:58:19.6182|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 16:58:19.6182|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 16:58:19.6182|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 16:58:19.6182|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 16:58:19.6393|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 16:58:19.6393|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:58:19.6393|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:58:19.6393|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:58:19.7567|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:58:19.7567|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 16:58:19.7567|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 16:58:19.7567|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 16:58:19.8470|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 16:58:19.8470|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 8 , accionId = 2 |url: |action: 
+2020-09-14 17:08:01.2436|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:01.2436|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 17:08:01.3539|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 17:08:01.3539|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 17:08:03.0434|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 17:08:03.0534|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 17:08:03.0534|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 17:08:03.0534|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:03.0534|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 17:08:03.4848|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 17:08:03.5035|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:03.5035|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:03.5069|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:04.4176|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:04.4176|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:04.4176|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:04.4176|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:04.6931|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:07.5600|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 17:08:07.5692|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 17:08:07.5692|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 17:08:07.5692|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 17:08:07.5692|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 17:08:07.5692|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 17:08:07.5858|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 17:08:07.5858|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:07.5858|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 17:08:07.6060|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 17:08:07.6060|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:07.6060|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:07.6147|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:07.7150|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:07.7150|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:07.7150|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:07.7150|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:07.8257|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:11.2408|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ActualizarCompra en ArticulosApi - EVO-WebApi con los parámetros {"pedidoId":6,"articulosActualizarCompra":[{"detallePedidoId":8,"cantidadGestionar":"100","accionId":2},{"detallePedidoId":9,"cantidadGestionar":"827.000000","accionId":2}]} |url: |action: 
+2020-09-14 17:08:11.2602|EVO_BusinessLogic.BLArticulo|Entró al método ActualizarCompra en EVO-WebApi con los parámetros {"PedidoId":6,"EstadoPedidoId":0,"FechaGestionCompra":"0001-01-01T00:00:00","ArticulosActualizarCompra":[{"DetallePedidoId":8,"CantidadGestionar":"100","AccionId":2},{"DetallePedidoId":9,"CantidadGestionar":"827.000000","AccionId":2}]} |url: |action: 
+2020-09-14 17:08:11.2602|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 17:08:11.2602|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 17:08:11.2602|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 17:08:11.2714|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 17:08:11.2714|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:11.2714|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 17:08:11.2714|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 17:08:11.2901|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:11.2901|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:11.2901|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:11.5279|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:11.5279|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:11.5279|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:11.5279|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:11.7076|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:11.7097|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 8 , accionId = 2 |url: |action: 
+2020-09-14 17:08:11.7530|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 9 , accionId = 2 |url: |action: 
+2020-09-14 17:08:11.9880|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:11.9880|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 17:08:11.9931|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 17:08:11.9931|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 17:08:11.9931|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 17:08:11.9931|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:11.9931|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 17:08:12.0252|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 17:08:12.0252|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:12.0252|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:12.0252|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:12.2416|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:12.2416|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:12.2416|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:12.2416|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:12.4508|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:17.4711|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 17:08:17.4711|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 17:08:17.4711|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 17:08:17.4757|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 17:08:17.4757|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 17:08:17.4757|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 17:08:17.4757|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 17:08:17.4757|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:17.4757|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 17:08:17.4943|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 17:08:17.4943|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:17.4943|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:17.4943|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:17.8198|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:17.8198|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:17.8198|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:17.8198|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:18.0642|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:21.9964|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerAcciones en Api Artículos sin parámetros |url: |action: 
+2020-09-14 17:08:21.9964|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:21.9964|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 17:08:21.9964|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 17:08:22.0069|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 17:08:22.0069|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 17:08:22.0069|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 17:08:22.0069|EVO_WebApi.Controllers.ArticulosApiController|Entró al método EliminarCompra en ArticulosApi - EVO-WebApi con los parámetros detallePedidoId = 9 , accionId=2 |url: |action: 
+2020-09-14 17:08:22.0220|EVO_BusinessLogic.BLArticulo|Entró al método EliminarCompra en BLArticulo - EVO-WebApi con los parámetros detallePedidoId = 9 , accionId=2 |url: |action: 
+2020-09-14 17:08:22.0220|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:22.0220|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 17:08:22.0220|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 17:08:22.0220|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 17:08:22.0220|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 17:08:22.0220|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 17:08:22.0364|EVO_BusinessLogic.BLPedido|Entró al método ObtenerGestionCompra con los parámetros detallePedidoId = 9 , accionId = 2 |url: |action: 
+2020-09-14 17:08:22.0364|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 17:08:22.0364|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:22.0364|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:22.0364|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:22.1990|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:22.1990|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:22.1990|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:22.1990|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:22.3595|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:22.3985|EVO_WebApi.Controllers.PedidosApiController|Entró al método ObtenerPedidoCompraGestion con el parámetro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:22.3985|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 17:08:22.3985|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 17:08:22.4148|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 17:08:22.4148|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 17:08:22.4148|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:22.4148|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 17:08:22.4343|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 17:08:22.4343|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:22.4343|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:22.4343|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:22.6109|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:22.6109|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:22.6182|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:22.6182|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:22.7674|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:26.2185|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 17:08:26.2185|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 17:08:26.2185|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 17:08:26.2242|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 17:08:26.2242|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 17:08:26.2242|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 17:08:26.2242|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 17:08:26.2242|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:26.2242|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 17:08:26.2461|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 17:08:26.2461|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:26.2461|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:26.2461|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:26.4089|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:26.4116|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:26.4116|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:26.4116|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:27.0466|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:34.8850|EVO_WebApi.Controllers.ArticulosApiController|Entró al método ObtenerArticulosCompraPendientes en ArticulosApi - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 17:08:34.8850|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticulosCompraPendientes en BLArticulo - EVO-WebApi con los parámetros pedidoId =  6 , accionId = 2 |url: |action: 
+2020-09-14 17:08:34.8850|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerAcciones en BLArticulo sin parámetros |url: |action: 
+2020-09-14 17:08:34.8850|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CORREO |url: |action: 
+2020-09-14 17:08:34.8850|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : NOTIFICACION_CREDENCIALES_CONTRASENIA |url: |action: 
+2020-09-14 17:08:34.8992|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_HOST |url: |action: 
+2020-09-14 17:08:34.8992|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : SMTP_PORT |url: |action: 
+2020-09-14 17:08:34.8992|EVO_BusinessLogic.BLPedido|Entró el método ObtenerPedidoCompraGestion en EVO-WebApi - BLPedido con el parametro pedidoId = 6 |url: |action: 
+2020-09-14 17:08:34.8992|EVO_BusinessLogic.BLPedido|Entró al método ObtenerTodosEstadosPedido sin parámetros |url: |action: 
+2020-09-14 17:08:34.9143|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : CODIGO_ALMACEN_COMPRA |url: |action: 
+2020-09-14 17:08:34.9143|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19075, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:34.9143|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:34.9143|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:35.7454|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 
+2020-09-14 17:08:35.7454|EVO_BusinessLogic.BLArticulo|Entró al método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con los parámetros codigoArticulo = PAP-19030, codigoBodega = PB-ALM |url: |action: 
+2020-09-14 17:08:35.7454|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : BASE_DATOS_SAP |url: |action: 
+2020-09-14 17:08:35.7454|EVO_BusinessLogic.BLParametroGeneral|Entró al método ObtenerValorPorNombre con los parámetros: nombre : XML_LEER_ARTICULO_BODEGA_SAP |url: |action: 
+2020-09-14 17:08:35.8339|EVO_BusinessLogic.BLArticulo|Salió del método ObtenerArticuloxBodegaSAP en EVO-WebApi - BLPedidos con respuesta bOArticuloBodegaSAP = {"Stock":666.000000} |url: |action: 

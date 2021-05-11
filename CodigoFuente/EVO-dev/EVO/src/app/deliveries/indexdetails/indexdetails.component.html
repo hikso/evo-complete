@@ -1,0 +1,115 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-right">
+                <a  class="btn btn-info pull-right mat-raised-button" routerLink="/pedidos/consulta">
+                    <span class="mat-button-wrapper">
+                        <i class="fa fa-chevron-left"></i>
+                        <span class="ml-1">Regresar</span>
+                    </span>
+                    <div class="mat-button-ripple mat-ripple"></div>
+                    <div class="mat-button-focus-overlay"></div>
+                </a>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-warning card-header-icon">
+                        <div class="card-icon">
+                            <i class="material-icons">playlist_add_check</i>
+                        </div>
+                        <h4 class="card-title">Detalle Pedido</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Cliente: </strong>
+                                {{ getPedido.Cliente }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Zona: </strong>
+                                {{ getPedido.Zona }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Orden de compra: </strong>
+
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Número Pedido: </strong>
+                                {{ getPedido.Codigo }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Estado: </strong>
+                                {{ getPedido.Estado }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Usuario: </strong>
+                                {{ getPedido.Usuario }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Fecha Solicitud: </strong>
+                                {{ getPedido.FechaSolicitud }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Fecha Entrega: </strong>
+                                {{ getPedido.FechaEntrega }}
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                                <strong class="text-primary-corp">Fecha Aceptación: </strong>
+                                {{ getPedido.FechaAprobacion }}
+                            </div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <p-table #dt class="table table-striped" [value]="getArticulos" selectionMode="single" [responsive]="true"
+                                [resizableColumns]="true" columnResizeMode=expand [paginator]="true" [rows]="maxR">
+
+                                <!-- Dropdown para la selección del numero de filas,
+                                    por defecto tiene el valor parametrizado en base de datos  -->
+                                <ng-template pTemplate="caption">
+                                    <div class="ui-grid ui-grid-responsive ui-fluid">
+                                        <span class="pagewidth">
+                                        <p-dropdown (onChange)="onChange($event)" [options]="maxregister" optionLabel="name"
+                                            [showClear]="true"></p-dropdown>
+                                        </span>
+                                        <span class="bold pagewidth text-corp">
+                                        Mostrar
+                                        </span>
+                                    </div>
+                                </ng-template>
+
+                                <!-- Encabezado de tabla -->
+                                <ng-template pTemplate="header">
+                                    <tr class="text-corp">
+                                        <th *ngFor="let item of columns" class="{{ item.class }}  align-items-center"> {{ item.header }}</th>
+                                    </tr>
+                                </ng-template>
+
+                                <!-- Contenido de la tabla -->
+                                <ng-template pTemplate="body" let-getArticulos >
+                                    <tr class="ng-star-inserted" [pSelectableRow]="getArticulos" class="select" >
+                                        <td>{{ getArticulos.Codigo }}</td>
+                                        <td>{{ getArticulos.Nombre }}</td>
+                                        <td>{{ getArticulos.Estado }}</td>
+                                        <td class="text-right">{{ getArticulos.CantidadSolicitada | decimalnumber }}</td>
+                                        <td class="text-right">{{ getArticulos.UnidadMedida }}</td>
+                                        <td class="text-right">{{ getArticulos.CantidadAprobada | decimalnumber }} </td>
+                                        <td class="text-right">{{ getArticulos.StockDisponible | decimalnumber }}</td>
+                                    </tr>
+                                </ng-template>
+
+                                <!-- Contenido de la tabla con 0 registros -->
+                                <ng-template pTemplate="emptymessage" let-columns>
+                                    <tr class="text-center">
+                                        <td [attr.colspan]="8">
+                                        <p>No hay registros disponibles para mostrar</p>
+                                        </td>
+                                    </tr>
+                                </ng-template>
+                            </p-table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

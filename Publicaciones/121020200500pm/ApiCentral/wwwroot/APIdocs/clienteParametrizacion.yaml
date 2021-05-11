@@ -1,0 +1,56 @@
+﻿openapi: 3.0.0
+servers:
+  - description: EVO - API de Parametrización de Clientes
+    url: https://evo/api
+info:
+  description: |
+   API de administración de Parametrización de Clientes
+  version: "1.0.0"
+  title: API de Parametrización de Clientes
+  termsOfService: 'https://www.porcicarnes.com/'
+  contact:
+    email: jusuga@digitalcg.com.co
+tags:
+  - name: ClientesParametrizacion
+    description: Gestión de Parametrización de Clientes
+paths:  
+  /clienteparametrizacion/parametrizaciones:
+    get:
+      tags: 
+        - ClientesParametrizacion
+      summary: Obtiene las parametrizaciones del cliente
+      operationId: obtenerPatrametrizacionesxCliente
+      parameters:         
+          - name: codigoCliente
+            in: query
+            description: Indica el código del cliente        
+            schema:
+              type: string    
+      responses:
+        '200':
+          description: Operación realizada con éxito
+          content:              
+              application/json:
+                schema:
+                   type: array
+                   items: 
+                    $ref: '#/components/schemas/parametrizacionResponse'                       
+components:
+  schemas:   
+    parametrizacionResponse:
+      type: object
+      description: Representa las parametrizaciones del cliente
+      properties:        
+        RecepcionToleranciaInferior:
+          type: number
+          example: 1
+          description: Representa la tolerancia inferior en recepción
+        RecepcionToleranciaSuperior:
+          type: number
+          example: 2
+          description: Representa la tolerancia superior en recepción 
+        RecepcionPesajeCodigoBarras:
+          type: boolean
+          example: true
+          description: Representa si se hace pesaje por código de barras    
+   

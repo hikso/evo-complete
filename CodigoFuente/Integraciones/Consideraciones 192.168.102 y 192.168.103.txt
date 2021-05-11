@@ -1,0 +1,23 @@
+Tener en cuenta en el 192.168.102
+
+Se debe crear un catalogo de SSIS para el paquete de integración y la clave es EVO2020*
+
+Tener en cuenta en el 192.168.102 y 192.168.103
+
+Se debe crear un usuario de sqlserver con privilegios de sysadmin y ese usuario va a ser usado como owner en el job del SSIS
+
+Usuario EVO - Contraseña 123456 para las cadenas de conexiones de la integración(EVO debe ser usuario de servidor donde está SAP y EVO Central) 
+
+Ver DespliegueJOBIntegracion.mp4
+
+Incluir esta query en el paso REGISTRAR_LOG_INTEGRACION
+
+INSERT INTO LogsIntegracion VALUES  
+(
+	 (SELECT TOP 1 instance_id FROM msdb.dbo.sysjobhistory WHERE job_id = (SELECT TOP 1 job_id FROM msdb.dbo.sysjobhistory where step_name = 'JOB_PASO_SAP_ARTICULOS') and step_id = 1 ORDER BY instance_id DESC),
+     (SELECT TOP 1 job_id FROM msdb.dbo.sysjobhistory where step_name = 'JOB_PASO_SAP_ARTICULOS'),
+     (SELECT TOP 1 executionid FROM[EVO].[dbo].[sysssislog] WHERE event='PackageStart' AND sourceid=(SELECT TOP 1 sourceid FROM[EVO].[dbo].[sysssislog] WHERE source = 'SAP_Articulos') ORDER BY id DESC) 
+)
+
+
+

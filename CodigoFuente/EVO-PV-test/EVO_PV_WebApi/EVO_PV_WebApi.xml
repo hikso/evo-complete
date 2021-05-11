@@ -1,0 +1,2634 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EVO_PV_WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:EVO_PV_WebApi.Controllers.ArticulosApiController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.ArticulosApiController.ObtenerTodosArticulosxBodega(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Obtiene todos los Articulos
+            </summary>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.ArticulosApiController.ObtenerTodosArticulosBodegaxFiltro(EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequest)">
+            <summary>
+            Obtiene todos los artículos aplicando filtros de búsqueda
+            </summary>
+            <param name="body">Solicitud de filtro de Auditoria. Se debe ingresar al menos uno de los criterios del filtro</param>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.ArticulosApiController.ObtenerTodosEstados">
+            <summary>
+            Obtiene los estados del artículo
+            </summary>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.ArticulosApiController.ObtenerTodosUnidadesMedida">
+            <summary>
+            Obtiene las unidades de medida
+            </summary>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="T:EVO_PV_WebApi.Controllers.AuditoriaController">
+            <summary>
+            Autor            : Kevin Restrepo
+            Fecha de Creación: 24-Oct/2019
+            Descrición       : API de registros de auditoria
+            </summary>
+            
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.AuditoriaController.CrearRegistro(EVO_PV_WebApi.Models.AuditoriaApi.RegistroAuditoriaRequest)">
+            <summary>
+            Crea un registro de Auditoria
+            </summary>
+            <param name="body">Solicitud de creación de un registro de Auditoria</param>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="T:EVO_PV_WebApi.Controllers.BaseController">
+            <summary>
+            
+            </summary>
+            
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.BaseController.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:EVO_PV_WebApi.Controllers.BodegasApiController">
+            <summary>
+            
+            </summary> 
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.BodegasApiController.ObtenerBodegasTipoPlanta">
+            <summary>
+            Obtiene las bodegas de tipo planta
+            </summary>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.BodegasApiController.ObtenerBodegaxCodigo(System.String)">
+            <summary>
+            Obtiene la bodega por código
+            </summary>
+            <param name="codigo">Indica el código de la bodega</param>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="T:EVO_PV_WebApi.Controllers.ConfigApiController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.ConfigApiController.ObtenerVersionActual">
+            <summary>
+            Retorna la versión actual del sistema EVO.
+            </summary>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.ConfigApiController.ObtenerParametroGeneralxNombre(System.String)">
+            <summary>
+            Obtiene un Parámetro General por su nombre.
+            </summary>
+            <param name="nombre">Nombre del Parámetro General</param>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.PedidosApiController.ObtenerConsultaPedidoxId(System.Int32)">
+            <summary>
+            Obtener Consulta Pedido x Id
+            </summary>
+            <param name="id">Id del pedido</param>        
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.PedidosApiController.ExisteSolicitudPlantasBorrador(System.String)">
+            <summary>
+            Verifica que actualmente existan solicitudes en estado borrador en cada planta
+            </summary>
+            <param name="codigoPuntoVenta">PV-PRA</param>        
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.PedidosApiController.HabilitarSolicitudPedido(System.String)">
+            <summary>
+            Verifica si se puede solicitar pedidos a las plantas
+            </summary>
+            <param name="codigoCliente">Indica el código del cliente que realizó la solicitud</param>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.PedidosApiController.ObtenerTodosPedidosDistribucion(System.Int32,System.Int32)">
+            <summary>
+            Obtiene los registros de pedidos en distribución
+            </summary>
+            <param name="desde">Indica el número de registro desde el cuál se deben obtener los registros</param>
+            <param name="hasta">Indica el número de registro hasta el cuál se deben obtener los registros</param>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.PedidosApiController.ActualiPedido(EVO_PV_WebApi.Models.PedidoApi.PedidoRequest)">
+            <summary>
+            Actualizar un pedido
+            </summary>
+            <param name="body">Solicitud de pedido</param>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.PedidosApiController.ObtenerPedidoBorradorRequest(EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoBorradorRequest)">
+            <summary>
+            Retorna un booleano si existen 1 solicitud de pedido en estado "Borrador" de este cliente a esta planta 
+            </summary>
+            <param name="obtenerPedidoBorradorRequest">Contiene el código del cliente y la planta</param>
+            <response>Boolean</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.PedidosApiController.CrearPedido(EVO_PV_WebApi.Models.PedidoApi.PedidoRequest)">
+            <summary>
+            Crea un pedido
+            </summary>
+            <param name="body">Solicitud de pedido</param>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.PedidosApiController.ObtenerPedidoxId(System.Int32)">
+            <summary>
+            Obtiene el pedido por el id
+            </summary>
+            <param name="id">Indica el pedido ID</param>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.PedidosApiController.ObtenerTodosPedidos(System.Int32,System.Int32,System.String)">
+            <summary>
+            Obtiene los registros de Pedidos
+            </summary>
+            <param name="desde">Indica el número de registro desde el cuál se deben obtener los registros</param>
+            <param name="hasta">Indica el número de registro hasta el cuál se deben obtener los registros</param>
+            <param name="whsCode">Indica el código de la bodega</param>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.PedidosApiController.ObtenerTodosCantidadPedidosxEstado">
+            <summary>
+            Obtiene por estado la cantidad de pedidos
+            </summary>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.PedidosApiController.ObtenerTodosEstadosPedido">
+            <summary>
+            Obtiene los estados de los Pedidos
+            </summary>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.PedidosApiController.ObtenerTodosPedidosxFiltro(EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequest)">
+            <summary>
+            Obtiene todos los registros de Pedidos aplicando filtros de búsqueda
+            </summary>
+            <param name="body">Solicitud de filtro de Pedidos. Se debe ingresar al menos uno de los criterios del filtro</param>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="T:EVO_PV_WebApi.Controllers.UsuariosApiController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:EVO_PV_WebApi.Controllers.UsuariosApiController.ObtenerUsuario">
+            <summary>
+            Retorna el usuario / nombre si esta válidado con los usuarios EVO.
+            </summary>
+            <response code="200">Operación realizada con éxito</response>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse">
+            <summary>
+            Artículo encontrado
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse.CodigoArticulo">
+            <summary>
+            Codigo de el artículo
+            </summary>
+            <value>Codigo de el artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse.NombreArticulo">
+            <summary>
+            Nombre de el producto
+            </summary>
+            <value>Nombre de el producto</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse.Stock">
+            <summary>
+            Stock de el producto en bodega
+            </summary>
+            <value>Stock de el producto en bodega</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse.Minimo">
+            <summary>
+            Stock mínimo que se debe tener de el producto en bodega
+            </summary>
+            <value>Stock mínimo que se debe tener de el producto en bodega</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse.Maximo">
+            <summary>
+            Stock máximo que se debe tener de el producto en bodega
+            </summary>
+            <value>Stock máximo que se debe tener de el producto en bodega</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse.UnidadMedida">
+            <summary>
+            Unidad de medida 
+            </summary>
+            <value> Unidad de medida </value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse.PedidoSugerido">
+            <summary>
+            Pedido Sugerido
+            </summary>
+            <value> </value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse.Equals(EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse)">
+            <summary>
+            Returns true if ArticuloResponse instances are equal
+            </summary>
+            <param name="other">Instance of ArticuloResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ArticuloResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.ArticulosApi.ArticuloUnicoResponse">
+            <summary>
+            Representa un artículo
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ArticuloUnicoResponse.ItemCode">
+            <summary>
+            Representa el código del artículo
+            </summary>
+            <value>Representa el código del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ArticuloUnicoResponse.ItemName">
+            <summary>
+            Representa el nombre del artículo
+            </summary>
+            <value>Representa el nombre del artículo</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ArticuloUnicoResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ArticuloUnicoResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ArticuloUnicoResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ArticuloUnicoResponse.Equals(EVO_PV_WebApi.Models.ArticulosApi.ArticuloUnicoResponse)">
+            <summary>
+            Returns true if ArticuloUnicoResponse instances are equal
+            </summary>
+            <param name="other">Instance of ArticuloUnicoResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ArticuloUnicoResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.ArticulosApi.BuscarArticuloRequest">
+            <summary>
+            Indica los parámetros de búsqueda
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.BuscarArticuloRequest.Nombre">
+            <summary>
+            Nombre del artículo
+            </summary>
+            <value>Nombre del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.BuscarArticuloRequest.Codigo">
+            <summary>
+            Código del artículo
+            </summary>
+            <value>Código del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.BuscarArticuloRequest.CodigoBodega">
+            <summary>
+            Código de la bodega
+            </summary>
+            <value>Código de la bodega</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.BuscarArticuloRequest.PrefijoCodigoArticulo">
+            <summary>
+            Prefijo de los artículos , la planta tiene por ejemplo PB-PT y los artículos tienen PT-2456
+            </summary>
+            <value>PT-</value>       
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.BuscarArticuloRequest.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.BuscarArticuloRequest.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.BuscarArticuloRequest.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.BuscarArticuloRequest.Equals(EVO_PV_WebApi.Models.ArticulosApi.BuscarArticuloRequest)">
+            <summary>
+            Returns true if BuscarArticuloRequest instances are equal
+            </summary>
+            <param name="other">Instance of BuscarArticuloRequest to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.BuscarArticuloRequest.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.ArticulosApi.EstadoArticuloResponse">
+            <summary>
+            Indica un estado del artículo
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.EstadoArticuloResponse.EstadoArticuloId">
+            <summary>
+            Id del estado del artículo
+            </summary>
+            <value>Id del estado del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.EstadoArticuloResponse.Nombre">
+            <summary>
+            Estado del artículo
+            </summary>
+            <value>Estado del artículo</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.EstadoArticuloResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.EstadoArticuloResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.EstadoArticuloResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.EstadoArticuloResponse.Equals(EVO_PV_WebApi.Models.ArticulosApi.EstadoArticuloResponse)">
+            <summary>
+            Returns true if EstadoArticuloResponse instances are equal
+            </summary>
+            <param name="other">Instance of EstadoArticuloResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.EstadoArticuloResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequest">
+            <summary>
+            Objeto que contiene los filtros de los Artículos
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequest.Desde">
+            <summary>
+            Indica el número de registro desde el cuál se deben obtener los registros
+            </summary>
+            <value>Indica el número de registro desde el cuál se deben obtener los registros</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequest.Hasta">
+            <summary>
+            Indica el número de registro hasta el cuál se deben obtener los registros
+            </summary>
+            <value>Indica el número de registro hasta el cuál se deben obtener los registros</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequest.Filtro">
+            <summary>
+            Gets or Sets Filtro
+            </summary>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequest.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequest.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequest.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequest.Equals(EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequest)">
+            <summary>
+            Returns true if FiltrarArticuloRequest instances are equal
+            </summary>
+            <param name="other">Instance of FiltrarArticuloRequest to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequest.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro">
+            <summary>
+            Criterios por los que se filtrará la consulta
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro.CodigoArticulo">
+            <summary>
+            Filtro por Codigo de Artículo
+            </summary>
+            <value>Filtro por Codigo de Artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro.NombreArticulo">
+            <summary>
+            Filtro por Nombre de Artículo
+            </summary>
+            <value>Filtro por Nombre de Artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro.UnidadMedida">
+            <summary>
+            Filtro por Unidad de Medida
+            </summary>
+            <value>Filtro por Unidad de Medida</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro.Stock">
+            <summary>
+            Filtro por el stock del Artículo
+            </summary>
+            <value>Filtro por el stock del Artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro.Minimo">
+            <summary>
+            Filtro por cantidad mínima de stock
+            </summary>
+            <value>Filtro por cantidad mínima de stock</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro.Maximo">
+            <summary>
+            Filtro por cantidad máxima de stock
+            </summary>
+            <value>Filtro por cantidad máxima de stock</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro.WhsCode">
+            <summary>
+            Indica el código de la bodega
+            </summary>
+            <value>Indica el código de la bodega</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro.Equals(EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro)">
+            <summary>
+            Returns true if FiltrarArticuloRequestFiltro instances are equal
+            </summary>
+            <param name="other">Instance of FiltrarArticuloRequestFiltro to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.FiltrarArticuloRequestFiltro.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponse">
+            <summary>
+            Resultado general de consulta
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponse.NumeroTotalRegistros">
+            <summary>
+            Número total de registros que posee la consulta
+            </summary>
+            <value>Número total de registros que posee la consulta</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponse.TamanhoPaginacion">
+            <summary>
+            Número de registros a mostrar por página
+            </summary>
+            <value>Número de registros a mostrar por página</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponse.Registros">
+            <summary>
+            Lista de registros de Articulos
+            </summary>
+            <value>Lista de registros de Articulos</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponse.Equals(EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponse)">
+            <summary>
+            Returns true if ObtenerTodosArticulosResponse instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerTodosArticulosResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros.CodigoArticulo">
+            <summary>
+            Codigo de el artículo
+            </summary>
+            <value>Codigo de el artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros.NombreArticulo">
+            <summary>
+            Nombre de el producto
+            </summary>
+            <value>Nombre de el producto</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros.UnidadMedida">
+            <summary>
+            Nombre de la unidad de medida
+            </summary>
+            <value>Nombre de la unidad de medida</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros.Stock">
+            <summary>
+            Stock de el producto en bodega
+            </summary>
+            <value>Stock de el producto en bodega</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros.Minimo">
+            <summary>
+            Stock mínimo que se debe tener de el producto en bodega
+            </summary>
+            <value>Stock mínimo que se debe tener de el producto en bodega</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros.Maximo">
+            <summary>
+            Stock máximo que se debe tener de el producto en bodega
+            </summary>
+            <value>Stock máximo que se debe tener de el producto en bodega</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros.PedidoSugerido">
+            <summary>
+            Pedido sugerido de el producto en bodega
+            </summary>
+            <value>Pedido sugerido de el producto en bodega</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros.Equals(EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros)">
+            <summary>
+            Returns true if ObtenerTodosArticulosResponseRegistros instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerTodosArticulosResponseRegistros to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.ObtenerTodosArticulosResponseRegistros.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.ArticulosApi.UnidadMedidaResponse">
+            <summary>
+            Indica la unidad de medida del artículo
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.UnidadMedidaResponse.UnidadMedidaId">
+            <summary>
+            Id del Artículo
+            </summary>
+            <value>Id del Artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.UnidadMedidaResponse.Nombre">
+            <summary>
+            Unidad del Artículo
+            </summary>
+            <value>Unidad del Artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ArticulosApi.UnidadMedidaResponse.Codigo">
+            <summary>
+            Código del Artículo
+            </summary>
+            <value>Código del Artículo</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.UnidadMedidaResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.UnidadMedidaResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.UnidadMedidaResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.UnidadMedidaResponse.Equals(EVO_PV_WebApi.Models.ArticulosApi.UnidadMedidaResponse)">
+            <summary>
+            Returns true if UnidadMedidaResponse instances are equal
+            </summary>
+            <param name="other">Instance of UnidadMedidaResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ArticulosApi.UnidadMedidaResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.AuditoriaApi.RegistroAuditoriaRequest">
+            <summary>
+            Objeto que contiene un registro de Auditoria
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.AuditoriaApi.RegistroAuditoriaRequest.Accion">
+            <summary>
+            Acción que está siendo auditada
+            </summary>
+            <value>Acción que está siendo auditada</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.AuditoriaApi.RegistroAuditoriaRequest.Parametros">
+            <summary>
+            Objeto serializado en formato JSON que contiene los parámetros de la acción
+            </summary>
+            <value>Objeto serializado en formato JSON que contiene los parámetros de la acción</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.AuditoriaApi.RegistroAuditoriaRequest.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.AuditoriaApi.RegistroAuditoriaRequest.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.AuditoriaApi.RegistroAuditoriaRequest.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.AuditoriaApi.RegistroAuditoriaRequest.Equals(EVO_PV_WebApi.Models.AuditoriaApi.RegistroAuditoriaRequest)">
+            <summary>
+            Returns true if RegistroAuditoriaRequest instances are equal
+            </summary>
+            <param name="other">Instance of RegistroAuditoriaRequest to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.AuditoriaApi.RegistroAuditoriaRequest.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.BodegasApi.BodegaResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.BodegasApi.BodegaResponse.WhsCode">
+            <summary>
+            Código bodega
+            </summary>
+            <value>Código bodega</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.BodegasApi.BodegaResponse.WhsName">
+            <summary>
+            Nombre bodega
+            </summary>
+            <value>Nombre bodega</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.BodegasApi.BodegaResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.BodegasApi.BodegaResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.BodegasApi.BodegaResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.BodegasApi.BodegaResponse.Equals(EVO_PV_WebApi.Models.BodegasApi.BodegaResponse)">
+            <summary>
+            Returns true if BodegaResponse instances are equal
+            </summary>
+            <param name="other">Instance of BodegaResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.BodegasApi.BodegaResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.ConfigApi.ParametroGeneralResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ConfigApi.ParametroGeneralResponse.ParametroGeneralId">
+            <summary>
+            id del parámetro general
+            </summary>
+            <value>id del parámetro general</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ConfigApi.ParametroGeneralResponse.Nombre">
+            <summary>
+            nombre del parámetro general
+            </summary>
+            <value>nombre del parámetro general</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ConfigApi.ParametroGeneralResponse.Valor">
+            <summary>
+            valor de parámetro general
+            </summary>
+            <value>valor de parámetro general</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ConfigApi.ParametroGeneralResponse.Activo">
+            <summary>
+            Indica si el Parámetro General se encuentra activo / inactivo
+            </summary>
+            <value>Indica si el Parámetro General se encuentra activo / inactivo</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ConfigApi.ParametroGeneralResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ConfigApi.ParametroGeneralResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ConfigApi.ParametroGeneralResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ConfigApi.ParametroGeneralResponse.Equals(EVO_PV_WebApi.Models.ConfigApi.ParametroGeneralResponse)">
+            <summary>
+            Returns true if ParametroGeneralResponse instances are equal
+            </summary>
+            <param name="other">Instance of ParametroGeneralResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ConfigApi.ParametroGeneralResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.ConfigApi.VersionResponse">
+            <summary>
+            Objeto que contiene la versión de la aplicación
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.ConfigApi.VersionResponse.Version">
+            <summary>
+            Indica la versión de la aplicación
+            </summary>
+            <value>Indica la versión de la aplicación</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ConfigApi.VersionResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ConfigApi.VersionResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ConfigApi.VersionResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ConfigApi.VersionResponse.Equals(EVO_PV_WebApi.Models.ConfigApi.VersionResponse)">
+            <summary>
+            Returns true if VersionResponse instances are equal
+            </summary>
+            <param name="other">Instance of VersionResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.ConfigApi.VersionResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoRequest">
+            <summary>
+            Objeto que contiene el id del pedido
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoRequest.PedidoId">
+            <summary>
+            Indica id del pedido
+            </summary>
+            <value>Indica id del pedido</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoRequest.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoRequest.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoRequest.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoRequest.Equals(EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoRequest)">
+            <summary>
+            Returns true if ConsultaPedidoRequest instances are equal
+            </summary>
+            <param name="other">Instance of ConsultaPedidoRequest to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoRequest.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse">
+            <summary>
+            Objeto que contiene la consulta del pedido
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.NumeroPedido">
+            <summary>
+            Número del pedido
+            </summary>
+            <value>Número del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.EstadoPedido">
+            <summary>
+            Estado del pedido
+            </summary>
+            <value>Estado del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.FechaSolicitud">
+            <summary>
+            Fecha de la solicitud del pedido
+            </summary>
+            <value>Fecha de la solicitud del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.FechaEnvio">
+            <summary>
+            Fecha cuando se envíó el pedido
+            </summary>
+            <value>Fecha cuando se envíó el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.FechaRecibido">
+            <summary>
+            Fecha cuando el pedido fué recibído en el punto de venta
+            </summary>
+            <value>Fecha cuando el pedido fué recibído en el punto de venta</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.FechaCargueEnVehiculo">
+            <summary>
+            Fecha de cargue en vehículo
+            </summary>
+            <value>Fecha de cargue en vehículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.NombreConductor">
+            <summary>
+            Nombre del conductor del vehículo
+            </summary>
+            <value>Nombre del conductor del vehículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.PlacaVehiculo">
+            <summary>
+            Placa del vehículo
+            </summary>
+            <value>Placa del vehículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.NombreAuxiliar">
+            <summary>
+            Nombre del auxiliar
+            </summary>
+            <value>Nombre del auxiliar</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.Planta">
+            <summary>
+            Nombre de la planta
+            </summary>
+            <value>Nombre de la planta</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.Detalles">
+            <summary>
+            Lista de detalles del Pedido
+            </summary>
+            <value>Lista de detalles del Pedido</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.Equals(EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse)">
+            <summary>
+            Returns true if ConsultaPedidoResponse instances are equal
+            </summary>
+            <param name="other">Instance of ConsultaPedidoResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.CodigoArticulo">
+            <summary>
+            Código del artículo
+            </summary>
+            <value>Código del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.NombreArticulo">
+            <summary>
+            Nombre del artículo
+            </summary>
+            <value>Nombre del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.EstadoArticulo">
+            <summary>
+            Estado del artículo
+            </summary>
+            <value>Estado del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.CantidadSolicitada">
+            <summary>
+            Cantidad del artículo solicitada
+            </summary>
+            <value>Cantidad del artículo solicitada</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.UnidadMedida">
+            <summary>
+            Unidad de medida del artículo
+            </summary>
+            <value>Unidad de medida del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.CantidadAprobada">
+            <summary>
+            Cantidad aprobada por la planta
+            </summary>
+            <value>Cantidad aprobada por la planta</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.CantidadEnviada">
+            <summary>
+            Cantidad enviada por la planta
+            </summary>
+            <value>Cantidad enviada por la planta</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.FechaEntrega">
+            <summary>
+            Fecha cuando llego el artículo a la bodega que solicitó el pedido que fue aprobado
+            </summary>
+            <value>Fecha cuando llego el artículo a la bodega que solicitó el pedido que fue aprobado</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.CostoTraslado">
+            <summary>
+            Costo de traslado por artículo
+            </summary>
+            <value>Costo de traslado por artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.CostoTransporte">
+            <summary>
+            Costo de transporte por artículo
+            </summary>
+            <value>Costo de transporte por artículo</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.Equals(EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles)">
+            <summary>
+            Returns true if ConsultaPedidoResponseDetalles instances are equal
+            </summary>
+            <param name="other">Instance of ConsultaPedidoResponseDetalles to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ConsultaPedidoResponseDetalles.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequest">
+            <summary>
+            Objeto que contiene los filtros de los pedidos a planta beneficio
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequest.Desde">
+            <summary>
+            Indica el número de registro desde el cuál se deben obtener los registros
+            </summary>
+            <value>Indica el número de registro desde el cuál se deben obtener los registros</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequest.Hasta">
+            <summary>
+            Indica el número de registro hasta el cuál se deben obtener los registros
+            </summary>
+            <value>Indica el número de registro hasta el cuál se deben obtener los registros</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequest.Filtro">
+            <summary>
+            Gets or Sets Filtro
+            </summary>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequest.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequest.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequest.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequest.Equals(EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequest)">
+            <summary>
+            Returns true if FiltrarPedidoBeneficioRequest instances are equal
+            </summary>
+            <param name="other">Instance of FiltrarPedidoBeneficioRequest to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequest.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro">
+            <summary>
+            Criterios por los que se filtrará la consulta
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro.FiltrarPorFecha">
+            <summary>
+            Indica si se filtra por fecha
+            </summary>
+            <value>Indica si se filtra por fecha</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro.FechaSolicitudDesde">
+            <summary>
+            Fecha seleccionada en la que se registra el pedido(Desde)
+            </summary>
+            <value>Fecha seleccionada en la que se registra el pedido(Desde)</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro.FechaSolicitudHasta">
+            <summary>
+            Fecha seleccionada en la que se registra el pedido(Hasta)
+            </summary>
+            <value>Fecha seleccionada en la que se registra el pedido(Hasta)</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro.EstadosIds">
+            <summary>
+            Ids de los estados de los pedidos seleccionados
+            </summary>
+            <value>Ids de los estados de los pedidos seleccionados</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro.ClientesInternosCodigos">
+            <summary>
+            Códigos de los clientes internos seleccionados
+            </summary>
+            <value>Códigos de los clientes internos seleccionados</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro.ClientesExternosCodigo">
+            <summary>
+            Códigos de los clientes externos seleccionados
+            </summary>
+            <value>Códigos de los clientes externos seleccionados</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro.Equals(EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro)">
+            <summary>
+            Returns true if FiltrarPedidoBeneficioRequestFiltro instances are equal
+            </summary>
+            <param name="other">Instance of FiltrarPedidoBeneficioRequestFiltro to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoBeneficioRequestFiltro.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequest">
+            <summary>
+            Objeto que contiene los filtros de los pedidos
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequest.Desde">
+            <summary>
+            Indica el número de registro desde el cuál se deben obtener los registros
+            </summary>
+            <value>Indica el número de registro desde el cuál se deben obtener los registros</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequest.Hasta">
+            <summary>
+            Indica el número de registro hasta el cuál se deben obtener los registros
+            </summary>
+            <value>Indica el número de registro hasta el cuál se deben obtener los registros</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequest.WhsCode">
+            <summary>
+            Indica el código de la bodega
+            </summary>
+            <value>Indica el código de la bodega</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequest.Filtro">
+            <summary>
+            Gets or Sets Filtro
+            </summary>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequest.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequest.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequest.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequest.Equals(EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequest)">
+            <summary>
+            Returns true if FiltrarPedidoRequest instances are equal
+            </summary>
+            <param name="other">Instance of FiltrarPedidoRequest to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequest.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro">
+            <summary>
+            Criterios por los que se filtrará la consulta
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro.Desde">
+            <summary>
+            Fecha en la que se registra el pedido
+            </summary>
+            <value>Fecha en la que se registra el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro.Hasta">
+            <summary>
+            Fecha en la que se registra el pedido
+            </summary>
+            <value>Fecha en la que se registra el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro.Estado">
+            <summary>
+            Id del estado del pedido
+            </summary>
+            <value>Id del estado del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro.PlantaBeneficio">
+            <summary>
+            Filtro por Planta Beneficio
+            </summary>
+            <value>Filtro por Planta Beneficio</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro.PlantaDerivados">
+            <summary>
+            Filtro por Planta Derivados
+            </summary>
+            <value>Filtro por Planta Derivados</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro.Pendientes">
+            <summary>
+            Los pendientes son todos los NO cerrados
+            </summary>
+            <value>Los pendientes son todos los NO cerrados</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro.Numeropedido">
+            <summary>
+            Filtro por numero de pedido
+            </summary>
+            <value>Filtro por numero de pedido</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro.Equals(EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro)">
+            <summary>
+            Returns true if FiltrarPedidoRequestFiltro instances are equal
+            </summary>
+            <param name="other">Instance of FiltrarPedidoRequestFiltro to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.FiltrarPedidoRequestFiltro.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ObtenerEstadoPedidoResponse">
+            <summary>
+            Indica un estado del pedido
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerEstadoPedidoResponse.EstadoId">
+            <summary>
+            Id del estado del pedido
+            </summary>
+            <value>Id del estado del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerEstadoPedidoResponse.EstadoNombre">
+            <summary>
+            Estado del pedido
+            </summary>
+            <value>Estado del pedido</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerEstadoPedidoResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerEstadoPedidoResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerEstadoPedidoResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerEstadoPedidoResponse.Equals(EVO_PV_WebApi.Models.PedidosApi.ObtenerEstadoPedidoResponse)">
+            <summary>
+            Returns true if ObtenerEstadoPedidoResponse instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerEstadoPedidoResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerEstadoPedidoResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoBorradorRequest">
+            <summary>
+            Solicitud verificar si existe pedido en borrador
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoBorradorRequest.WhsCode">
+            <summary>
+            Código de la bodega que genera el pedido
+            </summary>
+            <value>Código de la bodega que genera el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoBorradorRequest.SolicitudPara">
+            <summary>
+            Código de la bodega para donde va el pedido
+            </summary>
+            <value>Código de la bodega para donde va el pedido</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoBorradorRequest.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoBorradorRequest.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoBorradorRequest.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoBorradorRequest.Equals(EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoBorradorRequest)">
+            <summary>
+            Returns true if ObtenerPedidoBorradorRequest instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerPedidoBorradorRequest to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoBorradorRequest.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse">
+            <summary>
+            Objeto que contiene el pedido
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.FechaSolicitud">
+            <summary>
+            Fecha solicitud del pedido
+            </summary>
+            <value>Fecha solicitud del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.FechaEntrega">
+            <summary>
+            Fecha entrega del pedido
+            </summary>
+            <value>Fecha entrega del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.FechaAprobacion">
+            <summary>
+            Fecha aporbación del pedido
+            </summary>
+            <value>Fecha aporbación del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.Cliente">
+            <summary>
+            Nombre del cliente
+            </summary>
+            <value>Nombre del cliente</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.Usuario">
+            <summary>
+            Nombre del usuario que registró la solicitud
+            </summary>
+            <value>Nombre del usuario que registró la solicitud</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.Codigo">
+            <summary>
+            Código del pedido
+            </summary>
+            <value>Código del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.Estado">
+            <summary>
+            Nombre del estado del pedido
+            </summary>
+            <value>Nombre del estado del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.PedidoDetallesRespuesta">
+            <summary>
+            Lista de detalles del Pedido
+            </summary>
+            <value>Lista de detalles del Pedido</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.Equals(EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse)">
+            <summary>
+            Returns true if ObtenerPedidoEnPlantaResponse instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerPedidoEnPlantaResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.Codigo">
+            <summary>
+            Código del artículo
+            </summary>
+            <value>Código del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.Nombre">
+            <summary>
+            Nombre del artículo
+            </summary>
+            <value>Nombre del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.Estado">
+            <summary>
+            Estado del artículo
+            </summary>
+            <value>Estado del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.CantidadSolicitada">
+            <summary>
+            Cantidad solicitada del articulo
+            </summary>
+            <value>Cantidad solicitada del articulo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.UnidadMedida">
+            <summary>
+            Unidad de medida del artículo
+            </summary>
+            <value>Unidad de medida del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.CantidadAprobada">
+            <summary>
+            Cantidad aprobada del artículo
+            </summary>
+            <value>Cantidad aprobada del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.StockDisponible">
+            <summary>
+            Stock disponible
+            </summary>
+            <value>Stock disponible</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.CantidadEnviada">
+            <summary>
+            Cantidad enviada del artículo
+            </summary>
+            <value>Cantidad enviada del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.FechaEntrega1">
+            <summary>
+            Primer fecha de entrega
+            </summary>
+            <value>Primer fecha de entrega</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.FechaEntrega2">
+            <summary>
+            Segunda fecha de entrega
+            </summary>
+            <value>Segunda fecha de entrega</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.Equals(EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta)">
+            <summary>
+            Returns true if ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoEnPlantaResponsePedidoDetallesRespuesta.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse">
+            <summary>
+            Objeto que contiene el pedido
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse.FechaPedido">
+            <summary>
+            Fecha del pedido
+            </summary>
+            <value>Fecha del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse.CodigoPedido">
+            <summary>
+            Código del pedido
+            </summary>
+            <value>Código del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse.SolicitudPara">
+            <summary>
+            Código de la bodega tipo planta
+            </summary>
+            <value>Código de la bodega tipo planta</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse.FechaEntrega">
+            <summary>
+            Fecha entrega
+            </summary>
+            <value>Fecha entrega</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse.EstadoPedidoId">
+            <summary>
+            Estado Pedido Id
+            </summary>
+            <value>Estado Pedido Id</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse.Detalles">
+            <summary>
+            Lista de detalles del Pedido
+            </summary>
+            <value>Lista de detalles del Pedido</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse.Equals(EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse)">
+            <summary>
+            Returns true if ObtenerPedidoResponse instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerPedidoResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponseDetalles">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponseDetalles.DetallePedidoId">
+            <summary>
+            Detalle Pedido Id
+            </summary>
+            <value>Detalle Pedido Id</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponseDetalles.ItemCode">
+            <summary>
+            Código del artículo
+            </summary>
+            <value>Código del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponseDetalles.NombreArticulo">
+            <summary>
+            Nombre del artículo
+            </summary>
+            <value>Nombre del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponseDetalles.EstadoArticulo">
+            <summary>
+            Id del estado del artículo
+            </summary>
+            <value>Id del estado del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponseDetalles.Cantidad">
+            <summary>
+            Cantidad del artículo solicitada
+            </summary>
+            <value>Cantidad del artículo solicitada</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponseDetalles.UnidadMedida">
+            <summary>
+            Unidad de medida del artículo
+            </summary>
+            <value>Unidad de medida del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponseDetalles.PedidoSugerido">
+            <summary>
+            Pedido sugerido
+            </summary>
+            <value>Pedido sugerido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponseDetalles.Stock">
+            <summary>
+            Stock
+            </summary>
+            <value>Stock</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponseDetalles.StockMinimo">
+            <summary>
+            Stock minímo
+            </summary>
+            <value>Stock minímo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerPedidoResponseDetalles.StockMaximo">
+            <summary>
+            Stock máximo
+            </summary>
+            <value>Stock máximo</value>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponse">
+            <summary>
+            Resultado general de consulta
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponse.NumeroTotalRegistros">
+            <summary>
+            Número total de registros que posee la consulta
+            </summary>
+            <value>Número total de registros que posee la consulta</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponse.TamanhoPaginacion">
+            <summary>
+            Número de registros a mostrar por página
+            </summary>
+            <value>Número de registros a mostrar por página</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponse.Registros">
+            <summary>
+            Lista de registros de Pedidos
+            </summary>
+            <value>Lista de registros de Pedidos</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponse.Equals(EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponse)">
+            <summary>
+            Returns true if ObtenerTodosPedidosBeneficioResponse instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerTodosPedidosBeneficioResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros.PedidoId">
+            <summary>
+            Id del pedido
+            </summary>
+            <value>Id del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros.CodigoPedido">
+            <summary>
+            Código del pedido
+            </summary>
+            <value>Código del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros.FechaSolicitud">
+            <summary>
+            Fecha en la que se registra el pedido
+            </summary>
+            <value>Fecha en la que se registra el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros.FechaEntrega">
+            <summary>
+            Fecha en que se entrega el pedido
+            </summary>
+            <value>Fecha en que se entrega el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros.Estado">
+            <summary>
+            Estado el pedido
+            </summary>
+            <value>Estado el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros.Cliente">
+            <summary>
+            Nombre del cliente
+            </summary>
+            <value>Nombre del cliente</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros.DiasEntrega">
+            <summary>
+            Días para la entrega del pedido
+            </summary>
+            <value>Días para la entrega del pedido</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros.Equals(EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros)">
+            <summary>
+            Returns true if ObtenerTodosPedidosBeneficioResponseRegistros instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerTodosPedidosBeneficioResponseRegistros to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosBeneficioResponseRegistros.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponse">
+            <summary>
+            Resultado general de consulta
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponse.NumeroTotalRegistros">
+            <summary>
+            Número total de registros que posee la consulta
+            </summary>
+            <value>Número total de registros que posee la consulta</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponse.TamanhoPaginacion">
+            <summary>
+            Número de registros a mostrar por página
+            </summary>
+            <value>Número de registros a mostrar por página</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponse.Registros">
+            <summary>
+            Lista de registros de Pedidos
+            </summary>
+            <value>Lista de registros de Pedidos</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponse.Equals(EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponse)">
+            <summary>
+            Returns true if ObtenerTodosPedidosDistribucionResponse instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerTodosPedidosDistribucionResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros.PedidoId">
+            <summary>
+            Id del pedido
+            </summary>
+            <value>Id del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros.CodigoPedido">
+            <summary>
+            Código del pedido
+            </summary>
+            <value>Código del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros.OrdenCompra">
+            <summary>
+            Orden de compra (para clientes externos)
+            </summary>
+            <value>Orden de compra (para clientes externos)</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros.FechaSolicitud">
+            <summary>
+            Fecha en la que se registra el pedido
+            </summary>
+            <value>Fecha en la que se registra el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros.Estado">
+            <summary>
+            Estado el pedido
+            </summary>
+            <value>Estado el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros.Cliente">
+            <summary>
+            Nombre del cliente
+            </summary>
+            <value>Nombre del cliente</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros.Entregas">
+            <summary>
+            Cantidad máxima de entregas
+            </summary>
+            <value>Cantidad máxima de entregas</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros.Equals(EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros)">
+            <summary>
+            Returns true if ObtenerTodosPedidosDistribucionResponseRegistros instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerTodosPedidosDistribucionResponseRegistros to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosDistribucionResponseRegistros.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponse">
+            <summary>
+            Resultado general de consulta
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponse.NumeroTotalRegistros">
+            <summary>
+            Número total de registros que posee la consulta
+            </summary>
+            <value>Número total de registros que posee la consulta</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponse.TamanhoPaginacion">
+            <summary>
+            Número de registros a mostrar por página
+            </summary>
+            <value>Número de registros a mostrar por página</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponse.Registros">
+            <summary>
+            Lista de registros de Pedidos
+            </summary>
+            <value>Lista de registros de Pedidos</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponse.Equals(EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponse)">
+            <summary>
+            Returns true if ObtenerTodosPedidosResponse instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerTodosPedidosResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros.PedidoId">
+            <summary>
+            Id del pedido
+            </summary>
+            <value>Id del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros.CodigoPedido">
+            <summary>
+            Código del pedido
+            </summary>
+            <value>Código del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros.FechaSolicitud">
+            <summary>
+            Fecha en la que se registra el pedido
+            </summary>
+            <value>Fecha en la que se registra el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros.FechaEntrega">
+            <summary>
+            Fecha en que se entrega el pedido
+            </summary>
+            <value>Fecha en que se entrega el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros.Estado">
+            <summary>
+            Estado el pedido
+            </summary>
+            <value>Estado el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros.Planta">
+            <summary>
+            Nombre de la planta
+            </summary>
+            <value>Nombre de la planta</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros.DiasEntrega">
+            <summary>
+            Días para la entrega del pedido
+            </summary>
+            <value>Días para la entrega del pedido</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros.Equals(EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros)">
+            <summary>
+            Returns true if ObtenerTodosPedidosResponseRegistros instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerTodosPedidosResponseRegistros to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.ObtenerTodosPedidosResponseRegistros.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidosApi.PedidoRequestDetalles">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.PedidoRequestDetalles.DetallePedidoId">
+            <summary>
+            Código del artículo
+            </summary>
+            <value>Código del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.PedidoRequestDetalles.ItemCode">
+            <summary>
+            Código del artículo
+            </summary>
+            <value>Código del artículo</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.PedidoRequestDetalles.EstadoArticuloId">
+            <summary>
+            Id del estado del pedido
+            </summary>
+            <value>Id del estado del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidosApi.PedidoRequestDetalles.Cantidad">
+            <summary>
+            Cantidad del artículo solicitada
+            </summary>
+            <value>Cantidad del artículo solicitada</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.PedidoRequestDetalles.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.PedidoRequestDetalles.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.PedidoRequestDetalles.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.PedidoRequestDetalles.Equals(EVO_PV_WebApi.Models.PedidosApi.PedidoRequestDetalles)">
+            <summary>
+            Returns true if PedidoRequestDetalles instances are equal
+            </summary>
+            <param name="other">Instance of PedidoRequestDetalles to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidosApi.PedidoRequestDetalles.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidoApi.NumeroPedidoRequest.SolicitudDe">
+            <summary>
+            Solicitud de pedido De
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidoApi.NumeroPedidoRequest.SolicitudPara">
+            <summary>
+            Solicitud de pedido Para
+            </summary>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest">
+            <summary>
+            Solicitud del pedido
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest.PedidoId">
+            <summary>
+            Id del pedido
+            </summary>
+            <value>Id del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest.WhsCode">
+            <summary>
+            Código de la bodega que genera el pedido
+            </summary>
+            <value>Código de la bodega que genera el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest.SolicitudPara">
+            <summary>
+            Código de la bodega para donde va el pedido
+            </summary>
+            <value>Código de la bodega para donde va el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest.Usuario">
+            <summary>
+            Usuario del Usuario que generó el pedido
+            </summary>
+            <value>Usuario del Usuario que generó el pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest.FechaEntrega">
+            <summary>
+            Indica la fecha de entrega del pedido
+            </summary>
+            <value>Indica la fecha de entrega del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest.EstadoPedido">
+            <summary>
+            Estado del pedido
+            </summary>
+            <value>Estado del pedido</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest.Detalles">
+            <summary>
+            Detalles del Pedido
+            </summary>
+            <value>Detalles del Pedido</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest.Equals(EVO_PV_WebApi.Models.PedidoApi.PedidoRequest)">
+            <summary>
+            Returns true if PedidoRequest instances are equal
+            </summary>
+            <param name="other">Instance of PedidoRequest to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.PedidoApi.PedidoRequest.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponse">
+            <summary>
+            Resultado general de la consulta
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponse.NumeroTotalRegistros">
+            <summary>
+            Número total de registros que posee la consulta
+            </summary>
+            <value>Número total de registros que posee la consulta</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponse.TamanhoPaginacion">
+            <summary>
+            Número de registros a mostrar por página
+            </summary>
+            <value>Número de registros a mostrar por página</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponse.Registros">
+            <summary>
+            Obtiene los usuarios de un grupo y un dominio especifico menos los usuarios del rol informado
+            </summary>
+            <value>Obtiene los usuarios de un grupo y un dominio especifico menos los usuarios del rol informado</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponse.Equals(EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponse)">
+            <summary>
+            Returns true if ObtenerTodosUsuariosGrupoDominioMenosRolResponse instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerTodosUsuariosGrupoDominioMenosRolResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponseRegistros">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponseRegistros.Usuario">
+            <summary>
+            Usuario del Usuario
+            </summary>
+            <value>Usuario del Usuario</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponseRegistros.Nombre">
+            <summary>
+            Nombre del Usuario
+            </summary>
+            <value>Nombre del Usuario</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponseRegistros.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponseRegistros.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponseRegistros.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponseRegistros.Equals(EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponseRegistros)">
+            <summary>
+            Returns true if ObtenerTodosUsuariosGrupoDominioMenosRolResponseRegistros instances are equal
+            </summary>
+            <param name="other">Instance of ObtenerTodosUsuariosGrupoDominioMenosRolResponseRegistros to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.ObtenerTodosUsuariosGrupoDominioMenosRolResponseRegistros.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Models.UsuariosApi.UsuarioResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.UsuariosApi.UsuarioResponse.UsuarioId">
+            <summary>
+            Id del usuario
+            </summary>
+            <value>Id del usuario</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.UsuariosApi.UsuarioResponse.Nombre">
+            <summary>
+            Usuario del usuario
+            </summary>
+            <value>Usuario del usuario</value>
+        </member>
+        <member name="P:EVO_PV_WebApi.Models.UsuariosApi.UsuarioResponse.NombreUsuario">
+            <summary>
+            Nombre del Usuario
+            </summary>
+            <value>Nombre del Usuario</value>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.UsuarioResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.UsuarioResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.UsuarioResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.UsuarioResponse.Equals(EVO_PV_WebApi.Models.UsuariosApi.UsuarioResponse)">
+            <summary>
+            Returns true if UsuarioResponse instances are equal
+            </summary>
+            <param name="other">Instance of UsuarioResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:EVO_PV_WebApi.Models.UsuariosApi.UsuarioResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:EVO_PV_WebApi.Resources.errores">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Resources.errores.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Resources.errores.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:EVO_PV_WebApi.Resources.errores.errGeneral">
+            <summary>
+              Looks up a localized string similar to Ha ocurrido un error en el sistema.
+            </summary>
+        </member>
+        <member name="T:EVO_WebApi.Filters.BasePathFilter">
+            <summary>
+            BasePath Document Filter sets BasePath property of Swagger and removes it from the individual URL paths
+            </summary>
+        </member>
+        <member name="M:EVO_WebApi.Filters.BasePathFilter.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="basePath">BasePath to remove from Operations</param>
+        </member>
+        <member name="P:EVO_WebApi.Filters.BasePathFilter.BasePath">
+            <summary>
+            Gets the BasePath of the Swagger Doc
+            </summary>
+            <returns>The BasePath of the Swagger Doc</returns>
+        </member>
+    </members>
+</doc>
